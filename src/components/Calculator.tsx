@@ -81,11 +81,12 @@ export default function Calculator() {
           datasets: [{
             label: 'Monthly HOA Fee ($)',
             data: outputs.yearlyData.map(d => d.fee),
-            borderColor: '#1B3A6B',
-            backgroundColor: 'rgba(27, 58, 107, 0.1)',
+            borderColor: '#1a2e4a',
+            backgroundColor: 'rgba(13, 148, 136, 0.1)',
             fill: true,
             tension: 0.4,
-            pointBackgroundColor: '#E8A020',
+            pointBackgroundColor: '#0d9488',
+            pointRadius: 4,
           }]
         },
         options: {
@@ -101,6 +102,9 @@ export default function Calculator() {
               beginAtZero: false,
               grid: {
                 color: 'rgba(0,0,0,0.05)'
+              },
+              ticks: {
+                callback: (value: any) => '$' + value
               }
             },
             x: {
@@ -114,185 +118,154 @@ export default function Calculator() {
     }
   }, [outputs.yearlyData]);
 
-  const getScoreColor = (score: string) => {
-    switch (score) {
-      case 'A': return 'text-green-600 bg-green-50';
-      case 'B': return 'text-blue-600 bg-blue-50';
-      case 'C': return 'text-yellow-600 bg-yellow-50';
-      case 'D': return 'text-red-600 bg-red-50';
-      default: return 'text-gray-600 bg-gray-50';
-    }
-  };
-
-  const getRatioColor = (ratio: number) => {
-    if (ratio <= 15) return 'text-green-600';
-    if (ratio <= 25) return 'text-yellow-600';
-    return 'text-red-600';
-  };
-
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-[340px_1fr] gap-8">
-      {/* Left Panel: Inputs */}
-      <aside className="card h-fit sticky top-20">
-        <h2 className="text-xl font-bold border-b border-bg-section pb-3 mb-6">Enter Your Details</h2>
+    <div className="grid grid-cols-1 lg:grid-cols-[380px_1fr] gap-8 items-start">
+      {/* Tool Section: Inputs */}
+      <aside className="card border-none shadow-xl">
+        <h2 className="text-2xl font-bold mb-8 flex items-center gap-2">
+          Enter Your Details
+        </h2>
 
-        <div className="input-group">
-          <label className="input-label">
-            Property Value <span className="input-value">${inputs.propertyValue.toLocaleString()}</span>
-          </label>
-          <input 
-            type="range" 
-            min="50000" 
-            max="2000000" 
-            step="5000"
-            value={inputs.propertyValue}
-            onChange={(e) => setInputs({...inputs, propertyValue: parseInt(e.target.value)})}
-            className="w-full"
-          />
-          <input 
-            type="number"
-            value={inputs.propertyValue}
-            onChange={(e) => setInputs({...inputs, propertyValue: parseInt(e.target.value) || 0})}
-            className="input-field mt-2"
-          />
-        </div>
+        <div className="space-y-6">
+          <div className="input-group">
+            <label className="input-label">Property Value</label>
+            <div className="relative">
+              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-primary opacity-40">$</span>
+              <input 
+                type="number"
+                value={inputs.propertyValue}
+                onChange={(e) => setInputs({...inputs, propertyValue: parseInt(e.target.value) || 0})}
+                className="input-field pl-8"
+              />
+            </div>
+          </div>
 
-        <div className="input-group">
-          <label className="input-label">
-            Monthly HOA Fee <span className="input-value">${inputs.monthlyHOA}</span>
-          </label>
-          <input 
-            type="range" 
-            min="0" 
-            max="2000" 
-            step="10"
-            value={inputs.monthlyHOA}
-            onChange={(e) => setInputs({...inputs, monthlyHOA: parseInt(e.target.value)})}
-            className="w-full"
-          />
-          <input 
-            type="number"
-            value={inputs.monthlyHOA}
-            onChange={(e) => setInputs({...inputs, monthlyHOA: parseInt(e.target.value) || 0})}
-            className="input-field mt-2"
-          />
-        </div>
+          <div className="input-group">
+            <label className="input-label">Monthly HOA Fee</label>
+            <div className="relative">
+              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-primary opacity-40">$</span>
+              <input 
+                type="number"
+                value={inputs.monthlyHOA}
+                onChange={(e) => setInputs({...inputs, monthlyHOA: parseInt(e.target.value) || 0})}
+                className="input-field pl-8"
+              />
+            </div>
+          </div>
 
-        <div className="input-group">
-          <label className="input-label">
-            Annual Increase (%) <span className="input-value">{inputs.annualIncrease}%</span>
-          </label>
-          <input 
-            type="range" 
-            min="0" 
-            max="15" 
-            step="0.5"
-            value={inputs.annualIncrease}
-            onChange={(e) => setInputs({...inputs, annualIncrease: parseFloat(e.target.value)})}
-            className="w-full"
-          />
-        </div>
+          <div className="grid grid-cols-2 gap-4">
+            <div className="input-group">
+              <label className="input-label">Annual Increase (%)</label>
+              <input 
+                type="number"
+                step="0.5"
+                value={inputs.annualIncrease}
+                onChange={(e) => setInputs({...inputs, annualIncrease: parseFloat(e.target.value) || 0})}
+                className="input-field"
+              />
+            </div>
+            <div className="input-group">
+              <label className="input-label">Years of Ownership</label>
+              <div className="relative">
+                <input 
+                  type="number"
+                  value={inputs.yearsOfOwnership}
+                  onChange={(e) => setInputs({...inputs, yearsOfOwnership: parseInt(e.target.value) || 1})}
+                  className="input-field pr-12"
+                />
+                <span className="absolute right-4 top-1/2 -translate-y-1/2 text-xs opacity-40">yrs</span>
+              </div>
+            </div>
+          </div>
 
-        <div className="input-group">
-          <label className="input-label">
-            Years of Ownership <span className="input-value">{inputs.yearsOfOwnership} yrs</span>
-          </label>
-          <input 
-            type="range" 
-            min="1" 
-            max="30" 
-            step="1"
-            value={inputs.yearsOfOwnership}
-            onChange={(e) => setInputs({...inputs, yearsOfOwnership: parseInt(e.target.value)})}
-            className="w-full"
-          />
-        </div>
+          <div className="input-group">
+            <label className="input-label">Annual Income ($) <span className="text-[10px] uppercase tracking-wider opacity-40 ml-1 font-normal">(optional)</span></label>
+            <input 
+              type="number"
+              value={inputs.annualIncome}
+              onChange={(e) => setInputs({...inputs, annualIncome: parseInt(e.target.value) || 0})}
+              className="input-field"
+            />
+          </div>
 
-        <div className="input-group">
-          <label className="input-label">Annual Income ($)</label>
-          <input 
-            type="number"
-            value={inputs.annualIncome}
-            onChange={(e) => setInputs({...inputs, annualIncome: parseInt(e.target.value) || 0})}
-            className="input-field"
-          />
-        </div>
-
-        <div className="adsense-mock h-[200px] mt-6 bg-bg-section border border-dashed border-border-light flex items-center justify-center text-text-light text-[11px] uppercase tracking-widest">
-          AdSense: Side Widget
+          <button 
+            onClick={calculate}
+            className="btn-primary w-full text-lg mt-4"
+          >
+            Calculate My Cost →
+          </button>
         </div>
       </aside>
 
-      {/* Right Panel: Outputs */}
-      <section className="space-y-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-          <div className="stat-card">
-            <div className="stat-label">Total Lifetime Cost</div>
-            <div className="stat-value">${outputs.totalLifetimeCost.toLocaleString()}</div>
+      {/* Results Dashboard */}
+      <section className="space-y-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="card p-6 border-none bg-primary text-white shadow-lg overflow-hidden relative">
+            <div className="absolute top-0 right-0 w-24 h-24 bg-white opacity-5 -mr-12 -mt-12 rounded-full"></div>
+            <div className="stat-label text-white/60 mb-1">Total Lifetime Cost</div>
+            <div className="text-3xl font-serif font-bold text-accent">${outputs.totalLifetimeCost.toLocaleString()}</div>
           </div>
-          <div className="stat-card border-accent">
-            <div className="stat-label">Monthly Avg. Cost</div>
-            <div className="stat-value text-accent">${outputs.averageMonthlyCost.toLocaleString()}</div>
+
+          <div className="card p-6 border-none shadow-lg">
+            <div className="stat-label mb-1">Monthly Avg. Cost</div>
+            <div className="text-3xl font-serif font-bold text-primary">${outputs.averageMonthlyCost.toLocaleString()}</div>
           </div>
-          <div className="stat-card">
-            <div className="stat-label">Income Ratio</div>
-            <div className="stat-value">{outputs.hoaToIncomeRatio}%</div>
+
+          <div className="card p-6 border-none shadow-lg">
+            <div className="stat-label mb-1">Income Ratio</div>
+            <div className="text-3xl font-serif font-bold text-primary">{outputs.hoaToIncomeRatio}%</div>
           </div>
-          <div className="stat-card border-accent">
-            <div className="stat-label">Affordability</div>
-            <div className={cn("affordability-badge", 
-              outputs.affordabilityScore === 'A' ? 'grade-a' : 
-              outputs.affordabilityScore === 'B' ? 'grade-b' : 
-              outputs.affordabilityScore === 'C' ? 'grade-c' : 'grade-d'
-            )}>
-              Grade {outputs.affordabilityScore} ({
-                outputs.affordabilityScore === 'A' ? 'Excellent' : 
-                outputs.affordabilityScore === 'B' ? 'Good' : 
-                outputs.affordabilityScore === 'C' ? 'Tight' : 'Risky'
-              })
+
+          <div className="card p-6 border-none shadow-lg">
+            <div className="stat-label mb-1">Affordability Grade</div>
+            <div className="flex items-center gap-3">
+              <span className="text-3xl font-serif font-bold text-primary">{outputs.affordabilityScore}</span>
+              <span className={cn(
+                "px-3 py-1 rounded-full text-xs font-bold",
+                outputs.affordabilityScore === 'A' ? 'bg-green-100 text-green-700' :
+                outputs.affordabilityScore === 'B' ? 'bg-blue-100 text-blue-700' :
+                outputs.affordabilityScore === 'C' ? 'bg-yellow-100 text-yellow-700' : 'bg-red-100 text-red-700'
+              )}>
+                ({
+                  outputs.affordabilityScore === 'A' ? 'Excellent' : 
+                  outputs.affordabilityScore === 'B' ? 'Good' : 
+                  outputs.affordabilityScore === 'C' ? 'Tight' : 'Risky'
+                })
+              </span>
             </div>
           </div>
         </div>
 
-        <div className="card">
-          <h3 className="text-lg font-bold text-primary mb-4">HOA Fee Growth Projection</h3>
-          <div className="h-[240px] relative">
+        <div className="card border-none shadow-xl pb-0">
+          <h3 className="text-xl font-bold mb-6">HOA Fee Growth Projection</h3>
+          <div className="h-[300px] w-full">
             <canvas ref={chartRef}></canvas>
           </div>
         </div>
 
-        <div className="card p-0 overflow-hidden">
-          <div className="flex justify-between items-center p-5 border-b border-border-light">
-            <h3 className="text-lg font-bold text-primary">Year-by-Year Breakdown</h3>
+        <div className="card border-none shadow-xl p-0 overflow-hidden">
+          <div className="px-8 py-6 border-b border-border">
+            <h3 className="text-xl font-bold italic">Year-by-Year Breakdown</h3>
           </div>
-          <table className="w-full text-left text-[14px]">
-            <thead className="bg-primary text-accent-light">
-              <tr>
-                <th className="p-4 uppercase text-[11px] tracking-wider">Year</th>
-                <th className="p-4 uppercase text-[11px] tracking-wider">Monthly Fee</th>
-                <th className="p-4 uppercase text-[11px] tracking-wider">Total Paid</th>
-              </tr>
-            </thead>
-            <tbody>
-              {outputs.yearlyData.slice(0, 5).map((d) => (
-                <tr key={d.year} className="border-b border-border-light last:border-0 even:bg-bg-section/30">
-                  <td className="p-4 font-bold text-primary">Year {d.year}</td>
-                  <td className="p-4 font-medium text-text-medium">${d.fee}</td>
-                  <td className="p-4 text-text-light">${d.cumulative.toLocaleString()}</td>
+          <div className="overflow-x-auto">
+            <table className="w-full text-left">
+              <thead>
+                <tr className="bg-bg-light">
+                  <th className="px-8 py-4 text-xs font-bold uppercase tracking-wider text-primary opacity-60">Year</th>
+                  <th className="px-8 py-4 text-xs font-bold uppercase tracking-wider text-primary opacity-60">Monthly Fee</th>
+                  <th className="px-8 py-4 text-xs font-bold uppercase tracking-wider text-primary opacity-60">Total Paid</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-
-        <div className="bg-primary-dark rounded-xl p-6 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-white text-sm">
-            <strong className="text-accent-light">Don't let HOA fees sink your budget.</strong> Compare mortgage lenders and home insurance to offset your costs.
-          </p>
-          <div className="flex gap-3">
-            <a href="#" rel="nofollow sponsored" className="bg-accent text-white px-4 py-2 rounded-full font-bold text-xs hover:bg-accent-hover transition-colors whitespace-nowrap">
-              Compare Rates →
-            </a>
+              </thead>
+              <tbody className="divide-y divide-border">
+                {outputs.yearlyData.slice(0, 10).map((d) => (
+                  <tr key={d.year} className="hover:bg-bg-light transition-colors">
+                    <td className="px-8 py-4 font-bold text-primary">Year {d.year}</td>
+                    <td className="px-8 py-4 font-medium">${d.fee.toLocaleString()}</td>
+                    <td className="px-8 py-4 text-primary opacity-60 font-medium">${d.cumulative.toLocaleString()}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
       </section>

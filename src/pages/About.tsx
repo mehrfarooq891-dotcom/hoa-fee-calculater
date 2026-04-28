@@ -20,6 +20,7 @@ export default function About() {
             <Link to="/" className="hover:text-accent transition-colors">Home</Link>
             <Link to="/states" className="hover:text-accent transition-colors">States</Link>
             <Link to="/blog" className="hover:text-accent transition-colors">Blog</Link>
+            <Link to="/contact" className="hover:text-accent transition-colors">Contact</Link>
             <Link to="/about" className="text-accent">About</Link>
           </nav>
         </div>
@@ -115,6 +116,7 @@ export default function About() {
             <ul className="space-y-4 text-sm font-medium">
               <li><Link to="/states" className="hover:text-accent transition-colors">State Guides</Link></li>
               <li><Link to="/compare" className="hover:text-accent transition-colors">Compare Costs</Link></li>
+              <li><Link to="/contact" className="hover:text-accent transition-colors">Contact Support</Link></li>
               <li><Link to="/about" className="hover:text-accent transition-colors">About Us</Link></li>
             </ul>
           </div>

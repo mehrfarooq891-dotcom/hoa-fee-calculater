@@ -46,6 +46,7 @@ export default function Home() {
             <Link to="/compare" className="hover:text-accent transition-colors">Compare</Link>
             <Link to="/about" className="hover:text-accent transition-colors">About</Link>
             <Link to="/blog" className="hover:text-accent transition-colors">Blog</Link>
+            <Link to="/contact" className="hover:text-accent transition-colors">Contact</Link>
             <a href="#calculator" className="btn-primary py-2 px-6">Calculate</a>
           </nav>
         </div>
@@ -274,6 +275,7 @@ export default function Home() {
               <li><Link to="/compare" className="hover:text-accent transition-colors">Compare Costs</Link></li>
               <li><Link to="/about" className="hover:text-accent transition-colors">About Us</Link></li>
               <li><Link to="/blog" className="hover:text-accent transition-colors">HOA Articles</Link></li>
+              <li><Link to="/contact" className="hover:text-accent transition-colors">Contact Support</Link></li>
             </ul>
           </div>
           <div>

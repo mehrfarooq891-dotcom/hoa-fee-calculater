@@ -4,6 +4,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import Home from './pages/Home';
 import About from './pages/About';
 import Blog from './pages/Blog';
+import WhatIsHOAFeeArticle from './pages/WhatIsHOAFeeArticle';
 import Compare from './pages/Compare';
 import Contact from './pages/Contact';
 import States from './pages/States';
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/what-is-hoa-fee" element={<WhatIsHOAFeeArticle />} />
           <Route path="/compare" element={<Compare />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/states" element={<States />} />

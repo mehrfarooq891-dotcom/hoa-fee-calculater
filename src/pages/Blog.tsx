@@ -5,22 +5,32 @@ import { Link } from 'react-router-dom';
 export default function Blog() {
   const posts = [
     {
+      title: "What Is an HOA Fee? Complete Guide for First-Time Buyers",
+      excerpt: "Unpack the reality of mandatory association dues, understand what they cover, and calculate their long-term impact on your dream budget.",
+      date: "May 10, 2026",
+      category: "Guides",
+      slug: "/blog/what-is-hoa-fee"
+    },
+    {
       title: "How to Avoid UNEXPECTED HOA Special Assessments",
       excerpt: "Special assessments can cost homeowners thousands. Learn how to read the reserve study before buying.",
       date: "April 20, 2026",
-      category: "Finance"
+      category: "Finance",
+      slug: "#"
     },
     {
       title: "HOA vs. Condo Fees: What's the Real Difference?",
       excerpt: "Many people use these terms interchangeably, but they cover very different maintenance items.",
       date: "April 15, 2026",
-      category: "Guides"
+      category: "Guides",
+      slug: "#"
     },
     {
       title: "Top 5 States with the Highest HOA Fees in 2026",
       excerpt: "Surprising data shows Florida isn't the only state where fees are skyrocketing.",
       date: "April 10, 2026",
-      category: "Data"
+      category: "Data",
+      slug: "#"
     }
   ];
 
@@ -60,12 +70,12 @@ export default function Blog() {
                   <span className="text-xs text-primary opacity-50 uppercase font-bold tracking-wider">{post.date}</span>
                 </div>
                 <h2 className="text-2xl font-serif font-bold text-primary mb-4 hover:text-accent transition-colors">
-                  <Link to="#">{post.title}</Link>
+                  <Link to={post.slug}>{post.title}</Link>
                 </h2>
                 <p className="text-primary opacity-70 mb-6 leading-relaxed">
                   {post.excerpt}
                 </p>
-                <Link to="#" className="text-accent font-bold text-sm uppercase tracking-widest flex items-center gap-2 group">
+                <Link to={post.slug} className="text-accent font-bold text-sm uppercase tracking-widest flex items-center gap-2 group">
                   Read Full Article <span className="group-hover:translate-x-1 transition-transform">→</span>
                 </Link>
               </article>

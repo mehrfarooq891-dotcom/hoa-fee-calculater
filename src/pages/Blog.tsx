@@ -5,6 +5,13 @@ import { Link } from 'react-router-dom';
 export default function Blog() {
   const posts = [
     {
+      title: "Average HOA Fees by State in 2026 — Full 50-State Breakdown",
+      excerpt: "Discover the average monthly HOA fees across all 50 US states in 2026. Review high-density master policies, legislative updates, and complete financial data.",
+      date: "May 12, 2026",
+      category: "Data",
+      slug: "/blog/average-hoa-fees-by-state"
+    },
+    {
       title: "What Is an HOA Fee? Complete Guide for First-Time Buyers",
       excerpt: "Unpack the reality of mandatory association dues, understand what they cover, and calculate their long-term impact on your dream budget.",
       date: "May 10, 2026",

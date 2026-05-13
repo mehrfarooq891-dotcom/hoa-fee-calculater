@@ -5,6 +5,13 @@ import { Link } from 'react-router-dom';
 export default function Blog() {
   const posts = [
     {
+      title: "HOA Fees in Florida: What Every Buyer Must Know Before Closing",
+      excerpt: "Florida has the highest rate of HOA communities per capita in the US. Discover why fees are skyrocketing under new laws (SB 4-D), and find red flags to protect your budget.",
+      date: "May 13, 2026",
+      category: "Guides",
+      slug: "/blog/hoa-fees-florida"
+    },
+    {
       title: "Average HOA Fees by State in 2026 — Full 50-State Breakdown",
       excerpt: "Discover the average monthly HOA fees across all 50 US states in 2026. Review high-density master policies, legislative updates, and complete financial data.",
       date: "May 12, 2026",

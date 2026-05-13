@@ -6,6 +6,7 @@ import About from './pages/About';
 import Blog from './pages/Blog';
 import WhatIsHOAFeeArticle from './pages/WhatIsHOAFeeArticle';
 import AverageHOAFeesByStateArticle from './pages/AverageHOAFeesByStateArticle';
+import FloridaHOAFeesArticle from './pages/FloridaHOAFeesArticle';
 import Compare from './pages/Compare';
 import Contact from './pages/Contact';
 import States from './pages/States';
@@ -22,6 +23,7 @@ export default function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/what-is-hoa-fee" element={<WhatIsHOAFeeArticle />} />
           <Route path="/blog/average-hoa-fees-by-state" element={<AverageHOAFeesByStateArticle />} />
+          <Route path="/blog/hoa-fees-florida" element={<FloridaHOAFeesArticle />} />
           <Route path="/compare" element={<Compare />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/states" element={<States />} />

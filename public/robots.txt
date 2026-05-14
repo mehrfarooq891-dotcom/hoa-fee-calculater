@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hoa-fee-calculater.vercel.app/sitemap.xml

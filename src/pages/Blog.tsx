@@ -5,6 +5,13 @@ import { Link } from 'react-router-dom';
 export default function Blog() {
   const posts = [
     {
+      title: "HOA Fees in California: Why They're the Highest in the Nation",
+      excerpt: "California HOA fees average $500/month—double the US average. Find out why Golden State costs are skyrocketing, how the Davis-Stirling Act protects you, and critical red flags to check.",
+      date: "May 15, 2026",
+      category: "Guides",
+      slug: "/blog/hoa-fees-california"
+    },
+    {
       title: "HOA Fees in Florida: What Every Buyer Must Know Before Closing",
       excerpt: "Florida has the highest rate of HOA communities per capita in the US. Discover why fees are skyrocketing under new laws (SB 4-D), and find red flags to protect your budget.",
       date: "May 13, 2026",

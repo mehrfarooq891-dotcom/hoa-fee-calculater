@@ -5,6 +5,13 @@ import { Link } from 'react-router-dom';
 export default function Blog() {
   const posts = [
     {
+      title: "HOA Fees in Texas: Complete City-by-City Guide 2026",
+      excerpt: "Explore the financial landscape of HOA fees in Texas. Compare averages across Dallas, Houston, Austin, and San Antonio. Understand Property Code Chapter 209 and watch for developer fee spikes.",
+      date: "May 17, 2026",
+      category: "Guides",
+      slug: "/blog/hoa-fees-texas"
+    },
+    {
       title: "HOA Fees in California: Why They're the Highest in the Nation",
       excerpt: "California HOA fees average $500/month—double the US average. Find out why Golden State costs are skyrocketing, how the Davis-Stirling Act protects you, and critical red flags to check.",
       date: "May 15, 2026",

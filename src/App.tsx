@@ -9,6 +9,7 @@ import AverageHOAFeesByStateArticle from './pages/AverageHOAFeesByStateArticle';
 import FloridaHOAFeesArticle from './pages/FloridaHOAFeesArticle';
 import CaliforniaHOAFeesArticle from './pages/CaliforniaHOAFeesArticle';
 import TexasHOAFeesArticle from './pages/TexasHOAFeesArticle';
+import HOAVsNoHOAArticle from './pages/HOAVsNoHOAArticle';
 import Compare from './pages/Compare';
 import Contact from './pages/Contact';
 import States from './pages/States';
@@ -28,6 +29,7 @@ export default function App() {
           <Route path="/blog/hoa-fees-florida" element={<FloridaHOAFeesArticle />} />
           <Route path="/blog/hoa-fees-california" element={<CaliforniaHOAFeesArticle />} />
           <Route path="/blog/hoa-fees-texas" element={<TexasHOAFeesArticle />} />
+          <Route path="/blog/hoa-vs-no-hoa" element={<HOAVsNoHOAArticle />} />
           <Route path="/compare" element={<Compare />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/states" element={<States />} />

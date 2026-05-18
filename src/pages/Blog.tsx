@@ -5,6 +5,13 @@ import { Link } from 'react-router-dom';
 export default function Blog() {
   const posts = [
     {
+      title: "HOA vs No HOA: The Real Cost Comparison Nobody Shows You",
+      excerpt: "No HOA sounds cheaper until you price out your own pool maintenance and landscaping. Compare the true costs of self-management vs association fees in this data-backed guide.",
+      date: "May 18, 2026",
+      category: "Guides",
+      slug: "/blog/hoa-vs-no-hoa"
+    },
+    {
       title: "HOA Fees in Texas: Complete City-by-City Guide 2026",
       excerpt: "Explore the financial landscape of HOA fees in Texas. Compare averages across Dallas, Houston, Austin, and San Antonio. Understand Property Code Chapter 209 and watch for developer fee spikes.",
       date: "May 17, 2026",

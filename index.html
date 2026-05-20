@@ -1,6 +1,12 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <style>
+      body { 
+        opacity: 0; 
+        transition: opacity 0.3s ease;
+      }
+    </style>
     <meta name="google-site-verification" content="C64O6qaOiSJpt66MWAhJ-GBk_9aM_UuTijINnNbmEHQ" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -74,5 +80,10 @@
       </footer>
     </div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      window.addEventListener('load', function() {
+        document.body.style.opacity = '1';
+      });
+    </script>
   </body>
 </html>

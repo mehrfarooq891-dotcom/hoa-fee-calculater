@@ -8,3 +8,11 @@ createRoot(document.getElementById('root')!).render(
     <App />
   </StrictMode>,
 );
+
+setTimeout(function() {
+  var el = document.getElementById('app-loading');
+  if (el) el.style.display = 'none';
+}, 100);
+
+if ((window as any).__hideLoading) (window as any).__hideLoading();
+

@@ -24,6 +24,11 @@
         padding: 0;
         -webkit-font-smoothing: antialiased;
       }
+      header {
+        border-bottom: 1px solid #e2e8f0;
+        background-color: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(8px);
+      }
       a {
         color: #0d9488;
         transition: color 0.15s ease;
@@ -31,173 +36,74 @@
       a:hover {
         color: #0f766e;
       }
-      #seo-fallback {
+      /* Hide SEO fallback content — React will replace #root instantly */
+      #root > header,
+      #root > main,
+      #root > footer {
         display: none;
-      }
-      /* Loading skeleton */
-      #app-loading {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        background: #ffffff;
-      }
-      #app-loading .skeleton-header {
-        height: 64px;
-        background: #ffffff;
-        border-bottom: 1px solid #e2e8f0;
-        display: flex;
-        align-items: center;
-        padding: 0 40px;
-        justify-content: space-between;
-      }
-      #app-loading .skeleton-logo {
-        width: 180px;
-        height: 28px;
-        background: linear-gradient(90deg, #f0f4f8 25%, #e2e8f0 50%, #f0f4f8 75%);
-        background-size: 200% 100%;
-        animation: shimmer 1.2s infinite;
-        border-radius: 4px;
-      }
-      #app-loading .skeleton-nav {
-        display: flex;
-        gap: 24px;
-      }
-      #app-loading .skeleton-nav span {
-        width: 60px;
-        height: 16px;
-        background: linear-gradient(90deg, #f0f4f8 25%, #e2e8f0 50%, #f0f4f8 75%);
-        background-size: 200% 100%;
-        animation: shimmer 1.2s infinite;
-        border-radius: 4px;
-        display: block;
-      }
-      #app-loading .skeleton-hero {
-        padding: 80px 40px;
-        max-width: 1200px;
-        margin: 0 auto;
-        width: 100%;
-        box-sizing: border-box;
-        display: flex;
-        gap: 40px;
-        align-items: center;
-      }
-      #app-loading .skeleton-text-block {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-      }
-      #app-loading .skeleton-line {
-        height: 20px;
-        background: linear-gradient(90deg, #f0f4f8 25%, #e2e8f0 50%, #f0f4f8 75%);
-        background-size: 200% 100%;
-        animation: shimmer 1.2s infinite;
-        border-radius: 4px;
-      }
-      #app-loading .skeleton-line.big { height: 48px; width: 80%; }
-      #app-loading .skeleton-line.medium { height: 32px; width: 60%; }
-      #app-loading .skeleton-line.small { height: 18px; width: 90%; }
-      #app-loading .skeleton-line.short { height: 18px; width: 70%; }
-      #app-loading .skeleton-card {
-        flex: 1;
-        height: 320px;
-        background: linear-gradient(90deg, #f0f4f8 25%, #e2e8f0 50%, #f0f4f8 75%);
-        background-size: 200% 100%;
-        animation: shimmer 1.2s infinite;
-        border-radius: 12px;
-      }
-      @keyframes shimmer {
-        0% { background-position: 200% 0; }
-        100% { background-position: -200% 0; }
       }
     </style>
   </head>
   <body class="bg-white text-[#1a2e4a] font-sans m-0 p-0">
-
-    <!-- Loading skeleton — visible until React loads -->
-    <div id="app-loading">
-      <div class="skeleton-header">
-        <div class="skeleton-logo"></div>
-        <div class="skeleton-nav">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-      <div class="skeleton-hero">
-        <div class="skeleton-text-block">
-          <div class="skeleton-line big"></div>
-          <div class="skeleton-line medium"></div>
-          <div class="skeleton-line small"></div>
-          <div class="skeleton-line short"></div>
-        </div>
-        <div class="skeleton-card"></div>
-      </div>
-    </div>
-
     <div id="root">
-      <div id="seo-fallback">
-        <header style="max-width:1200px; margin:0 auto; padding:20px; display:flex; justify-content:space-between; align-items:center; font-family:'DM Sans', sans-serif;">
-          <h1 style="font-family:'DM Serif Display', Georgia, serif; font-size:24px; color:#1a2e4a; margin:0;">HOA Fee Calculator</h1>
-          <nav style="display:flex; gap:15px;">
-            <a href="/" style="color:#1a2e4a; text-decoration:none; font-weight:bold; font-size:14px;">Home</a>
-            <a href="/states" style="color:#1a2e4a; text-decoration:none; font-weight:bold; font-size:14px;">HOA Fees by State</a>
-            <a href="/compare" style="color:#1a2e4a; text-decoration:none; font-weight:bold; font-size:14px;">Compare HOA Communities</a>
-            <a href="/about" style="color:#1a2e4a; text-decoration:none; font-weight:bold; font-size:14px;">About HOACalculator.com</a>
-            <a href="/blog" style="color:#1a2e4a; text-decoration:none; font-weight:bold; font-size:14px;">Real Estate Blog</a>
-            <a href="/contact" style="color:#1a2e4a; text-decoration:none; font-weight:bold; font-size:14px;">Contact Support</a>
-          </nav>
-        </header>
-        <main style="max-width:800px; margin:40px auto; padding:0 20px; line-height:1.75; font-family:'DM Sans', sans-serif; color:#1a2e4a;">
-          <section style="margin-bottom:40px;">
-            <h2 style="font-family:'DM Serif Display', Georgia, serif; font-size:28px; color:#1a2e4a; margin-bottom:15px;">Estimate Your True Lifetime HOA Fees &amp; Costs</h2>
-            <p>Welcome to <strong>HOACalculator.com</strong>, the internet's most accurate homeowners association calculator designed to calculate, analyze, and estimate the real influence of monthly developer dues on your property assets and physical homeownership equity. Whether you are buying a suburban single-family home or looking at a high-density urban condo, our dynamic calculations help you model 10-year, 20-year, and 30-year carrying costs with realistic interest rates and inflation forecasts of 4% per year.</p>
-          </section>
-          <section style="margin-bottom:40px;">
-            <h2 style="font-family:'DM Serif Display', Georgia, serif; font-size:28px; color:#1a2e4a; margin-bottom:15px;">Understanding the Real Expense of Association Living</h2>
-            <p>Many first-time homebuyers assume that their mortgage payment is the only monthly carrying cost. However, choosing a property with a homeowners association adds a mandatory recurring obligation that typically increases over time. HOA fees are legally binding and non-negotiable carrying costs used to preserve shared infrastructure, exterior siding, roofs, and central community amenities like swimming pools, tennis courts, and safety gates.</p>
-            <p>Before purchasing, it is critical to perform due diligence. We recommend analyzing the association's general reserve study, checking past assessment records, and assessing whether self-management is cheaper. For instance, self-managing your own private pool typically adds $150–250 per month, while private lawn care averages $120–200 per month. If your condo or townhouse association dues consolidate these expenses, they may provide a significant bulk discount over individual management.</p>
-          </section>
-          <section style="margin-bottom:40px;">
-            <h2 style="font-family:'DM Serif Display', Georgia, serif; font-size:28px; color:#1a2e4a; margin-bottom:15px;">HOA Fees &amp; Rules Across the USA</h2>
-            <p>Our research team compiles annual data across all fifty states to help you evaluate localized costs. Select your state below to access city-by-city databases, legal code rules, and average carries:</p>
-            <ul style="padding-left:20px;">
-              <li style="margin-bottom:10px;"><a href="/states/california" style="color:#0d9488; text-decoration:underline; font-weight:bold;">California HOA Fees Calculator &amp; Guide</a></li>
-              <li style="margin-bottom:10px;"><a href="/states/texas" style="color:#0d9488; text-decoration:underline; font-weight:bold;">Texas HOA Fees Calculator &amp; Guide</a></li>
-              <li style="margin-bottom:10px;"><a href="/states/florida" style="color:#0d9488; text-decoration:underline; font-weight:bold;">Florida HOA Fees Calculator &amp; Guide</a></li>
-              <li style="margin-bottom:10px;"><a href="/states/new-york" style="color:#0d9488; text-decoration:underline; font-weight:bold;">New York HOA Fees &amp; Condo Costs</a></li>
-              <li style="margin-bottom:10px;"><a href="/states/georgia" style="color:#0d9488; text-decoration:underline; font-weight:bold;">Georgia HOA Fees &amp; Management Laws</a></li>
-              <li style="margin-bottom:10px;"><a href="/states/north-carolina" style="color:#0d9488; text-decoration:underline; font-weight:bold;">North Carolina HOA Fees Analysis</a></li>
-              <li style="margin-bottom:10px;"><a href="/states/illinois" style="color:#0d9488; text-decoration:underline; font-weight:bold;">Illinois HOA Fees &amp; Condo Regulations Code</a></li>
-            </ul>
-          </section>
-          <section style="margin-bottom:40px;">
-            <h2 style="font-family:'DM Serif Display', Georgia, serif; font-size:28px; color:#1a2e4a; margin-bottom:15px;">Educational Guides &amp; Helpful Resources</h2>
-            <p>Stay informed before buying. Read our deep-dive articles written by senior US real estate research analysts:</p>
-            <ul style="padding-left:20px;">
-              <li style="margin-bottom:10px;"><a href="/blog/what-is-hoa-fee" style="color:#0d9488; text-decoration:underline; font-weight:bold;">What is an HOA Fee? A Beginner's Guide to Homeowners Associations</a></li>
-              <li style="margin-bottom:10px;"><a href="/blog/average-hoa-fees-by-state" style="color:#0d9488; text-decoration:underline; font-weight:bold;">Average HOA Fees by State: Cost Comparison &amp; Data Analysis</a></li>
-              <li style="margin-bottom:10px;"><a href="/blog/hoa-fees-florida" style="color:#0d9488; text-decoration:underline; font-weight:bold;">Florida HOA Fees Analysis: Complete City-by-City Guide</a></li>
-              <li style="margin-bottom:10px;"><a href="/blog/hoa-fees-california" style="color:#0d9488; text-decoration:underline; font-weight:bold;">California HOA Fees: Understanding Common-Interest Carries</a></li>
-              <li style="margin-bottom:10px;"><a href="/blog/hoa-fees-texas" style="color:#0d9488; text-decoration:underline; font-weight:bold;">Texas HOA Fees Guide: Chapter 209 Property Code Regulations</a></li>
-              <li style="margin-bottom:10px;"><a href="/blog/hoa-vs-no-hoa" style="color:#0d9488; text-decoration:underline; font-weight:bold;">HOA vs No HOA: The Real Cost Comparison Nobody Shows You</a></li>
-              <li style="margin-bottom:10px;"><a href="/blog/hoa-vs-condo-fee" style="color:#0d9488; text-decoration:underline; font-weight:bold;">HOA vs Condo Fee: What's the Difference and Which Costs More?</a></li>
-            </ul>
-          </section>
-        </main>
-        <footer style="border-top:1px solid #e2e8f0; background-color:#1a2e4a; color:rgba(255,255,255,0.8); padding:40px 20px; text-align:center; font-family:'DM Sans', sans-serif;">
-          <p style="margin:0; font-size:14px;">&copy; 2026 HOACalculator.com. All rights reserved. | <a href="/privacy-policy" style="color:#0d9488; text-decoration:none;">Privacy Policy</a> | <a href="/disclaimer" style="color:#0d9488; text-decoration:none;">Disclaimer</a></p>
-        </footer>
-      </div>
+      <!-- SEO Fallback Content for Crawlers & Audits. Replaced instantly by React at runtime. -->
+      <header style="max-width:1200px; margin:0 auto; padding:20px; display:flex; justify-content:space-between; align-items:center; font-family:'DM Sans', sans-serif;">
+        <h1 style="font-family:'DM Serif Display', Georgia, serif; font-size:24px; color:#1a2e4a; margin:0;">HOA Fee Calculator</h1>
+        <nav style="display:flex; gap:15px;">
+          <a href="/" style="color:#1a2e4a; text-decoration:none; font-weight:bold; font-size:14px;">Home</a>
+          <a href="/states" style="color:#1a2e4a; text-decoration:none; font-weight:bold; font-size:14px;">HOA Fees by State</a>
+          <a href="/compare" style="color:#1a2e4a; text-decoration:none; font-weight:bold; font-size:14px;">Compare HOA Communities</a>
+          <a href="/about" style="color:#1a2e4a; text-decoration:none; font-weight:bold; font-size:14px;">About HOACalculator.com</a>
+          <a href="/blog" style="color:#1a2e4a; text-decoration:none; font-weight:bold; font-size:14px;">Real Estate Blog</a>
+          <a href="/contact" style="color:#1a2e4a; text-decoration:none; font-weight:bold; font-size:14px;">Contact Support</a>
+        </nav>
+      </header>
+
+      <main style="max-width:800px; margin:40px auto; padding:0 20px; line-height:1.75; font-family:'DM Sans', sans-serif; color:#1a2e4a;">
+        <section style="margin-bottom:40px;">
+          <h2 style="font-family:'DM Serif Display', Georgia, serif; font-size:28px; color:#1a2e4a; margin-bottom:15px;">Estimate Your True Lifetime HOA Fees &amp; Costs</h2>
+          <p>Welcome to <strong>HOACalculator.com</strong>, the internet's most accurate homeowners association calculator designed to calculate, analyze, and estimate the real influence of monthly developer dues on your property assets and physical homeownership equity. Whether you are buying a suburban single-family home or looking at a high-density urban condo, our dynamic calculations help you model 10-year, 20-year, and 30-year carrying costs with realistic interest rates and inflation forecasts of 4% per year.</p>
+        </section>
+
+        <section style="margin-bottom:40px;">
+          <h2 style="font-family:'DM Serif Display', Georgia, serif; font-size:28px; color:#1a2e4a; margin-bottom:15px;">Understanding the Real Expense of Association Living</h2>
+          <p>Many first-time homebuyers assume that their mortgage payment is the only monthly carrying cost. However, choosing a property with a homeowners association adds a mandatory recurring obligation that typically increases over time. HOA fees are legally binding and non-negotiable carrying costs used to preserve shared infrastructure, exterior siding, roofs, and central community amenities like swimming pools, tennis courts, and safety gates.</p>
+          <p>Before purchasing, it is critical to perform due diligence. We recommend analyzing the association's general reserve study, checking past assessment records, and assessing whether self-management is cheaper. For instance, self-managing your own private pool typically adds $150–250 per month, while private lawn care averages $120–200 per month. If your condo or townhouse association dues consolidate these expenses, they may provide a significant bulk discount over individual management.</p>
+        </section>
+
+        <section style="margin-bottom:40px;">
+          <h2 style="font-family:'DM Serif Display', Georgia, serif; font-size:28px; color:#1a2e4a; margin-bottom:15px;">HOA Fees &amp; Rules Across the USA</h2>
+          <p>Our research team compiles annual data across all fifty states to help you evaluate localized costs. Select your state below to access city-by-city databases, legal code rules, and average carries:</p>
+          <ul style="padding-left:20px;">
+            <li style="margin-bottom:10px;"><a href="/states/california" style="color:#0d9488; text-decoration:underline; font-weight:bold;">California HOA Fees Calculator &amp; Guide</a></li>
+            <li style="margin-bottom:10px;"><a href="/states/texas" style="color:#0d9488; text-decoration:underline; font-weight:bold;">Texas HOA Fees Calculator &amp; Guide</a></li>
+            <li style="margin-bottom:10px;"><a href="/states/florida" style="color:#0d9488; text-decoration:underline; font-weight:bold;">Florida HOA Fees Calculator &amp; Guide</a></li>
+            <li style="margin-bottom:10px;"><a href="/states/new-york" style="color:#0d9488; text-decoration:underline; font-weight:bold;">New York HOA Fees &amp; Condo Costs</a></li>
+            <li style="margin-bottom:10px;"><a href="/states/georgia" style="color:#0d9488; text-decoration:underline; font-weight:bold;">Georgia HOA Fees &amp; Management Laws</a></li>
+            <li style="margin-bottom:10px;"><a href="/states/north-carolina" style="color:#0d9488; text-decoration:underline; font-weight:bold;">North Carolina HOA Fees Analysis</a></li>
+            <li style="margin-bottom:10px;"><a href="/states/illinois" style="color:#0d9488; text-decoration:underline; font-weight:bold;">Illinois HOA Fees &amp; Condo Regulations Code</a></li>
+          </ul>
+        </section>
+
+        <section style="margin-bottom:40px;">
+          <h2 style="font-family:'DM Serif Display', Georgia, serif; font-size:28px; color:#1a2e4a; margin-bottom:15px;">Educational Guides &amp; Helpful Resources</h2>
+          <p>Stay informed before buying. Read our deep-dive articles written by senior US real estate research analysts:</p>
+          <ul style="padding-left:20px;">
+            <li style="margin-bottom:10px;"><a href="/blog/what-is-hoa-fee" style="color:#0d9488; text-decoration:underline; font-weight:bold;">What is an HOA Fee? A Beginner's Guide to Homeowners Associations</a></li>
+            <li style="margin-bottom:10px;"><a href="/blog/average-hoa-fees-by-state" style="color:#0d9488; text-decoration:underline; font-weight:bold;">Average HOA Fees by State: Cost Comparison &amp; Data Analysis</a></li>
+            <li style="margin-bottom:10px;"><a href="/blog/hoa-fees-florida" style="color:#0d9488; text-decoration:underline; font-weight:bold;">Florida HOA Fees Analysis: Complete City-by-City Guide</a></li>
+            <li style="margin-bottom:10px;"><a href="/blog/hoa-fees-california" style="color:#0d9488; text-decoration:underline; font-weight:bold;">California HOA Fees: Understanding Common-Interest Carries</a></li>
+            <li style="margin-bottom:10px;"><a href="/blog/hoa-fees-texas" style="color:#0d9488; text-decoration:underline; font-weight:bold;">Texas HOA Fees Guide: Chapter 209 Property Code Regulations</a></li>
+            <li style="margin-bottom:10px;"><a href="/blog/hoa-vs-no-hoa" style="color:#0d9488; text-decoration:underline; font-weight:bold;">HOA vs No HOA: The Real Cost Comparison Nobody Shows You</a></li>
+            <li style="margin-bottom:10px;"><a href="/blog/hoa-vs-condo-fee" style="color:#0d9488; text-decoration:underline; font-weight:bold;">HOA vs Condo Fee: What's the Difference and Which Costs More?</a></li>
+          </ul>
+        </section>
+      </main>
+
+      <footer style="border-top:1px solid #e2e8f0; background-color:#1a2e4a; color:rgba(255,255,255,0.8); padding:40px 20px; text-align:center; font-family:'DM Sans', sans-serif;">
+        <p style="margin:0; font-size:14px;">&copy; 2026 HOACalculator.com. All rights reserved. | <a href="/privacy-policy" style="color:#0d9488; text-decoration:none;">Privacy Policy</a> | <a href="/disclaimer" style="color:#0d9488; text-decoration:none;">Disclaimer</a></p>
+      </footer>
     </div>
     <script type="module" src="/src/main.tsx"></script>
-    <script>
-      // Hide skeleton once React has mounted
-      window.__hideLoading = function() {
-        var el = document.getElementById('app-loading');
-        if (el) el.style.display = 'none';
-      };
-    </script>
   </body>
 </html>

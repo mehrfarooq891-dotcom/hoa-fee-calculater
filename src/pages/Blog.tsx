@@ -5,6 +5,13 @@ import { Link } from 'react-router-dom';
 export default function Blog() {
   const posts = [
     {
+      title: "HOA vs Condo Fee: What's the Difference and Which Costs More?",
+      excerpt: "Buyers confuse HOA fees and condo fees constantly—and it costs them. Discover the clear legal differences, typical coverage limits, and how average monthly costs stack up.",
+      date: "May 20, 2026",
+      category: "Guides",
+      slug: "/blog/hoa-vs-condo-fee"
+    },
+    {
       title: "HOA vs No HOA: The Real Cost Comparison Nobody Shows You",
       excerpt: "No HOA sounds cheaper until you price out your own pool maintenance and landscaping. Compare the true costs of self-management vs association fees in this data-backed guide.",
       date: "May 18, 2026",

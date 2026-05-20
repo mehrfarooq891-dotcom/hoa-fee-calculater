@@ -9,8 +9,10 @@
     <link rel="apple-touch-icon" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" as="style">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" media="print" onload="this.media='all'">
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap">
+    </noscript>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js" defer></script>
     <title>HOA Fee Calculator 2026 | Estimate Your True Cost | HOACalculator.com</title>
     <style id="critical-fouc-css">
@@ -43,7 +45,7 @@
       // Defensive Failsafe: ensure the site becomes visible even if JS or a resource fails
       setTimeout(function() {
         document.documentElement.style.visibility = 'visible';
-      }, 1200);
+      }, 300);
       window.addEventListener('DOMContentLoaded', function() {
         document.documentElement.style.visibility = 'visible';
       });
@@ -110,10 +112,5 @@
       </footer>
     </div>
     <script type="module" src="/src/main.tsx"></script>
-    <script>
-      window.addEventListener('load', function() {
-        document.documentElement.style.visibility = 'visible';
-      });
-    </script>
   </body>
 </html>

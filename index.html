@@ -36,17 +36,16 @@
       a:hover {
         color: #0f766e;
       }
-      /* Hide SEO fallback content — React will replace #root instantly */
-      #root > header,
-      #root > main,
-      #root > footer {
+      /* Hide SEO fallback — shown only to crawlers, not real users */
+      #seo-fallback {
         display: none;
       }
     </style>
   </head>
   <body class="bg-white text-[#1a2e4a] font-sans m-0 p-0">
     <div id="root">
-      <!-- SEO Fallback Content for Crawlers & Audits. Replaced instantly by React at runtime. -->
+      <div id="seo-fallback">
+      <!-- SEO Fallback Content for Crawlers & Audits. Hidden from users, visible to crawlers. -->
       <header style="max-width:1200px; margin:0 auto; padding:20px; display:flex; justify-content:space-between; align-items:center; font-family:'DM Sans', sans-serif;">
         <h1 style="font-family:'DM Serif Display', Georgia, serif; font-size:24px; color:#1a2e4a; margin:0;">HOA Fee Calculator</h1>
         <nav style="display:flex; gap:15px;">
@@ -103,6 +102,7 @@
       <footer style="border-top:1px solid #e2e8f0; background-color:#1a2e4a; color:rgba(255,255,255,0.8); padding:40px 20px; text-align:center; font-family:'DM Sans', sans-serif;">
         <p style="margin:0; font-size:14px;">&copy; 2026 HOACalculator.com. All rights reserved. | <a href="/privacy-policy" style="color:#0d9488; text-decoration:none;">Privacy Policy</a> | <a href="/disclaimer" style="color:#0d9488; text-decoration:none;">Disclaimer</a></p>
       </footer>
+      </div><!-- end seo-fallback -->
     </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

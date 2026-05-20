@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" style="visibility:hidden">
+<html lang="en">
   <head>
     <meta name="google-site-verification" content="C64O6qaOiSJpt66MWAhJ-GBk_9aM_UuTijINnNbmEHQ" />
     <meta charset="UTF-8" />
@@ -15,11 +15,7 @@
     </noscript>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js" defer></script>
     <title>HOA Fee Calculator 2026 | Estimate Your True Cost | HOACalculator.com</title>
-    <style id="critical-fouc-css">
-      /* Critical Above-The-Fold Inline Styles to prevent FOUC */
-      html {
-        visibility: hidden;
-      }
+    <style>
       body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
         background-color: #ffffff;
@@ -40,16 +36,13 @@
       a:hover {
         color: #0f766e;
       }
+      /* Hide SEO fallback content — React will replace #root instantly */
+      #root > header,
+      #root > main,
+      #root > footer {
+        display: none;
+      }
     </style>
-    <script>
-      // Defensive Failsafe: ensure the site becomes visible even if JS or a resource fails
-      setTimeout(function() {
-        document.documentElement.style.visibility = 'visible';
-      }, 300);
-      window.addEventListener('DOMContentLoaded', function() {
-        document.documentElement.style.visibility = 'visible';
-      });
-    </script>
   </head>
   <body class="bg-white text-[#1a2e4a] font-sans m-0 p-0">
     <div id="root">
@@ -75,7 +68,7 @@
         <section style="margin-bottom:40px;">
           <h2 style="font-family:'DM Serif Display', Georgia, serif; font-size:28px; color:#1a2e4a; margin-bottom:15px;">Understanding the Real Expense of Association Living</h2>
           <p>Many first-time homebuyers assume that their mortgage payment is the only monthly carrying cost. However, choosing a property with a homeowners association adds a mandatory recurring obligation that typically increases over time. HOA fees are legally binding and non-negotiable carrying costs used to preserve shared infrastructure, exterior siding, roofs, and central community amenities like swimming pools, tennis courts, and safety gates.</p>
-          <p>Before purchasing, it is critical to perform due diligence. We recommend analyzing the association’s general reserve study, checking past assessment records, and assessing whether self-management is cheaper. For instance, self-managing your own private pool typically adds $150–250 per month, while private lawn care averages $120–200 per month. If your condo or townhouse association dues consolidate these expenses, they may provide a significant bulk discount over individual management.</p>
+          <p>Before purchasing, it is critical to perform due diligence. We recommend analyzing the association's general reserve study, checking past assessment records, and assessing whether self-management is cheaper. For instance, self-managing your own private pool typically adds $150–250 per month, while private lawn care averages $120–200 per month. If your condo or townhouse association dues consolidate these expenses, they may provide a significant bulk discount over individual management.</p>
         </section>
 
         <section style="margin-bottom:40px;">

@@ -47,7 +47,7 @@ export default function Home() {
             <Link to="/about" className="hover:text-accent transition-colors">About</Link>
             <Link to="/blog" className="hover:text-accent transition-colors">Blog</Link>
             <Link to="/contact" className="hover:text-accent transition-colors">Contact</Link>
-            <a href="#calculator" className="btn-primary py-2 px-6">Calculate</a>
+            <a href="#calculator" className="bg-primary hover:bg-primary/90 text-white py-2 px-6 rounded-full font-bold transition-all active:scale-95 inline-flex items-center justify-center text-sm">Calculate</a>
           </nav>
         </div>
       </header>
@@ -85,8 +85,30 @@ export default function Home() {
           <div className="hidden lg:block relative">
             <div className="absolute inset-0 bg-accent/5 rounded-3xl -rotate-2 transform"></div>
             <div className="relative card border-none shadow-2xl p-4">
-              <div className="bg-primary rounded-xl h-[400px] w-full flex items-center justify-center">
-                <span className="text-white/20 font-serif text-8xl">HOA</span>
+              <div className="p-6 bg-white rounded-xl h-[400px] flex flex-col justify-between">
+                <div>
+                  <h3 className="text-2xl font-serif font-bold text-primary mb-1">HOA Market Data</h3>
+                  <p className="text-xs text-primary/75 mb-4 font-sans font-medium">National statistics for US homeowners associations in 2026.</p>
+                </div>
+                
+                <div className="grid grid-cols-2 gap-4 flex-grow">
+                  <div className="stat-card flex flex-col justify-center p-4">
+                    <div className="stat-label text-[10px] mb-1">Average US HOA Fee</div>
+                    <div className="stat-value text-xl font-bold text-accent font-serif">$331<span className="text-xs font-sans font-normal text-primary/60">/mo</span></div>
+                  </div>
+                  <div className="stat-card flex flex-col justify-center p-4">
+                    <div className="stat-label text-[10px] mb-1">HOA Communities</div>
+                    <div className="stat-value text-xl font-bold text-accent font-serif">370,000+</div>
+                  </div>
+                  <div className="stat-card flex flex-col justify-center p-4">
+                    <div className="stat-label text-[10px] mb-1">Homeowners in HOAs</div>
+                    <div className="stat-value text-xl font-bold text-accent font-serif">74 Million</div>
+                  </div>
+                  <div className="stat-card flex flex-col justify-center p-4">
+                    <div className="stat-label text-[10px] mb-1">Avg Annual Increase</div>
+                    <div className="stat-value text-xl font-bold text-accent font-serif">3% – 5%</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

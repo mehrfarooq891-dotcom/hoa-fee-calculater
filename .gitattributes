@@ -1,0 +1,2 @@
+# Tell Git to always keep this project's version of vercel.json during merges
+vercel.json merge=ours

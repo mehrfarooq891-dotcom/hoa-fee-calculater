@@ -19,9 +19,11 @@ export default function About() {
           <nav className="hidden md:flex gap-8 items-center text-sm font-bold uppercase tracking-wider">
             <Link to="/" className="hover:text-accent transition-colors">Home</Link>
             <Link to="/states" className="hover:text-accent transition-colors">States</Link>
+            <Link to="/compare" className="hover:text-accent transition-colors">Compare</Link>
             <Link to="/blog" className="hover:text-accent transition-colors">Blog</Link>
             <Link to="/contact" className="hover:text-accent transition-colors">Contact</Link>
             <Link to="/about" className="text-accent">About</Link>
+            <Link to="/#calculator" className="bg-accent hover:opacity-90 text-white py-2 px-6 rounded-full font-bold transition-all active:scale-95 inline-flex items-center justify-center text-sm">Calculate</Link>
           </nav>
         </div>
       </header>
@@ -38,14 +40,11 @@ export default function About() {
 
           {/* Expert / Bio Section */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-24">
-            <div className="relative">
+            <div className="relative flex items-center justify-center">
               <div className="absolute inset-0 bg-accent/5 rounded-3xl rotate-3 transform"></div>
-              <img 
-                src="https://randomuser.me/api/portraits/men/52.jpg" 
-                alt="Michael Torres" 
-                className="relative z-10 w-full rounded-3xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-500"
-                referrerPolicy="no-referrer"
-              />
+              <div className="relative z-10 w-full max-w-[400px] aspect-square rounded-3xl bg-primary flex items-center justify-center shadow-2xl">
+                <span className="text-8xl font-serif font-bold text-accent select-none">MT</span>
+              </div>
             </div>
             <div>
               <h2 className="text-3xl font-serif font-bold text-primary mb-6">Meet Michael Torres</h2>
@@ -101,6 +100,21 @@ export default function About() {
               Not financial or legal advice.
             </p>
           </div>
+
+          {/* CTA Section */}
+          <section className="bg-accent text-white py-16 px-6 text-center rounded-3xl mt-16 shadow-xl">
+            <div className="max-w-3xl mx-auto text-center">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-4">
+                Ready to Calculate Your HOA Cost?
+              </h2>
+              <p className="text-lg opacity-90 mb-8 font-sans font-medium">
+                Free tool — instant results — no signup
+              </p>
+              <Link to="/#calculator" className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-full font-bold transition-all duration-300 active:scale-95 inline-flex items-center justify-center text-base shadow-md">
+                Calculate Now
+              </Link>
+            </div>
+          </section>
         </div>
       </main>
 

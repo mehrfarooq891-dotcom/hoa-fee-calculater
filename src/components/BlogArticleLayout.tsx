@@ -31,6 +31,12 @@ export default function BlogArticleLayout({
     "author": {
       "@type": "Organization",
       "name": "HOA Research Team"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Michael Torres",
+      "jobTitle": "Real Estate Financial Analyst",
+      "url": "https://www.hoafeecalculator.com/about"
     }
   };
 

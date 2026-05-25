@@ -35,10 +35,22 @@ export default function HOAVsCondoFeeArticle() {
         <div className="max-w-7xl mx-auto flex justify-between items-center bg-transparent">
           <Link to="/" className="flex items-center">
             <img 
-              src="/logo.svg" 
+              src="/hoa_calculator_logo.svg" 
               alt="HOA Fee Calculator" 
               style={{height: '45px', width: 'auto'}}
+              onError={(e) => {
+                e.currentTarget.style.display = 'none';
+                if (e.currentTarget.nextElementSibling) {
+                  (e.currentTarget.nextElementSibling as HTMLElement).style.display = 'block';
+                }
+              }}
             />
+            <span 
+              className="font-serif text-2xl font-bold text-primary"
+              style={{display: 'none'}}
+            >
+              HOA<span className="text-accent">Calculator</span>.com
+            </span>
           </Link>
           <nav className="hidden md:flex gap-8 items-center text-sm font-bold uppercase tracking-wider">
             <Link to="/" className="hover:text-accent transition-colors text-primary font-bold">Home</Link>
@@ -357,10 +369,22 @@ export default function HOAVsCondoFeeArticle() {
           <div className="flex justify-center mb-4 bg-transparent">
             <Link to="/" className="flex items-center">
               <img 
-                src="/logo.svg" 
+                src="/hoa_calculator_logo.svg" 
                 alt="HOA Fee Calculator" 
                 style={{height: '45px', width: 'auto'}}
+                onError={(e) => {
+                  e.currentTarget.style.display = 'none';
+                  if (e.currentTarget.nextElementSibling) {
+                    (e.currentTarget.nextElementSibling as HTMLElement).style.display = 'block';
+                  }
+                }}
               />
+              <span 
+                className="font-serif text-2xl font-bold text-white bg-transparent"
+                style={{display: 'none'}}
+              >
+                HOA<span className="text-accent bg-transparent">Calculator</span>.com
+              </span>
             </Link>
           </div>
           <p className="text-sm">© 2026 HOACalculator.com — Expert Analysis for All 50 States.</p>

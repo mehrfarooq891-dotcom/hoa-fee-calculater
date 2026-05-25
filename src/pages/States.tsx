@@ -26,10 +26,22 @@ export default function States() {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <Link to="/" className="flex items-center">
             <img 
-              src="/logo.svg" 
+              src="/hoa_calculator_logo.svg" 
               alt="HOA Fee Calculator" 
               style={{height: '45px', width: 'auto'}}
+              onError={(e) => {
+                e.currentTarget.style.display = 'none';
+                if (e.currentTarget.nextElementSibling) {
+                  (e.currentTarget.nextElementSibling as HTMLElement).style.display = 'block';
+                }
+              }}
             />
+            <span 
+              className="font-serif text-2xl font-bold text-primary"
+              style={{display: 'none'}}
+            >
+              HOA<span className="text-accent">Calculator</span>.com
+            </span>
           </Link>
           <nav className="hidden md:flex gap-8 items-center text-sm font-bold uppercase tracking-wider">
             <Link to="/" className="hover:text-accent transition-colors">Home</Link>
@@ -92,12 +104,24 @@ export default function States() {
       <footer className="bg-primary border-t border-white/10 py-20 px-6 text-white/60 mt-auto">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="col-span-1 md:col-span-2">
-             <Link to="/" className="inline-block mb-6">
+             <Link to="/" className="inline-flex items-center mb-6">
                <img 
-                 src="/logo.svg" 
+                 src="/hoa_calculator_logo.svg" 
                  alt="HOA Fee Calculator" 
                  style={{height: '45px', width: 'auto'}}
+                 onError={(e) => {
+                   e.currentTarget.style.display = 'none';
+                   if (e.currentTarget.nextElementSibling) {
+                     (e.currentTarget.nextElementSibling as HTMLElement).style.display = 'block';
+                   }
+                 }}
                />
+               <span 
+                 className="font-serif text-2xl font-bold text-white"
+                 style={{display: 'none'}}
+               >
+                 HOA<span className="text-accent">Calculator</span>.com
+               </span>
              </Link>
              <p className="max-w-sm text-sm opacity-80 leading-relaxed">The most comprehensive HOA fee calculation tool for US homebuyers.</p>
           </div>

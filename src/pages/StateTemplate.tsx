@@ -221,8 +221,12 @@ export default function StateTemplate() {
       {/* Header */}
       <header className="border-b border-border py-4 px-6 fixed top-0 w-full bg-white/80 backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <Link to="/" className="font-serif text-2xl font-bold text-primary">
-            HOA<span className="text-accent">Calculator</span>.com
+          <Link to="/" className="flex items-center">
+            <img 
+              src="/logo.svg" 
+              alt="HOA Fee Calculator" 
+              style={{height: '45px', width: 'auto'}}
+            />
           </Link>
           <nav className="hidden md:flex gap-8 items-center text-sm font-bold uppercase tracking-wider">
             <Link to="/" className="hover:text-accent transition-colors">Home</Link>
@@ -336,7 +340,13 @@ export default function StateTemplate() {
 
       <footer className="bg-primary py-12 px-6 text-white/40 mt-auto border-t border-white/10">
         <div className="max-w-7xl mx-auto flex flex-col md:row justify-between items-center gap-6">
-          <div className="font-serif text-2xl font-bold text-white">HOA<span className="text-accent">Calculator</span>.com</div>
+          <Link to="/" className="flex items-center">
+            <img 
+              src="/logo.svg" 
+              alt="HOA Fee Calculator" 
+              style={{height: '45px', width: 'auto'}}
+            />
+          </Link>
           <p className="text-sm">© 2026 All Rights Reserved. Data for {displayName} updated April 2026.</p>
         </div>
       </footer>

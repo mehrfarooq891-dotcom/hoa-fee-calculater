@@ -38,8 +38,12 @@ export default function Home() {
       {/* Header */}
       <header className="border-b border-border py-4 px-6 fixed top-0 w-full bg-white/80 backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <Link to="/" className="font-serif text-2xl font-bold text-primary">
-            HOA<span className="text-accent">Calculator</span>.com
+          <Link to="/" className="flex items-center">
+            <img 
+              src="/logo.svg" 
+              alt="HOA Fee Calculator" 
+              style={{height: '45px', width: 'auto'}}
+            />
           </Link>
           <nav className="hidden md:flex gap-8 items-center text-sm font-bold uppercase tracking-wider">
             <Link to="/states" className="hover:text-accent transition-colors">States</Link>
@@ -287,7 +291,13 @@ export default function Home() {
       <footer className="bg-primary border-t border-white/10 py-20 px-6 text-white/60">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="col-span-1 md:col-span-2">
-             <div className="font-serif text-2xl font-bold text-white mb-6">HOA<span className="text-accent">Calculator</span>.com</div>
+             <Link to="/" className="inline-block mb-6">
+               <img 
+                 src="/logo.svg" 
+                 alt="HOA Fee Calculator" 
+                 style={{height: '45px', width: 'auto'}}
+               />
+             </Link>
              <p className="max-w-sm text-sm opacity-80 leading-relaxed">The most comprehensive HOA fee calculation tool for US homebuyers. Trusted by homeowners in all 50 states.</p>
           </div>
           <div>

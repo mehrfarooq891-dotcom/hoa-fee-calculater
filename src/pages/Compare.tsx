@@ -39,8 +39,12 @@ export default function Compare() {
 
       <header className="border-b border-border py-4 px-6 fixed top-0 w-full bg-white/80 backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <Link to="/" className="font-serif text-2xl font-bold text-primary">
-            HOA<span className="text-accent">Calculator</span>.com
+          <Link to="/" className="flex items-center">
+            <img 
+              src="/logo.svg" 
+              alt="HOA Fee Calculator" 
+              style={{height: '45px', width: 'auto'}}
+            />
           </Link>
           <nav className="hidden md:flex gap-8 items-center text-sm font-bold uppercase tracking-wider">
             <Link to="/" className="hover:text-accent transition-colors font-bold text-primary">Home</Link>

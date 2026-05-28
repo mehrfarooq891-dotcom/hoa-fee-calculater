@@ -1,11 +1,3 @@
-// WARNING: This file should never be modified.
-// 
-// vercel.json content should always be exactly:
-// {
-//   "version": 2,
-//   "builds": [...],
-//   "routes": [...]
-// }
 {
   "cleanUrls": true,
   "trailingSlash": false,

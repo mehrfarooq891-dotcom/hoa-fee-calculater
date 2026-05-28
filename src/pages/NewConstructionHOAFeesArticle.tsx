@@ -14,7 +14,7 @@ export default function NewConstructionHOAFeesArticle() {
       description="Why are HOA fees in brand-new subdivisions so low, and why do they skyrocket the moment the developer hands over control? Learn about builder subsidies."
       category="Homebuying Guide"
       readTime="7 min read"
-      date="May 21, 2026"
+      date="May 18, 2026"
       relatedLinks={relatedLinks}
     >
       <p>

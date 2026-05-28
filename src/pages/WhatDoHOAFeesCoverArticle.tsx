@@ -14,7 +14,7 @@ export default function WhatDoHOAFeesCoverArticle() {
       description="Where does your monthly HOA payment go? Unpack the exact allocations for maintenance, master insurance, utilities, reserves, and administration."
       category="Guides"
       readTime="7 min read"
-      date="May 21, 2026"
+      date="May 04, 2026"
       relatedLinks={relatedLinks}
     >
       <p>

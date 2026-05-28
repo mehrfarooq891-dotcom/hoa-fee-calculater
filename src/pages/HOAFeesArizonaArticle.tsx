@@ -13,7 +13,7 @@ export default function HOAFeesArizonaArticle() {
       description="Explore the average homeowners association dues, desert landscaping regulations, and statutory property laws unique to the state of Arizona."
       category="States Data"
       readTime="7 min read"
-      date="May 21, 2026"
+      date="May 14, 2026"
       relatedLinks={relatedLinks}
     >
       <p>

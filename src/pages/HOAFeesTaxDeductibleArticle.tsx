@@ -15,7 +15,7 @@ export default function HOAFeesTaxDeductibleArticle() {
       description="Buying or owning a property inside an HOA? Discern the clear-cut IRS guidelines on under what conditions you can claim association dues as tax write-offs including primary homes, rentals, and home offices."
       category="Finance"
       readTime="6 min read"
-      date="May 21, 2026"
+      date="May 26, 2026"
       relatedLinks={relatedLinks}
     >
       {/* Intro & Hook */}

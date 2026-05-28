@@ -14,7 +14,7 @@ export default function HowMuchHOAFeeTooMuchArticle() {
       description="How do you decide if an HOA fee is reasonable or overinflated? Learn how to calculate the HOA expense-to-home-value ratio and assess actual value."
       category="Finance"
       readTime="7 min read"
-      date="May 21, 2026"
+      date="May 20, 2026"
       relatedLinks={relatedLinks}
     >
       <p>

@@ -14,7 +14,7 @@ export default function HOAManagementCompaniesArticle() {
       description="What is the difference between your HOA board of directors and your property management company? Understand who is responsible for your money."
       category="Guides"
       readTime="6 min read"
-      date="May 21, 2026"
+      date="May 09, 2026"
       relatedLinks={relatedLinks}
     >
       <p>

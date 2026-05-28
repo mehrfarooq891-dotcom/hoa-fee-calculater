@@ -14,7 +14,7 @@ export default function FightHOAFeeIncreaseArticle() {
       description="Tired of soaring monthly dues? Here is an actionable guide on how to audit your HOA budget, challenge fee hikes legally, and organize your community."
       category="Strategy & Action"
       readTime="7 min read"
-      date="May 21, 2026"
+      date="May 25, 2026"
       relatedLinks={relatedLinks}
     >
       <p>

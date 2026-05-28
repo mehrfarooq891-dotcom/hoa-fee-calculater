@@ -14,7 +14,7 @@ export default function HOASpecialAssessmentArticle() {
       description="Special assessments can cost homeowners thousands in sudden charges. Learn how they work, why they happen, and how to spot developer red flags."
       category="Finance"
       readTime="7 min read"
-      date="May 21, 2026"
+      date="May 24, 2026"
       relatedLinks={relatedLinks}
     >
       <p>

@@ -13,7 +13,7 @@ export default function TownhouseHOAFeesArticle() {
       description="How much are typical townhouse HOA fees? Learn what they cover, how they compare to condos, and why they protect your roof and siding."
       category="Property Types"
       readTime="6 min read"
-      date="May 21, 2026"
+      date="May 05, 2026"
       relatedLinks={relatedLinks}
     >
       <p>

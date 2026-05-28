@@ -13,7 +13,7 @@ export default function StatesNoHOALawsArticle() {
       description="Tired of property rules and strict associations? Review the US states with the lowest concentration of HOAs and minimal regulatory codes."
       category="States Data"
       readTime="7 min read"
-      date="May 21, 2026"
+      date="May 02, 2026"
       relatedLinks={relatedLinks}
     >
       <p>

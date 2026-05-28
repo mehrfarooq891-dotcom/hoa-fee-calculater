@@ -13,7 +13,7 @@ export default function CondoHOAFeesNYCArticle() {
       description="Navigating the New York City real estate market can be daunting. Learn the differences between condo common charges and co-op maintenance fees."
       category="Guides"
       readTime="7 min read"
-      date="May 21, 2026"
+      date="May 16, 2026"
       relatedLinks={relatedLinks}
     >
       <p>

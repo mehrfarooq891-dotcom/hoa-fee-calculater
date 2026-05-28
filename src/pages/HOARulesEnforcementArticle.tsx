@@ -14,7 +14,7 @@ export default function HOARulesEnforcementArticle() {
       description="Tired of receiving warning notices about your lawn or trash cans? Learn the legal limits of HOA fine power and how to dispute paint or landscape fines."
       category="Legal & Rights"
       readTime="7 min read"
-      date="May 21, 2026"
+      date="May 07, 2026"
       relatedLinks={relatedLinks}
     >
       <p>

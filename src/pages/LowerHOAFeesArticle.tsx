@@ -14,7 +14,7 @@ export default function LowerHOAFeesArticle() {
       description="Tired of climbing association dues? Explore realistic, proactive steps you can take to lower HOA overhead and control monthly costs."
       category="Strategy & Action"
       readTime="6 min read"
-      date="May 21, 2026"
+      date="May 11, 2026"
       relatedLinks={relatedLinks}
     >
       <p>

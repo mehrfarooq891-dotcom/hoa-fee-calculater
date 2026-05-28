@@ -13,7 +13,7 @@ export default function HOAAnnualBudgetArticle() {
       description="How does your homeowners association plan its annual expenses? Learn how budgets are drafted, what counts as overhead, and how to spot waste."
       category="Finance & Analysis"
       readTime="6 min read"
-      date="May 21, 2026"
+      date="May 03, 2026"
       relatedLinks={relatedLinks}
     >
       <p>

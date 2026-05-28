@@ -14,7 +14,7 @@ export default function HOADocumentRedFlagsArticle() {
       description="Don't get trapped in a dysfunctional community. Learn the critical flags to watch for in CC&Rs, bylaws, minutes, and audits before closing."
       category="Covenants & Bylaws"
       readTime="8 min read"
-      date="May 21, 2026"
+      date="May 22, 2026"
       relatedLinks={relatedLinks}
     >
       <p>

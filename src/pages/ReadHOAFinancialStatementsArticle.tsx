@@ -14,7 +14,7 @@ export default function ReadHOAFinancialStatementsArticle() {
       description="Don't let confusing bookkeeping scare you away. Learn how to audit an HOA ledger, income statements, balance sheets, and reserve health before buying."
       category="Finance & Analysis"
       readTime="8 min read"
-      date="May 21, 2026"
+      date="May 23, 2026"
       relatedLinks={relatedLinks}
     >
       <p>

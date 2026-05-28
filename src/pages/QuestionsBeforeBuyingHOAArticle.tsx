@@ -14,7 +14,7 @@ export default function QuestionsBeforeBuyingHOAArticle() {
       description="Don't sign a real estate purchase contract until you have answers to these vital questions about reserves, rules, insurance, and litigation."
       category="Homebuying Guide"
       readTime="7 min read"
-      date="May 21, 2026"
+      date="May 06, 2026"
       relatedLinks={relatedLinks}
     >
       <p>

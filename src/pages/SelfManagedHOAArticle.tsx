@@ -14,7 +14,7 @@ export default function SelfManagedHOAArticle() {
       description="Can an HOA function successfully without a professional management firm? Learn about the financial savings and manual burdens of self-management."
       category="Strategy & Operations"
       readTime="7 min read"
-      date="May 21, 2026"
+      date="May 08, 2026"
       relatedLinks={relatedLinks}
     >
       <p>

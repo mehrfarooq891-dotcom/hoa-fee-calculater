@@ -13,7 +13,7 @@ export default function HOAFeeCalculatorGuideArticle() {
       description="Learn how our free calculator helps you estimate your true lifetime cost of HOA ownership, evaluate inflation rate adjustments, and grade your home affordability."
       category="Homebuying Guide"
       readTime="6 min read"
-      date="May 21, 2026"
+      date="May 01, 2026"
       relatedLinks={relatedLinks}
     >
       <p>

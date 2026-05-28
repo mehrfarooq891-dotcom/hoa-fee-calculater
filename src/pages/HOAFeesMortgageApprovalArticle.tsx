@@ -14,7 +14,7 @@ export default function HOAFeesMortgageApprovalArticle() {
       description="Did you know that a $300 monthly HOA fee can reduce your home buying budget by $50,000? Learn how lenders calculate DTI ratios with association dues."
       category="Tax & Finance"
       readTime="7 min read"
-      date="May 21, 2026"
+      date="May 19, 2026"
       relatedLinks={relatedLinks}
     >
       <p>

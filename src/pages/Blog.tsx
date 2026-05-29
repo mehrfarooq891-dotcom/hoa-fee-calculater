@@ -5,6 +5,13 @@ import { Link } from 'react-router-dom';
 export default function Blog() {
   const posts = [
     {
+      title: "HOA Fees in Texas: The Complete 2026 Homeowner's Legal & Financial Guide",
+      excerpt: "Moving to the Lone Star State? Discover average HOA fees in Texas, master development rules, and critical legal protections under Texas Property Code Chapter 209.",
+      date: "May 28, 2026",
+      category: "Data",
+      slug: "/blog/hoa-fees-texas-guide"
+    },
+    {
       title: "Are HOA Fees Tax Deductible? The Definitive 2026 Guide",
       excerpt: "Buying or owning a property inside an HOA? Discern the clear-cut IRS guidelines on under what conditions you can claim association dues as tax write-offs.",
       date: "May 26, 2026",

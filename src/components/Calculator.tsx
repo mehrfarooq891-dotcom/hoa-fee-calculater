@@ -26,6 +26,8 @@ export default function Calculator() {
     affordabilityScore: 'A',
   });
 
+  const [hasCalculated, setHasCalculated] = useState(false);
+
   const chartRef = useRef<HTMLCanvasElement>(null);
   const chartInstance = useRef<any>(null);
 
@@ -65,6 +67,11 @@ export default function Calculator() {
       hoaToIncomeRatio: parseFloat(ratio.toFixed(2)),
       affordabilityScore: score,
     });
+  };
+
+  const handleCalculateClick = () => {
+    calculate();
+    setHasCalculated(true);
   };
 
   useEffect(() => {
@@ -116,7 +123,7 @@ export default function Calculator() {
         }
       });
     }
-  }, [outputs.yearlyData]);
+  }, [outputs.yearlyData, hasCalculated]);
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-[380px_1fr] gap-8 items-start">
@@ -133,9 +140,10 @@ export default function Calculator() {
               <span className="absolute left-4 top-1/2 -translate-y-1/2 text-primary opacity-40">$</span>
               <input 
                 type="number"
-                value={inputs.propertyValue}
+                value={inputs.propertyValue || ""}
+                placeholder="$400,000"
                 onChange={(e) => setInputs({...inputs, propertyValue: parseInt(e.target.value) || 0})}
-                className="input-field pl-8"
+                className="input-field border-[#374151] pl-8"
               />
             </div>
           </div>
@@ -146,9 +154,10 @@ export default function Calculator() {
               <span className="absolute left-4 top-1/2 -translate-y-1/2 text-primary opacity-40">$</span>
               <input 
                 type="number"
-                value={inputs.monthlyHOA}
+                value={inputs.monthlyHOA || ""}
+                placeholder="$250"
                 onChange={(e) => setInputs({...inputs, monthlyHOA: parseInt(e.target.value) || 0})}
-                className="input-field pl-8"
+                className="input-field border-[#374151] pl-8"
               />
             </div>
           </div>
@@ -159,9 +168,10 @@ export default function Calculator() {
               <input 
                 type="number"
                 step="0.5"
-                value={inputs.annualIncrease}
+                value={inputs.annualIncrease || ""}
+                placeholder="3%"
                 onChange={(e) => setInputs({...inputs, annualIncrease: parseFloat(e.target.value) || 0})}
-                className="input-field"
+                className="input-field border-[#374151]"
               />
             </div>
             <div className="input-group">
@@ -169,9 +179,10 @@ export default function Calculator() {
               <div className="relative">
                 <input 
                   type="number"
-                  value={inputs.yearsOfOwnership}
+                  value={inputs.yearsOfOwnership || ""}
+                  placeholder="10"
                   onChange={(e) => setInputs({...inputs, yearsOfOwnership: parseInt(e.target.value) || 1})}
-                  className="input-field pr-12"
+                  className="input-field border-[#374151] pr-12"
                 />
                 <span className="absolute right-4 top-1/2 -translate-y-1/2 text-xs opacity-40">yrs</span>
               </div>
@@ -182,92 +193,121 @@ export default function Calculator() {
             <label className="input-label">Annual Income ($) <span className="text-[10px] uppercase tracking-wider opacity-40 ml-1 font-normal">(optional)</span></label>
             <input 
               type="number"
-              value={inputs.annualIncome}
+              value={inputs.annualIncome || ""}
+              placeholder="$120,000"
               onChange={(e) => setInputs({...inputs, annualIncome: parseInt(e.target.value) || 0})}
-              className="input-field"
+              className="input-field border-[#374151]"
             />
           </div>
 
           <button 
-            onClick={calculate}
+            onClick={handleCalculateClick}
             className="btn-primary w-full text-lg mt-4"
           >
             Calculate My Cost →
           </button>
+          <p className="text-xs text-center text-primary mt-2">
+            Results update instantly. No signup required.
+          </p>
         </div>
       </aside>
 
       {/* Results Dashboard */}
       <section className="space-y-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div className="card p-6 border-none bg-primary text-white shadow-lg overflow-hidden relative">
-            <div className="absolute top-0 right-0 w-24 h-24 bg-white opacity-5 -mr-12 -mt-12 rounded-full"></div>
-            <div className="stat-label text-white/60 mb-1">Total Lifetime Cost</div>
-            <div className="text-3xl font-serif font-bold text-accent">${outputs.totalLifetimeCost.toLocaleString()}</div>
-          </div>
+        {hasCalculated ? (
+          <div className="bg-[#EFF6FF] border-2 border-[#2563EB] rounded-2xl p-6 md:p-8 shadow-sm space-y-6">
+            <h3 className="text-xl font-serif font-bold text-primary mb-4">Your Lifetime Costs Analysis</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {/* Total Lifetime Cost Card */}
+              <div className="bg-white rounded-xl p-5 border border-blue-200/60 shadow-sm relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-20 h-20 bg-accent/5 -mr-10 -mt-10 rounded-full"></div>
+                <div className="stat-label text-primary/60 mb-1 font-bold uppercase tracking-wider text-xs">Total Lifetime Cost</div>
+                <div className="text-3xl font-serif font-bold text-accent">${outputs.totalLifetimeCost.toLocaleString()}</div>
+              </div>
 
-          <div className="card p-6 border-none shadow-lg">
-            <div className="stat-label mb-1">Monthly Avg. Cost</div>
-            <div className="text-3xl font-serif font-bold text-primary">${outputs.averageMonthlyCost.toLocaleString()}</div>
-          </div>
+              {/* Monthly Avg Cost Card */}
+              <div className="bg-white rounded-xl p-5 border border-blue-200/60 shadow-sm">
+                <div className="stat-label text-primary/60 mb-1 font-bold uppercase tracking-wider text-xs">Monthly Avg. Cost</div>
+                <div className="text-3xl font-serif font-bold text-primary">${outputs.averageMonthlyCost.toLocaleString()}</div>
+              </div>
 
-          <div className="card p-6 border-none shadow-lg">
-            <div className="stat-label mb-1">Income Ratio</div>
-            <div className="text-3xl font-serif font-bold text-primary">{outputs.hoaToIncomeRatio}%</div>
-          </div>
+              {/* Income Ratio Card */}
+              <div className="bg-white rounded-xl p-5 border border-blue-200/60 shadow-sm">
+                <div className="stat-label text-primary/60 mb-1 font-bold uppercase tracking-wider text-xs">Income Ratio</div>
+                <div className="text-3xl font-serif font-bold text-primary">{outputs.hoaToIncomeRatio}%</div>
+              </div>
 
-          <div className="card p-6 border-none shadow-lg">
-            <div className="stat-label mb-1">Affordability Grade</div>
-            <div className="flex items-center gap-3">
-              <span className="text-3xl font-serif font-bold text-primary">{outputs.affordabilityScore}</span>
-              <span className={cn(
-                "px-3 py-1 rounded-full text-xs font-bold",
-                outputs.affordabilityScore === 'A' ? 'bg-green-100 text-green-700' :
-                outputs.affordabilityScore === 'B' ? 'bg-blue-100 text-blue-700' :
-                outputs.affordabilityScore === 'C' ? 'bg-yellow-100 text-yellow-700' : 'bg-red-100 text-red-700'
-              )}>
-                ({
-                  outputs.affordabilityScore === 'A' ? 'Excellent' : 
-                  outputs.affordabilityScore === 'B' ? 'Good' : 
-                  outputs.affordabilityScore === 'C' ? 'Tight' : 'Risky'
-                })
-              </span>
+              {/* Affordability Grade Card */}
+              <div className="bg-white rounded-xl p-5 border border-blue-200/60 shadow-sm">
+                <div className="stat-label text-primary/60 mb-1 font-bold uppercase tracking-wider text-xs">Affordability Grade</div>
+                <div className="flex items-center gap-3">
+                  <span className="text-3xl font-serif font-bold text-primary">{outputs.affordabilityScore}</span>
+                  <span className={cn(
+                    "px-3 py-1 rounded-full text-xs font-bold",
+                    outputs.affordabilityScore === 'A' ? 'bg-green-100 text-green-700' :
+                    outputs.affordabilityScore === 'B' ? 'bg-blue-100 text-blue-700' :
+                    outputs.affordabilityScore === 'C' ? 'bg-yellow-100 text-yellow-700' : 'bg-red-100 text-red-700'
+                  )}>
+                    ({
+                      outputs.affordabilityScore === 'A' ? 'Excellent' : 
+                      outputs.affordabilityScore === 'B' ? 'Good' : 
+                      outputs.affordabilityScore === 'C' ? 'Tight' : 'Risky'
+                    })
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+        ) : (
+          <div className="card p-8 border-dashed border-2 border-border/80 flex flex-col items-center justify-center text-center py-16">
+            <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mb-6 text-accent">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <h3 className="text-2xl font-bold font-serif text-primary mb-3">Your Lifetime Costs Await</h3>
+            <p className="text-primary/70 max-w-sm mb-6 leading-relaxed">
+              Adjust the assumptions such as property value and HOA fees, then click the <strong>Calculate My Cost</strong> button above to reveal your detailed projection and affordability score.
+            </p>
+          </div>
+        )}
 
-        <div className="card border-none shadow-xl pb-0">
-          <h3 className="text-xl font-bold mb-6">HOA Fee Growth Projection</h3>
-          <div className="h-[300px] w-full">
-            <canvas ref={chartRef}></canvas>
-          </div>
-        </div>
+        {hasCalculated && (
+          <>
+            <div className="card border-none shadow-xl pb-0">
+              <h3 className="text-xl font-bold mb-6">HOA Fee Growth Projection</h3>
+              <div className="h-[300px] w-full">
+                <canvas ref={chartRef}></canvas>
+              </div>
+            </div>
 
-        <div className="card border-none shadow-xl p-0 overflow-hidden">
-          <div className="px-8 py-6 border-b border-border">
-            <h3 className="text-xl font-bold italic">Year-by-Year Breakdown</h3>
-          </div>
-          <div className="overflow-x-auto">
-            <table className="w-full text-left">
-              <thead>
-                <tr className="bg-bg-light">
-                  <th className="px-8 py-4 text-xs font-bold uppercase tracking-wider text-primary opacity-60">Year</th>
-                  <th className="px-8 py-4 text-xs font-bold uppercase tracking-wider text-primary opacity-60">Monthly Fee</th>
-                  <th className="px-8 py-4 text-xs font-bold uppercase tracking-wider text-primary opacity-60">Total Paid</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-border">
-                {outputs.yearlyData.slice(0, 10).map((d) => (
-                  <tr key={d.year} className="hover:bg-bg-light transition-colors">
-                    <td className="px-8 py-4 font-bold text-primary">Year {d.year}</td>
-                    <td className="px-8 py-4 font-medium">${d.fee.toLocaleString()}</td>
-                    <td className="px-8 py-4 text-primary opacity-60 font-medium">${d.cumulative.toLocaleString()}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
+            <div className="card border-none shadow-xl p-0 overflow-hidden">
+              <div className="px-8 py-6 border-b border-border">
+                <h3 className="text-xl font-bold italic">Year-by-Year Breakdown</h3>
+              </div>
+              <div className="overflow-x-auto">
+                <table className="w-full text-left">
+                  <thead>
+                    <tr className="bg-bg-light">
+                      <th className="px-8 py-4 text-xs font-bold uppercase tracking-wider text-primary opacity-60">Year</th>
+                      <th className="px-8 py-4 text-xs font-bold uppercase tracking-wider text-primary opacity-60">Monthly Fee</th>
+                      <th className="px-8 py-4 text-xs font-bold uppercase tracking-wider text-primary opacity-60">Total Paid</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-border">
+                    {outputs.yearlyData.slice(0, 10).map((d) => (
+                      <tr key={d.year} className="hover:bg-bg-light transition-colors">
+                        <td className="px-8 py-4 font-bold text-primary">Year {d.year}</td>
+                        <td className="px-8 py-4 font-medium">${d.fee.toLocaleString()}</td>
+                        <td className="px-8 py-4 text-primary opacity-60 font-medium">${d.cumulative.toLocaleString()}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </>
+        )}
       </section>
     </div>
   );

@@ -68,74 +68,74 @@ export default function Home() {
         </div>
       </header>
 
-      {/* HERO SECTION */}
-      <section className="pt-32 pb-20 px-6 bg-bg-light relative overflow-hidden">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="relative z-10">
-            <div className="inline-block bg-accent/10 text-accent font-bold px-4 py-1 rounded-full text-xs uppercase tracking-widest mb-6">
-              Free Tool — No Signup Required
+      {/* Main Content Area */}
+      <main className="flex-1">
+        {/* TOOL SECTION */}
+        <section id="calculator" className="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+          <Calculator />
+        </section>
+
+        {/* HERO SECTION */}
+        <section className="py-20 px-6 bg-bg-light relative overflow-hidden">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="relative z-10">
+              <div className="inline-block bg-accent/10 text-accent font-bold px-4 py-1 rounded-full text-xs uppercase tracking-widest mb-6">
+                Free Tool — No Signup Required
+              </div>
+              <h1 className="text-5xl md:text-6xl font-serif font-bold text-primary mb-6 leading-tight">
+                Free HOA Fee Calculator<br />
+                <span className="text-accent">See Your True Lifetime Cost</span>
+              </h1>
+              <p className="text-xl text-primary opacity-70 mb-10 max-w-lg leading-relaxed">
+                Instant affordability score, year-by-year breakdown and state-by-state data for US homebuyers.
+              </p>
+              
+              <div className="grid grid-cols-2 gap-4">
+                {[
+                  "✓ No signup required",
+                  "✓ All 50 US States",
+                  "✓ 2026 Updated Data",
+                  "✓ Instant Results"
+                ].map((badge, i) => (
+                  <div key={i} className="flex items-center gap-2 text-sm font-bold text-primary opacity-80">
+                    <span className="text-accent">{badge.split(' ')[0]}</span>
+                    {badge.split(' ').slice(1).join(' ')}
+                  </div>
+                ))}
+              </div>
             </div>
-            <h1 className="text-5xl md:text-6xl font-serif font-bold text-primary mb-6 leading-tight">
-              Free HOA Fee Calculator<br />
-              <span className="text-accent">See Your True Lifetime Cost</span>
-            </h1>
-            <p className="text-xl text-primary opacity-70 mb-10 max-w-lg leading-relaxed">
-              Instant affordability score, year-by-year breakdown and state-by-state data for US homebuyers.
-            </p>
             
-            <div className="grid grid-cols-2 gap-4">
-              {[
-                "✓ No signup required",
-                "✓ All 50 US States",
-                "✓ 2026 Updated Data",
-                "✓ Instant Results"
-              ].map((badge, i) => (
-                <div key={i} className="flex items-center gap-2 text-sm font-bold text-primary opacity-80">
-                  <span className="text-accent">{badge.split(' ')[0]}</span>
-                  {badge.split(' ').slice(1).join(' ')}
-                </div>
-              ))}
-            </div>
-          </div>
-          
-          <div className="hidden lg:block relative">
-            <div className="absolute inset-0 bg-accent/5 rounded-3xl -rotate-2 transform"></div>
-            <div className="relative card border-none shadow-2xl p-4">
-              <div className="p-6 bg-white rounded-xl h-[400px] flex flex-col justify-between">
-                <div>
-                  <h3 className="text-2xl font-serif font-bold text-primary mb-1">HOA Market Data</h3>
-                  <p className="text-xs text-primary/75 mb-4 font-sans font-medium">National statistics for US homeowners associations in 2026.</p>
-                </div>
-                
-                <div className="grid grid-cols-2 gap-4 flex-grow">
-                  <div className="stat-card flex flex-col justify-center p-4">
-                    <div className="stat-label text-[10px] mb-1">Average US HOA Fee</div>
-                    <div className="stat-value text-xl font-bold text-accent font-serif">$331<span className="text-xs font-sans font-normal text-primary/60">/mo</span></div>
+            <div className="hidden lg:block relative">
+              <div className="absolute inset-0 bg-accent/5 rounded-3xl -rotate-2 transform"></div>
+              <div className="relative card border-none shadow-2xl p-4">
+                <div className="p-6 bg-white rounded-xl h-[400px] flex flex-col justify-between">
+                  <div>
+                    <h3 className="text-2xl font-serif font-bold text-primary mb-1">HOA Market Data</h3>
+                    <p className="text-xs text-primary/75 mb-4 font-sans font-medium">National statistics for US homeowners associations in 2026.</p>
                   </div>
-                  <div className="stat-card flex flex-col justify-center p-4">
-                    <div className="stat-label text-[10px] mb-1">HOA Communities</div>
-                    <div className="stat-value text-xl font-bold text-accent font-serif">370,000+</div>
-                  </div>
-                  <div className="stat-card flex flex-col justify-center p-4">
-                    <div className="stat-label text-[10px] mb-1">Homeowners in HOAs</div>
-                    <div className="stat-value text-xl font-bold text-accent font-serif">74 Million</div>
-                  </div>
-                  <div className="stat-card flex flex-col justify-center p-4">
-                    <div className="stat-label text-[10px] mb-1">Avg Annual Increase</div>
-                    <div className="stat-value text-xl font-bold text-accent font-serif">3% – 5%</div>
+                  
+                  <div className="grid grid-cols-2 gap-4 flex-grow">
+                    <div className="stat-card flex flex-col justify-center p-4">
+                      <div className="stat-label text-[10px] mb-1">Average US HOA Fee</div>
+                      <div className="stat-value text-xl font-bold text-accent font-serif">$331<span className="text-xs font-sans font-normal text-primary/60">/mo</span></div>
+                    </div>
+                    <div className="stat-card flex flex-col justify-center p-4">
+                      <div className="stat-label text-[10px] mb-1">HOA Communities</div>
+                      <div className="stat-value text-xl font-bold text-accent font-serif">370,000+</div>
+                    </div>
+                    <div className="stat-card flex flex-col justify-center p-4">
+                      <div className="stat-label text-[10px] mb-1">Homeowners in HOAs</div>
+                      <div className="stat-value text-xl font-bold text-accent font-serif">74 Million</div>
+                    </div>
+                    <div className="stat-card flex flex-col justify-center p-4">
+                      <div className="stat-label text-[10px] mb-1">Avg Annual Increase</div>
+                      <div className="stat-value text-xl font-bold text-accent font-serif">3% – 5%</div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Main Content Area */}
-      <main className="flex-1">
-        {/* TOOL SECTION */}
-        <section id="calculator" className="py-20 px-6 max-w-7xl mx-auto">
-          <Calculator />
         </section>
 
         {/* PROBLEM SECTION */}

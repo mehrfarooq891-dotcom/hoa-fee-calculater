@@ -262,29 +262,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* FAQ SECTION */}
-        <section className="py-24 px-6 max-w-4xl mx-auto">
-          <h2 className="text-4xl font-serif font-bold mb-12 text-center">Frequently Asked Questions</h2>
-          <div className="space-y-4">
-            {[
-              { q: "Are HOA fees tax deductible 2026?", a: "For primary residences, no. HOA fees are considered a personal expense. However, if you rent out your home or have a qualified home office, you may be able to deduct a portion as a business expense." },
-              { q: "What happens if I stop paying?", a: "The HOA will likely send notices, charge late fees and interest, and may eventually place a lien on your property. They have the power to foreclose in many jurisdictions." },
-              { q: "Can HOA legally foreclose my home?", a: "Yes. In many US states, HOAs have the power to initiate foreclosure proceedings for unpaid dues, even if you are current on your mortgage." },
-              { q: "What is a special assessment?", a: "A special assessment is an additional fee charged to all homeowners when the HOA's reserve funds are insufficient to cover a large, unexpected expense like a new roof or structural repair." }
-            ].map((faq, i) => (
-              <details key={i} className="group card border-border p-0 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                <summary className="px-8 py-6 cursor-pointer list-none flex justify-between items-center font-bold text-lg">
-                  {faq.q}
-                  <span className="text-accent text-2xl group-open:rotate-45 transition-transform">+</span>
-                </summary>
-                <div className="px-8 pb-8 text-primary opacity-70 leading-relaxed border-t border-border mt-0 pt-6">
-                  {faq.a}
-                </div>
-              </details>
-            ))}
-          </div>
-        </section>
-
         {/* CTA BANNER */}
         <section className="py-24 px-6 text-center">
            <div className="max-w-4xl mx-auto card bg-accent border-none shadow-2xl p-16 text-white relative overflow-hidden">
@@ -301,6 +278,45 @@ export default function Home() {
                 </a>
               </div>
            </div>
+        </section>
+
+        {/* FAQ SECTION */}
+        <section className="py-24 px-6 max-w-4xl mx-auto">
+          <h2 className="text-4xl font-serif font-bold mb-12 text-center">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            {[
+              {
+                q: "What is a typical HOA fee?",
+                a: "Average HOA fees in the US range from $200 to $400 per month, depending on the state, community type, and amenities offered."
+              },
+              {
+                q: "How is HOA fee calculated?",
+                a: "HOA fees are calculated based on shared maintenance costs, reserve funds, insurance, and amenities divided among all unit owners."
+              },
+              {
+                q: "Can HOA fees increase every year?",
+                a: "Yes, HOA fees typically increase 3-5% annually to account for inflation and rising maintenance costs."
+              },
+              {
+                q: "What happens if you don't pay HOA fees?",
+                a: "Unpaid HOA fees can result in late charges, liens on your property, and in some states, foreclosure proceedings."
+              },
+              {
+                q: "Are HOA fees tax deductible?",
+                a: "HOA fees are generally not tax deductible for primary residences, but may be deductible for rental properties."
+              }
+            ].map((faq, i) => (
+              <details key={i} className="group card border-border p-0 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <summary className="px-8 py-6 cursor-pointer list-none flex justify-between items-center font-bold text-lg">
+                  {faq.q}
+                  <span className="text-accent text-2xl group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <div className="px-8 pb-8 text-primary opacity-70 leading-relaxed border-t border-border mt-0 pt-6">
+                  {faq.a}
+                </div>
+              </details>
+            ))}
+          </div>
         </section>
       </main>
 

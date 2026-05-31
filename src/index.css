@@ -12,6 +12,11 @@
 }
 
 @layer base {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   html {
     scroll-behavior: smooth;
     visibility: visible !important;
@@ -32,7 +37,7 @@
   }
   
   .card {
-    @apply bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-border p-8;
+    @apply bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-border p-4 sm:p-6 md:p-8;
   }
   
   .input-group {
@@ -77,4 +82,57 @@ input[type="range"] {
 input[type="range"]::-webkit-slider-thumb {
   @apply appearance-none w-[18px] h-[18px] bg-primary border-[3px] border-accent rounded-full transition-transform hover:scale-120;
 }
+
+/* Base Mobile Responsive & Typography Enhancements */
+@media (max-width: 767px) {
+  /* Enforce min-size of 16px for all body text / inputs / widgets on mobile to prevent manual zooming */
+  body, p, span, a, input, select, textarea, button, td, th, li, label, div {
+    font-size: max(16px, inherit);
+  }
+  
+  .text-xs, .text-sm, .text-base {
+    font-size: 16px !important;
+  }
+
+  /* Make sure inputs and buttons within the card are comfortable and robust */
+  .input-field {
+    font-size: 16px !important;
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+  }
+
+  /* Navbar headers stack cleanly, wrap without overflow, and scale logo dynamically */
+  header.z-50 {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  header.z-50 > div {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+  }
+
+  header.z-50 nav {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 0.375rem 0.75rem !important;
+  }
+
+  header.z-50 nav a {
+    font-size: 13px !important;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+
+  header.z-50 nav a.bg-primary, header.z-50 nav a.bg-accent {
+    font-size: 13px !important;
+    padding: 0.25rem 0.75rem !important;
+  }
+}
+
 

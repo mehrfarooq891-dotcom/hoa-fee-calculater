@@ -71,7 +71,7 @@ export default function Home() {
       {/* Main Content Area */}
       <main className="flex-1">
         {/* TOOL SECTION */}
-        <section id="calculator" className="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+        <section id="calculator" className="pt-20 md:pt-24 pb-12 px-6 max-w-7xl mx-auto">
           <Calculator />
         </section>
 
@@ -93,7 +93,7 @@ export default function Home() {
               <div className="grid grid-cols-2 gap-4">
                 {[
                   "✓ No signup required",
-                  "✓ All 50 US States",
+                  "✓ All 50 States — Select Below",
                   "✓ 2026 Updated Data",
                   "✓ Instant Results"
                 ].map((badge, i) => (
@@ -221,6 +221,11 @@ export default function Home() {
                 </tbody>
               </table>
             </div>
+            <div className="mt-8 text-center">
+              <Link to="/states" className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white font-bold py-3 px-8 rounded-full transition-all active:scale-95 shadow-md">
+                View All 50 States
+              </Link>
+            </div>
           </div>
         </section>
 
@@ -322,7 +327,7 @@ export default function Home() {
                  HOA<span className="text-accent">Calculator</span>.com
                </span>
              </Link>
-             <p className="max-w-sm text-sm opacity-80 leading-relaxed">The most comprehensive HOA fee calculation tool for US homebuyers. Trusted by homeowners in all 50 states.</p>
+             <p className="max-w-sm text-sm opacity-80 leading-relaxed">A detailed HOA fee calculation tool for US homebuyers. Trusted by homeowners in all 50 states.</p>
           </div>
           <div>
             <h4 className="text-white font-bold mb-6 uppercase text-xs tracking-widest">Tools</h4>

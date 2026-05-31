@@ -105,6 +105,17 @@ export default function BlogArticleLayout({
               {children}
             </div>
 
+            {/* Highlighted CTA Box */}
+            <div className="not-prose my-12 bg-bg-light border-l-4 border-accent rounded-r-2xl p-6 md:p-8 shadow-sm">
+              <p className="text-primary font-bold text-lg md:text-xl leading-relaxed m-0">
+                Ready to calculate your HOA costs? Use our free{" "}
+                <Link to="/" className="text-accent underline hover:text-accent/80 transition-colors">
+                  HOA Fee Calculator
+                </Link>{" "}
+                to estimate your true lifetime HOA expenses in seconds.
+              </p>
+            </div>
+
             {/* Inline CTA */}
             <div className="inline-cta my-10 text-center">
               <a href="/#calculator" className="inline-block bg-accent hover:bg-opacity-90 text-white font-bold py-4 px-10 rounded-full transition-all hover:scale-105 shadow-xl text-lg duration-300">

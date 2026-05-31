@@ -337,6 +337,17 @@ export default function TexasHOAFeesArticle() {
               </div>
             </div>
 
+            {/* Highlighted CTA Box */}
+            <div className="not-prose my-12 bg-bg-light border-l-4 border-accent rounded-r-2xl p-6 md:p-8 shadow-sm">
+              <p className="text-primary font-bold text-lg md:text-xl leading-relaxed m-0">
+                Ready to calculate your HOA costs? Use our free{" "}
+                <Link to="/" className="text-accent underline hover:text-accent/80 transition-colors">
+                  HOA Fee Calculator
+                </Link>{" "}
+                to estimate your true lifetime HOA expenses in seconds.
+              </p>
+            </div>
+
             {/* Author Bio */}
             <div className="mt-16 pt-8 border-t border-border flex items-center gap-6">
               <div className="h-16 w-16 bg-accent/10 text-accent font-bold rounded-full flex items-center justify-center text-xl font-serif">

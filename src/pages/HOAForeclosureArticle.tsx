@@ -297,7 +297,7 @@ export default function HOAForeclosureArticle() {
               to="/" 
               className="bg-accent hover:bg-accent/90 text-white font-bold px-6 py-3 rounded-lg text-sm transition-all shadow-md inline-block uppercase tracking-wider"
             >
-              Analyze HOA Fees Now
+              Analyze <a href="https://www.hoafeecalculator.com/" className="text-accent underline hover:text-accent/80 transition-colors">HOA Fees</a> Now
             </Link>
             <Link 
               to="/compare" 

@@ -20,7 +20,7 @@ export default function HOAFeesArizonaArticle() {
         Relocating to the Grand Canyon State is a popular path for homebuyers seeking warm retirement options or growing tech hubs in Phoenix, Scottsdale, and Tucson. 
       </p>
       <p>
-        While Arizona offers approachable property tax lines compared to California or the Northeast, managed developments represent the default vehicles for new construction housing. In Arizona, the 2026 average monthly HOA fee sits at <strong>$290 per month</strong>.
+        While Arizona offers approachable property tax lines compared to California or the Northeast, managed developments represent the default vehicles for new construction housing. In Arizona, the 2026 average monthly <a href="https://www.hoafeecalculator.com/" className="text-accent underline hover:text-accent/80 transition-colors">HOA fee</a> sits at <strong>$290 per month</strong>.
       </p>
       <p>
         However, the warm Southwestern climate and local statutes introduce unique operational challenges that directly influence how boards budget association dues. Let's study how desert elements, water codes, and Arizona real estate laws affect your homeownership.

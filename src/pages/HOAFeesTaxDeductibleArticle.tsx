@@ -29,7 +29,7 @@ export default function HOAFeesTaxDeductibleArticle() {
         </p>
 
         <p>
-          Whether you are a first-time homebuyer looking at an urban condominium, a seasoned real estate investor building a residential rental portfolio, or a remote entrepreneur working from a home office, you must understand exactly how the tax code views your association assessments. In this definitive guide, we will analyze under what precise legal conditions HOA fees may be deducted, explore critical IRS boundaries, and identify other permitted real estate write-offs that can safely protect your hard-earned income.
+          Whether you are a first-time homebuyer looking at an urban condominium, a seasoned real estate investor building a residential rental portfolio, or a remote entrepreneur working from a home office, you must understand exactly how the tax code views your association assessments. In this definitive guide, we will analyze under what precise legal conditions <a href="https://www.hoafeecalculator.com/" className="text-accent underline hover:text-accent/80 transition-colors">HOA fees</a> may be deducted, explore critical IRS boundaries, and identify other permitted real estate write-offs that can safely protect your hard-earned income.
         </p>
 
         {/* Section 1 */}

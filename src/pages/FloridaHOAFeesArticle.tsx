@@ -89,7 +89,7 @@ export default function FloridaHOAFeesArticle() {
                 Florida holds a striking real estate distinction that surprises many newcomers: the Sunshine State is home to the highest concentration of homeowners association (HOA) and condominium communities per capita in the entire United States. With over 48,000 active community associations representing upwards of 9.6 million residents, managed communities are not just an option in Florida—they are the default vehicle of modern residential homeownership.
               </p>
               <p>
-                From manicured golf courses in Palm Beach county to master-planned golf layouts in Orlando, buying a home or condominium unit in Florida almost guarantees you will find yourself paying recurring fees. These fees quietly dictate your overall budget. However, in recent years, <strong className="text-primary font-bold">HOA fees Florida</strong> have undergone a dramatic structural transformation. 
+                From manicured golf courses in Palm Beach county to master-planned golf layouts in Orlando, buying a home or condominium unit in Florida almost guarantees you will find yourself paying recurring fees. These fees quietly dictate your overall budget. However, in recent years, <strong className="text-primary font-bold"><a href="https://www.hoafeecalculator.com/" className="text-accent underline hover:text-accent/80 transition-colors">HOA fees</a> Florida</strong> have undergone a dramatic structural transformation. 
               </p>
               <p>
                 Under new mandates enacted by state lawmakers, millions of Floridian property owners are waking up to climbing regular dues, unexpected special assessments, and complex structural studies. Facing skyrocketing insurance coverage rates alongside zeroed-out reserve limitations, buyers today are entering a landscape vastly different from that of five years ago.
@@ -282,14 +282,19 @@ export default function FloridaHOAFeesArticle() {
             </div>
 
             {/* Highlighted CTA Box */}
-            <div className="not-prose my-12 bg-bg-light border-l-4 border-accent rounded-r-2xl p-6 md:p-8 shadow-sm">
-              <p className="text-primary font-bold text-lg md:text-xl leading-relaxed m-0">
-                Ready to calculate your HOA costs? Use our free{" "}
-                <Link to="/" className="text-accent underline hover:text-accent/80 transition-colors">
-                  HOA Fee Calculator
-                </Link>{" "}
-                to estimate your true lifetime HOA expenses in seconds.
+            <div className="not-prose my-12 bg-[#EFF6FF] border border-[#2563EB]/10 rounded-2xl p-6 md:p-8 shadow-sm">
+              <h3 className="text-xl font-serif font-bold text-primary mb-3 flex items-center gap-2">
+                <span>📊</span> Calculate Your HOA Costs
+              </h3>
+              <p className="text-primary/80 text-sm md:text-base leading-relaxed mb-5">
+                Use our free HOA Fee Calculator to estimate your true lifetime HOA expenses — with year-by-year breakdown.
               </p>
+              <a 
+                href="https://www.hoafeecalculator.com/" 
+                className="inline-flex items-center bg-primary hover:bg-primary/95 text-white font-bold py-3.5 px-6 rounded-full transition-all active:scale-95 text-sm shadow-sm"
+              >
+                Calculate Now →
+              </a>
             </div>
 
             {/* Author Bio */}

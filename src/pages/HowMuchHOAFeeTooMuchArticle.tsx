@@ -21,7 +21,7 @@ export default function HowMuchHOAFeeTooMuchArticle() {
         When you are comparing homes in the real estate market, you will find properties with wildly divergent homeowners association demands. One home might feature $75/month dues, while a structurally comparable listing a mile away demands $550/month.
       </p>
       <p>
-        If your monthly HOA dues rival your property taxes or add heavily to your monthly mortgage payment, you must ask: <strong>How much HOA fee is too much?</strong>
+        If your monthly HOA dues rival your property taxes or add heavily to your monthly mortgage payment, you must ask: <strong>How much <a href="https://www.hoafeecalculator.com/" className="text-accent underline hover:text-accent/80 transition-colors">HOA fee</a> is too much?</strong>
       </p>
       <p>
         To answer this scientifically, you need to look past the sticker price. You must calculate the direct financial ratio, grade the underlying amenities, and check if the association is wasting money. Let's study how to measure if an HOA fee is a fair trade or a waste of cash.

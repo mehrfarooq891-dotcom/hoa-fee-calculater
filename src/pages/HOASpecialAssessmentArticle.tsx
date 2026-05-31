@@ -162,7 +162,7 @@ export default function HOASpecialAssessmentArticle() {
         {/* Section 4 */}
         <h2 className="text-2xl font-serif font-bold text-primary mt-8 mb-4">4. What Happens If You Cannot Pay an HOA Special Assessment?</h2>
         <p>
-          Many homeowners assume that because they can afford their standard, predictable monthly mortgage and basic HOA fees, they can simply ignore a sudden $12,000 assessment invoice. This is a highly dangerous mistake. Homeowners associations are corporate businesses with aggressive legal mechanism at their disposal to collect debts.
+          Many homeowners assume that because they can afford their standard, predictable monthly mortgage and basic <a href="https://www.hoafeecalculator.com/" className="text-accent underline hover:text-accent/80 transition-colors">HOA fees</a>, they can simply ignore a sudden $12,000 assessment invoice. This is a highly dangerous mistake. Homeowners associations are corporate businesses with aggressive legal mechanism at their disposal to collect debts.
         </p>
         <p>
           If you do not pay a levied special assessment, the association will follow a highly formalized, strict timeline to enforce the debt:

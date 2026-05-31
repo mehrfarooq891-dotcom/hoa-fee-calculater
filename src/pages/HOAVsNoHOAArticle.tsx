@@ -133,7 +133,7 @@ export default function HOAVsNoHOAArticle() {
                 2. The "Hidden Payroll": The Real Cost of Self-Managing a Property
               </h2>
               <p>
-                To compare an HOA fee against a non-HOA home fairly, you must calculate the <strong className="text-primary font-bold">Self-Management Index</strong>. This represents the time and money required to maintain your property at the same standard an association would mandate. 
+                To compare an <a href="https://www.hoafeecalculator.com/" className="text-accent underline hover:text-accent/80 transition-colors">HOA fee</a> against a non-HOA home fairly, you must calculate the <strong className="text-primary font-bold">Self-Management Index</strong>. This represents the time and money required to maintain your property at the same standard an association would mandate. 
               </p>
               <p>
                 Let’s look at the monthly "hidden payroll" for a typical suburban single-family home in 2026:
@@ -296,14 +296,19 @@ export default function HOAVsNoHOAArticle() {
             </div>
 
             {/* Highlighted CTA Box */}
-            <div className="not-prose my-12 bg-bg-light border-l-4 border-accent rounded-r-2xl p-6 md:p-8 shadow-sm">
-              <p className="text-primary font-bold text-lg md:text-xl leading-relaxed m-0">
-                Ready to calculate your HOA costs? Use our free{" "}
-                <Link to="/" className="text-accent underline hover:text-accent/80 transition-colors">
-                  HOA Fee Calculator
-                </Link>{" "}
-                to estimate your true lifetime HOA expenses in seconds.
+            <div className="not-prose my-12 bg-[#EFF6FF] border border-[#2563EB]/10 rounded-2xl p-6 md:p-8 shadow-sm">
+              <h3 className="text-xl font-serif font-bold text-primary mb-3 flex items-center gap-2">
+                <span>📊</span> Calculate Your HOA Costs
+              </h3>
+              <p className="text-primary/80 text-sm md:text-base leading-relaxed mb-5">
+                Use our free HOA Fee Calculator to estimate your true lifetime HOA expenses — with year-by-year breakdown.
               </p>
+              <a 
+                href="https://www.hoafeecalculator.com/" 
+                className="inline-flex items-center bg-primary hover:bg-primary/95 text-white font-bold py-3.5 px-6 rounded-full transition-all active:scale-95 text-sm shadow-sm"
+              >
+                Calculate Now →
+              </a>
             </div>
 
             {/* Author Bio */}

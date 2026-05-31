@@ -23,7 +23,7 @@ export default function TownhouseHOAFeesArticle() {
         Typically, a townhouse offers more layout room than a standard condo and includes a dedicated private garage or backyard patio chunk.
       </p>
       <p>
-        However, because townhouses share common walls and structural rooflines, they almost always require joining a homeowners association. Across the US, average monthly townhouse HOA fees span from <strong>$200 to $450 per month</strong>.
+        However, because townhouses share common walls and structural rooflines, they almost always require joining a homeowners association. Across the US, average monthly townhouse <a href="https://www.hoafeecalculator.com/" className="text-accent underline hover:text-accent/80 transition-colors">HOA fees</a> span from <strong>$200 to $450 per month</strong>.
       </p>
       <p>
         Let's study the critical details of townhouse HOA coverages, how they differ from condo fees, and how they protect your core home siding and roofing.

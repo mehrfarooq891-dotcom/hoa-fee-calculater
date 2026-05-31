@@ -24,7 +24,7 @@ export default function HOAFeesMortgageApprovalArticle() {
         But if you fall in love with a townhouse or condo carrying a high monthly homeowners association (HOA) fee, you might find your mortgage lender suddenly rejecting your application—even though the purchase price is well below your pre-approved ceiling.
       </p>
       <p>
-        Underwriting guidelines look past the core listing price; they evaluate your <strong>aggregate monthly housing liabilities</strong>. Let's study how HOA fees interact with your mortgage calculations and can reduce your borrowing power.
+        Underwriting guidelines look past the core listing price; they evaluate your <strong>aggregate monthly housing liabilities</strong>. Let's study how <a href="https://www.hoafeecalculator.com/" className="text-accent underline hover:text-accent/80 transition-colors">HOA fees</a> interact with your mortgage calculations and can reduce your borrowing power.
       </p>
 
       <h2 className="text-2xl font-serif font-bold text-primary mt-8 mb-4">1. The Underwriting Formula: What is PITI + HOA?</h2>

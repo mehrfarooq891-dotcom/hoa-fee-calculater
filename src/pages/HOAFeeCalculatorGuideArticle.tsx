@@ -23,7 +23,7 @@ export default function HOAFeeCalculatorGuideArticle() {
         But if you are buying within a managed community, your mandatory **HOA dues are variable costs**. Thanks to labor inflation, community mechanical wear, and skyrocketing master insurance rates, your fee will likely climb year after year.
       </p>
       <p>
-        To protect your budget and see your accurate long-term cash flow, you cannot evaluate dues as a static monthly charge. You need to project their compounding growth over your entire planned ownership timeline. That is exactly why we built our free, interactive **HOA Fee Lifetime Calculator**.
+        To protect your budget and see your accurate long-term cash flow, you cannot evaluate dues as a static monthly charge. You need to project their compounding growth over your entire planned ownership timeline. That is exactly why we built our free, interactive **<a href="https://www.hoafeecalculator.com/" className="text-accent underline hover:text-accent/80 transition-colors">HOA Fee</a> Lifetime Calculator**.
       </p>
 
       <h2 className="text-2xl font-serif font-bold text-primary mt-8 mb-4">1. Why Static Numbers Paint a Deceptive Picture</h2>

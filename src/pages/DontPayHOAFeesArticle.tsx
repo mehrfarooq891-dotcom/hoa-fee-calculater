@@ -20,7 +20,7 @@ export default function DontPayHOAFeesArticle() {
     >
       <div className="space-y-6">
         <p className="lead text-xl font-medium text-primary border-l-4 border-accent pl-4 italic my-6">
-          A $200 unpaid HOA fee can become a $15,000 foreclosure — here's exactly how it happens.
+          A $200 unpaid <a href="https://www.hoafeecalculator.com/" className="text-accent underline hover:text-accent/80 transition-colors">HOA fee</a> can become a $15,000 foreclosure — here's exactly how it happens.
         </p>
 
         <p>

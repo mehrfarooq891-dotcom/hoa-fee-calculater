@@ -18,6 +18,7 @@ const States = React.lazy(() => import('./pages/States'));
 const StateTemplate = React.lazy(() => import('./pages/StateTemplate'));
 const PrivacyPolicy = React.lazy(() => import('./pages/Legal').then(m => ({ default: m.PrivacyPolicy })));
 const Disclaimer = React.lazy(() => import('./pages/Legal').then(m => ({ default: m.Disclaimer })));
+const TermsOfService = React.lazy(() => import('./pages/Legal').then(m => ({ default: m.TermsOfService })));
 
 // 23 New Blog Posts Lazy Imports
 const HOAFeesTaxDeductibleArticle = React.lazy(() => import('./pages/HOAFeesTaxDeductibleArticle'));
@@ -167,6 +168,7 @@ export default function App() {
             <Route path="/states" element={<States />} />
             <Route path="/states/:stateName" element={<StateTemplate />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms" element={<TermsOfService />} />
             <Route path="/disclaimer" element={<Disclaimer />} />
             {/* Fallback for the specific texas path requested */}
             <Route path="/states/texas.html" element={<StateTemplate />} />

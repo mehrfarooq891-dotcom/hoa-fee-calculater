@@ -76,7 +76,8 @@ function LegalFooter() {
         <div>
           <h4 className="text-white font-bold mb-6 uppercase text-xs tracking-widest">Legal</h4>
           <ul className="space-y-4 text-sm font-medium">
-            <li><Link to="/privacy-policy" className="hover:text-accent transition-colors font-bold text-accent">Privacy Policy</Link></li>
+            <li><Link to="/privacy-policy" className="hover:text-accent transition-colors">Privacy Policy</Link></li>
+            <li><Link to="/terms" className="hover:text-accent transition-colors">Terms of Service</Link></li>
             <li><Link to="/disclaimer" className="hover:text-accent transition-colors">Disclaimer</Link></li>
           </ul>
         </div>
@@ -160,48 +161,43 @@ export function Disclaimer() {
         </div>
       </main>
 
-      <footer className="bg-primary border-t border-white/10 py-20 px-6 text-white/60">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
-          <div className="col-span-1 md:col-span-2">
-             <Link to="/" className="inline-flex items-center mb-6">
-               <img 
-                 src="/hoa_calculator_logo.svg" 
-                 alt="HOA Fee Calculator" 
-                 style={{ height: '45px', width: 'auto' }}
-                 onError={(e) => {
-                   e.currentTarget.style.display = 'none';
-                   if (e.currentTarget.nextElementSibling) {
-                     (e.currentTarget.nextElementSibling as HTMLElement).style.display = 'block';
-                   }
-                 }}
-               />
-               <span 
-                 className="font-serif text-2xl font-bold text-white"
-                 style={{ display: 'none' }}
-               >
-                 HOA<span className="text-accent">Calculator</span>.com
-               </span>
-             </Link>
-             <p className="max-w-sm text-sm opacity-80 leading-relaxed">Providing financial transparency for US residents and homebuyers.</p>
-          </div>
-          <div>
-            <h4 className="text-white font-bold mb-6 uppercase text-xs tracking-widest">Tools</h4>
-            <ul className="space-y-4 text-sm font-medium">
-              <li><Link to="/states" className="hover:text-accent transition-colors">State Guides</Link></li>
-              <li><Link to="/compare" className="hover:text-accent transition-colors">Compare Costs</Link></li>
-              <li><Link to="/contact" className="hover:text-accent transition-colors">Contact Support</Link></li>
-              <li><Link to="/about" className="hover:text-accent transition-colors">About Us</Link></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="text-white font-bold mb-6 uppercase text-xs tracking-widest">Legal</h4>
-            <ul className="space-y-4 text-sm font-medium">
-              <li><Link to="/privacy-policy" className="hover:text-accent transition-colors">Privacy Policy</Link></li>
-              <li><Link to="/disclaimer" className="hover:text-accent transition-colors font-bold text-accent">Disclaimer</Link></li>
-            </ul>
+      <LegalFooter />
+    </div>
+  );
+}
+
+export function TermsOfService() {
+  return (
+    <div className="min-h-screen flex flex-col bg-bg-light">
+      <SEO 
+        title="Terms of Service — HOACalculator.com" 
+        description="Read the terms of service and usage conditions of HOACalculator.com." 
+      />
+      <LegalHeader />
+
+      <main className="flex-1 pt-32 pb-20 px-6">
+        <div className="max-w-3xl mx-auto card bg-white p-8 md:p-12 shadow-md">
+          <h1 className="text-4xl font-serif font-bold text-primary mb-2">Terms of Service</h1>
+          <p className="text-sm text-primary opacity-50 mb-8 pb-4 border-b border-border">Last Updated: April 16, 2026</p>
+
+          <div className="prose prose-slate max-w-none text-primary opacity-80 space-y-6">
+            <p className="lead text-lg opacity-90">
+              Welcome to HOACalculator.com. By accessing or using our website, you agree to comply with and be bound by the following Terms of Service.
+            </p>
+            
+            <h2 className="text-2xl font-serif font-bold text-primary pt-4">1. Acceptance of Terms</h2>
+            <p>By executing searches, using our mathematical calculators, or viewing content on HOACalculator.com, you declare your total agreement with these terms. If you do not accept these conditions, you are prohibited from utilizing this platform.</p>
+
+            <h2 className="text-2xl font-serif font-bold text-primary pt-4">2. Intellectual Property</h2>
+            <p>All algorithms, calculator designs, database compilations, and authored articles on HOACalculator.com are property of our research team and partners. Unauthorized scraping, replication, or distribution without explicit credit is strictly forbidden.</p>
+
+            <h2 className="text-2xl font-serif font-bold text-primary pt-4">3. Limitation of Liability</h2>
+            <p>Our calculators provide estimations and mathematical analyses only. HOACalculator.com and its creators shall not be liable for any direct, indirect, or consequential damages resulting from residential real estate choices or home purchases.</p>
           </div>
         </div>
-      </footer>
+      </main>
+
+      <LegalFooter />
     </div>
   );
 }

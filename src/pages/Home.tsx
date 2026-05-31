@@ -86,9 +86,13 @@ export default function Home() {
                 Free HOA Fee Calculator<br />
                 <span className="text-accent">See Your True Lifetime Cost</span>
               </h1>
-              <p className="text-xl text-primary opacity-70 mb-10 max-w-lg leading-relaxed">
+              <p className="text-xl text-primary opacity-70 mb-6 max-w-lg leading-relaxed">
                 Instant affordability score, year-by-year breakdown and state-by-state data for US homebuyers.
               </p>
+              
+              <div className="text-xs text-primary/60 mb-8 border-l-2 border-accent pl-3">
+                Data compiled and reviewed by the <span className="font-semibold">HOACalculator.com Research Team</span> | Last updated: June 2026
+              </div>
               
               <div className="grid grid-cols-2 gap-4">
                 {[
@@ -359,6 +363,7 @@ export default function Home() {
             <h4 className="text-white font-bold mb-6 uppercase text-xs tracking-widest">Legal</h4>
             <ul className="space-y-4 text-sm font-medium">
               <li><Link to="/privacy-policy" className="hover:text-accent transition-colors">Privacy Policy</Link></li>
+              <li><Link to="/terms" className="hover:text-accent transition-colors">Terms of Service</Link></li>
               <li><Link to="/disclaimer" className="hover:text-accent transition-colors">Disclaimer</Link></li>
               <li><Link to="/sitemap" className="hover:text-accent transition-colors">Sitemap</Link></li>
             </ul>
@@ -368,7 +373,8 @@ export default function Home() {
            <span>&copy; 2026 HOACalculator.com. US Real Estate Data Partners.</span>
            <div className="flex gap-8">
               <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy</Link>
-              <Link to="/disclaimer" className="hover:text-white transition-colors">Terms</Link>
+              <Link to="/terms" className="hover:text-white transition-colors">Terms</Link>
+              <Link to="/disclaimer" className="hover:text-white transition-colors">Disclaimer</Link>
            </div>
         </div>
       </footer>

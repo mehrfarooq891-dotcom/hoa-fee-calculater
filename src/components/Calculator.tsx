@@ -308,6 +308,10 @@ export default function Calculator() {
             </div>
           </>
         )}
+
+        <div style={{ fontSize: '12px', color: '#6B7280' }} className="pt-4 leading-relaxed">
+          This calculator is for informational purposes only. Actual HOA fees vary based on location, community type, and association rules. Consult a real estate professional before making financial decisions.
+        </div>
       </section>
     </div>
   );

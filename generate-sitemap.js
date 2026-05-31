@@ -97,6 +97,29 @@ states.forEach(state => {
   </url>`);
 });
 
+// Add dynamic city pages
+const cities = [
+  "austin-texas",
+  "houston-texas",
+  "miami-florida",
+  "orlando-florida",
+  "los-angeles-california",
+  "san-diego-california",
+  "phoenix-arizona",
+  "las-vegas-nevada",
+  "charlotte-north-carolina",
+  "atlanta-georgia"
+];
+
+cities.forEach(city => {
+  urls.push(`  <url>
+    <loc>${BASE_URL}/cities/${city}</loc>
+    <lastmod>${TODAY}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>`);
+});
+
 // XML Content construction
 const sitemapContent = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

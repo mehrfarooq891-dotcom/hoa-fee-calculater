@@ -4,6 +4,9 @@ import SEO from '@/src/components/SEO';
 import { Link } from 'react-router-dom';
 
 export default function Home() {
+  const [isEmbedModalOpen, setIsEmbedModalOpen] = React.useState(false);
+  const [copied, setCopied] = React.useState(false);
+
   const webAppSchema = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
@@ -112,6 +115,32 @@ export default function Home() {
         {/* TOOL SECTION */}
         <section id="calculator" className="pt-20 md:pt-24 pb-12 px-6 max-w-7xl mx-auto">
           <Calculator />
+        </section>
+
+        {/* REALTOR EMBED SECTION */}
+        <section className="py-12 px-6 max-w-7xl mx-auto">
+          <div className="bg-bg-light border border-border/80 rounded-3xl p-8 md:p-12 text-center max-w-4xl mx-auto shadow-sm">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-4">
+              Are You a Real Estate Agent or Realtor?
+            </h2>
+            <p className="text-lg text-primary opacity-70 mb-8 max-w-2xl mx-auto leading-relaxed">
+              Embed this free HOA calculator on your website — help your clients make smarter buying decisions.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <button 
+                onClick={() => setIsEmbedModalOpen(true)}
+                className="bg-accent hover:bg-accent/90 text-white font-bold py-3.5 px-8 rounded-full transition-all active:scale-95 shadow-md flex items-center justify-center gap-2 cursor-pointer text-base"
+              >
+                Get Free Embed Code →
+              </button>
+              <Link 
+                to="/contact"
+                className="bg-primary hover:bg-primary/95 text-white font-bold py-3.5 px-8 rounded-full transition-all active:scale-95 shadow-md flex items-center justify-center gap-2 text-base"
+              >
+                Contact Us for Custom Integration →
+              </Link>
+            </div>
+          </div>
         </section>
 
         {/* HERO SECTION */}
@@ -417,6 +446,52 @@ export default function Home() {
            </div>
         </div>
       </footer>
+
+      {/* EMBED MODAL */}
+      {isEmbedModalOpen && (
+        <div className="fixed inset-0 bg-primary/40 backdrop-blur-sm flex items-center justify-center p-4 z-50">
+          <div className="bg-white rounded-2xl max-w-lg w-full p-6 md:p-8 relative shadow-2xl border border-border animate-in fade-in zoom-in-95 duration-200 text-left">
+            <button 
+              onClick={() => setIsEmbedModalOpen(false)}
+              className="absolute top-4 right-4 text-primary/40 hover:text-primary transition-colors text-xl font-bold p-2 cursor-pointer"
+              aria-label="Close"
+            >
+              ✕
+            </button>
+            <h3 className="text-2xl font-serif font-bold text-primary mb-4 animate-none">
+              Embed Calculator Code
+            </h3>
+            <p className="text-sm text-primary/70 mb-4 font-sans leading-relaxed">
+              Copy the code below and paste it into any HTML section on your website to embed the calculator.
+            </p>
+            
+            <div className="relative mb-6">
+              <textarea 
+                readOnly
+                value={`<iframe src="https://www.hoafeecalculator.com" width="100%" height="600" frameborder="0"></iframe>`}
+                className="w-full h-32 bg-bg-light border border-border rounded-xl p-4 font-mono text-xs text-primary/80 focus:outline-none focus:ring-1 focus:ring-accent"
+                onClick={(e) => (e.target as HTMLTextAreaElement).select()}
+              />
+              <button 
+                onClick={() => {
+                  navigator.clipboard.writeText(`<iframe src="https://www.hoafeecalculator.com" width="100%" height="600" frameborder="0"></iframe>`);
+                  setCopied(true);
+                  setTimeout(() => setCopied(false), 2000);
+                }}
+                className="absolute bottom-4 right-4 bg-primary hover:bg-primary/95 text-white font-bold py-2 px-4 rounded-lg text-xs transition-colors cursor-pointer"
+              >
+                {copied ? 'Copied!' : 'Copy Code'}
+              </button>
+            </div>
+            
+            <div className="text-center">
+              <p className="text-sm text-accent font-bold font-sans">
+                Free forever. No attribution required.
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

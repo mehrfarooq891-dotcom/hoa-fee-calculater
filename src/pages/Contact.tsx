@@ -125,7 +125,7 @@ export default function Contact() {
               <div className="card border-none shadow-lg">
                 <h3 className="font-serif text-2xl mb-6">Send a Quick Message</h3>
                 <form className="space-y-4">
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <input type="text" placeholder="Your Name" className="input-field" />
                     <input type="email" placeholder="Email Address" className="input-field" />
                   </div>

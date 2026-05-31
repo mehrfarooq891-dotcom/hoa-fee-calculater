@@ -27,6 +27,27 @@ export default function Calculator() {
   });
 
   const [hasCalculated, setHasCalculated] = useState(false);
+  const [email, setEmail] = useState('');
+  const [isUnlocked, setIsUnlocked] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('hoa_30yr_unlocked') === 'true';
+    }
+    return false;
+  });
+  const [emailError, setEmailError] = useState('');
+
+  const handleUnlock = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email || !email.includes('@')) {
+      setEmailError('Please enter a valid email address.');
+      return;
+    }
+    console.log('User joined lead list for 30-Year HOA report with email:', email);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('hoa_30yr_unlocked', 'true');
+    }
+    setIsUnlocked(true);
+  };
 
   const chartRef = useRef<HTMLCanvasElement>(null);
   const chartInstance = useRef<any>(null);
@@ -41,9 +62,16 @@ export default function Calculator() {
     let currentMonthly = monthlyHOA;
     const yearlyData = [];
 
-    for (let i = 1; i <= yearsOfOwnership; i++) {
+    // Always calculate at least 30 years for the breakdown table, but use yearsOfOwnership for the summary
+    let totalAtOwnership = 0;
+    const totalYearsToCalculate = Math.max(30, yearsOfOwnership);
+
+    for (let i = 1; i <= totalYearsToCalculate; i++) {
       const annualCost = currentMonthly * 12;
       total += annualCost;
+      if (i <= yearsOfOwnership) {
+        totalAtOwnership = total;
+      }
       yearlyData.push({
         year: i,
         fee: Math.round(currentMonthly),
@@ -52,7 +80,7 @@ export default function Calculator() {
       currentMonthly *= (1 + annualIncrease / 100);
     }
 
-    const avgMonthly = total / (yearsOfOwnership * 12);
+    const avgMonthly = totalAtOwnership / (yearsOfOwnership * 12);
     const ratio = (monthlyHOA * 12 / annualIncome) * 100;
 
     let score: 'A' | 'B' | 'C' | 'D' = 'A';
@@ -61,7 +89,7 @@ export default function Calculator() {
     else if (ratio > 5) score = 'B';
 
     setOutputs({
-      totalLifetimeCost: Math.round(total),
+      totalLifetimeCost: Math.round(totalAtOwnership),
       averageMonthlyCost: Math.round(avgMonthly),
       yearlyData,
       hoaToIncomeRatio: parseFloat(ratio.toFixed(2)),
@@ -285,7 +313,10 @@ export default function Calculator() {
               <div className="px-8 py-6 border-b border-border">
                 <h3 className="text-xl font-bold italic">Year-by-Year Breakdown</h3>
               </div>
-              <div className="overflow-x-auto">
+              <div className={cn(
+                "overflow-x-auto relative transition-all duration-500",
+                !isUnlocked ? "max-h-[620px] overflow-hidden" : ""
+              )}>
                 <table className="w-full text-left">
                   <thead>
                     <tr className="bg-bg-light">
@@ -295,6 +326,7 @@ export default function Calculator() {
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-border">
+                    {/* Years 1-10 are always free */}
                     {outputs.yearlyData.slice(0, 10).map((d) => (
                       <tr key={d.year} className="hover:bg-bg-light transition-colors">
                         <td className="px-8 py-4 font-bold text-primary">Year {d.year}</td>
@@ -302,8 +334,67 @@ export default function Calculator() {
                         <td className="px-8 py-4 text-primary opacity-60 font-medium">${d.cumulative.toLocaleString()}</td>
                       </tr>
                     ))}
+
+                    {/* Years 11-30 are shown either blurred (locked) or clear (unlocked) */}
+                    {outputs.yearlyData.slice(10, 30).map((d) => (
+                      <tr 
+                        key={d.year} 
+                        className={cn(
+                          "transition-all duration-300 hover:bg-bg-light",
+                          !isUnlocked && "blur-sm select-none pointer-events-none opacity-20"
+                        )}
+                      >
+                        <td className="px-8 py-4 font-bold text-primary">Year {d.year}</td>
+                        <td className="px-8 py-4 font-medium">${d.fee.toLocaleString()}</td>
+                        <td className="px-8 py-4 text-primary opacity-60 font-medium">${d.cumulative.toLocaleString()}</td>
+                      </tr>
+                    ))}
                   </tbody>
                 </table>
+
+                {/* Lock Overlay Form */}
+                {!isUnlocked && (
+                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-white via-white/95 to-white/30 pt-40 pb-12 px-6 flex flex-col justify-end items-center z-10">
+                    <div className="bg-white border border-border/80 rounded-2xl shadow-2xl p-6 md:p-8 max-w-md w-full text-center space-y-4 transform translate-y-2">
+                      <div className="text-4xl">📊</div>
+                      <h4 className="text-xl md:text-2xl font-serif font-bold text-primary">
+                        Get Your Full 30-Year HOA Cost Report
+                      </h4>
+                      <p className="text-sm text-primary/70 leading-relaxed font-sans">
+                        Enter your email to unlock the complete breakdown + receive it as a downloadable PDF summary.
+                      </p>
+                      <form onSubmit={handleUnlock} className="space-y-3 w-full text-left">
+                        <div>
+                          <input 
+                            type="email"
+                            required
+                            placeholder="Enter your email address"
+                            value={email}
+                            onChange={(e) => {
+                              setEmail(e.target.value);
+                              setEmailError('');
+                            }}
+                            className="w-full px-4 py-3 rounded-xl border border-border shadow-sm font-sans focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent text-primary text-base placeholder-primary/30"
+                          />
+                          {emailError && (
+                            <span className="text-red-500 text-xs font-bold font-sans mt-1 block">
+                              {emailError}
+                            </span>
+                          )}
+                        </div>
+                        <button 
+                          type="submit"
+                          className="w-full py-3 bg-accent hover:bg-accent/90 text-white font-bold rounded-xl transition-all font-sans text-base shadow-md flex items-center justify-center gap-2 cursor-pointer"
+                        >
+                          Unlock Free Report →
+                        </button>
+                        <p className="text-center text-[11px] text-primary/50 block font-sans">
+                          No spam. Unsubscribe anytime.
+                        </p>
+                      </form>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           </>

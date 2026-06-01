@@ -22,59 +22,12 @@ export default function Home() {
     }
   };
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What is a typical HOA fee?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Average HOA fees in the United States range from $200 to $400 per month depending on state, community type, and amenities."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How is an HOA fee calculated?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "HOA fees are calculated based on shared maintenance costs, reserve funds, insurance, and amenities divided among all unit owners."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can HOA fees increase every year?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, HOA fees typically increase 3 to 5 percent annually to account for inflation and rising maintenance costs."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What happens if you do not pay HOA fees?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Unpaid HOA fees can result in late charges, liens on your property, and in some states foreclosure proceedings."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Are HOA fees tax deductible?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "HOA fees are generally not tax deductible for primary residences but may be deductible for rental properties."
-        }
-      }
-    ]
-  };
-
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <SEO 
         title="HOA Fee Calculator 2026 — Estimate Your True Cost by State | HOACalculator.com"
         description="Free HOA fee calculator — instantly estimate your lifetime HOA cost, affordability score, and year-by-year breakdown. Trusted by US homebuyers in all 50 states."
-        schema={[webAppSchema, faqSchema]}
+        schema={[webAppSchema]}
       />
 
       {/* Header */}
@@ -350,45 +303,6 @@ export default function Home() {
                 </a>
               </div>
            </div>
-        </section>
-
-        {/* FAQ SECTION */}
-        <section className="py-24 px-6 max-w-4xl mx-auto">
-          <h2 className="text-4xl font-serif font-bold mb-12 text-center">Frequently Asked Questions</h2>
-          <div className="space-y-4">
-            {[
-              {
-                q: "What is a typical HOA fee?",
-                a: "Average HOA fees in the US range from $200 to $400 per month, depending on the state, community type, and amenities offered."
-              },
-              {
-                q: "How is HOA fee calculated?",
-                a: "HOA fees are calculated based on shared maintenance costs, reserve funds, insurance, and amenities divided among all unit owners."
-              },
-              {
-                q: "Can HOA fees increase every year?",
-                a: "Yes, HOA fees typically increase 3-5% annually to account for inflation and rising maintenance costs."
-              },
-              {
-                q: "What happens if you don't pay HOA fees?",
-                a: "Unpaid HOA fees can result in late charges, liens on your property, and in some states, foreclosure proceedings."
-              },
-              {
-                q: "Are HOA fees tax deductible?",
-                a: "HOA fees are generally not tax deductible for primary residences, but may be deductible for rental properties."
-              }
-            ].map((faq, i) => (
-              <details key={i} className="group card border-border p-0 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                <summary className="px-8 py-6 cursor-pointer list-none flex justify-between items-center font-bold text-lg">
-                  {faq.q}
-                  <span className="text-accent text-2xl group-open:rotate-45 transition-transform">+</span>
-                </summary>
-                <div className="px-8 pb-8 text-primary opacity-70 leading-relaxed border-t border-border mt-0 pt-6">
-                  {faq.a}
-                </div>
-              </details>
-            ))}
-          </div>
         </section>
       </main>
 

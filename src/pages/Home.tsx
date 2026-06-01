@@ -31,7 +31,7 @@ export default function Home() {
         "name": "What is a typical HOA fee?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Average HOA fees in the United States range from $200 to $400 per month, depending on the state, community type, and amenities offered by the homeowners association."
+          "text": "Average HOA fees in the United States range from $200 to $400 per month depending on state, community type, and amenities."
         }
       },
       {
@@ -39,7 +39,7 @@ export default function Home() {
         "name": "How is an HOA fee calculated?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "HOA fees are calculated based on the total shared maintenance costs, reserve funds, insurance premiums, and community amenities, divided equally among all unit owners in the association."
+          "text": "HOA fees are calculated based on shared maintenance costs, reserve funds, insurance, and amenities divided among all unit owners."
         }
       },
       {
@@ -47,7 +47,7 @@ export default function Home() {
         "name": "Can HOA fees increase every year?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, HOA fees typically increase 3 to 5 percent annually to account for inflation, rising labor costs, and increasing maintenance expenses for shared community spaces."
+          "text": "Yes, HOA fees typically increase 3 to 5 percent annually to account for inflation and rising maintenance costs."
         }
       },
       {
@@ -55,7 +55,7 @@ export default function Home() {
         "name": "What happens if you do not pay HOA fees?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Unpaid HOA fees can result in late payment charges, placement of a lien on your property, damage to your credit score, and in some US states, foreclosure proceedings by the association."
+          "text": "Unpaid HOA fees can result in late charges, liens on your property, and in some states foreclosure proceedings."
         }
       },
       {
@@ -63,7 +63,7 @@ export default function Home() {
         "name": "Are HOA fees tax deductible?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "HOA fees are generally not tax deductible for primary residences. However, they may be partially or fully deductible for rental properties as a legitimate business expense."
+          "text": "HOA fees are generally not tax deductible for primary residences but may be deductible for rental properties."
         }
       }
     ]

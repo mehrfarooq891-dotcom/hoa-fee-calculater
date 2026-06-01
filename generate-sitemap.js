@@ -6,7 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // 1. Base configuration
-const BASE_URL = 'https://hoafeecalculator.com';
+const BASE_URL = 'https://www.hoafeecalculator.com';
 const TODAY = new Date().toISOString().split('T')[0];
 
 console.log('Generating dynamic sitemap...');

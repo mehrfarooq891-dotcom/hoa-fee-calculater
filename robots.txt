@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /assets/
 
-Sitemap: https://hoafeecalculator.com/sitemap.xml
+Sitemap: https://www.hoafeecalculator.com/sitemap.xml

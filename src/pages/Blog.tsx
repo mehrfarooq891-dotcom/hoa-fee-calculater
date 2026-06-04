@@ -61,8 +61,8 @@ export default function Blog() {
       slug: "/blog/hoa-document-red-flags"
     },
     {
-      title: "HOA Reserve Funds: The Ultimate Guide to Funding Percentages",
-      excerpt: "What is a Reserve Study? Analyze how funding percentages protect home values and learn how healthy vs critical reserve assets are evaluated.",
+      title: "HOA Reserve Fund: What It Is and Why It Matters for Buyers",
+      excerpt: "An HOA without a healthy reserve fund is a special assessment waiting to happen. Learn how to read reserve studies, assess percent funding levels, and spot hidden danger zones.",
       date: "May 21, 2026",
       category: "Finance",
       slug: "/blog/hoa-reserve-fund"

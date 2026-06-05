@@ -68,8 +68,8 @@ export default function Blog() {
       slug: "/blog/hoa-reserve-fund"
     },
     {
-      title: "How Much HOA Fee is Too Much? Calculating Value vs. Waste",
-      excerpt: "Is your $400 monthly fee a bargain or a ripoff? Measure association services with our simple cost-to-value ratio and a la carte pricing check.",
+      title: "How Much HOA Fee Is Too Much? The DTI Rule Explained",
+      excerpt: "A $400 monthly HOA fee can slash your home buying budget by $80,000. Learn how lenders treat association dues in mortgage DTI pre-approval calculations.",
       date: "May 20, 2026",
       category: "Finance",
       slug: "/blog/how-much-hoa-fee-too-much"

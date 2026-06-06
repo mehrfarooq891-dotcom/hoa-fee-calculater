@@ -75,8 +75,8 @@ export default function Blog() {
       slug: "/blog/how-much-hoa-fee-too-much"
     },
     {
-      title: "How HOA Fees Affect Mortgage Approval & Borrowing Power",
-      excerpt: "A high monthly association fee can slash your home buying budget by tens of thousands of dollars. See how banks calculate your debt-to-income (DTI) ratio.",
+      title: "HOA Fees and Mortgage Approval: How Lenders Calculate DTI",
+      excerpt: "Your HOA fee shows up in your mortgage application — and most buyers don't know how deeply it slashes buying power. Learn how banks calculate your DTI ratio.",
       date: "May 19, 2026",
       category: "Finance",
       slug: "/blog/hoa-fees-mortgage-approval"

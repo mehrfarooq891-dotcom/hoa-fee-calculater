@@ -82,8 +82,8 @@ export default function Blog() {
       slug: "/blog/hoa-fees-mortgage-approval"
     },
     {
-      title: "New Construction HOA Fees: The Hidden Trajectory For Homebuyers",
-      excerpt: "Why do brand-new subdivision fees skyrocket within three years of closing? Understand the mechanism of developer subsidies and the handover deficit.",
+      title: "New Construction HOA Fees: Why They're Lower (And Won't Stay That Way)",
+      excerpt: "The builder sets your HOA fee — and they have every reason to keep it artificially low. Discover developer subsidies and the years 3-7 deficit spike.",
       date: "May 18, 2026",
       category: "Guides",
       slug: "/blog/new-construction-hoa-fees"

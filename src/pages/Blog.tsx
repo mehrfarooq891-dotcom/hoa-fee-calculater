@@ -89,8 +89,8 @@ export default function Blog() {
       slug: "/blog/new-construction-hoa-fees"
     },
     {
-      title: "Condo & Co-op Fees in NYC: Understanding Common Charges",
-      excerpt: "Confused by Manhattan listings? Demystify the distinct differences between condo common charges and co-op maintenance fees before put down an offer.",
+      title: "Condo HOA Fees in NYC: What You're Really Paying For",
+      excerpt: "In Manhattan, a $1,500/month maintenance fee is considered reasonable. Learn what NYC condo and co-op fees actually cover—from unions to Local Law 11.",
       date: "May 16, 2026",
       category: "Guides",
       slug: "/blog/condo-hoa-fees-nyc"

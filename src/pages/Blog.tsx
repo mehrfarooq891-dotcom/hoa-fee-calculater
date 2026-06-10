@@ -96,8 +96,8 @@ export default function Blog() {
       slug: "/blog/condo-hoa-fees-nyc"
     },
     {
-      title: "HOA Fees in Arizona: Water, Stucco, and Desert Covenants",
-      excerpt: "Relocating to the Grand Canyon State? Dissect the average fees, xeriscaping codes, UV wear factors, and state laws protecting buyers.",
+      title: "HOA Fees in Arizona: Phoenix vs Scottsdale vs Tucson Compared",
+      excerpt: "Scottsdale HOA fees can run 3x more than Tucson for similar-sized homes. Explore the comprehensive city averages, ARS Title 33 buyer rights, and retirement community costs.",
       date: "May 14, 2026",
       category: "Guides",
       slug: "/blog/hoa-fees-arizona"

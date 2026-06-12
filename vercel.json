@@ -4,24 +4,12 @@
   "redirects": [
     {
       "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "hoafeecalculator.com"
-        }
-      ],
+      "has": [{ "type": "host", "value": "hoafeecalculator.com" }],
       "destination": "https://www.hoafeecalculator.com/:path*",
       "permanent": true
     }
   ],
   "rewrites": [
-    { "source": "/about", "destination": "/about/index.html" },
-    { "source": "/contact", "destination": "/contact/index.html" },
-    { "source": "/blog", "destination": "/blog/index.html" },
-    { "source": "/compare", "destination": "/compare/index.html" },
-    { "source": "/states", "destination": "/states/index.html" },
-    { "source": "/blog/:path*", "destination": "/blog/:path*/index.html" },
-    { "source": "/states/:state", "destination": "/states/:state/index.html" }
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
-

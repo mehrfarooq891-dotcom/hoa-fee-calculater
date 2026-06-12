@@ -13,9 +13,9 @@ interface SEOProps {
 export default function SEO({ 
   title, 
   description, 
-  canonical = 'https://hoacalculator.com', 
+  canonical = 'https://www.hoafeecalculator.com', 
   ogType = 'website',
-  ogImage = 'https://hoacalculator.com/assets/og-image.jpg',
+  ogImage = 'https://www.hoafeecalculator.com/assets/og-image.jpg',
   schema = []
 }: SEOProps) {
   return (

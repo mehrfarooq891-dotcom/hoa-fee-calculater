@@ -20,6 +20,8 @@
     { "source": "/blog", "destination": "/blog/index.html" },
     { "source": "/compare", "destination": "/compare/index.html" },
     { "source": "/states", "destination": "/states/index.html" },
+    { "source": "/blog/:path*", "destination": "/blog/:path*/index.html" },
+    { "source": "/states/:path*", "destination": "/states/:path*/index.html" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }

@@ -110,8 +110,8 @@ export default function Blog() {
       slug: "/blog/lower-hoa-fees"
     },
     {
-      title: "HOA Management Companies: What Do They Do and Who Pays?",
-      excerpt: "Understand the division of power between your volunteer board and paid professional management firms, and where your fee cuts go.",
+      title: "HOA Management Companies: What They Do and What They Cost",
+      excerpt: "Your HOA fee might include $80/month that goes straight to a management company — here's if it's worth it. Learn what they do, typical rates, and performance red flags.",
       date: "May 09, 2026",
       category: "Guides",
       slug: "/blog/hoa-management-companies"

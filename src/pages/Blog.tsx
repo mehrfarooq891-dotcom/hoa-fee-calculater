@@ -124,9 +124,9 @@ export default function Blog() {
       slug: "/blog/self-managed-hoa"
     },
     {
-      title: "HOA Rules and Enforcement: Fines, Liens, and Your Homeowner Rights",
-      excerpt: "Struggling with landscape warnings or trash can disputes? Study the formal warning and hearing process, selective enforcement, and your dispute rights.",
-      date: "May 07, 2026",
+      title: "HOA Rules Enforcement: What They Can and Can't Fine You For",
+      excerpt: "Your HOA can fine you $200/day for the wrong mailbox — but they can't touch what's inside your home. Discover what HOAs can legally regulate, statutory limits, and how to fight unfair fines.",
+      date: "June 15, 2026",
       category: "Legal",
       slug: "/blog/hoa-rules-enforcement"
     },

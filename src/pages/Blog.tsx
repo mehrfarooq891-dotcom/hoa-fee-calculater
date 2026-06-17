@@ -131,9 +131,9 @@ export default function Blog() {
       slug: "/blog/hoa-rules-enforcement"
     },
     {
-      title: "Crucial Questions to Ask Before Buying a Home in an HOA",
-      excerpt: "Treat your escrow period as an investigation window. Armed with these five questions about reserve health and lawsuits, avoid expensive surprises.",
-      date: "May 06, 2026",
+      title: "Buying in an HOA Community: 10 Questions to Ask Before You Offer",
+      excerpt: "Most buyers tour the home — experienced buyers interrogate the HOA. Discover the 10 critical questions you must ask regarding reserves, fees, rules, and litigation before making an offer.",
+      date: "June 17, 2026",
       category: "Guides",
       slug: "/blog/questions-before-buying-hoa"
     },

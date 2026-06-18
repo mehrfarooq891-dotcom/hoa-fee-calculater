@@ -3,7 +3,7 @@ import BlogArticleLayout from '@/src/components/BlogArticleLayout';
 
 export default function WhatDoHOAFeesCoverArticle() {
   const relatedLinks = [
-    { label: "Townhouse HOA Fees: Average Cost and Exterior Maintenance Coverage", to: "/blog/townhouse-hoa-fees" },
+    { label: "HOA Fees for Townhouses vs Single-Family Homes: Real Comparisons", to: "/blog/townhouse-hoa-fees" },
     { label: "The HOA Annual Budget: A Homeowner's Guide to Corporate Expenses", to: "/blog/hoa-annual-budget" },
     { label: "Back to Blog Insights", to: "/blog" }
   ];

@@ -138,10 +138,10 @@ export default function Blog() {
       slug: "/blog/questions-before-buying-hoa"
     },
     {
-      title: "Townhouse HOA Fees: Average Cost and Exterior Maintenance Coverage",
-      excerpt: "Compare townhouse dues with condos. Discern what items—from shingles to siding to driveways—remain the legal responsibility of the association.",
-      date: "May 05, 2026",
-      category: "Guides",
+      title: "HOA Fees for Townhouses vs Single-Family Homes: Real Comparisons",
+      excerpt: "Townhouse HOA fees often cover your roof — single-family HOA fees usually don't. Compare average costs, coverage splits, and how to evaluate total cost of ownership.",
+      date: "June 17, 2026",
+      category: "Property Types",
       slug: "/blog/townhouse-hoa-fees"
     },
     {

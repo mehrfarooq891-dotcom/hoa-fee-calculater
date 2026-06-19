@@ -145,9 +145,9 @@ export default function Blog() {
       slug: "/blog/townhouse-hoa-fees"
     },
     {
-      title: "What Do HOA Fees Actually Cover? The Complete Breakdown",
-      excerpt: "Stop guessing what your dues protect. Unpack the precise allocations for landscaping, joint structural insurance, common utility grids, and capital reserves.",
-      date: "May 04, 2026",
+      title: "What Do HOA Fees Cover? A Complete Room-by-Room Breakdown",
+      excerpt: "Most homeowners can't name more than three things their monthly association dues pay for—but the actual list is 15+. Discover the full structural breakdown of your community expenses.",
+      date: "June 18, 2026",
       category: "Guides",
       slug: "/blog/what-do-hoa-fees-cover"
     },

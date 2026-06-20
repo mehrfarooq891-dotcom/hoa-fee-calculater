@@ -152,9 +152,9 @@ export default function Blog() {
       slug: "/blog/what-do-hoa-fees-cover"
     },
     {
-      title: "The HOA Annual Budget: A Homeowner's Guide to Corporate Expenses",
-      excerpt: "Understand the annual financial exercise that sets your monthly assessments. Learn about operating ledger splits and critical budget ratification codes.",
-      date: "May 03, 2026",
+      title: "HOA Annual Budget Explained: Where Your Money Actually Goes",
+      excerpt: "Your $350/mo HOA fee translates to an $840,000 annual budget. Where does that money actually go? Learn how budgets are created, operating vs reserve splits, and how to spot problems.",
+      date: "June 19, 2026",
       category: "Finance",
       slug: "/blog/hoa-annual-budget"
     },

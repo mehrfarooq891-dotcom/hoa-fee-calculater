@@ -131,6 +131,27 @@ export default function Blog() {
       slug: "/blog/hoa-rules-enforcement"
     },
     {
+      title: "States With No HOA Laws: Where Homeowners Have the Most Freedom",
+      excerpt: "In some states, your HOA can do almost anything — in others, homeowners are fully protected. Explore state-by-state laws, protective statutory vacuums, and foreclosure rules.",
+      date: "June 20, 2026",
+      category: "Legal & Rights",
+      slug: "/blog/states-no-hoa-laws"
+    },
+    {
+      title: "HOA Annual Budget Explained: Where Your Money Actually Goes",
+      excerpt: "Your $350/mo HOA fee translates to an $840,000 annual budget. Where does that money actually go? Learn how budgets are created, operating vs reserve splits, and how to spot problems.",
+      date: "June 19, 2026",
+      category: "Finance",
+      slug: "/blog/hoa-annual-budget"
+    },
+    {
+      title: "What Do HOA Fees Cover? A Complete Room-by-Room Breakdown",
+      excerpt: "Most homeowners can't name more than three things their monthly association dues pay for—but the actual list is 15+. Discover the full structural breakdown of your community expenses.",
+      date: "June 18, 2026",
+      category: "Guides",
+      slug: "/blog/what-do-hoa-fees-cover"
+    },
+    {
       title: "Buying in an HOA Community: 10 Questions to Ask Before You Offer",
       excerpt: "Most buyers tour the home — experienced buyers interrogate the HOA. Discover the 10 critical questions you must ask regarding reserves, fees, rules, and litigation before making an offer.",
       date: "June 17, 2026",
@@ -143,27 +164,6 @@ export default function Blog() {
       date: "June 17, 2026",
       category: "Property Types",
       slug: "/blog/townhouse-hoa-fees"
-    },
-    {
-      title: "What Do HOA Fees Cover? A Complete Room-by-Room Breakdown",
-      excerpt: "Most homeowners can't name more than three things their monthly association dues pay for—but the actual list is 15+. Discover the full structural breakdown of your community expenses.",
-      date: "June 18, 2026",
-      category: "Guides",
-      slug: "/blog/what-do-hoa-fees-cover"
-    },
-    {
-      title: "HOA Annual Budget Explained: Where Your Money Actually Goes",
-      excerpt: "Your $350/mo HOA fee translates to an $840,000 annual budget. Where does that money actually go? Learn how budgets are created, operating vs reserve splits, and how to spot problems.",
-      date: "June 19, 2026",
-      category: "Finance",
-      slug: "/blog/hoa-annual-budget"
-    },
-    {
-      title: "Top States with Minimal HOA Laws and Low Common-Interest Density",
-      excerpt: "Prefer absolute individual ownership freedom? Map out the US regions and states offering the lowest levels of homeowners association restrictions.",
-      date: "May 02, 2026",
-      category: "Data",
-      slug: "/blog/states-no-hoa-laws"
     },
     {
       title: "The Ultimate HOA Fee Calculator Guide: Estimate Your Lifetime Costs",

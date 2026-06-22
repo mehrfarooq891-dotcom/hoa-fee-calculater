@@ -131,6 +131,13 @@ export default function Blog() {
       slug: "/blog/hoa-rules-enforcement"
     },
     {
+      title: "HOA Fee Calculator: How to Estimate Your True Lifetime Cost",
+      excerpt: "A $250/month HOA fee sounds manageable — but over 30 years it's $90,000+ when you include inflation. Discover how to calculate the true compounding cost of common interest ownership.",
+      date: "June 22, 2026",
+      category: "Homebuying Guide",
+      slug: "/blog/hoa-fee-calculator-guide"
+    },
+    {
       title: "States With No HOA Laws: Where Homeowners Have the Most Freedom",
       excerpt: "In some states, your HOA can do almost anything — in others, homeowners are fully protected. Explore state-by-state laws, protective statutory vacuums, and foreclosure rules.",
       date: "June 20, 2026",
@@ -164,13 +171,6 @@ export default function Blog() {
       date: "June 17, 2026",
       category: "Property Types",
       slug: "/blog/townhouse-hoa-fees"
-    },
-    {
-      title: "The Ultimate HOA Fee Calculator Guide: Estimate Your Lifetime Costs",
-      excerpt: "Variable dues can add a quarter-million over a 30-year span. Plan compounding projections and protect your buying limit using our free companion tools.",
-      date: "May 01, 2026",
-      category: "Guides",
-      slug: "/blog/hoa-fee-calculator-guide"
     },
     {
       title: "HOA vs Condo Fee: What's the Difference and Which Costs More?",

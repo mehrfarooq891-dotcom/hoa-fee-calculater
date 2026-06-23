@@ -5,6 +5,13 @@ import { Link } from 'react-router-dom';
 export default function Blog() {
   const posts = [
     {
+      title: "Average HOA Fees in New York State: NYC, Long Island & Upstate Compared",
+      excerpt: "In Manhattan, $1,200/month is the median condo maintenance fee — and it's been rising 6% per year since 2020. Discover how New York City, Long Island, and Upstate costs compare.",
+      date: "June 23, 2026",
+      category: "Data",
+      slug: "/blog/average-hoa-fees-new-york"
+    },
+    {
       title: "HOA Fees in Texas: The Complete 2026 Homeowner's Legal & Financial Guide",
       excerpt: "Moving to the Lone Star State? Discover average HOA fees in Texas, master development rules, and critical legal protections under Texas Property Code Chapter 209.",
       date: "May 28, 2026",

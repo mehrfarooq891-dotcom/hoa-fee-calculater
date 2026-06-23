@@ -5,6 +5,13 @@ import { Link } from 'react-router-dom';
 export default function Blog() {
   const posts = [
     {
+      title: "What State Has the Highest HOA Fees? The 2026 Ranking",
+      excerpt: "Hawaii tops the list at $900+/month average — but three other states will surprise you. Discover Hawaii, California, New York, and Florida averages with deep statutory and economic-driver cost data.",
+      date: "June 23, 2026",
+      category: "Data",
+      slug: "/blog/highest-hoa-fees-by-state"
+    },
+    {
       title: "Average HOA Fees in New York State: NYC, Long Island & Upstate Compared",
       excerpt: "In Manhattan, $1,200/month is the median condo maintenance fee — and it's been rising 6% per year since 2020. Discover how New York City, Long Island, and Upstate costs compare.",
       date: "June 23, 2026",

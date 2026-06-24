@@ -5,6 +5,13 @@ import { Link } from 'react-router-dom';
 export default function Blog() {
   const posts = [
     {
+      title: "HOA Fee Increases: How Much Can They Raise It and How Often?",
+      excerpt: "One California HOA raised fees 47% in a single year — legally. Discover legal limits on HOA fee increases, explore state-by-state limits, and learn how to audit your CC&Rs.",
+      date: "June 24, 2026",
+      category: "Finance",
+      slug: "/blog/hoa-fee-increase-limits"
+    },
+    {
       title: "What State Has the Highest HOA Fees? The 2026 Ranking",
       excerpt: "Hawaii tops the list at $900+/month average — but three other states will surprise you. Discover Hawaii, California, New York, and Florida averages with deep statutory and economic-driver cost data.",
       date: "June 23, 2026",

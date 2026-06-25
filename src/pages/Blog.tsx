@@ -5,6 +5,13 @@ import { Link } from 'react-router-dom';
 export default function Blog() {
   const posts = [
     {
+      title: "HOA Fees in Georgia: Atlanta, Savannah & Suburban Breakdown 2026",
+      excerpt: "Atlanta suburbs like Alpharetta and Johns Creek have some of the fastest-rising HOA fees in the Southeast — up 22% since 2022. Compare Atlanta, Savannah, and suburban averages with statutory rules.",
+      date: "June 24, 2026",
+      category: "Data",
+      slug: "/blog/hoa-fees-georgia"
+    },
+    {
       title: "HOA Fee Increases: How Much Can They Raise It and How Often?",
       excerpt: "One California HOA raised fees 47% in a single year — legally. Discover legal limits on HOA fee increases, explore state-by-state limits, and learn how to audit your CC&Rs.",
       date: "June 24, 2026",

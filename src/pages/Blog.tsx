@@ -5,6 +5,13 @@ import { Link } from 'react-router-dom';
 export default function Blog() {
   const posts = [
     {
+      title: "HOA Fees in North Carolina: Charlotte, Raleigh & Triangle Area Guide",
+      excerpt: "Charlotte's fastest-growing suburbs now charge HOA fees that rival South Florida — and most buyers don't see it coming. Compare Charlotte, Raleigh, Cary, Wilmington, and Asheville averages.",
+      date: "June 26, 2026",
+      category: "Data",
+      slug: "/blog/hoa-fees-north-carolina"
+    },
+    {
       title: "HOA Fees in Georgia: Atlanta, Savannah & Suburban Breakdown 2026",
       excerpt: "Atlanta suburbs like Alpharetta and Johns Creek have some of the fastest-rising HOA fees in the Southeast — up 22% since 2022. Compare Atlanta, Savannah, and suburban averages with statutory rules.",
       date: "June 24, 2026",

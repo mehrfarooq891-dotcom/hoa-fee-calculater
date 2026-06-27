@@ -5,6 +5,13 @@ import { Link } from 'react-router-dom';
 export default function Blog() {
   const posts = [
     {
+      title: "HOA Fees in Illinois: Chicago Condos vs Suburban Townhouses",
+      excerpt: "A Lincoln Park condo can run $1,000+/month in HOA fees — a Naperville townhouse just $175/month. Compare Chicago high-rises and suburban townhouses.",
+      date: "June 27, 2026",
+      category: "Data",
+      slug: "/blog/hoa-fees-illinois"
+    },
+    {
       title: "HOA Fees in North Carolina: Charlotte, Raleigh & Triangle Area Guide",
       excerpt: "Charlotte's fastest-growing suburbs now charge HOA fees that rival South Florida — and most buyers don't see it coming. Compare Charlotte, Raleigh, Cary, Wilmington, and Asheville averages.",
       date: "June 26, 2026",

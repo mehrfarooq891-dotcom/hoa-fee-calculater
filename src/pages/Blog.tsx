@@ -5,6 +5,13 @@ import { Link } from 'react-router-dom';
 export default function Blog() {
   const posts = [
     {
+      title: "HOA Fees in Nevada: Las Vegas, Henderson & Reno Guide 2026",
+      excerpt: "Nevada has more HOA communities per capita than almost any other state — over 3,200 registered associations statewide. Compare Las Vegas Strip condos, Summerlin, Henderson, and Reno averages.",
+      date: "June 28, 2026",
+      category: "Data",
+      slug: "/blog/hoa-fees-nevada"
+    },
+    {
       title: "HOA Fees in Illinois: Chicago Condos vs Suburban Townhouses",
       excerpt: "A Lincoln Park condo can run $1,000+/month in HOA fees — a Naperville townhouse just $175/month. Compare Chicago high-rises and suburban townhouses.",
       date: "June 27, 2026",

@@ -5,6 +5,13 @@ import { Link } from 'react-router-dom';
 export default function Blog() {
   const posts = [
     {
+      title: "HOA Fees in Colorado: Denver, Boulder & Mountain Community Guide",
+      excerpt: "A ski-area condo in Breckenridge can carry $1,800/month in HOA fees — but even suburban Denver townhouses now average $300/month. Compare LoDo, Boulder, Colorado Springs, and resort town averages.",
+      date: "June 29, 2026",
+      category: "Data",
+      slug: "/blog/hoa-fees-colorado"
+    },
+    {
       title: "HOA Fees in Nevada: Las Vegas, Henderson & Reno Guide 2026",
       excerpt: "Nevada has more HOA communities per capita than almost any other state — over 3,200 registered associations statewide. Compare Las Vegas Strip condos, Summerlin, Henderson, and Reno averages.",
       date: "June 28, 2026",

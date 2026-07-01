@@ -5,6 +5,13 @@ import { Link } from 'react-router-dom';
 export default function Blog() {
   const posts = [
     {
+      title: "HOA Fees in Washington State: Seattle, Bellevue & Eastside Guide 2026",
+      excerpt: "Seattle condo fees jumped 28% between 2021 and 2026 — driven by seismic retrofits, tech-worker amenities, and surging labor costs. Compare Seattle, Bellevue, and Eastside averages.",
+      date: "July 1, 2026",
+      category: "Data",
+      slug: "/blog/hoa-fees-washington-state"
+    },
+    {
       title: "HOA Fees in Colorado: Denver, Boulder & Mountain Community Guide",
       excerpt: "A ski-area condo in Breckenridge can carry $1,800/month in HOA fees — but even suburban Denver townhouses now average $300/month. Compare LoDo, Boulder, Colorado Springs, and resort town averages.",
       date: "June 29, 2026",

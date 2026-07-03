@@ -5,6 +5,13 @@ import { Link } from 'react-router-dom';
 export default function Blog() {
   const posts = [
     {
+      title: "HOA Fees in Virginia: Northern Virginia, Richmond & Beach Markets",
+      excerpt: "Northern Virginia's master-planned communities stack HOA and CDD fees, hitting $600/month combined. Discover VPOAA laws, Reston double-billing, and beach town condo rates.",
+      date: "July 3, 2026",
+      category: "Data",
+      slug: "/blog/hoa-fees-virginia"
+    },
+    {
       title: "HOA Fees in Washington State: Seattle, Bellevue & Eastside Guide 2026",
       excerpt: "Seattle condo fees jumped 28% between 2021 and 2026 — driven by seismic retrofits, tech-worker amenities, and surging labor costs. Compare Seattle, Bellevue, and Eastside averages.",
       date: "July 1, 2026",

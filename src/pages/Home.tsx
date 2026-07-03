@@ -6,6 +6,38 @@ import { Link } from 'react-router-dom';
 export default function Home() {
   const [isEmbedModalOpen, setIsEmbedModalOpen] = React.useState(false);
   const [copied, setCopied] = React.useState(false);
+  const [openFaq, setOpenFaq] = React.useState<number | null>(null);
+
+  const faqs = [
+    {
+      q: "How much are average HOA fees?",
+      a: "The average homeowners association (HOA) fee in the United States is approximately $300 to $400 per month, depending heavily on location, property type, and amenities. Coastal states like Florida and California average higher costs, whereas inland states like Arkansas or Indiana have significantly lower averages."
+    },
+    {
+      q: "Are HOA fees tax deductible?",
+      a: "HOA fees are generally not tax deductible for a primary residence. However, if you rent out the property as a residential investment, or if you use a portion of the home exclusively for a qualified home office business, you may be able to deduct the fees as a business expense."
+    },
+    {
+      q: "What happens if I don't pay my HOA fees?",
+      a: "Failing to pay your HOA fees can result in late charges, interest penalties, and suspension of community amenity privileges. If the delinquency persists, the association can place a lien on your property, which can ultimately lead to foreclosure depending on state laws."
+    },
+    {
+      q: "Can HOA fees increase every year?",
+      a: "Yes, HOA fees can and often do increase annually to keep pace with inflation, rising vendor contracts, and higher insurance premiums. Most state laws or association bylaws place limits on how much a board can increase standard dues without holding a vote from all community members."
+    },
+    {
+      q: "What's the difference between HOA fees and condo fees?",
+      a: "While both are monthly assessments, HOA fees typically cover common areas, neighborhood roads, and shared amenities for single-family homes or townhouses. Condo fees generally cover those items plus structural elements, exterior hazard insurance, shared utilities, and outer building maintenance of individual units."
+    },
+    {
+      q: "Are HOA fees included in a mortgage payment?",
+      a: "No, HOA fees are paid directly to the homeowners association, not to your mortgage lender. However, lenders always calculate estimated HOA fees as part of your total debt-to-income (DTI) ratio during the home loan approval process."
+    },
+    {
+      q: "How do I find out how much a property's HOA fees are?",
+      a: "The property's active HOA fee is typically disclosed on real estate listing platforms (such as Zillow or Redfin), but you should always verify the exact rate. Before closing, request a formal resale certificate, which details the current fee, any outstanding balances, and scheduled special assessments."
+    }
+  ];
 
   const webAppSchema = {
     "@context": "https://schema.org",
@@ -22,12 +54,25 @@ export default function Home() {
     }
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.a
+      }
+    }))
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <SEO 
         title="HOA Fee Calculator 2026 — Estimate Your True Cost by State | HOACalculator.com"
         description="Free HOA fee calculator — instantly estimate your lifetime HOA cost, affordability score, and year-by-year breakdown. Trusted by US homebuyers in all 50 states."
-        schema={[webAppSchema]}
+        schema={[webAppSchema, faqSchema]}
       />
 
       {/* Header */}
@@ -303,6 +348,30 @@ export default function Home() {
                 </a>
               </div>
            </div>
+        </section>
+
+        {/* FAQ SECTION */}
+        <section className="py-20 px-6 max-w-4xl mx-auto border-t border-border">
+          <h2 className="text-4xl font-serif font-bold text-primary mb-12 text-center">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            {faqs.map((faq, index) => {
+              const isOpen = openFaq === index;
+              return (
+                <div key={index} className="border border-border/60 rounded-2xl overflow-hidden transition-all duration-200">
+                  <button
+                    onClick={() => setOpenFaq(isOpen ? null : index)}
+                    className="w-full text-left px-6 py-5 bg-bg-light hover:bg-bg-light/80 flex justify-between items-center transition-colors font-sans cursor-pointer focus:outline-none"
+                  >
+                    <span className="font-bold text-primary text-lg pr-4">{faq.q}</span>
+                    <span className={`text-accent font-bold transform transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}>▼</span>
+                  </button>
+                  <div className={`transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[500px] opacity-100 border-t border-border/40' : 'max-h-0 opacity-0 pointer-events-none'}`}>
+                    <p className="px-6 py-5 text-primary opacity-80 leading-relaxed font-sans">{faq.a}</p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </section>
       </main>
 

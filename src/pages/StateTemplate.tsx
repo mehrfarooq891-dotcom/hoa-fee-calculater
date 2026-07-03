@@ -24,12 +24,45 @@ const getStateData = (slug: string, displayName: string): StateConfig => {
 
 export default function StateTemplate() {
   const { stateName = 'texas' } = useParams();
+  const [openFaq, setOpenFaq] = React.useState<number | null>(null);
   
   // Format state name for display
   const displayName = stateName.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 
   // Fetch data specifically for this state
   const stateData = getStateData(stateName, displayName);
+
+  const faqs = [
+    {
+      q: `How much are average HOA fees in ${displayName}?`,
+      a: `The estimated average HOA fee in ${displayName} is around $${stateData.avgFee} per month. However, actual monthly costs vary significantly by city, with high-demand urban areas and master-planned golf communities skewing higher, while rural or older subdivisions have much lower dues.`
+    },
+    {
+      q: `What are the primary homeowners association laws in ${displayName}?`,
+      a: `HOAs in ${displayName} are governed by specific state regulations designed to ensure financial transparency and protect homeowner rights. These statutes typically mandate that associations hold open board meetings, maintain detailed financial records, and provide reasonable access to books for all active members.`
+    },
+    {
+      q: `Can ${displayName} HOAs restrict solar panels or xeriscaping?`,
+      a: `While associations can enforce aesthetic standards, ${displayName} laws often protect homeowners' rights to install solar energy systems or low-water xeriscaping. However, you should always consult your specific community's bylaws and CC&Rs, as reasonable aesthetic guidelines can still be enforced by the board.`
+    },
+    {
+      q: `What happens if a homeowner defaults on HOA fees in ${displayName}?`,
+      a: `If a homeowner defaults on dues in ${displayName}, the association has the legal authority to impose late fees, apply interest penalties, and suspend access to communal amenities. If the delinquency remains unpaid, the HOA can place a lien on the property, which can ultimately lead to foreclosure.`
+    }
+  ];
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.a
+      }
+    }))
+  };
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
@@ -41,7 +74,7 @@ export default function StateTemplate() {
           "@type": "LocalBusiness",
           "name": `HOA Guide ${displayName}`,
           "description": `HOA fee data and laws for ${displayName}`
-        }]}
+        }, faqSchema]}
       />
 
       {/* Header */}
@@ -85,6 +118,11 @@ export default function StateTemplate() {
             <p className="text-xl text-primary opacity-70 max-w-3xl leading-relaxed">
               Thinking about buying in {displayName}? Here's what you need to know about local HOA laws, average costs, and how to avoid overpaying.
             </p>
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-primary opacity-50 uppercase font-bold tracking-wider mt-4">
+              <span>Updated: April 2026</span>
+              <span>•</span>
+              <span className="text-accent normal-case font-bold">Reviewed by Michael Torres, Certified Real Estate Financial Analyst</span>
+            </div>
           </header>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
@@ -141,6 +179,29 @@ export default function StateTemplate() {
               <section id="calculator" className="pt-8 border-t border-border">
                 <h2 className="text-3xl font-serif font-bold text-primary mb-8">Calculate Your Custom {displayName} Lifetime HOA Cost</h2>
                 <Calculator />
+              </section>
+
+              <section className="pt-16 mt-8 border-t border-border">
+                <h2 className="text-3xl font-serif font-bold text-primary mb-8">{displayName} HOA Frequently Asked Questions</h2>
+                <div className="space-y-4">
+                  {faqs.map((faq, index) => {
+                    const isOpen = openFaq === index;
+                    return (
+                      <div key={index} className="border border-border/60 rounded-2xl overflow-hidden transition-all duration-200">
+                        <button
+                          onClick={() => setOpenFaq(isOpen ? null : index)}
+                          className="w-full text-left px-6 py-5 bg-bg-light hover:bg-bg-light/80 flex justify-between items-center transition-colors font-sans cursor-pointer focus:outline-none"
+                        >
+                          <span className="font-bold text-primary text-lg pr-4">{faq.q}</span>
+                          <span className={`text-accent font-bold transform transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}>▼</span>
+                        </button>
+                        <div className={`transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[500px] opacity-100 border-t border-border/40' : 'max-h-0 opacity-0 pointer-events-none'}`}>
+                          <p className="px-6 py-5 text-primary opacity-80 leading-relaxed font-sans text-base">{faq.a}</p>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
               </section>
 
               <div className="bg-bg-light p-8 rounded-2xl border border-border flex flex-col md:flex-row items-center justify-between gap-6 mt-12">

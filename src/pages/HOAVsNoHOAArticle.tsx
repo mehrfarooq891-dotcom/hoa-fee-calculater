@@ -67,12 +67,14 @@ export default function HOAVsNoHOAArticle() {
           
           <div className="mb-6">
             <Link to="/blog" className="text-accent font-bold hover:underline mb-4 inline-block">← Back to Blog</Link>
-            <div className="flex items-center gap-4 text-xs text-primary opacity-50 uppercase font-bold tracking-wider mb-2">
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-primary opacity-50 uppercase font-bold tracking-wider mb-2">
               <span>Homebuying Guide</span>
               <span>•</span>
               <span>9 min read</span>
               <span>•</span>
               <span>May 18, 2026</span>
+              <span>•</span>
+              <span className="text-accent normal-case">Reviewed by Michael Torres, Certified Real Estate Financial Analyst</span>
             </div>
           </div>
 

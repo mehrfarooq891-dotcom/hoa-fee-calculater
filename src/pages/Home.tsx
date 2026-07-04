@@ -7,6 +7,7 @@ export default function Home() {
   const [isEmbedModalOpen, setIsEmbedModalOpen] = React.useState(false);
   const [copied, setCopied] = React.useState(false);
   const [openFaq, setOpenFaq] = React.useState<number | null>(null);
+  const [openNewFaq, setOpenNewFaq] = React.useState<number | null>(null);
 
   const faqs = [
     {
@@ -39,6 +40,25 @@ export default function Home() {
     }
   ];
 
+  const newFaqs = [
+    {
+      q: "What is a normal HOA fee in the US in 2026?",
+      a: "Average HOA fees in the US range from $200 to $400 per month for a single-family home, and $300 to $700 per month for condos with amenities like pools or gyms. High-rise buildings in major cities can exceed $1,000/month."
+    },
+    {
+      q: "Can an HOA raise fees every year?",
+      a: "Most HOAs can raise fees annually without a vote if the increase stays within limits set by the governing documents, typically 10–15% per year. Larger increases usually require a majority homeowner vote."
+    },
+    {
+      q: "What happens if I don't pay my HOA fees?",
+      a: "Unpaid HOA fees typically result in late fees within 30 days, followed by a lien on the property after 60–90 days of non-payment. Some states allow HOAs to foreclose on properties with unpaid dues exceeding $1,000–$5,000."
+    },
+    {
+      q: "Are HOA fees tax deductible?",
+      a: "HOA fees are generally not tax-deductible for a primary residence. However, if the property is a rental or used partially for business, a portion of HOA fees may be deductible as a business expense."
+    }
+  ];
+
   const webAppSchema = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
@@ -67,12 +87,25 @@ export default function Home() {
     }))
   };
 
+  const newFaqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": newFaqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.a
+      }
+    }))
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <SEO 
         title="HOA Fee Calculator 2026 — Estimate Your True Cost by State | HOACalculator.com"
         description="Free HOA fee calculator — instantly estimate your lifetime HOA cost, affordability score, and year-by-year breakdown. Trusted by US homebuyers in all 50 states."
-        schema={[webAppSchema, faqSchema]}
+        schema={[webAppSchema, faqSchema, newFaqSchema]}
       />
 
       {/* Header */}
@@ -360,6 +393,30 @@ export default function Home() {
                 <div key={index} className="border border-border/60 rounded-2xl overflow-hidden transition-all duration-200">
                   <button
                     onClick={() => setOpenFaq(isOpen ? null : index)}
+                    className="w-full text-left px-6 py-5 bg-bg-light hover:bg-bg-light/80 flex justify-between items-center transition-colors font-sans cursor-pointer focus:outline-none"
+                  >
+                    <span className="font-bold text-primary text-lg pr-4">{faq.q}</span>
+                    <span className={`text-accent font-bold transform transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}>▼</span>
+                  </button>
+                  <div className={`transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[500px] opacity-100 border-t border-border/40' : 'max-h-0 opacity-0 pointer-events-none'}`}>
+                    <p className="px-6 py-5 text-primary opacity-80 leading-relaxed font-sans">{faq.a}</p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+
+        {/* NEW FAQ SECTION */}
+        <section className="py-20 px-6 max-w-4xl mx-auto border-t border-border">
+          <h2 className="text-4xl font-serif font-bold text-primary mb-12 text-center">Homeowner Association FAQs</h2>
+          <div className="space-y-4">
+            {newFaqs.map((faq, index) => {
+              const isOpen = openNewFaq === index;
+              return (
+                <div key={index} className="border border-border/60 rounded-2xl overflow-hidden transition-all duration-200">
+                  <button
+                    onClick={() => setOpenNewFaq(isOpen ? null : index)}
                     className="w-full text-left px-6 py-5 bg-bg-light hover:bg-bg-light/80 flex justify-between items-center transition-colors font-sans cursor-pointer focus:outline-none"
                   >
                     <span className="font-bold text-primary text-lg pr-4">{faq.q}</span>

@@ -20,19 +20,19 @@ export default function ColoradoHOAFeesArticle() {
     "author": {
       "@type": "Organization",
       "name": "HOA Research Team",
-      "url": "https://www.hoafeecalculator.com/"
+      "url": "https://hoafeecalculator.com/"
     },
     "publisher": {
       "@type": "Organization",
       "name": "HOACalculator.com",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.hoafeecalculator.com/favicon.svg"
+        "url": "https://hoafeecalculator.com/favicon.svg"
       }
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://www.hoafeecalculator.com/blog/hoa-fees-colorado"
+      "@id": "https://hoafeecalculator.com/blog/hoa-fees-colorado"
     }
   };
 
@@ -210,7 +210,7 @@ export default function ColoradoHOAFeesArticle() {
 
       <div className="inline-cta my-10 text-center">
         <a 
-          href="https://www.hoafeecalculator.com/" 
+          href="https://hoafeecalculator.com/" 
           className="inline-block bg-accent hover:bg-opacity-90 text-white font-bold py-4 px-10 rounded-full transition-all hover:scale-105 shadow-xl text-lg duration-300"
         >
           Use Our Free HOA Calculator →
@@ -259,7 +259,7 @@ export default function ColoradoHOAFeesArticle() {
       </p>
 
       <p>
-        Second, check the association's policy on owner rental restrictions and verify how much insurance covers building repair costs. Many mountain communities restrict short-term rentals, which can ruin your plans for investment income. Finally, calculate your true carrying costs using an interactive <a href="https://www.hoafeecalculator.com/" className="text-accent hover:underline font-bold">HOA fee calculator</a> before you submit an offer. This proactive planning ensures your Colorado home purchase remains a source of long-term joy and financial security.
+        Second, check the association's policy on owner rental restrictions and verify how much insurance covers building repair costs. Many mountain communities restrict short-term rentals, which can ruin your plans for investment income. Finally, calculate your true carrying costs using an interactive <a href="https://hoafeecalculator.com/" className="text-accent hover:underline font-bold">HOA fee calculator</a> before you submit an offer. This proactive planning ensures your Colorado home purchase remains a source of long-term joy and financial security.
       </p>
 
       {/* Author Bio Block */}

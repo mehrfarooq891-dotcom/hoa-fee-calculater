@@ -21,7 +21,7 @@ export default function SEO({
   const path = typeof window !== 'undefined' ? window.location.pathname : '';
   const normalizedPath = path.length > 1 && path.endsWith('/') ? path.slice(0, -1) : path;
   const canonicalUrl = canonical 
-    ? canonical.replace('www.hoafeecalculator.com', 'hoafeecalculator.com')
+    ? canonical 
     : `https://hoafeecalculator.com${normalizedPath}`;
 
   return (
@@ -35,13 +35,13 @@ export default function SEO({
       <meta property="og:description" content={description} />
       <meta property="og:type" content={ogType} />
       <meta property="og:url" content={canonicalUrl} />
-      <meta property="og:image" content={ogImage.replace('www.hoafeecalculator.com', 'hoafeecalculator.com')} />
+      <meta property="og:image" content={ogImage} />
       
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={ogImage.replace('www.hoafeecalculator.com', 'hoafeecalculator.com')} />
+      <meta name="twitter:image" content={ogImage} />
 
       {/* Schema */}
       {schema.map((s, i) => (

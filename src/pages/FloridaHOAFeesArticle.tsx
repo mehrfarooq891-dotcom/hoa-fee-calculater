@@ -18,7 +18,7 @@ export default function FloridaHOAFeesArticle() {
       "@type": "Person",
       "name": "Michael Torres",
       "jobTitle": "Real Estate Financial Analyst",
-      "url": "https://www.hoafeecalculator.com/about"
+      "url": "https://hoafeecalculator.com/about"
     }
   };
 
@@ -91,7 +91,7 @@ export default function FloridaHOAFeesArticle() {
                 Florida holds a striking real estate distinction that surprises many newcomers: the Sunshine State is home to the highest concentration of homeowners association (HOA) and condominium communities per capita in the entire United States. With over 48,000 active community associations representing upwards of 9.6 million residents, managed communities are not just an option in Florida—they are the default vehicle of modern residential homeownership.
               </p>
               <p>
-                From manicured golf courses in Palm Beach county to master-planned golf layouts in Orlando, buying a home or condominium unit in Florida almost guarantees you will find yourself paying recurring fees. These fees quietly dictate your overall budget. However, in recent years, <strong className="text-primary font-bold"><a href="https://www.hoafeecalculator.com/" className="text-accent underline hover:text-accent/80 transition-colors">HOA fees</a> Florida</strong> have undergone a dramatic structural transformation. 
+                From manicured golf courses in Palm Beach county to master-planned golf layouts in Orlando, buying a home or condominium unit in Florida almost guarantees you will find yourself paying recurring fees. These fees quietly dictate your overall budget. However, in recent years, <strong className="text-primary font-bold"><a href="https://hoafeecalculator.com/" className="text-accent underline hover:text-accent/80 transition-colors">HOA fees</a> Florida</strong> have undergone a dramatic structural transformation. 
               </p>
               <p>
                 Under new mandates enacted by state lawmakers, millions of Floridian property owners are waking up to climbing regular dues, unexpected special assessments, and complex structural studies. Facing skyrocketing insurance coverage rates alongside zeroed-out reserve limitations, buyers today are entering a landscape vastly different from that of five years ago.
@@ -292,7 +292,7 @@ export default function FloridaHOAFeesArticle() {
                 Use our free HOA Fee Calculator to estimate your true lifetime HOA expenses — with year-by-year breakdown.
               </p>
               <a 
-                href="https://www.hoafeecalculator.com/" 
+                href="https://hoafeecalculator.com/" 
                 className="inline-flex items-center bg-primary hover:bg-primary/95 text-white font-bold py-3.5 px-6 rounded-full transition-all active:scale-95 text-sm shadow-sm"
               >
                 Calculate Now →

@@ -18,7 +18,7 @@ export default function WhatIsHOAFeeArticle() {
       "@type": "Person",
       "name": "Michael Torres",
       "jobTitle": "Real Estate Financial Analyst",
-      "url": "https://www.hoafeecalculator.com/about"
+      "url": "https://hoafeecalculator.com/about"
     }
   };
 
@@ -197,7 +197,7 @@ export default function WhatIsHOAFeeArticle() {
                 4. How HOA Fees Are Set and Increased
               </h2>
               <p>
-                Your association dues are never locked in place. Unlike a fixed-rate mortgage where principal payments remain static, <a href="https://www.hoafeecalculator.com/" className="text-accent underline hover:text-accent/80 transition-colors">HOA fees</a> fluctuate to match economic conditions and structural wear.
+                Your association dues are never locked in place. Unlike a fixed-rate mortgage where principal payments remain static, <a href="https://hoafeecalculator.com/" className="text-accent underline hover:text-accent/80 transition-colors">HOA fees</a> fluctuate to match economic conditions and structural wear.
               </p>
               <p>
                 Each autumn, the board of directors drafts a projection of upcoming expenses. If roofing materials, landscaping labor, or building utility costs jump, your fees must climb to keep the budget balanced.
@@ -273,7 +273,7 @@ export default function WhatIsHOAFeeArticle() {
                 Use our free HOA Fee Calculator to estimate your true lifetime HOA expenses — with year-by-year breakdown.
               </p>
               <a 
-                href="https://www.hoafeecalculator.com/" 
+                href="https://hoafeecalculator.com/" 
                 className="inline-flex items-center bg-primary hover:bg-primary/95 text-white font-bold py-3.5 px-6 rounded-full transition-all active:scale-95 text-sm shadow-sm"
               >
                 Calculate Now →

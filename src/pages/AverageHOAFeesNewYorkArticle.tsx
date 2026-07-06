@@ -20,19 +20,19 @@ export default function AverageHOAFeesNewYorkArticle() {
     "author": {
       "@type": "Organization",
       "name": "HOA Research Team",
-      "url": "https://www.hoafeecalculator.com/"
+      "url": "https://hoafeecalculator.com/"
     },
     "publisher": {
       "@type": "Organization",
       "name": "HOACalculator.com",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.hoafeecalculator.com/hoa_calculator_logo.svg"
+        "url": "https://hoafeecalculator.com/hoa_calculator_logo.svg"
       }
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://www.hoafeecalculator.com/blog/average-hoa-fees-new-york"
+      "@id": "https://hoafeecalculator.com/blog/average-hoa-fees-new-york"
     }
   };
 
@@ -88,7 +88,7 @@ export default function AverageHOAFeesNewYorkArticle() {
       </p>
 
       <p>
-        Additionally, most New York co-op buildings carry a collective master building loan called an underlying mortgage. A portion of your monthly maintenance goes directly toward paying down this building debt. Because maintenance includes property taxes and mortgage payments, it always looks significantly higher than a condo&apos;s common charges. You can use our free <a href="https://www.hoafeecalculator.com/" className="text-accent hover:underline font-bold">HOA fee calculator</a> to compare these two scenarios and reveal your true out-of-pocket costs.
+        Additionally, most New York co-op buildings carry a collective master building loan called an underlying mortgage. A portion of your monthly maintenance goes directly toward paying down this building debt. Because maintenance includes property taxes and mortgage payments, it always looks significantly higher than a condo&apos;s common charges. You can use our free <a href="https://hoafeecalculator.com/" className="text-accent hover:underline font-bold">HOA fee calculator</a> to compare these two scenarios and reveal your true out-of-pocket costs.
       </p>
 
       <h2 className="text-2xl font-serif font-bold text-primary mt-10 mb-4">
@@ -207,7 +207,7 @@ export default function AverageHOAFeesNewYorkArticle() {
       {/* Inline CTA block */}
       <div className="inline-cta my-10 text-center">
         <a 
-          href="https://www.hoafeecalculator.com/" 
+          href="https://hoafeecalculator.com/" 
           className="inline-block bg-accent hover:bg-opacity-90 text-white font-bold py-4 px-10 rounded-full transition-all hover:scale-105 shadow-xl text-lg duration-300"
         >
           Use Our Free HOA Calculator →

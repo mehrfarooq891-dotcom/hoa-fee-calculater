@@ -18,7 +18,7 @@ export default function HOAVsCondoFeeArticle() {
       "@type": "Person",
       "name": "Michael Torres",
       "jobTitle": "Real Estate Financial Analyst",
-      "url": "https://www.hoafeecalculator.com/about"
+      "url": "https://hoafeecalculator.com/about"
     }
   };
 
@@ -91,7 +91,7 @@ export default function HOAVsCondoFeeArticle() {
                 When searching for a new home, prospective buyers frequently filter listings by physical descriptors: bedrooms, square footage, school districts, and zip codes. But high-density and managed neighborhoods come with an additional, non-negotiable metric that can make or break a household's monthly budget: the recurring community fee.
               </p>
               <p>
-                A widespread source of friction in real estate transactions is the tendency for buyers to use the terms "<a href="https://www.hoafeecalculator.com/" className="text-accent underline hover:text-accent/80 transition-colors">HOA fee</a>" and "condo fee" interchangeably. On paper, both look like a simple, mandatory monthly bill paid to an administrative entity. In reality, they are governed by entirely different legal structures, maintain distinct physical parts of the property, and carry vastly different risks of surprise financial assessments.
+                A widespread source of friction in real estate transactions is the tendency for buyers to use the terms "<a href="https://hoafeecalculator.com/" className="text-accent underline hover:text-accent/80 transition-colors">HOA fee</a>" and "condo fee" interchangeably. On paper, both look like a simple, mandatory monthly bill paid to an administrative entity. In reality, they are governed by entirely different legal structures, maintain distinct physical parts of the property, and carry vastly different risks of surprise financial assessments.
               </p>
               <p>
                 Conflating a suburban <strong className="text-primary font-bold">HOA vs condo fee</strong> obligation is a recipe for deep financial regret. If you assume your condo fee works just like your sister's single-family subdivision dues, you may end up holding the bag when a structural reserve deficit triggers a massive, five-figure special assessment. Alternatively, if you avoid condo living thinking the fees are an overpriced luxury, you could be missing out on a consolidated maintenance package that actually saves you thousands of dollars annually on individual repairs.
@@ -359,7 +359,7 @@ export default function HOAVsCondoFeeArticle() {
                 Use our free HOA Fee Calculator to estimate your true lifetime HOA expenses — with year-by-year breakdown.
               </p>
               <a 
-                href="https://www.hoafeecalculator.com/" 
+                href="https://hoafeecalculator.com/" 
                 className="inline-flex items-center bg-primary hover:bg-primary/95 text-white font-bold py-3.5 px-6 rounded-full transition-all active:scale-95 text-sm shadow-sm"
               >
                 Calculate Now →

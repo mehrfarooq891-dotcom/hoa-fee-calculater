@@ -18,7 +18,7 @@ export default function AverageHOAFeesByStateArticle() {
       "@type": "Person",
       "name": "Michael Torres",
       "jobTitle": "Real Estate Financial Analyst",
-      "url": "https://www.hoafeecalculator.com/about"
+      "url": "https://hoafeecalculator.com/about"
     }
   };
 
@@ -449,7 +449,7 @@ export default function AverageHOAFeesByStateArticle() {
                 Many first-time homebuyers assume that their lender only cares about the mortgage's principal and interest payment. This is a very common and costly mistake. Lenders look at your total housing costs, including taxes, homeowners insurance, and association dues.
               </p>
               <p>
-                Every $100 you pay in monthly HOA dues reduces your borrowing power by roughly $12,000 to $15,000 under typical mortgage interest rates. If you qualify for a $400,000 home with zero dues, adding a $400 monthly <a href="https://www.hoafeecalculator.com/" className="text-accent underline hover:text-accent/80 transition-colors">HOA fee</a> means the bank will likely drop your maximum qualifying purchase limit to about $340,000.
+                Every $100 you pay in monthly HOA dues reduces your borrowing power by roughly $12,000 to $15,000 under typical mortgage interest rates. If you qualify for a $400,000 home with zero dues, adding a $400 monthly <a href="https://hoafeecalculator.com/" className="text-accent underline hover:text-accent/80 transition-colors">HOA fee</a> means the bank will likely drop your maximum qualifying purchase limit to about $340,000.
               </p>
 
               <h3 className="text-xl font-serif font-bold text-primary mt-6">
@@ -495,7 +495,7 @@ export default function AverageHOAFeesByStateArticle() {
                 Use our free HOA Fee Calculator to estimate your true lifetime HOA expenses — with year-by-year breakdown.
               </p>
               <a 
-                href="https://www.hoafeecalculator.com/" 
+                href="https://hoafeecalculator.com/" 
                 className="inline-flex items-center bg-primary hover:bg-primary/95 text-white font-bold py-3.5 px-6 rounded-full transition-all active:scale-95 text-sm shadow-sm"
               >
                 Calculate Now →

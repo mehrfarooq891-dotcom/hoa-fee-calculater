@@ -18,7 +18,7 @@ export default function CaliforniaHOAFeesArticle() {
       "@type": "Person",
       "name": "Michael Torres",
       "jobTitle": "Real Estate Financial Analyst",
-      "url": "https://www.hoafeecalculator.com/about"
+      "url": "https://hoafeecalculator.com/about"
     }
   };
 
@@ -91,7 +91,7 @@ export default function CaliforniaHOAFeesArticle() {
                 Imagine finding your dream home in California—a sleek mid-century modern townhouse in Los Angeles or a serene condominium overlooking the San Francisco Bay—only to discover that your monthly housing obligation includes a recurring homeowners association (HOA) fee of $550. This isn't an aberration or an isolated surprise in a luxury community. It is the baseline reality of modern Golden State real estate.
               </p>
               <p>
-                As of 2026, <strong className="text-primary font-bold"><a href="https://www.hoafeecalculator.com/" className="text-accent underline hover:text-accent/80 transition-colors">HOA fees</a> California</strong> hover at an average of <strong className="text-primary font-bold">$500 per month</strong>, easily representing nearly double the national average of approximately $250. For millions of California property buyers, these recurring dues represent a "second mortgage"—a non-negotiable, senior financial lien that can determine whether they qualify for an active conforming loan or face foreclosure if accounts fall delinquent.
+                As of 2026, <strong className="text-primary font-bold"><a href="https://hoafeecalculator.com/" className="text-accent underline hover:text-accent/80 transition-colors">HOA fees</a> California</strong> hover at an average of <strong className="text-primary font-bold">$500 per month</strong>, easily representing nearly double the national average of approximately $250. For millions of California property buyers, these recurring dues represent a "second mortgage"—a non-negotiable, senior financial lien that can determine whether they qualify for an active conforming loan or face foreclosure if accounts fall delinquent.
               </p>
               <p>
                 But why does the Golden State demand such a massive premium to maintain its residential communities? The answer is a complex combination of astronomical building materials overhead, complex statutory reserve rules, severe seismic insurance exposures, and a regulatory framework unique to state law. 
@@ -349,7 +349,7 @@ export default function CaliforniaHOAFeesArticle() {
                 Use our free HOA Fee Calculator to estimate your true lifetime HOA expenses — with year-by-year breakdown.
               </p>
               <a 
-                href="https://www.hoafeecalculator.com/" 
+                href="https://hoafeecalculator.com/" 
                 className="inline-flex items-center bg-primary hover:bg-primary/95 text-white font-bold py-3.5 px-6 rounded-full transition-all active:scale-95 text-sm shadow-sm"
               >
                 Calculate Now →

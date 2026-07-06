@@ -20,19 +20,19 @@ export default function NevadaHOAFeesArticle() {
     "author": {
       "@type": "Organization",
       "name": "HOA Research Team",
-      "url": "https://www.hoafeecalculator.com/"
+      "url": "https://hoafeecalculator.com/"
     },
     "publisher": {
       "@type": "Organization",
       "name": "HOACalculator.com",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.hoafeecalculator.com/favicon.svg"
+        "url": "https://hoafeecalculator.com/favicon.svg"
       }
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://www.hoafeecalculator.com/blog/hoa-fees-nevada"
+      "@id": "https://hoafeecalculator.com/blog/hoa-fees-nevada"
     }
   };
 
@@ -210,7 +210,7 @@ export default function NevadaHOAFeesArticle() {
 
       <div className="inline-cta my-10 text-center">
         <a 
-          href="https://www.hoafeecalculator.com/" 
+          href="https://hoafeecalculator.com/" 
           className="inline-block bg-accent hover:bg-opacity-90 text-white font-bold py-4 px-10 rounded-full transition-all hover:scale-105 shadow-xl text-lg duration-300"
         >
           Use Our Free HOA Calculator →
@@ -259,7 +259,7 @@ export default function NevadaHOAFeesArticle() {
       </p>
 
       <p>
-        Finally, calculate your exact ongoing costs using an interactive <a href="https://www.hoafeecalculator.com/" className="text-accent hover:underline font-bold">HOA fee calculator</a> before making an offer. Compare different master-planned and non-HOA options in Las Vegas, Henderson, and Reno to find a layout that fits your long-term wealth goals. Taking this proactive step protects your monthly cash flow and guarantees a secure home purchase.
+        Finally, calculate your exact ongoing costs using an interactive <a href="https://hoafeecalculator.com/" className="text-accent hover:underline font-bold">HOA fee calculator</a> before making an offer. Compare different master-planned and non-HOA options in Las Vegas, Henderson, and Reno to find a layout that fits your long-term wealth goals. Taking this proactive step protects your monthly cash flow and guarantees a secure home purchase.
       </p>
 
       {/* Author Bio Block */}

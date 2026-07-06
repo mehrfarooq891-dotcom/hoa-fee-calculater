@@ -26,12 +26,12 @@ export default function HOAAnnualBudgetArticle() {
       "name": "HOACalculator.com",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.hoafeecalculator.com/hoa_calculator_logo.svg"
+        "url": "https://hoafeecalculator.com/hoa_calculator_logo.svg"
       }
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://www.hoafeecalculator.com/blog/hoa-annual-budget"
+      "@id": "https://hoafeecalculator.com/blog/hoa-annual-budget"
     }
   };
 

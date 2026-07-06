@@ -20,19 +20,19 @@ export default function HOAFeeIncreaseLimitsArticle() {
     "author": {
       "@type": "Organization",
       "name": "HOA Research Team",
-      "url": "https://www.hoafeecalculator.com/"
+      "url": "https://hoafeecalculator.com/"
     },
     "publisher": {
       "@type": "Organization",
       "name": "HOACalculator.com",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.hoafeecalculator.com/favicon.svg"
+        "url": "https://hoafeecalculator.com/favicon.svg"
       }
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://www.hoafeecalculator.com/blog/hoa-fee-increase-limits"
+      "@id": "https://hoafeecalculator.com/blog/hoa-fee-increase-limits"
     }
   };
 
@@ -135,7 +135,7 @@ export default function HOAFeeIncreaseLimitsArticle() {
       </p>
 
       <p>
-        Second, look for the <strong>&quot;special assessment threshold.&quot;</strong> This rule determines how much the board can charge for emergency physical repairs without holding a full member-wide election. For example, your CC&amp;Rs might state that any special assessment exceeding $500 per unit requires approval from 67% of all homeowners. If your board tries to charge a surprise $2,000 fee for a clubhouse deck renovation without holding a vote, they are violating their own rules. If they do, you can use our free <a href="https://www.hoafeecalculator.com/">HOA fee calculator</a> to run budget alternatives and present a cleaner cash model to your neighbors.
+        Second, look for the <strong>&quot;special assessment threshold.&quot;</strong> This rule determines how much the board can charge for emergency physical repairs without holding a full member-wide election. For example, your CC&amp;Rs might state that any special assessment exceeding $500 per unit requires approval from 67% of all homeowners. If your board tries to charge a surprise $2,000 fee for a clubhouse deck renovation without holding a vote, they are violating their own rules. If they do, you can use our free <a href="https://hoafeecalculator.com/">HOA fee calculator</a> to run budget alternatives and present a cleaner cash model to your neighbors.
       </p>
 
       <blockquote className="pull-quote bg-bg-light border-l-4 border-accent p-8 rounded-r-2xl italic my-8 text-lg font-medium text-primary leading-relaxed">
@@ -144,7 +144,7 @@ export default function HOAFeeIncreaseLimitsArticle() {
 
       <div className="inline-cta my-10 text-center">
         <a 
-          href="https://www.hoafeecalculator.com/" 
+          href="https://hoafeecalculator.com/" 
           className="inline-block bg-accent hover:bg-opacity-90 text-white font-bold py-4 px-10 rounded-full transition-all hover:scale-105 shadow-xl text-lg duration-300"
         >
           Use Our Free HOA Calculator →

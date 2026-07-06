@@ -20,19 +20,19 @@ export default function HighestHOAFeesByStateArticle() {
     "author": {
       "@type": "Organization",
       "name": "HOA Research Team",
-      "url": "https://www.hoafeecalculator.com/"
+      "url": "https://hoafeecalculator.com/"
     },
     "publisher": {
       "@type": "Organization",
       "name": "HOACalculator.com",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.hoafeecalculator.com/favicon.svg"
+        "url": "https://hoafeecalculator.com/favicon.svg"
       }
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://www.hoafeecalculator.com/blog/highest-hoa-fees-by-state"
+      "@id": "https://hoafeecalculator.com/blog/highest-hoa-fees-by-state"
     }
   };
 
@@ -164,7 +164,7 @@ export default function HighestHOAFeesByStateArticle() {
 
       <div className="inline-cta my-10 text-center">
         <a 
-          href="https://www.hoafeecalculator.com/" 
+          href="https://hoafeecalculator.com/" 
           className="inline-block bg-accent hover:bg-opacity-90 text-white font-bold py-4 px-10 rounded-full transition-all hover:scale-105 shadow-xl text-lg duration-300"
         >
           Use Our Free HOA Calculator →
@@ -331,7 +331,7 @@ export default function HighestHOAFeesByStateArticle() {
       </p>
 
       <p>
-        Finally, always run your realistic numbers using an interactive <a href="https://www.hoafeecalculator.com/" className="text-accent hover:underline font-bold">HOA fee calculator</a> before you make a binding offer. High carrying costs change your real borrowing power and can easily sink your home loan application. By factoring in these mandatory fees early, you can choose a community that fits your long-term wealth goals and matches your personal day-to-day lifestyle. Inspect the numbers, buy in a stable district, and build equity with total peace of mind.
+        Finally, always run your realistic numbers using an interactive <a href="https://hoafeecalculator.com/" className="text-accent hover:underline font-bold">HOA fee calculator</a> before you make a binding offer. High carrying costs change your real borrowing power and can easily sink your home loan application. By factoring in these mandatory fees early, you can choose a community that fits your long-term wealth goals and matches your personal day-to-day lifestyle. Inspect the numbers, buy in a stable district, and build equity with total peace of mind.
       </p>
 
       {/* Author Bio Block */}

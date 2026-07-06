@@ -20,19 +20,19 @@ export default function WashingtonStateHOAFeesArticle() {
     "author": {
       "@type": "Organization",
       "name": "HOA Research Team",
-      "url": "https://www.hoafeecalculator.com/"
+      "url": "https://hoafeecalculator.com/"
     },
     "publisher": {
       "@type": "Organization",
       "name": "HOACalculator.com",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.hoafeecalculator.com/favicon.svg"
+        "url": "https://hoafeecalculator.com/favicon.svg"
       }
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://www.hoafeecalculator.com/blog/hoa-fees-washington-state"
+      "@id": "https://hoafeecalculator.com/blog/hoa-fees-washington-state"
     }
   };
 
@@ -210,7 +210,7 @@ export default function WashingtonStateHOAFeesArticle() {
 
       <div className="inline-cta my-10 text-center">
         <a 
-          href="https://www.hoafeecalculator.com/" 
+          href="https://hoafeecalculator.com/" 
           className="inline-block bg-accent hover:bg-opacity-90 text-white font-bold py-4 px-10 rounded-full transition-all hover:scale-105 shadow-xl text-lg duration-300"
         >
           Use Our Free HOA Calculator →
@@ -259,7 +259,7 @@ export default function WashingtonStateHOAFeesArticle() {
       </p>
 
       <p>
-        Second, review the building's master insurance policy to verify if it covers landslide, earthquake, and water intrusion damages. Western Washington's wet weather and local geology make these coverages absolutely critical. Finally, calculate your true monthly expenses using an interactive <a href="https://www.hoafeecalculator.com/" className="text-accent hover:underline font-bold">HOA fee calculator</a> before you submit an offer. This simple planning step ensures your Pacific Northwest home remains a secure, affordable place to live.
+        Second, review the building's master insurance policy to verify if it covers landslide, earthquake, and water intrusion damages. Western Washington's wet weather and local geology make these coverages absolutely critical. Finally, calculate your true monthly expenses using an interactive <a href="https://hoafeecalculator.com/" className="text-accent hover:underline font-bold">HOA fee calculator</a> before you submit an offer. This simple planning step ensures your Pacific Northwest home remains a secure, affordable place to live.
       </p>
 
       {/* Author Bio Block */}

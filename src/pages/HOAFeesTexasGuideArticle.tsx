@@ -22,7 +22,7 @@ export default function HOAFeesTexasGuideArticle() {
       {/* SEO Metadata & Schema JSON-LD block helper inside SEO-targeted hidden elements */}
       <div className="hidden">
         <h2>SEO Target Meta Details</h2>
-        <p><strong>SEO Title Tag:</strong> <a href="https://www.hoafeecalculator.com/" className="text-accent underline hover:text-accent/80 transition-colors">HOA Fees</a> in Texas: Complete 2026 Legal & Financial Guide</p>
+        <p><strong>SEO Title Tag:</strong> <a href="https://hoafeecalculator.com/" className="text-accent underline hover:text-accent/80 transition-colors">HOA Fees</a> in Texas: Complete 2026 Legal & Financial Guide</p>
         <p><strong>Meta Description:</strong> Master HOA fees in Texas. Learn about Dallas, Houston, and Austin averages, critical protections under Texas Property Code Chapter 209, and rules for foreclosure.</p>
         <script type="application/ld+json">
           {JSON.stringify({

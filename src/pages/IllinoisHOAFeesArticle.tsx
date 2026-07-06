@@ -20,19 +20,19 @@ export default function IllinoisHOAFeesArticle() {
     "author": {
       "@type": "Organization",
       "name": "HOA Research Team",
-      "url": "https://www.hoafeecalculator.com/"
+      "url": "https://hoafeecalculator.com/"
     },
     "publisher": {
       "@type": "Organization",
       "name": "HOACalculator.com",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.hoafeecalculator.com/favicon.svg"
+        "url": "https://hoafeecalculator.com/favicon.svg"
       }
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://www.hoafeecalculator.com/blog/hoa-fees-illinois"
+      "@id": "https://hoafeecalculator.com/blog/hoa-fees-illinois"
     }
   };
 
@@ -224,7 +224,7 @@ export default function IllinoisHOAFeesArticle() {
 
       <div className="inline-cta my-10 text-center">
         <a 
-          href="https://www.hoafeecalculator.com/" 
+          href="https://hoafeecalculator.com/" 
           className="inline-block bg-accent hover:bg-opacity-90 text-white font-bold py-4 px-10 rounded-full transition-all hover:scale-105 shadow-xl text-lg duration-300"
         >
           Use Our Free HOA Calculator →
@@ -273,7 +273,7 @@ export default function IllinoisHOAFeesArticle() {
       </p>
 
       <p>
-        Finally, always calculate your true carrying costs using an interactive <a href="https://www.hoafeecalculator.com/" className="text-accent hover:underline font-bold">HOA fee calculator</a> before you submit a formal offer. High monthly dues reduce your real purchasing power and can easily sink your home loan application if your debt-to-income ratio gets too tight. By factoring in these mandatory fees early, you can choose an Illinois community that aligns with your wealth goals and offers an amazing, stable place to live.
+        Finally, always calculate your true carrying costs using an interactive <a href="https://hoafeecalculator.com/" className="text-accent hover:underline font-bold">HOA fee calculator</a> before you submit a formal offer. High monthly dues reduce your real purchasing power and can easily sink your home loan application if your debt-to-income ratio gets too tight. By factoring in these mandatory fees early, you can choose an Illinois community that aligns with your wealth goals and offers an amazing, stable place to live.
       </p>
 
       {/* Author Bio Block */}

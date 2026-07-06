@@ -18,7 +18,7 @@ export default function HOAVsNoHOAArticle() {
       "@type": "Person",
       "name": "Michael Torres",
       "jobTitle": "Real Estate Financial Analyst",
-      "url": "https://www.hoafeecalculator.com/about"
+      "url": "https://hoafeecalculator.com/about"
     }
   };
 
@@ -135,7 +135,7 @@ export default function HOAVsNoHOAArticle() {
                 2. The "Hidden Payroll": The Real Cost of Self-Managing a Property
               </h2>
               <p>
-                To compare an <a href="https://www.hoafeecalculator.com/" className="text-accent underline hover:text-accent/80 transition-colors">HOA fee</a> against a non-HOA home fairly, you must calculate the <strong className="text-primary font-bold">Self-Management Index</strong>. This represents the time and money required to maintain your property at the same standard an association would mandate. 
+                To compare an <a href="https://hoafeecalculator.com/" className="text-accent underline hover:text-accent/80 transition-colors">HOA fee</a> against a non-HOA home fairly, you must calculate the <strong className="text-primary font-bold">Self-Management Index</strong>. This represents the time and money required to maintain your property at the same standard an association would mandate. 
               </p>
               <p>
                 Let’s look at the monthly "hidden payroll" for a typical suburban single-family home in 2026:
@@ -306,7 +306,7 @@ export default function HOAVsNoHOAArticle() {
                 Use our free HOA Fee Calculator to estimate your true lifetime HOA expenses — with year-by-year breakdown.
               </p>
               <a 
-                href="https://www.hoafeecalculator.com/" 
+                href="https://hoafeecalculator.com/" 
                 className="inline-flex items-center bg-primary hover:bg-primary/95 text-white font-bold py-3.5 px-6 rounded-full transition-all active:scale-95 text-sm shadow-sm"
               >
                 Calculate Now →

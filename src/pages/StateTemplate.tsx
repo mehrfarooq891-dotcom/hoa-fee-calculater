@@ -1,8 +1,9 @@
-import React from 'react';
-import Calculator from '@/src/components/Calculator';
+import React, { Suspense } from 'react';
 import SEO from '@/src/components/SEO';
 import { useParams, Link } from 'react-router-dom';
 import { statesData } from '@/src/data/statesData';
+
+const Calculator = React.lazy(() => import('@/src/components/Calculator'));
 
 interface StateConfig {
   avgFee: number;
@@ -178,7 +179,14 @@ export default function StateTemplate() {
 
               <section id="calculator" className="pt-8 border-t border-border">
                 <h2 className="text-3xl font-serif font-bold text-primary mb-8">Calculate Your Custom {displayName} Lifetime HOA Cost</h2>
-                <Calculator />
+                <Suspense fallback={
+                  <div className="min-h-[500px] flex flex-col items-center justify-center bg-bg-light/50 rounded-3xl border border-border/50 p-8 shadow-sm">
+                    <div className="w-12 h-12 border-4 border-accent border-t-transparent rounded-full animate-spin mb-4"></div>
+                    <p className="text-sm text-primary/60 font-medium">Loading HOA Fee Calculator...</p>
+                  </div>
+                }>
+                  <Calculator />
+                </Suspense>
               </section>
 
               <section className="pt-16 mt-8 border-t border-border">

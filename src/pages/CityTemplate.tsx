@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import Calculator from '@/src/components/Calculator';
 import SEO from '@/src/components/SEO';
+
+const Calculator = React.lazy(() => import('@/src/components/Calculator'));
 
 interface NeighborhoodData {
   type: string;
@@ -314,7 +315,14 @@ export default function CityTemplate() {
                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary text-center mb-8">
                   Calculate Your Future HOA Costs in Real-Time
                 </h2>
-                <Calculator />
+                <Suspense fallback={
+                  <div className="min-h-[400px] flex flex-col items-center justify-center bg-bg-light/50 rounded-2xl border border-border/50 p-6 shadow-sm">
+                    <div className="w-10 h-10 border-4 border-accent border-t-transparent rounded-full animate-spin mb-3"></div>
+                    <p className="text-xs text-primary/60 font-medium">Loading Calculator Engine...</p>
+                  </div>
+                }>
+                  <Calculator />
+                </Suspense>
               </div>
             </div>
           </section>

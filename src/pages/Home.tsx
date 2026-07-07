@@ -1,7 +1,8 @@
-import React from 'react';
-import Calculator from '@/src/components/Calculator';
+import React, { Suspense } from 'react';
 import SEO from '@/src/components/SEO';
 import { Link } from 'react-router-dom';
+
+const Calculator = React.lazy(() => import('@/src/components/Calculator'));
 
 export default function Home() {
   const [isEmbedModalOpen, setIsEmbedModalOpen] = React.useState(false);
@@ -146,7 +147,14 @@ export default function Home() {
         <h1 className="sr-only">Free HOA Fee Calculator - Estimate Your True Cost</h1>
         {/* TOOL SECTION */}
         <section id="calculator" className="pt-20 md:pt-24 pb-12 px-6 max-w-7xl mx-auto">
-          <Calculator />
+          <Suspense fallback={
+            <div className="min-h-[500px] flex flex-col items-center justify-center bg-bg-light/50 rounded-3xl border border-border/50 p-8 shadow-sm">
+              <div className="w-12 h-12 border-4 border-accent border-t-transparent rounded-full animate-spin mb-4"></div>
+              <p className="text-sm text-primary/60 font-medium">Loading HOA Fee Calculator...</p>
+            </div>
+          }>
+            <Calculator />
+          </Suspense>
         </section>
 
         {/* REALTOR EMBED SECTION */}

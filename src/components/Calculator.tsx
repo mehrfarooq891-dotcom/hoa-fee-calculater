@@ -51,6 +51,54 @@ export default function Calculator() {
 
   const chartRef = useRef<HTMLCanvasElement>(null);
   const chartInstance = useRef<any>(null);
+  const [chartLoaded, setChartLoaded] = useState(() => typeof window !== 'undefined' && !!window.Chart);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    if (window.Chart) {
+      setChartLoaded(true);
+      return;
+    }
+
+    const loadScript = () => {
+      if (window.Chart) {
+        setChartLoaded(true);
+        return;
+      }
+      const scriptId = 'dynamic-chartjs-script';
+      let script = document.getElementById(scriptId) as HTMLScriptElement;
+      if (!script) {
+        script = document.createElement('script');
+        script.id = scriptId;
+        script.src = 'https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js';
+        script.async = true;
+        script.onload = () => setChartLoaded(true);
+        document.body.appendChild(script);
+      } else {
+        const interval = setInterval(() => {
+          if (window.Chart) {
+            setChartLoaded(true);
+            clearInterval(interval);
+          }
+        }, 100);
+        return () => clearInterval(interval);
+      }
+    };
+
+    if ('requestIdleCallback' in window) {
+      const idleId = (window as any).requestIdleCallback(() => {
+        loadScript();
+      }, { timeout: 2000 });
+      return () => {
+        if ('cancelIdleCallback' in window) {
+          (window as any).cancelIdleCallback(idleId);
+        }
+      };
+    } else {
+      const timeoutId = setTimeout(loadScript, 1000);
+      return () => clearTimeout(timeoutId);
+    }
+  }, []);
 
   useEffect(() => {
     calculate();
@@ -151,7 +199,7 @@ export default function Calculator() {
         }
       });
     }
-  }, [outputs.yearlyData, hasCalculated]);
+  }, [outputs.yearlyData, hasCalculated, chartLoaded]);
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-[380px_1fr] gap-8 items-start">

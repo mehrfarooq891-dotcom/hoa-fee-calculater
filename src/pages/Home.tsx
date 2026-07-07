@@ -343,6 +343,7 @@ export default function Home() {
                  alt="Michael Torres" 
                  width="160"
                  height="160"
+                 loading="lazy"
                  className="w-40 h-40 rounded-3xl object-cover border-4 border-accent shadow-lg"
                  referrerPolicy="no-referrer"
                />

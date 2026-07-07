@@ -55,7 +55,7 @@ export default function BlogArticleLayout({
             <img 
                src="/hoa_calculator_logo.svg" 
                alt="HOA Fee Calculator" 
-               style={{height: '45px', width: 'auto'}}
+               width="180" height="45" style={{height: '45px', width: '180px'}}
                onError={(e) => {
                  e.currentTarget.style.display = 'none';
                  if (e.currentTarget.nextElementSibling) {
@@ -85,7 +85,7 @@ export default function BlogArticleLayout({
           
           <div className="mb-6">
             <Link to="/blog" className="text-accent font-bold hover:underline mb-4 inline-block">← Back to Blog</Link>
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-primary opacity-50 uppercase font-bold tracking-wider mb-2">
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-primary opacity-80 uppercase font-bold tracking-wider mb-2">
               <span>{category}</span>
               <span>•</span>
               <span>{readTime}</span>
@@ -109,9 +109,9 @@ export default function BlogArticleLayout({
 
             {/* Highlighted CTA Box */}
             <div className="not-prose my-12 bg-[#EFF6FF] border border-[#2563EB]/10 rounded-2xl p-6 md:p-8 shadow-sm">
-              <h3 className="text-xl font-serif font-bold text-primary mb-3 flex items-center gap-2">
+              <h2 className="text-xl font-serif font-bold text-primary mb-3 flex items-center gap-2">
                 <span>📊</span> Calculate Your HOA Costs
-              </h3>
+              </h2>
               <p className="text-primary/80 text-sm md:text-base leading-relaxed mb-5">
                 Use our free HOA Fee Calculator to estimate your true lifetime HOA expenses — with year-by-year breakdown.
               </p>
@@ -133,7 +133,7 @@ export default function BlogArticleLayout({
             {/* Related posts */}
             {relatedLinks.length > 0 && (
               <div className="bg-bg-light rounded-2xl p-6 md:p-8 border border-border mt-12 mb-12">
-                <h3 className="text-xl font-serif font-bold text-primary mb-4">Related Insights & Guides</h3>
+                <h2 className="text-xl font-serif font-bold text-primary mb-4">Related Insights & Guides</h2>
                 <ul className="space-y-3">
                   {relatedLinks.map((link, i) => (
                     <li key={i}>
@@ -153,7 +153,7 @@ export default function BlogArticleLayout({
               </div>
               <div>
                 <h4 className="text-primary font-bold text-lg">Written by: HOA Research Team</h4>
-                <p className="text-primary opacity-60 text-sm">Providing real-time financial tracking, state laws analysis, and consumer protection guides for American property buyers.</p>
+                <p className="text-primary opacity-80 text-sm">Providing real-time financial tracking, state laws analysis, and consumer protection guides for American property buyers.</p>
               </div>
             </div>
 
@@ -162,14 +162,14 @@ export default function BlogArticleLayout({
       </main>
 
       {/* Footer */}
-      <footer className="bg-primary py-12 px-6 text-white/60">
+      <footer className="bg-primary py-12 px-6 text-white/80">
         <div className="max-w-7xl mx-auto text-center border-t border-white/10 pt-12">
           <div className="flex justify-center mb-4">
             <Link to="/" className="flex items-center">
               <img 
                 src="/hoa_calculator_logo.svg" 
                 alt="HOA Fee Calculator" 
-                style={{height: '45px', width: 'auto'}}
+                width="180" height="45" style={{height: '45px', width: '180px'}}
                 onError={(e) => {
                   e.currentTarget.style.display = 'none';
                   if (e.currentTarget.nextElementSibling) {

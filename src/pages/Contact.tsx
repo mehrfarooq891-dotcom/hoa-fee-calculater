@@ -24,7 +24,7 @@ export default function Contact() {
             <img 
               src="/hoa_calculator_logo.svg" 
               alt="HOA Fee Calculator" 
-              style={{height: '45px', width: 'auto'}}
+              width="180" height="45" style={{height: '45px', width: '180px'}}
               onError={(e) => {
                 e.currentTarget.style.display = 'none';
                 if (e.currentTarget.nextElementSibling) {
@@ -63,8 +63,8 @@ export default function Contact() {
                   <MapPin size={24} />
                 </div>
                 <div>
-                  <h3 className="font-serif text-xl mb-2">Our Austin HQ</h3>
-                  <p className="text-primary opacity-70 leading-relaxed">
+                  <h2 className="font-serif text-xl mb-2 font-bold">Our Austin HQ</h2>
+                  <p className="text-primary opacity-80 leading-relaxed">
                     {address}
                   </p>
                   <p className="text-accent text-sm font-bold mt-2 tracking-widest uppercase">Verified GMB Location</p>
@@ -76,11 +76,11 @@ export default function Contact() {
                   <Phone size={24} />
                 </div>
                 <div>
-                  <h3 className="font-serif text-xl mb-2">Call Support</h3>
-                  <p className="text-primary opacity-70 leading-relaxed">
+                  <h2 className="font-serif text-xl mb-2 font-bold">Call Support</h2>
+                  <p className="text-primary opacity-80 leading-relaxed">
                     {phone}
                   </p>
-                  <p className="text-xs opacity-50 mt-1">Mon - Fri, 9am - 5pm CST</p>
+                  <p className="text-xs opacity-75 mt-1">Mon - Fri, 9am - 5pm CST</p>
                 </div>
               </div>
 
@@ -89,8 +89,8 @@ export default function Contact() {
                   <Mail size={24} />
                 </div>
                 <div>
-                  <h3 className="font-serif text-xl mb-2">Email Us</h3>
-                  <p className="text-primary opacity-70 leading-relaxed hover:text-accent transition-colors">
+                  <h2 className="font-serif text-xl mb-2 font-bold">Email Us</h2>
+                  <p className="text-primary opacity-80 leading-relaxed hover:text-accent transition-colors">
                     <a href={`mailto:${email}`}>{email}</a>
                   </p>
                 </div>
@@ -101,8 +101,8 @@ export default function Contact() {
                   <Clock size={24} />
                 </div>
                 <div>
-                  <h3 className="font-serif text-xl mb-2">Office Hours</h3>
-                  <p className="text-primary opacity-70">Our team is available 24/7 for automated calculator support, and human experts are available during business hours.</p>
+                  <h2 className="font-serif text-xl mb-2 font-bold">Office Hours</h2>
+                  <p className="text-primary opacity-80">Our team is available 24/7 for automated calculator support, and human experts are available during business hours.</p>
                 </div>
               </div>
             </div>
@@ -123,7 +123,7 @@ export default function Contact() {
               </div>
               
               <div className="card border-none shadow-lg">
-                <h3 className="font-serif text-2xl mb-6">Send a Quick Message</h3>
+                <h2 className="font-serif text-2xl mb-6 font-bold">Send a Quick Message</h2>
                 <form className="space-y-4">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <input type="text" placeholder="Your Name" className="input-field" />
@@ -138,13 +138,13 @@ export default function Contact() {
         </div>
       </main>
 
-      <footer className="bg-primary py-12 px-6 text-white/50">
+      <footer className="bg-primary py-12 px-6 text-white/75">
         <div className="max-w-7xl mx-auto flex justify-between items-center flex-col md:flex-row gap-6">
           <Link to="/" className="flex items-center">
             <img 
               src="/hoa_calculator_logo.svg" 
               alt="HOA Fee Calculator" 
-              style={{height: '45px', width: 'auto'}}
+              width="180" height="45" style={{height: '45px', width: '180px'}}
               onError={(e) => {
                 e.currentTarget.style.display = 'none';
                 if (e.currentTarget.nextElementSibling) {

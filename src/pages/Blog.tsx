@@ -327,7 +327,7 @@ export default function Blog() {
             <img 
               src="/hoa_calculator_logo.svg" 
               alt="HOA Fee Calculator" 
-              style={{height: '45px', width: 'auto'}}
+              width="180" height="45" style={{height: '45px', width: '180px'}}
               onError={(e) => {
                 e.currentTarget.style.display = 'none';
                 if (e.currentTarget.nextElementSibling) {
@@ -363,7 +363,7 @@ export default function Blog() {
               <article key={i} className="card hover:shadow-xl transition-all duration-300">
                 <div className="flex items-center gap-4 mb-4">
                   <span className="bg-accent/10 text-accent text-[10px] uppercase font-bold tracking-widest px-3 py-1 rounded-full">{post.category}</span>
-                  <span className="text-xs text-primary opacity-50 uppercase font-bold tracking-wider">{post.date}</span>
+                  <span className="text-xs text-primary opacity-80 uppercase font-bold tracking-wider">{post.date}</span>
                 </div>
                 <h2 className="text-2xl font-serif font-bold text-primary mb-4 hover:text-accent transition-colors">
                   <Link to={post.slug}>{post.title}</Link>
@@ -380,14 +380,14 @@ export default function Blog() {
         </div>
       </main>
 
-      <footer className="bg-primary py-12 px-6 text-white/60">
+      <footer className="bg-primary py-12 px-6 text-white/80">
         <div className="max-w-7xl mx-auto text-center border-t border-white/10 pt-12">
           <div className="flex justify-center mb-4">
             <Link to="/" className="flex items-center">
               <img 
                 src="/hoa_calculator_logo.svg" 
                 alt="HOA Fee Calculator" 
-                style={{height: '45px', width: 'auto'}}
+                width="180" height="45" style={{height: '45px', width: '180px'}}
                 onError={(e) => {
                   e.currentTarget.style.display = 'none';
                   if (e.currentTarget.nextElementSibling) {

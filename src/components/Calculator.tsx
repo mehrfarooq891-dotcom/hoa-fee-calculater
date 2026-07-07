@@ -320,9 +320,9 @@ export default function Calculator() {
                 <table className="w-full text-left">
                   <thead>
                     <tr className="bg-bg-light">
-                      <th className="px-8 py-4 text-xs font-bold uppercase tracking-wider text-primary opacity-60">Year</th>
-                      <th className="px-8 py-4 text-xs font-bold uppercase tracking-wider text-primary opacity-60">Monthly Fee</th>
-                      <th className="px-8 py-4 text-xs font-bold uppercase tracking-wider text-primary opacity-60">Total Paid</th>
+                      <th className="px-8 py-4 text-xs font-bold uppercase tracking-wider text-primary opacity-80">Year</th>
+                      <th className="px-8 py-4 text-xs font-bold uppercase tracking-wider text-primary opacity-80">Monthly Fee</th>
+                      <th className="px-8 py-4 text-xs font-bold uppercase tracking-wider text-primary opacity-80">Total Paid</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-border">
@@ -331,7 +331,7 @@ export default function Calculator() {
                       <tr key={d.year} className="hover:bg-bg-light transition-colors">
                         <td className="px-8 py-4 font-bold text-primary">Year {d.year}</td>
                         <td className="px-8 py-4 font-medium">${d.fee.toLocaleString()}</td>
-                        <td className="px-8 py-4 text-primary opacity-60 font-medium">${d.cumulative.toLocaleString()}</td>
+                        <td className="px-8 py-4 text-primary opacity-80 font-medium">${d.cumulative.toLocaleString()}</td>
                       </tr>
                     ))}
 
@@ -346,7 +346,7 @@ export default function Calculator() {
                       >
                         <td className="px-8 py-4 font-bold text-primary">Year {d.year}</td>
                         <td className="px-8 py-4 font-medium">${d.fee.toLocaleString()}</td>
-                        <td className="px-8 py-4 text-primary opacity-60 font-medium">${d.cumulative.toLocaleString()}</td>
+                        <td className="px-8 py-4 text-primary opacity-80 font-medium">${d.cumulative.toLocaleString()}</td>
                       </tr>
                     ))}
                   </tbody>

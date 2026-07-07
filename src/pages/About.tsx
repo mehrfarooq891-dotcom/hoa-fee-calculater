@@ -17,7 +17,7 @@ export default function About() {
             <img 
               src="/hoa_calculator_logo.svg" 
               alt="HOA Fee Calculator" 
-              style={{height: '45px', width: 'auto'}}
+              width="180" height="45" style={{height: '45px', width: '180px'}}
               onError={(e) => {
                 e.currentTarget.style.display = 'none';
                 if (e.currentTarget.nextElementSibling) {
@@ -91,7 +91,7 @@ export default function About() {
             ].map((stat, i) => (
               <div key={i} className="text-center">
                 <div className="text-3xl font-serif font-bold text-accent mb-2">{stat.value}</div>
-                <div className="text-xs uppercase tracking-widest font-bold text-primary opacity-50">{stat.label}</div>
+                <div className="text-xs uppercase tracking-widest font-bold text-primary opacity-80">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -109,7 +109,7 @@ export default function About() {
 
           {/* Disclaimer */}
           <div className="bg-white border border-border p-8 rounded-2xl text-center">
-            <p className="text-sm text-primary opacity-50 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-sm text-primary opacity-80 leading-relaxed max-w-2xl mx-auto">
               <strong>Disclaimer:</strong> HOACalculator.com provides estimates
               for informational purposes only. HOA fee data and projections are 
               modeled from national averages and historical trends. 
@@ -135,14 +135,14 @@ export default function About() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-primary border-t border-white/10 py-20 px-6 text-white/60">
+      <footer className="bg-primary border-t border-white/10 py-20 px-6 text-white/80">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="col-span-1 md:col-span-2">
              <Link to="/" className="inline-flex items-center mb-6">
                <img 
                  src="/hoa_calculator_logo.svg" 
                  alt="HOA Fee Calculator" 
-                 style={{height: '45px', width: 'auto'}}
+                 width="180" height="45" style={{height: '45px', width: '180px'}}
                  onError={(e) => {
                    e.currentTarget.style.display = 'none';
                    if (e.currentTarget.nextElementSibling) {

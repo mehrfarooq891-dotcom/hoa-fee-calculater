@@ -84,7 +84,7 @@ export default function StateTemplate() {
             <img 
               src="/hoa_calculator_logo.svg" 
               alt="HOA Fee Calculator" 
-              style={{height: '45px', width: 'auto'}}
+              width="180" height="45" style={{height: '45px', width: '180px'}}
               onError={(e) => {
                 e.currentTarget.style.display = 'none';
                 if (e.currentTarget.nextElementSibling) {
@@ -118,7 +118,7 @@ export default function StateTemplate() {
             <p className="text-xl text-primary opacity-70 max-w-3xl leading-relaxed">
               Thinking about buying in {displayName}? Here's what you need to know about local HOA laws, average costs, and how to avoid overpaying.
             </p>
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-primary opacity-50 uppercase font-bold tracking-wider mt-4">
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-primary opacity-80 uppercase font-bold tracking-wider mt-4">
               <span>Updated: April 2026</span>
               <span>•</span>
               <span className="text-accent normal-case font-bold">Reviewed by Michael Torres, Certified Real Estate Financial Analyst</span>
@@ -247,13 +247,13 @@ export default function StateTemplate() {
         </div>
       </main>
 
-      <footer className="bg-primary py-12 px-6 text-white/40 mt-auto border-t border-white/10">
+      <footer className="bg-primary py-12 px-6 text-white/75 mt-auto border-t border-white/10">
         <div className="max-w-7xl mx-auto flex flex-col md:row justify-between items-center gap-6">
           <Link to="/" className="flex items-center">
             <img 
               src="/hoa_calculator_logo.svg" 
               alt="HOA Fee Calculator" 
-              style={{height: '45px', width: 'auto'}}
+              width="180" height="45" style={{height: '45px', width: '180px'}}
               onError={(e) => {
                 e.currentTarget.style.display = 'none';
                 if (e.currentTarget.nextElementSibling) {

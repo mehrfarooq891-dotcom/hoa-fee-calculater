@@ -43,7 +43,7 @@ export default function Compare() {
             <img 
               src="/hoa_calculator_logo.svg" 
               alt="HOA Fee Calculator" 
-              style={{height: '45px', width: 'auto'}}
+              width="180" height="45" style={{height: '45px', width: '180px'}}
               onError={(e) => {
                 e.currentTarget.style.display = 'none';
                 if (e.currentTarget.nextElementSibling) {
@@ -101,22 +101,22 @@ export default function Compare() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="stat-card">
-              <h3 className="font-serif text-2xl mb-4">Why Condo Fees are Higher?</h3>
-              <p className="text-sm opacity-70">Condos cover exterior siding, roofs, elevator maintenance, and central HVAC, which single-family HOAs do not.</p>
+              <h2 className="font-serif text-2xl mb-4">Why Condo Fees are Higher?</h2>
+              <p className="text-sm opacity-80">Condos cover exterior siding, roofs, elevator maintenance, and central HVAC, which single-family HOAs do not.</p>
             </div>
             <div className="stat-card">
-              <h3 className="font-serif text-2xl mb-4">Hidden Perks</h3>
-              <p className="text-sm opacity-70">While fees are higher, your individual homeowners insurance is often 60% cheaper in a managed condo.</p>
+              <h2 className="font-serif text-2xl mb-4">Hidden Perks</h2>
+              <p className="text-sm opacity-80">While fees are higher, your individual homeowners insurance is often 60% cheaper in a managed condo.</p>
             </div>
             <div className="stat-card">
-              <h3 className="font-serif text-2xl mb-4">Transfer Fees</h3>
-              <p className="text-sm opacity-70">Beware of "Capital Contribution" fees when buying, which can equal 2-3 months of dues upfront.</p>
+              <h2 className="font-serif text-2xl mb-4">Transfer Fees</h2>
+              <p className="text-sm opacity-80">Beware of "Capital Contribution" fees when buying, which can equal 2-3 months of dues upfront.</p>
             </div>
           </div>
         </div>
       </main>
 
-      <footer className="bg-primary py-20 px-6 text-white/50">
+      <footer className="bg-primary py-20 px-6 text-white/75">
         <div className="max-w-7xl mx-auto text-center">
           <p>© 2026 HOACalculator.com — Empowering US Homebuyers.</p>
         </div>

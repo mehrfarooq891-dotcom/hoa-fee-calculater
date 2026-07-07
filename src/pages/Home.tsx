@@ -115,7 +115,7 @@ export default function Home() {
             <img 
               src="/hoa_calculator_logo.svg" 
               alt="HOA Fee Calculator" 
-              style={{height: '45px', width: 'auto'}}
+              width="180" height="45" style={{height: '45px', width: '180px'}}
               onError={(e) => {
                 e.currentTarget.style.display = 'none';
                 if (e.currentTarget.nextElementSibling) {
@@ -143,6 +143,7 @@ export default function Home() {
 
       {/* Main Content Area */}
       <main className="flex-1">
+        <h1 className="sr-only">Free HOA Fee Calculator - Estimate Your True Cost</h1>
         {/* TOOL SECTION */}
         <section id="calculator" className="pt-20 md:pt-24 pb-12 px-6 max-w-7xl mx-auto">
           <Calculator />
@@ -181,10 +182,10 @@ export default function Home() {
               <div className="inline-block bg-accent/10 text-accent font-bold px-4 py-1 rounded-full text-xs uppercase tracking-widest mb-6">
                 Free Tool — No Signup Required
               </div>
-              <h1 className="text-5xl md:text-6xl font-serif font-bold text-primary mb-6 leading-tight">
+              <h2 className="text-5xl md:text-6xl font-serif font-bold text-primary mb-6 leading-tight">
                 Free HOA Fee Calculator<br />
                 <span className="text-accent">See Your True Lifetime Cost</span>
-              </h1>
+              </h2>
               <p className="text-xl text-primary opacity-70 mb-6 max-w-lg leading-relaxed">
                 Instant affordability score, year-by-year breakdown and state-by-state data for US homebuyers.
               </p>
@@ -276,21 +277,21 @@ export default function Home() {
                    <div className="h-10 w-10 btn-primary rounded-xl flex items-center justify-center p-0">🏗️</div>
                    <div>
                       <h4 className="font-bold">Maintenance</h4>
-                      <p className="text-sm opacity-60">Roof, exterior, and common area upkeep.</p>
+                      <p className="text-sm opacity-80">Roof, exterior, and common area upkeep.</p>
                    </div>
                 </div>
                 <div className="flex gap-4">
                    <div className="h-10 w-10 btn-primary rounded-xl flex items-center justify-center p-0">🏊</div>
                    <div>
                       <h4 className="font-bold">Amenities</h4>
-                      <p className="text-sm opacity-60">Pool, gym, clubhouse, and parks access.</p>
+                      <p className="text-sm opacity-80">Pool, gym, clubhouse, and parks access.</p>
                    </div>
                 </div>
                 <div className="flex gap-4">
                    <div className="h-10 w-10 btn-primary rounded-xl flex items-center justify-center p-0">🛡️</div>
                    <div>
                       <h4 className="font-bold">Insurance</h4>
-                      <p className="text-sm opacity-60">Master policies covering communal structures.</p>
+                      <p className="text-sm opacity-80">Master policies covering communal structures.</p>
                    </div>
                 </div>
              </div>
@@ -340,6 +341,8 @@ export default function Home() {
                <img 
                  src="https://randomuser.me/api/portraits/men/52.jpg" 
                  alt="Michael Torres" 
+                 width="160"
+                 height="160"
                  className="w-40 h-40 rounded-3xl object-cover border-4 border-accent shadow-lg"
                  referrerPolicy="no-referrer"
                />
@@ -433,14 +436,14 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-primary border-t border-white/10 py-20 px-6 text-white/60">
+      <footer className="bg-primary border-t border-white/10 py-20 px-6 text-white/80">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="col-span-1 md:col-span-2">
              <Link to="/" className="inline-flex items-center mb-6">
                <img 
                  src="/hoa_calculator_logo.svg" 
                  alt="HOA Fee Calculator" 
-                 style={{height: '45px', width: 'auto'}}
+                 width="180" height="45" style={{height: '45px', width: '180px'}}
                  onError={(e) => {
                    e.currentTarget.style.display = 'none';
                    if (e.currentTarget.nextElementSibling) {

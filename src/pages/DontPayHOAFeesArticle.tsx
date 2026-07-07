@@ -135,37 +135,37 @@ export default function DontPayHOAFeesArticle() {
               </tr>
               <tr className="bg-bg-light">
                 <td className="p-4 font-medium">Accumulated Late Fees (3 Months)</td>
-                <td className="p-4 opacity-50">$0.00</td>
+                <td className="p-4 opacity-80">$0.00</td>
                 <td className="p-4">$150.00</td>
               </tr>
               <tr>
                 <td className="p-4 font-medium">Statutory Accrued Interest (18% APR)</td>
-                <td className="p-4 opacity-50">$0.00</td>
+                <td className="p-4 opacity-80">$0.00</td>
                 <td className="p-4">$18.00</td>
               </tr>
               <tr className="bg-bg-light">
                 <td className="p-4 font-medium">Title Investigation & Debtor Verification</td>
-                <td className="p-4 opacity-50">$0.00</td>
+                <td className="p-4 opacity-80">$0.00</td>
                 <td className="p-4">$350.00</td>
               </tr>
               <tr>
                 <td className="p-4 font-medium">Collection Attorney Demand Retainer</td>
-                <td className="p-4 opacity-50">$0.00</td>
+                <td className="p-4 opacity-80">$0.00</td>
                 <td className="p-4 font-bold text-red-600">$1,500.00</td>
               </tr>
               <tr className="bg-bg-light">
                 <td className="p-4 font-medium">Fee for Drafting and Filing Assessment Lien</td>
-                <td className="p-4 opacity-50">$0.00</td>
+                <td className="p-4 opacity-80">$0.00</td>
                 <td className="p-4 font-bold text-red-600">$2,500.00</td>
               </tr>
               <tr>
                 <td className="p-4 font-medium">Litigation Costs & Foreclosure Court Filing</td>
-                <td className="p-4 opacity-50">$0.00</td>
+                <td className="p-4 opacity-80">$0.00</td>
                 <td className="p-4 font-bold text-red-600">$5,500.00</td>
               </tr>
               <tr className="bg-bg-light">
                 <td className="p-4 font-medium">Auction Processing & Legal Notice Advertisements</td>
-                <td className="p-4 opacity-50">$0.00</td>
+                <td className="p-4 opacity-80">$0.00</td>
                 <td className="p-4 font-bold text-red-600">$4,782.00</td>
               </tr>
               <tr className="font-bold bg-accent/10">

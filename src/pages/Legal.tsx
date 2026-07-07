@@ -10,7 +10,7 @@ function LegalHeader() {
           <img 
             src="/hoa_calculator_logo.svg" 
             alt="HOA Fee Calculator" 
-            style={{ height: '45px', width: 'auto' }}
+            width="180" height="45" style={{height: '45px', width: '180px'}}
             onError={(e) => {
               e.currentTarget.style.display = 'none';
               if (e.currentTarget.nextElementSibling) {
@@ -40,14 +40,14 @@ function LegalHeader() {
 
 function LegalFooter() {
   return (
-    <footer className="bg-primary border-t border-white/10 py-20 px-6 text-white/60">
+    <footer className="bg-primary border-t border-white/10 py-20 px-6 text-white/80">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="col-span-1 md:col-span-2">
            <Link to="/" className="inline-flex items-center mb-6">
              <img 
                src="/hoa_calculator_logo.svg" 
                alt="HOA Fee Calculator" 
-               style={{ height: '45px', width: 'auto' }}
+               width="180" height="45" style={{height: '45px', width: '180px'}}
                onError={(e) => {
                  e.currentTarget.style.display = 'none';
                  if (e.currentTarget.nextElementSibling) {
@@ -98,7 +98,7 @@ export function PrivacyPolicy() {
       <main className="flex-1 pt-32 pb-20 px-6">
         <div className="max-w-3xl mx-auto card bg-white p-8 md:p-12 shadow-md">
           <h1 className="text-4xl font-serif font-bold text-primary mb-2">Privacy Policy</h1>
-          <p className="text-sm text-primary opacity-50 mb-8 pb-4 border-b border-border">Last Updated: April 16, 2026</p>
+          <p className="text-sm text-primary opacity-80 mb-8 pb-4 border-b border-border">Last Updated: April 16, 2026</p>
           
           <div className="prose prose-slate max-w-none text-primary opacity-80 space-y-6">
             <p className="lead text-lg opacity-90">
@@ -142,7 +142,7 @@ export function Disclaimer() {
       <main className="flex-1 pt-32 pb-20 px-6">
         <div className="max-w-3xl mx-auto card bg-white p-8 md:p-12 shadow-md">
           <h1 className="text-4xl font-serif font-bold text-primary mb-2">Financial Disclaimer</h1>
-          <p className="text-sm text-primary opacity-50 mb-8 pb-4 border-b border-border">Last Updated: April 16, 2026</p>
+          <p className="text-sm text-primary opacity-80 mb-8 pb-4 border-b border-border">Last Updated: April 16, 2026</p>
 
           <div className="prose prose-slate max-w-none text-primary opacity-80 space-y-6">
             <p className="lead text-lg opacity-90">
@@ -178,7 +178,7 @@ export function TermsOfService() {
       <main className="flex-1 pt-32 pb-20 px-6">
         <div className="max-w-3xl mx-auto card bg-white p-8 md:p-12 shadow-md">
           <h1 className="text-4xl font-serif font-bold text-primary mb-2">Terms of Service</h1>
-          <p className="text-sm text-primary opacity-50 mb-8 pb-4 border-b border-border">Last Updated: April 16, 2026</p>
+          <p className="text-sm text-primary opacity-80 mb-8 pb-4 border-b border-border">Last Updated: April 16, 2026</p>
 
           <div className="prose prose-slate max-w-none text-primary opacity-80 space-y-6">
             <p className="lead text-lg opacity-90">

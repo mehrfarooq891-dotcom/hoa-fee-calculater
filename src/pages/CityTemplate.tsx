@@ -232,7 +232,7 @@ export default function CityTemplate() {
             <img 
               src="/hoa_calculator_logo.svg" 
               alt="HOA Fee Calculator" 
-              style={{height: '45px', width: 'auto'}}
+              width="180" height="45" style={{height: '45px', width: '180px'}}
               onError={(e) => {
                 e.currentTarget.style.display = 'none';
                 if (e.currentTarget.nextElementSibling) {
@@ -358,14 +358,14 @@ export default function CityTemplate() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-primary border-t border-white/10 py-20 px-6 text-white/60 mt-auto">
+      <footer className="bg-primary border-t border-white/10 py-20 px-6 text-white/80 mt-auto">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="col-span-1 md:col-span-2">
              <Link to="/" className="inline-flex items-center mb-6">
                <img 
                  src="/hoa_calculator_logo.svg" 
                  alt="HOA Fee Calculator" 
-                 style={{height: '45px', width: 'auto'}}
+                 width="180" height="45" style={{height: '45px', width: '180px'}}
                  onError={(e) => {
                    e.currentTarget.style.display = 'none';
                    if (e.currentTarget.nextElementSibling) {

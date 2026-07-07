@@ -37,7 +37,7 @@ export default function HOAVsCondoFeeArticle() {
             <img 
               src="/hoa_calculator_logo.svg" 
               alt="HOA Fee Calculator" 
-              style={{height: '45px', width: 'auto'}}
+              width="180" height="45" style={{height: '45px', width: '180px'}}
               onError={(e) => {
                 e.currentTarget.style.display = 'none';
                 if (e.currentTarget.nextElementSibling) {
@@ -67,7 +67,7 @@ export default function HOAVsCondoFeeArticle() {
           
           <div className="mb-6 animate-fade-in">
             <Link to="/blog" className="text-accent font-bold hover:underline mb-4 inline-block">← Back to Blog</Link>
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-primary opacity-50 uppercase font-bold tracking-wider mb-2">
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-primary opacity-80 uppercase font-bold tracking-wider mb-2">
               <span>Homebuying Education</span>
               <span>•</span>
               <span>8 min read</span>
@@ -194,7 +194,7 @@ export default function HOAVsCondoFeeArticle() {
                   <p className="text-sm leading-relaxed mb-2 text-slate-700">
                     This property sits in a beautifully manicured suburban community. The low monthly fee supports lawn mowing, general security gate electrical bills, a shared neighborhood playground, and street sweeping. 
                   </p>
-                  <p className="text-xs font-semibold text-primary opacity-60">
+                  <p className="text-xs font-semibold text-primary opacity-80">
                     *Ownership Boundary: The buyer owns the private building walls, roof elements, and the land lot underneath. If the private roof fails, the buyer pays 100% of the replacement.
                   </p>
                 </div>
@@ -207,7 +207,7 @@ export default function HOAVsCondoFeeArticle() {
                   <p className="text-sm leading-relaxed mb-2 text-slate-700">
                     The steep NYC fee is driven by dense urban utilities, historic building code compliance (such as NYC local law 11 facade inspections), professional elevator service maintenance contracts, water booster pumps, steam heat system maintenance, and a full-time professional doorman.
                   </p>
-                  <p className="text-xs font-semibold text-primary opacity-60">
+                  <p className="text-xs font-semibold text-primary opacity-80">
                     *Ownership Boundary: Common-interest airspace. The structural facade, plumbing lines, elevators, and historical elements are maintained entirely by the building staff.
                   </p>
                 </div>
@@ -220,7 +220,7 @@ export default function HOAVsCondoFeeArticle() {
                   <p className="text-sm leading-relaxed mb-2 text-slate-700">
                     This tower faces severe ocean breezes, salt corrosion, and flood risks. The high fee covers heavy coastal windstorm utility insurance, elevator systems, seawater pool maintenance, structural beach wall preservation, and strict post-Surfside SB 4-D safety inspection reserve mandates.
                   </p>
-                  <p className="text-xs font-semibold text-primary opacity-60">
+                  <p className="text-xs font-semibold text-primary opacity-80">
                     *Ownership Boundary: Airspace frame. Multi-million dollar master insurance protection and structural reserves are built directly into this monthly dues structure.
                   </p>
                 </div>
@@ -373,7 +373,7 @@ export default function HOAVsCondoFeeArticle() {
               </div>
               <div>
                 <h4 className="text-primary font-bold text-lg">Written by: HOA Research Team</h4>
-                <p className="text-primary opacity-60 text-sm">Providing real-time financial tracking, state laws analysis, and consumer protection guides for American property buyers.</p>
+                <p className="text-primary opacity-80 text-sm">Providing real-time financial tracking, state laws analysis, and consumer protection guides for American property buyers.</p>
               </div>
             </div>
 
@@ -382,14 +382,14 @@ export default function HOAVsCondoFeeArticle() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-primary py-12 px-6 text-white/60">
+      <footer className="bg-primary py-12 px-6 text-white/80">
         <div className="max-w-7xl mx-auto text-center border-t border-white/10 pt-12">
           <div className="flex justify-center mb-4 bg-transparent">
             <Link to="/" className="flex items-center">
               <img 
                 src="/hoa_calculator_logo.svg" 
                 alt="HOA Fee Calculator" 
-                style={{height: '45px', width: 'auto'}}
+                width="180" height="45" style={{height: '45px', width: '180px'}}
                 onError={(e) => {
                   e.currentTarget.style.display = 'none';
                   if (e.currentTarget.nextElementSibling) {

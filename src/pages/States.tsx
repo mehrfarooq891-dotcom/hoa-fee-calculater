@@ -28,7 +28,7 @@ export default function States() {
             <img 
               src="/hoa_calculator_logo.svg" 
               alt="HOA Fee Calculator" 
-              style={{height: '45px', width: 'auto'}}
+              width="180" height="45" style={{height: '45px', width: '180px'}}
               onError={(e) => {
                 e.currentTarget.style.display = 'none';
                 if (e.currentTarget.nextElementSibling) {
@@ -88,11 +88,11 @@ export default function States() {
               <div className="grid grid-cols-2 gap-8">
                 <div>
                   <div className="text-accent font-bold text-xl mb-1">Highest Average</div>
-                  <div className="text-sm opacity-60">Hawaii ($800+)</div>
+                  <div className="text-sm opacity-80">Hawaii ($800+)</div>
                 </div>
                 <div>
                   <div className="text-accent font-bold text-xl mb-1">Lowest Average</div>
-                  <div className="text-sm opacity-60">Mississippi (~$150)</div>
+                  <div className="text-sm opacity-80">Mississippi (~$150)</div>
                 </div>
               </div>
             </div>
@@ -101,14 +101,14 @@ export default function States() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-primary border-t border-white/10 py-20 px-6 text-white/60 mt-auto">
+      <footer className="bg-primary border-t border-white/10 py-20 px-6 text-white/80 mt-auto">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="col-span-1 md:col-span-2">
              <Link to="/" className="inline-flex items-center mb-6">
                <img 
                  src="/hoa_calculator_logo.svg" 
                  alt="HOA Fee Calculator" 
-                 style={{height: '45px', width: 'auto'}}
+                 width="180" height="45" style={{height: '45px', width: '180px'}}
                  onError={(e) => {
                    e.currentTarget.style.display = 'none';
                    if (e.currentTarget.nextElementSibling) {
@@ -126,7 +126,7 @@ export default function States() {
              <p className="max-w-sm text-sm opacity-80 leading-relaxed">The most comprehensive HOA fee calculation tool for US homebuyers.</p>
           </div>
           <div>
-            <h4 className="text-white font-bold mb-6 uppercase text-xs tracking-widest">Navigation</h4>
+            <h3 className="text-white font-bold mb-6 uppercase text-xs tracking-widest">Navigation</h3>
             <ul className="space-y-4 text-sm font-medium">
               <li><Link to="/" className="hover:text-accent transition-colors">Calculator Home</Link></li>
               <li><Link to="/compare" className="hover:text-accent transition-colors">Compare Costs</Link></li>
@@ -134,7 +134,7 @@ export default function States() {
             </ul>
           </div>
           <div>
-            <h4 className="text-white font-bold mb-6 uppercase text-xs tracking-widest">Legal</h4>
+            <h3 className="text-white font-bold mb-6 uppercase text-xs tracking-widest">Legal</h3>
             <ul className="space-y-4 text-sm font-medium">
               <li><Link to="/privacy-policy" className="hover:text-accent transition-colors">Privacy Policy</Link></li>
               <li><Link to="/disclaimer" className="hover:text-accent transition-colors">Disclaimer</Link></li>

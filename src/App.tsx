@@ -20,6 +20,7 @@ const ColoradoHOAFeesArticle = React.lazy(() => import('./pages/ColoradoHOAFeesA
 const WashingtonStateHOAFeesArticle = React.lazy(() => import('./pages/WashingtonStateHOAFeesArticle'));
 const VirginiaHOAFeesArticle = React.lazy(() => import('./pages/VirginiaHOAFeesArticle'));
 const NewJerseyHOAFeesArticle = React.lazy(() => import('./pages/NewJerseyHOAFeesArticle'));
+const TennesseeHOAFeesArticle = React.lazy(() => import('./pages/TennesseeHOAFeesArticle'));
 const HOAVsNoHOAArticle = React.lazy(() => import('./pages/HOAVsNoHOAArticle'));
 const HOAVsCondoFeeArticle = React.lazy(() => import('./pages/HOAVsCondoFeeArticle'));
 const Compare = React.lazy(() => import('./pages/Compare'));
@@ -89,6 +90,8 @@ function DynamicBlogArticle() {
       return <VirginiaHOAFeesArticle />;
     case 'hoa-fees-new-jersey':
       return <NewJerseyHOAFeesArticle />;
+    case 'hoa-fees-tennessee':
+      return <TennesseeHOAFeesArticle />;
     case 'hoa-vs-no-hoa':
       return <HOAVsNoHOAArticle />;
     case 'hoa-vs-condo-fee':
@@ -175,6 +178,7 @@ export default function App() {
             <Route path="/blog/hoa-fees-washington-state" element={<WashingtonStateHOAFeesArticle />} />
             <Route path="/blog/hoa-fees-virginia" element={<VirginiaHOAFeesArticle />} />
             <Route path="/blog/hoa-fees-new-jersey" element={<NewJerseyHOAFeesArticle />} />
+            <Route path="/blog/hoa-fees-tennessee" element={<TennesseeHOAFeesArticle />} />
             <Route path="/blog/hoa-vs-no-hoa" element={<HOAVsNoHOAArticle />} />
             <Route path="/blog/hoa-vs-condo-fee" element={<HOAVsCondoFeeArticle />} />
             

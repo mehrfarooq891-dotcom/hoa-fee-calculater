@@ -5,6 +5,13 @@ import { Link } from 'react-router-dom';
 export default function Blog() {
   const posts = [
     {
+      title: "HOA Fees in Tennessee: Nashville, Memphis & Knoxville Compared",
+      excerpt: "Nashville's HOA fees doubled between 2018 and 2025 as the city transformed from affordable to a hot premium market. Learn the average costs and laws.",
+      date: "July 12, 2026",
+      category: "Data",
+      slug: "/blog/hoa-fees-tennessee"
+    },
+    {
       title: "HOA Fees in New Jersey: Bergen County, Shore Towns & Urban Condos",
       excerpt: "New Jersey has the highest property taxes in the US — and some of its HOA communities still charge $600+/month on top of that. Learn the average costs and laws.",
       date: "July 8, 2026",

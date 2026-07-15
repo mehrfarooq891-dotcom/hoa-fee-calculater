@@ -48,6 +48,7 @@ const CondoHOAFeesNYCArticle = React.lazy(() => import('./pages/CondoHOAFeesNYCA
 const HOAFeesArizonaArticle = React.lazy(() => import('./pages/HOAFeesArizonaArticle'));
 const LowerHOAFeesArticle = React.lazy(() => import('./pages/LowerHOAFeesArticle'));
 const HOAManagementCompaniesArticle = React.lazy(() => import('./pages/HOAManagementCompaniesArticle'));
+const HOALienNoticeArticle = React.lazy(() => import('./pages/HOALienNoticeArticle'));
 const SelfManagedHOAArticle = React.lazy(() => import('./pages/SelfManagedHOAArticle'));
 const HOARulesEnforcementArticle = React.lazy(() => import('./pages/HOARulesEnforcementArticle'));
 const QuestionsBeforeBuyingHOAArticle = React.lazy(() => import('./pages/QuestionsBeforeBuyingHOAArticle'));
@@ -101,6 +102,8 @@ function DynamicBlogArticle() {
       return <HOAFeesTaxDeductibleArticle />;
     case 'dont-pay-hoa-fees':
       return <DontPayHOAFeesArticle />;
+    case 'hoa-lien-notice-what-to-do':
+      return <HOALienNoticeArticle />;
     case 'hoa-foreclosure':
       return <HOAForeclosureArticle />;
     case 'fight-hoa-fee-increase':
@@ -185,6 +188,7 @@ export default function App() {
             {/* 23 New Explicit Routes */}
             <Route path="/blog/hoa-fees-tax-deductible" element={<HOAFeesTaxDeductibleArticle />} />
             <Route path="/blog/dont-pay-hoa-fees" element={<DontPayHOAFeesArticle />} />
+            <Route path="/blog/hoa-lien-notice-what-to-do" element={<HOALienNoticeArticle />} />
             <Route path="/blog/hoa-foreclosure" element={<HOAForeclosureArticle />} />
             <Route path="/blog/fight-hoa-fee-increase" element={<FightHOAFeeIncreaseArticle />} />
             <Route path="/blog/hoa-special-assessment" element={<HOASpecialAssessmentArticle />} />

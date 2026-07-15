@@ -5,6 +5,13 @@ import { Link } from 'react-router-dom';
 export default function Blog() {
   const posts = [
     {
+      title: "I Just Got an HOA Lien Notice: What to Do in the Next 48 Hours",
+      excerpt: "An HOA lien notice isn't a foreclosure yet, but the next 48 hours are critical. Follow this step-by-step action plan to protect your equity and negotiate a payment plan.",
+      date: "July 15, 2026",
+      category: "Legal & Rights",
+      slug: "/blog/hoa-lien-notice-what-to-do"
+    },
+    {
       title: "HOA Fees in Tennessee: Nashville, Memphis & Knoxville Compared",
       excerpt: "Nashville's HOA fees doubled between 2018 and 2025 as the city transformed from affordable to a hot premium market. Learn the average costs and laws.",
       date: "July 12, 2026",

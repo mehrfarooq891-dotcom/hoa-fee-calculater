@@ -222,7 +222,7 @@ export default function CityTemplate() {
       <SEO 
         title={`HOA Fee Calculator ${displayCity}, ${displayState} 2026 | Average Costs & Estimates`}
         description={`Calculate HOA fees in ${displayCity}, ${displayState}. See average monthly costs, neighborhood comparisons, and estimate your lifetime HOA expenses.`}
-        canonical={`https://hoafeecalculator.com/cities/${cityName}`}
+        canonical={`https://www.hoafeecalculator.com/cities/${cityName}`}
         schema={[pageSchema]}
       />
 

@@ -15,14 +15,14 @@ export default function SEO({
   description, 
   canonical, 
   ogType = 'website',
-  ogImage = 'https://hoafeecalculator.com/assets/og-image.jpg',
+  ogImage = 'https://www.hoafeecalculator.com/assets/og-image.jpg',
   schema = []
 }: SEOProps) {
   const path = typeof window !== 'undefined' ? window.location.pathname : '';
   const normalizedPath = path.length > 1 && path.endsWith('/') ? path.slice(0, -1) : path;
   const canonicalUrl = canonical 
-    ? canonical 
-    : `https://hoafeecalculator.com${normalizedPath}`;
+    ? canonical.replace('https://hoafeecalculator.com', 'https://www.hoafeecalculator.com') 
+    : `https://www.hoafeecalculator.com${normalizedPath}`;
 
   return (
     <Helmet>

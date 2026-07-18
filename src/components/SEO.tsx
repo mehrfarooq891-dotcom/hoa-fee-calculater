@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
 
 interface SEOProps {
   title: string;
@@ -25,7 +24,7 @@ export default function SEO({
     : `https://www.hoafeecalculator.com${normalizedPath}`;
 
   return (
-    <Helmet>
+    <>
       <title>{title}</title>
       <meta name="description" content={description} />
       <link rel="canonical" href={canonicalUrl} />
@@ -49,6 +48,6 @@ export default function SEO({
           {JSON.stringify(s)}
         </script>
       ))}
-    </Helmet>
+    </>
   );
 }

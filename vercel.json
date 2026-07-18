@@ -1,3 +1,10 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "rewrites": [
+    { "source": "/page-sitemap.xml", "destination": "/page-sitemap.xml" },
+    { "source": "/blog-sitemap.xml", "destination": "/blog-sitemap.xml" },
+    { "source": "/state-sitemap.xml", "destination": "/state-sitemap.xml" },
+    { "source": "/city-sitemap.xml", "destination": "/city-sitemap.xml" },
+    { "source": "/sitemap_index.xml", "destination": "/sitemap_index.xml" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }

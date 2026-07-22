@@ -59,6 +59,7 @@ const StatesNoHOALawsArticle = React.lazy(() => import('./pages/StatesNoHOALawsA
 const HOAFeeCalculatorGuideArticle = React.lazy(() => import('./pages/HOAFeeCalculatorGuideArticle'));
 const HOAFeesTexasGuideArticle = React.lazy(() => import('./pages/HOAFeesTexasGuideArticle'));
 const AverageHOAFeesNewYorkArticle = React.lazy(() => import('./pages/AverageHOAFeesNewYorkArticle'));
+const HOAThreateningForeclosureGuideArticle = React.lazy(() => import('./pages/HOAThreateningForeclosureGuideArticle'));
 
 function DynamicBlogArticle() {
   const { articleSlug } = useParams<{ articleSlug: string }>();
@@ -154,6 +155,8 @@ function DynamicBlogArticle() {
       return <HighestHOAFeesByStateArticle />;
     case 'hoa-fee-increase-limits':
       return <HOAFeeIncreaseLimitsArticle />;
+    case 'hoa-threatening-foreclosure-guide':
+      return <HOAThreateningForeclosureGuideArticle />;
     default:
       return <Navigate to="/blog" replace />;
   }

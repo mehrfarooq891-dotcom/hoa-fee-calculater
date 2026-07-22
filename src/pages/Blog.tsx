@@ -5,6 +5,13 @@ import { Link } from 'react-router-dom';
 export default function Blog() {
   const posts = [
     {
+      title: "My HOA Is Threatening Foreclosure: A Step-by-Step Emergency Guide",
+      excerpt: "Foreclosure over a $600 HOA balance sounds extreme — in 22 states, it's completely legal. Follow this 6-step emergency guide to protect your equity and stop foreclosure.",
+      date: "July 22, 2026",
+      category: "Legal & Rights",
+      slug: "/blog/hoa-threatening-foreclosure-guide"
+    },
+    {
       title: "I Just Got an HOA Lien Notice: What to Do in the Next 48 Hours",
       excerpt: "An HOA lien notice isn't a foreclosure yet, but the next 48 hours are critical. Follow this step-by-step action plan to protect your equity and negotiate a payment plan.",
       date: "July 15, 2026",

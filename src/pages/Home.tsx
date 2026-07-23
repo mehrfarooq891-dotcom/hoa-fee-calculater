@@ -40,6 +40,10 @@ export default function Home() {
     }
   ];
 
+  const bottomFaqs = consolidatedFaqs.filter(
+    faq => faq.q === "Are HOA fees tax deductible?" || faq.q === "Are HOA fees included in a mortgage payment?"
+  );
+
   const webAppSchema = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
@@ -421,7 +425,7 @@ export default function Home() {
             Frequently Asked Questions
           </h2>
           <div className="space-y-4">
-            {consolidatedFaqs.map((faq, index) => {
+            {bottomFaqs.map((faq, index) => {
               const isOpen = openFaq === index;
               return (
                 <div key={index} className="border border-border/60 rounded-2xl overflow-hidden transition-all duration-200">

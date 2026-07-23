@@ -62,14 +62,64 @@ export default function Home() {
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": consolidatedFaqs.map(faq => ({
-      "@type": "Question",
-      "name": faq.q,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": faq.a
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Can HOA fees increase every year?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, HOA fees can and often do increase annually to keep pace with inflation, rising vendor contracts, and higher insurance premiums. Most state laws or association bylaws place limits on how much a board can increase standard dues without holding a vote from all community members."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the difference between HOA fees and condo fees?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "While both are monthly assessments, HOA fees typically cover common areas, neighborhood roads, and shared amenities for single-family homes or townhouses. Condo fees generally cover those items plus structural elements, exterior hazard insurance, shared utilities, and outer building maintenance of individual units."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much are average HOA fees in 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The average homeowners association (HOA) fee in the United States is approximately $300 to $400 per month, depending heavily on location, property type, and amenities. Coastal states like Florida and California average higher costs, whereas inland states like Arkansas or Indiana have significantly lower averages."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens if I don't pay my HOA fees?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Failing to pay your HOA fees can result in late charges, interest penalties, and suspension of community amenity privileges. If the delinquency persists, the association can place a lien on your property, which can ultimately lead to foreclosure depending on state laws."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I find out how much a property's HOA fees are?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The property's active HOA fee is typically disclosed on real estate listing platforms (such as Zillow or Redfin), but you should always verify the exact rate. Before closing, request a formal resale certificate, which details the current fee, any outstanding balances, and scheduled special assessments."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are HOA fees tax deductible?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "HOA fees are generally not tax deductible for a primary residence. However, if you rent out the property as a residential investment, or if you use a portion of the home exclusively for a qualified home office business, you may be able to deduct the fees as a business expense."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are HOA fees included in a mortgage payment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, HOA fees are paid directly to the homeowners association, not to your mortgage lender. However, lenders always calculate estimated HOA fees as part of your total debt-to-income (DTI) ratio during the home loan approval process."
+        }
       }
-    }))
+    ]
   };
 
   return (

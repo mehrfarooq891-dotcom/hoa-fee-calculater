@@ -7,29 +7,27 @@ const Calculator = React.lazy(() => import('@/src/components/Calculator'));
 export default function Home() {
   const [isEmbedModalOpen, setIsEmbedModalOpen] = React.useState(false);
   const [copied, setCopied] = React.useState(false);
-  const [openFaq, setOpenFaq] = React.useState<number | null>(null);
-  const [openNewFaq, setOpenNewFaq] = React.useState<number | null>(null);
 
-  const faqs = [
+  const consolidatedFaqs = [
     {
-      q: "How much are average HOA fees?",
+      q: "How much are average HOA fees in 2026?",
       a: "The average homeowners association (HOA) fee in the United States is approximately $300 to $400 per month, depending heavily on location, property type, and amenities. Coastal states like Florida and California average higher costs, whereas inland states like Arkansas or Indiana have significantly lower averages."
-    },
-    {
-      q: "Are HOA fees tax deductible?",
-      a: "HOA fees are generally not tax deductible for a primary residence. However, if you rent out the property as a residential investment, or if you use a portion of the home exclusively for a qualified home office business, you may be able to deduct the fees as a business expense."
-    },
-    {
-      q: "What happens if I don't pay my HOA fees?",
-      a: "Failing to pay your HOA fees can result in late charges, interest penalties, and suspension of community amenity privileges. If the delinquency persists, the association can place a lien on your property, which can ultimately lead to foreclosure depending on state laws."
     },
     {
       q: "Can HOA fees increase every year?",
       a: "Yes, HOA fees can and often do increase annually to keep pace with inflation, rising vendor contracts, and higher insurance premiums. Most state laws or association bylaws place limits on how much a board can increase standard dues without holding a vote from all community members."
     },
     {
+      q: "What happens if I don't pay my HOA fees?",
+      a: "Failing to pay your HOA fees can result in late charges, interest penalties, and suspension of community amenity privileges. If the delinquency persists, the association can place a lien on your property, which can ultimately lead to foreclosure depending on state laws."
+    },
+    {
       q: "What's the difference between HOA fees and condo fees?",
       a: "While both are monthly assessments, HOA fees typically cover common areas, neighborhood roads, and shared amenities for single-family homes or townhouses. Condo fees generally cover those items plus structural elements, exterior hazard insurance, shared utilities, and outer building maintenance of individual units."
+    },
+    {
+      q: "Are HOA fees tax deductible?",
+      a: "HOA fees are generally not tax deductible for a primary residence. However, if you rent out the property as a residential investment, or if you use a portion of the home exclusively for a qualified home office business, you may be able to deduct the fees as a business expense."
     },
     {
       q: "Are HOA fees included in a mortgage payment?",
@@ -38,25 +36,6 @@ export default function Home() {
     {
       q: "How do I find out how much a property's HOA fees are?",
       a: "The property's active HOA fee is typically disclosed on real estate listing platforms (such as Zillow or Redfin), but you should always verify the exact rate. Before closing, request a formal resale certificate, which details the current fee, any outstanding balances, and scheduled special assessments."
-    }
-  ];
-
-  const newFaqs = [
-    {
-      q: "What is a normal HOA fee in the US in 2026?",
-      a: "Average HOA fees in the US range from $200 to $400 per month for a single-family home, and $300 to $700 per month for condos with amenities like pools or gyms. High-rise buildings in major cities can exceed $1,000/month."
-    },
-    {
-      q: "Can an HOA raise fees every year?",
-      a: "Most HOAs can raise fees annually without a vote if the increase stays within limits set by the governing documents, typically 10–15% per year. Larger increases usually require a majority homeowner vote."
-    },
-    {
-      q: "What happens if I don't pay my HOA fees?",
-      a: "Unpaid HOA fees typically result in late fees within 30 days, followed by a lien on the property after 60–90 days of non-payment. Some states allow HOAs to foreclose on properties with unpaid dues exceeding $1,000–$5,000."
-    },
-    {
-      q: "Are HOA fees tax deductible?",
-      a: "HOA fees are generally not tax-deductible for a primary residence. However, if the property is a rental or used partially for business, a portion of HOA fees may be deductible as a business expense."
     }
   ];
 
@@ -78,20 +57,7 @@ export default function Home() {
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": faqs.map(faq => ({
-      "@type": "Question",
-      "name": faq.q,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": faq.a
-      }
-    }))
-  };
-
-  const newFaqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": newFaqs.map(faq => ({
+    "mainEntity": consolidatedFaqs.map(faq => ({
       "@type": "Question",
       "name": faq.q,
       "acceptedAnswer": {
@@ -106,7 +72,7 @@ export default function Home() {
       <SEO 
         title="HOA Fee Calculator 2026 — Estimate Your True Cost by State | HOACalculator.com"
         description="Free HOA fee calculator — instantly estimate your lifetime HOA cost, affordability score, and year-by-year breakdown. Trusted by US homebuyers in all 50 states."
-        schema={[webAppSchema, faqSchema, newFaqSchema]}
+        schema={[webAppSchema, faqSchema]}
       />
 
       {/* Header */}
@@ -250,6 +216,18 @@ export default function Home() {
           </div>
         </section>
 
+        {/* FAQ: Can HOA fees increase every year? */}
+        <section className="py-8 px-6 max-w-7xl mx-auto">
+          <div className="card bg-bg-light border border-border/60 p-6 md:p-8 rounded-2xl shadow-sm max-w-4xl mx-auto">
+            <h2 className="text-xl md:text-2xl font-serif font-bold text-primary mb-3">
+              Can HOA fees increase every year?
+            </h2>
+            <p className="text-primary/80 text-sm md:text-base leading-relaxed font-sans">
+              Yes, HOA fees can and often do increase annually to keep pace with inflation, rising vendor contracts, and higher insurance premiums. Most state laws or association bylaws place limits on how much a board can increase standard dues without holding a vote from all community members.
+            </p>
+          </div>
+        </section>
+
         {/* PROBLEM SECTION */}
         <section className="py-20 px-6 bg-primary text-white overflow-hidden relative">
           <div className="absolute right-0 top-0 w-1/3 h-full bg-accent opacity-10 skew-x-12 translate-x-20"></div>
@@ -306,6 +284,18 @@ export default function Home() {
           </div>
         </section>
 
+        {/* FAQ: What's the difference between HOA fees and condo fees? */}
+        <section className="py-12 px-6 bg-white">
+          <div className="max-w-4xl mx-auto card bg-bg-light border border-border/60 p-8 md:p-10 rounded-2xl shadow-sm">
+            <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary mb-4">
+              What's the difference between HOA fees and condo fees?
+            </h2>
+            <p className="text-primary/80 text-base md:text-lg leading-relaxed font-sans">
+              While both are monthly assessments, HOA fees typically cover common areas, neighborhood roads, and shared amenities for single-family homes or townhouses. Condo fees generally cover those items plus structural elements, exterior hazard insurance, shared utilities, and outer building maintenance of individual units.
+            </p>
+          </div>
+        </section>
+
         {/* STATE DATA TABLE */}
         <section className="py-20 px-6 bg-bg-light">
           <div className="max-w-4xl mx-auto">
@@ -338,6 +328,16 @@ export default function Home() {
                 View All 50 States
               </Link>
             </div>
+
+            {/* FAQ: How much are average HOA fees in 2026? */}
+            <div className="mt-12 card bg-white border border-border/60 p-8 md:p-10 rounded-2xl shadow-sm">
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary mb-4">
+                How much are average HOA fees in 2026?
+              </h2>
+              <p className="text-primary/80 text-base md:text-lg leading-relaxed font-sans">
+                The average homeowners association (HOA) fee in the United States is approximately $300 to $400 per month, depending heavily on location, property type, and amenities. Coastal states like Florida and California average higher costs, whereas inland states like Arkansas or Indiana have significantly lower averages.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -364,16 +364,35 @@ export default function Home() {
                 "Most homebuyers focus on the mortgage. The HOA fee is the silent budget-killer nobody warns you about."
               </p>
               <div className="mb-6 text-white/80 leading-relaxed text-sm max-w-xl">
-                Michael Torres is a certified real estate financial analyst with 14 years 
-                of experience in US residential markets. Having worked with homebuyers across 
-                California, Florida, and Texas, he built HOACalculator.com to help buyers 
-                understand the true lifetime cost of HOA fees before signing anything.
+                Michael Torres has spent 14 years analyzing US residential real estate markets, working with homebuyers across California, Florida, and Texas. He built HOACalculator.com to help buyers understand the true lifetime cost of HOA fees before signing anything.
               </div>
               <div>
                 <h4 className="text-white font-bold text-xl">Michael Torres</h4>
                 <p className="text-accent uppercase tracking-widest text-xs font-bold">Real Estate Financial Analyst & Founder</p>
               </div>
             </div>
+          </div>
+
+          {/* FAQ: What happens if I don't pay my HOA fees? */}
+          <div className="mt-10 card bg-white border border-border/60 p-8 md:p-10 rounded-2xl shadow-sm">
+            <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary mb-4">
+              What happens if I don't pay my HOA fees?
+            </h2>
+            <p className="text-primary/80 text-base md:text-lg leading-relaxed font-sans">
+              Failing to pay your HOA fees can result in late charges, interest penalties, and suspension of community amenity privileges. If the delinquency persists, the association can place a lien on your property, which can ultimately lead to foreclosure depending on state laws.
+            </p>
+          </div>
+        </section>
+
+        {/* FAQ: How do I find out how much a property's HOA fees are? */}
+        <section className="py-12 px-6 max-w-4xl mx-auto">
+          <div className="card bg-bg-light border border-border/60 p-8 md:p-10 rounded-2xl shadow-sm">
+            <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary mb-4">
+              How do I find out how much a property's HOA fees are?
+            </h2>
+            <p className="text-primary/80 text-base md:text-lg leading-relaxed font-sans">
+              The property's active HOA fee is typically disclosed on real estate listing platforms (such as Zillow or Redfin), but you should always verify the exact rate. Before closing, request a formal resale certificate, which details the current fee, any outstanding balances, and scheduled special assessments.
+            </p>
           </div>
         </section>
 
@@ -395,51 +414,29 @@ export default function Home() {
            </div>
         </section>
 
-        {/* FAQ SECTION */}
+        {/* CONSOLIDATED SHORTENED FAQ BLOCK ABOVE FOOTER */}
         <section className="py-20 px-6 max-w-4xl mx-auto border-t border-border">
-          <h2 className="text-4xl font-serif font-bold text-primary mb-12 text-center">Frequently Asked Questions</h2>
-          <div className="space-y-4">
-            {faqs.map((faq, index) => {
-              const isOpen = openFaq === index;
-              return (
-                <div key={index} className="border border-border/60 rounded-2xl overflow-hidden transition-all duration-200">
-                  <button
-                    onClick={() => setOpenFaq(isOpen ? null : index)}
-                    className="w-full text-left px-6 py-5 bg-bg-light hover:bg-bg-light/80 flex justify-between items-center transition-colors font-sans cursor-pointer focus:outline-none"
-                  >
-                    <span className="font-bold text-primary text-lg pr-4">{faq.q}</span>
-                    <span className={`text-accent font-bold transform transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}>▼</span>
-                  </button>
-                  <div className={`transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[500px] opacity-100 border-t border-border/40' : 'max-h-0 opacity-0 pointer-events-none'}`}>
-                    <p className="px-6 py-5 text-primary opacity-80 leading-relaxed font-sans">{faq.a}</p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </section>
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-10 text-center">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-6">
+            <div className="card bg-bg-light border border-border/60 p-6 md:p-8 rounded-2xl shadow-sm">
+              <h2 className="text-xl md:text-2xl font-serif font-bold text-primary mb-3">
+                Are HOA fees tax deductible?
+              </h2>
+              <p className="text-primary/80 text-base leading-relaxed font-sans">
+                HOA fees are generally not tax deductible for a primary residence. However, if you rent out the property as a residential investment, or if you use a portion of the home exclusively for a qualified home office business, you may be able to deduct the fees as a business expense.
+              </p>
+            </div>
 
-        {/* NEW FAQ SECTION */}
-        <section className="py-20 px-6 max-w-4xl mx-auto border-t border-border">
-          <h2 className="text-4xl font-serif font-bold text-primary mb-12 text-center">Homeowner Association FAQs</h2>
-          <div className="space-y-4">
-            {newFaqs.map((faq, index) => {
-              const isOpen = openNewFaq === index;
-              return (
-                <div key={index} className="border border-border/60 rounded-2xl overflow-hidden transition-all duration-200">
-                  <button
-                    onClick={() => setOpenNewFaq(isOpen ? null : index)}
-                    className="w-full text-left px-6 py-5 bg-bg-light hover:bg-bg-light/80 flex justify-between items-center transition-colors font-sans cursor-pointer focus:outline-none"
-                  >
-                    <span className="font-bold text-primary text-lg pr-4">{faq.q}</span>
-                    <span className={`text-accent font-bold transform transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}>▼</span>
-                  </button>
-                  <div className={`transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[500px] opacity-100 border-t border-border/40' : 'max-h-0 opacity-0 pointer-events-none'}`}>
-                    <p className="px-6 py-5 text-primary opacity-80 leading-relaxed font-sans">{faq.a}</p>
-                  </div>
-                </div>
-              );
-            })}
+            <div className="card bg-bg-light border border-border/60 p-6 md:p-8 rounded-2xl shadow-sm">
+              <h2 className="text-xl md:text-2xl font-serif font-bold text-primary mb-3">
+                Are HOA fees included in a mortgage payment?
+              </h2>
+              <p className="text-primary/80 text-base leading-relaxed font-sans">
+                No, HOA fees are paid directly to the homeowners association, not to your mortgage lender. However, lenders always calculate estimated HOA fees as part of your total debt-to-income (DTI) ratio during the home loan approval process.
+              </p>
+            </div>
           </div>
         </section>
       </main>

@@ -65,10 +65,10 @@ export default function About() {
             <div>
               <h2 className="text-3xl font-serif font-bold text-primary mb-6">Meet Michael Torres</h2>
               <p className="text-xl text-primary opacity-80 leading-relaxed mb-6">
-                Michael Torres is a certified real estate financial analyst with 14 years 
-                of experience in US residential markets. Having worked with homebuyers across 
-                California, Florida, and Texas, he built HOACalculator.com to help buyers 
-                understand the true lifetime cost of HOA fees before signing anything.
+                Michael Torres has spent 14 years analyzing US residential real estate markets, 
+                working with homebuyers across California, Florida, and Texas. He built 
+                HOACalculator.com to help buyers understand the true lifetime cost of HOA fees 
+                before signing anything.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center gap-3 text-primary font-bold">

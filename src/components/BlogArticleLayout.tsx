@@ -92,7 +92,7 @@ export default function BlogArticleLayout({
               <span>•</span>
               <span>{date}</span>
               <span>•</span>
-              <span className="text-accent normal-case">Reviewed by Michael Torres, Certified Real Estate Financial Analyst</span>
+              <span className="text-accent normal-case">Reviewed by Michael Torres, Real Estate Financial Analyst</span>
             </div>
           </div>
 

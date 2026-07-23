@@ -7,6 +7,7 @@ const Calculator = React.lazy(() => import('@/src/components/Calculator'));
 export default function Home() {
   const [isEmbedModalOpen, setIsEmbedModalOpen] = React.useState(false);
   const [copied, setCopied] = React.useState(false);
+  const [openFaq, setOpenFaq] = React.useState<number | null>(null);
 
   const consolidatedFaqs = [
     {
@@ -414,29 +415,29 @@ export default function Home() {
            </div>
         </section>
 
-        {/* CONSOLIDATED SHORTENED FAQ BLOCK ABOVE FOOTER */}
+        {/* CONSOLIDATED FAQ ACCORDION BLOCK ABOVE FOOTER */}
         <section className="py-20 px-6 max-w-4xl mx-auto border-t border-border">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-10 text-center">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-12 text-center">
             Frequently Asked Questions
           </h2>
-          <div className="space-y-6">
-            <div className="card bg-bg-light border border-border/60 p-6 md:p-8 rounded-2xl shadow-sm">
-              <h2 className="text-xl md:text-2xl font-serif font-bold text-primary mb-3">
-                Are HOA fees tax deductible?
-              </h2>
-              <p className="text-primary/80 text-base leading-relaxed font-sans">
-                HOA fees are generally not tax deductible for a primary residence. However, if you rent out the property as a residential investment, or if you use a portion of the home exclusively for a qualified home office business, you may be able to deduct the fees as a business expense.
-              </p>
-            </div>
-
-            <div className="card bg-bg-light border border-border/60 p-6 md:p-8 rounded-2xl shadow-sm">
-              <h2 className="text-xl md:text-2xl font-serif font-bold text-primary mb-3">
-                Are HOA fees included in a mortgage payment?
-              </h2>
-              <p className="text-primary/80 text-base leading-relaxed font-sans">
-                No, HOA fees are paid directly to the homeowners association, not to your mortgage lender. However, lenders always calculate estimated HOA fees as part of your total debt-to-income (DTI) ratio during the home loan approval process.
-              </p>
-            </div>
+          <div className="space-y-4">
+            {consolidatedFaqs.map((faq, index) => {
+              const isOpen = openFaq === index;
+              return (
+                <div key={index} className="border border-border/60 rounded-2xl overflow-hidden transition-all duration-200">
+                  <button
+                    onClick={() => setOpenFaq(isOpen ? null : index)}
+                    className="w-full text-left px-6 py-5 bg-bg-light hover:bg-bg-light/80 flex justify-between items-center transition-colors font-sans cursor-pointer focus:outline-none"
+                  >
+                    <span className="font-bold text-primary text-lg pr-4">{faq.q}</span>
+                    <span className={`text-accent font-bold transform transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}>▼</span>
+                  </button>
+                  <div className={`transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[500px] opacity-100 border-t border-border/40' : 'max-h-0 opacity-0 pointer-events-none'}`}>
+                    <p className="px-6 py-5 text-primary opacity-80 leading-relaxed font-sans">{faq.a}</p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </section>
       </main>

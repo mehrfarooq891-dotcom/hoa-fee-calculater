@@ -74,7 +74,7 @@ export default function WhatIsHOAFeeArticle() {
               <span>•</span>
               <span>May 10, 2026</span>
               <span>•</span>
-              <span className="text-accent normal-case">Reviewed by Michael Torres, Certified Real Estate Financial Analyst</span>
+              <span className="text-accent normal-case">Reviewed by Michael Torres, Real Estate Financial Analyst</span>
             </div>
           </div>
 

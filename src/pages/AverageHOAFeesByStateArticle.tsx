@@ -137,7 +137,7 @@ export default function AverageHOAFeesByStateArticle() {
               <span>•</span>
               <span>May 12, 2026</span>
               <span>•</span>
-              <span className="text-accent normal-case">Reviewed by Michael Torres, Certified Real Estate Financial Analyst</span>
+              <span className="text-accent normal-case">Reviewed by Michael Torres, Real Estate Financial Analyst</span>
             </div>
           </div>
 

@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://hoafeecalculator.com/sitemap.xml
+Sitemap: https://www.hoafeecalculator.com/sitemap.xml

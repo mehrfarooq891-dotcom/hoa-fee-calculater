@@ -109,6 +109,7 @@ export default function States() {
           <nav className="hidden md:flex gap-8 items-center text-sm font-bold uppercase tracking-wider">
             <Link to="/" className="hover:text-accent transition-colors">Home</Link>
             <Link to="/states" className="text-accent">HOA Fees by State</Link>
+            <Link to="/cities" className="hover:text-accent transition-colors">HOA Fees by City</Link>
             <Link to="/compare" className="hover:text-accent transition-colors">Compare</Link>
             <Link to="/blog" className="hover:text-accent transition-colors">Real Estate Blog</Link>
             <Link to="/about" className="hover:text-accent transition-colors">About</Link>
@@ -124,9 +125,23 @@ export default function States() {
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-4">
               HOA Fees by State — All 50 US States
             </h1>
-            <p className="text-lg md:text-xl text-primary/70 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-primary/70 max-w-2xl mx-auto leading-relaxed mb-6">
               Browse average monthly fees, legal guidelines, and community regulations for all 50 US states updated for 2026.
             </p>
+          </div>
+
+          {/* Cross-link to Cities Hub */}
+          <div className="max-w-3xl mx-auto mb-10 bg-bg-light border border-border/80 rounded-2xl p-4 sm:p-5 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left shadow-sm">
+            <div>
+              <span className="font-bold text-primary block text-base mb-0.5">Looking for city-level data?</span>
+              <span className="text-xs text-primary/70">View localized HOA fee averages, neighborhood breakdowns, and guides for major US cities.</span>
+            </div>
+            <Link 
+              to="/cities"
+              className="bg-accent hover:bg-accent/90 text-white font-bold text-xs uppercase tracking-wider px-5 py-2.5 rounded-full transition-colors shrink-0"
+            >
+              View Fees by City &rarr;
+            </Link>
           </div>
 
           {/* Search & Region Filters */}

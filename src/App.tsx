@@ -27,6 +27,7 @@ const Compare = React.lazy(() => import('./pages/Compare'));
 const Contact = React.lazy(() => import('./pages/Contact'));
 const States = React.lazy(() => import('./pages/States'));
 const StateTemplate = React.lazy(() => import('./pages/StateTemplate'));
+const Cities = React.lazy(() => import('./pages/Cities'));
 const CityTemplate = React.lazy(() => import('./pages/CityTemplate'));
 const PrivacyPolicy = React.lazy(() => import('./pages/Legal').then(m => ({ default: m.PrivacyPolicy })));
 const Disclaimer = React.lazy(() => import('./pages/Legal').then(m => ({ default: m.Disclaimer })));
@@ -223,6 +224,7 @@ export default function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/states" element={<States />} />
             <Route path="/states/:stateName" element={<StateTemplate />} />
+            <Route path="/cities" element={<Cities />} />
             <Route path="/cities/:cityName" element={<CityTemplate />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<TermsOfService />} />

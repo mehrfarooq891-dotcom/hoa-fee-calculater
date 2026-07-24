@@ -451,6 +451,97 @@ export default function Home() {
           </div>
         </section>
 
+        {/* EDUCATIONAL GUIDES & HELPFUL RESOURCES */}
+        <section className="py-20 px-6 bg-bg-light border-t border-border/60">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-4">
+                Educational Guides &amp; Helpful Resources
+              </h2>
+              <p className="text-primary/70 text-base md:text-lg max-w-2xl mx-auto font-sans leading-relaxed">
+                Explore comprehensive articles, state-by-state cost comparisons, and expert guides to help you navigate HOA fees.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                {
+                  title: "What Is an HOA Fee? The Complete 2026 Guide",
+                  excerpt: "Learn what homeowners association fees cover, how they are calculated, and what happens if you don't pay them.",
+                  link: "/blog/what-is-hoa-fee"
+                },
+                {
+                  title: "Average HOA Fees by State: 2026 Comparison",
+                  excerpt: "Explore state-by-state HOA fee averages across all 50 US states to plan your home buying budget.",
+                  link: "/blog/average-hoa-fees-by-state"
+                },
+                {
+                  title: "HOA Fees in Florida: Average Costs & Laws",
+                  excerpt: "Discover average monthly fees in Miami, Orlando, and Tampa along with post-SB 4D structural reserve mandates.",
+                  link: "/blog/hoa-fees-florida"
+                },
+                {
+                  title: "HOA Fees in California: Averages & CC&R Rules",
+                  excerpt: "Compare condo and townhouse dues in Los Angeles and San Francisco with Davis-Stirling 20% increase caps.",
+                  link: "/blog/hoa-fees-california"
+                },
+                {
+                  title: "HOA Fees in Texas: Legal & Financial Breakdown",
+                  excerpt: "Understand master-planned community fees in Houston, Dallas, and Austin under Texas Property Code Chapter 209.",
+                  link: "/blog/hoa-fees-texas"
+                },
+                {
+                  title: "HOA vs No HOA: Costs, Pros & Cons Compared",
+                  excerpt: "Compare living in an HOA community versus a non-HOA neighborhood to decide what fits your lifestyle.",
+                  link: "/blog/hoa-vs-no-hoa"
+                },
+                {
+                  title: "HOA Fees vs Condo Fees: Key Differences Explained",
+                  excerpt: "Uncover the critical financial and legal distinctions between condo maintenance fees and townhouse HOA dues.",
+                  link: "/blog/hoa-vs-condo-fee"
+                },
+                {
+                  title: "HOA Fees in Washington State: Seattle, Bellevue & Eastside",
+                  excerpt: "Compare Seattle condo fees, tech-worker amenities, seismic retrofit reserves, and Eastside townhouse averages.",
+                  link: "/blog/hoa-fees-washington-state"
+                },
+                {
+                  title: "HOA Fees in Illinois: Chicago Condos vs Suburban Townhouses",
+                  excerpt: "Compare high-rise condo maintenance fees in Lincoln Park with suburban townhouse HOA dues in Naperville.",
+                  link: "/blog/hoa-fees-illinois"
+                }
+              ].map((guide, idx) => (
+                <Link
+                  key={idx}
+                  to={guide.link}
+                  className="card bg-white border border-border/80 hover:border-accent hover:shadow-lg transition-all p-6 rounded-2xl flex flex-col justify-between group"
+                >
+                  <div>
+                    <h3 className="font-serif font-bold text-xl text-primary group-hover:text-accent transition-colors mb-2 leading-snug">
+                      {guide.title}
+                    </h3>
+                    <p className="text-primary/70 text-sm leading-relaxed mb-4 font-sans">
+                      {guide.excerpt}
+                    </p>
+                  </div>
+                  <span className="text-accent font-bold text-sm inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform font-sans">
+                    Read More &rarr;
+                  </span>
+                </Link>
+              ))}
+            </div>
+
+            <div className="mt-10 text-center">
+              <Link 
+                to="/blog" 
+                className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white font-bold py-3.5 px-8 rounded-full transition-all active:scale-95 shadow-md text-sm"
+              >
+                View All Real Estate Articles &rarr;
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* CTA BANNER */}
         <section className="py-24 px-6 text-center">
            <div className="max-w-4xl mx-auto card bg-accent border-none shadow-2xl p-16 text-white relative overflow-hidden">

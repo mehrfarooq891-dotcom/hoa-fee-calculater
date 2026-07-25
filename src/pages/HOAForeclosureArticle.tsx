@@ -87,20 +87,38 @@ export default function HOAForeclosureArticle() {
 
       <div className="space-y-6">
         <p className="lead text-xl font-medium text-primary border-l-4 border-accent pl-4 italic my-6">
-          In 22 states, an HOA can foreclose on your home even if your mortgage is current—a devastating truth that catches thousands of senior homebuyers and property owners off guard each year.
+          <strong>Legal Research Overview:</strong> Is HOA foreclosure legal in your state? In 22 states, an HOA possesses statutory power to initiate foreclosure proceedings even if your primary bank mortgage is 100% current.
         </p>
 
+        {/* Funnel Navigation Box */}
+        <div className="bg-bg-light border border-border rounded-xl p-5 my-6 space-y-3">
+          <p className="text-xs uppercase tracking-wider font-bold text-accent">Navigating the HOA Delinquency Funnel</p>
+          <div className="grid sm:grid-cols-2 gap-3 text-sm">
+            <div className="p-3 bg-white rounded-lg border border-border">
+              <span className="block font-bold text-primary text-xs uppercase mb-1">Stage 1: Top-of-Funnel Awareness</span>
+              <p className="text-xs opacity-80 mb-2">Want to understand how missed dues compound into collection fees?</p>
+              <Link to="/blog/dont-pay-hoa-fees" className="text-accent font-bold hover:underline text-xs inline-flex items-center gap-1">
+                Read What Happens If You Don't Pay →
+              </Link>
+            </div>
+            <div className="p-3 bg-white rounded-lg border border-border">
+              <span className="block font-bold text-primary text-xs uppercase mb-1">Stage 3: Emergency Action</span>
+              <p className="text-xs opacity-80 mb-2">Received a formal intent-to-lien notice or foreclosure summons?</p>
+              <Link to="/blog/hoa-threatening-foreclosure-guide" className="text-accent font-bold hover:underline text-xs inline-flex items-center gap-1">
+                6-Step Emergency Crisis Guide →
+              </Link>
+            </div>
+          </div>
+        </div>
+
         <p>
-          To most people, the concept of homeownership means absolute control of their primary residence once the financial obligations to their mortgage bank are satisfied. We naturally understand that if we fall behind on monthly mortgage loan payments, the underwriting bank has the right to repossess and auction the home. 
+          For most property owners, homeownership means total security once mortgage bank obligations are satisfied. Homeowners understand that failing to pay the bank can lead to repossession. However, millions of Americans residing in master-planned communities, townhomes, or condo complexes remain completely unaware of state statutory laws surrounding Homeowners Association (HOA) and Condominium Association (COA) assessment liens.
         </p>
         <p>
-          However, millions of Americans residing within modern subdivisions, townhome communities, and condominium towers are entirely blind to a secondary, equally dangerous threat to their equity: <strong>their Homeowners Association (HOA)</strong> or <strong>Condominium Association (COA)</strong>. 
+          Across the United States, state legislature frameworks grant community associations statutory authority to secure unpaid assessments via property liens. Depending on your state's laws, these liens can be enforced through either <strong>judicial foreclosure</strong> (requiring court action) or <strong>non-judicial foreclosure</strong> (executed via public auction without judge oversight). Furthermore, 20+ states enforce "super-lien" status, giving HOA debt priority over first mortgages.
         </p>
         <p>
-          If you default on your community assessments, your HOA can legally foreclose on your property. They can do this legally even if your primary mortgage is entirely up to date, even if you paid cash for your home, and even if you have hundreds of thousands of dollars in built-up home equity. This is not a theoretical scare tactic; it is daily procedure for collections attorneys in courtrooms across the country. 
-        </p>
-        <p>
-          Below, we pull back the curtain on the mechanics of <strong>HOA foreclosure</strong>, highlight the structural state-by-state variations, break down the legal priority of "super-liens," and outline the precise legal defenses you must mobilize to protect your home.
+          In this legal research guide, we examine state-by-state statutory debt thresholds, judicial vs. non-judicial rules, super-lien laws, and statutory right-of-redemption periods.
         </p>
 
         <h2 className="text-2xl font-serif font-bold text-primary mt-8 mb-4" id="section-1">1. Yes, HOA Foreclosure Is Real and Legal in Most US States</h2>

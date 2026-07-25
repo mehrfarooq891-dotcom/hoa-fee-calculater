@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import BlogArticleLayout from '@/src/components/BlogArticleLayout';
 
 export default function DontPayHOAFeesArticle() {
@@ -20,20 +21,38 @@ export default function DontPayHOAFeesArticle() {
     >
       <div className="space-y-6">
         <p className="lead text-xl font-medium text-primary border-l-4 border-accent pl-4 italic my-6">
-          A $200 unpaid <a href="https://hoafeecalculator.com/" className="text-accent underline hover:text-accent/80 transition-colors">HOA fee</a> can become a $15,000 foreclosure — here's exactly how it happens.
+          <strong>Top-of-Funnel Overview:</strong> What actually happens when you miss or withhold an <a href="https://hoafeecalculator.com/" className="text-accent underline hover:text-accent/80 transition-colors">HOA fee</a> payment? A single $200 past-due balance can snowball into $15,000 in legal fees and property foreclosure.
         </p>
 
+        {/* Funnel Navigation Box */}
+        <div className="bg-bg-light border border-border rounded-xl p-5 my-6 space-y-3">
+          <p className="text-xs uppercase tracking-wider font-bold text-accent">Navigating the HOA Delinquency Funnel</p>
+          <div className="grid sm:grid-cols-2 gap-3 text-sm">
+            <div className="p-3 bg-white rounded-lg border border-border">
+              <span className="block font-bold text-primary text-xs uppercase mb-1">Stage 2: Legal Research</span>
+              <p className="text-xs opacity-80 mb-2">Want state-by-state statutory rules and super-lien laws?</p>
+              <Link to="/blog/hoa-foreclosure" className="text-accent font-bold hover:underline text-xs inline-flex items-center gap-1">
+                Read 50-State Foreclosure Laws →
+              </Link>
+            </div>
+            <div className="p-3 bg-white rounded-lg border border-border">
+              <span className="block font-bold text-primary text-xs uppercase mb-1">Stage 3: Emergency Action</span>
+              <p className="text-xs opacity-80 mb-2">Already received a formal lien notice or foreclosure threat?</p>
+              <Link to="/blog/hoa-threatening-foreclosure-guide" className="text-accent font-bold hover:underline text-xs inline-flex items-center gap-1">
+                6-Step Emergency Action Plan →
+              </Link>
+            </div>
+          </div>
+        </div>
+
         <p>
-          When household budgets undergo serious financial strain, homeowners prioritize their expenditures to survive. Naturally, you pay the mortgage lender first to protect your home. Then, you cover the electricity, gas, and water companies to keep basic utilities running. You purchase groceries, pay for auto insurance, and service active credit balances. 
+          When households face financial hardship, prioritizing expenses is essential. Homeowners pay their mortgage lender first to keep a roof overhead, then utilities, groceries, and insurance. But during budget triage, many homeowners make a dangerous assumption: they treat Homeowners Association (HOA) dues as optional social club dues that can be safely postponed.
         </p>
         <p>
-          But in this triage process, some homeowners make a critical, high-stakes mistake: they postpone paying their Homeowners Association (HOA) dues. Operating under the false assumption that an HOA is merely a voluntary neighborhood social club without legal teeth, they believe that missing an assessment simply results in a polite warning or a minor wrist-slap.
+          This is a critical misunderstanding of American real estate law. When you purchase a property governed by CC&Rs (Covenants, Conditions, and Restrictions), those covenants legally run with the land. Postponing HOA payments triggers an escalating legal cascade: late fee penalties, interest compounding, loss of community privileges, third-party collection referrals, statutory liens, and ultimately judicial or non-judicial foreclosure.
         </p>
         <p>
-          This is a disastrous, potentially ruinous misunderstanding of American property law. When you buy a home in a common interest community (such as a subdivision, condominium, or townhouse complex), you sign a deed agreement. This deed binds you to mandatory covenants, conditions, and restrictions (CC&Rs). By law, these covenants run with the land. 
-        </p>
-        <p>
-          Therefore, if you <strong>don't pay HOA fees</strong>, you are technically in default on a major legal contract with a corporate entity. Backed by powerful state statutes, the association possesses far-reaching legal tools to secure and recover money. If left unaddressed, these recovery mechanisms will compound in cost and severity until you lose ownership of your property.
+          In this awareness guide, we break down the step-by-step timeline of what happens when you miss an HOA payment, how administrative fees compound, and what legal tools associations use to collect past-due assessments.
         </p>
 
         {/* Visual Timeline Section */}

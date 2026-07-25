@@ -214,7 +214,7 @@ export default function App() {
             <Route path="/blog/hoa-annual-budget" element={<HOAAnnualBudgetArticle />} />
             <Route path="/blog/states-no-hoa-laws" element={<StatesNoHOALawsArticle />} />
             <Route path="/blog/hoa-fee-calculator-guide" element={<HOAFeeCalculatorGuideArticle />} />
-            <Route path="/blog/hoa-fees-texas-guide" element={<HOAFeesTexasGuideArticle />} />
+            <Route path="/blog/hoa-fees-texas-guide" element={<Navigate to="/blog/hoa-fees-texas" replace />} />
             <Route path="/blog/average-hoa-fees-new-york" element={<AverageHOAFeesNewYorkArticle />} />
             <Route path="/blog/highest-hoa-fees-by-state" element={<HighestHOAFeesByStateArticle />} />
             <Route path="/blog/hoa-fee-increase-limits" element={<HOAFeeIncreaseLimitsArticle />} />

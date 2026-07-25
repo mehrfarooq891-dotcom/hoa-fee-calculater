@@ -244,14 +244,46 @@ export default function TexasHOAFeesArticle() {
               </ul>
 
               <h3 className="text-xl font-serif font-bold text-primary mt-8">
-                The Solar Panel and Rain Harvesting Safeguard (Texas Property Code § 202.010)
+                Expanded Environmental Protections: Xeriscaping, Solar, Security & Rainwater (Texas Property Code Chapter 202)
               </h3>
               <p>
-                Another massive consumer shield centers on eco-friendly home improvements. While associations in other states can completely ban solar structures, <strong className="text-primary font-bold">Texas Property Code Section 202.010</strong> strips HOAs of the authority to outlaw solar panels. 
+                Texas has a reputation for strong individual property rights, and the state legislature has enacted robust statutory guardrails under <strong>Texas Property Code Chapter 202</strong> to curb architectural overreach by master developments:
               </p>
+              <ul className="list-disc pl-6 space-y-4 my-4 leading-relaxed">
+                <li>
+                  <strong className="text-primary font-bold">Drought-Resistant Landscaping / Xeriscaping (§ 202.007):</strong> With Texas experiencing severe seasonal heatwaves, boards cannot prohibit homeowners from using low-water drought-resistant turf grass, native Texas wildflowers, gravel walkways, or xeriscape elements inside their yards. While they can require plan submission to the Architectural Control Committee (ACC), they cannot outright ban xeriscaping.
+                </li>
+                <li>
+                  <strong className="text-primary font-bold">Solar Panels and Energy Systems (§ 202.010):</strong> Texas protects your right to install solar panels on your roof or yard. An HOA can only dictate placement constraints (such as mounting panels flush with the roofline or hiding wiring from street view) if those rules do not reduce system efficiency by more than 10%.
+                </li>
+                <li>
+                  <strong className="text-primary font-bold">Perimeter Security Measures (§ 202.023 - Added in 2021):</strong> Texas homeowners have the absolute statutory right to protect their families. Associations cannot forbid you from installing perimeter security cameras, motion-activated floodlights, or structural security fencing along your front, side, or rear property boundaries.
+                </li>
+                <li>
+                  <strong className="text-primary font-bold">Rainwater Harvesting (§ 202.007):</strong> HOAs cannot outlaw rainwater harvesting barrels, collection cisterns, or greywater equipment, safeguarding vital water conservation efforts.
+                </li>
+              </ul>
+
+              <h3 className="text-xl font-serif font-bold text-primary mt-8">
+                Step-by-Step Tactical Blueprint: Disputing Texas HOA Violations & Fee Hikes
+              </h3>
               <p>
-                While the board can request reasonable configuration layouts (such as mounting them flush to the roof or hiding wiring from front-facing public streetspots), they cannot outright ban their installation or enforce specifications that reduce the system's electrical efficiency by more than 10%.
+                If your Texas HOA proposes an unannounced 15% or 20% budget hike, or sends an unverified architectural fine notice, follow this statutory step-by-step process:
               </p>
+              <ol className="list-decimal pl-6 space-y-4 my-4 leading-relaxed">
+                <li>
+                  <strong className="text-primary font-bold">Verify CC&R Caps & Open Meeting Compliance (§ 209.0051):</strong> Review your CC&Rs for annual fee hike limits. Verify if the board resolved the hike during a properly noticed public meeting (144 hours advance written notice). If voted on in a private email chain or closed session, the increase violates Texas Property Code § 209.0051.
+                </li>
+                <li>
+                  <strong className="text-primary font-bold">Send Certified Dispute Notice & Request a Board Hearing (§ 209.007):</strong> If hit with a fine or delinquency warning, send a physical notice via Certified Mail to the management company requesting an official hearing before the board. The board must hold your hearing within 30 days of receipt.
+                </li>
+                <li>
+                  <strong className="text-primary font-bold">Enforce Payment Priority Order (§ 209.0063):</strong> Ensure payments apply to baseline assessments first. Under Texas law, HOAs are legally required to credit payments to regular assessments before applying funds to attorney fees, late charges, or fines.
+                </li>
+                <li>
+                  <strong className="text-primary font-bold">Request a Mandatory Repayment Plan (§ 209.0062):</strong> If facing back dues, associations with more than 14 lots must offer an alternative payment agreement (3 to 18 months) allowing you to cure the default without facing foreclosure threats.
+                </li>
+              </ol>
             </div>
 
             {/* Section 4: Master-planned communities */}

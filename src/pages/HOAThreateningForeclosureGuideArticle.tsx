@@ -161,11 +161,35 @@ export default function HOAThreateningForeclosureGuideArticle() {
 
       <article className="prose prose-slate max-w-none">
         <p className="lead text-xl text-primary font-medium border-l-4 border-accent pl-4 py-1 my-6 italic bg-slate-50/50 p-3 rounded-r-lg">
-          Foreclosure over a $600 HOA balance sounds extreme — in 22 states, it's completely legal. A missed $150 monthly assessment quickly balloons into a $2,400 legal headache once attorney retainer fees, late penalties, and collection costs pile onto your account statement. If your board sent a pre-foreclosure warning or intent to enforce an assessment lien, you don't have months to deliberate. You have days.
+          <strong>Emergency Crisis Stage:</strong> Received a demand letter, intent-to-lien notice, or foreclosure threat from your HOA attorney? Do not panic, but do not wait. You don't have months to deliberate — you have days to execute this 6-step emergency plan.
         </p>
 
+        {/* Funnel Navigation Box */}
+        <div className="not-prose bg-bg-light border border-border rounded-xl p-5 my-6 space-y-3">
+          <p className="text-xs uppercase tracking-wider font-bold text-accent">Navigating the HOA Delinquency Funnel</p>
+          <div className="grid sm:grid-cols-2 gap-3 text-sm">
+            <div className="p-3 bg-white rounded-lg border border-border">
+              <span className="block font-bold text-primary text-xs uppercase mb-1">Stage 1: Top-of-Funnel Awareness</span>
+              <p className="text-xs opacity-80 mb-2">Want to learn how missed $150 dues balloon into legal debts?</p>
+              <Link to="/blog/dont-pay-hoa-fees" className="text-accent font-bold hover:underline text-xs inline-flex items-center gap-1">
+                Read What Happens If You Don't Pay →
+              </Link>
+            </div>
+            <div className="p-3 bg-white rounded-lg border border-border">
+              <span className="block font-bold text-primary text-xs uppercase mb-1">Stage 2: Legal Research</span>
+              <p className="text-xs opacity-80 mb-2">Need your state's statutory foreclosure limits and super-lien rules?</p>
+              <Link to="/blog/hoa-foreclosure" className="text-accent font-bold hover:underline text-xs inline-flex items-center gap-1">
+                Read 50-State Foreclosure Laws →
+              </Link>
+            </div>
+          </div>
+        </div>
+
         <p className="mb-4 text-slate-700 leading-relaxed">
-          Homeowners associations hold statutory authority to place a lien on your property the moment your account becomes delinquent. Unlike traditional bank mortgages that require months of formal default notices, an HOA foreclosure can move at blinding speed through non-judicial channels. You must act decisively to protect your home equity, stop mounting legal fees, and force the board to the negotiating table.
+          Foreclosure over an unpaid $600 HOA balance sounds unimaginable, but in 22 states, it is fully authorized by statute. Once an account crosses 60 to 90 days delinquent, attorneys attach legal retainer charges and filing fees, quickly converting a minor assessment dispute into a $3,000+ threat against your property title.
+        </p>
+        <p className="mb-4 text-slate-700 leading-relaxed">
+          If you have received a formal pre-foreclosure notice or lien warning via certified mail, immediate intervention is critical. This emergency crisis guide outlines the exact 6-step checklist to halt collection proceedings, request statutory board hearings, negotiate repayment plans, and protect your home's built-up equity today.
         </p>
 
         <h2 className="text-2xl font-bold text-primary mt-10 mb-4 flex items-center gap-2">

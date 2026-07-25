@@ -110,13 +110,6 @@ const ALL_ARTICLES: Article[] = [
     slug: "/blog/average-hoa-fees-new-york"
   },
   {
-    title: "HOA Fees in Texas: The Complete 2026 Homeowner's Legal & Financial Guide",
-    excerpt: "Discover average HOA fees across Texas, master development rules, and critical legal protections under Texas Property Code Chapter 209.",
-    date: "May 28, 2026",
-    category: "State Guides",
-    slug: "/blog/hoa-fees-texas-guide"
-  },
-  {
     title: "Are HOA Fees Tax Deductible? IRS Guidelines Explained",
     excerpt: "Understand clear-cut IRS rules on when primary residence, rental investment, or home office HOA fees can be claimed as business tax deductions.",
     date: "May 26, 2026",

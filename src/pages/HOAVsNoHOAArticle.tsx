@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default function HOAVsNoHOAArticle() {
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "NewsArticle",
+    "@type": "Article",
     "headline": "HOA vs No HOA: The Real Cost Comparison Nobody Shows You",
     "description": "A deep dive into the hidden costs of homeownership with and without an HOA. Compare self-management expenses vs association fees and see 10-year forecasts.",
     "datePublished": "2026-05-18T09:00:00Z",
@@ -16,7 +16,7 @@ export default function HOAVsNoHOAArticle() {
     },
     "creator": {
       "@type": "Person",
-      "name": "Michael Torres",
+      "name": "HOA Research Team",
       "jobTitle": "Real Estate Financial Analyst",
       "url": "https://hoafeecalculator.com/about"
     }
@@ -74,7 +74,7 @@ export default function HOAVsNoHOAArticle() {
               <span>•</span>
               <span>May 18, 2026</span>
               <span>•</span>
-              <span className="text-accent normal-case">Reviewed by Michael Torres, Certified Real Estate Financial Analyst</span>
+              <span className="text-accent normal-case">Reviewed by the HOA Research Team</span>
             </div>
           </div>
 

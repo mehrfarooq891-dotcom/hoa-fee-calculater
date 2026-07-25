@@ -7,7 +7,7 @@ export default function About() {
     <div className="min-h-screen flex flex-col bg-white">
       <SEO 
         title="About HOACalculator.com — Our Mission & Story"
-        description="Learn about Michael Torres and the mission behind HOACalculator.com. Providing financial transparency for US homebuyers."
+        description="Learn about HOA Research Team and the mission behind HOACalculator.com. Providing financial transparency for US homebuyers."
       />
 
       {/* Header */}
@@ -63,9 +63,9 @@ export default function About() {
               </div>
             </div>
             <div>
-              <h2 className="text-3xl font-serif font-bold text-primary mb-6">Meet Michael Torres</h2>
+              <h2 className="text-3xl font-serif font-bold text-primary mb-6">Meet HOA Research Team</h2>
               <p className="text-xl text-primary opacity-80 leading-relaxed mb-6">
-                Michael Torres has spent 14 years analyzing US residential real estate markets, 
+                HOA Research Team has spent 14 years analyzing US residential real estate markets, 
                 working with homebuyers across California, Florida, and Texas. He built 
                 HOACalculator.com to help buyers understand the true lifetime cost of HOA fees 
                 before signing anything.
@@ -84,7 +84,7 @@ export default function About() {
           {/* Stats Bar */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-24 border-y border-border py-12">
             {[
-              { label: "Experience", value: "14 Years" },
+              { label: "Experience", value: "50 States" },
               { label: "Coverage", value: "All 50 States" },
               { label: "Trust", value: "100k+ Users" },
               { label: "Cost", value: "Free Forever" }

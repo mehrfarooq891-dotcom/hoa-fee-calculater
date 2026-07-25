@@ -17,9 +17,9 @@ export default function HOADocumentRedFlagsArticle() {
     "datePublished": "2026-05-22T08:00:00Z",
     "dateModified": "2026-06-03T10:00:00Z",
     "author": {
-      "@type": "Person",
-      "name": "Senior US Real Estate Analyst",
-      "jobTitle": "Lead Real Estate Financial Analyst"
+      "@type": "Organization",
+      "name": "HOA Research Team",
+      "url": "https://www.hoafeecalculator.com/"
     },
     "publisher": {
       "@type": "Organization",

@@ -12,7 +12,7 @@ export default function IllinoisHOAFeesArticle() {
 
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "NewsArticle",
+    "@type": "Article",
     "headline": "HOA Fees in Illinois: Chicago Condos vs Suburban Townhouses",
     "description": "An exhaustive guide to average HOA fees in Illinois. Compare high-rise Chicago condo fees with suburban townhome associations in Naperville and Schaumburg.",
     "datePublished": "2026-06-27T08:00:00Z",

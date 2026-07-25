@@ -18,9 +18,9 @@ export default function HowMuchHOAFeeTooMuchArticle() {
     "datePublished": "2026-05-20T08:00:00Z",
     "dateModified": "2026-06-05T09:00:00Z",
     "author": {
-      "@type": "Person",
-      "name": "Senior US Real Estate Analyst",
-      "jobTitle": "Lead Real Estate Financial Analyst"
+      "@type": "Organization",
+      "name": "HOA Research Team",
+      "url": "https://www.hoafeecalculator.com/"
     },
     "publisher": {
       "@type": "Organization",

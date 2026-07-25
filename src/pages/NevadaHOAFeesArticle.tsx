@@ -12,7 +12,7 @@ export default function NevadaHOAFeesArticle() {
 
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "NewsArticle",
+    "@type": "Article",
     "headline": "HOA Fees in Nevada: Las Vegas, Henderson & Reno Guide 2026",
     "description": "An exhaustive guide to average HOA fees in Nevada. Compare high-rise Las Vegas Strip condo fees with suburban master-planned developments in Summerlin, Henderson, and Reno.",
     "datePublished": "2026-06-28T08:00:00Z",

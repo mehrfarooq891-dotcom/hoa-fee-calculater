@@ -12,7 +12,7 @@ export default function GeorgiaHOAFeesArticle() {
 
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "NewsArticle",
+    "@type": "Article",
     "headline": "HOA Fees in Georgia: Atlanta, Savannah & Suburban Breakdown 2026",
     "description": "An exhaustive guide to average HOA fees in Georgia cross-referenced by region. Compare Atlanta, Alpharetta, Johns Creek, Savannah, and Augusta averages.",
     "datePublished": "2026-06-24T08:00:00Z",

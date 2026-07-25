@@ -12,7 +12,7 @@ export default function HOAFeeIncreaseLimitsArticle() {
 
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "NewsArticle",
+    "@type": "Article",
     "headline": "HOA Fee Increases: How Much Can They Raise It and How Often?",
     "description": "Discover legal limits on HOA fee increases. Compare state rules in California, Florida, Texas, Colorado, and Nevada, and learn how to audit your CC&Rs.",
     "datePublished": "2026-06-24T08:00:00Z",

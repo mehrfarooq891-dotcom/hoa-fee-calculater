@@ -18,9 +18,9 @@ export default function LowerHOAFeesArticle() {
     "datePublished": "2026-05-11T08:00:00Z",
     "dateModified": "2026-06-11T09:00:00Z",
     "author": {
-      "@type": "Person",
-      "name": "Senior US Real Estate Analyst",
-      "jobTitle": "Lead Real Estate Financial Analyst"
+      "@type": "Organization",
+      "name": "HOA Research Team",
+      "url": "https://www.hoafeecalculator.com/"
     },
     "publisher": {
       "@type": "Organization",

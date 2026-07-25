@@ -12,7 +12,7 @@ export default function TennesseeHOAFeesArticle() {
 
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "NewsArticle",
+    "@type": "Article",
     "headline": "HOA Fees in Tennessee: Nashville, Memphis & Knoxville Compared",
     "description": "Compare average HOA fees in Tennessee across Nashville, Memphis, Knoxville, and Chattanooga. Understand Tennessee HOA laws and new home developer structures.",
     "datePublished": "2026-07-12T08:00:00Z",

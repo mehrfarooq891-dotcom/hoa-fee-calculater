@@ -17,9 +17,9 @@ export default function HOAReserveFundArticle() {
     "datePublished": "2026-05-21T08:00:00Z",
     "dateModified": "2026-06-04T12:00:00Z",
     "author": {
-      "@type": "Person",
-      "name": "Senior US Real Estate Analyst",
-      "jobTitle": "Lead Real Estate Financial Analyst"
+      "@type": "Organization",
+      "name": "HOA Research Team",
+      "url": "https://www.hoafeecalculator.com/"
     },
     "publisher": {
       "@type": "Organization",

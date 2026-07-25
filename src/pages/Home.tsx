@@ -351,7 +351,7 @@ export default function Home() {
             <div className="shrink-0 relative z-10">
                <img 
                  src="https://randomuser.me/api/portraits/men/52.jpg" 
-                 alt="Michael Torres" 
+                 alt="HOA Research Team" 
                  width="160"
                  height="160"
                  loading="lazy"
@@ -359,7 +359,7 @@ export default function Home() {
                  referrerPolicy="no-referrer"
                />
                <div className="absolute -bottom-4 -left-4 bg-accent text-white font-bold py-2 px-4 rounded-xl text-xs uppercase tracking-widest shadow-lg">
-                 14+ Yrs Exp
+                 Data Driven
                </div>
             </div>
             <div className="relative z-10">
@@ -367,10 +367,10 @@ export default function Home() {
                 "Most homebuyers focus on the mortgage. The HOA fee is the silent budget-killer nobody warns you about."
               </p>
               <div className="mb-6 text-white/80 leading-relaxed text-sm max-w-xl">
-                Michael Torres has spent 14 years analyzing US residential real estate markets, working with homebuyers across California, Florida, and Texas. He built HOACalculator.com to help buyers understand the true lifetime cost of HOA fees before signing anything.
+                HOA Research Team has spent 14 years analyzing US residential real estate markets, working with homebuyers across California, Florida, and Texas. He built HOACalculator.com to help buyers understand the true lifetime cost of HOA fees before signing anything.
               </div>
               <div>
-                <h4 className="text-white font-bold text-xl">Michael Torres</h4>
+                <h4 className="text-white font-bold text-xl">HOA Research Team</h4>
                 <p className="text-accent uppercase tracking-widest text-xs font-bold">Real Estate Financial Analyst & Founder</p>
               </div>
             </div>

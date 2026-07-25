@@ -46,20 +46,15 @@ export default function HOAThreateningForeclosureGuideArticle() {
 
   const newsArticleSchema = {
     "@context": "https://schema.org",
-    "@type": "NewsArticle",
+    "@type": "Article",
     "headline": "My HOA Is Threatening Foreclosure: A Step-by-Step Emergency Guide",
     "description": "Owe $600 in HOA fees? In 22 states, an HOA can foreclose on your home. Follow this 6-step emergency guide to protect your equity and stop foreclosure.",
     "datePublished": "2026-07-22T08:00:00Z",
     "dateModified": "2026-07-22T08:00:00Z",
     "author": {
-      "@type": "Person",
-      "name": "Marcus Vance, JD",
-      "jobTitle": "Lead Legal & Real Estate Policy Analyst",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "HOACalculator.com",
-        "url": "https://www.hoafeecalculator.com"
-      }
+      "@type": "Organization",
+      "name": "HOA Research Team",
+      "url": "https://www.hoafeecalculator.com/"
     },
     "publisher": {
       "@type": "Organization",
@@ -144,12 +139,12 @@ export default function HOAThreateningForeclosureGuideArticle() {
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <span className="font-bold text-slate-900 text-base">Marcus Vance, JD</span>
+              <span className="font-bold text-slate-900 text-base">HOA Research Team</span>
               <span className="bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded-full font-semibold flex items-center gap-1">
                 <UserCheck className="w-3 h-3" /> Verified Legal Reviewer
               </span>
             </div>
-            <p className="text-xs text-slate-600">Lead Legal & Real Estate Policy Analyst • 14+ Yrs Specializing in Community Association Law</p>
+            <p className="text-xs text-slate-600">Legal & Real Estate Editorial Team</p>
           </div>
         </div>
         <div className="text-xs text-slate-500 flex items-center gap-3">
@@ -438,7 +433,7 @@ export default function HOAThreateningForeclosureGuideArticle() {
           </div>
           <div>
             <div className="flex flex-wrap items-center gap-2 mb-1">
-              <h3 className="text-lg font-bold text-slate-900">Marcus Vance, JD</h3>
+              <h3 className="text-lg font-bold text-slate-900">HOA Research Team</h3>
               <span className="text-xs bg-accent/10 text-accent font-semibold px-2.5 py-0.5 rounded-full border border-accent/20">
                 Senior Real Estate Policy Analyst
               </span>

@@ -122,7 +122,7 @@ export default function StateTemplate() {
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-primary opacity-80 uppercase font-bold tracking-wider mt-4">
               <span>Updated: April 2026</span>
               <span>•</span>
-              <span className="text-accent normal-case font-bold">Reviewed by Michael Torres, Certified Real Estate Financial Analyst</span>
+              <span className="text-accent normal-case font-bold">Reviewed by the HOA Research Team</span>
             </div>
           </header>
 

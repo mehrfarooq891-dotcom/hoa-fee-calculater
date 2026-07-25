@@ -18,9 +18,9 @@ export default function StatesNoHOALawsArticle() {
     "datePublished": "2026-06-20T08:00:00Z",
     "dateModified": "2026-06-20T08:00:00Z",
     "author": {
-      "@type": "Person",
-      "name": "Senior Real Estate Analyst",
-      "jobTitle": "Lead Consumer Advocate & Housing Analyst"
+      "@type": "Organization",
+      "name": "HOA Research Team",
+      "url": "https://www.hoafeecalculator.com/"
     },
     "publisher": {
       "@type": "Organization",

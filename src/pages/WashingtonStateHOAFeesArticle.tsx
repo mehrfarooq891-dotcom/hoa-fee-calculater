@@ -12,7 +12,7 @@ export default function WashingtonStateHOAFeesArticle() {
 
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "NewsArticle",
+    "@type": "Article",
     "headline": "HOA Fees in Washington State: Seattle, Bellevue & Eastside Guide 2026",
     "description": "An exhaustive guide to average HOA fees in Washington State. Compare Seattle condos, Bellevue tech-hub rates, and earthquake compliance seismic assessments.",
     "datePublished": "2026-07-01T08:00:00Z",

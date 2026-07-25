@@ -12,7 +12,7 @@ export default function HOALienNoticeArticle() {
 
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "NewsArticle",
+    "@type": "Article",
     "headline": "I Just Got an HOA Lien Notice: What to Do in the Next 48 Hours",
     "description": "Learn what to do in the next 48 hours if you receive an HOA lien notice. Step-by-step action plan to negotiate with the board, verify fees, and save your home's equity.",
     "datePublished": "2026-07-15T08:00:00Z",

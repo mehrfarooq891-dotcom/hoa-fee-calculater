@@ -16,9 +16,9 @@ export default function ReadHOAFinancialStatementsArticle() {
     "datePublished": "2026-05-23T08:00:00Z",
     "dateModified": "2026-06-02T12:00:00Z",
     "author": {
-      "@type": "Person",
-      "name": "Senior US Real Estate Analyst",
-      "jobTitle": "Lead Real Estate Financial Analyst"
+      "@type": "Organization",
+      "name": "HOA Research Team",
+      "url": "https://www.hoafeecalculator.com/"
     },
     "publisher": {
       "@type": "Organization",

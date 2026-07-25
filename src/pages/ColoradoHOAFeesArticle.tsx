@@ -12,7 +12,7 @@ export default function ColoradoHOAFeesArticle() {
 
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "NewsArticle",
+    "@type": "Article",
     "headline": "HOA Fees in Colorado: Denver, Boulder & Mountain Community Guide",
     "description": "An exhaustive guide to average HOA fees in Colorado. Compare Denver LoDo condos, suburban master-planned developments, Boulder, and ski resort towns like Breckenridge and Vail.",
     "datePublished": "2026-06-29T08:00:00Z",

@@ -12,7 +12,7 @@ export default function AverageHOAFeesNewYorkArticle() {
 
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "NewsArticle",
+    "@type": "Article",
     "headline": "Average HOA Fees in New York State: NYC, Long Island & Upstate Compared",
     "description": "Compare average monthly HOA fees across New York State. See detailed borough breakdowns, Long Island gated communities, Upstate averages, and critical NYC cost drivers.",
     "datePublished": "2026-06-23T08:00:00Z",

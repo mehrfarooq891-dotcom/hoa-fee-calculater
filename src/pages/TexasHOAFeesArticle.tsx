@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default function TexasHOAFeesArticle() {
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "NewsArticle",
+    "@type": "Article",
     "headline": "HOA Fees in Texas: Complete City-by-City Guide 2026",
     "description": "An in-depth analysis of average HOA fees in Texas across Dallas, Houston, Austin, and San Antonio. Learn about Texas Property Code Chapter 209 and watch for suburb fee triggers.",
     "datePublished": "2026-05-17T09:00:00Z",
@@ -16,7 +16,7 @@ export default function TexasHOAFeesArticle() {
     },
     "creator": {
       "@type": "Person",
-      "name": "Michael Torres",
+      "name": "HOA Research Team",
       "jobTitle": "Real Estate Financial Analyst",
       "url": "https://hoafeecalculator.com/about"
     }
@@ -74,7 +74,7 @@ export default function TexasHOAFeesArticle() {
               <span>•</span>
               <span>May 17, 2026</span>
               <span>•</span>
-              <span className="text-accent normal-case">Reviewed by Michael Torres, Certified Real Estate Financial Analyst</span>
+              <span className="text-accent normal-case">Reviewed by the HOA Research Team</span>
             </div>
           </div>
 

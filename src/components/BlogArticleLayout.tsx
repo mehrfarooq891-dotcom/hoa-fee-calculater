@@ -23,7 +23,7 @@ export default function BlogArticleLayout({
 }: BlogArticleLayoutProps) {
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "NewsArticle",
+    "@type": "Article",
     "headline": title,
     "description": description,
     "datePublished": `${date.includes('2026') ? '2026' : '2026'}-05-21T12:00:00Z`,
@@ -34,7 +34,7 @@ export default function BlogArticleLayout({
     },
     "creator": {
       "@type": "Person",
-      "name": "Michael Torres",
+      "name": "HOA Research Team",
       "jobTitle": "Real Estate Financial Analyst",
       "url": "https://hoafeecalculator.com/about"
     }
@@ -92,7 +92,7 @@ export default function BlogArticleLayout({
               <span>•</span>
               <span>{date}</span>
               <span>•</span>
-              <span className="text-accent normal-case">Reviewed by Michael Torres, Real Estate Financial Analyst</span>
+              <span className="text-accent normal-case">Reviewed by the HOA Research Team</span>
             </div>
           </div>
 

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default function FloridaHOAFeesArticle() {
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "NewsArticle",
+    "@type": "Article",
     "headline": "HOA Fees in Florida: What Every Buyer Must Know Before Closing",
     "description": "Examine the average HOA fees in Florida across major metro cities, review landmark Senate Bill 4-D reserve funding rules, Florida Statutes 718 and 720, and red flags before closing.",
     "datePublished": "2026-05-13T12:00:00Z",
@@ -16,7 +16,7 @@ export default function FloridaHOAFeesArticle() {
     },
     "creator": {
       "@type": "Person",
-      "name": "Michael Torres",
+      "name": "HOA Research Team",
       "jobTitle": "Real Estate Financial Analyst",
       "url": "https://hoafeecalculator.com/about"
     }
@@ -74,7 +74,7 @@ export default function FloridaHOAFeesArticle() {
               <span>•</span>
               <span>May 13, 2026</span>
               <span>•</span>
-              <span className="text-accent normal-case">Reviewed by Michael Torres, Certified Real Estate Financial Analyst</span>
+              <span className="text-accent normal-case">Reviewed by the HOA Research Team</span>
             </div>
           </div>
 

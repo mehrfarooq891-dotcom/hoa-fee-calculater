@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default function HOAVsCondoFeeArticle() {
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "NewsArticle",
+    "@type": "Article",
     "headline": "HOA vs Condo Fee: What's the Difference and Which Costs More?",
     "description": "Unveiling the critical legal and financial distinctions between HOA fees and Condo fees. Compare average monthly costs, coverage limits, and assessment risks.",
     "datePublished": "2026-05-20T08:00:00Z",
@@ -16,7 +16,7 @@ export default function HOAVsCondoFeeArticle() {
     },
     "creator": {
       "@type": "Person",
-      "name": "Michael Torres",
+      "name": "HOA Research Team",
       "jobTitle": "Real Estate Financial Analyst",
       "url": "https://hoafeecalculator.com/about"
     }
@@ -74,7 +74,7 @@ export default function HOAVsCondoFeeArticle() {
               <span>•</span>
               <span>May 20, 2026</span>
               <span>•</span>
-              <span className="text-accent normal-case">Reviewed by Michael Torres, Certified Real Estate Financial Analyst</span>
+              <span className="text-accent normal-case">Reviewed by the HOA Research Team</span>
             </div>
           </div>
 

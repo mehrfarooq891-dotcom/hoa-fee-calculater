@@ -12,7 +12,7 @@ export default function HighestHOAFeesByStateArticle() {
 
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "NewsArticle",
+    "@type": "Article",
     "headline": "What State Has the Highest HOA Fees? The 2026 Ranking",
     "description": "Discover what state has the highest HOA fees. Compare Hawaii, California, New York, and Florida averages with deep statutory and economic-driver cost data.",
     "datePublished": "2026-06-23T08:00:00Z",

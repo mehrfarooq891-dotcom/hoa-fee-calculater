@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default function CaliforniaHOAFeesArticle() {
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "NewsArticle",
+    "@type": "Article",
     "headline": "HOA Fees in California: Why They're the Highest in the Nation",
     "description": "An exhaustive guide to average HOA fees in California cross-referenced by region. Explore the Davis-Stirling Act, earthquake insurance, and solar rights.",
     "datePublished": "2026-05-15T09:00:00Z",
@@ -16,7 +16,7 @@ export default function CaliforniaHOAFeesArticle() {
     },
     "creator": {
       "@type": "Person",
-      "name": "Michael Torres",
+      "name": "HOA Research Team",
       "jobTitle": "Real Estate Financial Analyst",
       "url": "https://hoafeecalculator.com/about"
     }
@@ -74,7 +74,7 @@ export default function CaliforniaHOAFeesArticle() {
               <span>•</span>
               <span>May 15, 2026</span>
               <span>•</span>
-              <span className="text-accent normal-case">Reviewed by Michael Torres, Certified Real Estate Financial Analyst</span>
+              <span className="text-accent normal-case">Reviewed by the HOA Research Team</span>
             </div>
           </div>
 

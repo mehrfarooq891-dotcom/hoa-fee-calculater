@@ -12,7 +12,7 @@ export default function NewJerseyHOAFeesArticle() {
 
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "NewsArticle",
+    "@type": "Article",
     "headline": "HOA Fees in New Jersey: Bergen County, Shore Towns & Urban Condos",
     "description": "Learn the average HOA fees in New Jersey across Bergen County, Jersey City condos, shore towns, and age-restricted 55+ communities.",
     "datePublished": "2026-07-08T08:00:00Z",

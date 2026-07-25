@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default function AverageHOAFeesByStateArticle() {
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "NewsArticle",
+    "@type": "Article",
     "headline": "Average HOA Fees by State in 2026 — Full 50-State Breakdown",
     "description": "Discover the average monthly HOA fees across all 50 US states in 2026. Review high-density master policies, legislative updates, and complete financial data.",
     "datePublished": "2026-05-12T12:00:00Z",
@@ -16,7 +16,7 @@ export default function AverageHOAFeesByStateArticle() {
     },
     "creator": {
       "@type": "Person",
-      "name": "Michael Torres",
+      "name": "HOA Research Team",
       "jobTitle": "Real Estate Financial Analyst",
       "url": "https://hoafeecalculator.com/about"
     }
@@ -137,7 +137,7 @@ export default function AverageHOAFeesByStateArticle() {
               <span>•</span>
               <span>May 12, 2026</span>
               <span>•</span>
-              <span className="text-accent normal-case">Reviewed by Michael Torres, Real Estate Financial Analyst</span>
+              <span className="text-accent normal-case">Reviewed by the HOA Research Team</span>
             </div>
           </div>
 

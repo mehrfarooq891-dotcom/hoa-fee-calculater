@@ -12,7 +12,7 @@ export default function NorthCarolinaHOAFeesArticle() {
 
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "NewsArticle",
+    "@type": "Article",
     "headline": "HOA Fees in North Carolina: Charlotte, Raleigh & Triangle Guide",
     "description": "An exhaustive guide to average HOA fees in North Carolina. Compare Charlotte, Raleigh, Cary, Wilmington, and Asheville averages with statutory rules.",
     "datePublished": "2026-06-26T08:00:00Z",

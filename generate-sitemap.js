@@ -6,7 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // 1. Base configuration
-const BASE_URL = 'https://hoafeecalculator.com';
+const BASE_URL = 'https://www.hoafeecalculator.com';
 const TODAY = new Date().toISOString().split('T')[0];
 
 console.log('Generating dynamic sitemap...');
@@ -18,6 +18,7 @@ const staticRoutes = [
   { path: '/contact', changefreq: 'monthly', priority: '0.6' },
   { path: '/compare', changefreq: 'weekly', priority: '0.9' },
   { path: '/states', changefreq: 'monthly', priority: '0.8' },
+  { path: '/cities', changefreq: 'weekly', priority: '0.9' },
   { path: '/blog', changefreq: 'daily', priority: '0.9' },
   { path: '/privacy-policy', changefreq: 'yearly', priority: '0.3' },
   { path: '/disclaimer', changefreq: 'yearly', priority: '0.3' }

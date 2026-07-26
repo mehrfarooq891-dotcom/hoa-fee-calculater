@@ -320,7 +320,7 @@ export default function HOAVsNoHOAArticle() {
               </div>
               <div>
                 <h4 className="text-primary font-bold text-lg">Written by: HOA Research Team</h4>
-                <p className="text-primary opacity-80 text-sm">Providing data-driven cost analysis, legal breakdowns, and homebuying guidance for the modern real estate market.</p>
+                <p className="text-primary opacity-80 text-sm">Providing data-driven cost analysis, legal breakdowns, and homebuying guidance for the modern real estate market. <Link to="/about" className="text-accent font-bold hover:underline">Learn more about our research methodology and editorial standards</Link>.</p>
               </div>
             </div>
 

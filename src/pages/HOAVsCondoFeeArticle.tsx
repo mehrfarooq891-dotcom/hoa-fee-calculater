@@ -373,7 +373,7 @@ export default function HOAVsCondoFeeArticle() {
               </div>
               <div>
                 <h4 className="text-primary font-bold text-lg">Written by: HOA Research Team</h4>
-                <p className="text-primary opacity-80 text-sm">Providing real-time financial tracking, state laws analysis, and consumer protection guides for American property buyers.</p>
+                <p className="text-primary opacity-80 text-sm">Providing real-time financial tracking, state laws analysis, and consumer protection guides for American property buyers. <Link to="/about" className="text-accent font-bold hover:underline">Learn more about our research methodology and editorial standards</Link>.</p>
               </div>
             </div>
 

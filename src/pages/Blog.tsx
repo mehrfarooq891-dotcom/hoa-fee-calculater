@@ -12,6 +12,13 @@ interface Article {
 
 const ALL_ARTICLES: Article[] = [
   {
+    title: "HOA Special Assessment I Can't Afford: Your Real Options",
+    excerpt: "A $9,000 assessment landed with a 60-day deadline — discover 6 practical solutions including hardship payment plans, HELOCs, special loans, and legal rights.",
+    date: "July 27, 2026",
+    category: "Financial Planning",
+    slug: "/blog/cant-afford-special-assessment"
+  },
+  {
     title: "My HOA Is Threatening Foreclosure: A Step-by-Step Emergency Guide",
     excerpt: "Foreclosure over an unpaid HOA balance is legal in 22 states. Follow this 6-step emergency guide to protect your equity and stop foreclosure.",
     date: "July 22, 2026",

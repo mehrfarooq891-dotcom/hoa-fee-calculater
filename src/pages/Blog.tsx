@@ -12,6 +12,13 @@ interface Article {
 
 const ALL_ARTICLES: Article[] = [
   {
+    title: "What is an HOA Fee? Complete Guide 2026",
+    excerpt: "Discover what an HOA fee is, average costs by property type, what dues cover, how they are calculated, and legal consequences of non-payment.",
+    date: "July 28, 2026",
+    category: "Buying Guides",
+    slug: "/blog/what-is-hoa-fee"
+  },
+  {
     title: "HOA Special Assessment I Can't Afford: Your Real Options",
     excerpt: "A $9,000 assessment landed with a 60-day deadline — discover 6 practical solutions including hardship payment plans, HELOCs, special loans, and legal rights.",
     date: "July 27, 2026",
@@ -278,6 +285,13 @@ const ALL_ARTICLES: Article[] = [
     slug: "/blog/townhouse-hoa-fees"
   },
   {
+    title: "HOA Fees in Texas: The Complete 2026 Homeowner's Legal & Financial Guide",
+    excerpt: "Master HOA fees in Texas. Learn about Dallas, Houston, and Austin averages, critical protections under Texas Property Code Chapter 209, and rules for foreclosure.",
+    date: "May 28, 2026",
+    category: "State Guides",
+    slug: "/blog/hoa-fees-texas-guide"
+  },
+  {
     title: "HOA Fees vs Condo Fees: Key Differences Explained",
     excerpt: "Buyers confuse HOA fees and condo fees constantly. Discover clear legal distinctions, typical coverage limits, and national cost comparisons.",
     date: "May 20, 2026",
@@ -318,13 +332,6 @@ const ALL_ARTICLES: Article[] = [
     date: "May 12, 2026",
     category: "State Guides",
     slug: "/blog/average-hoa-fees-by-state"
-  },
-  {
-    title: "What Is an HOA Fee? Complete Guide for First-Time Buyers",
-    excerpt: "Unpack mandatory association dues, understand what they cover, and calculate their long-term impact on your home buying budget.",
-    date: "May 10, 2026",
-    category: "Buying Guides",
-    slug: "/blog/what-is-hoa-fee"
   }
 ];
 

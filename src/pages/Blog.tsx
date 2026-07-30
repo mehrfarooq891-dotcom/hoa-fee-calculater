@@ -12,6 +12,13 @@ interface Article {
 
 const ALL_ARTICLES: Article[] = [
   {
+    title: "HOA Dues Explained: What You're Really Paying For",
+    excerpt: "Unpack HOA dues versus HOA fees, see what your payments fund, payment schedules, and how dues differ from surprise special assessments.",
+    date: "July 30, 2026",
+    category: "Buying Guides",
+    slug: "/blog/hoa-dues-explained"
+  },
+  {
     title: "What is an HOA Fee? Complete Guide 2026",
     excerpt: "Discover what an HOA fee is, average costs by property type, what dues cover, how they are calculated, and legal consequences of non-payment.",
     date: "July 28, 2026",

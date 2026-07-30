@@ -62,6 +62,7 @@ const HOAFeesTexasGuideArticle = React.lazy(() => import('./pages/HOAFeesTexasGu
 const AverageHOAFeesNewYorkArticle = React.lazy(() => import('./pages/AverageHOAFeesNewYorkArticle'));
 const HOAThreateningForeclosureGuideArticle = React.lazy(() => import('./pages/HOAThreateningForeclosureGuideArticle'));
 const CantAffordSpecialAssessmentArticle = React.lazy(() => import('./pages/CantAffordSpecialAssessmentArticle'));
+const HOADuesExplainedArticle = React.lazy(() => import('./pages/HOADuesExplainedArticle'));
 
 function DynamicBlogArticle() {
   const { articleSlug } = useParams<{ articleSlug: string }>();
@@ -161,6 +162,8 @@ function DynamicBlogArticle() {
       return <HOAThreateningForeclosureGuideArticle />;
     case 'cant-afford-special-assessment':
       return <CantAffordSpecialAssessmentArticle />;
+    case 'hoa-dues-explained':
+      return <HOADuesExplainedArticle />;
     default:
       return <Navigate to="/blog" replace />;
   }
@@ -223,6 +226,7 @@ export default function App() {
             <Route path="/blog/hoa-fee-increase-limits" element={<HOAFeeIncreaseLimitsArticle />} />
             <Route path="/blog/hoa-threatening-foreclosure-guide" element={<HOAThreateningForeclosureGuideArticle />} />
             <Route path="/blog/cant-afford-special-assessment" element={<CantAffordSpecialAssessmentArticle />} />
+            <Route path="/blog/hoa-dues-explained" element={<HOADuesExplainedArticle />} />
 
             <Route path="/blog/:articleSlug" element={<DynamicBlogArticle />} />
             <Route path="/compare" element={<Compare />} />

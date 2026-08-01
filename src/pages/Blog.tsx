@@ -12,6 +12,13 @@ interface Article {
 
 const ALL_ARTICLES: Article[] = [
   {
+    title: "Condo Fees vs HOA Fees: Average Cost Comparison 2026",
+    excerpt: "Compare average condo fees vs HOA fees across top states. See cost differences, coverage items, and calculate your monthly housing budget.",
+    date: "August 1, 2026",
+    category: "Buying Guides",
+    slug: "/blog/condo-fees-vs-hoa-fees"
+  },
+  {
     title: "HOA Dues Explained: What You're Really Paying For",
     excerpt: "Unpack HOA dues versus HOA fees, see what your payments fund, payment schedules, and how dues differ from surprise special assessments.",
     date: "July 30, 2026",

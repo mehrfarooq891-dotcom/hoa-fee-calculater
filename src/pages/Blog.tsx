@@ -12,6 +12,13 @@ interface Article {
 
 const ALL_ARTICLES: Article[] = [
   {
+    title: "HOA Laws by State: What Homeowners Need to Know",
+    excerpt: "Understand how HOA laws vary by state, how CC&Rs govern communities, states with strict statutes, and when association rules become unenforceable.",
+    date: "August 3, 2026",
+    category: "Legal & Foreclosure",
+    slug: "/blog/hoa-laws-by-state"
+  },
+  {
     title: "Condo Fees vs HOA Fees: Average Cost Comparison 2026",
     excerpt: "Compare average condo fees vs HOA fees across top states. See cost differences, coverage items, and calculate your monthly housing budget.",
     date: "August 1, 2026",

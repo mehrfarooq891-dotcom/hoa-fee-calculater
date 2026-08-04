@@ -26,6 +26,40 @@ export default defineConfig(({mode}) => {
         }
       }
     },
+    ssgOptions: {
+      script: 'async',
+      formatting: 'none',
+      dirStyle: 'nested',
+      includedRoutes(paths, routes) {
+        const priorityRoutes = [
+          '/',
+          '/blog/what-is-hoa-fee',
+          '/blog/average-hoa-fees-by-state',
+          '/blog/hoa-fees-florida',
+          '/blog/hoa-fees-california',
+          '/blog/hoa-fees-texas',
+          '/blog/hoa-vs-no-hoa',
+          '/blog/hoa-vs-condo-fee',
+          '/states/california',
+          '/states/texas',
+          '/states/florida',
+          '/states/new-york',
+          '/states/georgia',
+          '/states/north-carolina',
+          '/states/illinois',
+          '/compare',
+          '/about',
+          '/contact',
+          '/blog',
+          '/states',
+          '/cities',
+          '/privacy-policy',
+          '/terms',
+          '/disclaimer'
+        ];
+        return Array.from(new Set([...priorityRoutes, ...paths]));
+      },
+    },
     server: {
       // HMR is disabled in AI Studio via DISABLE_HMR env var.
       // Do not modifyâfile watching is disabled to prevent flickering during agent edits.

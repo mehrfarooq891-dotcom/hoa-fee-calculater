@@ -1,6 +1,5 @@
-import { StrictMode } from 'react';
-import { createRoot, hydrateRoot } from 'react-dom/client';
-import App from './App.tsx';
+import { ViteReactSSG } from 'vite-react-ssg';
+import { routes } from './App.tsx';
 import './index.css';
 
 // Instant redirect from non-www to primary www domain for SEO consistency
@@ -15,21 +14,8 @@ if (
   );
 }
 
-const rootElement = document.getElementById('root')!;
-
-if (rootElement.hasChildNodes()) {
-  hydrateRoot(
-    rootElement,
-    <StrictMode>
-      <App />
-    </StrictMode>
-  );
-} else {
-  createRoot(rootElement).render(
-    <StrictMode>
-      <App />
-    </StrictMode>
-  );
-}
+export const createRoot = ViteReactSSG({
+  routes,
+});
 
 

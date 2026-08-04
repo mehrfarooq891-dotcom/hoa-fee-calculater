@@ -1,4 +1,5 @@
 import React from 'react';
+import { Head } from 'vite-react-ssg';
 
 interface SEOProps {
   title: string;
@@ -24,7 +25,7 @@ export default function SEO({
     : `https://www.hoafeecalculator.com${normalizedPath}`;
 
   return (
-    <>
+    <Head>
       <title>{title}</title>
       <meta name="description" content={description} />
       <link rel="canonical" href={canonicalUrl} />
@@ -48,6 +49,6 @@ export default function SEO({
           {JSON.stringify(s)}
         </script>
       ))}
-    </>
+    </Head>
   );
 }

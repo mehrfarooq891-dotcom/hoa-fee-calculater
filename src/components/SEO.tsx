@@ -1,5 +1,6 @@
 import React from 'react';
 import { Head } from 'vite-react-ssg';
+import { useLocation } from 'react-router-dom';
 
 interface SEOProps {
   title: string;
@@ -18,11 +19,31 @@ export default function SEO({
   ogImage = 'https://www.hoafeecalculator.com/assets/og-image.jpg',
   schema = []
 }: SEOProps) {
-  const path = typeof window !== 'undefined' ? window.location.pathname : '';
-  const normalizedPath = path.length > 1 && path.endsWith('/') ? path.slice(0, -1) : path;
-  const canonicalUrl = canonical 
-    ? canonical.replace('https://hoafeecalculator.com', 'https://www.hoafeecalculator.com') 
-    : `https://www.hoafeecalculator.com${normalizedPath}`;
+  let locationPath = '';
+  try {
+    const location = useLocation();
+    locationPath = location?.pathname || '';
+  } catch (e) {
+    if (typeof window !== 'undefined') {
+      locationPath = window.location.pathname || '';
+    }
+  }
+
+  const normalizedPath = locationPath === '/' || !locationPath
+    ? '' 
+    : (locationPath.endsWith('/') ? locationPath.slice(0, -1) : locationPath);
+
+  let canonicalUrl = '';
+  if (canonical) {
+    if (canonical.startsWith('http')) {
+      canonicalUrl = canonical.replace('https://hoafeecalculator.com', 'https://www.hoafeecalculator.com');
+    } else {
+      const cleanCanonical = canonical.startsWith('/') ? canonical : `/${canonical}`;
+      canonicalUrl = `https://www.hoafeecalculator.com${cleanCanonical}`;
+    }
+  } else {
+    canonicalUrl = `https://www.hoafeecalculator.com${normalizedPath}`;
+  }
 
   return (
     <Head>

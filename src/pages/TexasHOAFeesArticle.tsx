@@ -27,6 +27,7 @@ export default function TexasHOAFeesArticle() {
       <SEO 
         title="HOA Fees in Texas: Complete City-by-City Guide (2026)"
         description="Comprehensive guide to Texas HOA fees by city and suburb. Learn about Property Code Chapter 209 safeguards, master-planned costs, and developer transition spikes."
+        canonical="/blog/hoa-fees-texas"
         schema={[articleSchema]}
       />
 

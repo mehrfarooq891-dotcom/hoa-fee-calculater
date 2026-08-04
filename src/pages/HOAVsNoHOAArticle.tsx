@@ -27,6 +27,7 @@ export default function HOAVsNoHOAArticle() {
       <SEO 
         title="HOA vs No HOA: The Real Cost Comparison Nobody Shows You (2026)"
         description="Is an HOA actually more expensive? Compare the true costs of lawn care, pool maintenance, and exterior repairs vs monthly HOA dues in this data-backed guide."
+        canonical="/blog/hoa-vs-no-hoa"
         schema={[articleSchema]}
       />
 

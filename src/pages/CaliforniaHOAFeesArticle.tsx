@@ -27,6 +27,7 @@ export default function CaliforniaHOAFeesArticle() {
       <SEO 
         title="HOA Fees in California: Why They're the Highest (2026)"
         description="Comprehensive analysis of California's HOA fees. Inside region averages, Davis-Stirling rules, earthquake insurance skyrocket premiums, and homeowner rights."
+        canonical="/blog/hoa-fees-california"
         schema={[articleSchema]}
       />
 

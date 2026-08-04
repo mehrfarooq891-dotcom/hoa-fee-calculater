@@ -16,6 +16,7 @@ export default function Contact() {
       <SEO 
         title="Contact Us | HOACalculator.com"
         description="Get in touch with the HOA financial experts. Support, data requests, and partnership inquiries."
+        canonical="/contact"
       />
 
       <header className="border-b border-border py-4 px-6 fixed top-0 w-full bg-white/80 backdrop-blur-md z-50">

@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate, useParams, Outlet } from 'react-router-dom';
+import { Navigate, useParams, Outlet } from 'react-router-dom';
 import type { RouteRecord } from 'vite-react-ssg';
 import { HelmetProvider } from 'react-helmet-async';
 
@@ -259,83 +259,3 @@ export const routes: RouteRecord[] = [
     ]
   }
 ];
-
-export default function App() {
-  return (
-    <HelmetProvider>
-      <Router>
-        <Suspense fallback={<div style={{minHeight:'100vh'}} />} >
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/what-is-hoa-fee" element={<WhatIsHOAFeeArticle />} />
-            <Route path="/blog/average-hoa-fees-by-state" element={<AverageHOAFeesByStateArticle />} />
-            <Route path="/blog/hoa-fees-florida" element={<FloridaHOAFeesArticle />} />
-            <Route path="/blog/hoa-fees-california" element={<CaliforniaHOAFeesArticle />} />
-            <Route path="/blog/hoa-fees-texas" element={<TexasHOAFeesArticle />} />
-            <Route path="/blog/hoa-fees-georgia" element={<GeorgiaHOAFeesArticle />} />
-            <Route path="/blog/hoa-fees-north-carolina" element={<NorthCarolinaHOAFeesArticle />} />
-            <Route path="/blog/hoa-fees-illinois" element={<IllinoisHOAFeesArticle />} />
-            <Route path="/blog/hoa-fees-nevada" element={<NevadaHOAFeesArticle />} />
-            <Route path="/blog/hoa-fees-colorado" element={<ColoradoHOAFeesArticle />} />
-            <Route path="/blog/hoa-fees-washington-state" element={<WashingtonStateHOAFeesArticle />} />
-            <Route path="/blog/hoa-fees-virginia" element={<VirginiaHOAFeesArticle />} />
-            <Route path="/blog/hoa-fees-new-jersey" element={<NewJerseyHOAFeesArticle />} />
-            <Route path="/blog/hoa-fees-tennessee" element={<TennesseeHOAFeesArticle />} />
-            <Route path="/blog/hoa-vs-no-hoa" element={<HOAVsNoHOAArticle />} />
-            <Route path="/blog/hoa-vs-condo-fee" element={<HOAVsCondoFeeArticle />} />
-            
-            {/* 23 New Explicit Routes */}
-            <Route path="/blog/hoa-fees-tax-deductible" element={<HOAFeesTaxDeductibleArticle />} />
-            <Route path="/blog/dont-pay-hoa-fees" element={<DontPayHOAFeesArticle />} />
-            <Route path="/blog/hoa-lien-notice-what-to-do" element={<HOALienNoticeArticle />} />
-            <Route path="/blog/hoa-foreclosure" element={<HOAForeclosureArticle />} />
-            <Route path="/blog/fight-hoa-fee-increase" element={<FightHOAFeeIncreaseArticle />} />
-            <Route path="/blog/hoa-special-assessment" element={<HOASpecialAssessmentArticle />} />
-            <Route path="/blog/read-hoa-financial-statements" element={<ReadHOAFinancialStatementsArticle />} />
-            <Route path="/blog/hoa-document-red-flags" element={<HOADocumentRedFlagsArticle />} />
-            <Route path="/blog/hoa-reserve-fund" element={<HOAReserveFundArticle />} />
-            <Route path="/blog/how-much-hoa-fee-too-much" element={<HowMuchHOAFeeTooMuchArticle />} />
-            <Route path="/blog/hoa-fees-mortgage-approval" element={<HOAFeesMortgageApprovalArticle />} />
-            <Route path="/blog/new-construction-hoa-fees" element={<NewConstructionHOAFeesArticle />} />
-            <Route path="/blog/condo-hoa-fees-nyc" element={<CondoHOAFeesNYCArticle />} />
-            <Route path="/blog/hoa-fees-arizona" element={<HOAFeesArizonaArticle />} />
-            <Route path="/blog/lower-hoa-fees" element={<LowerHOAFeesArticle />} />
-            <Route path="/blog/hoa-management-companies" element={<HOAManagementCompaniesArticle />} />
-            <Route path="/blog/self-managed-hoa" element={<SelfManagedHOAArticle />} />
-            <Route path="/blog/hoa-rules-enforcement" element={<HOARulesEnforcementArticle />} />
-            <Route path="/blog/questions-before-buying-hoa" element={<QuestionsBeforeBuyingHOAArticle />} />
-            <Route path="/blog/townhouse-hoa-fees" element={<TownhouseHOAFeesArticle />} />
-            <Route path="/blog/what-do-hoa-fees-cover" element={<WhatDoHOAFeesCoverArticle />} />
-            <Route path="/blog/hoa-annual-budget" element={<HOAAnnualBudgetArticle />} />
-            <Route path="/blog/states-no-hoa-laws" element={<StatesNoHOALawsArticle />} />
-            <Route path="/blog/hoa-fee-calculator-guide" element={<HOAFeeCalculatorGuideArticle />} />
-            <Route path="/blog/hoa-fees-texas-guide" element={<HOAFeesTexasGuideArticle />} />
-            <Route path="/blog/average-hoa-fees-new-york" element={<AverageHOAFeesNewYorkArticle />} />
-            <Route path="/blog/highest-hoa-fees-by-state" element={<HighestHOAFeesByStateArticle />} />
-            <Route path="/blog/hoa-fee-increase-limits" element={<HOAFeeIncreaseLimitsArticle />} />
-            <Route path="/blog/hoa-threatening-foreclosure-guide" element={<HOAThreateningForeclosureGuideArticle />} />
-            <Route path="/blog/cant-afford-special-assessment" element={<CantAffordSpecialAssessmentArticle />} />
-            <Route path="/blog/hoa-dues-explained" element={<HOADuesExplainedArticle />} />
-            <Route path="/blog/condo-fees-vs-hoa-fees" element={<CondoFeesVsHOAFeesArticle />} />
-            <Route path="/blog/hoa-laws-by-state" element={<HOALawsByStateArticle />} />
-
-            <Route path="/blog/:articleSlug" element={<DynamicBlogArticle />} />
-            <Route path="/compare" element={<Compare />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/states" element={<States />} />
-            <Route path="/states/:stateName" element={<StateTemplate />} />
-            <Route path="/cities" element={<Cities />} />
-            <Route path="/cities/:cityName" element={<CityTemplate />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/terms" element={<TermsOfService />} />
-            <Route path="/disclaimer" element={<Disclaimer />} />
-            {/* Fallback for the specific texas path requested */}
-            <Route path="/states/texas.html" element={<StateTemplate />} />
-          </Routes>
-        </Suspense>
-      </Router>
-    </HelmetProvider>
-  );
-}

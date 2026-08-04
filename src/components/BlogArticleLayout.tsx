@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 interface BlogArticleLayoutProps {
   title: string;
   description: string;
+  canonical?: string;
   category?: string;
   readTime?: string;
   date?: string;
@@ -12,15 +13,71 @@ interface BlogArticleLayoutProps {
   children: React.ReactNode;
 }
 
+function getSlugFromTitle(title: string): string {
+  const cleanTitle = title.toLowerCase().trim();
+  if (cleanTitle.includes("what is an hoa fee")) return "/blog/what-is-hoa-fee";
+  if (cleanTitle.includes("hoa laws by state")) return "/blog/hoa-laws-by-state";
+  if (cleanTitle.includes("condo fees vs hoa fees")) return "/blog/condo-fees-vs-hoa-fees";
+  if (cleanTitle.includes("hoa dues explained")) return "/blog/hoa-dues-explained";
+  if (cleanTitle.includes("cant afford special assessment") || cleanTitle.includes("can't afford")) return "/blog/cant-afford-special-assessment";
+  if (cleanTitle.includes("threatening foreclosure")) return "/blog/hoa-threatening-foreclosure-guide";
+  if (cleanTitle.includes("lien notice")) return "/blog/hoa-lien-notice-what-to-do";
+  if (cleanTitle.includes("tennessee")) return "/blog/hoa-fees-tennessee";
+  if (cleanTitle.includes("new jersey")) return "/blog/hoa-fees-new-jersey";
+  if (cleanTitle.includes("virginia")) return "/blog/hoa-fees-virginia";
+  if (cleanTitle.includes("washington state") || cleanTitle.includes("seattle")) return "/blog/hoa-fees-washington-state";
+  if (cleanTitle.includes("colorado")) return "/blog/hoa-fees-colorado";
+  if (cleanTitle.includes("nevada")) return "/blog/hoa-fees-nevada";
+  if (cleanTitle.includes("georgia")) return "/blog/hoa-fees-georgia";
+  if (cleanTitle.includes("north carolina")) return "/blog/hoa-fees-north-carolina";
+  if (cleanTitle.includes("illinois")) return "/blog/hoa-fees-illinois";
+  if (cleanTitle.includes("foreclosure")) return "/blog/hoa-foreclosure";
+  if (cleanTitle.includes("tax deductible")) return "/blog/hoa-fees-tax-deductible";
+  if (cleanTitle.includes("don't pay") || cleanTitle.includes("dont pay")) return "/blog/dont-pay-hoa-fees";
+  if (cleanTitle.includes("fight hoa fee increase")) return "/blog/fight-hoa-fee-increase";
+  if (cleanTitle.includes("special assessment")) return "/blog/hoa-special-assessment";
+  if (cleanTitle.includes("financial statements")) return "/blog/read-hoa-financial-statements";
+  if (cleanTitle.includes("red flags")) return "/blog/hoa-document-red-flags";
+  if (cleanTitle.includes("reserve fund")) return "/blog/hoa-reserve-fund";
+  if (cleanTitle.includes("too much")) return "/blog/how-much-hoa-fee-too-much";
+  if (cleanTitle.includes("mortgage approval")) return "/blog/hoa-fees-mortgage-approval";
+  if (cleanTitle.includes("new construction")) return "/blog/new-construction-hoa-fees";
+  if (cleanTitle.includes("nyc")) return "/blog/condo-hoa-fees-nyc";
+  if (cleanTitle.includes("arizona")) return "/blog/hoa-fees-arizona";
+  if (cleanTitle.includes("lower hoa fees")) return "/blog/lower-hoa-fees";
+  if (cleanTitle.includes("management companies")) return "/blog/hoa-management-companies";
+  if (cleanTitle.includes("self-managed") || cleanTitle.includes("self managed")) return "/blog/self-managed-hoa";
+  if (cleanTitle.includes("rules enforcement")) return "/blog/hoa-rules-enforcement";
+  if (cleanTitle.includes("questions before buying")) return "/blog/questions-before-buying-hoa";
+  if (cleanTitle.includes("townhouse")) return "/blog/townhouse-hoa-fees";
+  if (cleanTitle.includes("cover")) return "/blog/what-do-hoa-fees-cover";
+  if (cleanTitle.includes("annual budget")) return "/blog/hoa-annual-budget";
+  if (cleanTitle.includes("no hoa laws")) return "/blog/states-no-hoa-laws";
+  if (cleanTitle.includes("calculator guide")) return "/blog/hoa-fee-calculator-guide";
+  if (cleanTitle.includes("texas guide")) return "/blog/hoa-fees-texas-guide";
+  if (cleanTitle.includes("new york")) return "/blog/average-hoa-fees-new-york";
+  if (cleanTitle.includes("highest hoa fees")) return "/blog/highest-hoa-fees-by-state";
+  if (cleanTitle.includes("increase limits")) return "/blog/hoa-fee-increase-limits";
+
+  const slugified = cleanTitle
+    .replace(/[^a-z0-9\s-]/g, '')
+    .trim()
+    .replace(/\s+/g, '-');
+  return `/blog/${slugified}`;
+}
+
 export default function BlogArticleLayout({
   title,
   description,
+  canonical,
   category = "Homebuying Guide",
   readTime = "6 min read",
   date = "May 21, 2026",
   relatedLinks = [],
   children
 }: BlogArticleLayoutProps) {
+  const resolvedCanonical = canonical || getSlugFromTitle(title);
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -45,6 +102,7 @@ export default function BlogArticleLayout({
       <SEO 
         title={`${title} | HOACalculator.com`}
         description={description}
+        canonical={resolvedCanonical}
         schema={[articleSchema]}
       />
 

@@ -92,6 +92,7 @@ export function PrivacyPolicy() {
       <SEO 
         title="Privacy Policy — HOACalculator.com" 
         description="Our commitment to your privacy. Read how we handle, process, and protect your data." 
+        canonical="/privacy-policy"
       />
       <LegalHeader />
       
@@ -136,6 +137,7 @@ export function Disclaimer() {
       <SEO 
         title="Financial Disclaimer — HOACalculator.com" 
         description="Important legal information, limits of liability, and state data estimations regarding our calculator." 
+        canonical="/disclaimer"
       />
       <LegalHeader />
 
@@ -172,6 +174,7 @@ export function TermsOfService() {
       <SEO 
         title="Terms of Service — HOACalculator.com" 
         description="Read the terms of service and usage conditions of HOACalculator.com." 
+        canonical="/terms"
       />
       <LegalHeader />
 

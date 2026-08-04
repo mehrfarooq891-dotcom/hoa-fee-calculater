@@ -35,6 +35,7 @@ export default function Compare() {
       <SEO 
         title="Compare HOA vs. Condo vs. Townhouse Fees | HOACalculator.com"
         description="Understanding the fee differences between single-family homes, condominiums, and townhouses."
+        canonical="/compare"
       />
 
       <header className="border-b border-border py-4 px-6 fixed top-0 w-full bg-white/80 backdrop-blur-md z-50">

@@ -82,6 +82,7 @@ export default function States() {
       <SEO 
         title="HOA Fees by State | All 50 US States | HOA Fee Calculator"
         description="Explore HOA fee data, monthly averages, legal limits, and homeowners association laws across all 50 US states for 2026."
+        canonical="/states"
       />
 
       {/* Header */}

@@ -27,6 +27,7 @@ export default function HOAVsCondoFeeArticle() {
       <SEO 
         title="HOA vs Condo Fee: What's the Difference & Which Costs More?"
         description="Confused about HOA vs condo fee definitions? Access the legal differences, outer envelope coverage, 10-year forecasts, and real-world city comparisons."
+        canonical="/blog/hoa-vs-condo-fee"
         schema={[articleSchema]}
       />
 

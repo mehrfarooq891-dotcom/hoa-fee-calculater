@@ -116,7 +116,7 @@ export default function Cities() {
       <SEO 
         title="HOA Fees by City | HOA Fee Calculator"
         description="Explore HOA fee averages, monthly maintenance estimates, and community guidelines for major US cities including Austin, Miami, Los Angeles, Houston, and more for 2026."
-        canonical="https://www.hoafeecalculator.com/cities"
+        canonical="/cities"
       />
 
       {/* Header */}

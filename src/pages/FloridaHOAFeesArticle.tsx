@@ -27,6 +27,7 @@ export default function FloridaHOAFeesArticle() {
       <SEO 
         title="HOA Fees in Florida: What to Know Before Closing (2026)"
         description="Comprehensive analysis of Florida's HOA fees, SB 4-D reserve rules, Statute 718 & 720, city averages, and buying tips."
+        canonical="/blog/hoa-fees-florida"
         schema={[articleSchema]}
       />
 

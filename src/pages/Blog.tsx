@@ -413,6 +413,7 @@ export default function Blog() {
       <SEO 
         title="Real Estate Blog | HOA Fee Calculator"
         description="Explore comprehensive articles, state HOA fee breakdowns, legal guides, foreclosure prevention steps, and financial advice for US homebuyers."
+        canonical="/blog"
       />
 
       {/* Header */}

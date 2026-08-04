@@ -90,6 +90,7 @@ export default function AverageHOAFeesByStateArticle() {
       <SEO 
         title="Average HOA Fees by State 2026 — Full 50-State Data"
         description="Compare average monthly HOA fees across all 50 US states in 2026. Discover why fees vary from $140 to $790+ and view typical ranges."
+        canonical="/blog/average-hoa-fees-by-state"
         schema={[articleSchema, datasetSchema]}
       />
 

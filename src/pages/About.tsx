@@ -20,6 +20,7 @@ export default function About() {
       <SEO 
         title="About Us & Methodology | HOACalculator.com"
         description="Discover how the HOA Research Team compiles, analyzes, and verifies HOA fee data across all 50 US states. Our editorial standards, data methodology, and commitment to homebuyer transparency."
+        canonical="/about"
         schema={[aboutSchema]}
       />
 

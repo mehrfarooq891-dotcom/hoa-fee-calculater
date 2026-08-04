@@ -70,6 +70,7 @@ export default function StateTemplate() {
       <SEO 
         title={`${displayName} HOA Fees 2026 | Average Costs & Calculator`}
         description={`Calculate HOA fees in ${displayName}. See average costs by city, legal rules, and estimate your lifetime HOA expenses.`}
+        canonical={`/states/${stateName}`}
         schema={[{
           "@context": "https://schema.org",
           "@type": "LocalBusiness",

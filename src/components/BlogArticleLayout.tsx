@@ -15,6 +15,7 @@ interface BlogArticleLayoutProps {
 
 function getSlugFromTitle(title: string): string {
   const cleanTitle = title.toLowerCase().trim();
+  if (cleanTitle.includes("sent my account to collections") || cleanTitle.includes("sent to collections")) return "/blog/hoa-sent-to-collections";
   if (cleanTitle.includes("what is an hoa fee")) return "/blog/what-is-hoa-fee";
   if (cleanTitle.includes("hoa laws by state")) return "/blog/hoa-laws-by-state";
   if (cleanTitle.includes("condo fees vs hoa fees")) return "/blog/condo-fees-vs-hoa-fees";

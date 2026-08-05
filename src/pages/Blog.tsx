@@ -12,6 +12,13 @@ interface Article {
 
 const ALL_ARTICLES: Article[] = [
   {
+    title: "HOA Sent My Account to Collections: What Happens Next",
+    excerpt: "A $340 balance became a $1,900 collections file in 90 days. Learn what collection agencies can do, how credit scores are impacted, and settlement negotiation steps.",
+    date: "August 4, 2026",
+    category: "Legal & Foreclosure",
+    slug: "/blog/hoa-sent-to-collections"
+  },
+  {
     title: "HOA Laws by State: What Homeowners Need to Know",
     excerpt: "Understand how HOA laws vary by state, how CC&Rs govern communities, states with strict statutes, and when association rules become unenforceable.",
     date: "August 3, 2026",

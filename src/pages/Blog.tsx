@@ -12,6 +12,13 @@ interface Article {
 
 const ALL_ARTICLES: Article[] = [
   {
+    title: "HOA Won't Respond to My Emails: How to Force Action",
+    excerpt: "Three unanswered emails about a leaking pipe? Learn the 5-step escalation ladder from certified letters to state regulatory complaints that force HOA board action.",
+    date: "August 7, 2026",
+    category: "Legal & Foreclosure",
+    slug: "/blog/hoa-not-responding"
+  },
+  {
     title: "HOA Sent My Account to Collections: What Happens Next",
     excerpt: "A $340 balance became a $1,900 collections file in 90 days. Learn what collection agencies can do, how credit scores are impacted, and settlement negotiation steps.",
     date: "August 4, 2026",

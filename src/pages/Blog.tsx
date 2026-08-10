@@ -12,6 +12,13 @@ interface Article {
 
 const ALL_ARTICLES: Article[] = [
   {
+    title: "Emergency HOA Meeting Called: What It Usually Means",
+    excerpt: "An emergency meeting notice usually means storm damage, lawsuits, insurance cancellations, or lost quorums. Learn your rights, red flags, and cost impacts.",
+    date: "August 9, 2026",
+    category: "Legal & Foreclosure",
+    slug: "/blog/emergency-hoa-meeting-called"
+  },
+  {
     title: "HOA Won't Respond to My Emails: How to Force Action",
     excerpt: "Three unanswered emails about a leaking pipe? Learn the 5-step escalation ladder from certified letters to state regulatory complaints that force HOA board action.",
     date: "August 7, 2026",

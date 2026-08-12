@@ -265,6 +265,7 @@ export const routes: RouteRecord[] = [
       { path: 'cities', element: <Cities /> },
       { path: 'cities/:cityName', element: <CityTemplate /> },
       { path: 'privacy-policy', element: <PrivacyPolicy /> },
+      { path: 'terms-of-service', element: <TermsOfService /> },
       { path: 'terms', element: <TermsOfService /> },
       { path: 'disclaimer', element: <Disclaimer /> },
       { path: 'states/texas.html', element: <StateTemplate /> }

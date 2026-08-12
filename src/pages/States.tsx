@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import SEO from '@/src/components/SEO';
+import Header from '@/src/components/Header';
 import { Link } from 'react-router-dom';
 
 type Region = 'Northeast' | 'Midwest' | 'South' | 'West';
@@ -86,38 +87,7 @@ export default function States() {
       />
 
       {/* Header */}
-      <header className="border-b border-border py-4 px-6 fixed top-0 w-full bg-white/80 backdrop-blur-md z-50">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <Link to="/" className="flex items-center">
-            <img 
-              src="/hoa_calculator_logo.svg" 
-              alt="HOA Fee Calculator" 
-              width="180" height="45" style={{height: '45px', width: '180px'}}
-              onError={(e) => {
-                e.currentTarget.style.display = 'none';
-                if (e.currentTarget.nextElementSibling) {
-                  (e.currentTarget.nextElementSibling as HTMLElement).style.display = 'block';
-                }
-              }}
-            />
-            <span 
-              className="font-serif text-2xl font-bold text-primary"
-              style={{display: 'none'}}
-            >
-              HOA<span className="text-accent">Calculator</span>.com
-            </span>
-          </Link>
-          <nav className="hidden md:flex gap-8 items-center text-sm font-bold uppercase tracking-wider">
-            <Link to="/" className="hover:text-accent transition-colors">Home</Link>
-            <Link to="/states" className="text-accent">HOA Fees by State</Link>
-            <Link to="/cities" className="hover:text-accent transition-colors">HOA Fees by City</Link>
-            <Link to="/compare" className="hover:text-accent transition-colors">Compare</Link>
-            <Link to="/blog" className="hover:text-accent transition-colors">Real Estate Blog</Link>
-            <Link to="/about" className="hover:text-accent transition-colors">About</Link>
-            <Link to="/contact" className="hover:text-accent transition-colors">Contact</Link>
-          </nav>
-        </div>
-      </header>
+      <Header />
 
       <main className="flex-1 pt-32 pb-20 px-6">
         <div className="max-w-7xl mx-auto">

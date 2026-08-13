@@ -16,6 +16,7 @@ interface BlogArticleLayoutProps {
 
 function getSlugFromTitle(title: string): string {
   const cleanTitle = title.toLowerCase().trim();
+  if (cleanTitle.includes("insurance not renewed") || cleanTitle.includes("insurance was not renewed")) return "/blog/hoa-insurance-not-renewed";
   if (cleanTitle.includes("emergency hoa meeting") || cleanTitle.includes("emergency meeting")) return "/blog/emergency-hoa-meeting-called";
   if (cleanTitle.includes("won't respond") || cleanTitle.includes("not responding")) return "/blog/hoa-not-responding";
   if (cleanTitle.includes("sent my account to collections") || cleanTitle.includes("sent to collections")) return "/blog/hoa-sent-to-collections";

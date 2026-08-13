@@ -13,6 +13,13 @@ interface Article {
 
 const ALL_ARTICLES: Article[] = [
   {
+    title: "HOA Insurance Was Not Renewed: What Happens to Your Fees",
+    excerpt: "When an HOA master insurance policy is canceled, dues skyrocket. Learn why carriers drop coverage, lender rules, and emergency steps to take.",
+    date: "August 13, 2026",
+    category: "Financial Planning",
+    slug: "/blog/hoa-insurance-not-renewed"
+  },
+  {
     title: "Emergency HOA Meeting Called: What It Usually Means",
     excerpt: "An emergency meeting notice usually means storm damage, lawsuits, insurance cancellations, or lost quorums. Learn your rights, red flags, and cost impacts.",
     date: "August 9, 2026",

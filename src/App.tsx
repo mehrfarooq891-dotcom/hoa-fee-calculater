@@ -188,12 +188,16 @@ function DynamicBlogArticle() {
   }
 }
 
+import { ErrorBoundary } from './components/ErrorBoundary';
+
 export function RootLayout() {
   return (
     <HelmetProvider>
-      <Suspense fallback={<div style={{ minHeight: '100vh' }} />}>
-        <Outlet />
-      </Suspense>
+      <ErrorBoundary>
+        <Suspense fallback={<div style={{ minHeight: '100vh' }} />}>
+          <Outlet />
+        </Suspense>
+      </ErrorBoundary>
     </HelmetProvider>
   );
 }

@@ -34,21 +34,20 @@ export default function Header() {
           <img 
             src="/hoa_calculator_logo.svg" 
             alt="HOA Fee Calculator" 
-            width="180" 
+            width="220" 
             height="45" 
-            style={{ height: '45px', width: '180px' }}
+            className="h-[45px] w-auto max-w-[220px] object-contain"
             onError={(e) => {
               e.currentTarget.style.display = 'none';
               if (e.currentTarget.nextElementSibling) {
-                (e.currentTarget.nextElementSibling as HTMLElement).style.display = 'block';
+                (e.currentTarget.nextElementSibling as HTMLElement).style.display = 'inline-flex';
               }
             }}
           />
           <span 
-            className="font-serif text-2xl font-bold text-primary"
-            style={{ display: 'none' }}
+            className="hidden font-serif text-2xl font-bold text-primary tracking-tight whitespace-nowrap"
           >
-            HOA<span className="text-accent">Calculator</span>.com
+            HOA <span className="text-accent">Calculator</span>
           </span>
         </Link>
 

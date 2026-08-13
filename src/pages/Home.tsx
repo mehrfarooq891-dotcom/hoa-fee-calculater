@@ -75,7 +75,7 @@ export default function Home() {
     <div className="min-h-screen flex flex-col bg-white">
       <SEO 
         title="HOA Fee Calculator 2026 — Estimate Your True Cost by State | HOACalculator.com"
-        description="Free HOA fee calculator — instantly estimate your lifetime HOA cost, affordability score, and year-by-year breakdown. Trusted by US homebuyers in all 50 states."
+        description="Free HOA fee calculator — estimate your lifetime HOA cost, affordability score, and year-by-year breakdown. Built for homebuyers in all 50 states."
         canonical="/"
         schema={[webAppSchema, faqSchema]}
       />

@@ -1,7 +1,7 @@
 import React from 'react';
 import SEO from '@/src/components/SEO';
 import Header from '@/src/components/Header';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 interface BlogArticleLayoutProps {
   title: string;
@@ -53,7 +53,7 @@ function getSlugFromTitle(title: string): string {
   if (cleanTitle.includes("management companies")) return "/blog/hoa-management-companies";
   if (cleanTitle.includes("self-managed") || cleanTitle.includes("self managed")) return "/blog/self-managed-hoa";
   if (cleanTitle.includes("rules enforcement")) return "/blog/hoa-rules-enforcement";
-  if (cleanTitle.includes("questions before buying")) return "/blog/questions-before-buying-hoa";
+  if (cleanTitle.includes("questions before buying") || cleanTitle.includes("10 questions") || cleanTitle.includes("questions to ask") || cleanTitle.includes("buying in an hoa community")) return "/blog/questions-before-buying-hoa";
   if (cleanTitle.includes("townhouse")) return "/blog/townhouse-hoa-fees";
   if (cleanTitle.includes("cover")) return "/blog/what-do-hoa-fees-cover";
   if (cleanTitle.includes("annual budget")) return "/blog/hoa-annual-budget";
@@ -81,7 +81,13 @@ export default function BlogArticleLayout({
   relatedLinks = [],
   children
 }: BlogArticleLayoutProps) {
-  const resolvedCanonical = canonical || getSlugFromTitle(title);
+  let locationPath = '';
+  try {
+    const location = useLocation();
+    locationPath = location?.pathname || '';
+  } catch (e) {}
+
+  const resolvedCanonical = canonical || (locationPath && locationPath.startsWith('/blog/') ? locationPath : getSlugFromTitle(title));
 
   const articleSchema = {
     "@context": "https://schema.org",

@@ -31,7 +31,7 @@ export default function QuestionsBeforeBuyingHOAArticle() {
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://hoafeecalculator.com/blog/questions-before-buying-hoa"
+      "@id": "https://www.hoafeecalculator.com/blog/questions-before-buying-hoa"
     }
   };
 
@@ -39,6 +39,7 @@ export default function QuestionsBeforeBuyingHOAArticle() {
     <BlogArticleLayout
       title="Buying in an HOA Community: 10 Questions to Ask Before You Offer"
       description="Most buyers tour the home — experienced buyers interrogate the HOA. Learn the 10 critical questions you must ask before making an offer on a property regulated by an HOA."
+      canonical="/blog/questions-before-buying-hoa"
       category="Homebuying Guide"
       readTime="10 min read"
       date="June 17, 2026"

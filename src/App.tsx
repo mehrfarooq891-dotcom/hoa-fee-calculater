@@ -189,6 +189,7 @@ function DynamicBlogArticle() {
 }
 
 import { ErrorBoundary } from './components/ErrorBoundary';
+import { getBlogArticleBySlug } from './data/blogArticles';
 
 export function RootLayout() {
   return (
@@ -202,81 +203,96 @@ export function RootLayout() {
   );
 }
 
+const createArticleLoader = (slug: string) => {
+  return async () => {
+    const article = getBlogArticleBySlug(slug);
+    return article || { slug, title: slug, category: 'Blog', date: '2026', excerpt: '' };
+  };
+};
+
 export const routes: RouteRecord[] = [
   {
     path: '/',
     element: <RootLayout />,
+    loader: async () => ({ site: 'HOACalculator.com', timestamp: '2026' }),
     children: [
-      { index: true, element: <Home /> },
-      { path: 'about', element: <About /> },
-      { path: 'blog', element: <Blog /> },
-      { path: 'blog/what-is-hoa-fee', element: <WhatIsHOAFeeArticle /> },
-      { path: 'blog/average-hoa-fees-by-state', element: <AverageHOAFeesByStateArticle /> },
-      { path: 'blog/hoa-fees-florida', element: <FloridaHOAFeesArticle /> },
-      { path: 'blog/hoa-fees-california', element: <CaliforniaHOAFeesArticle /> },
-      { path: 'blog/hoa-fees-texas', element: <TexasHOAFeesArticle /> },
-      { path: 'blog/hoa-fees-georgia', element: <GeorgiaHOAFeesArticle /> },
-      { path: 'blog/hoa-fees-north-carolina', element: <NorthCarolinaHOAFeesArticle /> },
-      { path: 'blog/hoa-fees-illinois', element: <IllinoisHOAFeesArticle /> },
-      { path: 'blog/hoa-fees-nevada', element: <NevadaHOAFeesArticle /> },
-      { path: 'blog/hoa-fees-colorado', element: <ColoradoHOAFeesArticle /> },
-      { path: 'blog/hoa-fees-washington-state', element: <WashingtonStateHOAFeesArticle /> },
-      { path: 'blog/hoa-fees-virginia', element: <VirginiaHOAFeesArticle /> },
-      { path: 'blog/hoa-fees-new-jersey', element: <NewJerseyHOAFeesArticle /> },
-      { path: 'blog/hoa-fees-tennessee', element: <TennesseeHOAFeesArticle /> },
-      { path: 'blog/hoa-vs-no-hoa', element: <HOAVsNoHOAArticle /> },
-      { path: 'blog/hoa-vs-condo-fee', element: <HOAVsCondoFeeArticle /> },
+      { index: true, element: <Home />, loader: async () => ({ page: 'home' }) },
+      { path: 'about', element: <About />, loader: async () => ({ page: 'about' }) },
+      { path: 'blog', element: <Blog />, loader: async () => ({ page: 'blog' }) },
+      { path: 'blog/what-is-hoa-fee', element: <WhatIsHOAFeeArticle />, loader: createArticleLoader('what-is-hoa-fee') },
+      { path: 'blog/average-hoa-fees-by-state', element: <AverageHOAFeesByStateArticle />, loader: createArticleLoader('average-hoa-fees-by-state') },
+      { path: 'blog/hoa-fees-florida', element: <FloridaHOAFeesArticle />, loader: createArticleLoader('hoa-fees-florida') },
+      { path: 'blog/hoa-fees-california', element: <CaliforniaHOAFeesArticle />, loader: createArticleLoader('hoa-fees-california') },
+      { path: 'blog/hoa-fees-texas', element: <TexasHOAFeesArticle />, loader: createArticleLoader('hoa-fees-texas') },
+      { path: 'blog/hoa-fees-georgia', element: <GeorgiaHOAFeesArticle />, loader: createArticleLoader('hoa-fees-georgia') },
+      { path: 'blog/hoa-fees-north-carolina', element: <NorthCarolinaHOAFeesArticle />, loader: createArticleLoader('hoa-fees-north-carolina') },
+      { path: 'blog/hoa-fees-illinois', element: <IllinoisHOAFeesArticle />, loader: createArticleLoader('hoa-fees-illinois') },
+      { path: 'blog/hoa-fees-nevada', element: <NevadaHOAFeesArticle />, loader: createArticleLoader('hoa-fees-nevada') },
+      { path: 'blog/hoa-fees-colorado', element: <ColoradoHOAFeesArticle />, loader: createArticleLoader('hoa-fees-colorado') },
+      { path: 'blog/hoa-fees-washington-state', element: <WashingtonStateHOAFeesArticle />, loader: createArticleLoader('hoa-fees-washington-state') },
+      { path: 'blog/hoa-fees-virginia', element: <VirginiaHOAFeesArticle />, loader: createArticleLoader('hoa-fees-virginia') },
+      { path: 'blog/hoa-fees-new-jersey', element: <NewJerseyHOAFeesArticle />, loader: createArticleLoader('hoa-fees-new-jersey') },
+      { path: 'blog/hoa-fees-tennessee', element: <TennesseeHOAFeesArticle />, loader: createArticleLoader('hoa-fees-tennessee') },
+      { path: 'blog/hoa-vs-no-hoa', element: <HOAVsNoHOAArticle />, loader: createArticleLoader('hoa-vs-no-hoa') },
+      { path: 'blog/hoa-vs-condo-fee', element: <HOAVsCondoFeeArticle />, loader: createArticleLoader('hoa-vs-condo-fee') },
       
-      { path: 'blog/hoa-fees-tax-deductible', element: <HOAFeesTaxDeductibleArticle /> },
-      { path: 'blog/dont-pay-hoa-fees', element: <DontPayHOAFeesArticle /> },
-      { path: 'blog/hoa-lien-notice-what-to-do', element: <HOALienNoticeArticle /> },
-      { path: 'blog/hoa-foreclosure', element: <HOAForeclosureArticle /> },
-      { path: 'blog/fight-hoa-fee-increase', element: <FightHOAFeeIncreaseArticle /> },
-      { path: 'blog/hoa-special-assessment', element: <HOASpecialAssessmentArticle /> },
-      { path: 'blog/read-hoa-financial-statements', element: <ReadHOAFinancialStatementsArticle /> },
-      { path: 'blog/hoa-document-red-flags', element: <HOADocumentRedFlagsArticle /> },
-      { path: 'blog/hoa-reserve-fund', element: <HOAReserveFundArticle /> },
-      { path: 'blog/how-much-hoa-fee-too-much', element: <HowMuchHOAFeeTooMuchArticle /> },
-      { path: 'blog/hoa-fees-mortgage-approval', element: <HOAFeesMortgageApprovalArticle /> },
-      { path: 'blog/new-construction-hoa-fees', element: <NewConstructionHOAFeesArticle /> },
-      { path: 'blog/condo-hoa-fees-nyc', element: <CondoHOAFeesNYCArticle /> },
-      { path: 'blog/hoa-fees-arizona', element: <HOAFeesArizonaArticle /> },
-      { path: 'blog/lower-hoa-fees', element: <LowerHOAFeesArticle /> },
-      { path: 'blog/hoa-management-companies', element: <HOAManagementCompaniesArticle /> },
-      { path: 'blog/self-managed-hoa', element: <SelfManagedHOAArticle /> },
-      { path: 'blog/hoa-rules-enforcement', element: <HOARulesEnforcementArticle /> },
-      { path: 'blog/questions-before-buying-hoa', element: <QuestionsBeforeBuyingHOAArticle /> },
-      { path: 'blog/townhouse-hoa-fees', element: <TownhouseHOAFeesArticle /> },
-      { path: 'blog/what-do-hoa-fees-cover', element: <WhatDoHOAFeesCoverArticle /> },
-      { path: 'blog/hoa-annual-budget', element: <HOAAnnualBudgetArticle /> },
-      { path: 'blog/states-no-hoa-laws', element: <StatesNoHOALawsArticle /> },
-      { path: 'blog/hoa-fee-calculator-guide', element: <HOAFeeCalculatorGuideArticle /> },
-      { path: 'blog/hoa-fees-texas-guide', element: <HOAFeesTexasGuideArticle /> },
-      { path: 'blog/average-hoa-fees-new-york', element: <AverageHOAFeesNewYorkArticle /> },
-      { path: 'blog/highest-hoa-fees-by-state', element: <HighestHOAFeesByStateArticle /> },
-      { path: 'blog/hoa-fee-increase-limits', element: <HOAFeeIncreaseLimitsArticle /> },
-      { path: 'blog/hoa-threatening-foreclosure-guide', element: <HOAThreateningForeclosureGuideArticle /> },
-      { path: 'blog/cant-afford-special-assessment', element: <CantAffordSpecialAssessmentArticle /> },
-      { path: 'blog/hoa-dues-explained', element: <HOADuesExplainedArticle /> },
-      { path: 'blog/condo-fees-vs-hoa-fees', element: <CondoFeesVsHOAFeesArticle /> },
-      { path: 'blog/hoa-laws-by-state', element: <HOALawsByStateArticle /> },
-      { path: 'blog/hoa-sent-to-collections', element: <HOASentToCollectionsArticle /> },
-      { path: 'blog/hoa-not-responding', element: <HOANotRespondingArticle /> },
-      { path: 'blog/emergency-hoa-meeting-called', element: <EmergencyHOAMeetingCalledArticle /> },
-      { path: 'blog/hoa-insurance-not-renewed', element: <HOAInsuranceNotRenewedArticle /> },
+      { path: 'blog/hoa-fees-tax-deductible', element: <HOAFeesTaxDeductibleArticle />, loader: createArticleLoader('hoa-fees-tax-deductible') },
+      { path: 'blog/dont-pay-hoa-fees', element: <DontPayHOAFeesArticle />, loader: createArticleLoader('dont-pay-hoa-fees') },
+      { path: 'blog/hoa-lien-notice-what-to-do', element: <HOALienNoticeArticle />, loader: createArticleLoader('hoa-lien-notice-what-to-do') },
+      { path: 'blog/hoa-foreclosure', element: <HOAForeclosureArticle />, loader: createArticleLoader('hoa-foreclosure') },
+      { path: 'blog/fight-hoa-fee-increase', element: <FightHOAFeeIncreaseArticle />, loader: createArticleLoader('fight-hoa-fee-increase') },
+      { path: 'blog/hoa-special-assessment', element: <HOASpecialAssessmentArticle />, loader: createArticleLoader('hoa-special-assessment') },
+      { path: 'blog/read-hoa-financial-statements', element: <ReadHOAFinancialStatementsArticle />, loader: createArticleLoader('read-hoa-financial-statements') },
+      { path: 'blog/hoa-document-red-flags', element: <HOADocumentRedFlagsArticle />, loader: createArticleLoader('hoa-document-red-flags') },
+      { path: 'blog/hoa-reserve-fund', element: <HOAReserveFundArticle />, loader: createArticleLoader('hoa-reserve-fund') },
+      { path: 'blog/how-much-hoa-fee-too-much', element: <HowMuchHOAFeeTooMuchArticle />, loader: createArticleLoader('how-much-hoa-fee-too-much') },
+      { path: 'blog/hoa-fees-mortgage-approval', element: <HOAFeesMortgageApprovalArticle />, loader: createArticleLoader('hoa-fees-mortgage-approval') },
+      { path: 'blog/new-construction-hoa-fees', element: <NewConstructionHOAFeesArticle />, loader: createArticleLoader('new-construction-hoa-fees') },
+      { path: 'blog/condo-hoa-fees-nyc', element: <CondoHOAFeesNYCArticle />, loader: createArticleLoader('condo-hoa-fees-nyc') },
+      { path: 'blog/hoa-fees-arizona', element: <HOAFeesArizonaArticle />, loader: createArticleLoader('hoa-fees-arizona') },
+      { path: 'blog/lower-hoa-fees', element: <LowerHOAFeesArticle />, loader: createArticleLoader('lower-hoa-fees') },
+      { path: 'blog/hoa-management-companies', element: <HOAManagementCompaniesArticle />, loader: createArticleLoader('hoa-management-companies') },
+      { path: 'blog/self-managed-hoa', element: <SelfManagedHOAArticle />, loader: createArticleLoader('self-managed-hoa') },
+      { path: 'blog/hoa-rules-enforcement', element: <HOARulesEnforcementArticle />, loader: createArticleLoader('hoa-rules-enforcement') },
+      { path: 'blog/questions-before-buying-hoa', element: <QuestionsBeforeBuyingHOAArticle />, loader: createArticleLoader('questions-before-buying-hoa') },
+      { path: 'blog/townhouse-hoa-fees', element: <TownhouseHOAFeesArticle />, loader: createArticleLoader('townhouse-hoa-fees') },
+      { path: 'blog/what-do-hoa-fees-cover', element: <WhatDoHOAFeesCoverArticle />, loader: createArticleLoader('what-do-hoa-fees-cover') },
+      { path: 'blog/hoa-annual-budget', element: <HOAAnnualBudgetArticle />, loader: createArticleLoader('hoa-annual-budget') },
+      { path: 'blog/states-no-hoa-laws', element: <StatesNoHOALawsArticle />, loader: createArticleLoader('states-no-hoa-laws') },
+      { path: 'blog/hoa-fee-calculator-guide', element: <HOAFeeCalculatorGuideArticle />, loader: createArticleLoader('hoa-fee-calculator-guide') },
+      { path: 'blog/hoa-fees-texas-guide', element: <HOAFeesTexasGuideArticle />, loader: createArticleLoader('hoa-fees-texas-guide') },
+      { path: 'blog/average-hoa-fees-new-york', element: <AverageHOAFeesNewYorkArticle />, loader: createArticleLoader('average-hoa-fees-new-york') },
+      { path: 'blog/highest-hoa-fees-by-state', element: <HighestHOAFeesByStateArticle />, loader: createArticleLoader('highest-hoa-fees-by-state') },
+      { path: 'blog/hoa-fee-increase-limits', element: <HOAFeeIncreaseLimitsArticle />, loader: createArticleLoader('hoa-fee-increase-limits') },
+      { path: 'blog/hoa-threatening-foreclosure-guide', element: <HOAThreateningForeclosureGuideArticle />, loader: createArticleLoader('hoa-threatening-foreclosure-guide') },
+      { path: 'blog/cant-afford-special-assessment', element: <CantAffordSpecialAssessmentArticle />, loader: createArticleLoader('cant-afford-special-assessment') },
+      { path: 'blog/hoa-dues-explained', element: <HOADuesExplainedArticle />, loader: createArticleLoader('hoa-dues-explained') },
+      { path: 'blog/condo-fees-vs-hoa-fees', element: <CondoFeesVsHOAFeesArticle />, loader: createArticleLoader('condo-fees-vs-hoa-fees') },
+      { path: 'blog/hoa-laws-by-state', element: <HOALawsByStateArticle />, loader: createArticleLoader('hoa-laws-by-state') },
+      { path: 'blog/hoa-sent-to-collections', element: <HOASentToCollectionsArticle />, loader: createArticleLoader('hoa-sent-to-collections') },
+      { path: 'blog/hoa-not-responding', element: <HOANotRespondingArticle />, loader: createArticleLoader('hoa-not-responding') },
+      { path: 'blog/emergency-hoa-meeting-called', element: <EmergencyHOAMeetingCalledArticle />, loader: createArticleLoader('emergency-hoa-meeting-called') },
+      { path: 'blog/hoa-insurance-not-renewed', element: <HOAInsuranceNotRenewedArticle />, loader: createArticleLoader('hoa-insurance-not-renewed') },
 
-      { path: 'blog/:articleSlug', element: <DynamicBlogArticle /> },
-      { path: 'compare', element: <Compare /> },
-      { path: 'contact', element: <Contact /> },
-      { path: 'states', element: <States /> },
-      { path: 'states/:stateName', element: <StateTemplate /> },
-      { path: 'cities', element: <Cities /> },
-      { path: 'cities/:cityName', element: <CityTemplate /> },
-      { path: 'privacy-policy', element: <PrivacyPolicy /> },
-      { path: 'terms-of-service', element: <TermsOfService /> },
-      { path: 'terms', element: <TermsOfService /> },
-      { path: 'disclaimer', element: <Disclaimer /> },
-      { path: 'states/texas.html', element: <StateTemplate /> }
+      {
+        path: 'blog/:articleSlug',
+        element: <DynamicBlogArticle />,
+        loader: async ({ params }: any) => {
+          const article = getBlogArticleBySlug(params?.articleSlug || '');
+          return article || { slug: params?.articleSlug, title: params?.articleSlug };
+        }
+      },
+      { path: 'compare', element: <Compare />, loader: async () => ({ page: 'compare' }) },
+      { path: 'contact', element: <Contact />, loader: async () => ({ page: 'contact' }) },
+      { path: 'states', element: <States />, loader: async () => ({ page: 'states' }) },
+      { path: 'states/:stateName', element: <StateTemplate />, loader: async ({ params }: any) => ({ state: params?.stateName }) },
+      { path: 'cities', element: <Cities />, loader: async () => ({ page: 'cities' }) },
+      { path: 'cities/:cityName', element: <CityTemplate />, loader: async ({ params }: any) => ({ city: params?.cityName }) },
+      { path: 'privacy-policy', element: <PrivacyPolicy />, loader: async () => ({ page: 'privacy-policy' }) },
+      { path: 'terms-of-service', element: <TermsOfService />, loader: async () => ({ page: 'terms-of-service' }) },
+      { path: 'terms', element: <TermsOfService />, loader: async () => ({ page: 'terms' }) },
+      { path: 'disclaimer', element: <Disclaimer />, loader: async () => ({ page: 'disclaimer' }) },
+      { path: 'states/texas.html', element: <StateTemplate />, loader: async () => ({ state: 'texas' }) }
     ]
   }
 ];

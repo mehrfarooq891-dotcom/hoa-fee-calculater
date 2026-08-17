@@ -70,6 +70,7 @@ const HOASentToCollectionsArticle = React.lazy(() => import('./pages/HOASentToCo
 const HOANotRespondingArticle = React.lazy(() => import('./pages/HOANotRespondingArticle'));
 const EmergencyHOAMeetingCalledArticle = React.lazy(() => import('./pages/EmergencyHOAMeetingCalledArticle'));
 const HOAInsuranceNotRenewedArticle = React.lazy(() => import('./pages/HOAInsuranceNotRenewedArticle'));
+const CondoFailedStructuralInspectionArticle = React.lazy(() => import('./pages/CondoFailedStructuralInspectionArticle'));
 
 function DynamicBlogArticle() {
   const { articleSlug } = useParams<{ articleSlug: string }>();
@@ -183,6 +184,8 @@ function DynamicBlogArticle() {
       return <EmergencyHOAMeetingCalledArticle />;
     case 'hoa-insurance-not-renewed':
       return <HOAInsuranceNotRenewedArticle />;
+    case 'condo-failed-structural-inspection':
+      return <CondoFailedStructuralInspectionArticle />;
     default:
       return <Navigate to="/blog" replace />;
   }
@@ -273,6 +276,7 @@ export const routes: RouteRecord[] = [
       { path: 'blog/hoa-not-responding', element: <HOANotRespondingArticle />, loader: createArticleLoader('hoa-not-responding') },
       { path: 'blog/emergency-hoa-meeting-called', element: <EmergencyHOAMeetingCalledArticle />, loader: createArticleLoader('emergency-hoa-meeting-called') },
       { path: 'blog/hoa-insurance-not-renewed', element: <HOAInsuranceNotRenewedArticle />, loader: createArticleLoader('hoa-insurance-not-renewed') },
+      { path: 'blog/condo-failed-structural-inspection', element: <CondoFailedStructuralInspectionArticle />, loader: createArticleLoader('condo-failed-structural-inspection') },
 
       {
         path: 'blog/:articleSlug',

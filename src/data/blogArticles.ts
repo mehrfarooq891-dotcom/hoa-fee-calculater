@@ -8,6 +8,13 @@ export interface ArticleData {
 
 export const ALL_ARTICLES: ArticleData[] = [
   {
+    title: "My Condo Failed Its Structural Inspection: What Happens Now",
+    excerpt: "A failed structural inspection triggers municipal notices, Phase 2 engineering tests, and $8K-$100K+ repair assessments. Learn your rights, loan options, and state rules.",
+    date: "August 17, 2026",
+    category: "Buying Guides",
+    slug: "/blog/condo-failed-structural-inspection"
+  },
+  {
     title: "HOA Insurance Was Not Renewed: What Happens to Your Fees",
     excerpt: "When an HOA master insurance policy is canceled, dues skyrocket. Learn why carriers drop coverage, lender rules, and emergency steps to take.",
     date: "August 13, 2026",

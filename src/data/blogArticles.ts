@@ -8,6 +8,13 @@ export interface ArticleData {
 
 export const ALL_ARTICLES: ArticleData[] = [
   {
+    title: "HOA Board Resigned: What Happens to the Community Now",
+    excerpt: "When an entire HOA board resigns, who is in charge? Learn legal rules, receivership risks, $10K+ court costs, and how to hold emergency elections.",
+    date: "August 20, 2026",
+    category: "Legal & Foreclosure",
+    slug: "/blog/hoa-board-resigned"
+  },
+  {
     title: "My Condo Failed Its Structural Inspection: What Happens Now",
     excerpt: "A failed structural inspection triggers municipal notices, Phase 2 engineering tests, and $8K-$100K+ repair assessments. Learn your rights, loan options, and state rules.",
     date: "August 17, 2026",

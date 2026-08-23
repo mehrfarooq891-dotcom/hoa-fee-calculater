@@ -13,6 +13,13 @@ interface Article {
 
 const ALL_ARTICLES: Article[] = [
   {
+    title: "Elevator Broken for Months: Can the HOA Force a Special Assessment?",
+    excerpt: "Commercial elevator replacements cost $150K-$250K. Learn how boards pass emergency assessments, realistic per-unit costs, ADA rights, and repair timelines.",
+    date: "August 23, 2026",
+    category: "Buying Guides",
+    slug: "/blog/hoa-elevator-special-assessment"
+  },
+  {
     title: "HOA Board Resigned: What Happens to the Community Now",
     excerpt: "When an entire HOA board resigns, who is in charge? Learn legal rules, receivership risks, $10K+ court costs, and how to hold emergency elections.",
     date: "August 20, 2026",

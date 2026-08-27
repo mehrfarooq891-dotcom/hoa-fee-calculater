@@ -13,6 +13,13 @@ interface Article {
 
 const ALL_ARTICLES: Article[] = [
   {
+    title: "HOA Fined Me Overnight: How to Dispute Illegal Charges and Stop Daily Accruals",
+    excerpt: "A $200/day fine clock started overnight? Learn how to dispute illegal fines, stop compounding accruals, exercise state hearing rights, and settle for pennies.",
+    date: "August 27, 2026",
+    category: "Buying Guides",
+    slug: "/blog/hoa-fined-me-overnight"
+  },
+  {
     title: "Elevator Broken for Months: Can the HOA Force a Special Assessment?",
     excerpt: "Commercial elevator replacements cost $150K-$250K. Learn how boards pass emergency assessments, realistic per-unit costs, ADA rights, and repair timelines.",
     date: "August 23, 2026",

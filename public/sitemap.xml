@@ -55,6 +55,12 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://www.hoafeecalculator.com/blog/average-condo-fees</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.hoafeecalculator.com/blog/hoa-fined-me-overnight</loc>
     <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
@@ -62,7 +68,7 @@
   </url>
   <url>
     <loc>https://www.hoafeecalculator.com/blog/hoa-elevator-special-assessment</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

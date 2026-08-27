@@ -8,6 +8,13 @@ export interface ArticleData {
 
 export const ALL_ARTICLES: ArticleData[] = [
   {
+    title: "Average Condo Fees in 2026: Typical Monthly Costs, City Breakdowns, and Red Flags",
+    excerpt: "What is the average condo fee in 2026? Compare typical monthly costs across 4 building archetypes, major cities (Miami, NYC, Chicago, Austin), reserve laws, and what is included.",
+    date: "August 27, 2026",
+    category: "Buying Guides",
+    slug: "/blog/average-condo-fees"
+  },
+  {
     title: "HOA Fined Me Overnight: How to Dispute Illegal Charges and Stop Daily Accruals",
     excerpt: "A $200/day fine clock started overnight? Learn how to dispute illegal fines, stop compounding accruals, exercise state hearing rights, and settle for pennies.",
     date: "August 27, 2026",

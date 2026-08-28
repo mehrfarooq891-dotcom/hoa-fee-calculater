@@ -29,10 +29,11 @@ export default function StateTemplate() {
   const [openFaq, setOpenFaq] = React.useState<number | null>(null);
   
   // Format state name for display
-  const displayName = stateName.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+  const cleanSlug = (stateName || 'texas').toLowerCase().trim();
+  const displayName = cleanSlug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 
   // Fetch data specifically for this state
-  const stateData = getStateData(stateName, displayName);
+  const stateData = getStateData(cleanSlug, displayName);
 
   const faqs = [
     {
@@ -71,7 +72,7 @@ export default function StateTemplate() {
       <SEO 
         title={`${displayName} HOA Fees 2026 | Average Costs & Calculator`}
         description={`Calculate HOA fees in ${displayName}. See average costs by city, legal rules, and estimate your lifetime HOA expenses.`}
-        canonical={`/states/${stateName}`}
+        canonical={`/states/${cleanSlug}`}
         schema={[{
           "@context": "https://schema.org",
           "@type": "LocalBusiness",

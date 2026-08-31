@@ -75,6 +75,7 @@ const HOABoardResignedArticle = React.lazy(() => import('./pages/HOABoardResigne
 const HOAElevatorSpecialAssessmentArticle = React.lazy(() => import('./pages/HOAElevatorSpecialAssessmentArticle'));
 const HOAFinedMeOvernightArticle = React.lazy(() => import('./pages/HOAFinedMeOvernightArticle'));
 const AverageCondoFeesArticle = React.lazy(() => import('./pages/AverageCondoFeesArticle'));
+const InheritedHouseUnpaidHOAFeesArticle = React.lazy(() => import('./pages/InheritedHouseUnpaidHOAFeesArticle'));
 
 function DynamicBlogArticle() {
   const { articleSlug } = useParams<{ articleSlug: string }>();
@@ -198,6 +199,8 @@ function DynamicBlogArticle() {
       return <HOAFinedMeOvernightArticle />;
     case 'average-condo-fees':
       return <AverageCondoFeesArticle />;
+    case 'inherited-house-unpaid-hoa-fees':
+      return <InheritedHouseUnpaidHOAFeesArticle />;
     default:
       return <Navigate to="/blog" replace />;
   }
@@ -293,6 +296,7 @@ export const routes: RouteRecord[] = [
       { path: 'blog/hoa-elevator-special-assessment', element: <HOAElevatorSpecialAssessmentArticle />, loader: createArticleLoader('hoa-elevator-special-assessment') },
       { path: 'blog/hoa-fined-me-overnight', element: <HOAFinedMeOvernightArticle />, loader: createArticleLoader('hoa-fined-me-overnight') },
       { path: 'blog/average-condo-fees', element: <AverageCondoFeesArticle />, loader: createArticleLoader('average-condo-fees') },
+      { path: 'blog/inherited-house-unpaid-hoa-fees', element: <InheritedHouseUnpaidHOAFeesArticle />, loader: createArticleLoader('inherited-house-unpaid-hoa-fees') },
 
       {
         path: 'blog/:articleSlug',

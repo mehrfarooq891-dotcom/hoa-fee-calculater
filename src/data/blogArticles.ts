@@ -8,6 +8,13 @@ export interface ArticleData {
 
 export const ALL_ARTICLES: ArticleData[] = [
   {
+    title: "Inherited House with Unpaid HOA Fees: Who Pays, Probate Rules, and Lien Risks",
+    excerpt: "Inherited a house with unpaid HOA fees? Learn if heirs or the estate owe delinquent dues, how probate delays liens, and how to sell or settle in 2026.",
+    date: "August 30, 2026",
+    category: "Legal & Foreclosure",
+    slug: "/blog/inherited-house-unpaid-hoa-fees"
+  },
+  {
     title: "Average Condo Fees in 2026: Typical Monthly Costs, City Breakdowns, and Red Flags",
     excerpt: "What is the average condo fee in 2026? Compare typical monthly costs across 4 building archetypes, major cities (Miami, NYC, Chicago, Austin), reserve laws, and what is included.",
     date: "August 27, 2026",

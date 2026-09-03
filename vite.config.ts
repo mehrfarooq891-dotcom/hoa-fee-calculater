@@ -42,6 +42,20 @@ export default defineConfig(({mode}) => {
         ];
         const stateRoutes = allStateSlugs.map(slug => `/states/${slug}`);
 
+        const allCitySlugs = [
+          'austin-texas',
+          'houston-texas',
+          'miami-florida',
+          'orlando-florida',
+          'los-angeles-california',
+          'san-diego-california',
+          'phoenix-arizona',
+          'las-vegas-nevada',
+          'charlotte-north-carolina',
+          'atlanta-georgia'
+        ];
+        const cityRoutes = allCitySlugs.map(slug => `/cities/${slug}`);
+
         const priorityRoutes = [
           '/',
           '/blog/what-is-hoa-fee',
@@ -52,6 +66,7 @@ export default defineConfig(({mode}) => {
           '/blog/hoa-vs-no-hoa',
           '/blog/hoa-vs-condo-fee',
           ...stateRoutes,
+          ...cityRoutes,
           '/compare',
           '/about',
           '/contact',

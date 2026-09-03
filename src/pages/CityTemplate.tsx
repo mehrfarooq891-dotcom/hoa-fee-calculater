@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, useLocation, Link } from 'react-router-dom';
 import SEO from '@/src/components/SEO';
 import Header from '@/src/components/Header';
 
@@ -199,10 +199,15 @@ const citiesData: Record<string, CityConfig> = {
 };
 
 export default function CityTemplate() {
-  const { cityName = 'austin-texas' } = useParams<{ cityName: string }>();
+  const { cityName: paramCityName } = useParams<{ cityName?: string }>();
+  const location = useLocation();
+
+  // Extract slug from URL path if param is missing (e.g. /cities/houston-texas)
+  const pathSlug = location.pathname.replace(/^\/cities\/?/, '').replace(/\/$/, '');
+  const cityName = (paramCityName || pathSlug || 'austin-texas').toLowerCase().trim();
 
   // Fetch the city data or default to Austin
-  const cityData = citiesData[cityName.toLowerCase()] || citiesData['austin-texas'];
+  const cityData = citiesData[cityName] || citiesData['austin-texas'];
   const { cityName: displayCity, stateName: displayState, intro, tableData, faqs } = cityData;
 
   const pageSchema = {

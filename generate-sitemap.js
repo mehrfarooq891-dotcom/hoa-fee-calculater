@@ -21,6 +21,8 @@ const staticRoutes = [
   { path: '/cities', changefreq: 'weekly', priority: '0.9' },
   { path: '/blog', changefreq: 'daily', priority: '0.9' },
   { path: '/privacy-policy', changefreq: 'yearly', priority: '0.3' },
+  { path: '/terms', changefreq: 'yearly', priority: '0.3' },
+  { path: '/terms-of-service', changefreq: 'yearly', priority: '0.3' },
   { path: '/disclaimer', changefreq: 'yearly', priority: '0.3' }
 ];
 

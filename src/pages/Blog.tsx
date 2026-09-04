@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import SEO from '@/src/components/SEO';
 import Header from '@/src/components/Header';
+import SocialIcons from '@/src/components/SocialIcons';
 import { Link } from 'react-router-dom';
 
 interface Article {
@@ -684,6 +685,10 @@ export default function Blog() {
               <li><Link to="/about" className="hover:text-accent transition-colors">About Us</Link></li>
               <li><Link to="/contact" className="hover:text-accent transition-colors">Contact</Link></li>
             </ul>
+            <div className="mt-6 pt-4 border-t border-white/10">
+              <span className="block text-xs uppercase tracking-widest text-white/60 mb-2.5 font-bold">Connect With Us</span>
+              <SocialIcons />
+            </div>
           </div>
           <div>
             <h3 className="text-white font-bold mb-6 uppercase text-xs tracking-widest">Legal</h3>

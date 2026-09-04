@@ -1,6 +1,7 @@
 import React from 'react';
 import SEO from '@/src/components/SEO';
 import Header from '@/src/components/Header';
+import SocialIcons from '@/src/components/SocialIcons';
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
 
@@ -133,7 +134,10 @@ export default function Contact() {
               HOA<span className="text-accent">Calculator</span>.com
             </span>
           </Link>
-          <div className="text-xs uppercase tracking-widest">Austin • Miami • Los Angeles</div>
+          <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
+            <div className="text-xs uppercase tracking-widest opacity-80">Austin • Miami • Los Angeles</div>
+            <SocialIcons />
+          </div>
         </div>
       </footer>
     </div>

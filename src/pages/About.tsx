@@ -1,6 +1,7 @@
 import React from 'react';
 import SEO from '@/src/components/SEO';
 import Header from '@/src/components/Header';
+import SocialIcons from '@/src/components/SocialIcons';
 import { Link } from 'react-router-dom';
 
 export default function About() {
@@ -277,6 +278,10 @@ export default function About() {
               <li><Link to="/privacy-policy" className="hover:text-accent transition-colors">Privacy Policy</Link></li>
               <li><Link to="/disclaimer" className="hover:text-accent transition-colors">Disclaimer</Link></li>
             </ul>
+            <div className="mt-6 pt-4 border-t border-white/10">
+              <span className="block text-xs uppercase tracking-widest text-white/60 mb-2.5 font-bold">Connect With Us</span>
+              <SocialIcons />
+            </div>
           </div>
         </div>
       </footer>

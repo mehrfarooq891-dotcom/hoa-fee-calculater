@@ -1,6 +1,7 @@
 import React from 'react';
 import SEO from '@/src/components/SEO';
 import Header from '@/src/components/Header';
+import SocialIcons from '@/src/components/SocialIcons';
 import { Link } from 'react-router-dom';
 
 export default function Compare() {
@@ -91,7 +92,8 @@ export default function Compare() {
       </main>
 
       <footer className="bg-primary py-20 px-6 text-white/75">
-        <div className="max-w-7xl mx-auto text-center">
+        <div className="max-w-7xl mx-auto flex flex-col items-center gap-4 text-center">
+          <SocialIcons />
           <p>© 2026 HOACalculator.com — Empowering US Homebuyers.</p>
         </div>
       </footer>

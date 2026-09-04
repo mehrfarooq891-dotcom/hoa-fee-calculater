@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react';
 import SEO from '@/src/components/SEO';
 import Header from '@/src/components/Header';
+import SocialIcons from '@/src/components/SocialIcons';
 import { useParams, Link } from 'react-router-dom';
 import { statesData } from '@/src/data/statesData';
 
@@ -251,7 +252,10 @@ export default function StateTemplate() {
               HOA<span className="text-accent">Calculator</span>.com
             </span>
           </Link>
-          <p className="text-sm font-sans">© 2026 All Rights Reserved. Data for {displayName} updated April 2026.</p>
+          <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
+            <p className="text-sm font-sans">© 2026 All Rights Reserved. Data for {displayName} updated April 2026.</p>
+            <SocialIcons />
+          </div>
         </div>
       </footer>
     </div>

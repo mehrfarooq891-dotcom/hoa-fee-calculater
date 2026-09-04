@@ -2,6 +2,7 @@ import React, { Suspense } from 'react';
 import { useParams, useLocation, Link } from 'react-router-dom';
 import SEO from '@/src/components/SEO';
 import Header from '@/src/components/Header';
+import SocialIcons from '@/src/components/SocialIcons';
 
 const Calculator = React.lazy(() => import('@/src/components/Calculator'));
 
@@ -375,6 +376,10 @@ export default function CityTemplate() {
               <li><Link to="/blog" className="hover:text-accent transition-colors">HOA Articles</Link></li>
               <li><Link to="/contact" className="hover:text-accent transition-colors">Contact Support</Link></li>
             </ul>
+            <div className="mt-6 pt-4 border-t border-white/10">
+              <span className="block text-xs uppercase tracking-widest text-white/60 mb-2.5 font-bold">Connect With Us</span>
+              <SocialIcons />
+            </div>
           </div>
           <div>
             <h4 className="text-white font-bold mb-6 uppercase text-xs tracking-widest">Legal</h4>

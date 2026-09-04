@@ -1,6 +1,7 @@
 import React from 'react';
 import SEO from '@/src/components/SEO';
 import Header from '@/src/components/Header';
+import SocialIcons from '@/src/components/SocialIcons';
 import { Link } from 'react-router-dom';
 
 function LegalHeader() {
@@ -41,6 +42,10 @@ function LegalFooter() {
             <li><Link to="/contact" className="hover:text-accent transition-colors">Contact Support</Link></li>
             <li><Link to="/about" className="hover:text-accent transition-colors">About Us</Link></li>
           </ul>
+          <div className="mt-6 pt-4 border-t border-white/10">
+            <span className="block text-xs uppercase tracking-widest text-white/60 mb-2.5 font-bold">Connect With Us</span>
+            <SocialIcons />
+          </div>
         </div>
         <div>
           <h4 className="text-white font-bold mb-6 uppercase text-xs tracking-widest">Legal</h4>

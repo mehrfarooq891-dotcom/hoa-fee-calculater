@@ -1,6 +1,7 @@
 import React from 'react';
 import SEO from '@/src/components/SEO';
 import Header from '@/src/components/Header';
+import SocialIcons from '@/src/components/SocialIcons';
 import { Link, useLocation } from 'react-router-dom';
 
 interface BlogArticleLayoutProps {
@@ -227,6 +228,9 @@ export default function BlogArticleLayout({
                 HOA<span className="text-accent">Calculator</span>.com
               </span>
             </Link>
+          </div>
+          <div className="flex justify-center mb-4">
+            <SocialIcons />
           </div>
           <p className="text-sm">© 2026 HOACalculator.com — Expert Analysis for All 50 States.</p>
         </div>

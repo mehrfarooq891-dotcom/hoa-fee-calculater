@@ -4,6 +4,7 @@ import BlogArticleLayout from '@/src/components/BlogArticleLayout';
 
 export default function CondoFeesVsHOAFeesArticle() {
   const relatedLinks = [
+    { label: "Average Condo Fees: Breakdown & National Averages", to: "/blog/average-condo-fees" },
     { label: "HOA Fees vs Condo Fees: Key Differences Explained", to: "/blog/hoa-vs-condo-fee" },
     { label: "Average HOA Fees by State: 2026 National Report", to: "/blog/average-hoa-fees-by-state" },
     { label: "What is an HOA Fee? Complete Guide 2026", to: "/blog/what-is-hoa-fee" },

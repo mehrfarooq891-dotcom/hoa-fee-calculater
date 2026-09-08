@@ -18,7 +18,7 @@ export default function FloridaHOAFeesArticle() {
       "@type": "Person",
       "name": "HOA Research Team",
       "jobTitle": "Real Estate Financial Analyst",
-      "url": "https://hoafeecalculator.com/about"
+      "url": "https://www.hoafeecalculator.com/about"
     }
   };
 
@@ -92,7 +92,7 @@ export default function FloridaHOAFeesArticle() {
                 Florida holds a striking real estate distinction that surprises many newcomers: the Sunshine State is home to the highest concentration of homeowners association (HOA) and condominium communities per capita in the entire United States. With over 48,000 active community associations representing upwards of 9.6 million residents, managed communities are not just an option in Florida—they are the default vehicle of modern residential homeownership.
               </p>
               <p>
-                From manicured golf courses in Palm Beach county to master-planned golf layouts in Orlando, buying a home or condominium unit in Florida almost guarantees you will find yourself paying recurring fees. These fees quietly dictate your overall budget. However, in recent years, <strong className="text-primary font-bold"><a href="https://hoafeecalculator.com/" className="text-accent underline hover:text-accent/80 transition-colors">HOA fees</a> Florida</strong> have undergone a dramatic structural transformation. 
+                From manicured golf courses in Palm Beach county to master-planned golf layouts in Orlando, buying a home or condominium unit in Florida almost guarantees you will find yourself paying recurring fees. These fees quietly dictate your overall budget. However, in recent years, <strong className="text-primary font-bold"><a href="https://www.hoafeecalculator.com/" className="text-accent underline hover:text-accent/80 transition-colors">HOA fees</a> Florida</strong> have undergone a dramatic structural transformation. 
               </p>
               <p>
                 Under new mandates enacted by state lawmakers, millions of Floridian property owners are waking up to climbing regular dues, unexpected special assessments, and complex structural studies. Facing skyrocketing insurance coverage rates alongside zeroed-out reserve limitations, buyers today are entering a landscape vastly different from that of five years ago.
@@ -267,7 +267,7 @@ export default function FloridaHOAFeesArticle() {
                 6. Estimate Your True Florida HOA Cost Before Signing
               </h2>
               <p>
-                A monthly HOA fee is not a fixed utility charge. In Florida, dues grow to match building wear, rising wages, and escalating commercial insurance rates. Even if a $300 monthly fee fits your current lifestyle, a 5% annual increase will push that fee to over $480 in ten years, adding thousands of dollars to your holding costs.
+                A monthly HOA fee is not a fixed utility charge. In Florida, dues grow to match building wear, rising wages, and escalating commercial insurance rates (see our urgent guide on <Link to="/blog/hoa-insurance-not-renewed" className="text-accent underline font-bold">what to do if your HOA insurance is not renewed or dropped</Link>). Even if a $300 monthly fee fits your current lifestyle, a 5% annual increase will push that fee to over $480 in ten years, adding thousands of dollars to your holding costs.
               </p>
               <p>
                 Before finalizing your real estate deal, use our complimentary <Link to="/" className="text-accent hover:underline font-bold">HOA fee calculator</Link> directly on the home page. By inputting your purchase price, regular monthly dues, mortgage terms, and anticipated inflation adjustments, you can map out a perfect year-by-year cost schedule.
@@ -293,7 +293,7 @@ export default function FloridaHOAFeesArticle() {
                 Use our free HOA Fee Calculator to estimate your true lifetime HOA expenses — with year-by-year breakdown.
               </p>
               <a 
-                href="https://hoafeecalculator.com/" 
+                href="https://www.hoafeecalculator.com/" 
                 className="inline-flex items-center bg-primary hover:bg-primary/95 text-white font-bold py-3.5 px-6 rounded-full transition-all active:scale-95 text-sm shadow-sm"
               >
                 Calculate Now →

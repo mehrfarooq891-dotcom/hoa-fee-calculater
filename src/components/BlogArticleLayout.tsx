@@ -105,7 +105,7 @@ export default function BlogArticleLayout({
       "@type": "Person",
       "name": "HOA Research Team",
       "jobTitle": "Real Estate Financial Analyst",
-      "url": "https://hoafeecalculator.com/about"
+      "url": "https://www.hoafeecalculator.com/about"
     }
   };
 
@@ -158,7 +158,7 @@ export default function BlogArticleLayout({
                 Use our free HOA Fee Calculator to estimate your true lifetime HOA expenses — with year-by-year breakdown.
               </p>
               <a 
-                href="https://hoafeecalculator.com/" 
+                href="https://www.hoafeecalculator.com/" 
                 className="inline-flex items-center bg-primary hover:bg-primary/95 text-white font-bold py-3.5 px-6 rounded-full transition-all active:scale-95 text-sm shadow-sm"
               >
                 Calculate Now →

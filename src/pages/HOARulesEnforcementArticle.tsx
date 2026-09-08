@@ -4,6 +4,7 @@ import BlogArticleLayout from '@/src/components/BlogArticleLayout';
 
 export default function HOARulesEnforcementArticle() {
   const relatedLinks = [
+    { label: "HOA Fined Me Overnight: Step-by-Step Dispute Strategy", to: "/blog/hoa-fined-me-overnight" },
     { label: "What Happens If You Don't Pay HOA Fees? The Full Legal Picture", to: "/blog/dont-pay-hoa-fees" },
     { label: "Can an HOA Foreclose on Your Home? State-by-State Rules", to: "/blog/hoa-foreclosure" },
     { label: "Back to Blog Insights", to: "/blog" }
@@ -26,12 +27,12 @@ export default function HOARulesEnforcementArticle() {
       "name": "HOACalculator.com",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://hoafeecalculator.com/hoa_calculator_logo.svg"
+        "url": "https://www.hoafeecalculator.com/hoa_calculator_logo.svg"
       }
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://hoafeecalculator.com/blog/hoa-rules-enforcement"
+      "@id": "https://www.hoafeecalculator.com/blog/hoa-rules-enforcement"
     }
   };
 

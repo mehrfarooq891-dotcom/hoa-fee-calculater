@@ -26,7 +26,7 @@ export default function QuestionsBeforeBuyingHOAArticle() {
       "name": "HOACalculator.com",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://hoafeecalculator.com/hoa_calculator_logo.svg"
+        "url": "https://www.hoafeecalculator.com/hoa_calculator_logo.svg"
       }
     },
     "mainEntityOfPage": {

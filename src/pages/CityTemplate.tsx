@@ -387,7 +387,7 @@ export default function CityTemplate() {
               <li><Link to="/privacy-policy" className="hover:text-accent transition-colors">Privacy Policy</Link></li>
               <li><Link to="/terms" className="hover:text-accent transition-colors">Terms of Service</Link></li>
               <li><Link to="/disclaimer" className="hover:text-accent transition-colors">Disclaimer</Link></li>
-              <li><Link to="/sitemap" className="hover:text-accent transition-colors">Sitemap</Link></li>
+              <li><a href="/sitemap.xml" className="hover:text-accent transition-colors">Sitemap</a></li>
             </ul>
           </div>
         </div>

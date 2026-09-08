@@ -36,7 +36,7 @@ export default function SEO({
   let canonicalUrl = '';
   if (canonical) {
     if (canonical.startsWith('http')) {
-      canonicalUrl = canonical.replace('https://hoafeecalculator.com', 'https://www.hoafeecalculator.com');
+      canonicalUrl = canonical.replace('https://www.hoafeecalculator.com', 'https://www.hoafeecalculator.com');
     } else {
       const cleanCanonical = canonical.startsWith('/') ? canonical : `/${canonical}`;
       canonicalUrl = `https://www.hoafeecalculator.com${cleanCanonical}`;

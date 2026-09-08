@@ -123,11 +123,88 @@ cities.forEach(city => {
   </url>`);
 });
 
-// XML Content construction
+// XML Content construction for main sitemap
 const sitemapContent = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.join('\n')}
 </urlset>
+`;
+
+// Build sub-sitemaps
+const pageUrls = staticRoutes.map(route => `  <url>
+    <loc>${BASE_URL}${route.path}</loc>
+    <lastmod>${TODAY}</lastmod>
+    <changefreq>${route.changefreq}</changefreq>
+    <priority>${route.priority}</priority>
+  </url>`).join('\n');
+
+const pageSitemapContent = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${pageUrls}
+</urlset>
+`;
+
+const blogUrls = blogSlugs.map(slug => {
+  const cleanSlug = slug.startsWith('/') ? slug : `/${slug}`;
+  return `  <url>
+    <loc>${BASE_URL}${cleanSlug}</loc>
+    <lastmod>${TODAY}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>`;
+}).join('\n');
+
+const blogSitemapContent = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${blogUrls}
+</urlset>
+`;
+
+const stateUrls = states.map(state => `  <url>
+    <loc>${BASE_URL}/states/${state}</loc>
+    <lastmod>${TODAY}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>`).join('\n');
+
+const stateSitemapContent = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${stateUrls}
+</urlset>
+`;
+
+const cityUrls = cities.map(city => `  <url>
+    <loc>${BASE_URL}/cities/${city}</loc>
+    <lastmod>${TODAY}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>`).join('\n');
+
+const citySitemapContent = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${cityUrls}
+</urlset>
+`;
+
+const sitemapIndexContent = `<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>${BASE_URL}/page-sitemap.xml</loc>
+    <lastmod>${TODAY}</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>${BASE_URL}/blog-sitemap.xml</loc>
+    <lastmod>${TODAY}</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>${BASE_URL}/state-sitemap.xml</loc>
+    <lastmod>${TODAY}</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>${BASE_URL}/city-sitemap.xml</loc>
+    <lastmod>${TODAY}</lastmod>
+  </sitemap>
+</sitemapindex>
 `;
 
 // Helper to ensure directory exists
@@ -140,25 +217,36 @@ function ensureDirectoryExistence(filePath) {
   fs.mkdirSync(dirname);
 }
 
-// Write targets
-const targets = [
-  path.join(__dirname, 'public', 'sitemap.xml'),
-  path.join(__dirname, 'sitemap.xml'),
-  path.join(__dirname, 'dist', 'sitemap.xml')
+// Write all generated files to destinations
+const sitemapsToWrite = [
+  { name: 'sitemap.xml', content: sitemapContent },
+  { name: 'sitemap_index.xml', content: sitemapIndexContent },
+  { name: 'page-sitemap.xml', content: pageSitemapContent },
+  { name: 'blog-sitemap.xml', content: blogSitemapContent },
+  { name: 'state-sitemap.xml', content: stateSitemapContent },
+  { name: 'city-sitemap.xml', content: citySitemapContent }
 ];
 
-targets.forEach(target => {
-  if (target.includes('dist') && !fs.existsSync(path.dirname(target))) {
-    // Skip writing to dist if it doesn't exist yet (will write when compilation / build happens)
-    return;
-  }
-  try {
-    ensureDirectoryExistence(target);
-    fs.writeFileSync(target, sitemapContent, 'utf8');
-    console.log(`Successfully generated dynamic sitemap at: ${target}`);
-  } catch (error) {
-    console.error(`Failed to write sitemap to ${target}:`, error);
-  }
+const destinationDirs = [
+  path.join(__dirname, 'public'),
+  path.join(__dirname),
+  path.join(__dirname, 'dist')
+];
+
+sitemapsToWrite.forEach(({ name, content }) => {
+  destinationDirs.forEach(dir => {
+    if (dir.includes('dist') && !fs.existsSync(dir)) {
+      return;
+    }
+    const target = path.join(dir, name);
+    try {
+      ensureDirectoryExistence(target);
+      fs.writeFileSync(target, content, 'utf8');
+      console.log(`Generated ${name} at: ${target}`);
+    } catch (error) {
+      console.error(`Failed to write ${name} to ${target}:`, error);
+    }
+  });
 });
 
 console.log('Dynamic sitemap generation complete.');

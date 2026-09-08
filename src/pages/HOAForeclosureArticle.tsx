@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default function HOAForeclosureArticle() {
   const relatedLinks = [
+    { label: "Inherited a House with Unpaid HOA Fees? Legal Options", to: "/blog/inherited-house-unpaid-hoa-fees" },
     { label: "What Happens If You Don't Pay HOA Fees? The Full Legal Picture", to: "/blog/dont-pay-hoa-fees" },
     { label: "How to Fight an HOA Fee Increase: A Step-by-Step Checklist", to: "/blog/fight-hoa-fee-increase" },
     { label: "How Much HOA Fee is Too Much? Analyzing Monthly Assessments", to: "/blog/how-much-hoa-fee-too-much" },
@@ -315,7 +316,7 @@ export default function HOAForeclosureArticle() {
               to="/" 
               className="bg-accent hover:bg-accent/90 text-white font-bold px-6 py-3 rounded-lg text-sm transition-all shadow-md inline-block uppercase tracking-wider"
             >
-              Analyze <a href="https://hoafeecalculator.com/" className="text-accent underline hover:text-accent/80 transition-colors">HOA Fees</a> Now
+              Analyze <a href="https://www.hoafeecalculator.com/" className="text-accent underline hover:text-accent/80 transition-colors">HOA Fees</a> Now
             </Link>
             <Link 
               to="/compare" 

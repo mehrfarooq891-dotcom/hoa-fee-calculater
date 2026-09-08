@@ -21,7 +21,7 @@ export default function DontPayHOAFeesArticle() {
     >
       <div className="space-y-6">
         <p className="lead text-xl font-medium text-primary border-l-4 border-accent pl-4 italic my-6">
-          <strong>Top-of-Funnel Overview:</strong> What actually happens when you miss or withhold an <a href="https://hoafeecalculator.com/" className="text-accent underline hover:text-accent/80 transition-colors">HOA fee</a> payment? A single $200 past-due balance can snowball into $15,000 in legal fees and property foreclosure.
+          <strong>Top-of-Funnel Overview:</strong> What actually happens when you miss or withhold an <a href="https://www.hoafeecalculator.com/" className="text-accent underline hover:text-accent/80 transition-colors">HOA fee</a> payment? A single $200 past-due balance can snowball into $15,000 in legal fees and property foreclosure.
         </p>
 
         {/* Funnel Navigation Box */}

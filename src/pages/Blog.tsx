@@ -693,9 +693,9 @@ export default function Blog() {
           <div>
             <h3 className="text-white font-bold mb-6 uppercase text-xs tracking-widest">Legal</h3>
             <ul className="space-y-4 text-sm">
-              <li><Link to="/privacy" className="hover:text-accent transition-colors">Privacy Policy</Link></li>
+              <li><Link to="/privacy-policy" className="hover:text-accent transition-colors">Privacy Policy</Link></li>
               <li><Link to="/terms" className="hover:text-accent transition-colors">Terms of Service</Link></li>
-              <li><Link to="/legal" className="hover:text-accent transition-colors">Financial Disclaimer</Link></li>
+              <li><Link to="/disclaimer" className="hover:text-accent transition-colors">Financial Disclaimer</Link></li>
             </ul>
           </div>
         </div>

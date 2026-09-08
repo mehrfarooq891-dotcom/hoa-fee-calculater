@@ -13,7 +13,7 @@ export default function About() {
     "publisher": {
       "@type": "Organization",
       "name": "HOACalculator.com",
-      "url": "https://hoafeecalculator.com/"
+      "url": "https://www.hoafeecalculator.com/"
     }
   };
 

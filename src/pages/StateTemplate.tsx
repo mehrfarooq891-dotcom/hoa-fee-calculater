@@ -14,6 +14,79 @@ interface StateConfig {
   laws: string[];
 }
 
+const STATE_BLOG_GUIDES: Record<string, { url: string; title: string; desc: string }> = {
+  arizona: {
+    url: "/blog/hoa-fees-arizona",
+    title: "Arizona HOA Fees: Laws, County Averages & Buyer's Guide",
+    desc: "Read our comprehensive deep-dive into A.R.S. Title 33 regulations, Maricopa vs. Pima County dues, and desert pool/AC reserve requirements."
+  },
+  california: {
+    url: "/blog/hoa-fees-california",
+    title: "California HOA Fees: Davis-Stirling Act & Cost Analysis",
+    desc: "In-depth analysis of Davis-Stirling Civil Code caps, 20% annual increase limits, and coastal condo reserve fund health."
+  },
+  texas: {
+    url: "/blog/hoa-fees-texas",
+    title: "Texas HOA Fees: Complete City-by-City Legal & Financial Guide",
+    desc: "Texas Property Code Chapter 209 rules, North Dallas vs. West Houston vs. Austin master-planned amenities, and assessment limits."
+  },
+  florida: {
+    url: "/blog/hoa-fees-florida",
+    title: "Florida HOA & Condo Fees: Post-SB 4-D Milestone Inspection Guide",
+    desc: "Critical guide to mandatory structural integrity reserve studies, hurricane insurance spikes, and special assessment prevention."
+  },
+  georgia: {
+    url: "/blog/hoa-fees-georgia",
+    title: "Georgia HOA Fees: POA Act & Metro Atlanta Cost Guide",
+    desc: "Understanding the Georgia Property Owners' Association Act, voluntary vs. statutory HOAs, and Atlanta club amenities."
+  },
+  illinois: {
+    url: "/blog/hoa-fees-illinois",
+    title: "Illinois HOA & Condo Dues: Chicago High-Rise & Suburb Guide",
+    desc: "Section 18.5 master associations, central heating utility reserves, and Cook County structural requirements."
+  },
+  nevada: {
+    url: "/blog/hoa-fees-nevada",
+    title: "Nevada HOA Fees: NRS 116 Rules & Las Vegas Valley Guide",
+    desc: "NRS 116 super-priority liens, Ombudsman dispute arbitration, and master association fee layering in Clark County."
+  },
+  "new-york": {
+    url: "/blog/average-hoa-fees-new-york",
+    title: "New York HOA & Condo Common Charges Guide",
+    desc: "NYC condominium common charges vs. co-op maintenance fees, local laws, and tax abatement expirations."
+  },
+  "north-carolina": {
+    url: "/blog/hoa-fees-north-carolina",
+    title: "North Carolina HOA Fees: Planned Community Act Guide",
+    desc: "NCGS Chapter 47F requirements, Charlotte vs. Raleigh dues, and retention pond capital reserve budgeting."
+  },
+  virginia: {
+    url: "/blog/hoa-fees-virginia",
+    title: "Virginia HOA Fees: Property Owners' Association Act Guide",
+    desc: "Title 55.1 Chapter 18 regulations, Northern Virginia (NOVA) vs. Richmond fee trends, and resale disclosure package rights."
+  },
+  washington: {
+    url: "/blog/hoa-fees-washington-state",
+    title: "Washington State HOA Fees: WUCIOA & Pacific Northwest Guide",
+    desc: "RCW 64.90 (WUCIOA) mandatory reserve studies, Seattle King County dues, and moisture/earthquake remediation reserves."
+  },
+  colorado: {
+    url: "/blog/hoa-fees-colorado",
+    title: "Colorado HOA Fees: CCIOA & HB 22-1137 Guide",
+    desc: "HB 22-1137 collection and foreclosure restrictions, Denver metro median dues, and mountain snow removal budgeting."
+  },
+  tennessee: {
+    url: "/blog/hoa-fees-tennessee",
+    title: "Tennessee HOA Fees: Nashville & Memphis Homeowner Guide",
+    desc: "Navigating high-growth middle Tennessee dues, restrictive covenants, and property management oversight."
+  },
+  "new-jersey": {
+    url: "/blog/hoa-fees-new-jersey",
+    title: "New Jersey HOA Fees: PREDFDA & Radburn Law Guide",
+    desc: "Radburn election regulations, NJ DCA oversight, and commuter corridor townhouse association reserves."
+  }
+};
+
 const getStateData = (slug: string, displayName: string): StateConfig => {
   const normalized = slug.toLowerCase().trim();
   const stateRecord = statesData[normalized] || statesData['texas'];
@@ -35,6 +108,7 @@ export default function StateTemplate() {
 
   // Fetch data specifically for this state
   const stateData = getStateData(cleanSlug, displayName);
+  const stateGuide = STATE_BLOG_GUIDES[cleanSlug];
 
   const faqs = [
     {
@@ -150,6 +224,52 @@ export default function StateTemplate() {
                   <div className="bg-bg-light p-8 rounded-2xl border-l-4 border-accent italic mt-6 font-serif">
                     "Always review the 'Master Deed' and 'Bylaws' specific to your community. These documents often override general state guidelines regarding architectural controls and fine structures."
                   </div>
+
+                  {stateGuide ? (
+                    <div className="bg-gradient-to-br from-primary/5 via-accent/5 to-bg-light border-2 border-accent/30 rounded-2xl p-6 md:p-8 mt-10 shadow-sm not-prose">
+                      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+                        <div className="space-y-2">
+                          <span className="inline-block bg-accent/20 text-accent font-bold text-xs uppercase tracking-wider px-3 py-1 rounded-full">
+                            Featured Research Guide
+                          </span>
+                          <h3 className="text-2xl font-serif font-bold text-primary">
+                            {stateGuide.title}
+                          </h3>
+                          <p className="text-primary/80 text-sm md:text-base max-w-2xl leading-relaxed font-sans">
+                            {stateGuide.desc}
+                          </p>
+                        </div>
+                        <Link 
+                          to={stateGuide.url}
+                          className="inline-flex items-center justify-center bg-accent hover:bg-accent/90 text-white font-bold py-3.5 px-6 rounded-full text-sm transition-all whitespace-nowrap shadow-md hover:scale-105 active:scale-95"
+                        >
+                          Read Full Guide →
+                        </Link>
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="bg-bg-light border border-border rounded-2xl p-6 md:p-8 mt-10 not-prose">
+                      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+                        <div>
+                          <span className="inline-block bg-primary/10 text-primary font-bold text-xs uppercase tracking-wider px-3 py-1 rounded-full mb-2">
+                            National Benchmark
+                          </span>
+                          <h3 className="text-xl font-serif font-bold text-primary">
+                            How Do {displayName} HOA Fees Compare Nationally?
+                          </h3>
+                          <p className="text-primary/70 text-sm mt-1 font-sans">
+                            See how {displayName} stacks up against all 50 states in our nationwide fee and legislation report.
+                          </p>
+                        </div>
+                        <Link 
+                          to="/blog/average-hoa-fees-by-state"
+                          className="inline-flex items-center justify-center bg-primary hover:bg-primary/90 text-white font-bold py-3 px-6 rounded-full text-sm transition-all whitespace-nowrap"
+                        >
+                          View 50-State Ranking →
+                        </Link>
+                      </div>
+                    </div>
+                  )}
                 </div>
               </article>
 
@@ -200,6 +320,24 @@ export default function StateTemplate() {
             </div>
 
             <aside className="space-y-8">
+              {stateGuide && (
+                <div className="card bg-accent/10 border-2 border-accent/30 shadow-md">
+                  <span className="text-xs uppercase font-bold tracking-wider text-accent block mb-2">Detailed State Report</span>
+                  <h4 className="font-serif text-lg font-bold text-primary mb-2">
+                    {stateGuide.title}
+                  </h4>
+                  <p className="text-primary/75 text-xs font-sans leading-relaxed mb-4">
+                    {stateGuide.desc}
+                  </p>
+                  <Link 
+                    to={stateGuide.url}
+                    className="inline-flex items-center gap-1.5 text-accent font-bold hover:underline text-sm font-sans"
+                  >
+                    Read State Analysis →
+                  </Link>
+                </div>
+              )}
+
               <div className="card bg-primary text-white border-none">
                 <h4 className="font-serif text-xl font-bold mb-6 text-accent font-sans">Related State Guides</h4>
                 <ul className="space-y-4">
@@ -217,13 +355,47 @@ export default function StateTemplate() {
                 </ul>
               </div>
 
+              <div className="card shadow-md border border-border">
+                <h4 className="font-serif text-lg font-bold text-primary mb-4 font-sans">Essential Buyer Guides</h4>
+                <ul className="space-y-3 text-sm font-sans">
+                  <li>
+                    <Link to="/blog/hoa-reserve-fund" className="text-primary/80 hover:text-accent font-medium block">
+                      • HOA Reserve Fund Guide for Buyers
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/blog/questions-before-buying-hoa" className="text-primary/80 hover:text-accent font-medium block">
+                      • 10 Questions to Ask Before Buying
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/blog/hoa-document-red-flags" className="text-primary/80 hover:text-accent font-medium block">
+                      • Red Flags in HOA Resale Documents
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/blog/average-hoa-fees-by-state" className="text-primary/80 hover:text-accent font-medium block">
+                      • Average HOA Fees by State (Ranked)
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
               <div className="card shadow-lg border-none">
                 <div className="flex items-center gap-4 mb-6">
                    <div className="h-12 w-12 bg-accent/10 rounded-full flex items-center justify-center text-accent text-xl">💡</div>
                    <h4 className="font-serif text-xl font-bold text-primary">Expert Tip</h4>
                 </div>
                 <p className="text-primary opacity-70 leading-relaxed italic font-sans text-base">
-                  "In {displayName}, property values are highly tied to HOA financial health. A poorly managed reserve fund can lead to 'Special Assessments' that destroy your home equity overnight."
+                  "In {displayName}, property values are highly tied to HOA financial health. A poorly funded{' '}
+                  <Link to="/blog/hoa-reserve-fund" className="text-accent underline hover:text-accent/80 not-italic font-semibold">
+                    reserve fund
+                  </Link>{' '}
+                  can trigger five-figure{' '}
+                  <Link to="/blog/hoa-special-assessment" className="text-accent underline hover:text-accent/80 not-italic font-semibold">
+                    special assessments
+                  </Link>{' '}
+                  that destroy home equity overnight."
                 </p>
               </div>
             </aside>

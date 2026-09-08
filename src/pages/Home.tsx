@@ -553,7 +553,7 @@ export default function Home() {
               <li><Link to="/privacy-policy" className="hover:text-accent transition-colors">Privacy Policy</Link></li>
               <li><Link to="/terms" className="hover:text-accent transition-colors">Terms of Service</Link></li>
               <li><Link to="/disclaimer" className="hover:text-accent transition-colors">Disclaimer</Link></li>
-              <li><Link to="/sitemap" className="hover:text-accent transition-colors">Sitemap</Link></li>
+              <li><a href="/sitemap.xml" className="hover:text-accent transition-colors">Sitemap</a></li>
             </ul>
           </div>
         </div>
@@ -588,13 +588,13 @@ export default function Home() {
             <div className="relative mb-6">
               <textarea 
                 readOnly
-                value={`<iframe src="https://hoafeecalculator.com" width="100%" height="600" frameborder="0"></iframe>`}
+                value={`<iframe src="https://www.hoafeecalculator.com" width="100%" height="600" frameborder="0"></iframe>`}
                 className="w-full h-32 bg-bg-light border border-border rounded-xl p-4 font-mono text-xs text-primary/80 focus:outline-none focus:ring-1 focus:ring-accent"
                 onClick={(e) => (e.target as HTMLTextAreaElement).select()}
               />
               <button 
                 onClick={() => {
-                  navigator.clipboard.writeText(`<iframe src="https://hoafeecalculator.com" width="100%" height="600" frameborder="0"></iframe>`);
+                  navigator.clipboard.writeText(`<iframe src="https://www.hoafeecalculator.com" width="100%" height="600" frameborder="0"></iframe>`);
                   setCopied(true);
                   setTimeout(() => setCopied(false), 2000);
                 }}

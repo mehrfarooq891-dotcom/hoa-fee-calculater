@@ -60,7 +60,7 @@ function getSlugFromTitle(title: string): string {
   if (cleanTitle.includes("annual budget")) return "/blog/hoa-annual-budget";
   if (cleanTitle.includes("no hoa laws")) return "/blog/states-no-hoa-laws";
   if (cleanTitle.includes("calculator guide")) return "/blog/hoa-fee-calculator-guide";
-  if (cleanTitle.includes("texas guide")) return "/blog/hoa-fees-texas-guide";
+  if (cleanTitle.includes("texas")) return "/blog/hoa-fees-texas";
   if (cleanTitle.includes("new york")) return "/blog/average-hoa-fees-new-york";
   if (cleanTitle.includes("highest hoa fees")) return "/blog/highest-hoa-fees-by-state";
   if (cleanTitle.includes("increase limits")) return "/blog/hoa-fee-increase-limits";

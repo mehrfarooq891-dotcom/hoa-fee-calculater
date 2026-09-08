@@ -1,6 +1,13 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/blog/hoa-fees-texas-guide",
+      "destination": "/blog/hoa-fees-texas",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",

@@ -378,13 +378,6 @@ const ALL_ARTICLES: Article[] = [
     slug: "/blog/townhouse-hoa-fees"
   },
   {
-    title: "HOA Fees in Texas: The Complete 2026 Homeowner's Legal & Financial Guide",
-    excerpt: "Master HOA fees in Texas. Learn about Dallas, Houston, and Austin averages, critical protections under Texas Property Code Chapter 209, and rules for foreclosure.",
-    date: "May 28, 2026",
-    category: "State Guides",
-    slug: "/blog/hoa-fees-texas-guide"
-  },
-  {
     title: "HOA Fees vs Condo Fees: Key Differences Explained",
     excerpt: "Buyers confuse HOA fees and condo fees constantly. Discover clear legal distinctions, typical coverage limits, and national cost comparisons.",
     date: "May 20, 2026",

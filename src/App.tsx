@@ -59,7 +59,6 @@ const WhatDoHOAFeesCoverArticle = React.lazy(() => import('./pages/WhatDoHOAFees
 const HOAAnnualBudgetArticle = React.lazy(() => import('./pages/HOAAnnualBudgetArticle'));
 const StatesNoHOALawsArticle = React.lazy(() => import('./pages/StatesNoHOALawsArticle'));
 const HOAFeeCalculatorGuideArticle = React.lazy(() => import('./pages/HOAFeeCalculatorGuideArticle'));
-const HOAFeesTexasGuideArticle = React.lazy(() => import('./pages/HOAFeesTexasGuideArticle'));
 const AverageHOAFeesNewYorkArticle = React.lazy(() => import('./pages/AverageHOAFeesNewYorkArticle'));
 const HOAThreateningForeclosureGuideArticle = React.lazy(() => import('./pages/HOAThreateningForeclosureGuideArticle'));
 const CantAffordSpecialAssessmentArticle = React.lazy(() => import('./pages/CantAffordSpecialAssessmentArticle'));
@@ -164,7 +163,7 @@ function DynamicBlogArticle() {
     case 'hoa-fee-calculator-guide':
       return <HOAFeeCalculatorGuideArticle />;
     case 'hoa-fees-texas-guide':
-      return <HOAFeesTexasGuideArticle />;
+      return <Navigate to="/blog/hoa-fees-texas" replace />;
     case 'average-hoa-fees-new-york':
       return <AverageHOAFeesNewYorkArticle />;
     case 'highest-hoa-fees-by-state':
@@ -278,7 +277,7 @@ export const routes: RouteRecord[] = [
       { path: 'blog/hoa-annual-budget', element: <HOAAnnualBudgetArticle />, loader: createArticleLoader('hoa-annual-budget') },
       { path: 'blog/states-no-hoa-laws', element: <StatesNoHOALawsArticle />, loader: createArticleLoader('states-no-hoa-laws') },
       { path: 'blog/hoa-fee-calculator-guide', element: <HOAFeeCalculatorGuideArticle />, loader: createArticleLoader('hoa-fee-calculator-guide') },
-      { path: 'blog/hoa-fees-texas-guide', element: <HOAFeesTexasGuideArticle />, loader: createArticleLoader('hoa-fees-texas-guide') },
+      { path: 'blog/hoa-fees-texas-guide', element: <Navigate to="/blog/hoa-fees-texas" replace /> },
       { path: 'blog/average-hoa-fees-new-york', element: <AverageHOAFeesNewYorkArticle />, loader: createArticleLoader('average-hoa-fees-new-york') },
       { path: 'blog/highest-hoa-fees-by-state', element: <HighestHOAFeesByStateArticle />, loader: createArticleLoader('highest-hoa-fees-by-state') },
       { path: 'blog/hoa-fee-increase-limits', element: <HOAFeeIncreaseLimitsArticle />, loader: createArticleLoader('hoa-fee-increase-limits') },

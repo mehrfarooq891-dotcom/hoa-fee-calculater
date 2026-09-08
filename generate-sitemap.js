@@ -49,6 +49,7 @@ try {
     while ((match = slugRegex.exec(blogContent)) !== null) {
       blogSlugs.push(match[1]);
     }
+    blogSlugs = blogSlugs.filter(slug => slug !== '/blog/hoa-fees-texas-guide');
     console.log(`Found ${blogSlugs.length} blog posts in Blog.tsx:`, blogSlugs);
   } else {
     console.warn(`Warning: Blog.tsx not found at ${blogFilePath}. Using static fallbacks for blogs.`);

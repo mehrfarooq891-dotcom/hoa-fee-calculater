@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import SEO from '@/src/components/SEO';
 import Header from '@/src/components/Header';
 import SocialIcons from '@/src/components/SocialIcons';
+import QuickAnswerBox from '@/src/components/QuickAnswerBox';
 import { Link } from 'react-router-dom';
 
 type Region = 'Northeast' | 'Midwest' | 'South' | 'West';
@@ -67,6 +68,60 @@ const ALL_STATES: StateItem[] = [
 
 const REGIONS: ('All' | Region)[] = ['All', 'Northeast', 'South', 'Midwest', 'West'];
 
+const statesPageSchema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "HOA Fees by State — All 50 US States Directory",
+    "description": "Comprehensive directory of HOA fee data, monthly averages, legal caps, and homeowners association laws across all 50 US states.",
+    "url": "https://www.hoafeecalculator.com/states",
+    "mainEntity": {
+      "@type": "ItemList",
+      "numberOfItems": 50,
+      "itemListElement": ALL_STATES.slice(0, 15).map((st, idx) => ({
+        "@type": "ListItem",
+        "position": idx + 1,
+        "name": `${st.name} HOA Fees and Laws`,
+        "url": `https://www.hoafeecalculator.com/states/${st.slug}`
+      }))
+    },
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".aeo-quick-answer"]
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Which US states have the highest average HOA fees?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Hawaii ($800–$1,500/mo), New York ($600–$1,400/mo), California ($350–$900/mo), Florida ($400–$950/mo), and New Jersey have the highest average HOA fees in the United States, driven by master hazard insurance premiums, full-service building staff, and statutory structural reserve requirements."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which US states have the lowest average HOA fees?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Inland and southern states including Arkansas, Indiana, Mississippi, West Virginia, and Iowa have the lowest average monthly HOA dues, typically ranging from $50 to $180 per month for standard single-family subdivisions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do all 50 states regulate HOA fee increases?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Only a handful of states (such as California with a 20% annual regular fee cap and Arizona with a 20% cap) enforce statutory limits on annual fee increases. Most states allow HOA boards to set dues according to annual budget needs specified in their recorded CC&Rs."
+        }
+      }
+    ]
+  }
+];
+
 export default function States() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedRegion, setSelectedRegion] = useState<'All' | Region>('All');
@@ -85,6 +140,7 @@ export default function States() {
         title="HOA Fees by State | All 50 US States | HOA Fee Calculator"
         description="Explore HOA fee data, monthly averages, legal limits, and homeowners association laws across all 50 US states for 2026."
         canonical="/states"
+        schema={statesPageSchema}
       />
 
       {/* Header */}
@@ -93,13 +149,28 @@ export default function States() {
       <main className="flex-1 pt-32 pb-20 px-6">
         <div className="max-w-7xl mx-auto">
           {/* Header Section */}
-          <div className="text-center mb-10">
+          <div className="text-center mb-6">
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-4">
               HOA Fees by State — All 50 US States
             </h1>
-            <p className="text-lg md:text-xl text-primary/70 max-w-2xl mx-auto leading-relaxed mb-6">
+            <p className="text-lg md:text-xl text-primary/70 max-w-2xl mx-auto leading-relaxed">
               Browse average monthly fees, legal guidelines, and community regulations for all 50 US states updated for 2026.
             </p>
+          </div>
+
+          {/* AEO Quick Answer Box */}
+          <div className="max-w-4xl mx-auto mb-10">
+            <QuickAnswerBox
+              title="Quick Answer: HOA Fees by State Directory"
+              answer="Average HOA fees across the United States typically range from $100 to $400+ per month for single-family homes and $300 to $1,000+ per month for condominiums, depending on geography and structural age. Hawaii ($800–$1,500/mo), New York ($600–$1,400/mo), California ($350–$900/mo), and Florida ($400–$950/mo) report the highest monthly HOA averages, driven by master building insurance, structural reserves, and staffing. Inland states like Arkansas, Indiana, and Iowa report the lowest average dues ($50–$180/mo). Use this 50-state directory to compare statutory laws, fee caps, and municipal benchmarks."
+              highlights={[
+                { label: "US Median", value: "$300 - $400 / mo" },
+                { label: "Highest States", value: "HI, NY, CA, FL" },
+                { label: "Lowest States", value: "AR, IN, MS, WV, IA" },
+                { label: "Coverage", value: "All 50 US States" }
+              ]}
+              className="not-prose"
+            />
           </div>
 
           {/* Cross-link to Cities Hub */}
@@ -216,7 +287,7 @@ export default function States() {
             <div className="relative z-10 max-w-2xl">
               <h2 className="text-2xl md:text-3xl font-serif font-bold mb-4">Why State HOA Data Matters</h2>
               <p className="opacity-80 leading-relaxed mb-6">
-                HOA fees vary dramatically across the United States. While the national median is roughly $300 to $400 per month, coastal states like Hawaii, New York, Florida, and California average significantly higher due to structural reserves, hazard insurance, and property taxes.
+                HOA fees vary dramatically across the United States. While the national median is roughly $300 to $400 per month (explore our full <Link to="/blog/average-hoa-fees-by-state" className="text-accent underline font-semibold hover:text-white transition-colors">average HOA fees by state dataset</Link> or the <Link to="/blog/highest-hoa-fees-by-state" className="text-accent underline font-semibold hover:text-white transition-colors">highest HOA fees by state ranking</Link>), coastal states like Hawaii, New York, Florida, and California average significantly higher due to structural reserves, hazard insurance, and property taxes. To understand homeowner protections, examine our comprehensive guide to <Link to="/blog/hoa-laws-by-state" className="text-accent underline font-semibold hover:text-white transition-colors">HOA laws by state</Link>.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="bg-white/10 p-4 rounded-2xl border border-white/10">

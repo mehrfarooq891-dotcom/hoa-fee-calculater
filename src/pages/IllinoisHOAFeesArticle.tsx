@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import BlogArticleLayout from '@/src/components/BlogArticleLayout';
+import QuickAnswerBox from '@/src/components/QuickAnswerBox';
 
 export default function IllinoisHOAFeesArticle() {
   const relatedLinks = [
@@ -10,30 +11,10 @@ export default function IllinoisHOAFeesArticle() {
     { label: "Back to Blog Insights", to: "/blog" }
   ];
 
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "HOA Fees in Illinois: Chicago Condos vs Suburban Townhouses",
-    "description": "An exhaustive guide to average HOA fees in Illinois. Compare high-rise Chicago condo fees with suburban townhome associations in Naperville and Schaumburg.",
-    "datePublished": "2026-06-27T08:00:00Z",
-    "dateModified": "2026-06-27T08:00:00Z",
-    "author": {
-      "@type": "Organization",
-      "name": "HOA Research Team",
-      "url": "https://www.hoafeecalculator.com/"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "HOACalculator.com",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.hoafeecalculator.com/favicon.svg"
-      }
-    },
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://www.hoafeecalculator.com/blog/hoa-fees-illinois"
-    }
+  const aboutEntity = {
+    "@type": "AdministrativeArea",
+    "name": "Illinois",
+    "sameAs": "https://en.wikipedia.org/wiki/Illinois"
   };
 
   return (
@@ -43,11 +24,21 @@ export default function IllinoisHOAFeesArticle() {
       category="Data"
       readTime="7 min read"
       date="June 27, 2026"
+      lastUpdatedDate="September 10, 2026"
       relatedLinks={relatedLinks}
+      aboutEntity={aboutEntity}
+      speakableSelector=".aeo-quick-answer"
     >
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      <QuickAnswerBox
+        title="Quick Answer: Illinois HOA Fees"
+        answer="Average HOA fees in Illinois range from $120 to $300 per month for suburban single-family subdivisions and townhomes in Naperville, Schaumburg, or Plainfield, and $400 to $1,000+ per month for Chicago condominiums (averaging $850/month in the Gold Coast or Streeterville). Illinois common-interest properties are governed by the Illinois Common Interest Community Association Act (CICAA / 765 ILCS 160) and the Illinois Condominium Property Act (ICPA / 765 ILCS 605). Key cost drivers include Chicago winter heating/boiler costs, vintage brick tuckpointing, elevator maintenance, and union doorman staffing."
+        highlights={[
+          { label: "Suburban Average", value: "$120 - $300 / mo" },
+          { label: "Chicago High-Rise", value: "$500 - $1,200 / mo" },
+          { label: "Vintage 3-Flats", value: "$250 - $550 / mo" },
+          { label: "Governing Law", value: "ICPA (765 ILCS 605)" }
+        ]}
+        className="my-6 not-prose"
       />
 
       <p className="lead text-xl text-primary font-medium border-l-4 border-accent pl-4 py-1 my-6 italic">
@@ -74,7 +65,7 @@ export default function IllinoisHOAFeesArticle() {
       </p>
 
       <p>
-        Meanwhile, the dense residential towers of Cook County operate on an entirely different scale. High-rise condominium associations face immense capital challenges, requiring massive monthly contributions to keep their heavy machinery and on-site labor fully funded. Homeowners in these dense structures pay to maintain advanced common elements, including central heating plant machinery, complex elevator banks, and 24-hour physical lobby security.
+        Meanwhile, the dense residential towers of Cook County operate on an entirely different scale. High-rise condominium associations face immense capital challenges, requiring massive monthly contributions to keep their heavy machinery and on-site labor fully funded. Homeowners in these dense structures pay to maintain advanced common elements, including central heating plant machinery, complex elevator banks, and 24-hour physical lobby security—similar to legacy buildings analyzed in our guide to <Link to="/blog/average-hoa-fees-new-york" className="text-accent underline font-bold hover:text-accent/80">New York HOA fees</Link>.
       </p>
 
       <p>
@@ -215,7 +206,7 @@ export default function IllinoisHOAFeesArticle() {
       </p>
 
       <p>
-        Despite these powerful collection mechanisms, the law also provides vital protections for buyers. The Condominium Property Act dictates that the board must hold an open, annual budget meeting where homeowners can review the proposed finances. Additionally, under Section 22.1 of the Act, sellers must provide a comprehensive disclosure package containing the current budget, reserve savings ratio, and any pending lawsuits. Understanding these legal structures ensures you can buy into any Illinois community with total peace of mind.
+        Despite these powerful collection mechanisms, the law also provides vital protections for buyers. The Condominium Property Act dictates that the board must hold an open, annual budget meeting where homeowners can review the proposed finances. Additionally, under Section 22.1 of the Act, sellers must provide a comprehensive disclosure package containing the current budget, reserve savings ratio, and any pending lawsuits. Understanding these legal structures ensures you can buy into any Illinois community with total peace of mind (explore our nationwide guide on <Link to="/blog/hoa-fee-increase-limits" className="text-accent underline font-bold hover:text-accent/80">HOA fee increase limits</Link>).
       </p>
 
       <blockquote className="pull-quote bg-bg-light border-l-4 border-accent p-8 rounded-r-2xl italic my-8 text-lg font-medium text-primary leading-relaxed">
@@ -254,7 +245,7 @@ export default function IllinoisHOAFeesArticle() {
       </p>
 
       <p>
-        The most critical danger sign is an underfunded reserve account. Many older, self-managed boards keep their monthly dues artificially low for decades to keep residents happy. However, when the building&apos;s original elevator systems fail or the roof begins to leak, the board will not have enough saved cash to cover the $250,000 physical repairs. When this occurs, they must issue a sudden, massive special assessment or raise monthly fees by 40% or more to balance the corporate ledger.
+        The most critical danger sign is an underfunded reserve account. Many older, self-managed boards keep their monthly dues artificially low for decades to keep residents happy. However, when the building&apos;s original elevator systems fail or the roof begins to leak, the board will not have enough saved cash to cover the $250,000 physical repairs. When this occurs, they must issue a sudden, massive special assessment or raise monthly fees by 40% or more to balance the corporate ledger (read our emergency playbook on what to do if you <Link to="/blog/cant-afford-special-assessment" className="text-accent underline font-bold hover:text-accent/80">can't afford an HOA special assessment</Link>).
       </p>
 
       <p>
@@ -265,11 +256,11 @@ export default function IllinoisHOAFeesArticle() {
         6. Smart Buying Tactics: How to Audit Your Illinois HOA Safely
       </h2>
       <p>
-        You can easily protect your household budget by taking proactive, tactical steps during your home purchase process. First, demand a complete copy of the association&apos;s latest financial audit and certified reserve study. A healthy association should have its reserves at least 70% funded. If the funding ratio sits below 30%, you should treat that community as a high-risk zone for a looming fee increase.
+        You can easily protect your household budget by taking proactive, tactical steps during your home purchase process. First, demand a complete copy of the association&apos;s latest financial audit and certified reserve study. A healthy association should have its reserves at least 70% funded (read our guide on healthy <Link to="/blog/hoa-reserve-fund-percentage" className="text-accent underline font-bold hover:text-accent/80">HOA reserve fund percentages</Link>). If the funding ratio sits below 30%, you should treat that community as a high-risk zone for a looming fee increase.
       </p>
 
       <p>
-        Second, verify whether the community has submitted itself to the Illinois Condominium Property Act (765 ILCS 605). Under Section 22.1, sellers must provide you with a detailed disclosure document outlining the current financial state of the association. If more than 10% of your potential neighbors are currently delinquent on their dues, the active members must pay higher monthly fees to cover the corporate operating deficit.
+        Second, verify whether the community has submitted itself to the Illinois Condominium Property Act (765 ILCS 605). Under Section 22.1, sellers must provide you with a detailed disclosure document outlining the current financial state of the association (watch out for common <Link to="/blog/hoa-document-red-flags" className="text-accent underline font-bold hover:text-accent/80">HOA document red flags</Link>). If more than 10% of your potential neighbors are currently delinquent on their dues, the active members must pay higher monthly fees to cover the corporate operating deficit.
       </p>
 
       <p>

@@ -1,6 +1,7 @@
 import React from 'react';
 import SEO from '@/src/components/SEO';
 import { Link } from 'react-router-dom';
+import QuickAnswerBox from '@/src/components/QuickAnswerBox';
 
 export default function CaliforniaHOAFeesArticle() {
   const articleSchema = {
@@ -9,10 +10,36 @@ export default function CaliforniaHOAFeesArticle() {
     "headline": "HOA Fees in California: Why They're the Highest in the Nation",
     "description": "An exhaustive guide to average HOA fees in California cross-referenced by region. Explore the Davis-Stirling Act, earthquake insurance, and solar rights.",
     "datePublished": "2026-05-15T09:00:00Z",
-    "dateModified": "2026-05-15T09:30:00Z",
+    "dateModified": "2026-09-10T12:00:00Z",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://www.hoafeecalculator.com/blog/hoa-fees-california"
+    },
+    "about": {
+      "@type": "AdministrativeArea",
+      "name": "California",
+      "sameAs": "https://en.wikipedia.org/wiki/California"
+    },
+    "spatialCoverage": {
+      "@type": "Place",
+      "name": "California, United States"
+    },
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".aeo-quick-answer", "#quick-answer"]
+    },
     "author": {
       "@type": "Organization",
       "name": "HOA Research Team"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "HOACalculator.com",
+      "url": "https://www.hoafeecalculator.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.hoafeecalculator.com/favicon.png"
+      }
     },
     "creator": {
       "@type": "Person",
@@ -73,7 +100,7 @@ export default function CaliforniaHOAFeesArticle() {
               <span>•</span>
               <span>7 min read</span>
               <span>•</span>
-              <span>May 15, 2026</span>
+              <span>Updated: September 10, 2026</span>
               <span>•</span>
               <span className="text-accent normal-case">Reviewed by the HOA Research Team</span>
             </div>
@@ -85,6 +112,19 @@ export default function CaliforniaHOAFeesArticle() {
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-8 leading-tight">
               HOA Fees in California: Why They're the Highest in the Nation
             </h1>
+
+            {/* Quick Answer Box */}
+            <QuickAnswerBox
+              title="Quick Answer: California HOA Fees"
+              answer="Average HOA fees in California range from $350 to $650 per month for single-family homes and $500 to $1,000+ per month for condominiums, placing the state among the most expensive in the nation. Under the California Davis-Stirling Act, associations must conduct triennial reserve studies, and regular dues cannot be raised by more than 20% per year without member approval. Urban markets like the San Francisco Bay Area ($500 - $900+/mo) and Los Angeles ($450 - $700+/mo) lead the state due to seismic compliance and high labor costs."
+              highlights={[
+                { label: "Statewide Average", value: "$450 - $650 / mo" },
+                { label: "SF Bay Area", value: "$500 - $900+ / mo" },
+                { label: "LA Metro", value: "$450 - $700 / mo" },
+                { label: "Annual Hike Cap", value: "20% (Davis-Stirling)" }
+              ]}
+              className="mb-10 not-prose"
+            />
 
             {/* Hook Section - Opening with California's $500 monthly fees vs US average */}
             <div className="text-lg opacity-90 leading-relaxed space-y-6 mb-12">
@@ -130,7 +170,7 @@ export default function CaliforniaHOAFeesArticle() {
               </ul>
 
               <p>
-                When comparing properties, the physical structure of your home dictates fees far more than the zip code alone. A detached, single-family home (SFH) in San Diego might only demand $150 per month to maintain a shared security gate and roadway, while a 700-square-foot high-rise condominium two blocks away demands $750 to fund elevators, common halls, and master-key entry lines.
+                When comparing properties, the physical structure of your home dictates fees far more than the zip code alone. A detached, single-family home (SFH) in San Diego might only demand $150 per month to maintain a shared security gate and roadway, while a 700-square-foot high-rise condominium two blocks away demands $750 to fund elevators, common halls, and master-key entry lines. Buyers relocating from neighboring western markets often compare these baseline obligations with <Link to="/blog/hoa-fees-nevada" className="text-accent underline font-bold hover:text-accent/80">Nevada HOA fees</Link> and <Link to="/blog/hoa-fees-arizona" className="text-accent underline font-bold hover:text-accent/80">Arizona HOA fees</Link>.
               </p>
             </div>
 
@@ -220,7 +260,7 @@ export default function CaliforniaHOAFeesArticle() {
               </ul>
 
               <p>
-                Understanding Davis-Stirling is a powerful weapon. If a board attempts to raise your monthly dues from $400 to $550 (a 37.5% hike!) without a community-wide vote, they are violating state civil code—giving you the legal right to contest the adjustment.
+                Understanding Davis-Stirling is a powerful weapon. If a board attempts to raise your monthly dues from $400 to $550 (a 37.5% hike!) without a community-wide vote, they are violating state civil code—giving you the legal right to contest the adjustment (read our complete guide on statutory <Link to="/blog/hoa-fee-increase-limits" className="text-accent underline font-bold hover:text-accent/80">HOA fee increase limits</Link>). If your association unexpectedly levies an onerous repair charge, review our emergency walkthrough on what to do if you <Link to="/blog/cant-afford-special-assessment" className="text-accent underline font-bold hover:text-accent/80">can't afford an HOA special assessment</Link>.
               </p>
             </div>
 

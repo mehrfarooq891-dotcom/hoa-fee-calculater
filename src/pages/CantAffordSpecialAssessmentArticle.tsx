@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { ChevronDown } from 'lucide-react';
 import BlogArticleLayout from '@/src/components/BlogArticleLayout';
+import QuickAnswerBox from '@/src/components/QuickAnswerBox';
 
 export default function CantAffordSpecialAssessmentArticle() {
+  const [openFaq, setOpenFaq] = useState<number | null>(0);
+
+  const toggleFaq = (index: number) => {
+    setOpenFaq(openFaq === index ? null : index);
+  };
+
   const relatedLinks = [
     { label: "HOA Special Assessment: What It Is and How to Protect Yourself", to: "/blog/hoa-special-assessment" },
     { label: "I Just Got an HOA Lien Notice: What to Do in the Next 48 Hours", to: "/blog/hoa-lien-notice-what-to-do" },
@@ -11,52 +19,64 @@ export default function CantAffordSpecialAssessmentArticle() {
     { label: "Back to Blog Insights", to: "/blog" }
   ];
 
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "NewsArticle",
-    "headline": "HOA Special Assessment I Can't Afford: Your Real Options",
-    "description": "Facing an HOA special assessment you can't afford? Discover 6 practical solutions including hardship payment plans, HELOCs, special loans, and legal rights.",
-    "datePublished": "2026-07-27T08:00:00Z",
-    "dateModified": "2026-07-27T08:00:00Z",
-    "author": {
-      "@type": "Organization",
-      "name": "HOA Research Team",
-      "url": "https://www.hoafeecalculator.com/"
+  const faqs = [
+    {
+      question: "Can my HOA force me to pay a special assessment immediately?",
+      answer: "While the notice specifies a due date (often 30 to 60 days), state laws in many jurisdictions require associations to offer reasonable payment plans, spreading large assessments over 12 to 36 monthly installments."
     },
-    "publisher": {
-      "@type": "Organization",
-      "name": "HOACalculator.com",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.hoafeecalculator.com/hoa_calculator_logo.svg"
-      }
+    {
+      question: "Will my insurance cover an HOA special assessment?",
+      answer: "Your standard HO-3 homeowner insurance will not cover maintenance-related assessments. However, if you have an HO-6 condo policy with Loss Assessment coverage and the assessment resulted from a covered peril (like storm damage or fire), your insurer may cover up to policy limits (typically $1,000 to $50,000)."
     },
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://www.hoafeecalculator.com/blog/cant-afford-special-assessment"
+    {
+      question: "Can an HOA foreclose on my home over an unpaid special assessment?",
+      answer: "Yes. In over 30 states, HOAs have statutory foreclosure power for delinquent assessments once a lien is filed, regardless of whether your bank mortgage is current."
+    },
+    {
+      question: "Can I dispute the special assessment if the board didn't hold a vote?",
+      answer: "Yes. Association bylaws and state statutes generally require a homeowner quorum and vote if a capital improvement exceeds a specific percentage of the annual budget (often 5% to 20%), unless it qualifies under emergency structural repair exemptions."
     }
+  ];
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(f => ({
+      "@type": "Question",
+      "name": f.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": f.answer
+      }
+    }))
   };
 
   return (
     <BlogArticleLayout
       title="HOA Special Assessment I Can't Afford: Your Real Options"
       description="Facing an HOA special assessment you can't afford? Discover 6 real options including hardship payment plans, HELOCs, special loans, and legal rights."
+      canonical="/blog/cant-afford-special-assessment"
       category="Financial Planning"
       readTime="8 min read"
       date="July 27, 2026"
+      lastUpdatedDate="September 10, 2026"
       relatedLinks={relatedLinks}
+      faqSchema={faqSchema}
+      speakableSelector=".aeo-quick-answer"
     >
-      {/* SEO & Schema Metadata */}
-      {/* 
-        SEO: HOA Special Assessment You Can't Afford: 6 Real Options
-        META: Facing an HOA special assessment you can't afford? Discover 6 practical solutions including hardship payment plans, HELOCs, loans, and legal rights.
-      */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
+      <div className="space-y-6 text-slate-800 leading-relaxed text-base sm:text-lg">
+        <QuickAnswerBox
+          title="Quick Answer: What to Do If You Can't Afford an HOA Special Assessment"
+          answer="If you receive a surprise HOA special assessment you cannot afford, do not ignore the notice. First, formally request a hardship payment plan in writing—many state statutes (such as California Civil Code § 5665 and Texas Property Code § 209.0062) legally require associations to offer reasonable payment installment guidelines. Second, review your bylaws to verify whether the assessment required a membership vote and passed validly. Third, examine financing alternatives such as a Home Equity Line of Credit (HELOC), an HOA assessment bank loan, or loss assessment coverage on your HO-6 condo insurance policy. Ignoring an assessment risks late fees, legal costs, liens, and potential foreclosure."
+          highlights={[
+            { label: "First Step", value: "Written Hardship Payment Plan" },
+            { label: "Statutory Right", value: "Mandatory in CA, TX & Others" },
+            { label: "Financing Options", value: "HELOC / Bank Loan / HO-6" },
+            { label: "Risk of Inaction", value: "Lien & Foreclosure" }
+          ]}
+          className="my-6 not-prose"
+        />
 
-      <article className="space-y-6 text-justify">
         <p className="lead text-xl text-primary font-medium border-l-4 border-accent pl-4 py-1 my-6 italic">
           A $9,000 assessment landed in the mailbox with a mandatory 60-day payment deadline — here is what homeowners in that exact spot actually did to save their homes.
         </p>
@@ -260,20 +280,44 @@ export default function CantAffordSpecialAssessmentArticle() {
           Before listing your property, calculate your net equity carefully. Reviewing <Link to="/blog/hoa-special-assessment" className="text-accent underline hover:text-accent/80 transition-colors">understanding HOA special assessment rules</Link> alongside our free <Link to="/" className="text-accent underline hover:text-accent/80 transition-colors">HOA fee calculator</Link> ensures you project accurate net proceeds after deducting assessment payoff obligations and closing costs.
         </p>
 
-        <div className="author-bio border-t border-border pt-6 mt-12 text-sm text-primary/80">
-          <strong>Written by the HOA Research Team</strong> — senior real estate analysts at HOACalculator.com, compiling HOA cost data across all 50 US states.
-        </div>
-      </article>
-
-      {/* Internal Link Tracking Table */}
-      <div className="mt-12 p-4 bg-bg-light rounded-xl text-xs text-primary/70 border border-border">
-        <p className="font-bold mb-2">Internal Link Tracking Table:</p>
-        <ul className="space-y-1">
-          <li>1. Target: Homepage / Calculator | Anchor Text: "HOA fee calculator" | URL: /</li>
-          <li>2. Target: Special Assessment Guide | Anchor Text: "understanding HOA special assessment rules" | URL: /blog/hoa-special-assessment</li>
-          <li>3. Target: Don't Pay HOA Fees Guide | Anchor Text: "what happens when you don't pay HOA fees" | URL: /blog/dont-pay-hoa-fees</li>
-          <li>4. Target: Fight Fee Increase Guide | Anchor Text: "fighting an HOA fee increase or illegal assessment" | URL: /blog/fight-hoa-fee-increase</li>
-        </ul>
+        {/* FAQ Accordion */}
+        <section className="mt-12 pt-8 border-t border-slate-200">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-6 flex items-center gap-2">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-4">
+            {faqs.map((faq, index) => {
+              const isOpen = openFaq === index;
+              return (
+                <div
+                  key={index}
+                  className="border border-slate-200 rounded-xl overflow-hidden transition-all bg-white shadow-xs"
+                >
+                  <button
+                    type="button"
+                    onClick={() => toggleFaq(index)}
+                    className="w-full text-left p-4 sm:p-5 flex items-center justify-between gap-4 font-semibold text-slate-900 hover:bg-slate-50 transition-colors cursor-pointer"
+                    aria-expanded={isOpen}
+                  >
+                    <span className="text-base sm:text-lg flex items-start gap-2">
+                      <span className="text-accent font-bold">Q:</span> {faq.question}
+                    </span>
+                    <ChevronDown
+                      className={`w-5 h-5 text-slate-400 shrink-0 transition-transform duration-200 ${
+                        isOpen ? 'rotate-180 text-accent' : ''
+                      }`}
+                    />
+                  </button>
+                  {isOpen && (
+                    <div className="p-4 sm:p-5 pt-0 text-slate-700 text-sm sm:text-base leading-relaxed border-t border-slate-100 bg-slate-50/50">
+                      <p className="pt-2">{faq.answer}</p>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </section>
       </div>
     </BlogArticleLayout>
   );

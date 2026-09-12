@@ -11,7 +11,14 @@ interface BlogArticleLayoutProps {
   category?: string;
   readTime?: string;
   date?: string;
+  lastUpdatedDate?: string;
+  datePublished?: string;
+  dateModified?: string;
   relatedLinks?: { label: string; to: string }[];
+  schema?: any[];
+  faqSchema?: any;
+  aboutEntity?: any;
+  speakableSelector?: string | string[];
   children: React.ReactNode;
 }
 
@@ -78,8 +85,15 @@ export default function BlogArticleLayout({
   canonical,
   category = "Homebuying Guide",
   readTime = "6 min read",
-  date = "May 21, 2026",
+  date = "May 15, 2026",
+  lastUpdatedDate,
+  datePublished,
+  dateModified,
   relatedLinks = [],
+  schema,
+  faqSchema,
+  aboutEntity,
+  speakableSelector = [".aeo-quick-answer", "#quick-answer"],
   children
 }: BlogArticleLayoutProps) {
   let locationPath = '';
@@ -90,24 +104,49 @@ export default function BlogArticleLayout({
 
   const resolvedCanonical = canonical || (locationPath && locationPath.startsWith('/blog/') ? locationPath : getSlugFromTitle(title));
 
-  const articleSchema = {
+  const isoPublished = datePublished || "2026-05-15T09:00:00Z";
+  const isoModified = dateModified || (date.includes("September") ? "2026-09-10T12:00:00Z" : "2026-09-10T12:00:00Z");
+
+  const defaultArticleSchema: any = {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": title,
     "description": description,
-    "datePublished": `${date.includes('2026') ? '2026' : '2026'}-05-21T12:00:00Z`,
-    "dateModified": `${date.includes('2026') ? '2026' : '2026'}-05-21T12:00:00Z`,
+    "datePublished": isoPublished,
+    "dateModified": isoModified,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://www.hoafeecalculator.com${resolvedCanonical}`
+    },
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": Array.isArray(speakableSelector) ? speakableSelector : [speakableSelector]
+    },
     "author": {
       "@type": "Organization",
-      "name": "HOA Research Team"
-    },
-    "creator": {
-      "@type": "Person",
       "name": "HOA Research Team",
-      "jobTitle": "Real Estate Financial Analyst",
       "url": "https://www.hoafeecalculator.com/about"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "HOACalculator.com",
+      "url": "https://www.hoafeecalculator.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.hoafeecalculator.com/favicon.png"
+      }
     }
   };
+
+  if (aboutEntity) {
+    defaultArticleSchema.about = aboutEntity;
+    defaultArticleSchema.spatialCoverage = aboutEntity;
+  }
+
+  const finalSchema = schema || [
+    defaultArticleSchema,
+    ...(faqSchema ? [faqSchema] : [])
+  ];
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
@@ -115,7 +154,7 @@ export default function BlogArticleLayout({
         title={`${title} | HOACalculator.com`}
         description={description}
         canonical={resolvedCanonical}
-        schema={[articleSchema]}
+        schema={finalSchema}
       />
 
       {/* Header */}
@@ -132,7 +171,7 @@ export default function BlogArticleLayout({
               <span>•</span>
               <span>{readTime}</span>
               <span>•</span>
-              <span>{date}</span>
+              <span>{lastUpdatedDate ? `Updated: ${lastUpdatedDate}` : date}</span>
               <span>•</span>
               <span className="text-accent normal-case">Reviewed by the HOA Research Team</span>
             </div>

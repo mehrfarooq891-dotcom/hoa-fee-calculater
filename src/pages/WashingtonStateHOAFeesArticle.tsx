@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import BlogArticleLayout from '@/src/components/BlogArticleLayout';
+import QuickAnswerBox from '@/src/components/QuickAnswerBox';
 
 export default function WashingtonStateHOAFeesArticle() {
   const relatedLinks = [
@@ -10,30 +11,10 @@ export default function WashingtonStateHOAFeesArticle() {
     { label: "Back to Blog Insights", to: "/blog" }
   ];
 
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "HOA Fees in Washington State: Seattle, Bellevue & Eastside Guide 2026",
-    "description": "An exhaustive guide to average HOA fees in Washington State. Compare Seattle condos, Bellevue tech-hub rates, and earthquake compliance seismic assessments.",
-    "datePublished": "2026-07-01T08:00:00Z",
-    "dateModified": "2026-07-01T08:00:00Z",
-    "author": {
-      "@type": "Organization",
-      "name": "HOA Research Team",
-      "url": "https://www.hoafeecalculator.com/"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "HOACalculator.com",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.hoafeecalculator.com/favicon.svg"
-      }
-    },
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://www.hoafeecalculator.com/blog/hoa-fees-washington-state"
-    }
+  const aboutEntity = {
+    "@type": "AdministrativeArea",
+    "name": "Washington",
+    "sameAs": "https://en.wikipedia.org/wiki/Washington_(state)"
   };
 
   return (
@@ -43,11 +24,21 @@ export default function WashingtonStateHOAFeesArticle() {
       category="Data"
       readTime="7 min read"
       date="July 1, 2026"
+      lastUpdatedDate="September 10, 2026"
       relatedLinks={relatedLinks}
+      aboutEntity={aboutEntity}
+      speakableSelector=".aeo-quick-answer"
     >
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      <QuickAnswerBox
+        title="Quick Answer: Washington State HOA Fees"
+        answer="Average HOA fees in Washington State range from $200 to $400 per month for standard single-family homes and suburban townhomes, while urban condominiums in Seattle and Bellevue average $450 to $900+ per month. Washington ranks in the top 8 most expensive states nationwide for common-interest housing. Under the Washington Uniform Common Interest Ownership Act (WUCIOA / RCW 64.90), associations must prepare annual budgets and update professional reserve studies triennially. Seismic retrofits in older coastal buildings regularly trigger special assessments."
+        highlights={[
+          { label: "Statewide Average", value: "$200 - $400 / mo" },
+          { label: "Seattle Condos", value: "$450 - $900+ / mo" },
+          { label: "Bellevue Tech Hub", value: "$300 - $600 / mo" },
+          { label: "Governing Law", value: "RCW 64.90 (WUCIOA)" }
+        ]}
+        className="my-6 not-prose"
       />
 
       <p className="lead text-xl text-primary font-medium border-l-4 border-accent pl-4 py-1 my-6 italic">
@@ -70,7 +61,7 @@ export default function WashingtonStateHOAFeesArticle() {
         1. Washington State HOA Fee Overview: Understanding the State Baseline
       </h2>
       <p>
-        Across Washington State, average monthly HOA fees range from $200 to $400 for typical single-family subdivisions and suburban townhomes. This rate places the Evergreen State among the top 8 most expensive states in the country for common-interest housing. Dense residential developments around the Puget Sound run on highly complex budgets that push this baseline even higher.
+        Across Washington State, average monthly HOA fees range from $200 to $400 for typical single-family subdivisions and suburban townhomes. This rate places the Evergreen State among the top 8 most expensive states in the country for common-interest housing (compare with <Link to="/blog/hoa-fees-california" className="text-accent underline font-bold hover:text-accent/80">California HOA fees</Link> and <Link to="/blog/hoa-fees-colorado" className="text-accent underline font-bold hover:text-accent/80">Colorado HOA fees</Link>). Dense residential developments around the Puget Sound run on highly complex budgets that push this baseline even higher.
       </p>
 
       <p>
@@ -197,7 +188,7 @@ export default function WashingtonStateHOAFeesArticle() {
       </p>
 
       <p>
-        Under RCW 64.34.380, condominium boards must conduct a professional, independent reserve study every three years to verify financial health. The law also requires boards to prepare a simplified reserve study summary disclosure for buyers before a sale. This legal protection prevents new owners from inheriting severe, hidden capital deficits.
+        Under RCW 64.34.380, condominium boards must conduct a professional, independent reserve study every three years to verify financial health (read our complete breakdown on <Link to="/blog/hoa-reserve-fund-percentage" className="text-accent underline font-bold hover:text-accent/80">recommended HOA reserve fund percentages</Link>). The law also requires boards to prepare a simplified reserve study summary disclosure for buyers before a sale. This legal protection prevents new owners from inheriting severe, hidden capital deficits.
       </p>
 
       <p>
@@ -244,14 +235,14 @@ export default function WashingtonStateHOAFeesArticle() {
       </p>
 
       <p>
-        When a board lacks enough saved cash in its reserve account, it must issue a sudden special assessment. These emergency bills regularly range from $15,000 to $40,000 per unit, depending on the size of your home. You must read past board minutes carefully to look for any discussions regarding deferred structural work or city building safety orders.
+        When a board lacks enough saved cash in its reserve account, it must issue a sudden special assessment. These emergency bills regularly range from $15,000 to $40,000 per unit, depending on the size of your home (read our survival guide on <Link to="/blog/hoa-special-assessment" className="text-accent underline font-bold hover:text-accent/80">HOA special assessments</Link>). You must read past board minutes carefully to look for any discussions regarding deferred structural work or city building safety orders.
       </p>
 
       <h2 className="text-2xl font-serif font-bold text-primary mt-10 mb-4">
         6. Smart Auditing Tactics: Questions to Ask Before Buying in a Washington HOA
       </h2>
       <p>
-        You can easily protect your household budget by conducting a careful financial audit before finalizing your home purchase. Washington law helps you do this by requiring the seller to provide a complete resale certificate package. Make sure you use your formal contract contingency period to carefully review these documents.
+        You can easily protect your household budget by conducting a careful financial audit before finalizing your home purchase. Washington law helps you do this by requiring the seller to provide a complete resale certificate package. Make sure you use your formal contract contingency period to carefully review these documents (consult our essential checklist of <Link to="/blog/questions-to-ask-hoa-before-buying" className="text-accent underline font-bold hover:text-accent/80">questions to ask an HOA before buying</Link>).
       </p>
 
       <p>

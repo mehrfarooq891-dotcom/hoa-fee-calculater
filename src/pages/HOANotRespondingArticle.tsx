@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronDown, CheckCircle2, ArrowRight } from 'lucide-react';
 import BlogArticleLayout from '@/src/components/BlogArticleLayout';
+import QuickAnswerBox from '@/src/components/QuickAnswerBox';
 
 export default function HOANotRespondingArticle() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
@@ -14,6 +15,7 @@ export default function HOANotRespondingArticle() {
     { label: "HOA Management Companies: What They Do & How to Evaluate Them", to: "/blog/hoa-management-companies" },
     { label: "HOA Rules Enforcement: How Far Can Your Board Go?", to: "/blog/hoa-rules-enforcement" },
     { label: "HOA Sent My Account to Collections: What Happens Next", to: "/blog/hoa-sent-to-collections" },
+    { label: "HOA Laws by State: 2026 Homeowner Protection Guide", to: "/blog/hoa-laws-by-state" },
     { label: "Back to Blog Insights", to: "/blog" }
   ];
 
@@ -40,30 +42,17 @@ export default function HOANotRespondingArticle() {
     }
   ];
 
-  const newsArticleSchema = {
+  const faqSchema = {
     "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "HOA Won't Respond to My Emails: How to Force Action",
-    "description": "HOA ignoring your emails about repairs or rules? Learn the 5-step escalation strategy from certified letters to state regulatory complaints.",
-    "datePublished": "2026-08-07T00:00:00Z",
-    "dateModified": "2026-08-07T00:00:00Z",
-    "author": {
-      "@type": "Organization",
-      "name": "HOA Research Team",
-      "url": "https://www.hoafeecalculator.com/about"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "HOACalculator.com",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.hoafeecalculator.com/favicon.png"
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(f => ({
+      "@type": "Question",
+      "name": f.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": f.answer
       }
-    },
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://www.hoafeecalculator.com/blog/hoa-not-responding"
-    }
+    }))
   };
 
   return (
@@ -74,11 +63,22 @@ export default function HOANotRespondingArticle() {
       category="Board Governance & Operations"
       readTime="6 min read"
       date="August 7, 2026"
+      lastUpdatedDate="September 10, 2026"
       relatedLinks={relatedLinks}
+      faqSchema={faqSchema}
+      speakableSelector=".aeo-quick-answer"
     >
-      <script type="application/ld+json">
-        {JSON.stringify(newsArticleSchema)}
-      </script>
+      <QuickAnswerBox
+        title="Quick Answer: What to Do When Your HOA Won't Respond"
+        answer="When an HOA board or property management company ignores routine emails, escalate immediately using USPS Certified Mail with Return Receipt Requested. Unlike informal emails, certified mail creates an unalterable paper trail and triggers statutory response deadlines under state property law (typically 10 to 30 days). If the board continues to ignore certified requests, bypass the manager to contact the board president, attend the open forum at the next board meeting, submit a formal records inspection demand, or file an administrative complaint with your state HOA Ombudsman or Consumer Protection Division."
+        highlights={[
+          { label: "Top Action", value: "USPS Certified Mail" },
+          { label: "Legal Response Window", value: "10 - 30 Days by Law" },
+          { label: "Records Request", value: "10 Business Days" },
+          { label: "State Recourse", value: "Ombudsman / AG Complaint" }
+        ]}
+        className="my-6 not-prose"
+      />
 
       <div className="space-y-6 text-slate-800 leading-relaxed text-base sm:text-lg">
         <p className="font-medium text-slate-900 leading-relaxed text-lg sm:text-xl">

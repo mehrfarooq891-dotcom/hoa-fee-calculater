@@ -1,6 +1,7 @@
 import React from 'react';
 import SEO from '@/src/components/SEO';
 import { Link } from 'react-router-dom';
+import QuickAnswerBox from '@/src/components/QuickAnswerBox';
 
 export default function TexasHOAFeesArticle() {
   const articleSchema = {
@@ -9,10 +10,36 @@ export default function TexasHOAFeesArticle() {
     "headline": "HOA Fees in Texas: Complete City-by-City Guide 2026",
     "description": "An in-depth analysis of average HOA fees in Texas across Dallas, Houston, Austin, and San Antonio. Learn about Texas Property Code Chapter 209 and watch for suburb fee triggers.",
     "datePublished": "2026-05-17T09:00:00Z",
-    "dateModified": "2026-05-17T11:30:00Z",
+    "dateModified": "2026-09-10T12:00:00Z",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://www.hoafeecalculator.com/blog/hoa-fees-texas"
+    },
+    "about": {
+      "@type": "AdministrativeArea",
+      "name": "Texas",
+      "sameAs": "https://en.wikipedia.org/wiki/Texas"
+    },
+    "spatialCoverage": {
+      "@type": "Place",
+      "name": "Texas, United States"
+    },
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".aeo-quick-answer", "#quick-answer"]
+    },
     "author": {
       "@type": "Organization",
       "name": "HOA Research Team"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "HOACalculator.com",
+      "url": "https://www.hoafeecalculator.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.hoafeecalculator.com/favicon.png"
+      }
     },
     "creator": {
       "@type": "Person",
@@ -73,7 +100,7 @@ export default function TexasHOAFeesArticle() {
               <span>•</span>
               <span>8 min read</span>
               <span>•</span>
-              <span>May 17, 2026</span>
+              <span>Updated: September 10, 2026</span>
               <span>•</span>
               <span className="text-accent normal-case">Reviewed by the HOA Research Team</span>
             </div>
@@ -85,6 +112,19 @@ export default function TexasHOAFeesArticle() {
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-8 leading-tight">
               HOA Fees in Texas: Complete City-by-City Guide 2026
             </h1>
+
+            {/* Quick Answer Box */}
+            <QuickAnswerBox
+              title="Quick Answer: Texas HOA Fees"
+              answer="Average HOA fees in Texas range from $50 to $150 per month for standard single-family homes ($600 - $1,800/year, commonly billed annually) and $300 to $650+ per month for townhomes and condominiums. In expansive master-planned communities like The Woodlands, Cinco Ranch, or Frisco, dual master association and sub-HOA dues average $120 to $250 per month. Under Texas Property Code Chapter 209, HOAs face strict notice requirements, cannot foreclose on homesteads without a judicial order, and cannot ban solar panels or standby generators."
+              highlights={[
+                { label: "Single-Family Average", value: "$50 - $150 / mo" },
+                { label: "Master-Planned", value: "$120 - $250 / mo" },
+                { label: "Urban Condos", value: "$300 - $650+ / mo" },
+                { label: "Governing Law", value: "Tex. Prop. Code Ch. 209" }
+              ]}
+              className="mb-10 not-prose"
+            />
 
             {/* Hook Section - No income tax but suburb fees rival California */}
             <div className="text-lg opacity-90 leading-relaxed space-y-6 mb-12">
@@ -127,7 +167,7 @@ export default function TexasHOAFeesArticle() {
               </ul>
 
               <p>
-                When shopping, keep in mind that the manner in which your local government services your community also plays a part. Homes outside of city limits often rely on special county water districts, which can transfer additional road and drainage upkeep to the neighborhood association ledger.
+                When shopping, keep in mind that the manner in which your local government services your community also plays a part. Homes outside of city limits often rely on special county water districts, which can transfer additional road and drainage upkeep to the neighborhood association ledger. For comprehensive municipal figures across every county, check our <Link to="/states/texas" className="text-accent underline font-bold hover:text-accent/80">Texas HOA fee calculator and city directory</Link>. Sunbelt buyers comparing warm-climate relocation options frequently evaluate these numbers alongside <Link to="/blog/hoa-fees-florida" className="text-accent underline font-bold hover:text-accent/80">Florida HOA fees</Link> and <Link to="/blog/hoa-fees-north-carolina" className="text-accent underline font-bold hover:text-accent/80">North Carolina HOA fees</Link>.
               </p>
             </div>
 
@@ -285,6 +325,9 @@ export default function TexasHOAFeesArticle() {
                   <strong className="text-primary font-bold">Request a Mandatory Repayment Plan (§ 209.0062):</strong> If facing back dues, associations with more than 14 lots must offer an alternative payment agreement (3 to 18 months) allowing you to cure the default without facing foreclosure threats.
                 </li>
               </ol>
+              <p className="text-sm text-primary/80 italic mt-2">
+                If your management company or board fails to reply to your certified dispute letter or schedule your statutory hearing, review our step-by-step recourse guide on <Link to="/blog/hoa-not-responding" className="text-accent underline font-bold hover:text-accent/80">what to do when your HOA is not responding</Link>.
+              </p>
             </div>
 
             {/* Section 4: Master-planned communities */}
@@ -307,6 +350,9 @@ export default function TexasHOAFeesArticle() {
                   <strong className="text-primary font-bold">The Local Sub-Association Dues:</strong> On top of the master fee, individual residential enclaves inside the community (such as a gated cul-de-sac loop or courtyard subsection) often demand a separate monthly or quarterly fee, adding another <strong className="text-primary font-bold">$100 to $250 per month</strong> to maintain localized turf, fences, and shared parking bays.
                 </li>
               </ul>
+              <p>
+                Weighing whether the amenities of a master-planned community justify the double-layer dues? Compare financial and lifestyle factors in our comprehensive breakdown of <Link to="/blog/hoa-vs-no-hoa" className="text-accent underline font-bold hover:text-accent/80">living in an HOA vs no HOA</Link>.
+              </p>
 
               <h3 className="text-xl font-serif font-bold text-primary">
                 The Compounding Effect of MUD and PID Taxes

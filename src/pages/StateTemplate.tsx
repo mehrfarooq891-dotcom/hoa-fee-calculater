@@ -2,6 +2,7 @@ import React, { Suspense } from 'react';
 import SEO from '@/src/components/SEO';
 import Header from '@/src/components/Header';
 import SocialIcons from '@/src/components/SocialIcons';
+import QuickAnswerBox from '@/src/components/QuickAnswerBox';
 import { useParams, Link } from 'react-router-dom';
 import { statesData } from '@/src/data/statesData';
 
@@ -142,18 +143,34 @@ export default function StateTemplate() {
     }))
   };
 
+  const pageSchema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": `${displayName} HOA Fees 2026 | Average Costs & Calculator`,
+      "description": `Calculate HOA fees in ${displayName}. See average costs by city, legal rules, and estimate your lifetime HOA expenses.`,
+      "url": `https://www.hoafeecalculator.com/states/${cleanSlug}`,
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".aeo-quick-answer"]
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Place",
+      "name": `${displayName}, United States`,
+      "description": `Homeowners association fee averages, statutory regulations, and city-by-city housing cost data for ${displayName}.`
+    },
+    faqSchema
+  ];
+
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <SEO 
         title={`${displayName} HOA Fees 2026 | Average Costs & Calculator`}
         description={`Calculate HOA fees in ${displayName}. See average costs by city, legal rules, and estimate your lifetime HOA expenses.`}
         canonical={`/states/${cleanSlug}`}
-        schema={[{
-          "@context": "https://schema.org",
-          "@type": "LocalBusiness",
-          "name": `HOA Guide ${displayName}`,
-          "description": `HOA fee data and laws for ${displayName}`
-        }, faqSchema]}
+        schema={pageSchema}
       />
 
       {/* Header */}
@@ -161,7 +178,7 @@ export default function StateTemplate() {
 
       <main className="flex-1 pt-32 pb-20 px-6">
         <div className="max-w-7xl mx-auto">
-          <header className="mb-16">
+          <header className="mb-10">
             <Link to="/states" className="text-accent font-bold hover:underline mb-4 inline-block">← Back to All States</Link>
             <h1 className="text-4xl md:text-6xl font-serif font-bold text-primary mb-6">
               {displayName} HOA Fee Calculator & Guide 2026
@@ -170,11 +187,26 @@ export default function StateTemplate() {
               Thinking about buying in {displayName}? Here's what you need to know about local HOA laws, average costs, and how to avoid overpaying.
             </p>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-primary opacity-80 uppercase font-bold tracking-wider mt-4">
-              <span>Updated: April 2026</span>
+              <span>Updated: September 2026</span>
               <span>•</span>
               <span className="text-accent normal-case font-bold">Reviewed by the HOA Research Team</span>
             </div>
           </header>
+
+          {/* AEO Quick Answer Box */}
+          <div className="mb-12">
+            <QuickAnswerBox
+              title={`Quick Answer: Average HOA Fees in ${displayName}`}
+              answer={`In ${displayName}, average monthly HOA fees typically range from $${stateData.avgFee > 250 ? Math.round(stateData.avgFee * 0.65) : 100} to $${Math.round(stateData.avgFee * 1.5)}+ per month, with an estimated statewide median of approximately $${stateData.avgFee}/month. In major metropolitan centers, luxury high-rises and amenity-rich master-planned communities frequently exceed this average, whereas older single-family subdivisions maintain significantly lower dues. State statutes govern budget adoption, reserve fund disclosures, and open meeting transparency.`}
+              highlights={[
+                { label: `${displayName} Average`, value: `$${stateData.avgFee} / mo` },
+                { label: "City Variations", value: `${stateData.cities.length} Metros Analyzed` },
+                { label: "Governing Laws", value: "State Statutes Apply" },
+                { label: "Data Updated", value: "2026 Benchmarks" }
+              ]}
+              className="not-prose"
+            />
+          </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2 space-y-16">
@@ -209,7 +241,7 @@ export default function StateTemplate() {
                     {stateData.excerpt}
                   </p>
                   <p>
-                    In {displayName}, HOAs are governed by specific state statutes that protect both the association and individual homeowners. It's critical to understand your rights before you sign on the dotted line.
+                    In {displayName}, HOAs are governed by specific state statutes that protect both the association and individual homeowners (compare these statutory protections with our 50-state analysis of <Link to="/blog/hoa-laws-by-state" className="text-accent underline font-bold hover:text-accent/80">HOA laws by state</Link> and nationwide <Link to="/blog/average-hoa-fees-by-state" className="text-accent underline font-bold hover:text-accent/80">average HOA fees by state</Link>). It's critical to understand your rights before you sign on the dotted line.
                   </p>
                   <p>
                     One of the most important aspects of local laws is transparency. HOA boards are typically required to hold open, announced meetings and provide clear, itemized access to financial records and meeting minutes.

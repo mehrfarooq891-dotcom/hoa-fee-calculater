@@ -3,6 +3,7 @@ import SEO from '@/src/components/SEO';
 import Header from '@/src/components/Header';
 import SocialIcons from '@/src/components/SocialIcons';
 import { Link } from 'react-router-dom';
+import QuickAnswerBox from '@/src/components/QuickAnswerBox';
 
 const Calculator = React.lazy(() => import('@/src/components/Calculator'));
 
@@ -52,6 +53,21 @@ export default function Home() {
     "description": "Free HOA fee calculator for all 50 US states. Estimate your true lifetime HOA cost with year-by-year breakdown.",
     "applicationCategory": "FinanceApplication",
     "operatingSystem": "All",
+    "datePublished": "2026-01-15T08:00:00Z",
+    "dateModified": "2026-09-10T12:00:00Z",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".aeo-quick-answer", "#quick-answer"]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "HOACalculator.com",
+      "url": "https://www.hoafeecalculator.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.hoafeecalculator.com/favicon.png"
+      }
+    },
     "offers": {
       "@type": "Offer",
       "price": "0",
@@ -127,22 +143,34 @@ export default function Home() {
 
         {/* HERO SECTION */}
         <section className="py-20 px-6 bg-bg-light relative overflow-hidden">
-          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="relative z-10">
-              <div className="inline-block bg-accent/10 text-accent font-bold px-4 py-1 rounded-full text-xs uppercase tracking-widest mb-6">
-                Free Tool — No Signup Required
-              </div>
-              <h2 className="text-5xl md:text-6xl font-serif font-bold text-primary mb-6 leading-tight">
-                Free HOA Fee Calculator<br />
-                <span className="text-accent">See Your True Lifetime Cost</span>
-              </h2>
-              <p className="text-xl text-primary opacity-70 mb-6 max-w-lg leading-relaxed">
-                Instant affordability score, year-by-year breakdown and state-by-state data for US homebuyers.
-              </p>
-              
-              <div className="text-xs text-primary/60 mb-8 border-l-2 border-accent pl-3">
-                Data compiled and reviewed by the <span className="font-semibold">HOACalculator.com Research Team</span> | Last updated: June 2026
-              </div>
+          <div className="max-w-7xl mx-auto">
+            <QuickAnswerBox
+              title="Quick Answer: How HOA Fees Work & Lifetime Cost"
+              answer="A Homeowners Association (HOA) fee is a mandatory recurring assessment paid by property owners in managed subdivisions, townhouses, and condos to maintain common grounds, service community amenities, and fund structural reserve accounts. In 2026, nationwide HOA dues typically range from $200 to $400 per month for single-family homes and $300 to $700+ per month for condominiums. Over a standard 30-year mortgage with a 3% annual inflation rate, a $350 monthly HOA fee results in over $200,000 in cumulative carrying costs."
+              highlights={[
+                { label: "US Median HOA", value: "$200 - $400 / mo" },
+                { label: "Condo Median", value: "$300 - $700 / mo" },
+                { label: "30-Yr Cumulative", value: "$200,000+ Total" }
+              ]}
+              className="mb-12 bg-white"
+            />
+            
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="relative z-10">
+                <div className="inline-block bg-accent/10 text-accent font-bold px-4 py-1 rounded-full text-xs uppercase tracking-widest mb-6">
+                  Free Tool — No Signup Required
+                </div>
+                <h2 className="text-5xl md:text-6xl font-serif font-bold text-primary mb-6 leading-tight">
+                  Free HOA Fee Calculator<br />
+                  <span className="text-accent">See Your True Lifetime Cost</span>
+                </h2>
+                <p className="text-xl text-primary opacity-70 mb-6 max-w-lg leading-relaxed">
+                  Instant affordability score, year-by-year breakdown and state-by-state data for US homebuyers.
+                </p>
+                
+                <div className="text-xs text-primary/60 mb-8 border-l-2 border-accent pl-3">
+                  Data compiled and reviewed by the <span className="font-semibold">HOACalculator.com Research Team</span> | Last updated: September 10, 2026
+                </div>
               
               <div className="grid grid-cols-2 gap-4">
                 {[
@@ -190,7 +218,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
         {/* FAQ: Can HOA fees increase every year? */}
         <section className="py-8 px-6 max-w-7xl mx-auto">
@@ -229,7 +258,7 @@ export default function Home() {
                 Think of an HOA fee as a subscription to your neighborhood. You're paying for the privilege of living in a community that (hopefully) maintains its standards, keeps the grass cut in common areas, and ensures your neighbor doesn't paint their house neon pink.
               </p>
               <p>
-                It's a mandatory cost that supports community amenities like pools, gyms, security, and landscaping. Understanding the long-term impact is critical for your financial health.
+                It's a mandatory cost that supports community amenities like pools, gyms, security, and landscaping (read our complete breakdown of <Link to="/blog/what-is-hoa-fee" className="text-accent underline font-semibold hover:text-accent/80">what an HOA fee covers</Link>). Understanding whether an assessment fits your debt-to-income ratio is essential—see our guide on <Link to="/blog/how-much-hoa-fee-too-much" className="text-accent underline font-semibold hover:text-accent/80">how much HOA fee is too much</Link>.
               </p>
             </div>
           </div>
@@ -267,7 +296,7 @@ export default function Home() {
               What's the difference between HOA fees and condo fees?
             </h2>
             <p className="text-primary/80 text-base md:text-lg leading-relaxed font-sans">
-              While both are monthly assessments, HOA fees typically cover common areas, neighborhood roads, and shared amenities for single-family homes or townhouses. Condo fees generally cover those items plus structural elements, exterior hazard insurance, shared utilities, and outer building maintenance of individual units.
+              While both are monthly assessments, HOA fees typically cover common areas, neighborhood roads, and shared amenities for single-family homes or townhouses. Condo fees generally cover those items plus structural elements, exterior hazard insurance, shared utilities, and outer building maintenance of individual units (explore our in-depth comparison of <Link to="/blog/hoa-vs-condo-fee" className="text-accent underline font-semibold hover:text-accent/80">HOA vs condo fees</Link> and what happens when associations face a sudden <Link to="/blog/cant-afford-special-assessment" className="text-accent underline font-semibold hover:text-accent/80">special assessment</Link>).
             </p>
           </div>
         </section>
@@ -280,19 +309,24 @@ export default function Home() {
               <table className="w-full text-left">
                 <thead>
                   <tr className="bg-primary text-white">
-                    <th className="px-8 py-4 font-serif text-xl">State</th>
-                    <th className="px-8 py-4 font-serif text-xl">Avg. Monthly Fee</th>
+                    <th scope="col" className="px-8 py-4 font-serif text-xl">State</th>
+                    <th scope="col" className="px-8 py-4 font-serif text-xl">Avg. Monthly Fee</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-border font-bold">
                   {[
-                    { s: "California", f: "$500/mo" },
-                    { s: "Florida", f: "$400/mo" },
-                    { s: "Texas", f: "$300/mo" },
-                    { s: "New York", f: "$450/mo" }
+                    { s: "California", f: "$450/mo", link: "/blog/hoa-fees-california" },
+                    { s: "New York", f: "$480/mo", link: "/blog/average-hoa-fees-new-york" },
+                    { s: "Texas", f: "$230/mo", link: "/blog/hoa-fees-texas" },
+                    { s: "Colorado", f: "$280/mo", link: "/blog/hoa-fees-colorado" },
+                    { s: "Georgia", f: "$220/mo", link: "/blog/hoa-fees-georgia" }
                   ].map((row, i) => (
                     <tr key={i} className="hover:bg-accent/5 transition-colors">
-                      <td className="px-8 py-6 text-primary">{row.s}</td>
+                      <td className="px-8 py-6 text-primary">
+                        <Link to={row.link} className="hover:text-accent transition-colors underline decoration-border">
+                          {row.s}
+                        </Link>
+                      </td>
                       <td className="px-8 py-6 text-accent">{row.f}</td>
                     </tr>
                   ))}

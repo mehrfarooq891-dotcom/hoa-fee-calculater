@@ -1,41 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import BlogArticleLayout from '@/src/components/BlogArticleLayout';
+import QuickAnswerBox from '@/src/components/QuickAnswerBox';
 
 export default function HOALawsByStateArticle() {
   const relatedLinks = [
     { label: "States With No HOA Laws: Complete Legislative Ranking", to: "/blog/states-no-hoa-laws" },
+    { label: "HOA Fee Increase Limits: Statutory Caps by State", to: "/blog/hoa-fee-increase-limits" },
     { label: "HOA Rules Enforcement: Fines, Liens, and Legal Rights", to: "/blog/hoa-rules-enforcement" },
-    { label: "Condo Fees vs HOA Fees: Average Cost Comparison 2026", to: "/blog/condo-fees-vs-hoa-fees" },
-    { label: "HOA Dues Explained: What You're Really Paying For", to: "/blog/hoa-dues-explained" },
+    { label: "What to Do When Your HOA Is Not Responding", to: "/blog/hoa-not-responding" },
     { label: "Explore State-by-State HOA Rules Directory", to: "/states" }
   ];
-
-  const newsArticleSchema = {
-    "@context": "https://schema.org",
-    "@type": "NewsArticle",
-    "headline": "HOA Laws by State: What Homeowners Need to Know",
-    "description": "Understand how HOA laws vary by state, how CC&Rs govern communities, states with strict statutes, and when association rules become unenforceable.",
-    "datePublished": "2026-08-03T08:00:00Z",
-    "dateModified": "2026-08-03T08:00:00Z",
-    "author": {
-      "@type": "Organization",
-      "name": "HOA Research Team",
-      "url": "https://www.hoafeecalculator.com/"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "HOACalculator.com",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.hoafeecalculator.com/hoa_calculator_logo.svg"
-      }
-    },
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://www.hoafeecalculator.com/blog/hoa-laws-by-state"
-    }
-  };
 
   const faqPageSchema = {
     "@context": "https://schema.org",
@@ -91,20 +66,21 @@ export default function HOALawsByStateArticle() {
       category="Legal & Foreclosure"
       readTime="8 min read"
       date="August 3, 2026"
+      lastUpdatedDate="September 10, 2026"
       relatedLinks={relatedLinks}
+      faqSchema={faqPageSchema}
+      speakableSelector=".aeo-quick-answer"
     >
-      {/* SEO & Schema Metadata */}
-      {/* 
-        SEO: HOA Laws by State: What Homeowners Need to Know
-        META: Understand how HOA laws vary by state, how CC&Rs govern communities, states with strict statutes, and when association rules become unenforceable.
-      */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(newsArticleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
+      <QuickAnswerBox
+        title="Quick Answer: HOA Laws by State"
+        answer="HOA laws across the United States operate under a two-tiered hierarchy: overarching state statutory law (Planned Community Acts, Condominium Property Acts, or Nonprofit Corporation statutes) and private recorded community CC&Rs (Covenants, Conditions, and Restrictions). When private CC&Rs conflict with state or federal statutes (such as the Fair Housing Act or OTARD satellite rules), statutory law always supersedes. California (Davis-Stirling Act), Florida (Chapters 718/720), and Texas (Property Code Chapter 209) enforce the nation's strictest HOA regulations, while states like Arkansas and Massachusetts provide minimal statutory oversight."
+        highlights={[
+          { label: "Governing Hierarchy", value: "Federal > State > CC&Rs" },
+          { label: "Strictest States", value: "FL, CA, TX, NV, WA" },
+          { label: "Least Regulated", value: "AR, MA, VT, WY" },
+          { label: "Enforceability Limit", value: "FHA, ADA, State Code" }
+        ]}
+        className="my-6 not-prose"
       />
 
       <article className="space-y-6 text-justify">
@@ -215,11 +191,11 @@ export default function HOALawsByStateArticle() {
         </p>
 
         <p>
-          California&apos;s Davis-Stirling Act sets rigorous open meeting rules, mandates annual financial disclosures, and limits annual regular fee increases to 20% without owner vote approval.
+          California&apos;s Davis-Stirling Act sets rigorous open meeting rules, mandates annual financial disclosures, and limits annual regular fee increases to 20% without owner vote approval (see statutory caps across every state in our guide to <Link to="/blog/hoa-fee-increase-limits" className="text-accent underline hover:text-accent/80 transition-colors">HOA fee increase limits</Link>).
         </p>
 
         <p>
-          Texas Property Code Chapter 209 protects homeowners by requiring formal written hearing opportunities before issuing fines or initiating foreclosure proceedings over delinquent accounts.
+          Texas Property Code Chapter 209 protects homeowners by requiring formal written hearing opportunities before issuing fines or initiating foreclosure proceedings over delinquent accounts (see our detailed guide on <Link to="/blog/hoa-foreclosure" className="text-accent underline hover:text-accent/80 transition-colors">HOA foreclosure procedures</Link>).
         </p>
 
         <h2 className="text-2xl font-serif font-bold text-primary mt-10 mb-4">
@@ -259,7 +235,7 @@ export default function HOALawsByStateArticle() {
         </p>
 
         <p>
-          You can also learn how monthly fee structures compare across building types in our <Link to="/blog/condo-fees-vs-hoa-fees" className="text-accent underline hover:text-accent/80 transition-colors">condo fees vs HOA fees comparison</Link> or understand payment obligations in our breakdown of <Link to="/blog/hoa-dues-explained" className="text-accent underline hover:text-accent/80 transition-colors">what HOA dues really fund</Link>.
+          You can also learn how monthly fee structures compare across building types in our <Link to="/blog/condo-fees-vs-hoa-fees" className="text-accent underline hover:text-accent/80 transition-colors">condo fees vs HOA fees comparison</Link>, understand payment obligations in our breakdown of <Link to="/blog/hoa-dues-explained" className="text-accent underline hover:text-accent/80 transition-colors">what HOA dues really fund</Link>, or take action if your board is stonewalling maintenance by following our playbook on <Link to="/blog/hoa-not-responding" className="text-accent underline hover:text-accent/80 transition-colors">what to do when an HOA is not responding</Link>.
         </p>
 
         <h2 className="text-2xl font-serif font-bold text-primary mt-10 mb-4">

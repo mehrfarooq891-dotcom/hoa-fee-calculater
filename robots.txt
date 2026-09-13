@@ -1,5 +1,10 @@
 User-agent: *
 Allow: /
-Disallow: /assets/
 
 Sitemap: https://www.hoafeecalculator.com/sitemap.xml
+Sitemap: https://www.hoafeecalculator.com/sitemap_index.xml
+Sitemap: https://www.hoafeecalculator.com/blog-sitemap.xml
+Sitemap: https://www.hoafeecalculator.com/state-sitemap.xml
+Sitemap: https://www.hoafeecalculator.com/city-sitemap.xml
+Sitemap: https://www.hoafeecalculator.com/page-sitemap.xml
+

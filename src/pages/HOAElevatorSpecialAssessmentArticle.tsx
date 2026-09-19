@@ -57,7 +57,7 @@ export default function HOAElevatorSpecialAssessmentArticle() {
     },
     "publisher": {
       "@type": "Organization",
-      "name": "HOACalculator.com",
+      "name": "HOAFeeCalculator.com",
       "logo": {
         "@type": "ImageObject",
         "url": "https://www.hoafeecalculator.com/favicon.png"
@@ -86,7 +86,7 @@ export default function HOAElevatorSpecialAssessmentArticle() {
 
       {/* Author Header */}
       <div className="bg-bg-light border border-border p-4 rounded-xl mb-8 text-xs md:text-sm text-secondary">
-        <strong>Written by the HOA Research Team</strong> — senior real estate analysts at HOACalculator.com, compiling HOA cost data across all 50 US states.
+        <strong>Written by the HOA Research Team</strong> — senior real estate analysts at HOAFeeCalculator.com, compiling HOA cost data across all 50 US states.
       </div>
 
       <p className="text-lg text-primary/90 leading-relaxed font-medium mb-6">
@@ -362,7 +362,7 @@ export default function HOAElevatorSpecialAssessmentArticle() {
 
       {/* Author Bio */}
       <div className="bg-bg-light border border-border p-6 rounded-2xl my-8 text-sm text-secondary">
-        <strong>Written by the HOA Research Team</strong> — senior real estate analysts at HOACalculator.com, compiling HOA cost data across all 50 US states.
+        <strong>Written by the HOA Research Team</strong> — senior real estate analysts at HOAFeeCalculator.com, compiling HOA cost data across all 50 US states.
       </div>
     </BlogArticleLayout>
   );

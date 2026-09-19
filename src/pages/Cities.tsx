@@ -307,7 +307,7 @@ export default function Cities() {
           <div className="col-span-1 md:col-span-2">
             <Link to="/" className="flex items-center mb-4">
               <span className="font-serif text-2xl font-bold text-white">
-                HOA<span className="text-accent">Calculator</span>.com
+                HOAFee<span className="text-accent">Calculator</span>.com.com
               </span>
             </Link>
             <p className="max-w-sm text-sm opacity-80 leading-relaxed">The most comprehensive HOA fee calculation tool and city resource hub for US homebuyers.</p>
@@ -337,7 +337,7 @@ export default function Cities() {
           </div>
         </div>
         <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-primary/10 text-center text-xs opacity-60">
-          <p>© 2026 HOACalculator.com. All rights reserved. Estimates are for educational purposes only.</p>
+          <p>© 2026 HOAFeeCalculator.com. All rights reserved. Estimates are for educational purposes only.</p>
         </div>
       </footer>
     </div>

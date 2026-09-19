@@ -58,7 +58,7 @@ export default function HOAThreateningForeclosureGuideArticle() {
     },
     "publisher": {
       "@type": "Organization",
-      "name": "HOACalculator.com",
+      "name": "HOAFeeCalculator.com",
       "logo": {
         "@type": "ImageObject",
         "url": "https://www.hoafeecalculator.com/favicon.svg"
@@ -439,7 +439,7 @@ export default function HOAThreateningForeclosureGuideArticle() {
               </span>
             </div>
             <p className="text-xs text-slate-500 mb-3 font-medium">
-              HOACalculator.com Editorial Team • Member, American Real Estate & Urban Economics Association
+              HOAFeeCalculator.com Editorial Team • Member, American Real Estate & Urban Economics Association
             </p>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-3">
               Marcus holds a Juris Doctor with a concentration in land use and property rights. He has spent over 14 years auditing community association governing documents, analyzing state CC&R statutes, and advising housing counselors on default prevention strategies across all 50 states.

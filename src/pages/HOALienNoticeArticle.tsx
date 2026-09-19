@@ -24,7 +24,7 @@ export default function HOALienNoticeArticle() {
     },
     "publisher": {
       "@type": "Organization",
-      "name": "HOACalculator.com",
+      "name": "HOAFeeCalculator.com",
       "logo": {
         "@type": "ImageObject",
         "url": "https://www.hoafeecalculator.com/favicon.svg"
@@ -257,7 +257,7 @@ export default function HOALienNoticeArticle() {
 
         {/* Author Bio Block */}
         <div className="author-bio mt-12 pt-6 border-t border-border/80 text-sm italic text-primary/75">
-          <strong>Written by the HOA Research Team</strong> — senior real estate analysts at HOACalculator.com, compiling HOA cost data across all 50 US states.
+          <strong>Written by the HOA Research Team</strong> — senior real estate analysts at HOAFeeCalculator.com, compiling HOA cost data across all 50 US states.
         </div>
       </article>
 

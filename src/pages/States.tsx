@@ -311,7 +311,7 @@ export default function States() {
             <Link to="/" className="inline-flex items-center mb-6">
               <img 
                 src="/hoa_calculator_logo.svg" 
-                alt="HOA Fee Calculator" 
+                alt="HOAFeeCalculator.com" 
                 width="180" height="45" style={{height: '45px', width: '180px'}}
                 onError={(e) => {
                   e.currentTarget.style.display = 'none';
@@ -324,7 +324,7 @@ export default function States() {
                 className="font-serif text-2xl font-bold text-white"
                 style={{display: 'none'}}
               >
-                HOA<span className="text-accent">Calculator</span>.com
+                HOAFee<span className="text-accent">Calculator</span>.com.com
               </span>
             </Link>
             <p className="max-w-sm text-sm opacity-80 leading-relaxed">The most comprehensive HOA fee calculation tool and resource hub for US homebuyers.</p>

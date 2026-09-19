@@ -16,7 +16,7 @@ function LegalFooter() {
            <Link to="/" className="inline-flex items-center mb-6">
              <img 
                src="/hoa_calculator_logo.svg" 
-               alt="HOA Fee Calculator" 
+               alt="HOAFeeCalculator.com" 
                width="180" height="45" style={{height: '45px', width: '180px'}}
                onError={(e) => {
                  e.currentTarget.style.display = 'none';
@@ -29,7 +29,7 @@ function LegalFooter() {
                className="font-serif text-2xl font-bold text-white"
                style={{ display: 'none' }}
              >
-               HOA<span className="text-accent">Calculator</span>.com
+               HOAFee<span className="text-accent">Calculator</span>.com.com
              </span>
            </Link>
            <p className="max-w-sm text-sm opacity-80 leading-relaxed">Providing financial transparency for US residents and homebuyers.</p>
@@ -64,7 +64,7 @@ export function PrivacyPolicy() {
   return (
     <div className="min-h-screen flex flex-col bg-bg-light">
       <SEO 
-        title="Privacy Policy — HOACalculator.com" 
+        title="Privacy Policy — HOAFeeCalculator.com" 
         description="Our commitment to your privacy. Read how we handle, process, and protect your data." 
         canonical="/privacy-policy"
       />
@@ -77,7 +77,7 @@ export function PrivacyPolicy() {
           
           <div className="prose prose-slate max-w-none text-primary opacity-80 space-y-6">
             <p className="lead text-lg opacity-90">
-              At HOACalculator.com, we take your privacy seriously. This policy outlines how we collect, use, and protect your information.
+              At HOAFeeCalculator.com, we take your privacy seriously. This policy outlines how we collect, use, and protect your information.
             </p>
             
             <h2 className="text-2xl font-serif font-bold text-primary pt-4">1. Data Collection</h2>
@@ -95,7 +95,7 @@ export function PrivacyPolicy() {
             <p>We leverage web cookies to evaluate site traffic and streamline your computational experience. You have entire authority to terminate or clear cookies in your standard web browser settings at any point.</p>
 
             <h2 className="text-2xl font-serif font-bold text-primary pt-4">4. Reach Support</h2>
-            <p>If you have any questions, security concerns, or delete requests regarding our privacy policy, contact our compliance team directly at <a href="mailto:privacy@hoacalculator.com" className="text-accent underline hover:text-accent/80">privacy@hoacalculator.com</a>.</p>
+            <p>If you have any questions, security concerns, or delete requests regarding our privacy policy, contact our compliance team directly at <a href="mailto:privacy@hoafeecalculator.com" className="text-accent underline hover:text-accent/80">privacy@hoafeecalculator.com</a>.</p>
           </div>
         </div>
       </main>
@@ -109,7 +109,7 @@ export function Disclaimer() {
   return (
     <div className="min-h-screen flex flex-col bg-bg-light">
       <SEO 
-        title="Financial Disclaimer — HOACalculator.com" 
+        title="Financial Disclaimer — HOAFeeCalculator.com" 
         description="Important legal information, limits of liability, and state data estimations regarding our calculator." 
         canonical="/disclaimer"
       />
@@ -122,7 +122,7 @@ export function Disclaimer() {
 
           <div className="prose prose-slate max-w-none text-primary opacity-80 space-y-6">
             <p className="lead text-lg opacity-90">
-              The information and mathematical projections provided by HOACalculator.com are strictly for educational and general informational purposes only.
+              The information and mathematical projections provided by HOAFeeCalculator.com are strictly for educational and general informational purposes only.
             </p>
             
             <h2 className="text-2xl font-serif font-bold text-primary pt-4">1. Not Professional Asset Advice</h2>
@@ -146,8 +146,8 @@ export function TermsOfService() {
   return (
     <div className="min-h-screen flex flex-col bg-bg-light">
       <SEO 
-        title="Terms of Service — HOACalculator.com" 
-        description="Read the terms of service and usage conditions of HOACalculator.com." 
+        title="Terms of Service — HOAFeeCalculator.com" 
+        description="Read the terms of service and usage conditions of HOAFeeCalculator.com." 
         canonical="/terms"
       />
       <LegalHeader />
@@ -159,17 +159,17 @@ export function TermsOfService() {
 
           <div className="prose prose-slate max-w-none text-primary opacity-80 space-y-6">
             <p className="lead text-lg opacity-90">
-              Welcome to HOACalculator.com. By accessing or using our website, you agree to comply with and be bound by the following Terms of Service.
+              Welcome to HOAFeeCalculator.com. By accessing or using our website, you agree to comply with and be bound by the following Terms of Service.
             </p>
             
             <h2 className="text-2xl font-serif font-bold text-primary pt-4">1. Acceptance of Terms</h2>
-            <p>By executing searches, using our mathematical calculators, or viewing content on HOACalculator.com, you declare your total agreement with these terms. If you do not accept these conditions, you are prohibited from utilizing this platform.</p>
+            <p>By executing searches, using our mathematical calculators, or viewing content on HOAFeeCalculator.com, you declare your total agreement with these terms. If you do not accept these conditions, you are prohibited from utilizing this platform.</p>
 
             <h2 className="text-2xl font-serif font-bold text-primary pt-4">2. Intellectual Property</h2>
-            <p>All algorithms, calculator designs, database compilations, and authored articles on HOACalculator.com are property of our research team and partners. Unauthorized scraping, replication, or distribution without explicit credit is strictly forbidden.</p>
+            <p>All algorithms, calculator designs, database compilations, and authored articles on HOAFeeCalculator.com are property of our research team and partners. Unauthorized scraping, replication, or distribution without explicit credit is strictly forbidden.</p>
 
             <h2 className="text-2xl font-serif font-bold text-primary pt-4">3. Limitation of Liability</h2>
-            <p>Our calculators provide estimations and mathematical analyses only. HOACalculator.com and its creators shall not be liable for any direct, indirect, or consequential damages resulting from residential real estate choices or home purchases.</p>
+            <p>Our calculators provide estimations and mathematical analyses only. HOAFeeCalculator.com and its creators shall not be liable for any direct, indirect, or consequential damages resulting from residential real estate choices or home purchases.</p>
           </div>
         </div>
       </main>

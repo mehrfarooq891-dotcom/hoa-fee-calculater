@@ -8,11 +8,11 @@ export default function About() {
   const aboutSchema = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
-    "name": "About HOACalculator.com — HOA Research Team & Editorial Methodology",
+    "name": "About HOAFeeCalculator.com — HOA Research Team & Editorial Methodology",
     "description": "Learn how the HOA Research Team compiles, verifies, and analyzes HOA fee data across all 50 US states to empower American homebuyers with complete financial transparency.",
     "publisher": {
       "@type": "Organization",
-      "name": "HOACalculator.com",
+      "name": "HOAFeeCalculator.com",
       "url": "https://www.hoafeecalculator.com/"
     }
   };
@@ -20,7 +20,7 @@ export default function About() {
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <SEO 
-        title="About Us & Methodology | HOACalculator.com"
+        title="About Us & Methodology | HOAFeeCalculator.com"
         description="Discover how the HOA Research Team compiles, analyzes, and verifies HOA fee data across all 50 US states. Our editorial standards, data methodology, and commitment to homebuyer transparency."
         canonical="/about"
         schema={[aboutSchema]}
@@ -38,7 +38,7 @@ export default function About() {
               E-E-A-T Research & Editorial Transparency
             </span>
             <h1 className="text-4xl md:text-6xl font-serif font-bold text-primary mb-6">
-              About HOACalculator.com
+              About HOAFeeCalculator.com
             </h1>
             <p className="text-xl text-primary/80 max-w-3xl mx-auto leading-relaxed">
               Empowering American homebuyers with verified state-by-state HOA cost benchmarks, statutory legal guides, and lifetime assessment calculators.
@@ -58,7 +58,7 @@ export default function About() {
                     1. Who We Are: The HOA Research Team
                   </h2>
                   <p className="text-primary/90 text-base md:text-lg leading-relaxed">
-                    HOACalculator.com is developed and maintained by the <strong>HOA Research Team</strong> — an independent group of residential real estate analysts, data researchers, and housing legal policy specialists dedicated to consumer financial transparency.
+                    HOAFeeCalculator.com is developed and maintained by the <strong>HOA Research Team</strong> — an independent group of residential real estate analysts, data researchers, and housing legal policy specialists dedicated to consumer financial transparency.
                   </p>
                   <p className="text-primary/80 text-base leading-relaxed">
                     Homeowners Association (HOA) dues represent one of the fastest-growing ongoing expenses for US homebuyers, yet reliable data on long-term fee increases, state legal caps, and special assessment risks remains notoriously hard to find. Our mission is to bridge this information gap by aggregating, tracking, and modeling HOA financial data across all 50 states — helping buyers accurately calculate their true lifetime cost of homeownership before signing a purchase contract.
@@ -155,7 +155,7 @@ export default function About() {
                   <div>
                     <h4 className="font-serif font-bold text-lg text-primary">Legal Citation Verification</h4>
                     <p className="text-primary/80 text-sm leading-relaxed">
-                      Every consumer guide and state-specific article published on HOACalculator.com is cross-referenced directly against official state property statutes, statutory notice periods, and legal precedent before publication.
+                      Every consumer guide and state-specific article published on HOAFeeCalculator.com is cross-referenced directly against official state property statutes, statutory notice periods, and legal precedent before publication.
                     </p>
                   </div>
                 </div>
@@ -175,7 +175,7 @@ export default function About() {
                   <div>
                     <h4 className="font-serif font-bold text-lg text-primary">Strict Editorial Independence</h4>
                     <p className="text-primary/80 text-sm leading-relaxed">
-                      We operate with complete objectivity. HOACalculator.com does not accept sponsored content, paid promotional placement from HOA management companies, or referral commissions from real estate brokerages.
+                      We operate with complete objectivity. HOAFeeCalculator.com does not accept sponsored content, paid promotional placement from HOA management companies, or referral commissions from real estate brokerages.
                     </p>
                   </div>
                 </div>
@@ -215,7 +215,7 @@ export default function About() {
           {/* Disclaimer */}
           <div className="bg-bg-light border border-border p-8 rounded-2xl text-center mb-16">
             <p className="text-xs md:text-sm text-primary/80 leading-relaxed max-w-3xl mx-auto">
-              <strong>Legal Disclaimer:</strong> HOACalculator.com is an independent educational and research platform. All calculator projections, state averages, and legislative summaries are provided for informational purposes only and do not constitute formal financial, legal, or real estate underwriting advice. Homebuyers should always review official community CC&Rs, financial statements, and resale disclosures with a qualified legal professional prior to closing.
+              <strong>Legal Disclaimer:</strong> HOAFeeCalculator.com is an independent educational and research platform. All calculator projections, state averages, and legislative summaries are provided for informational purposes only and do not constitute formal financial, legal, or real estate underwriting advice. Homebuyers should always review official community CC&Rs, financial statements, and resale disclosures with a qualified legal professional prior to closing.
             </p>
           </div>
 
@@ -244,7 +244,7 @@ export default function About() {
              <Link to="/" className="inline-flex items-center mb-6">
                <img 
                  src="/hoa_calculator_logo.svg" 
-                 alt="HOA Fee Calculator" 
+                 alt="HOAFeeCalculator.com" 
                  width="180" height="45" style={{height: '45px', width: '180px'}}
                  onError={(e) => {
                    e.currentTarget.style.display = 'none';
@@ -257,7 +257,7 @@ export default function About() {
                  className="font-serif text-2xl font-bold text-white"
                  style={{display: 'none'}}
                >
-                 HOA<span className="text-accent">Calculator</span>.com
+                 HOAFee<span className="text-accent">Calculator</span>.com.com
                </span>
              </Link>
              <p className="max-w-sm text-sm opacity-80 leading-relaxed">Providing financial transparency for US residents and homebuyers across all 50 states.</p>

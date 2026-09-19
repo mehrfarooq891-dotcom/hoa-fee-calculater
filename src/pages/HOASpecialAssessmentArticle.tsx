@@ -23,7 +23,7 @@ export default function HOASpecialAssessmentArticle() {
       {/* Hidden SEO & Schema Helper */}
       <div className="hidden">
         <h2>SEO Target Meta Details</h2>
-        <p><strong>SEO Title Tag:</strong> HOA Special Assessment: What It Is and How to Protect Yourself | HOACalculator.com</p>
+        <p><strong>SEO Title Tag:</strong> HOA Special Assessment: What It Is and How to Protect Yourself | HOAFeeCalculator.com</p>
         <p><strong>Meta Description:</strong> Your complete guide to HOA special assessments. Learn how surprise capital charges occur, real-dollar costs from roof to elevator repairs, and how the 70% reserve rule protects you before buying.</p>
         <script type="application/ld+json">
           {JSON.stringify({
@@ -31,24 +31,24 @@ export default function HOASpecialAssessmentArticle() {
             "@type": "BlogPosting",
             "headline": "HOA Special Assessment: What It Is and How to Protect Yourself",
             "description": "An exhaustive guide to understanding, anticipating, and defending against homeowners association special assessments.",
-            "image": "https://hoacalculator.com/hoa_calculator_logo.svg",
+            "image": "https://www.hoafeecalculator.com/hoa_calculator_logo.svg",
             "author": {
               "@type": "Organization",
-              "name": "HOACalculator.com Editorial Board"
+              "name": "HOAFeeCalculator.com Editorial Board"
             },
             "publisher": {
               "@type": "Organization",
-              "name": "HOACalculator.com",
+              "name": "HOAFeeCalculator.com",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://hoacalculator.com/hoa_calculator_logo.svg"
+                "url": "https://www.hoafeecalculator.com/hoa_calculator_logo.svg"
               }
             },
             "datePublished": "2026-05-24",
             "dateModified": "2026-05-24",
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://hoacalculator.com/blog/hoa-special-assessment"
+              "@id": "https://www.hoafeecalculator.com/blog/hoa-special-assessment"
             }
           })}
         </script>

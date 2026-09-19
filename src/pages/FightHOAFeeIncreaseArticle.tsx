@@ -22,7 +22,7 @@ export default function FightHOAFeeIncreaseArticle() {
       {/* SEO Metadata & Schema JSON-LD block helper inside SEO-targeted hidden elements */}
       <div className="hidden">
         <h2>SEO Target Meta Details</h2>
-        <p><strong>SEO Title Tag:</strong> How to Fight an <a href="https://www.hoafeecalculator.com/" className="text-accent underline hover:text-accent/80 transition-colors">HOA Fee</a> Increase (Step-by-Step Guide) | HOACalculator.com</p>
+        <p><strong>SEO Title Tag:</strong> How to Fight an <a href="https://www.hoafeecalculator.com/" className="text-accent underline hover:text-accent/80 transition-colors">HOA Fee</a> Increase (Step-by-Step Guide) | HOAFeeCalculator.com</p>
         <p><strong>Meta Description:</strong> Your HOA just raised fees 20% — but you have more options than you think. Learn how to verify legality, audit their budget, draft formal object letters, and organize community vetoes under state laws.</p>
         <script type="application/ld+json">
           {JSON.stringify({
@@ -30,24 +30,24 @@ export default function FightHOAFeeIncreaseArticle() {
             "@type": "BlogPosting",
             "headline": "How to Fight an HOA Fee Increase: The Definitive Step-by-Step Guide",
             "description": "An exhaustive, legal and strategic handbook empowering homeowners to audit, challenge, veto, or litigate unfair HOA fee spikes.",
-            "image": "https://hoacalculator.com/hoa_calculator_logo.svg",
+            "image": "https://www.hoafeecalculator.com/hoa_calculator_logo.svg",
             "author": {
               "@type": "Organization",
-              "name": "HOACalculator.com Editorial Board"
+              "name": "HOAFeeCalculator.com Editorial Board"
             },
             "publisher": {
               "@type": "Organization",
-              "name": "HOACalculator.com",
+              "name": "HOAFeeCalculator.com",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://hoacalculator.com/hoa_calculator_logo.svg"
+                "url": "https://www.hoafeecalculator.com/hoa_calculator_logo.svg"
               }
             },
             "datePublished": "2026-05-25",
             "dateModified": "2026-05-25",
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://hoacalculator.com/blog/fight-hoa-fee-increase"
+              "@id": "https://www.hoafeecalculator.com/blog/fight-hoa-fee-increase"
             }
           })}
         </script>

@@ -34,7 +34,7 @@ export default function TexasHOAFeesArticle() {
     },
     "publisher": {
       "@type": "Organization",
-      "name": "HOACalculator.com",
+      "name": "HOAFeeCalculator.com",
       "url": "https://www.hoafeecalculator.com",
       "logo": {
         "@type": "ImageObject",
@@ -64,7 +64,7 @@ export default function TexasHOAFeesArticle() {
           <Link to="/" className="flex items-center">
             <img 
               src="/hoa_calculator_logo.svg" 
-              alt="HOA Fee Calculator" 
+              alt="HOAFeeCalculator.com" 
               width="180" height="45" style={{height: '45px', width: '180px'}}
               onError={(e) => {
                 e.currentTarget.style.display = 'none';
@@ -77,7 +77,7 @@ export default function TexasHOAFeesArticle() {
               className="font-serif text-2xl font-bold text-primary"
               style={{display: 'none'}}
             >
-              HOA<span className="text-accent">Calculator</span>.com
+              HOAFee<span className="text-accent">Calculator</span>.com.com
             </span>
           </Link>
           <nav className="hidden md:flex gap-8 items-center text-sm font-bold uppercase tracking-wider">
@@ -456,7 +456,7 @@ export default function TexasHOAFeesArticle() {
             <Link to="/" className="flex items-center">
               <img 
                 src="/hoa_calculator_logo.svg" 
-                alt="HOA Fee Calculator" 
+                alt="HOAFeeCalculator.com" 
                 width="180" height="45" style={{height: '45px', width: '180px'}}
                 onError={(e) => {
                   e.currentTarget.style.display = 'none';
@@ -469,11 +469,11 @@ export default function TexasHOAFeesArticle() {
                 className="font-serif text-2xl font-bold text-white"
                 style={{display: 'none'}}
               >
-                HOA<span className="text-accent">Calculator</span>.com
+                HOAFee<span className="text-accent">Calculator</span>.com.com
               </span>
             </Link>
           </div>
-          <p className="text-sm">© 2026 HOACalculator.com — Expert Analysis for All 50 States.</p>
+          <p className="text-sm">© 2026 HOAFeeCalculator.com — Expert Analysis for All 50 States.</p>
         </div>
       </footer>
     </div>

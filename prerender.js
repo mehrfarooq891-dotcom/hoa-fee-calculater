@@ -23,49 +23,49 @@ const routes = [
   },
   {
     path: '/about',
-    title: 'About Us - HOA Fee Research & Financial Analysis | HOACalculator.com',
+    title: 'About Us - HOA Fee Research & Financial Analysis | HOAFeeCalculator.com',
     description: 'Learn about the HOA Research Team, our data sources, methodology, and consumer advocacy for American homeowners.',
-    h1: 'About HOACalculator.com'
+    h1: 'About HOAFeeCalculator.com'
   },
   {
     path: '/contact',
-    title: 'Contact HOA Calculator - Editorial & Data Inquiries | HOACalculator.com',
+    title: 'Contact HOA Calculator - Editorial & Data Inquiries | HOAFeeCalculator.com',
     description: 'Get in touch with our research team for data inquiries, editorial corrections, or media requests.',
     h1: 'Contact Our Research Team'
   },
   {
     path: '/compare',
-    title: 'HOA Fee Comparison Tool - Compare HOA vs Condo Fees | HOACalculator.com',
+    title: 'HOA Fee Comparison Tool - Compare HOA vs Condo Fees | HOAFeeCalculator.com',
     description: 'Compare single-family HOA fees versus condo monthly assessments side-by-side with our interactive housing cost calculator.',
     h1: 'HOA & Condo Fee Comparison Tool'
   },
   {
     path: '/states',
-    title: 'HOA Fees by State - 2026 National Directory & Law Guide | HOACalculator.com',
+    title: 'HOA Fees by State - 2026 National Directory & Law Guide | HOAFeeCalculator.com',
     description: 'Browse average HOA fees, state-specific laws, reserve requirements, and legislative rights across all 50 US states.',
     h1: 'HOA Fees & Laws by State Directory'
   },
   {
     path: '/cities',
-    title: 'HOA Fees by City - 2026 Local Metro Guides | HOACalculator.com',
+    title: 'HOA Fees by City - 2026 Local Metro Guides | HOAFeeCalculator.com',
     description: 'Explore average HOA fees, condo rates, and local association trends across major American metropolitan cities.',
     h1: 'HOA Fees by City'
   },
   {
     path: '/blog',
-    title: 'HOA Fee Insights & Research Blog | HOACalculator.com',
+    title: 'HOA Fee Insights & Research Blog | HOAFeeCalculator.com',
     description: 'Expert analysis on HOA fees, special assessments, state laws, budget red flags, and homeowner legal protections.',
     h1: 'HOA Research & Insights Blog'
   },
   {
     path: '/privacy-policy',
-    title: 'Privacy Policy | HOACalculator.com',
+    title: 'Privacy Policy | HOAFeeCalculator.com',
     description: 'Read our privacy policy regarding user data, cookies, and analytics.',
     h1: 'Privacy Policy'
   },
   {
     path: '/disclaimer',
-    title: 'Financial Disclaimer | HOACalculator.com',
+    title: 'Financial Disclaimer | HOAFeeCalculator.com',
     description: 'Read our financial and legal disclaimer regarding HOA fee calculations and estimation tools.',
     h1: 'Financial Disclaimer'
   }
@@ -80,7 +80,7 @@ try {
     const [, title, excerpt, date, category, slug] = match;
     routes.push({
       path: slug.startsWith('/') ? slug : `/${slug}`,
-      title: `${title} | HOACalculator.com`,
+      title: `${title} | HOAFeeCalculator.com`,
       description: excerpt,
       h1: title,
       category,

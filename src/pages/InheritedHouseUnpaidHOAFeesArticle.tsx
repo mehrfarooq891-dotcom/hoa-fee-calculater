@@ -65,7 +65,7 @@ export default function InheritedHouseUnpaidHOAFeesArticle() {
     },
     "publisher": {
       "@type": "Organization",
-      "name": "HOACalculator.com",
+      "name": "HOAFeeCalculator.com",
       "logo": {
         "@type": "ImageObject",
         "url": "https://www.hoafeecalculator.com/favicon.png"
@@ -111,7 +111,7 @@ export default function InheritedHouseUnpaidHOAFeesArticle() {
 
       {/* Author Header */}
       <div className="bg-bg-light border border-border p-4 rounded-xl mb-8 text-xs md:text-sm text-secondary">
-        <strong>Written by the HOA Research Team</strong> — senior real estate analysts at HOACalculator.com, compiling HOA cost data across all 50 US states.
+        <strong>Written by the HOA Research Team</strong> — senior real estate analysts at HOAFeeCalculator.com, compiling HOA cost data across all 50 US states.
       </div>
 
       <p className="text-lg text-primary/90 leading-relaxed font-medium mb-6">
@@ -340,7 +340,7 @@ export default function InheritedHouseUnpaidHOAFeesArticle() {
 
       {/* Author Bio */}
       <div className="bg-bg-light border border-border p-6 rounded-2xl text-xs md:text-sm text-secondary mt-10">
-        <strong>Written by the HOA Research Team</strong> — senior real estate analysts at HOACalculator.com, compiling HOA cost data across all 50 US states. Learn more on our <Link to="/about" className="text-accent underline font-medium">About Us</Link> page.
+        <strong>Written by the HOA Research Team</strong> — senior real estate analysts at HOAFeeCalculator.com, compiling HOA cost data across all 50 US states. Learn more on our <Link to="/about" className="text-accent underline font-medium">About Us</Link> page.
       </div>
     </BlogArticleLayout>
   );

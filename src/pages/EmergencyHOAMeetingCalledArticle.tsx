@@ -54,7 +54,7 @@ export default function EmergencyHOAMeetingCalledArticle() {
     },
     "publisher": {
       "@type": "Organization",
-      "name": "HOACalculator.com",
+      "name": "HOAFeeCalculator.com",
       "logo": {
         "@type": "ImageObject",
         "url": "https://www.hoafeecalculator.com/favicon.png"
@@ -387,10 +387,10 @@ export default function EmergencyHOAMeetingCalledArticle() {
                 </span>
               </div>
               <p className="text-xs text-slate-500 mb-3 font-medium">
-                HOACalculator.com Editorial Team • Member, American Real Estate & Urban Economics Association
+                HOAFeeCalculator.com Editorial Team • Member, American Real Estate & Urban Economics Association
               </p>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-3">
-                Written by the HOA Research Team — senior real estate analysts at HOACalculator.com, compiling HOA cost data across all 50 US states.
+                Written by the HOA Research Team — senior real estate analysts at HOAFeeCalculator.com, compiling HOA cost data across all 50 US states.
               </p>
               <div className="text-xs text-slate-500 flex items-center gap-2 pt-2 border-t border-slate-200">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />

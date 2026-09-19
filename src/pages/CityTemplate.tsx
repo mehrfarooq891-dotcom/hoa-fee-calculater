@@ -349,7 +349,7 @@ export default function CityTemplate() {
              <Link to="/" className="inline-flex items-center mb-6">
                <img 
                  src="/hoa_calculator_logo.svg" 
-                 alt="HOA Fee Calculator" 
+                 alt="HOAFeeCalculator.com" 
                  width="180" height="45" style={{height: '45px', width: '180px'}}
                  onError={(e) => {
                    e.currentTarget.style.display = 'none';
@@ -362,7 +362,7 @@ export default function CityTemplate() {
                  className="font-serif text-2xl font-bold text-white"
                  style={{display: 'none'}}
                >
-                 HOA<span className="text-accent">Calculator</span>.com
+                 HOAFee<span className="text-accent">Calculator</span>.com.com
                </span>
              </Link>
              <p className="max-w-sm text-sm opacity-80 leading-relaxed">A detailed HOA fee calculation tool for US homebuyers. Trusted by homeowners in all 50 states.</p>
@@ -392,7 +392,7 @@ export default function CityTemplate() {
           </div>
         </div>
         <div className="max-w-7xl mx-auto pt-12 mt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] uppercase tracking-widest font-bold">
-           <span>&copy; 2026 HOACalculator.com. US Real Estate Data Partners. All Rights Reserved.</span>
+           <span>&copy; 2026 HOAFeeCalculator.com. US Real Estate Data Partners. All Rights Reserved.</span>
            <div className="flex gap-8">
               <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy</Link>
               <Link to="/terms" className="hover:text-white transition-colors">Terms</Link>

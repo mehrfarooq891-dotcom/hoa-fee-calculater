@@ -231,7 +231,7 @@ export const routes: RouteRecord[] = [
   {
     path: '/',
     element: <RootLayout />,
-    loader: async () => ({ site: 'HOACalculator.com', timestamp: '2026' }),
+    loader: async () => ({ site: 'HOAFeeCalculator.com', timestamp: '2026' }),
     children: [
       { index: true, element: <Home />, loader: async () => ({ page: 'home' }) },
       { path: 'about', element: <About />, loader: async () => ({ page: 'about' }) },

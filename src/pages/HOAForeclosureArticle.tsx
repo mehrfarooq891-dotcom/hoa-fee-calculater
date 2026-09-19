@@ -23,7 +23,7 @@ export default function HOAForeclosureArticle() {
       {/* SEO Metadata & Schema JSON-LD block inside head-compatible target or explicitly embedded */}
       <div className="hidden">
         <h2>SEO Target Core Data</h2>
-        <p><strong>Title Tag:</strong> Can an HOA Foreclose on Your Home? State-by-State Rules | HOACalculator.com</p>
+        <p><strong>Title Tag:</strong> Can an HOA Foreclose on Your Home? State-by-State Rules | HOAFeeCalculator.com</p>
         <p><strong>Meta Description:</strong> In 22 states, an HOA can foreclose on your home even if your mortgage is current. Know your legal rights, state caps, super-lien rules, and save your home's equity.</p>
         <script type="application/ld+json">
           {JSON.stringify({
@@ -31,24 +31,24 @@ export default function HOAForeclosureArticle() {
             "@type": "BlogPosting",
             "headline": "Can an HOA Foreclose on Your Home? State-by-State Rules",
             "description": "An in-depth, state-by-state analysis of HOA foreclosure laws, debt thresholds, timelines, and rights of redemption in the United States.",
-            "image": "https://hoacalculator.com/hoa_calculator_logo.svg",
+            "image": "https://www.hoafeecalculator.com/hoa_calculator_logo.svg",
             "author": {
               "@type": "Organization",
-              "name": "HOACalculator.com Legal Editorial Team"
+              "name": "HOAFeeCalculator.com Legal Editorial Team"
             },
             "publisher": {
               "@type": "Organization",
-              "name": "HOACalculator.com",
+              "name": "HOAFeeCalculator.com",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://hoacalculator.com/hoa_calculator_logo.svg"
+                "url": "https://www.hoafeecalculator.com/hoa_calculator_logo.svg"
               }
             },
             "datePublished": "2026-05-28",
             "dateModified": "2026-05-28",
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://hoacalculator.com/blog/hoa-foreclosure"
+              "@id": "https://www.hoafeecalculator.com/blog/hoa-foreclosure"
             }
           })}
         </script>

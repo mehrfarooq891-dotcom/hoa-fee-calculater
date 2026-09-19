@@ -650,7 +650,7 @@ export default function Blog() {
             <Link to="/" className="inline-flex items-center mb-6">
               <img 
                 src="/hoa_calculator_logo.svg" 
-                alt="HOA Fee Calculator" 
+                alt="HOAFeeCalculator.com" 
                 width="180" height="45" style={{height: '45px', width: '180px'}}
                 onError={(e) => {
                   e.currentTarget.style.display = 'none';
@@ -663,7 +663,7 @@ export default function Blog() {
                 className="font-serif text-2xl font-bold text-white"
                 style={{display: 'none'}}
               >
-                HOA<span className="text-accent">Calculator</span>.com
+                HOAFee<span className="text-accent">Calculator</span>.com.com
               </span>
             </Link>
             <p className="max-w-sm text-sm opacity-80 leading-relaxed">The most comprehensive HOA fee calculation tool and resource hub for US homebuyers.</p>
@@ -693,7 +693,7 @@ export default function Blog() {
           </div>
         </div>
         <div className="max-w-7xl mx-auto border-t border-white/10 mt-12 pt-8 text-center text-xs opacity-60">
-          © 2026 HOACalculator.com — All rights reserved.
+          © 2026 HOAFeeCalculator.com — All rights reserved.
         </div>
       </footer>
     </div>

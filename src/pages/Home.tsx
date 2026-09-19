@@ -61,7 +61,7 @@ export default function Home() {
     },
     "publisher": {
       "@type": "Organization",
-      "name": "HOACalculator.com",
+      "name": "HOAFeeCalculator.com",
       "url": "https://www.hoafeecalculator.com",
       "logo": {
         "@type": "ImageObject",
@@ -91,7 +91,7 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <SEO 
-        title="HOA Fee Calculator 2026 — Estimate Your True Cost by State | HOACalculator.com"
+        title="HOA Fee Calculator 2026 — Estimate Your True Cost by State | HOAFeeCalculator.com"
         description="Free HOA fee calculator — estimate your lifetime HOA cost, affordability score, and year-by-year breakdown. Built for homebuyers in all 50 states."
         canonical="/"
         schema={[webAppSchema, faqSchema]}
@@ -169,7 +169,7 @@ export default function Home() {
                 </p>
                 
                 <div className="text-xs text-primary/60 mb-8 border-l-2 border-accent pl-3">
-                  Data compiled and reviewed by the <span className="font-semibold">HOACalculator.com Research Team</span> | Last updated: September 10, 2026
+                  Data compiled and reviewed by the <span className="font-semibold">HOAFeeCalculator.com Research Team</span> | Last updated: September 10, 2026
                 </div>
               
               <div className="grid grid-cols-2 gap-4">
@@ -374,7 +374,7 @@ export default function Home() {
                 "Most homebuyers focus on the mortgage. The HOA fee is the silent budget-killer nobody warns you about."
               </p>
               <div className="mb-6 text-white/80 leading-relaxed text-sm max-w-xl">
-                HOA Research Team has spent 14 years analyzing US residential real estate markets, working with homebuyers across California, Florida, and Texas. He built HOACalculator.com to help buyers understand the true lifetime cost of HOA fees before signing anything.
+                HOA Research Team has spent 14 years analyzing US residential real estate markets, working with homebuyers across California, Florida, and Texas. He built HOAFeeCalculator.com to help buyers understand the true lifetime cost of HOA fees before signing anything.
               </div>
               <div>
                 <h4 className="text-white font-bold text-xl">HOA Research Team</h4>
@@ -549,7 +549,7 @@ export default function Home() {
              <Link to="/" className="inline-flex items-center mb-6">
                <img 
                  src="/hoa_calculator_logo.svg" 
-                 alt="HOA Fee Calculator" 
+                 alt="HOAFeeCalculator.com" 
                  width="180" height="45" style={{height: '45px', width: '180px'}}
                  onError={(e) => {
                    e.currentTarget.style.display = 'none';
@@ -562,7 +562,7 @@ export default function Home() {
                  className="font-serif text-2xl font-bold text-white"
                  style={{display: 'none'}}
                >
-                 HOA<span className="text-accent">Calculator</span>.com
+                 HOAFee<span className="text-accent">Calculator</span>.com.com
                </span>
              </Link>
              <p className="max-w-sm text-sm opacity-80 leading-relaxed">A detailed HOA fee calculation tool for US homebuyers. Trusted by homeowners in all 50 states.</p>
@@ -592,7 +592,7 @@ export default function Home() {
           </div>
         </div>
         <div className="max-w-7xl mx-auto pt-12 mt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] uppercase tracking-widest font-bold">
-           <span>&copy; 2026 HOACalculator.com. US Real Estate Data Partners.</span>
+           <span>&copy; 2026 HOAFeeCalculator.com. US Real Estate Data Partners.</span>
            <div className="flex gap-8">
               <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy</Link>
               <Link to="/terms" className="hover:text-white transition-colors">Terms</Link>

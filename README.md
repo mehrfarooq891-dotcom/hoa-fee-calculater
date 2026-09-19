@@ -1,9 +1,9 @@
-# HOACalculator.com Deployment Guide
+# HOAFeeCalculator.com Deployment Guide
 
 This project is built with React and Vite, optimized for high performance and SEO. Follow these steps to deploy your site to GitHub and Vercel.
 
 ## 1. Prepare Your GitHub Repository
-1. Create a new repository on GitHub named `hoacalculator`.
+1. Create a new repository on GitHub named `hoafeecalculator`.
 2. Open your terminal in this project folder.
 3. Run the following commands:
    ```bash
@@ -11,14 +11,14 @@ This project is built with React and Vite, optimized for high performance and SE
    git add .
    git commit -m "Initial commit: HOA Calculator Launch"
    git branch -M main
-   git remote add origin https://github.com/YOUR_USERNAME/hoacalculator.git
+   git remote add origin https://github.com/YOUR_USERNAME/hoafeecalculator.git
    git push -u origin main
    ```
 
 ## 2. Deploy to Vercel
 1. Go to [Vercel.com](https://vercel.com) and log in.
 2. Click **"Add New..."** and select **"Project"**.
-3. Import your `hoacalculator` repository.
+3. Import your `hoafeecalculator` repository.
 4. Vercel will automatically detect Vite. Leave the default settings:
    - **Framework Preset:** Vite
    - **Build Command:** `npm run build`
@@ -26,7 +26,7 @@ This project is built with React and Vite, optimized for high performance and SE
 5. Click **"Deploy"**.
 
 ## 3. SEO & Monetization Tips
-- **Google Search Console:** Submit your `sitemap.xml` (found at `hoacalculator.com/sitemap.xml`) once deployed.
+- **Google Search Console:** Submit your `sitemap.xml` (found at `hoafeecalculator.com/sitemap.xml`) once deployed.
 - **AdSense:** Once you have some traffic, apply for AdSense. The placeholders are already in the code.
 - **State Pages:** To add more states, simply add them to the `sitemap.xml` and they will be handled by the dynamic route in `App.tsx`.
 

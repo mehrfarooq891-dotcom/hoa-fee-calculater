@@ -8,7 +8,7 @@ import { Mail, Phone, MapPin, Clock } from 'lucide-react';
 export default function Contact() {
   const address = "701 Brazos St, Suite 1600, Austin, TX 78701";
   const phone = "+1 (512) 555-0198";
-  const email = "support@hoacalculator.com";
+  const email = "support@hoafeecalculator.com";
   
   // Google Maps embed URL for the dummy address
   const mapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.8943960167575!2d-97.7424623234907!3d30.2685794748231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b508f7f2b60b%3A0xc3f14986b2b45e7f!2s701%20Brazos%20St%20%231600%2C%20Austin%2C%20TX%2078701!5e0!3m2!1sen!2sus!4v1714322400000!5m2!1sen!2sus";
@@ -16,7 +16,7 @@ export default function Contact() {
   return (
     <div className="min-h-screen flex flex-col bg-bg-light">
       <SEO 
-        title="Contact Us | HOACalculator.com"
+        title="Contact Us | HOAFeeCalculator.com"
         description="Get in touch with the HOA financial experts. Support, data requests, and partnership inquiries."
         canonical="/contact"
       />
@@ -93,7 +93,7 @@ export default function Contact() {
                   allowFullScreen={true} 
                   loading="lazy" 
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="HOACalculator.com Austin Office"
+                  title="HOAFeeCalculator.com Austin Office"
                 />
               </div>
               
@@ -118,7 +118,7 @@ export default function Contact() {
           <Link to="/" className="flex items-center">
             <img 
               src="/hoa_calculator_logo.svg" 
-              alt="HOA Fee Calculator" 
+              alt="HOAFeeCalculator.com" 
               width="180" height="45" style={{height: '45px', width: '180px'}}
               onError={(e) => {
                 e.currentTarget.style.display = 'none';
@@ -131,7 +131,7 @@ export default function Contact() {
               className="font-serif text-2xl font-bold text-white"
               style={{display: 'none'}}
             >
-              HOA<span className="text-accent">Calculator</span>.com
+              HOAFee<span className="text-accent">Calculator</span>.com.com
             </span>
           </Link>
           <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">

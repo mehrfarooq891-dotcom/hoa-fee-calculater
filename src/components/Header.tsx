@@ -33,7 +33,7 @@ export default function Header() {
         <Link to="/" className="flex items-center shrink-0" onClick={handleLinkClick}>
           <img 
             src="/hoa_calculator_logo.svg" 
-            alt="HOA Fee Calculator" 
+            alt="HOAFeeCalculator.com" 
             width="220" 
             height="45" 
             className="h-[45px] w-auto max-w-[220px] object-contain"
@@ -47,7 +47,7 @@ export default function Header() {
           <span 
             className="hidden font-serif text-2xl font-bold text-primary tracking-tight whitespace-nowrap"
           >
-            HOA <span className="text-accent">Calculator</span>
+            HOAFee<span className="text-accent">Calculator</span>.com
           </span>
         </Link>
 

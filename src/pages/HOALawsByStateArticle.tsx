@@ -290,7 +290,7 @@ export default function HOALawsByStateArticle() {
         </div>
 
         <div className="author-bio border-t border-border pt-6 mt-12 text-sm text-primary/80">
-          <strong>Written by the HOA Research Team</strong> — senior real estate analysts at HOACalculator.com, compiling HOA cost data across all 50 US states.
+          <strong>Written by the HOA Research Team</strong> — senior real estate analysts at HOAFeeCalculator.com, compiling HOA cost data across all 50 US states.
         </div>
       </article>
 

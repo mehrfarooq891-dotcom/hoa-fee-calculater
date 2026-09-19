@@ -440,7 +440,7 @@ export default function StateTemplate() {
           <Link to="/" className="flex items-center">
             <img 
               src="/hoa_calculator_logo.svg" 
-              alt="HOA Fee Calculator" 
+              alt="HOAFeeCalculator.com" 
               width="180" height="45" style={{height: '45px', width: '180px'}}
               onError={(e) => {
                 e.currentTarget.style.display = 'none';
@@ -453,7 +453,7 @@ export default function StateTemplate() {
               className="font-serif text-2xl font-bold text-white"
               style={{display: 'none'}}
             >
-              HOA<span className="text-accent">Calculator</span>.com
+              HOAFee<span className="text-accent">Calculator</span>.com.com
             </span>
           </Link>
           <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">

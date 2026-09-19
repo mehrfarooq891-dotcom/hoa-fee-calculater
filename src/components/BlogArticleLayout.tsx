@@ -129,7 +129,7 @@ export default function BlogArticleLayout({
     },
     "publisher": {
       "@type": "Organization",
-      "name": "HOACalculator.com",
+      "name": "HOAFeeCalculator.com",
       "url": "https://www.hoafeecalculator.com",
       "logo": {
         "@type": "ImageObject",
@@ -151,7 +151,7 @@ export default function BlogArticleLayout({
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <SEO 
-        title={`${title} | HOACalculator.com`}
+        title={`${title} | HOAFeeCalculator.com`}
         description={description}
         canonical={resolvedCanonical}
         schema={finalSchema}
@@ -251,7 +251,7 @@ export default function BlogArticleLayout({
             <Link to="/" className="flex items-center">
               <img 
                 src="/hoa_calculator_logo.svg" 
-                alt="HOA Fee Calculator" 
+                alt="HOAFeeCalculator.com" 
                 width="180" height="45" style={{height: '45px', width: '180px'}}
                 onError={(e) => {
                   e.currentTarget.style.display = 'none';
@@ -264,14 +264,14 @@ export default function BlogArticleLayout({
                 className="font-serif text-2xl font-bold text-white"
                 style={{display: 'none'}}
               >
-                HOA<span className="text-accent">Calculator</span>.com
+                HOAFee<span className="text-accent">Calculator</span>.com.com
               </span>
             </Link>
           </div>
           <div className="flex justify-center mb-4">
             <SocialIcons />
           </div>
-          <p className="text-sm">© 2026 HOACalculator.com — Expert Analysis for All 50 States.</p>
+          <p className="text-sm">© 2026 HOAFeeCalculator.com — Expert Analysis for All 50 States.</p>
         </div>
       </footer>
     </div>

@@ -23,7 +23,7 @@ export default function HOADocumentRedFlagsArticle() {
     },
     "publisher": {
       "@type": "Organization",
-      "name": "HOACalculator.com",
+      "name": "HOAFeeCalculator.com",
       "logo": {
         "@type": "ImageObject",
         "url": "https://www.hoafeecalculator.com/hoa_calculator_logo.svg"

@@ -215,6 +215,28 @@ export default function CaliforniaHOAFeesArticle() {
               <p>
                 The cost of performing these technical balcony studies, paired with the immediate remedial structural work required if water damage or rot is detected, has pushed hundreds of Southern and Northern California communities to raise fees or institute massive, non-negotiable capital demands.
               </p>
+
+              {/* Real World Scenario Box */}
+              <div className="not-prose my-8 bg-amber-50/60 border border-amber-300/80 rounded-2xl p-6 md:p-8">
+                <span className="bg-amber-200/70 text-amber-900 font-bold text-xs uppercase tracking-wider px-3 py-1 rounded-full mb-3 inline-block">
+                  California Case Study: The 12-Unit West LA Dingbat Special Assessment
+                </span>
+                <h4 className="text-xl font-serif font-bold text-primary mb-3">
+                  Case Study: The $38,000 Per-Unit Retrofit and Balcony Shock
+                </h4>
+                <p className="text-primary/80 text-sm md:text-base leading-relaxed mb-4">
+                  A first-time buyer purchased a two-bedroom condo in a 1982 two-story over tuck-under parking building in Palms/West Los Angeles. The monthly HOA fee was a seemingly reasonable $410 per month. Six months post-closing, the association completed its mandatory municipal soft-story seismic retrofit plan alongside its SB 326 exterior elevated element inspection.
+                </p>
+                <div className="bg-white p-4 rounded-xl border border-amber-200 text-sm space-y-2 mb-4">
+                  <div className="flex justify-between items-center"><span className="text-primary/70">Pre-Closing Operating HOA Dues:</span><span className="font-bold text-primary">$410 / month</span></div>
+                  <div className="flex justify-between items-center"><span className="text-primary/70">Soft-Story Steel Moment Frame Retrofit:</span><span className="font-bold text-primary">$18,500 / unit</span></div>
+                  <div className="flex justify-between items-center"><span className="text-primary/70">SB 326 Balcony Cantilever Dry-Rot Remediation:</span><span className="font-bold text-primary">$19,500 / unit</span></div>
+                  <div className="border-t border-border pt-2 flex justify-between items-center font-bold text-base text-primary"><span>Total Mandatory Special Assessment:</span><span className="text-accent">$38,000 / unit</span></div>
+                </div>
+                <p className="text-primary/80 text-sm leading-relaxed">
+                  Because the 12-unit association's reserve account was funded at only 22% ($34,000 total reserve cash), the board had no liquid buffer. Every homeowner was forced to secure a personal home equity line of credit or pay $38,000 cash over a 12-month period, while monthly operating dues were permanently increased from $410 to $585 to build ongoing reserves.
+                </p>
+              </div>
             </div>
 
             {/* Inline CTA / Interactive Banner */}
@@ -379,6 +401,39 @@ export default function CaliforniaHOAFeesArticle() {
               <p>
                 Buying a home is the most momentous financial event of your life. Do not gamble your hard-earned capital on an unstable association. Run the numbers, audit the local records, and buy your Golden State home with complete confidence.
               </p>
+            </div>
+
+            {/* California HOA Frequently Asked Questions */}
+            <div id="california-faqs" className="space-y-6 mb-12">
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary border-b border-border pb-3">
+                7. Frequently Asked Questions About California HOA Fees &amp; Davis-Stirling
+              </h2>
+              <div className="space-y-6 text-primary/85 leading-relaxed text-base font-sans">
+                <div className="bg-bg-light p-6 rounded-2xl border border-border/70">
+                  <h3 className="font-bold text-lg text-primary mb-2">Can a California HOA raise dues more than 20% in a single year?</h3>
+                  <p>
+                    Under California Civil Code § 5605(b), an association board of directors cannot impose a regular annual assessment increase greater than 20% above the prior fiscal year's regular dues without obtaining approval from a majority of a quorum of voting homeowners. The only legal exception occurs in emergency situations—such as a court-mandated repair order, an unforeseen life-safety hazard, or an extraordinary order from a municipal building inspector. If the board attempts to hike dues by more than 20% without member balloting or an emergency resolution, the assessment increase is invalid under the Davis-Stirling Act.
+                  </p>
+                </div>
+                <div className="bg-bg-light p-6 rounded-2xl border border-border/70">
+                  <h3 className="font-bold text-lg text-primary mb-2">What is the special assessment cap in California?</h3>
+                  <p>
+                    California Civil Code § 5605 also restricts special capital assessments. An HOA board cannot levy special assessments that in the aggregate exceed 5% of the association's budgeted gross operating expenses for that fiscal year without majority membership approval. For example, if a 50-unit community has a total annual operating budget of $200,000, the board can only levy up to $10,000 total across all units ($200 per unit) without holding a formal community-wide election.
+                  </p>
+                </div>
+                <div className="bg-bg-light p-6 rounded-2xl border border-border/70">
+                  <h3 className="font-bold text-lg text-primary mb-2">How does the California wildfire and FAIR Plan crisis affect HOA dues?</h3>
+                  <p>
+                    Over the past three years, dozens of major commercial admitted insurance carriers have stopped writing master property policies for California community associations in high and very high fire hazard severity zones (VHFHSZ). Associations forced onto non-admitted surplus line carriers or the state-mandated California FAIR Plan are seeing master premiums surge by 300% to 800%. Because these commercial policies represent mandatory operational expenses under Civil Code § 5550, boards are compelled to raise monthly dues to the maximum 20% legal limit year after year simply to keep the complex insured.
+                  </p>
+                </div>
+                <div className="bg-bg-light p-6 rounded-2xl border border-border/70">
+                  <h3 className="font-bold text-lg text-primary mb-2">What are California buyers' statutory rights during HOA escrow?</h3>
+                  <p>
+                    Under California Civil Code § 4525, prospective buyers are entitled to receive an official package of association disclosure documents within 10 days of request. This mandatory packet includes the current budget, the annual reserve study summary, 12 months of executive and general board meeting minutes, any pending lawsuits against the association, and proof of master insurance coverage. California standard residential purchase agreements grant buyers an explicit contingency period to review these disclosures and cancel the contract with a full refund of their earnest money deposit if red flags are uncovered.
+                  </p>
+                </div>
+              </div>
             </div>
 
             {/* Highlighted CTA Box */}

@@ -363,6 +363,28 @@ export default function TexasHOAFeesArticle() {
               <p>
                 These special taxing districts issue municipal bonds to build the neighborhood's water, sewer, and asphalt lines. This bond debt is repaid via an additional tax surcharge on your annual property bill, sometimes adding <strong className="text-primary font-bold">$3,000 to $6,000 annually</strong> to your home's carrying liabilities. When paired with high master-planned HOA fees, these assessments can put a major squeeze on your homeownership budget.
               </p>
+
+              {/* Real World Scenario Box */}
+              <div className="not-prose my-8 bg-amber-50/60 border border-amber-300/80 rounded-2xl p-6 md:p-8">
+                <span className="bg-amber-200/70 text-amber-900 font-bold text-xs uppercase tracking-wider px-3 py-1 rounded-full mb-3 inline-block">
+                  Texas Buyer Scenario: The Collin / Fort Bend County Dual-Assessment Reality
+                </span>
+                <h4 className="text-xl font-serif font-bold text-primary mb-3">
+                  Case Study: The $450,000 Celina New Build Surprise
+                </h4>
+                <p className="text-primary/80 text-sm md:text-base leading-relaxed mb-4">
+                  A homebuyer relocating from California purchased a $450,000 single-family home in a rapid-growth Celina (Collin County) master-planned subdivision. The builder advertised a modest HOA fee of $100/month ($1,200/year) covering the neighborhood pool and pocket parks.
+                </p>
+                <div className="bg-white p-4 rounded-xl border border-amber-200 text-sm space-y-2 mb-4">
+                  <div className="flex justify-between items-center"><span className="text-primary/70">Subdivision HOA Dues:</span><span className="font-bold text-primary">$100 / mo ($1,200/yr)</span></div>
+                  <div className="flex justify-between items-center"><span className="text-primary/70">MUD Bond Surcharge (1.15% of assessed value):</span><span className="font-bold text-primary">$431 / mo ($5,175/yr)</span></div>
+                  <div className="flex justify-between items-center"><span className="text-primary/70">Sub-Association Gated Gate Dues:</span><span className="font-bold text-primary">$75 / mo ($900/yr)</span></div>
+                  <div className="border-t border-border pt-2 flex justify-between items-center font-bold text-base text-primary"><span>True Combined Monthly Carrying Load:</span><span className="text-accent">$606 / mo ($7,275/yr)</span></div>
+                </div>
+                <p className="text-primary/80 text-sm leading-relaxed">
+                  Instead of paying $100/month as assumed from the builder's sales brochure, the homeowner faced an effective $606/month out-of-pocket surcharge. When the developer handed board control to residents in Year 4, the base HOA dues jumped from $100/mo to $185/mo to cover private retention pond drainage pumps, pushing total carrying fees to $691/month.
+                </p>
+              </div>
             </div>
 
             {/* Section 5: New construction suburb fees */}
@@ -415,6 +437,39 @@ export default function TexasHOAFeesArticle() {
                 <Link to="/" className="inline-block bg-accent hover:bg-opacity-90 text-white font-bold py-4 px-10 rounded-full transition-all hover:scale-105 shadow-xl text-lg duration-300">
                   Access the Free Texas HOA Calculator →
                 </Link>
+              </div>
+            </div>
+
+            {/* Texas HOA Frequently Asked Questions */}
+            <div id="faqs" className="space-y-6 mb-12">
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary border-b border-border pb-3">
+                7. Frequently Asked Questions About Texas HOA Fees &amp; Laws
+              </h2>
+              <div className="space-y-6 text-primary/85 leading-relaxed text-base font-sans">
+                <div className="bg-bg-light p-6 rounded-2xl border border-border/70">
+                  <h3 className="font-bold text-lg text-primary mb-2">Can a Texas HOA foreclose on your house for unpaid dues?</h3>
+                  <p>
+                    Yes, under Texas Property Code § 209.0092, a property owners association can foreclose on a property for unpaid regular and special assessments, but they must first obtain an expedited judicial court order. They cannot initiate non-judicial foreclosure on residential subdivisions without a court hearing, and Texas statute strictly forbids foreclosure if the debt consists solely of architectural fines or attorney fees unrelated to assessments. Furthermore, Texas homeowners retain an ironclad statutory 180-day "right of redemption" following any HOA foreclosure sale, allowing the owner to reclaim the property by reimbursing the purchaser.
+                  </p>
+                </div>
+                <div className="bg-bg-light p-6 rounded-2xl border border-border/70">
+                  <h3 className="font-bold text-lg text-primary mb-2">What is the Texas resale certificate and why is it mandatory?</h3>
+                  <p>
+                    The Texas Subdivision Information package (TREC Form 37-5 and statutory resale certificate under Texas Property Code § 207.003) is a legally binding disclosure that the seller must provide to the buyer during escrow. It certifies the current balance of dues, upcoming capital expenditures approved by the board, any active architectural violations against the specific property, and the total cash held in the HOA's reserve account. Buyers typically receive a 3-to-7 day statutory right to terminate the contract after receiving the resale package, making thorough review essential.
+                  </p>
+                </div>
+                <div className="bg-bg-light p-6 rounded-2xl border border-border/70">
+                  <h3 className="font-bold text-lg text-primary mb-2">How much can a Texas HOA raise fees each year?</h3>
+                  <p>
+                    Unlike states with blanket statewide caps (such as California's 20% statutory limit), Texas state law does not impose a statewide percentage ceiling on annual HOA fee increases. Instead, the maximum allowable annual increase is determined entirely by the community's recorded Declaration of Covenants, Conditions, and Restrictions (CC&Rs), which typically cap board-approved hikes at 5% to 15% annually without a general membership vote. However, under Texas Property Code § 209.0051, any proposed budget increase must be deliberated and voted upon in an open, announced board meeting with at least 144 hours of advance public written notice to homeowners.
+                  </p>
+                </div>
+                <div className="bg-bg-light p-6 rounded-2xl border border-border/70">
+                  <h3 className="font-bold text-lg text-primary mb-2">Can an HOA in Texas ban solar panels, security cameras, or religious displays?</h3>
+                  <p>
+                    No, the Texas Legislature has enacted strong homeowner protections under Texas Property Code Chapter 202 that void any CC&R clause attempting to prohibit these items. Under § 202.010, associations cannot forbid solar panels unless they extend above the roofline or violate basic pitch guidelines. Under § 202.023, associations cannot ban perimeter security cameras or motion floodlights. Under § 202.018, homeowners have the absolute statutory right to display religious items on their entry doors up to 25 square inches.
+                  </p>
+                </div>
               </div>
             </div>
 

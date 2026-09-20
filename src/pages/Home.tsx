@@ -15,31 +15,31 @@ export default function Home() {
   const consolidatedFaqs = [
     {
       q: "How much are average HOA fees in 2026?",
-      a: "Average HOA fees in the US run $200 to $400 a month for single-family homes, and $300 to $700 for condos with amenities like pools or gyms. High-rise buildings in major cities can top $1,000 a month. Coastal states like Florida and California trend higher, while inland states like Arkansas or Indiana average lower."
+      a: "Nationwide, average HOA fees in 2026 range from $200 to $400 per month for single-family homes in suburban developments, and between $300 and $700+ per month for townhouses and condominiums with shared amenities. In premium urban high-rises or luxury coastal enclaves in New York, San Francisco, or Miami, monthly common charges frequently exceed $1,200 to $2,500. Lower-density inland states like Arkansas, Mississippi, and Indiana maintain significantly lower monthly averages (typically $140 to $190/month) because they require fewer full-time staff, have lower commercial insurance premiums, and maintain simpler shared infrastructure."
     },
     {
       q: "Are HOA fees tax deductible?",
-      a: "Generally, no, not for your primary residence. If you rent the property out or use part of it exclusively for a qualified home office, you may be able to deduct a portion of the HOA fee as a business expense. Talk to a tax professional before claiming anything, since rules vary by situation."
+      a: "For your primary residence, regular monthly HOA dues and special assessments are never tax deductible on your federal or state tax returns. However, if you rent out the property as an investment, the IRS classifies mandatory association fees as an ordinary and necessary rental operating expense that can be 100% deducted against rental income. Furthermore, if you maintain a legitimate, qualified home office used regularly and exclusively for business, you may deduct the proportional square-footage percentage of your monthly dues under standard IRS home office rules."
     },
     {
       q: "What happens if I don't pay my HOA fees?",
-      a: "Missed HOA payments usually trigger late fees and interest first. If the balance stays unpaid, the association can place a lien on your property, and in some states that can eventually lead to foreclosure. Exact timelines and thresholds vary by state and by your association's governing documents."
+      a: "Defaulting on HOA dues sets off a statutory collection timeline that begins with late charges (often $25 to $50 or 10% of the delinquent sum) and escalating interest penalties. If an account remains unpaid for 60 to 90 days, the association's legal counsel will issue a formal intent to lien and can record an assessment lien against your real estate title, which clouds the title and prevents you from selling or refinancing. In over 20 states, HOAs hold 'super-priority lien' rights that allow them to foreclose on a home even ahead of the primary mortgage holder if statutory delinquency thresholds are crossed."
     },
     {
       q: "Can HOA fees increase every year?",
-      a: "Yes, most HOAs raise fees annually to keep up with inflation, vendor contracts, and insurance costs. Governing documents usually cap how much a board can raise dues without a homeowner vote. Increases beyond that cap typically require majority approval from the community."
+      a: "Yes, HOA boards can and routinely do increase regular assessments annually to match general inflation, rising municipal utility rates, vendor wage increases, and surging property casualty insurance premiums. Most state statutes and community Declaration of Covenants, Conditions, and Restrictions (CC&Rs) place a statutory ceiling on annual board-approved increases—such as California's 20% limit under the Davis-Stirling Act—without requiring a vote of the general membership. Increases exceeding statutory caps or unforeseen emergency capital shortfalls require a formal ballot and majority approval from all voting homeowners."
     },
     {
       q: "What's the difference between HOA fees and condo fees?",
-      a: "HOA fees usually cover shared roads, common areas, and neighborhood amenities for single-family homes or townhouses. Condo fees cover those same things plus building-specific costs like exterior insurance, shared utilities, and structural maintenance, since condo owners share a physical building rather than just a neighborhood."
+      a: "Single-family HOA fees primarily fund shared neighborhood grounds, including private access roads, entry monument landscaping, storm water retention basins, and recreational amenities like swimming pools and clubhouses, leaving the exterior roof, siding, and foundation 100% to the individual homeowner. By contrast, condo fees cover all communal amenities plus the structural envelope of the physical building: exterior wall tuckpointing, flat membrane roof replacements, commercial elevator modernization, master hazard insurance policies, and central domestic hot water boilers. Because condo associations must fund multi-million-dollar structural reserve accounts, their monthly fees average 40% to 150% higher than single-family subdivision dues."
     },
     {
       q: "Are HOA fees included in a mortgage payment?",
-      a: "No, HOA fees go directly to the homeowners association, not your mortgage lender. Lenders do factor the estimated HOA fee into your debt-to-income ratio when approving your loan, so a high fee can affect how much house you qualify for."
+      a: "No, monthly HOA dues are not paid to your mortgage servicer and are not collected inside your lender's property tax and insurance escrow account. Instead, homeowners make separate monthly, quarterly, or annual payments directly to the community management company or association lockbox. However, during the mortgage underwriting process, lenders strictly factor your mandatory monthly HOA dues into your Debt-to-Income (DTI) ratio; a $400 monthly HOA fee reduces your borrowing capacity by roughly $60,000 to $75,000 in purchasing power at current mortgage interest rates."
     },
     {
       q: "How do I find out how much a property's HOA fees are?",
-      a: "Real estate listing sites like Zillow or Redfin usually show the current fee, but always verify it before you buy. Request a formal resale certificate before closing. It lists the exact fee, any unpaid balances, and upcoming special assessments the seller hasn't disclosed yet."
+      a: "While public real estate listing portals like Zillow, Redfin, and the local MLS report an estimated monthly fee, buyers should never rely on marketing figures alone. Before removing your loan contingencies or waiving inspection rights, demand a certified Resale Disclosure Certificate (or Estoppel Certificate) directly from the property management company. This legally binding disclosure package provides the exact current monthly dues, confirmed scheduled increases for the upcoming fiscal year, any outstanding balance owed by the seller, active reserve study funding ratios, and any pending special assessments currently under board consideration."
     }
   ];
 
@@ -221,15 +221,53 @@ export default function Home() {
         </div>
       </section>
 
-        {/* FAQ: Can HOA fees increase every year? */}
-        <section className="py-8 px-6 max-w-7xl mx-auto">
-          <div className="card bg-bg-light border border-border/60 p-6 md:p-8 rounded-2xl shadow-sm max-w-4xl mx-auto">
-            <h2 className="text-xl md:text-2xl font-serif font-bold text-primary mb-3">
-              Can HOA fees increase every year?
+        {/* REAL-WORLD CASE STUDY SECTION */}
+        <section className="py-16 px-6 max-w-5xl mx-auto">
+          <div className="card bg-bg-light border border-border/80 p-8 md:p-12 rounded-3xl shadow-sm">
+            <div className="flex items-center gap-3 mb-4">
+              <span className="bg-accent/20 text-accent font-bold text-xs uppercase tracking-wider px-3 py-1 rounded-full">
+                Real-World Financial Scenario
+              </span>
+              <span className="text-xs text-primary/60 font-medium">Comparative 30-Year Cash Flow Analysis</span>
+            </div>
+            
+            <h2 className="text-2xl md:text-4xl font-serif font-bold text-primary mb-6 leading-tight">
+              The 30-Year Wealth Drag: Suburban Home vs. Urban Condo
             </h2>
-            <p className="text-primary/80 text-sm md:text-base leading-relaxed font-sans">
-              Yes, HOA fees can and often do increase annually to keep pace with inflation, rising vendor contracts, and higher insurance premiums. Most state laws or association bylaws place limits on how much a board can increase standard dues without holding a vote from all community members.
+
+            <p className="text-primary/80 text-base md:text-lg leading-relaxed mb-6 font-sans">
+              Homebuyers frequently treat a $250/month single-family HOA fee and a $650/month urban condo fee as minor operational details compared to home purchase price. However, over a conventional 30-year amortization schedule with a conservative 3.5% average annual dues increase, the compounded divergence reshapes your net worth:
             </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+              <div className="bg-white p-6 rounded-2xl border border-border/70 shadow-xs">
+                <div className="text-accent font-bold text-sm uppercase tracking-wide mb-1">Scenario A: Single-Family Home</div>
+                <div className="text-2xl font-serif font-bold text-primary mb-2">$250 / month initial fee</div>
+                <p className="text-sm text-primary/75 leading-relaxed mb-4">
+                  In a master-planned suburban community, dues cover entrance landscaping, private neighborhood parks, and a community pool. Exterior siding, roof shingles, and foundations remain the homeowner's responsibility.
+                </p>
+                <div className="border-t border-border/50 pt-3 flex justify-between items-center text-sm">
+                  <span className="text-primary/70">30-Year Total Dues Paid:</span>
+                  <span className="font-bold text-primary text-base">$154,874</span>
+                </div>
+              </div>
+
+              <div className="bg-white p-6 rounded-2xl border border-border/70 shadow-xs">
+                <div className="text-accent font-bold text-sm uppercase tracking-wide mb-1">Scenario B: Urban Mid-Rise Condo</div>
+                <div className="text-2xl font-serif font-bold text-primary mb-2">$650 / month initial fee</div>
+                <p className="text-sm text-primary/75 leading-relaxed mb-4">
+                  In a 40-unit building, dues fund commercial flat roof replacements, dual traction elevators, central water boilers, and a master hazard insurance policy with soaring coastal premiums.
+                </p>
+                <div className="border-t border-border/50 pt-3 flex justify-between items-center text-sm">
+                  <span className="text-primary/70">30-Year Total Dues Paid:</span>
+                  <span className="font-bold text-primary text-base">$402,672</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white/80 border-l-4 border-accent p-6 rounded-r-2xl text-primary/85 text-sm md:text-base leading-relaxed">
+              <strong className="text-primary font-bold">The Opportunity Cost Reality:</strong> The $247,798 difference in dues between these two homes, if instead invested in a standard diversified S&amp;P 500 index fund compounding at an average annual return of 7%, represents over <strong className="text-accent font-bold">$580,000 in lost retirement wealth</strong>. Before selecting a home, run the full lifecycle projections to ensure the amenities justify the long-term equity drag.
+            </div>
           </div>
         </section>
 
@@ -339,14 +377,31 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* FAQ: How much are average HOA fees in 2026? */}
-            <div className="mt-12 card bg-white border border-border/60 p-8 md:p-10 rounded-2xl shadow-sm">
+            {/* MORTGAGE UNDERWRITING & FANNIE MAE SECTION */}
+            <div className="mt-12 card bg-white border border-border/80 p-8 md:p-10 rounded-3xl shadow-sm">
+              <span className="bg-primary/10 text-primary font-bold text-xs uppercase tracking-wider px-3 py-1 rounded-full mb-3 inline-block">
+                Lending &amp; Underwriting Reality
+              </span>
               <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary mb-4">
-                How much are average HOA fees in 2026?
+                How Lenders Evaluate an HOA Before Approving Your Mortgage
               </h2>
-              <p className="text-primary/80 text-base md:text-lg leading-relaxed font-sans">
-                The average homeowners association (HOA) fee in the United States is approximately $300 to $400 per month, depending heavily on location, property type, and amenities. Coastal states like Florida and California average higher costs, whereas inland states like Arkansas or Indiana have significantly lower averages.
+              <p className="text-primary/80 text-base md:text-lg leading-relaxed font-sans mb-4">
+                Many buyers assume mortgage approval hinges solely on personal credit scores, income, and down payments. In reality, when purchasing inside a managed community, your loan can be rejected entirely due to the HOA's financial health.
               </p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4 text-sm text-primary/80">
+                <div className="border-l-2 border-accent pl-4">
+                  <strong className="block text-primary font-bold mb-1">10% Operating Budget Reserve Rule:</strong>
+                  Fannie Mae and Freddie Mac guidelines (Form 1076 / Form 476) require at least 10% of the association's annual operating budget to be allocated directly to capital replacement reserves.
+                </div>
+                <div className="border-l-2 border-accent pl-4">
+                  <strong className="block text-primary font-bold mb-1">15% Delinquency Ceiling:</strong>
+                  If more than 15% of homeowners in the community are 60 or more days delinquent on their monthly dues, conventional secondary mortgage buyers will classify the entire development as non-warrantable.
+                </div>
+                <div className="border-l-2 border-accent pl-4">
+                  <strong className="block text-primary font-bold mb-1">Single-Entity Ownership Limits:</strong>
+                  In buildings where one corporate investor or developer retains more than 10% to 20% of the total units, lenders frequently refuse to underwrite standard conventional conforming loans.
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -382,27 +437,38 @@ export default function Home() {
               </div>
             </div>
           </div>
-
-          {/* FAQ: What happens if I don't pay my HOA fees? */}
-          <div className="mt-10 card bg-white border border-border/60 p-8 md:p-10 rounded-2xl shadow-sm">
-            <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary mb-4">
-              What happens if I don't pay my HOA fees?
-            </h2>
-            <p className="text-primary/80 text-base md:text-lg leading-relaxed font-sans">
-              Failing to pay your HOA fees can result in late charges, interest penalties, and suspension of community amenity privileges. If the delinquency persists, the association can place a lien on your property, which can ultimately lead to foreclosure depending on state laws.
-            </p>
-          </div>
         </section>
 
-        {/* FAQ: How do I find out how much a property's HOA fees are? */}
-        <section className="py-12 px-6 max-w-4xl mx-auto">
-          <div className="card bg-bg-light border border-border/60 p-8 md:p-10 rounded-2xl shadow-sm">
+        {/* PRE-CLOSING DOCUMENT AUDIT PROTOCOL */}
+        <section className="py-12 px-6 max-w-5xl mx-auto">
+          <div className="card bg-bg-light border border-border/80 p-8 md:p-10 rounded-3xl shadow-sm">
+            <span className="bg-accent/20 text-accent font-bold text-xs uppercase tracking-wider px-3 py-1 rounded-full mb-3 inline-block">
+              Buyer Protection Protocol
+            </span>
             <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary mb-4">
-              How do I find out how much a property's HOA fees are?
+              The 4 HOA Documents to Audit During Your Review Period
             </h2>
-            <p className="text-primary/80 text-base md:text-lg leading-relaxed font-sans">
-              The property's active HOA fee is typically disclosed on real estate listing platforms (such as Zillow or Redfin), but you should always verify the exact rate. Before closing, request a formal resale certificate, which details the current fee, any outstanding balances, and scheduled special assessments.
+            <p className="text-primary/80 text-base leading-relaxed font-sans mb-6">
+              When buying in an association, state law generally gives purchasers a statutory rescission or due diligence window (typically 3 to 10 calendar days). Never let your closing agent rush you past reviewing these four essential records:
             </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm text-primary/85">
+              <div className="bg-white p-5 rounded-xl border border-border/60">
+                <div className="font-bold text-primary text-base mb-1">1. The Latest Full Reserve Study</div>
+                <p className="leading-relaxed">Check the percent funded ratio. A score of 70% or higher is considered healthy; anything below 30% indicates severe underfunding and guarantees upcoming special assessments.</p>
+              </div>
+              <div className="bg-white p-5 rounded-xl border border-border/60">
+                <div className="font-bold text-primary text-base mb-1">2. Two Years of Board Meeting Minutes</div>
+                <p className="leading-relaxed">Review executive minutes for mentions of unbudgeted emergency plumbing repairs, ongoing contractor lawsuits, elevator failures, or discussions of pending dues hikes.</p>
+              </div>
+              <div className="bg-white p-5 rounded-xl border border-border/60">
+                <div className="font-bold text-primary text-base mb-1">3. The Master Insurance Policy Certificate</div>
+                <p className="leading-relaxed">Inspect the deductible limits for wind, hail, or water damage. Some aging buildings carry $100,000+ deductibles per occurrence, which get passed to homeowners if a pipe bursts.</p>
+              </div>
+              <div className="bg-white p-5 rounded-xl border border-border/60">
+                <div className="font-bold text-primary text-base mb-1">4. The Official Resale Disclosure Certificate</div>
+                <p className="leading-relaxed">Verify there are no outstanding violations on the specific lot, confirm current paid-to date, and verify that no board votes have approved unbilled capital assessments.</p>
+              </div>
+            </div>
           </div>
         </section>
 

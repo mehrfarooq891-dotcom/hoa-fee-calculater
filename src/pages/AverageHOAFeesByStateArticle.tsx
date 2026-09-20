@@ -239,6 +239,29 @@ export default function AverageHOAFeesByStateArticle() {
               <p>
                 Trying to secure a licensed elevator tech in high-cost metro areas like Boston, San Francisco, or New York City carries a huge premium compared to doing so in smaller, low-density regions. This manual labor inflation factors heavily into your monthly ledger sheet.
               </p>
+
+              {/* Real World Relocation Scenario */}
+              <div className="not-prose my-8 bg-amber-50/60 border border-amber-300/80 rounded-2xl p-6 md:p-8">
+                <span className="bg-amber-200/70 text-amber-900 font-bold text-xs uppercase tracking-wider px-3 py-1 rounded-full mb-3 inline-block">
+                  Cross-Country Relocation Scenario: Midwest to Coastal Florida Carrying Cost Shock
+                </span>
+                <h4 className="text-xl font-serif font-bold text-primary mb-3">
+                  Case Study: Indianapolis to Sarasota Condo Transition
+                </h4>
+                <p className="text-primary/80 text-sm md:text-base leading-relaxed mb-4">
+                  A couple sold their 2,400 sq. ft. suburban Indianapolis home with an annual HOA fee of $600 ($50/month) covering neighborhood trail mowing and stormwater drainage maintenance. They budgeted $300/month for an ocean-view condo in Sarasota, Florida, assuming HOA fees were reasonably comparable for similar-priced real estate.
+                </p>
+                <div className="bg-white p-4 rounded-xl border border-amber-200 text-sm space-y-2 mb-4">
+                  <div className="flex justify-between items-center"><span className="text-primary/70">Indiana Single-Family HOA Dues:</span><span className="font-bold text-primary">$50 / month ($600/yr)</span></div>
+                  <div className="flex justify-between items-center"><span className="text-primary/70">Florida Condo Baseline Operating Dues:</span><span className="font-bold text-primary">$680 / month</span></div>
+                  <div className="flex justify-between items-center"><span className="text-primary/70">SIRS Structural Reserve Surcharge:</span><span className="font-bold text-primary">+$220 / month</span></div>
+                  <div className="flex justify-between items-center"><span className="text-primary/70">Citizens Master Hazard Insurance Assessment:</span><span className="font-bold text-primary">+$190 / month</span></div>
+                  <div className="border-t border-border pt-2 flex justify-between items-center font-bold text-base text-primary"><span>New Monthly Carrying Fee:</span><span className="text-accent">$1,090 / month ($13,080/yr)</span></div>
+                </div>
+                <p className="text-primary/80 text-sm leading-relaxed">
+                  The buyers were shocked to find their monthly association overhead climbed from $50/mo to $1,090/mo—an extra $12,480 per year in non-equity carrying expenses. Over a 10-year holding period, this difference represents over $155,000 in compounded out-of-pocket cash drain.
+                </p>
+              </div>
             </div>
 
             {/* Section 2 */}
@@ -509,6 +532,39 @@ export default function AverageHOAFeesByStateArticle() {
               <p>
                 Visualizing this cost schedule is the ultimate way to make sure you're buying a sound property rather than a permanent financial drain.
               </p>
+            </div>
+
+            {/* Nationwide HOA Frequently Asked Questions */}
+            <div id="nationwide-faqs" className="space-y-6 mb-12">
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary border-b border-border pb-3">
+                6. Frequently Asked Questions: Average HOA Fees by State
+              </h2>
+              <div className="space-y-6 text-primary/85 leading-relaxed text-base font-sans">
+                <div className="bg-bg-light p-6 rounded-2xl border border-border/70">
+                  <h3 className="font-bold text-lg text-primary mb-2">Why are HOA fees significantly higher in coastal states compared to inland states?</h3>
+                  <p>
+                    Coastal states—such as Hawaii ($790/mo), New York ($570/mo), Florida ($490/mo), and California ($450/mo)—face an acute confluence of geographic and structural cost pressures. These include severe marine salt-air corrosion requiring frequent repainting and concrete restoration, high catastrophe insurance risk (hurricanes, earthquakes, and winter Nor'easters), dense multi-story construction requiring elevator maintenance and staff payroll, and elevated regional contractor labor rates. Conversely, Midwestern and Southern inland states feature predominantly single-family detached homes with minimal shared vertical infrastructure, keeping baseline maintenance costs low.
+                  </p>
+                </div>
+                <div className="bg-bg-light p-6 rounded-2xl border border-border/70">
+                  <h3 className="font-bold text-lg text-primary mb-2">How much do HOA fees reduce my mortgage purchasing power?</h3>
+                  <p>
+                    When underwriting a residential home loan, mortgage lenders calculate your front-end and back-end debt-to-income (DTI) ratios by adding monthly HOA dues directly into your total housing expense alongside principal, interest, taxes, and homeowners insurance (PITI). As a standard rule of thumb, every $100 per month in HOA fees reduces your maximum borrowing capacity by approximately $12,000 to $15,000 at prevailing mortgage interest rates. A $500 monthly fee effectively reduces your home purchasing power by $60,000 to $75,000.
+                  </p>
+                </div>
+                <div className="bg-bg-light p-6 rounded-2xl border border-border/70">
+                  <h3 className="font-bold text-lg text-primary mb-2">What is the difference between an HOA fee, a condo fee, and a co-op maintenance fee?</h3>
+                  <p>
+                    Single-family HOA fees primarily fund shared neighborhood amenities (such as perimeter fencing, stormwater retention ponds, community pools, and private roads), while exterior structural maintenance (roof, siding, foundations) remains the owner's responsibility. Condominium fees cover the entirety of the building's exterior envelope, roofs, common plumbing/elevators, and a master hazard insurance policy. Co-op maintenance fees (common in New York) cover condo-style common charges plus the individual shareholder's proportionate share of the building's underlying blanket mortgage and municipal real estate property taxes.
+                  </p>
+                </div>
+                <div className="bg-bg-light p-6 rounded-2xl border border-border/70">
+                  <h3 className="font-bold text-lg text-primary mb-2">What states have statutory limits on annual HOA fee increases?</h3>
+                  <p>
+                    A minority of states have passed statewide statutory percentage caps on annual HOA dues increases. California is the most notable, where Civil Code § 5605 strictly limits regular annual assessment increases to 20% without a majority vote of all homeowners. Arizona and Florida provide strong open-meeting and notice statutory requirements, but most states leave assessment increase ceilings to the association's recorded Declaration of Covenants, Conditions, and Restrictions (CC&Rs), which typically cap board hikes at 5% to 15% annually without membership voting.
+                  </p>
+                </div>
+              </div>
             </div>
 
             {/* Highlighted CTA Box */}

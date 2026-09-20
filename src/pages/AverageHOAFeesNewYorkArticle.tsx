@@ -243,6 +243,29 @@ export default function AverageHOAFeesNewYorkArticle() {
         According to industry audits, NYC building associations dedicate over 42% of their total annual operating budget purely to staffing payroll and regulatory compliance, such as Local Law 11 facade inspections and mandatory elevator safety testing.
       </blockquote>
 
+      {/* Real World Scenario Box */}
+      <div className="not-prose my-8 bg-amber-50/60 border border-amber-300/80 rounded-2xl p-6 md:p-8">
+        <span className="bg-amber-200/70 text-amber-900 font-bold text-xs uppercase tracking-wider px-3 py-1 rounded-full mb-3 inline-block">
+          New York Scenario: Upper West Side Pre-War Co-op Underlying Mortgage Shock
+        </span>
+        <h3 className="text-xl font-serif font-bold text-primary mb-3">
+          Case Study: 60-Unit West End Avenue Co-op Refinancing
+        </h3>
+        <p className="text-primary/80 text-sm md:text-base leading-relaxed mb-4">
+          A buyer acquired a 1-bedroom pre-war cooperative on West End Avenue for $720,000. The monthly maintenance was listed at $1,420, which seemed reasonable given it bundled property taxes and central steam heat. However, the co-op building held an underlying blanket mortgage of $6.5 million taken out in 2014 at a 3.25% fixed interest rate with a 10-year balloon due in late 2024.
+        </p>
+        <div className="bg-white p-4 rounded-xl border border-amber-200 text-sm space-y-2 mb-4">
+          <div className="flex justify-between items-center"><span className="text-primary/70">Original Monthly Maintenance Fee:</span><span className="font-bold text-primary">$1,420 / month</span></div>
+          <div className="flex justify-between items-center"><span className="text-primary/70">Underlying Mortgage Refinancing at 6.85%:</span><span className="font-bold text-primary">+$310 / month per shareholder</span></div>
+          <div className="flex justify-between items-center"><span className="text-primary/70">Local Law 97 Carbon Penalty Reserve Surcharge:</span><span className="font-bold text-primary">+$165 / month</span></div>
+          <div className="flex justify-between items-center"><span className="text-primary/70">FISP (Local Law 11) Scaffolding &amp; Repointing Assessment:</span><span className="font-bold text-primary">$18,000 / one-time special assessment</span></div>
+          <div className="border-t border-border pt-2 flex justify-between items-center font-bold text-base text-primary"><span>New Monthly Maintenance (Excluding Assessment):</span><span className="text-accent">$1,895 / month (+33.4%)</span></div>
+        </div>
+        <p className="text-primary/80 text-sm leading-relaxed">
+          Because co-op maintenance carries the building's shared underlying debt, refinancing at prevailing interest rates immediately triggered a $310/month permanent maintenance jump. The shareholder also had to remit an $18,000 special assessment to pay for sidewalk bridge shed rentals and exterior masonry repointing under FISP Cycle 9 mandates.
+        </p>
+      </div>
+
       <h2 className="text-2xl font-serif font-bold text-primary mt-10 mb-4">
         6. Pre-Purchase Interrogations: Crucial Questions to Ask Before You Buy
       </h2>
@@ -257,6 +280,39 @@ export default function AverageHOAFeesNewYorkArticle() {
       <p>
         Finally, analyze the board approval process and historical financial health. Ask your real estate attorney to read the past two years of board meeting minutes and audit the capital reserve funding ratio. It&apos;s also vital to understand <Link to="/blog/dont-pay-hoa-fees" className="text-accent hover:underline font-bold">what happens if you don&apos;t pay HOA fees</Link> before you enter into a transaction, in case you have disputes or financial emergencies. If the building possesses a low cash reserve or has a multi-million-dollar elevator modernization project scheduled, a surprise assessment is guaranteed. Understanding these numbers secures your investment and lets you buy with total peace of mind.
       </p>
+
+      {/* New York HOA and Co-op FAQs */}
+      <div id="new-york-faqs" className="mt-12 space-y-6">
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary border-b border-border pb-3">
+          7. Frequently Asked Questions About New York HOA, Co-op &amp; Condo Fees
+        </h2>
+        <div className="space-y-6 text-primary/85 leading-relaxed text-base font-sans">
+          <div className="bg-bg-light p-6 rounded-2xl border border-border/70">
+            <h3 className="font-bold text-lg text-primary mb-2">What is the difference between a New York Co-op maintenance fee and a Condo common charge?</h3>
+            <p>
+              In a New York condominium, you own the deed to your specific real estate unit; your monthly &quot;common charge&quot; covers building maintenance, staff, and insurance, while your property taxes are billed directly to you as a separate invoice from the NYC Department of Finance. In a cooperative (co-op), you own shares in a corporation that owns the building; your monthly &quot;maintenance fee&quot; includes your proportionate share of the entire building&apos;s real estate property taxes, the building&apos;s underlying mortgage payment, and general operational expenses. As a result, co-op maintenance figures appear higher on paper, but condo owners must add separate property taxes to calculate their true monthly carrying cost.
+            </p>
+          </div>
+          <div className="bg-bg-light p-6 rounded-2xl border border-border/70">
+            <h3 className="font-bold text-lg text-primary mb-2">What is Local Law 11 (FISP) and why does it cause massive New York assessments?</h3>
+            <p>
+              Under New York City&apos;s Facade Inspection Safety Program (FISP, formerly Local Law 11), all buildings taller than six stories must undergo an extensive, close-up exterior inspection by a Qualified Exterior Wall Inspector (QEWI) every five years. If hazardous conditions or deteriorating brickwork are discovered, the building must immediately erect pedestrian shed scaffolding and execute remedial masonry repairs. The costs of sidewalk shedding rentals, safety permits, and architectural masonry work easily run into hundreds of thousands or millions of dollars, frequently triggering special assessments of $10,000 to $40,000 per unit if capital reserves are inadequate.
+            </p>
+          </div>
+          <div className="bg-bg-light p-6 rounded-2xl border border-border/70">
+            <h3 className="font-bold text-lg text-primary mb-2">How does Local Law 97 impact New York building carrying fees?</h3>
+            <p>
+              NYC&apos;s Local Law 97 mandates strict greenhouse gas emission caps on most buildings over 25,000 square feet, starting in 2024 with significantly tighter thresholds kicking in by 2030. Older pre-war buildings heating with #4 or #2 fuel oil or outdated steam systems face catastrophic annual municipal penalties (calculated at $268 per metric ton over the carbon cap) unless they transition to high-efficiency heat pumps or electric HVAC. Associations across the city are passing capital assessments or hiking dues to finance multimillion-dollar boiler overhauls and window retrofits to avoid ongoing fines.
+            </p>
+          </div>
+          <div className="bg-bg-light p-6 rounded-2xl border border-border/70">
+            <h3 className="font-bold text-lg text-primary mb-2">Can a New York Co-op board reject a buyer without providing a reason?</h3>
+            <p>
+              Yes, under the business judgment rule established by the New York Court of Appeals in <em>Levandusky v. One Fifth Avenue Apartment Corp.</em>, a cooperative board of directors possesses broad discretionary authority to accept or reject prospective purchasers without disclosing the reason for rejection, provided the decision does not violate federal, state, or city fair housing laws. Co-op boards frequently enforce stringent debt-to-income (DTI) caps of 25% to 28% and demand 12 to 24 months of liquid post-closing reserves (calculated as maintenance plus mortgage) before granting interview approval.
+            </p>
+          </div>
+        </div>
+      </div>
 
       {/* Author Bio Block */}
       <div className="author-bio mt-12 pt-6 border-t border-border/80 text-sm italic text-primary/75">

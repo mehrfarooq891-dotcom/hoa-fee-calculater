@@ -225,6 +225,29 @@ export default function FloridaHOAFeesArticle() {
               <p>
                 Each unit owner receives a non-negotiable invoice for <strong className="text-primary font-bold">$26,250</strong>, often due in a single lump-sum or short interest installments over 12 months. Owners who cannot afford these payments are forced to list their properties under market value, leading to a surge of heavily discounted "cash-only" listings in older developments.
               </p>
+
+              {/* Real World Florida Case Study */}
+              <div className="not-prose my-8 bg-amber-50/60 border border-amber-300/80 rounded-2xl p-6 md:p-8">
+                <span className="bg-amber-200/70 text-amber-900 font-bold text-xs uppercase tracking-wider px-3 py-1 rounded-full mb-3 inline-block">
+                  Florida Case Study: The 1984 Broward County Oceanfront Milestone Assessment
+                </span>
+                <h4 className="text-xl font-serif font-bold text-primary mb-3">
+                  Case Study: The $45,000 Special Assessment + 98% Monthly Dues Hike
+                </h4>
+                <p className="text-primary/80 text-sm md:text-base leading-relaxed mb-4">
+                  A retiree purchased an oceanfront 2-bedroom condominium in Pompano Beach (Broward County) in 2019 for $340,000, paying a comfortable $580 monthly maintenance fee. In late 2024, the association conducted its statutory 40-year milestone inspection and mandatory Structural Integrity Reserve Study (SIRS).
+                </p>
+                <div className="bg-white p-4 rounded-xl border border-amber-200 text-sm space-y-2 mb-4">
+                  <div className="flex justify-between items-center"><span className="text-primary/70">Pre-Inspection Monthly HOA Fee:</span><span className="font-bold text-primary">$580 / month</span></div>
+                  <div className="flex justify-between items-center"><span className="text-primary/70">Emergency Rebar &amp; Post-Tension Cable Spalling Repair:</span><span className="font-bold text-primary">$45,000 / unit special assessment</span></div>
+                  <div className="flex justify-between items-center"><span className="text-primary/70">Non-Waivable SIRS Reserve Surcharge:</span><span className="font-bold text-primary">+$360 / month</span></div>
+                  <div className="flex justify-between items-center"><span className="text-primary/70">Citizens Commercial Windstorm Premium Hike:</span><span className="font-bold text-primary">+$210 / month</span></div>
+                  <div className="border-t border-border pt-2 flex justify-between items-center font-bold text-base text-primary"><span>New Monthly Carrying Fee (Excluding Assessment):</span><span className="text-accent">$1,150 / month</span></div>
+                </div>
+                <p className="text-primary/80 text-sm leading-relaxed">
+                  Because previous unit owners had voted year after year to waive reserve funding under prior Florida law, the association had zero reserves when the bill came due. Unit owners faced an immediate $45,000 lump sum assessment plus an ongoing monthly dues surge from $580 to $1,150/month, illustrating why verifying SIRS compliance is now the single most critical step in Florida real estate transactions.
+                </p>
+              </div>
             </div>
 
             {/* Section 5: Florida Red Flags */}
@@ -281,6 +304,39 @@ export default function FloridaHOAFeesArticle() {
                 <Link to="/" className="inline-block bg-accent hover:bg-opacity-90 text-white font-bold py-4 px-10 rounded-full transition-all hover:scale-105 shadow-xl text-lg duration-300">
                   Access the Free Florida HOA Calculator →
                 </Link>
+              </div>
+            </div>
+
+            {/* Florida HOA & Condo Frequently Asked Questions */}
+            <div id="florida-faqs" className="space-y-6 mb-12">
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary border-b border-border pb-3">
+                7. Frequently Asked Questions About Florida HOA &amp; Condo Laws
+              </h2>
+              <div className="space-y-6 text-primary/85 leading-relaxed text-base font-sans">
+                <div className="bg-bg-light p-6 rounded-2xl border border-border/70">
+                  <h3 className="font-bold text-lg text-primary mb-2">Can Florida condo unit owners still vote to waive reserve funding?</h3>
+                  <p>
+                    No, under Florida Senate Bill 4-D and subsequent statutory updates in Florida Statute § 718.112, condo associations with buildings three stories or higher are strictly prohibited from voting to waive or partially fund reserves for structural components covered in the mandatory Structural Integrity Reserve Study (SIRS). Previously, developers and investor-controlled associations could hold annual majority votes to waive reserve funding, keeping monthly dues artificially cheap. That practice is now illegal under Florida law, making full structural reserve funding mandatory.
+                  </p>
+                </div>
+                <div className="bg-bg-light p-6 rounded-2xl border border-border/70">
+                  <h3 className="font-bold text-lg text-primary mb-2">What happens if a Florida condo building fails its milestone inspection?</h3>
+                  <p>
+                    If the licensed engineer or architect identifies substantial structural deterioration during a Phase 1 milestone inspection, the association is legally required to commence a Phase 2 intensive testing inspection within 180 days. If life-safety issues remain unaddressed, local municipal building officials can issue condemnation notices, revoke the building's certificate of occupancy, or mandate immediate emergency shoring. The board must immediately levy a special assessment or secure a commercial bank loan to complete structural repairs within the statutory deadline.
+                  </p>
+                </div>
+                <div className="bg-bg-light p-6 rounded-2xl border border-border/70">
+                  <h3 className="font-bold text-lg text-primary mb-2">What is the "cooling-off" rescission period for buyers in Florida?</h3>
+                  <p>
+                    Under Florida Statute § 718.503 for condominiums, a buyer purchasing a resale unit has an absolute statutory right to cancel the purchase contract within three business days (excluding Saturdays, Sundays, and legal holidays) following the date they receive the complete package of condominium governance documents, financial statements, and the FAQ/governance summary. For developer sales of brand-new units, the cancellation window is 15 days. For single-family HOAs under Chapter 720, buyers have a 3-day right to cancel after receiving the mandatory disclosure summary.
+                  </p>
+                </div>
+                <div className="bg-bg-light p-6 rounded-2xl border border-border/70">
+                  <h3 className="font-bold text-lg text-primary mb-2">Why is Citizens Property Insurance forcing HOA fees upward across Florida?</h3>
+                  <p>
+                    Citizens Property Insurance Corporation, Florida's state-backed insurer of last resort, has instituted aggressive depopulation rules and mandatory flood insurance mandates for policyholders. As private commercial carriers withdrew from writing master wind and hurricane policies for multi-unit coastal associations, communities were forced onto Citizens policies carrying elevated rates, strict roof age limitations, and 2% to 5% hurricane deductibles. To pay these five-to-six figure annual master insurance invoices, HOA boards are required to pass large dues increases onto homeowners.
+                  </p>
+                </div>
               </div>
             </div>
 

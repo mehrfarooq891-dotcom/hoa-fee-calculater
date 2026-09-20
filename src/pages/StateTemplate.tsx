@@ -111,7 +111,47 @@ export default function StateTemplate() {
   const stateData = getStateData(cleanSlug, displayName);
   const stateGuide = STATE_BLOG_GUIDES[cleanSlug];
 
-  const faqs = [
+  // Custom State Overrides for Flagship States
+  const STATE_CUSTOM_FAQS: Record<string, { q: string; a: string }[]> = {
+    "texas": [
+      {
+        q: "What is the average HOA fee in Texas in 2026?",
+        a: "In Texas, average monthly HOA fees typically range from $180 to $450 per month, with suburban single-family master-planned developments in Collin, Denton, Williamson, and Fort Bend counties averaging between $100 and $220 monthly. Urban condominium high-rises in downtown Austin, Dallas Uptown, and Houston Galleria command higher assessments, frequently ranging from $500 to $950 per month to cover comprehensive building envelope maintenance, professional on-site management, and centralized utilities."
+      },
+      {
+        q: "Can a Texas HOA foreclose on your house for unpaid dues?",
+        a: "Yes, under Texas Property Code § 209.0092, an HOA can foreclose on a property for unpaid regular or special assessments, but they must first obtain an expedited judicial court order. State law strictly forbids non-judicial foreclosures on residential subdivisions without a judge's ruling, and associations are legally barred from foreclosing if the outstanding balance consists solely of architectural fines or legal fees. Additionally, Texas homeowners retain a 180-day statutory right of redemption following any HOA foreclosure sale."
+      },
+      {
+        q: "What is the TREC resale certificate requirement in Texas?",
+        a: "Under Texas Property Code § 207.003, sellers in mandatory property owners associations are legally required to deliver a Subdivision Information packet (TREC Form 37-5) and an official HOA resale certificate to prospective buyers during escrow. This disclosure verifies the current balance of assessments, scheduled capital projects, active violation notices against the lot, and the association's reserve cash balances. Texas standard purchase contracts provide buyers a 3-to-7 day statutory right of cancellation upon receipt."
+      },
+      {
+        q: "Can Texas HOAs ban solar panels, security cameras, or perimeter fencing?",
+        a: "No, Chapter 202 of the Texas Property Code explicitly prevents HOAs from enforcing blanket prohibitions on these items. Under § 202.010, homeowners can install roof-mounted solar energy devices within reasonable pitch parameters. Under § 202.023, associations cannot ban front or perimeter security cameras, motion floodlights, or boundary security fencing. Under § 202.007, drought-tolerant xeriscaping and rainwater harvesting barrels are also statutorily protected."
+      }
+    ],
+    "california": [
+      {
+        q: "What is the average HOA fee in California in 2026?",
+        a: "California has some of the highest HOA fees in the nation, with statewide averages ranging from $350 to $700 per month, and coastal metros like San Francisco, Silicon Valley, and West Los Angeles routinely exceeding $800 to $1,400 per month. These elevated costs stem directly from union construction labor rates, seismic compliance mandates, strict municipal codes, and surging master hazard and earthquake insurance premiums."
+      },
+      {
+        q: "How much can an HOA raise dues each year in California under Davis-Stirling?",
+        a: "Under California Civil Code § 5605(b) of the Davis-Stirling Act, an HOA board of directors cannot increase regular annual assessments by more than 20% over the previous fiscal year's dues without the affirmative approval of a majority of a quorum of voting homeowners. The only exception is an extraordinary emergency situation—such as a court-ordered repair or immediate life-safety structural hazard declared by an engineer or municipal building inspector."
+      },
+      {
+        q: "What are SB 326 and SB 721 balcony inspection laws in California?",
+        a: "Senate Bill 326 (for condominiums) and Senate Bill 721 (for multi-family housing) mandate that all buildings with three or more residential units containing wood exterior elevated elements (such as balconies, exterior stairs, decks, and walkways) must undergo destructive or visual structural inspections by a licensed architect or engineer. If dry-rot or waterproofing failures are uncovered, associations must execute immediate repairs, which has triggered widespread $15,000 to $40,000 per-unit special assessments across aging coastal developments."
+      },
+      {
+        q: "What are buyers' statutory disclosure rights during California HOA escrow?",
+        a: "Under California Civil Code § 4525, prospective buyers are entitled to receive a comprehensive package of association records within 10 days of request, including the annual reserve study summary, current operating budget, 12 months of board meeting minutes, any pending construction litigation, and proof of master insurance. California purchase contracts grant buyers an explicit contingency review period to examine these documents and cancel escrow with a full return of earnest money if liabilities are identified."
+      }
+    ]
+  };
+
+  const faqs = STATE_CUSTOM_FAQS[cleanSlug] || [
     {
       q: `How much are average HOA fees in ${displayName}?`,
       a: `The estimated average HOA fee in ${displayName} is around $${stateData.avgFee} per month. However, actual monthly costs vary significantly by city, with high-demand urban areas and master-planned golf communities skewing higher, while rural or older subdivisions have much lower dues.`
@@ -256,6 +296,53 @@ export default function StateTemplate() {
                   <div className="bg-bg-light p-8 rounded-2xl border-l-4 border-accent italic mt-6 font-serif">
                     "Always review the 'Master Deed' and 'Bylaws' specific to your community. These documents often override general state guidelines regarding architectural controls and fine structures."
                   </div>
+
+                  {/* Flagship Custom Real-World Case Studies */}
+                  {cleanSlug === 'texas' && (
+                    <div className="my-8 bg-amber-50/70 border border-amber-300 rounded-2xl p-6 md:p-8 not-prose">
+                      <span className="bg-amber-200/80 text-amber-900 font-bold text-xs uppercase tracking-wider px-3 py-1 rounded-full mb-3 inline-block">
+                        Texas Homebuyer Case Study: Collin County MUD &amp; Sub-HOA Costs
+                      </span>
+                      <h4 className="text-xl font-serif font-bold text-primary mb-3">
+                        Suburban Dallas Reality: The $450,000 Celina Dual-Assessment
+                      </h4>
+                      <p className="text-primary/80 text-sm leading-relaxed mb-4">
+                        A buyer relocating to North Texas purchased a home in a Celina master-planned development with an advertised $110/month HOA fee. Upon receiving the first tax bill, the homeowner realized the neighborhood sat within an active Municipal Utility District (MUD) levying a 1.18% debt-service assessment ($5,310/yr), plus a separate gated enclave fee of $85/month.
+                      </p>
+                      <div className="bg-white p-4 rounded-xl border border-amber-200 text-xs sm:text-sm space-y-1.5 font-sans mb-3">
+                        <div className="flex justify-between"><span className="text-primary/70">Master HOA Dues:</span><span className="font-bold text-primary">$110 / month</span></div>
+                        <div className="flex justify-between"><span className="text-primary/70">MUD Bond Surcharge:</span><span className="font-bold text-primary">$442.50 / month</span></div>
+                        <div className="flex justify-between"><span className="text-primary/70">Enclave Gate Maintenance:</span><span className="font-bold text-primary">$85 / month</span></div>
+                        <div className="border-t border-border pt-1.5 flex justify-between font-bold text-accent"><span>Total Monthly Carrying Fees:</span><span>$637.50 / month</span></div>
+                      </div>
+                      <p className="text-primary/75 text-xs sm:text-sm leading-relaxed">
+                        Texas buyers should always review the Title Commitment for MUD/PID tax notices and obtain TREC Form 37-5 before waiving option periods.
+                      </p>
+                    </div>
+                  )}
+
+                  {cleanSlug === 'california' && (
+                    <div className="my-8 bg-amber-50/70 border border-amber-300 rounded-2xl p-6 md:p-8 not-prose">
+                      <span className="bg-amber-200/80 text-amber-900 font-bold text-xs uppercase tracking-wider px-3 py-1 rounded-full mb-3 inline-block">
+                        California Homebuyer Case Study: West LA SB 326 Deck Assessment
+                      </span>
+                      <h4 className="text-xl font-serif font-bold text-primary mb-3">
+                        Palms 14-Unit Building: The $32,000 Special Assessment
+                      </h4>
+                      <p className="text-primary/80 text-sm leading-relaxed mb-4">
+                        A buyer in West Los Angeles closed on a two-bedroom condo with monthly dues of $425. Within nine months, the association completed its mandatory Senate Bill 326 elevated walkway inspection, uncovering severe waterproofing failure and cantilever rot.
+                      </p>
+                      <div className="bg-white p-4 rounded-xl border border-amber-200 text-xs sm:text-sm space-y-1.5 font-sans mb-3">
+                        <div className="flex justify-between"><span className="text-primary/70">Pre-Purchase Monthly Dues:</span><span className="font-bold text-primary">$425 / month</span></div>
+                        <div className="flex justify-between"><span className="text-primary/70">Reserve Study Funding Level:</span><span className="font-bold text-red-600">24% (Severely Underfunded)</span></div>
+                        <div className="flex justify-between"><span className="text-primary/70">Mandatory Balcony Special Assessment:</span><span className="font-bold text-primary">$32,000 / unit</span></div>
+                        <div className="border-t border-border pt-1.5 flex justify-between font-bold text-accent"><span>New Monthly Dues Post-Repair:</span><span>$590 / month (+38.8%)</span></div>
+                      </div>
+                      <p className="text-primary/75 text-xs sm:text-sm leading-relaxed">
+                        Under Civil Code § 5605, California associations with depleted reserves can levy emergency assessments when life-safety repairs are required by municipal inspectors.
+                      </p>
+                    </div>
+                  )}
 
                   {stateGuide ? (
                     <div className="bg-gradient-to-br from-primary/5 via-accent/5 to-bg-light border-2 border-accent/30 rounded-2xl p-6 md:p-8 mt-10 shadow-sm not-prose">

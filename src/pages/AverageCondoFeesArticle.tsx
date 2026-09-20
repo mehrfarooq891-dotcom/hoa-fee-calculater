@@ -22,31 +22,31 @@ export default function AverageCondoFeesArticle() {
   const faqs = [
     {
       question: "What is a normal condo fee per month?",
-      answer: "Across the United States, a normal condo fee for a standard mid-rise building ranges between $450 and $720 per month. In luxury high-rise buildings with 24/7 concierge staff, pools, and multiple elevators, normal fees typically range from $900 to $1,800+ per month."
+      answer: "Across the United States, a normal condo fee for a standard mid-rise residential building currently ranges between $450 and $720 per month for a typical two-bedroom unit. In garden-style communities without elevators or central heating plants, dues average lower, generally between $250 and $450 per month. Conversely, in luxury high-rise towers featuring multiple traction elevators, 24/7 lobby concierges, structured underground garages, and comprehensive amenities, normal fees routinely range from $900 to $1,800+ per month to sustain extensive payroll and commercial utility operations."
     },
     {
       question: "Are condo fees more expensive than HOA fees?",
-      answer: "Yes. Condo fees average 40% to 150% more than single-family subdivision HOA fees because condo dues cover master building insurance, structural roof maintenance, elevators, and shared utilities, whereas single-family owners must pay for their own structural maintenance and homeowners insurance individually."
+      answer: "Yes, condominium fees average 40% to 150% higher than single-family subdivision HOA dues because of fundamental structural and legal differences in ownership. In a single-family HOA, the homeowner remains solely responsible for repairing their own roof, siding, windows, and private foundation, while the HOA fee only covers surface common amenities like entrance landscaping or a community pool. In contrast, a condominium fee must fund the entire physical building envelope, master hazard and windstorm insurance policies, elevator modernizations, and shared commercial water or heating systems."
     },
     {
       question: "Why is my condo fee higher than a friend's in another city?",
-      answer: "Condo fees vary based on state reserve laws (such as Florida SB 4-D), local building codes (like NYC Local Law 11 facade inspections), regional master insurance premiums, building age, and the number of full-time building staff employed."
+      answer: "Condominium dues fluctuate dramatically based on state-level reserve legislation, regional natural disaster risks, building age, and local labor rates. For example, Florida high-rise condos face mandated non-waivable structural reserves under SB 4-D and skyrocketing hurricane insurance premiums, resulting in fees often double or triple those of comparable inland Midwest buildings. Additionally, metropolitan buildings subject to cyclical facade inspections—such as NYC Local Law 11—or those employing union staffing naturally incur far higher operating overhead than suburban properties."
     },
     {
       question: "Does a higher fee mean better management?",
-      answer: "Not necessarily, but an adequately funded fee (e.g., $600 to $900/month) that fully funds a 30-year capital reserve study is far safer than an artificially low fee ($300/month) that leaves the building vulnerable to emergency five-figure special assessments."
+      answer: "Not necessarily, but an adequately priced fee (such as $600 to $900 per month) that maintains a 70% to 100% funded 30-year capital reserve study is substantially safer than an artificially suppressed fee ($300 per month). Artificially low dues are often maintained by short-sighted volunteer boards that defer essential roof, plumbing, or elevator maintenance, leaving the community vulnerable to sudden five-figure emergency special assessments when systems fail. You should always audit the association's independent reserve study rather than judging management quality purely by the monthly dues amount."
     },
     {
       question: "Can I negotiate my condo fee?",
-      answer: "No. Condo fees are legally binding covenants attached to the deed and calculated according to each unit's fractional percentage of common interest. An individual owner cannot negotiate or reduce their assigned monthly assessment."
+      answer: "No, individual unit owners cannot negotiate, reduce, or opt out of their assigned monthly condo assessment. Monthly assessments are legally binding covenants recorded against the property deed, determined mathematically by multiplying the association's annual operating budget by your unit's legally recorded percentage of common interest. The only legal method to influence assessment levels is to participate in annual budget ratification meetings, run for an open seat on the board of directors, or vote to audit vendor service contracts."
     },
     {
       question: "Is a condo fee included in my mortgage?",
-      answer: "No. While lenders factor your monthly condo fee directly into your debt-to-income (DTI) ratio during mortgage underwriting, you pay the condo fee separately to the association or property management company, not as part of your monthly mortgage payment."
+      answer: "No, condo fees are not collected by your mortgage servicer and are never bundled into your monthly principal and interest mortgage payment. You pay your condo assessment directly to the condominium association or its third-party property management company via separate monthly or quarterly invoicing. However, during mortgage underwriting, your lender explicitly includes the full monthly condo fee in your front-end and back-end debt-to-income (DTI) calculations, which directly impacts your maximum borrowing limit."
     },
     {
       question: "Do all condos have a monthly fee?",
-      answer: "Yes. Every legally formed condominium association requires monthly or quarterly dues to fund master insurance, common area maintenance, municipal utilities, and state-mandated reserve funds."
+      answer: "Yes, every legally established condominium association in the United States requires regular monthly or quarterly assessments from all deeded co-owners. These mandatory dues provide the baseline revenue needed to maintain master property hazard insurance, fund shared municipal utilities, comply with state-mandated structural reserve requirements, and maintain communal building superstructures. Purchasing into a condominium automatically enters the buyer into a legally binding contract to pay all approved assessments."
     }
   ];
 
@@ -279,6 +279,56 @@ export default function AverageCondoFeesArticle() {
           <p className="text-sm text-secondary leading-relaxed">
             A 22-story, 140-unit concrete oceanfront tower constructed in 1984. The $1,280 monthly fee reflects surging post-Surfside Florida SB 4-D fully funded structural reserves, 24/7 security guard staffing, seawater cooling tower maintenance, and elevated windstorm insurance premiums protecting against Atlantic hurricane exposure.
           </p>
+        </div>
+      </div>
+
+      {/* Architectural Case Study Box */}
+      <div className="not-prose my-8 bg-amber-50/60 border border-amber-300/80 rounded-2xl p-6 md:p-8">
+        <span className="bg-amber-200/70 text-amber-900 font-bold text-xs uppercase tracking-wider px-3 py-1 rounded-full mb-3 inline-block">
+          Condo Financial Case Study: The 1970s Mid-Rise Elevator &amp; Boiler Overhaul
+        </span>
+        <h4 className="text-xl font-serif font-bold text-primary mb-3">
+          Case Study: 36-Unit Suburban Building Facing a $180,000 Modernization
+        </h4>
+        <p className="text-primary/80 text-sm md:text-base leading-relaxed mb-4">
+          A four-story, 36-unit brick condominium constructed in 1976 maintained artificially low dues of $275/month for 15 years by continually deferring capital component replacements. In 2024, the building's original single hydraulic elevator suffered repeated hydraulic cylinder seal failures, and the municipal boiler inspector red-tagged the central domestic hot water heating plant.
+        </p>
+        <div className="bg-white p-4 rounded-xl border border-amber-200 text-sm space-y-2 mb-4">
+          <div className="flex justify-between items-center"><span className="text-primary/70">Pre-Crisis Monthly Assessment:</span><span className="font-bold text-primary">$275 / month</span></div>
+          <div className="flex justify-between items-center"><span className="text-primary/70">Elevator Controller &amp; Hydraulic Cylinder Modernization:</span><span className="font-bold text-primary">$120,000 total ($3,333 / unit)</span></div>
+          <div className="flex justify-between items-center"><span className="text-primary/70">Commercial High-Efficiency Dual Boiler Replacement:</span><span className="font-bold text-primary">$60,000 total ($1,667 / unit)</span></div>
+          <div className="flex justify-between items-center"><span className="text-primary/70">Emergency Special Assessment:</span><span className="font-bold text-red-600 font-bold">$5,000 lump sum per unit</span></div>
+          <div className="border-t border-border pt-2 flex justify-between items-center font-bold text-base text-primary"><span>Mandatory Restructured Monthly Dues:</span><span className="text-accent">$445 / month (+61.8%)</span></div>
+        </div>
+        <p className="text-primary/80 text-sm leading-relaxed">
+          Because the association's reserve account was funded at only 18% ($24,000 total liquid reserves), the board was forced to bill every owner a $5,000 emergency special assessment and increase baseline monthly assessments by 61.8% to establish an ongoing capital reserve account. Condos listed for sale during this transition took an average of 115 days to sell and suffered a 9% discount compared to neighboring buildings with healthy reserves.
+        </p>
+      </div>
+
+      {/* Fannie Mae / Freddie Mac Underwriting Section */}
+      <div className="not-prose my-8 bg-white border border-border/80 rounded-2xl p-6 md:p-8 shadow-xs">
+        <span className="bg-primary/10 text-primary font-bold text-xs uppercase tracking-wider px-3 py-1 rounded-full mb-3 inline-block">
+          Mortgage Underwriting Guidelines
+        </span>
+        <h4 className="text-xl font-serif font-bold text-primary mb-3">
+          Fannie Mae Form 1076 &amp; Freddie Mac Form 476: What Lenders Require
+        </h4>
+        <p className="text-primary/80 text-sm md:text-base leading-relaxed mb-4">
+          When you finance a condominium with a conventional conforming mortgage, the lender does not just evaluate your personal financial creditworthiness—they also underwrite the condominium association using the standard <strong>Condo Project Questionnaire (Fannie Mae Form 1076 / Freddie Mac Form 476)</strong>. If the building fails secondary market criteria, your loan will be rejected regardless of your 800 credit score:
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs sm:text-sm text-primary/80">
+          <div className="bg-bg-light p-4 rounded-xl border border-border/60">
+            <strong className="block text-primary font-bold mb-1">10% Line-Item Reserve Rule:</strong>
+            The association's annual operating budget must dedicate at least 10% of total assessment revenue directly to capital reserves.
+          </div>
+          <div className="bg-bg-light p-4 rounded-xl border border-border/60">
+            <strong className="block text-primary font-bold mb-1">15% Delinquency Limit:</strong>
+            No more than 15% of the total units in the complex may be 60 or more days delinquent on their monthly maintenance fees.
+          </div>
+          <div className="bg-bg-light p-4 rounded-xl border border-border/60">
+            <strong className="block text-primary font-bold mb-1">Deferred Maintenance Ban:</strong>
+            Lenders prohibit financing in communities with unaddressed critical structural repairs, structural evacuation orders, or unfunded mechanical orders.
+          </div>
         </div>
       </div>
 

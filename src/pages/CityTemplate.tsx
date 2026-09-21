@@ -362,7 +362,7 @@ export default function CityTemplate() {
                  className="font-serif text-2xl font-bold text-white"
                  style={{display: 'none'}}
                >
-                 HOAFee<span className="text-accent">Calculator</span>.com.com
+                 HOAFee<span className="text-accent">Calculator</span>.com
                </span>
              </Link>
              <p className="max-w-sm text-sm opacity-80 leading-relaxed">A detailed HOA fee calculation tool for US homebuyers. Trusted by homeowners in all 50 states.</p>
@@ -385,7 +385,7 @@ export default function CityTemplate() {
             <h4 className="text-white font-bold mb-6 uppercase text-xs tracking-widest">Legal</h4>
             <ul className="space-y-4 text-sm font-medium">
               <li><Link to="/privacy-policy" className="hover:text-accent transition-colors">Privacy Policy</Link></li>
-              <li><Link to="/terms" className="hover:text-accent transition-colors">Terms of Service</Link></li>
+              <li><Link to="/terms-of-service" className="hover:text-accent transition-colors">Terms of Service</Link></li>
               <li><Link to="/disclaimer" className="hover:text-accent transition-colors">Disclaimer</Link></li>
               <li><a href="/sitemap.xml" className="hover:text-accent transition-colors">Sitemap</a></li>
             </ul>
@@ -395,7 +395,7 @@ export default function CityTemplate() {
            <span>&copy; 2026 HOAFeeCalculator.com. US Real Estate Data Partners. All Rights Reserved.</span>
            <div className="flex gap-8">
               <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy</Link>
-              <Link to="/terms" className="hover:text-white transition-colors">Terms</Link>
+              <Link to="/terms-of-service" className="hover:text-white transition-colors">Terms</Link>
               <Link to="/disclaimer" className="hover:text-white transition-colors">Disclaimer</Link>
            </div>
         </div>

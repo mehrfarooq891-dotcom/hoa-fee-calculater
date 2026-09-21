@@ -49,7 +49,7 @@ export default function EmergencyHOAMeetingCalledArticle() {
     "dateModified": "2026-08-09T00:00:00Z",
     "author": {
       "@type": "Organization",
-      "name": "HOA Research Team",
+      "name": "Sarah Mitchell",
       "url": "https://www.hoafeecalculator.com/about"
     },
     "publisher": {
@@ -377,24 +377,24 @@ export default function EmergencyHOAMeetingCalledArticle() {
         <div className="mt-12 p-6 bg-slate-50 border border-slate-200 rounded-2xl shadow-xs">
           <div className="flex flex-col sm:flex-row items-start gap-4">
             <div className="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center font-bold text-xl shrink-0 shadow-md">
-              HR
+              SM
             </div>
             <div>
               <div className="flex flex-wrap items-center gap-2 mb-1">
-                <h3 className="text-lg font-bold text-slate-900">HOA Research Team</h3>
+                <h3 className="text-lg font-bold text-slate-900">Sarah Mitchell</h3>
                 <span className="text-xs bg-accent/10 text-accent font-semibold px-2.5 py-0.5 rounded-full border border-accent/20">
-                  Senior Real Estate Policy Analysts
+                  Independent Housing Researcher
                 </span>
               </div>
               <p className="text-xs text-slate-500 mb-3 font-medium">
-                HOAFeeCalculator.com Editorial Team • Member, American Real Estate & Urban Economics Association
+                HOAFeeCalculator.com
               </p>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-3">
-                Written by the HOA Research Team — senior real estate analysts at HOAFeeCalculator.com, compiling HOA cost data across all 50 US states.
+                Written and maintained by Sarah Mitchell, an independent researcher tracking HOA and condo costs across the US. Figures are compiled from public sources listed on our <Link to="/about" className="text-accent underline font-semibold">methodology page</Link>.
               </p>
               <div className="text-xs text-slate-500 flex items-center gap-2 pt-2 border-t border-slate-200">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                <span>Editorial Policy: All statutory references verified against 2026 state property code records.</span>
+                <span>Editorial Policy: All statutory references verified against state property code records.</span>
               </div>
             </div>
           </div>

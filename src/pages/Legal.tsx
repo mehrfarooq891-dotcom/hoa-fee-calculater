@@ -29,7 +29,7 @@ function LegalFooter() {
                className="font-serif text-2xl font-bold text-white"
                style={{ display: 'none' }}
              >
-               HOAFee<span className="text-accent">Calculator</span>.com.com
+               HOAFee<span className="text-accent">Calculator</span>.com
              </span>
            </Link>
            <p className="max-w-sm text-sm opacity-80 leading-relaxed">Providing financial transparency for US residents and homebuyers.</p>
@@ -51,7 +51,7 @@ function LegalFooter() {
           <h4 className="text-white font-bold mb-6 uppercase text-xs tracking-widest">Legal</h4>
           <ul className="space-y-4 text-sm font-medium">
             <li><Link to="/privacy-policy" className="hover:text-accent transition-colors">Privacy Policy</Link></li>
-            <li><Link to="/terms" className="hover:text-accent transition-colors">Terms of Service</Link></li>
+            <li><Link to="/terms-of-service" className="hover:text-accent transition-colors">Terms of Service</Link></li>
             <li><Link to="/disclaimer" className="hover:text-accent transition-colors">Disclaimer</Link></li>
           </ul>
         </div>
@@ -148,7 +148,7 @@ export function TermsOfService() {
       <SEO 
         title="Terms of Service — HOAFeeCalculator.com" 
         description="Read the terms of service and usage conditions of HOAFeeCalculator.com." 
-        canonical="/terms"
+        canonical="/terms-of-service"
       />
       <LegalHeader />
 

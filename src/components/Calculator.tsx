@@ -9,22 +9,56 @@ declare global {
   }
 }
 
-export default function Calculator() {
-  const [inputs, setInputs] = useState<CalculatorInputs>({
-    propertyValue: 450000,
-    monthlyHOA: 350,
-    annualIncrease: 3,
-    yearsOfOwnership: 10,
-    annualIncome: 120000,
-  });
+const defaultInputs: CalculatorInputs = {
+  propertyValue: 450000,
+  monthlyHOA: 350,
+  annualIncrease: 3,
+  yearsOfOwnership: 10,
+  annualIncome: 120000,
+};
 
-  const [outputs, setOutputs] = useState<CalculatorOutputs>({
-    totalLifetimeCost: 0,
-    averageMonthlyCost: 0,
-    yearlyData: [],
-    hoaToIncomeRatio: 0,
-    affordabilityScore: 'A',
-  });
+function computeOutputs(inputs: CalculatorInputs): CalculatorOutputs {
+  const { monthlyHOA, annualIncrease, yearsOfOwnership, annualIncome } = inputs;
+  let total = 0;
+  let currentMonthly = monthlyHOA;
+  const yearlyData = [];
+  let totalAtOwnership = 0;
+  const totalYearsToCalculate = Math.max(30, yearsOfOwnership);
+
+  for (let i = 1; i <= totalYearsToCalculate; i++) {
+    const annualCost = currentMonthly * 12;
+    total += annualCost;
+    if (i <= yearsOfOwnership) {
+      totalAtOwnership = total;
+    }
+    yearlyData.push({
+      year: i,
+      fee: Math.round(currentMonthly),
+      cumulative: Math.round(total),
+    });
+    currentMonthly *= (1 + annualIncrease / 100);
+  }
+
+  const avgMonthly = totalAtOwnership / (yearsOfOwnership * 12);
+  const ratio = (monthlyHOA * 12 / annualIncome) * 100;
+
+  let score: 'A' | 'B' | 'C' | 'D' = 'A';
+  if (ratio > 25) score = 'D';
+  else if (ratio > 15) score = 'C';
+  else if (ratio > 5) score = 'B';
+
+  return {
+    totalLifetimeCost: Math.round(totalAtOwnership),
+    averageMonthlyCost: Math.round(avgMonthly),
+    yearlyData,
+    hoaToIncomeRatio: parseFloat(ratio.toFixed(2)),
+    affordabilityScore: score,
+  };
+}
+
+export default function Calculator() {
+  const [inputs, setInputs] = useState<CalculatorInputs>(defaultInputs);
+  const [outputs, setOutputs] = useState<CalculatorOutputs>(() => computeOutputs(defaultInputs));
 
   const [hasCalculated, setHasCalculated] = useState(false);
   const [email, setEmail] = useState('');

@@ -131,7 +131,7 @@ export default function Contact() {
               className="font-serif text-2xl font-bold text-white"
               style={{display: 'none'}}
             >
-              HOAFee<span className="text-accent">Calculator</span>.com.com
+              HOAFee<span className="text-accent">Calculator</span>.com
             </span>
           </Link>
           <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">

@@ -123,8 +123,8 @@ export default function BlogArticleLayout({
       "cssSelector": Array.isArray(speakableSelector) ? speakableSelector : [speakableSelector]
     },
     "author": {
-      "@type": "Organization",
-      "name": "HOA Research Team",
+      "@type": "Person",
+      "name": "Sarah Mitchell",
       "url": "https://www.hoafeecalculator.com/about"
     },
     "publisher": {
@@ -173,7 +173,7 @@ export default function BlogArticleLayout({
               <span>•</span>
               <span>{lastUpdatedDate ? `Updated: ${lastUpdatedDate}` : date}</span>
               <span>•</span>
-              <span className="text-accent normal-case">Reviewed by the HOA Research Team</span>
+              <span className="text-accent normal-case">Reviewed by Sarah Mitchell</span>
             </div>
           </div>
 
@@ -230,12 +230,12 @@ export default function BlogArticleLayout({
             {/* Author Bio */}
             <div className="mt-16 pt-8 border-t border-border flex items-center gap-6">
               <div className="h-16 w-16 bg-accent/10 text-accent font-bold rounded-full flex items-center justify-center text-xl font-serif">
-                HR
+                SM
               </div>
               <div>
-                <h4 className="text-primary font-bold text-lg">Written by: HOA Research Team</h4>
+                <h4 className="text-primary font-bold text-lg">Written by: Sarah Mitchell</h4>
                 <p className="text-primary opacity-80 text-sm">
-                  Providing real-time financial tracking, state laws analysis, and consumer protection guides for American property buyers. <Link to="/about" className="text-accent font-bold hover:underline">Learn more about our research methodology and editorial standards</Link>.
+                  Written and maintained by Sarah Mitchell, an independent researcher tracking HOA and condo costs across the US. Figures are compiled from public sources listed on our <Link to="/about" className="text-accent font-bold hover:underline">methodology page</Link>.
                 </p>
               </div>
             </div>
@@ -264,7 +264,7 @@ export default function BlogArticleLayout({
                 className="font-serif text-2xl font-bold text-white"
                 style={{display: 'none'}}
               >
-                HOAFee<span className="text-accent">Calculator</span>.com.com
+                HOAFee<span className="text-accent">Calculator</span>.com
               </span>
             </Link>
           </div>

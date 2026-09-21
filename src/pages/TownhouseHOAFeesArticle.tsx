@@ -18,7 +18,7 @@ export default function TownhouseHOAFeesArticle() {
     "dateModified": "2026-06-17T08:00:00Z",
     "author": {
       "@type": "Organization",
-      "name": "HOA Research Team",
+      "name": "Sarah Mitchell",
       "url": "https://www.hoafeecalculator.com/"
     },
     "publisher": {

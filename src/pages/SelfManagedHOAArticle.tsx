@@ -18,7 +18,7 @@ export default function SelfManagedHOAArticle() {
     "dateModified": "2026-06-13T12:00:00Z",
     "author": {
       "@type": "Organization",
-      "name": "HOA Research Team",
+      "name": "Sarah Mitchell",
       "url": "https://www.hoafeecalculator.com/"
     },
     "publisher": {

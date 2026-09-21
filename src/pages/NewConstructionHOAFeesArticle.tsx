@@ -20,7 +20,7 @@ export default function NewConstructionHOAFeesArticle() {
     "dateModified": "2026-06-07T12:00:00Z",
     "author": {
       "@type": "Organization",
-      "name": "HOA Research Team",
+      "name": "Sarah Mitchell",
       "url": "https://www.hoafeecalculator.com/"
     },
     "publisher": {

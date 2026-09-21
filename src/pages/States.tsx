@@ -324,7 +324,7 @@ export default function States() {
                 className="font-serif text-2xl font-bold text-white"
                 style={{display: 'none'}}
               >
-                HOAFee<span className="text-accent">Calculator</span>.com.com
+                HOAFee<span className="text-accent">Calculator</span>.com
               </span>
             </Link>
             <p className="max-w-sm text-sm opacity-80 leading-relaxed">The most comprehensive HOA fee calculation tool and resource hub for US homebuyers.</p>

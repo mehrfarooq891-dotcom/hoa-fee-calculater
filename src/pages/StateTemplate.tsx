@@ -123,12 +123,16 @@ export default function StateTemplate() {
         a: "Yes, under Texas Property Code § 209.0092, an HOA can foreclose on a property for unpaid regular or special assessments, but they must first obtain an expedited judicial court order. State law strictly forbids non-judicial foreclosures on residential subdivisions without a judge's ruling, and associations are legally barred from foreclosing if the outstanding balance consists solely of architectural fines or legal fees. Additionally, Texas homeowners retain a 180-day statutory right of redemption following any HOA foreclosure sale."
       },
       {
-        q: "What is the TREC resale certificate requirement in Texas?",
-        a: "Under Texas Property Code § 207.003, sellers in mandatory property owners associations are legally required to deliver a Subdivision Information packet (TREC Form 37-5) and an official HOA resale certificate to prospective buyers during escrow. This disclosure verifies the current balance of assessments, scheduled capital projects, active violation notices against the lot, and the association's reserve cash balances. Texas standard purchase contracts provide buyers a 3-to-7 day statutory right of cancellation upon receipt."
+        q: "What is the TREC resale certificate requirement in Texas, and how much can an HOA charge?",
+        a: "Under Texas Property Code § 207.003 and Senate Bill 1588, property owners associations are legally capped at charging a maximum of $375 to assemble and deliver an official resale certificate disclosure package, and no more than $75 for an update. The packet discloses current regular assessment amounts, pending special assessments, active violations, and reserve balances. Texas standard purchase contracts provide buyers a 3-to-7 day statutory right of cancellation upon receipt."
       },
       {
         q: "Can Texas HOAs ban solar panels, security cameras, or perimeter fencing?",
         a: "No, Chapter 202 of the Texas Property Code explicitly prevents HOAs from enforcing blanket prohibitions on these items. Under § 202.010, homeowners can install roof-mounted solar energy devices within reasonable pitch parameters. Under § 202.023, associations cannot ban front or perimeter security cameras, motion floodlights, or boundary security fencing. Under § 202.007, drought-tolerant xeriscaping and rainwater harvesting barrels are also statutorily protected."
+      },
+      {
+        q: "What is the MUD and PID tax impact on Texas master-planned communities?",
+        a: "Under Texas Water Code § 49.452, sellers are legally required to deliver a statutory Municipal Utility District (MUD) notice to buyers prior to contract execution. MUD and Public Improvement District (PID) assessments fund neighborhood infrastructure bonds and appear directly on annual county property tax bills, often adding $2,000 to $5,000+ per year on top of standard HOA dues."
       }
     ],
     "california": [
@@ -145,8 +149,44 @@ export default function StateTemplate() {
         a: "Senate Bill 326 (for condominiums) and Senate Bill 721 (for multi-family housing) mandate that all buildings with three or more residential units containing wood exterior elevated elements (such as balconies, exterior stairs, decks, and walkways) must undergo destructive or visual structural inspections by a licensed architect or engineer. If dry-rot or waterproofing failures are uncovered, associations must execute immediate repairs, which has triggered widespread $15,000 to $40,000 per-unit special assessments across aging coastal developments."
       },
       {
+        q: "Can California HOAs ban rentals or Accessory Dwelling Units (ADUs)?",
+        a: "No, California state law strictly protects rental and ADU rights. Under Civil Code § 4741 (enacted via AB 3182), common interest developments cannot prohibit or restrict rentals unless the restriction allows at least 25% of all units to be rented. Furthermore, under Civil Code § 4751, any CC&R rule that prohibits or unreasonably restricts the construction of a permitted ADU or Junior ADU is void and unenforceable as a matter of law."
+      },
+      {
         q: "What are buyers' statutory disclosure rights during California HOA escrow?",
         a: "Under California Civil Code § 4525, prospective buyers are entitled to receive a comprehensive package of association records within 10 days of request, including the annual reserve study summary, current operating budget, 12 months of board meeting minutes, any pending construction litigation, and proof of master insurance. California purchase contracts grant buyers an explicit contingency review period to examine these documents and cancel escrow with a full return of earnest money if liabilities are identified."
+      }
+    ],
+    "florida": [
+      {
+        q: "What is the average HOA and condo fee in Florida in 2026?",
+        a: "Average HOA fees in Florida range from $150 to $350 per month for suburban single-family homes, and $400 to $900+ per month for multi-family condominiums in coastal metros like Miami, Fort Lauderdale, Tampa, and St. Petersburg. Condo dues have surged significantly due to mandatory post-Surfside structural integrity reserve requirements and skyrocketing commercial property insurance rates."
+      },
+      {
+        q: "What is the Senate Bill 4-D Milestone Inspection law in Florida?",
+        a: "Under Florida Statute § 553.899 enacted via Senate Bill 4-D and SB 154, residential condominium buildings 3 stories or taller must undergo a comprehensive structural Milestone Inspection once the building reaches 30 years of age (or 25 years if located within three miles of the coastline). A licensed structural engineer or architect inspects primary load-bearing elements, foundations, and building envelopes to certify structural safety."
+      },
+      {
+        q: "Can Florida condo associations still vote to waive reserve funding?",
+        a: "No. Under Florida Statute § 718.112 as amended by SB 4-D, condominium associations can no longer vote to waive or reduce reserve funding for structural integrity components (roof, load-bearing walls, fireproofing, plumbing, electrical, waterproofing, and structural items over $10,000). Associations must complete a mandatory Structural Integrity Reserve Study (SIRS) every 10 years and fully fund replacement reserves based on recommended schedules."
+      },
+      {
+        q: "What is a Florida Estoppel Certificate and what is the fee limit?",
+        a: "Under Florida Statutes § 718.116 (condos) and § 720.30851 (HOAs), an estoppel certificate is a legally binding statement from the association detailing the unit's financial standing, including current assessment rates, outstanding delinquent balances, and scheduled special assessments. The statutory preparation fee is capped at $299 for accounts in good standing, and the certificate legally shields the buyer from inheriting past-due balances not disclosed in the document."
+      }
+    ],
+    "new-york": [
+      {
+        q: "What is the average HOA or maintenance fee in New York?",
+        a: "In New York, fees vary widely by property structure and location. NYC co-op maintenance averages $1,200 to $1,800+ per month (bundling building property taxes and underlying mortgages), while condominium common charges average $800 to $1,500/month. Long Island gated communities average $400 to $850/month, and Upstate New York single-family HOAs in Albany, Buffalo, and Rochester average $150 to $350/month."
+      },
+      {
+        q: "What is Local Law 11 (FISP) in New York City?",
+        a: "Under NYC's Facade Inspection Safety Program (FISP, formerly Local Law 11), all buildings exceeding six stories must undergo an intensive exterior wall inspection by a Qualified Exterior Wall Inspector (QEWI) every five years. Discovered defects require immediate pedestrian shed scaffolding and masonry repairs, frequently triggering special assessments of $10,000 to $40,000 per unit if capital reserves are insufficient."
+      },
+      {
+        q: "How does Local Law 97 impact New York building carrying costs?",
+        a: "NYC Local Law 97 establishes strict greenhouse gas emission caps on buildings over 25,000 square feet, penalizing non-compliant properties $268 per metric ton over the threshold. Associations are actively funding major capital upgrades—such as converting from #4 fuel oil to electric heat pump systems—through reserve increases and special assessments."
       }
     ]
   };
@@ -229,7 +269,7 @@ export default function StateTemplate() {
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-primary opacity-80 uppercase font-bold tracking-wider mt-4">
               <span>Updated: September 2026</span>
               <span>•</span>
-              <span className="text-accent normal-case font-bold">Reviewed by the HOA Research Team</span>
+              <span className="text-accent normal-case font-bold">Reviewed by Sarah Mitchell</span>
             </div>
           </header>
 
@@ -540,7 +580,7 @@ export default function StateTemplate() {
               className="font-serif text-2xl font-bold text-white"
               style={{display: 'none'}}
             >
-              HOAFee<span className="text-accent">Calculator</span>.com.com
+              HOAFee<span className="text-accent">Calculator</span>.com
             </span>
           </Link>
           <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">

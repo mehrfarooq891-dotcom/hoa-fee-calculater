@@ -29,8 +29,9 @@ export default function CaliforniaHOAFeesArticle() {
       "cssSelector": [".aeo-quick-answer", "#quick-answer"]
     },
     "author": {
-      "@type": "Organization",
-      "name": "HOA Research Team"
+      "@type": "Person",
+      "name": "Sarah Mitchell",
+      "url": "https://www.hoafeecalculator.com/about"
     },
     "publisher": {
       "@type": "Organization",
@@ -43,8 +44,8 @@ export default function CaliforniaHOAFeesArticle() {
     },
     "creator": {
       "@type": "Person",
-      "name": "HOA Research Team",
-      "jobTitle": "Real Estate Financial Analyst",
+      "name": "Sarah Mitchell",
+      "jobTitle": "Independent Housing Researcher",
       "url": "https://www.hoafeecalculator.com/about"
     }
   };
@@ -77,7 +78,7 @@ export default function CaliforniaHOAFeesArticle() {
               className="font-serif text-2xl font-bold text-primary"
               style={{display: 'none'}}
             >
-              HOAFee<span className="text-accent">Calculator</span>.com.com
+              HOAFee<span className="text-accent">Calculator</span>.com
             </span>
           </Link>
           <nav className="hidden md:flex gap-8 items-center text-sm font-bold uppercase tracking-wider">
@@ -102,7 +103,7 @@ export default function CaliforniaHOAFeesArticle() {
               <span>•</span>
               <span>Updated: September 10, 2026</span>
               <span>•</span>
-              <span className="text-accent normal-case">Reviewed by the HOA Research Team</span>
+              <span className="text-accent normal-case">Reviewed by Sarah Mitchell</span>
             </div>
           </div>
 
@@ -168,6 +169,58 @@ export default function CaliforniaHOAFeesArticle() {
                   <strong className="text-primary font-bold">Sacramento / Central Valley (Average: $200 - $350/mo):</strong> As you push inland to Sacramento, Fresno, and Bakersfield, low-density single-family neighborhoods dominate the architectural landscape. Because association-maintained vertical systems (like elevators or complex central fire systems) are rare, baseline general fees hover in a much more affordable range of $200 to $300 per month.
                 </li>
               </ul>
+
+              {/* HTML COMPARISON TABLE - Styled with Tailwind */}
+              <div className="overflow-x-auto my-8 border border-border rounded-xl bg-bg-light shadow-md">
+                <table className="w-full text-left border-collapse text-sm">
+                  <thead>
+                    <tr className="border-b border-border bg-slate-100 font-bold text-primary">
+                      <th className="p-4 font-serif">Region / Metro Area</th>
+                      <th className="p-4 font-serif text-center">Avg. HOA Fee</th>
+                      <th className="p-4 font-serif">Typical Range</th>
+                      <th className="p-4 font-serif">Key Regional Cost Drivers</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-border hover:bg-slate-50/50">
+                      <td className="p-4 font-bold text-primary">SF Bay Area &amp; Silicon Valley</td>
+                      <td className="p-4 text-center text-accent font-semibold">$650 / mo</td>
+                      <td className="p-4">$450 – $1,400+ / mo</td>
+                      <td className="p-4">Prevailing wage contractor rates, seismic safety mandates, historic brick/timber multi-family envelopes.</td>
+                    </tr>
+                    <tr className="border-b border-border hover:bg-slate-50/50 text-slate-700">
+                      <td className="p-4 font-bold text-primary">Los Angeles Metro &amp; Long Beach</td>
+                      <td className="p-4 text-center text-accent font-semibold">$550 / mo</td>
+                      <td className="p-4">$350 – $1,100 / mo</td>
+                      <td className="p-4">Municipal soft-story seismic retrofit ordinances, coastal marine layer salt corrosion, SB 326 balcony inspections.</td>
+                    </tr>
+                    <tr className="border-b border-border hover:bg-slate-50/50">
+                      <td className="p-4 font-bold text-primary">Orange County / Irvine</td>
+                      <td className="p-4 text-center text-accent font-semibold">$425 / mo</td>
+                      <td className="p-4">$250 – $800 / mo</td>
+                      <td className="p-4">Dual master association and sub-village dues, extensive community aquatic complexes, private security patrols.</td>
+                    </tr>
+                    <tr className="border-b border-border hover:bg-slate-50/50 text-slate-700">
+                      <td className="p-4 font-bold text-primary">San Diego County</td>
+                      <td className="p-4 text-center text-accent font-semibold">$450 / mo</td>
+                      <td className="p-4">$275 – $850 / mo</td>
+                      <td className="p-4">Canyon hillside drainage/retaining walls, defensible space brush clearing, coastal elevator service.</td>
+                    </tr>
+                    <tr className="border-b border-border hover:bg-slate-50/50">
+                      <td className="p-4 font-bold text-primary">Sacramento &amp; Central Valley</td>
+                      <td className="p-4 text-center text-accent font-semibold">$275 / mo</td>
+                      <td className="p-4">$150 – $450 / mo</td>
+                      <td className="p-4">Single-family subdivisions, stormwater retention basin landscaping, basic community clubhouse upkeep.</td>
+                    </tr>
+                    <tr className="hover:bg-slate-50/50 text-slate-700">
+                      <td className="p-4 font-bold text-primary">Palm Springs / Coachella Valley</td>
+                      <td className="p-4 text-center text-accent font-semibold">$525 / mo</td>
+                      <td className="p-4">$350 – $950 / mo</td>
+                      <td className="p-4">Private golf course fairway irrigation, desert heat HVAC service, tennis/pickleball tournament courts.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
 
               <p>
                 When comparing properties, the physical structure of your home dictates fees far more than the zip code alone. A detached, single-family home (SFH) in San Diego might only demand $150 per month to maintain a shared security gate and roadway, while a 700-square-foot high-rise condominium two blocks away demands $750 to fund elevators, common halls, and master-key entry lines. Buyers relocating from neighboring western markets often compare these baseline obligations with <Link to="/blog/hoa-fees-nevada" className="text-accent underline font-bold hover:text-accent/80">Nevada HOA fees</Link> and <Link to="/blog/hoa-fees-arizona" className="text-accent underline font-bold hover:text-accent/80">Arizona HOA fees</Link>.
@@ -278,6 +331,9 @@ export default function CaliforniaHOAFeesArticle() {
                 </li>
                 <li>
                   <strong className="text-primary font-bold">The Mandatory 3-Year Reserve Study Update:</strong> The Act mandates that every CID complete an on-site, physical reserve study every three years, and review and adjust that study annually. Boards must provide buyers with a "Reserve Summary" disclosure package, revealing exactly how well-funded the association is to handle future capital improvements.
+                </li>
+                <li>
+                  <strong className="text-primary font-bold">Rental and ADU Protections (Civil Code § 4741 &amp; § 4751):</strong> Under Assembly Bill 3182 codified in Civil Code § 4741, California HOAs cannot ban homeowners from renting or leasing their separate interests unless the community already permits at least 25% of all units to be rented. Furthermore, under Civil Code § 4751, any provision in CC&Rs that effectively prohibits or unreasonably restricts the construction or use of an Accessory Dwelling Unit (ADU) or Junior ADU is void and unenforceable as a matter of law.
                 </li>
               </ul>
 
@@ -433,6 +489,12 @@ export default function CaliforniaHOAFeesArticle() {
                     Under California Civil Code § 4525, prospective buyers are entitled to receive an official package of association disclosure documents within 10 days of request. This mandatory packet includes the current budget, the annual reserve study summary, 12 months of executive and general board meeting minutes, any pending lawsuits against the association, and proof of master insurance coverage. California standard residential purchase agreements grant buyers an explicit contingency period to review these disclosures and cancel the contract with a full refund of their earnest money deposit if red flags are uncovered.
                   </p>
                 </div>
+                <div className="bg-bg-light p-6 rounded-2xl border border-border/70">
+                  <h3 className="font-bold text-lg text-primary mb-2">Can a California HOA ban rentals or accessory dwelling units (ADUs)?</h3>
+                  <p>
+                    No, California state law sharply curtails an association's ability to restrict rentals or secondary dwellings. Under California Civil Code § 4741 (enacted via AB 3182), an HOA cannot prohibit or restrict the rental or leasing of homes unless the restriction allows at least 25% of all separate interests in the common interest development to be leased at any given time. Furthermore, under Civil Code § 4751, any CC&R rule or architectural guideline that attempts to prohibit, unreasonably delay, or effectively halt the construction of a permitted ADU or Junior ADU on single-family or multi-family lots is completely void.
+                  </p>
+                </div>
               </div>
             </div>
 
@@ -455,11 +517,11 @@ export default function CaliforniaHOAFeesArticle() {
             {/* Author Bio */}
             <div className="mt-16 pt-8 border-t border-border flex items-center gap-6">
               <div className="h-16 w-16 bg-accent/10 text-accent font-bold rounded-full flex items-center justify-center text-xl font-serif">
-                HR
+                SM
               </div>
               <div>
-                <h4 className="text-primary font-bold text-lg">Written by: HOA Research Team</h4>
-                <p className="text-primary opacity-80 text-sm">Providing real-time financial tracking, state laws analysis, and consumer protection guides for American property buyers. <Link to="/about" className="text-accent font-bold hover:underline">Learn more about our research methodology and editorial standards</Link>.</p>
+                <h4 className="text-primary font-bold text-lg">Written by: Sarah Mitchell</h4>
+                <p className="text-primary opacity-80 text-sm">Written and maintained by Sarah Mitchell, an independent researcher tracking HOA and condo costs across the US. Figures are compiled from public sources listed on our <Link to="/about" className="text-accent font-bold hover:underline">methodology page</Link>.</p>
               </div>
             </div>
 
@@ -487,7 +549,7 @@ export default function CaliforniaHOAFeesArticle() {
                 className="font-serif text-2xl font-bold text-white"
                 style={{display: 'none'}}
               >
-                HOAFee<span className="text-accent">Calculator</span>.com.com
+                HOAFee<span className="text-accent">Calculator</span>.com
               </span>
             </Link>
           </div>

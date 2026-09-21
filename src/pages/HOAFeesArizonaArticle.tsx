@@ -19,7 +19,7 @@ export default function HOAFeesArizonaArticle() {
     "dateModified": "2026-06-10T09:00:00Z",
     "author": {
       "@type": "Organization",
-      "name": "HOA Research Team",
+      "name": "Sarah Mitchell",
       "url": "https://www.hoafeecalculator.com/"
     },
     "publisher": {

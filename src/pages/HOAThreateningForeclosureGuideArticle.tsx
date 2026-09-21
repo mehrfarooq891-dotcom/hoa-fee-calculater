@@ -53,7 +53,7 @@ export default function HOAThreateningForeclosureGuideArticle() {
     "dateModified": "2026-07-22T08:00:00Z",
     "author": {
       "@type": "Organization",
-      "name": "HOA Research Team",
+      "name": "Sarah Mitchell",
       "url": "https://www.hoafeecalculator.com/"
     },
     "publisher": {
@@ -135,16 +135,16 @@ export default function HOAThreateningForeclosureGuideArticle() {
       <div className="mb-8 p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-wrap items-center justify-between gap-4">
         <div className="flex items-center gap-3">
           <div className="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-lg border border-primary/20 shadow-sm">
-            MV
+            SM
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <span className="font-bold text-slate-900 text-base">HOA Research Team</span>
+              <span className="font-bold text-slate-900 text-base">Sarah Mitchell</span>
               <span className="bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded-full font-semibold flex items-center gap-1">
-                <UserCheck className="w-3 h-3" /> Verified Legal Reviewer
+                <UserCheck className="w-3 h-3" /> Independent Researcher
               </span>
             </div>
-            <p className="text-xs text-slate-600">Legal & Real Estate Editorial Team</p>
+            <p className="text-xs text-slate-600">HOAFeeCalculator.com</p>
           </div>
         </div>
         <div className="text-xs text-slate-500 flex items-center gap-3">
@@ -429,24 +429,24 @@ export default function HOAThreateningForeclosureGuideArticle() {
       <div className="mt-12 p-6 bg-slate-50 border border-slate-200 rounded-2xl shadow-xs">
         <div className="flex flex-col sm:flex-row items-start gap-4">
           <div className="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center font-bold text-xl shrink-0 shadow-md">
-            MV
+            SM
           </div>
           <div>
             <div className="flex flex-wrap items-center gap-2 mb-1">
-              <h3 className="text-lg font-bold text-slate-900">HOA Research Team</h3>
+              <h3 className="text-lg font-bold text-slate-900">Sarah Mitchell</h3>
               <span className="text-xs bg-accent/10 text-accent font-semibold px-2.5 py-0.5 rounded-full border border-accent/20">
-                Senior Real Estate Policy Analyst
+                Independent Housing Researcher
               </span>
             </div>
             <p className="text-xs text-slate-500 mb-3 font-medium">
-              HOAFeeCalculator.com Editorial Team • Member, American Real Estate & Urban Economics Association
+              HOAFeeCalculator.com
             </p>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-3">
-              Marcus holds a Juris Doctor with a concentration in land use and property rights. He has spent over 14 years auditing community association governing documents, analyzing state CC&R statutes, and advising housing counselors on default prevention strategies across all 50 states.
+              Written and maintained by Sarah Mitchell, an independent researcher tracking HOA and condo costs across the US. Figures are compiled from public sources listed on our <Link to="/about" className="text-accent underline font-semibold">methodology page</Link>.
             </p>
             <div className="text-xs text-slate-500 flex items-center gap-2 pt-2 border-t border-slate-200">
               <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-              <span>Editorial Policy: All statutory references verified against 2026 state property code records.</span>
+              <span>Editorial Policy: All statutory references verified against state property code records.</span>
             </div>
           </div>
         </div>

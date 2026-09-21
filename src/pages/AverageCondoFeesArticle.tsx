@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronDown } from 'lucide-react';
 import BlogArticleLayout from '@/src/components/BlogArticleLayout';
+import QuickAnswerBox from '@/src/components/QuickAnswerBox';
 
 export default function AverageCondoFeesArticle() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
@@ -60,7 +61,7 @@ export default function AverageCondoFeesArticle() {
     "dateModified": "2026-08-27T00:00:00Z",
     "author": {
       "@type": "Organization",
-      "name": "HOA Research Team",
+      "name": "Sarah Mitchell",
       "url": "https://www.hoafeecalculator.com/about"
     },
     "publisher": {
@@ -111,8 +112,20 @@ export default function AverageCondoFeesArticle() {
 
       {/* Author Header */}
       <div className="bg-bg-light border border-border p-4 rounded-xl mb-8 text-xs md:text-sm text-secondary">
-        <strong>Written by the HOA Research Team</strong> — senior real estate analysts at HOAFeeCalculator.com, compiling HOA cost data across all 50 US states.
+        <strong>Written by Sarah Mitchell</strong> — independent researcher tracking HOA and condo costs across the US. Figures are compiled from public sources listed on our <Link to="/about" className="text-accent underline font-semibold">methodology page</Link>.
       </div>
+
+      <QuickAnswerBox
+        title="Quick Answer: Average Condo Fees in 2026"
+        answer="The national average condo fee across the United States sits between $450 and $720 per month, with an overall median of approximately $540 per month for a standard two-bedroom unit. In luxury urban high-rises or full-service coastal towers (such as in New York, San Francisco, or Miami), condo fees routinely reach $950 to $1,800+ per month to cover 24/7 staff, elevators, central boilers, and master property hazard insurance. Condo fees average 40% to 150% higher than single-family HOA fees because the association maintains the entire exterior structural envelope."
+        highlights={[
+          { label: "US Median Condo Fee", value: "$540 / month" },
+          { label: "Mid-Rise Average", value: "$450 - $720 / mo" },
+          { label: "Luxury High-Rise Range", value: "$950 - $1,800+ / mo" },
+          { label: "Single-Family vs. Condo", value: "40% - 150% higher" }
+        ]}
+        className="my-6 not-prose"
+      />
 
       <p className="text-lg text-primary/90 leading-relaxed font-medium mb-6">
         The national average condo fee in the United States currently sits between <strong>$450 and $720 per month</strong>, with an overall median of approximately <strong>$540 per month</strong> for a standard two-bedroom condominium. In major metropolitan markets and full-service coastal towers, average condo fees routinely surge to <strong>$950 to $1,800+ per month</strong>. If you are comparing single-family homes to condominiums, expect condo association dues to run anywhere from 40% to 150% higher than suburban subdivision HOA fees due to shared structural, mechanical, and insurance obligations.
@@ -402,7 +415,7 @@ export default function AverageCondoFeesArticle() {
 
       {/* Author Bio */}
       <div className="bg-bg-light border border-border p-6 rounded-2xl my-8 text-sm text-secondary">
-        <strong>Written by the HOA Research Team</strong> — senior real estate analysts at HOAFeeCalculator.com, compiling HOA cost data across all 50 US states. Learn more on our <Link to="/about" className="text-accent hover:underline">About Us</Link> page.
+        <strong>Written by Sarah Mitchell</strong> — independent researcher tracking HOA and condo costs across the US. Figures are compiled from public sources listed on our <Link to="/about" className="text-accent underline font-semibold">methodology page</Link>. Learn more on our <Link to="/about" className="text-accent hover:underline">About Us</Link> page.
       </div>
     </BlogArticleLayout>
   );

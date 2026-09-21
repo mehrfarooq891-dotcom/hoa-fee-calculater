@@ -297,7 +297,7 @@ export default function HOAVsNoHOAArticle() {
       {/* Author Bio */}
       <div className="mt-12 pt-6 border-t border-border flex items-center gap-4 text-sm text-primary/80">
         <div>
-          <span className="font-bold text-primary">Written by: HOA Research Team</span> — real estate financial analysts compiling property carrying costs and HOA data across all 50 states.
+          <span className="font-bold text-primary">Written by Sarah Mitchell</span> — independent researcher tracking HOA and condo costs across the US. Figures are compiled from public sources listed on our <Link to="/about" className="text-accent underline font-semibold">methodology page</Link>.
         </div>
       </div>
     </BlogArticleLayout>

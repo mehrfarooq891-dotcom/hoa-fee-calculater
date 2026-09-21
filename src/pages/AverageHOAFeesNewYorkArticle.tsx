@@ -316,7 +316,7 @@ export default function AverageHOAFeesNewYorkArticle() {
 
       {/* Author Bio Block */}
       <div className="author-bio mt-12 pt-6 border-t border-border/80 text-sm italic text-primary/75">
-        <strong>Written by the HOA Research Team</strong> — senior real estate analysts at HOAFeeCalculator.com, compiling HOA cost data across all 50 US states.
+        <strong>Written by Sarah Mitchell</strong> — independent researcher tracking HOA and condo costs across the US. Figures are compiled from public sources listed on our <Link to="/about" className="text-accent underline font-semibold">methodology page</Link>.
       </div>
     </BlogArticleLayout>
   );

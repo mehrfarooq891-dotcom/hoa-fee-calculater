@@ -1,11 +1,10 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import SEO from '@/src/components/SEO';
 import Header from '@/src/components/Header';
 import SocialIcons from '@/src/components/SocialIcons';
 import { Link } from 'react-router-dom';
 import QuickAnswerBox from '@/src/components/QuickAnswerBox';
-
-const Calculator = React.lazy(() => import('@/src/components/Calculator'));
+import Calculator from '@/src/components/Calculator';
 
 export default function Home() {
   const [isEmbedModalOpen, setIsEmbedModalOpen] = React.useState(false);
@@ -105,14 +104,7 @@ export default function Home() {
         <h1 className="sr-only">Free HOA Fee Calculator - Estimate Your True Cost</h1>
         {/* TOOL SECTION */}
         <section id="calculator" className="pt-20 md:pt-24 pb-12 px-6 max-w-7xl mx-auto">
-          <Suspense fallback={
-            <div className="min-h-[500px] flex flex-col items-center justify-center bg-bg-light/50 rounded-3xl border border-border/50 p-8 shadow-sm">
-              <div className="w-12 h-12 border-4 border-accent border-t-transparent rounded-full animate-spin mb-4"></div>
-              <p className="text-sm text-primary/60 font-medium">Loading HOA Fee Calculator...</p>
-            </div>
-          }>
-            <Calculator />
-          </Suspense>
+          <Calculator />
         </section>
 
         {/* REALTOR EMBED SECTION */}
@@ -169,7 +161,7 @@ export default function Home() {
                 </p>
                 
                 <div className="text-xs text-primary/60 mb-8 border-l-2 border-accent pl-3">
-                  Data compiled and reviewed by the <span className="font-semibold">HOAFeeCalculator.com Research Team</span> | Last updated: September 10, 2026
+                  Data compiled and reviewed by <span className="font-semibold">Sarah Mitchell</span> | Last updated: September 10, 2026
                 </div>
               
               <div className="grid grid-cols-2 gap-4">
@@ -353,10 +345,13 @@ export default function Home() {
                 </thead>
                 <tbody className="divide-y divide-border font-bold">
                   {[
+                    { s: "Florida", f: "$390/mo", link: "/blog/hoa-fees-florida" },
                     { s: "California", f: "$450/mo", link: "/blog/hoa-fees-california" },
                     { s: "New York", f: "$480/mo", link: "/blog/average-hoa-fees-new-york" },
                     { s: "Texas", f: "$230/mo", link: "/blog/hoa-fees-texas" },
                     { s: "Colorado", f: "$280/mo", link: "/blog/hoa-fees-colorado" },
+                    { s: "Illinois", f: "$330/mo", link: "/blog/hoa-fees-illinois" },
+                    { s: "Washington", f: "$375/mo", link: "/blog/hoa-fees-washington-state" },
                     { s: "Georgia", f: "$220/mo", link: "/blog/hoa-fees-georgia" }
                   ].map((row, i) => (
                     <tr key={i} className="hover:bg-accent/5 transition-colors">
@@ -411,17 +406,11 @@ export default function Home() {
           <div className="card bg-primary p-12 relative overflow-hidden flex flex-col md:flex-row items-center gap-12 border-none shadow-2xl">
             <div className="absolute bottom-0 right-0 w-64 h-64 bg-accent opacity-5 rounded-full -mr-32 -mb-32"></div>
             <div className="shrink-0 relative z-10">
-               <img 
-                 src="https://randomuser.me/api/portraits/men/52.jpg" 
-                 alt="HOA Research Team" 
-                 width="160"
-                 height="160"
-                 loading="lazy"
-                 className="w-40 h-40 rounded-3xl object-cover border-4 border-accent shadow-lg"
-                 referrerPolicy="no-referrer"
-               />
-               <div className="absolute -bottom-4 -left-4 bg-accent text-white font-bold py-2 px-4 rounded-xl text-xs uppercase tracking-widest shadow-lg">
-                 Data Driven
+               <div className="w-32 h-32 md:w-40 md:h-40 rounded-3xl bg-white/10 border-4 border-accent flex items-center justify-center shadow-lg text-accent font-serif font-bold text-4xl md:text-5xl">
+                 SM
+               </div>
+               <div className="absolute -bottom-3 -left-2 bg-accent text-white font-bold py-1.5 px-3.5 rounded-xl text-xs uppercase tracking-widest shadow-lg">
+                 Researcher
                </div>
             </div>
             <div className="relative z-10">
@@ -429,11 +418,11 @@ export default function Home() {
                 "Most homebuyers focus on the mortgage. The HOA fee is the silent budget-killer nobody warns you about."
               </p>
               <div className="mb-6 text-white/80 leading-relaxed text-sm max-w-xl">
-                HOA Research Team has spent 14 years analyzing US residential real estate markets, working with homebuyers across California, Florida, and Texas. He built HOAFeeCalculator.com to help buyers understand the true lifetime cost of HOA fees before signing anything.
+                Written and maintained by Sarah Mitchell, an independent researcher tracking HOA and condo costs across the US. Figures are compiled from public sources listed on our <Link to="/about" className="text-accent underline font-semibold hover:text-white">methodology page</Link>.
               </div>
               <div>
-                <h4 className="text-white font-bold text-xl">HOA Research Team</h4>
-                <p className="text-accent uppercase tracking-widest text-xs font-bold">Real Estate Financial Analyst & Founder</p>
+                <h4 className="text-white font-bold text-xl">Sarah Mitchell</h4>
+                <p className="text-accent uppercase tracking-widest text-xs font-bold">Independent Housing Researcher</p>
               </div>
             </div>
           </div>
@@ -628,7 +617,7 @@ export default function Home() {
                  className="font-serif text-2xl font-bold text-white"
                  style={{display: 'none'}}
                >
-                 HOAFee<span className="text-accent">Calculator</span>.com.com
+                 HOAFee<span className="text-accent">Calculator</span>.com
                </span>
              </Link>
              <p className="max-w-sm text-sm opacity-80 leading-relaxed">A detailed HOA fee calculation tool for US homebuyers. Trusted by homeowners in all 50 states.</p>
@@ -651,7 +640,7 @@ export default function Home() {
             <h4 className="text-white font-bold mb-6 uppercase text-xs tracking-widest">Legal</h4>
             <ul className="space-y-4 text-sm font-medium">
               <li><Link to="/privacy-policy" className="hover:text-accent transition-colors">Privacy Policy</Link></li>
-              <li><Link to="/terms" className="hover:text-accent transition-colors">Terms of Service</Link></li>
+              <li><Link to="/terms-of-service" className="hover:text-accent transition-colors">Terms of Service</Link></li>
               <li><Link to="/disclaimer" className="hover:text-accent transition-colors">Disclaimer</Link></li>
               <li><a href="/sitemap.xml" className="hover:text-accent transition-colors">Sitemap</a></li>
             </ul>
@@ -661,7 +650,7 @@ export default function Home() {
            <span>&copy; 2026 HOAFeeCalculator.com. US Real Estate Data Partners.</span>
            <div className="flex gap-8">
               <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy</Link>
-              <Link to="/terms" className="hover:text-white transition-colors">Terms</Link>
+              <Link to="/terms-of-service" className="hover:text-white transition-colors">Terms</Link>
               <Link to="/disclaimer" className="hover:text-white transition-colors">Disclaimer</Link>
            </div>
         </div>

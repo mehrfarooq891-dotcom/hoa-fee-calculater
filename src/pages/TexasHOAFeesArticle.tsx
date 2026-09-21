@@ -29,8 +29,9 @@ export default function TexasHOAFeesArticle() {
       "cssSelector": [".aeo-quick-answer", "#quick-answer"]
     },
     "author": {
-      "@type": "Organization",
-      "name": "HOA Research Team"
+      "@type": "Person",
+      "name": "Sarah Mitchell",
+      "url": "https://www.hoafeecalculator.com/about"
     },
     "publisher": {
       "@type": "Organization",
@@ -43,8 +44,8 @@ export default function TexasHOAFeesArticle() {
     },
     "creator": {
       "@type": "Person",
-      "name": "HOA Research Team",
-      "jobTitle": "Real Estate Financial Analyst",
+      "name": "Sarah Mitchell",
+      "jobTitle": "Independent Housing Researcher",
       "url": "https://www.hoafeecalculator.com/about"
     }
   };
@@ -77,7 +78,7 @@ export default function TexasHOAFeesArticle() {
               className="font-serif text-2xl font-bold text-primary"
               style={{display: 'none'}}
             >
-              HOAFee<span className="text-accent">Calculator</span>.com.com
+              HOAFee<span className="text-accent">Calculator</span>.com
             </span>
           </Link>
           <nav className="hidden md:flex gap-8 items-center text-sm font-bold uppercase tracking-wider">
@@ -102,7 +103,7 @@ export default function TexasHOAFeesArticle() {
               <span>•</span>
               <span>Updated: September 10, 2026</span>
               <span>•</span>
-              <span className="text-accent normal-case">Reviewed by the HOA Research Team</span>
+              <span className="text-accent normal-case">Reviewed by Sarah Mitchell</span>
             </div>
           </div>
 
@@ -282,6 +283,9 @@ export default function TexasHOAFeesArticle() {
                 <li>
                   <strong className="text-primary font-bold">The Right to Access Public Ledgers:</strong> Associations are legally mandated to keep comprehensive financial records, active contracts, and board minutes, and make them fully available to any member who files a written request.
                 </li>
+                <li>
+                  <strong className="text-primary font-bold">Senate Bill 1588 Transparency Mandates:</strong> Under landmark Texas Senate Bill 1588 (codified across Chapters 207 and 209), property owners associations with 60 or more lots or managed by professional management companies must maintain a publicly accessible website publishing all dedicatory instruments and bylaws. Furthermore, the statute strictly caps HOA resale certificate fees at $375 and certificate updates at $75, barring management companies from charging abusive $800+ fees at closing.
+                </li>
               </ul>
 
               <h3 className="text-xl font-serif font-bold text-primary mt-8">
@@ -358,7 +362,7 @@ export default function TexasHOAFeesArticle() {
                 The Compounding Effect of MUD and PID Taxes
               </h3>
               <p>
-                To further understand carrying costs, check the property's tax records for the presence of a <strong className="text-primary font-bold">Municipal Utility District (MUD)</strong> or <strong className="text-primary font-bold">Public Improvement District (PID)</strong> assessment. 
+                To further understand carrying costs, check the property's tax records for the presence of a <strong className="text-primary font-bold">Municipal Utility District (MUD)</strong> or <strong className="text-primary font-bold">Public Improvement District (PID)</strong> assessment. Under Texas Water Code § 49.452, sellers are legally obligated to provide buyers with an executed statutory MUD Notice prior to executing a binding sales contract. If a seller fails to provide this statutory notice before closing, the buyer retains the legal right to terminate the contract prior to closing or seek damages after closing.
               </p>
               <p>
                 These special taxing districts issue municipal bonds to build the neighborhood's water, sewer, and asphalt lines. This bond debt is repaid via an additional tax surcharge on your annual property bill, sometimes adding <strong className="text-primary font-bold">$3,000 to $6,000 annually</strong> to your home's carrying liabilities. When paired with high master-planned HOA fees, these assessments can put a major squeeze on your homeownership budget.
@@ -470,6 +474,12 @@ export default function TexasHOAFeesArticle() {
                     No, the Texas Legislature has enacted strong homeowner protections under Texas Property Code Chapter 202 that void any CC&R clause attempting to prohibit these items. Under § 202.010, associations cannot forbid solar panels unless they extend above the roofline or violate basic pitch guidelines. Under § 202.023, associations cannot ban perimeter security cameras or motion floodlights. Under § 202.018, homeowners have the absolute statutory right to display religious items on their entry doors up to 25 square inches.
                   </p>
                 </div>
+                <div className="bg-bg-light p-6 rounded-2xl border border-border/70">
+                  <h3 className="font-bold text-lg text-primary mb-2">How much can a Texas HOA charge for a resale certificate and transfer fees?</h3>
+                  <p>
+                    Under Texas Property Code § 207.003(c-1) enacted through Senate Bill 1588, property owners associations and their management companies are strictly capped at charging a maximum of $375 to assemble and deliver an official resale certificate disclosure package. If an existing certificate needs to be updated during extended escrow, the statutory fee cannot exceed $75. Management companies must deliver the complete resale package within seven business days of receiving a written request, eliminating the excessive rush charges and arbitrary administrative markups previously imposed on Texas buyers and sellers.
+                  </p>
+                </div>
               </div>
             </div>
 
@@ -492,11 +502,11 @@ export default function TexasHOAFeesArticle() {
             {/* Author Bio */}
             <div className="mt-16 pt-8 border-t border-border flex items-center gap-6">
               <div className="h-16 w-16 bg-accent/10 text-accent font-bold rounded-full flex items-center justify-center text-xl font-serif">
-                HR
+                SM
               </div>
               <div>
-                <h4 className="text-primary font-bold text-lg">Written by: HOA Research Team</h4>
-                <p className="text-primary opacity-80 text-sm">Providing real-time financial tracking, state laws analysis, and consumer protection guides for American property buyers. <Link to="/about" className="text-accent font-bold hover:underline">Learn more about our research methodology and editorial standards</Link>.</p>
+                <h4 className="text-primary font-bold text-lg">Written by: Sarah Mitchell</h4>
+                <p className="text-primary opacity-80 text-sm">Written and maintained by Sarah Mitchell, an independent researcher tracking HOA and condo costs across the US. Figures are compiled from public sources listed on our <Link to="/about" className="text-accent font-bold hover:underline">methodology page</Link>.</p>
               </div>
             </div>
 
@@ -524,7 +534,7 @@ export default function TexasHOAFeesArticle() {
                 className="font-serif text-2xl font-bold text-white"
                 style={{display: 'none'}}
               >
-                HOAFee<span className="text-accent">Calculator</span>.com.com
+                HOAFee<span className="text-accent">Calculator</span>.com
               </span>
             </Link>
           </div>

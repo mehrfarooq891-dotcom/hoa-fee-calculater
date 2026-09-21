@@ -19,7 +19,7 @@ export default function CondoHOAFeesNYCArticle() {
     "dateModified": "2026-06-08T09:00:00Z",
     "author": {
       "@type": "Organization",
-      "name": "HOA Research Team",
+      "name": "Sarah Mitchell",
       "url": "https://www.hoafeecalculator.com/"
     },
     "publisher": {

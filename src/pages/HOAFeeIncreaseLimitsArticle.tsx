@@ -19,7 +19,7 @@ export default function HOAFeeIncreaseLimitsArticle() {
     "dateModified": "2026-06-24T08:00:00Z",
     "author": {
       "@type": "Organization",
-      "name": "Sarah Mitchell",
+      "name": "HOAFeeCalculator.com",
       "url": "https://www.hoafeecalculator.com/"
     },
     "publisher": {
@@ -247,7 +247,7 @@ Sincerely,
 
       {/* Author Bio Block */}
       <div className="author-bio mt-12 pt-6 border-t border-border/80 text-sm italic text-primary/75">
-        <strong>Written by Sarah Mitchell</strong> — independent researcher tracking HOA and condo costs across the US. Figures are compiled from public sources listed on our <Link to="/about" className="text-accent underline font-semibold">methodology page</Link>.
+        <strong>Prepared by HOAFeeCalculator.com</strong> — independent educational estimates compiled from public sources and AI-assisted research. Learn more on our <Link to="/about" className="text-accent underline font-semibold">methodology page</Link>.
       </div>
     </BlogArticleLayout>
   );

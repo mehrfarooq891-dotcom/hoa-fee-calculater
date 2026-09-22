@@ -18,7 +18,7 @@ export default function HOADocumentRedFlagsArticle() {
     "dateModified": "2026-06-03T10:00:00Z",
     "author": {
       "@type": "Organization",
-      "name": "Sarah Mitchell",
+      "name": "HOAFeeCalculator.com",
       "url": "https://www.hoafeecalculator.com/"
     },
     "publisher": {

@@ -30,7 +30,7 @@ export default function FloridaHOAFeesArticle() {
     },
     "author": {
       "@type": "Person",
-      "name": "Sarah Mitchell",
+      "name": "HOAFeeCalculator.com",
       "url": "https://www.hoafeecalculator.com/about"
     },
     "publisher": {
@@ -44,7 +44,7 @@ export default function FloridaHOAFeesArticle() {
     },
     "creator": {
       "@type": "Person",
-      "name": "Sarah Mitchell",
+      "name": "HOAFeeCalculator.com",
       "jobTitle": "Independent Housing Researcher",
       "url": "https://www.hoafeecalculator.com/about"
     }
@@ -103,7 +103,7 @@ export default function FloridaHOAFeesArticle() {
               <span>•</span>
               <span>Updated: September 10, 2026</span>
               <span>•</span>
-              <span className="text-accent normal-case">Reviewed by Sarah Mitchell</span>
+              <span className="text-accent normal-case">Prepared by HOAFeeCalculator.com</span>
             </div>
           </div>
 
@@ -507,8 +507,8 @@ export default function FloridaHOAFeesArticle() {
                 SM
               </div>
               <div>
-                <h4 className="text-primary font-bold text-lg">Written by: Sarah Mitchell</h4>
-                <p className="text-primary opacity-80 text-sm">Written and maintained by Sarah Mitchell, an independent researcher tracking HOA and condo costs across the US. Figures are compiled from public sources listed on our <Link to="/about" className="text-accent font-bold hover:underline">methodology page</Link>.</p>
+                <h4 className="text-primary font-bold text-lg">HOAFeeCalculator.com</h4>
+                <p className="text-primary opacity-80 text-sm">HOAFeeCalculator.com is an independent educational tool. Figures are estimates compiled from public sources and AI-assisted research. See our <Link to="/about" className="text-accent font-bold hover:underline">methodology page</Link> for details.</p>
               </div>
             </div>
 

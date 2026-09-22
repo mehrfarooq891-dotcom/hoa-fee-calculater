@@ -290,7 +290,7 @@ export default function HOALawsByStateArticle() {
         </div>
 
         <div className="author-bio border-t border-border pt-6 mt-12 text-sm text-primary/80">
-          <strong>Written by Sarah Mitchell</strong> — independent researcher tracking HOA and condo costs across the US. Figures are compiled from public sources listed on our <Link to="/about" className="text-accent underline font-semibold">methodology page</Link>.
+          <strong>Prepared by HOAFeeCalculator.com</strong> — independent educational estimates compiled from public sources and AI-assisted research. Learn more on our <Link to="/about" className="text-accent underline font-semibold">methodology page</Link>.
         </div>
       </article>
 

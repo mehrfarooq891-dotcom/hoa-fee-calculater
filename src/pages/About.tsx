@@ -9,7 +9,7 @@ export default function About() {
     "@context": "https://schema.org",
     "@type": "AboutPage",
     "name": "About HOAFeeCalculator.com — Research & Methodology",
-    "description": "Learn how Sarah Mitchell compiles and analyzes HOA fee data across all 50 US states to empower American homebuyers with complete financial transparency.",
+    "description": "About HOAFeeCalculator.com: where the data comes from and how the calculator's estimates work.",
     "publisher": {
       "@type": "Organization",
       "name": "HOAFeeCalculator.com",
@@ -21,7 +21,7 @@ export default function About() {
     <div className="min-h-screen flex flex-col bg-white">
       <SEO 
         title="About Us & Methodology | HOAFeeCalculator.com"
-        description="Learn how Sarah Mitchell compiles and analyzes HOA fee data across all 50 US states. Our research methodology, statutory tracking, and commitment to transparency."
+        description="About HOAFeeCalculator.com: where the data comes from and how the calculator's estimates work."
         canonical="/about"
         schema={[aboutSchema]}
       />
@@ -41,7 +41,7 @@ export default function About() {
               About HOAFeeCalculator.com
             </h1>
             <p className="text-xl text-primary/80 max-w-3xl mx-auto leading-relaxed">
-              Empowering American homebuyers with verified state-by-state HOA cost benchmarks, statutory legal guides, and lifetime assessment calculators.
+              Free state-by-state HOA cost estimates, plain-English legal overviews, and a lifetime cost calculator for US homebuyers.
             </p>
             <div className="h-1 w-20 bg-accent mx-auto mt-8"></div>
           </div>
@@ -49,21 +49,13 @@ export default function About() {
           {/* Section 1: Who We Are */}
           <section className="mb-20">
             <div className="bg-bg-light border border-border rounded-3xl p-8 md:p-12 shadow-sm">
-              <div className="flex flex-col md:flex-row gap-8 items-start">
-                <div className="shrink-0 h-16 w-16 bg-primary text-accent font-serif font-bold rounded-2xl flex items-center justify-center text-2xl shadow-md">
-                  SM
-                </div>
-                <div className="space-y-4 flex-1">
-                  <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary">
-                    1. About the Author & Researcher
-                  </h2>
-                  <p className="text-primary/90 text-base md:text-lg leading-relaxed">
-                    Written and maintained by <strong>Sarah Mitchell</strong>, an independent researcher tracking HOA and condo costs across the US. Figures are compiled from public sources listed on our methodology page.
-                  </p>
-                  <p className="text-primary/80 text-base leading-relaxed">
-                    Homeowners Association (HOA) dues represent one of the fastest-growing ongoing expenses for US homebuyers, yet reliable data on long-term fee increases, state legal caps, and special assessment risks remains notoriously hard to find. The mission of HOAFeeCalculator.com is to bridge this information gap by aggregating, tracking, and modeling HOA financial data across all 50 states — helping buyers accurately calculate their true lifetime cost of homeownership before signing a purchase contract.
-                  </p>
-                </div>
+              <div className="space-y-4">
+                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary">
+                  About This Site
+                </h2>
+                <p className="text-primary/90 text-base md:text-lg leading-relaxed">
+                  HOAFeeCalculator.com is an independent educational website. HOA dues are one of the fastest-growing ongoing costs for US homebuyers, yet clear information about long-term fee increases and special assessments is hard to find. This site aims to help buyers estimate their true lifetime HOA cost before signing a purchase contract.
+                </p>
               </div>
             </div>
           </section>
@@ -71,10 +63,10 @@ export default function About() {
           {/* Key Metrics / Trust Bar */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20">
             {[
-              { label: "State Coverage", value: "50 States" },
-              { label: "Data Review", value: "Periodic" },
-              { label: "Independence", value: "100% Free" },
-              { label: "Legal Tracking", value: "Statutory" }
+              { value: "50 States", label: "Coverage" },
+              { value: "100% Free", label: "No Fees" },
+              { value: "Independent", label: "Educational" },
+              { value: "No Signup", label: "Instant Access" }
             ].map((item, idx) => (
               <div key={idx} className="bg-white border border-border p-6 rounded-2xl text-center shadow-xs">
                 <div className="text-2xl md:text-3xl font-serif font-bold text-accent mb-1">{item.value}</div>
@@ -147,9 +139,9 @@ export default function About() {
                 <div className="flex gap-4 items-start">
                   <span className="text-accent font-bold text-xl">✓</span>
                   <div>
-                    <h4 className="font-serif font-bold text-lg text-primary">Legal Citation Verification</h4>
+                    <h4 className="font-serif font-bold text-lg text-primary">Sources</h4>
                     <p className="text-primary/80 text-sm leading-relaxed">
-                      Every consumer guide and state-specific article published on HOAFeeCalculator.com is cross-referenced directly against official state property statutes, statutory notice periods, and legal precedent before publication.
+                      Where we describe a law, we refer to the relevant statute so you can verify it yourself.
                     </p>
                   </div>
                 </div>
@@ -157,9 +149,9 @@ export default function About() {
                 <div className="flex gap-4 items-start">
                   <span className="text-accent font-bold text-xl">✓</span>
                   <div>
-                    <h4 className="font-serif font-bold text-lg text-primary">Regular Financial & Market Updates</h4>
+                    <h4 className="font-serif font-bold text-lg text-primary">Estimates, Not Advice</h4>
                     <p className="text-primary/80 text-sm leading-relaxed">
-                      All numerical benchmarks and state fee averages are audited on a regular cycle. When statutory changes occur (such as cap adjustments or insurance mandate shifts), relevant articles are updated with a revised modification timestamp.
+                      Calculator results and state averages are educational estimates. Confirm everything with your association's CC&Rs, financial statements and resale certificate.
                     </p>
                   </div>
                 </div>
@@ -167,9 +159,9 @@ export default function About() {
                 <div className="flex gap-4 items-start">
                   <span className="text-accent font-bold text-xl">✓</span>
                   <div>
-                    <h4 className="font-serif font-bold text-lg text-primary">Strict Editorial Independence</h4>
+                    <h4 className="font-serif font-bold text-lg text-primary">Independence</h4>
                     <p className="text-primary/80 text-sm leading-relaxed">
-                      We operate with complete objectivity. HOAFeeCalculator.com does not accept sponsored content, paid promotional placement from HOA management companies, or referral commissions from real estate brokerages.
+                      This site does not accept paid placements from HOA management companies or referral commissions from real estate brokerages. The site may display ads served by Google AdSense.
                     </p>
                   </div>
                 </div>

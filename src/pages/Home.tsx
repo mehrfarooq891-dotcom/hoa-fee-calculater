@@ -18,11 +18,11 @@ export default function Home() {
     },
     {
       q: "Are HOA fees tax deductible?",
-      a: "For your primary residence, regular monthly HOA dues and special assessments are never tax deductible on your federal or state tax returns. However, if you rent out the property as an investment, the IRS classifies mandatory association fees as an ordinary and necessary rental operating expense that can be 100% deducted against rental income. Furthermore, if you maintain a legitimate, qualified home office used regularly and exclusively for business, you may deduct the proportional square-footage percentage of your monthly dues under standard IRS home office rules."
+      a: "For your primary residence, regular monthly HOA dues and special assessments are generally not tax deductible on your federal or state tax returns. However, if you rent out the property as an investment, the IRS classifies mandatory association fees as an ordinary and necessary rental operating expense that can be 100% deducted against rental income. Furthermore, if you maintain a legitimate, qualified home office used regularly and exclusively for business, you may deduct the proportional square-footage percentage of your monthly dues under standard IRS home office rules."
     },
     {
       q: "What happens if I don't pay my HOA fees?",
-      a: "Defaulting on HOA dues sets off a statutory collection timeline that begins with late charges (often $25 to $50 or 10% of the delinquent sum) and escalating interest penalties. If an account remains unpaid for 60 to 90 days, the association's legal counsel will issue a formal intent to lien and can record an assessment lien against your real estate title, which clouds the title and prevents you from selling or refinancing. In over 20 states, HOAs hold 'super-priority lien' rights that allow them to foreclose on a home even ahead of the primary mortgage holder if statutory delinquency thresholds are crossed."
+      a: "Defaulting on HOA dues sets off a statutory collection timeline that begins with late charges (often $25 to $50 or 10% of the delinquent sum) and escalating interest penalties. If an account remains unpaid for 60 to 90 days, the association's legal counsel will issue a formal intent to lien and can record an assessment lien against your real estate title, which clouds the title and prevents you from selling or refinancing. In some states, an HOA lien may have limited priority over a first mortgage. Check your state's law."
     },
     {
       q: "Can HOA fees increase every year?",
@@ -34,7 +34,7 @@ export default function Home() {
     },
     {
       q: "Are HOA fees included in a mortgage payment?",
-      a: "No, monthly HOA dues are not paid to your mortgage servicer and are not collected inside your lender's property tax and insurance escrow account. Instead, homeowners make separate monthly, quarterly, or annual payments directly to the community management company or association lockbox. However, during the mortgage underwriting process, lenders strictly factor your mandatory monthly HOA dues into your Debt-to-Income (DTI) ratio; a $400 monthly HOA fee reduces your borrowing capacity by roughly $60,000 to $75,000 in purchasing power at current mortgage interest rates."
+      a: "No, monthly HOA dues are not paid to your mortgage servicer and are not collected inside your lender's property tax and insurance escrow account. Instead, homeowners make separate monthly, quarterly, or annual payments directly to the community management company or association lockbox. However, during the mortgage underwriting process, lenders strictly factor your mandatory monthly HOA dues into your Debt-to-Income (DTI) ratio; a higher monthly HOA fee reduces the loan amount you may qualify for; ask your lender to run the numbers."
     },
     {
       q: "How do I find out how much a property's HOA fees are?",
@@ -161,7 +161,7 @@ export default function Home() {
                 </p>
                 
                 <div className="text-xs text-primary/60 mb-8 border-l-2 border-accent pl-3">
-                  Data compiled and reviewed by <span className="font-semibold">Sarah Mitchell</span> | Last updated: September 10, 2026
+                  Prepared by HOAFeeCalculator.com | Last updated: September 22, 2026
                 </div>
               
               <div className="grid grid-cols-2 gap-4">
@@ -206,6 +206,8 @@ export default function Home() {
                       <div className="stat-value text-xl font-bold text-accent font-serif">3% – 5%</div>
                     </div>
                   </div>
+
+                  <p className="text-[11px] text-primary/60 text-center mt-3">Figures are approximate industry estimates.</p>
                 </div>
               </div>
             </div>
@@ -386,7 +388,7 @@ export default function Home() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4 text-sm text-primary/80">
                 <div className="border-l-2 border-accent pl-4">
                   <strong className="block text-primary font-bold mb-1">10% Operating Budget Reserve Rule:</strong>
-                  Fannie Mae and Freddie Mac guidelines (Form 1076 / Form 476) require at least 10% of the association's annual operating budget to be allocated directly to capital replacement reserves.
+                  Fannie Mae and Freddie Mac guidelines require at least 10% of the association's annual operating budget to be allocated directly to capital replacement reserves.
                 </div>
                 <div className="border-l-2 border-accent pl-4">
                   <strong className="block text-primary font-bold mb-1">15% Delinquency Ceiling:</strong>
@@ -397,33 +399,24 @@ export default function Home() {
                   In buildings where one corporate investor or developer retains more than 10% to 20% of the total units, lenders frequently refuse to underwrite standard conventional conforming loans.
                 </div>
               </div>
+              <p className="text-xs text-primary/70 mt-6 pt-4 border-t border-border/50">
+                Requirements vary by lender and loan program. Confirm current Fannie Mae and Freddie Mac project standards with your lender.
+              </p>
             </div>
           </div>
         </section>
 
-        {/* EXPERT SECTION */}
-        <section className="py-24 px-6 max-w-5xl mx-auto">
-          <div className="card bg-primary p-12 relative overflow-hidden flex flex-col md:flex-row items-center gap-12 border-none shadow-2xl">
+        {/* PULL QUOTE & ABOUT SECTION */}
+        <section className="py-20 px-6 max-w-5xl mx-auto">
+          <div className="card bg-primary p-10 md:p-12 relative overflow-hidden border-none shadow-2xl">
             <div className="absolute bottom-0 right-0 w-64 h-64 bg-accent opacity-5 rounded-full -mr-32 -mb-32"></div>
-            <div className="shrink-0 relative z-10">
-               <div className="w-32 h-32 md:w-40 md:h-40 rounded-3xl bg-white/10 border-4 border-accent flex items-center justify-center shadow-lg text-accent font-serif font-bold text-4xl md:text-5xl">
-                 SM
-               </div>
-               <div className="absolute -bottom-3 -left-2 bg-accent text-white font-bold py-1.5 px-3.5 rounded-xl text-xs uppercase tracking-widest shadow-lg">
-                 Researcher
-               </div>
-            </div>
-            <div className="relative z-10">
-              <p className="text-2xl text-white font-serif italic mb-6 leading-relaxed">
+            <div className="relative z-10 max-w-3xl">
+              <p className="text-2xl md:text-3xl text-white font-serif italic mb-6 leading-relaxed">
                 "Most homebuyers focus on the mortgage. The HOA fee is the silent budget-killer nobody warns you about."
               </p>
-              <div className="mb-6 text-white/80 leading-relaxed text-sm max-w-xl">
-                Written and maintained by Sarah Mitchell, an independent researcher tracking HOA and condo costs across the US. Figures are compiled from public sources listed on our <Link to="/about" className="text-accent underline font-semibold hover:text-white">methodology page</Link>.
-              </div>
-              <div>
-                <h4 className="text-white font-bold text-xl">Sarah Mitchell</h4>
-                <p className="text-accent uppercase tracking-widest text-xs font-bold">Independent Housing Researcher</p>
-              </div>
+              <p className="text-white/80 leading-relaxed text-sm md:text-base">
+                HOAFeeCalculator.com is an independent, free educational tool. Figures are estimates compiled from public sources and AI-assisted research. See our <Link to="/about" className="text-accent underline font-semibold hover:text-white">methodology page</Link> for details.
+              </p>
             </div>
           </div>
         </section>
@@ -620,7 +613,7 @@ export default function Home() {
                  HOAFee<span className="text-accent">Calculator</span>.com
                </span>
              </Link>
-             <p className="max-w-sm text-sm opacity-80 leading-relaxed">A detailed HOA fee calculation tool for US homebuyers. Trusted by homeowners in all 50 states.</p>
+             <p className="max-w-sm text-sm opacity-80 leading-relaxed">A free HOA cost calculator for US homebuyers.</p>
           </div>
           <div>
             <h4 className="text-white font-bold mb-6 uppercase text-xs tracking-widest">Tools</h4>
@@ -647,7 +640,7 @@ export default function Home() {
           </div>
         </div>
         <div className="max-w-7xl mx-auto pt-12 mt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] uppercase tracking-widest font-bold">
-           <span>&copy; 2026 HOAFeeCalculator.com. US Real Estate Data Partners.</span>
+           <span>&copy; 2026 HOAFeeCalculator.com.</span>
            <div className="flex gap-8">
               <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy</Link>
               <Link to="/terms-of-service" className="hover:text-white transition-colors">Terms</Link>

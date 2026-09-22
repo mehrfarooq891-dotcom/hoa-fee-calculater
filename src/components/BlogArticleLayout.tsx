@@ -123,8 +123,8 @@ export default function BlogArticleLayout({
       "cssSelector": Array.isArray(speakableSelector) ? speakableSelector : [speakableSelector]
     },
     "author": {
-      "@type": "Person",
-      "name": "Sarah Mitchell",
+      "@type": "Organization",
+      "name": "HOAFeeCalculator.com",
       "url": "https://www.hoafeecalculator.com/about"
     },
     "publisher": {
@@ -173,7 +173,7 @@ export default function BlogArticleLayout({
               <span>•</span>
               <span>{lastUpdatedDate ? `Updated: ${lastUpdatedDate}` : date}</span>
               <span>•</span>
-              <span className="text-accent normal-case">Reviewed by Sarah Mitchell</span>
+              <span className="text-accent normal-case">Prepared by HOAFeeCalculator.com</span>
             </div>
           </div>
 
@@ -227,15 +227,12 @@ export default function BlogArticleLayout({
               </div>
             )}
 
-            {/* Author Bio */}
+            {/* Author / Source Box */}
             <div className="mt-16 pt-8 border-t border-border flex items-center gap-6">
-              <div className="h-16 w-16 bg-accent/10 text-accent font-bold rounded-full flex items-center justify-center text-xl font-serif">
-                SM
-              </div>
               <div>
-                <h4 className="text-primary font-bold text-lg">Written by: Sarah Mitchell</h4>
+                <h4 className="text-primary font-bold text-base">HOAFeeCalculator.com</h4>
                 <p className="text-primary opacity-80 text-sm">
-                  Written and maintained by Sarah Mitchell, an independent researcher tracking HOA and condo costs across the US. Figures are compiled from public sources listed on our <Link to="/about" className="text-accent font-bold hover:underline">methodology page</Link>.
+                  HOAFeeCalculator.com is an independent educational website. Figures are estimates compiled from public sources and AI-assisted research. See our <Link to="/about" className="text-accent font-bold hover:underline">methodology page</Link> for details.
                 </p>
               </div>
             </div>

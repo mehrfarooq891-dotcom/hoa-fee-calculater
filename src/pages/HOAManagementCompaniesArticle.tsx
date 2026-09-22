@@ -19,7 +19,7 @@ export default function HOAManagementCompaniesArticle() {
     "dateModified": "2026-06-11T12:00:00Z",
     "author": {
       "@type": "Organization",
-      "name": "Sarah Mitchell",
+      "name": "HOAFeeCalculator.com",
       "url": "https://www.hoafeecalculator.com/"
     },
     "publisher": {

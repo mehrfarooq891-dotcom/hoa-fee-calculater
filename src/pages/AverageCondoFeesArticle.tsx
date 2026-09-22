@@ -61,7 +61,7 @@ export default function AverageCondoFeesArticle() {
     "dateModified": "2026-08-27T00:00:00Z",
     "author": {
       "@type": "Organization",
-      "name": "Sarah Mitchell",
+      "name": "HOAFeeCalculator.com",
       "url": "https://www.hoafeecalculator.com/about"
     },
     "publisher": {
@@ -112,7 +112,7 @@ export default function AverageCondoFeesArticle() {
 
       {/* Author Header */}
       <div className="bg-bg-light border border-border p-4 rounded-xl mb-8 text-xs md:text-sm text-secondary">
-        <strong>Written by Sarah Mitchell</strong> — independent researcher tracking HOA and condo costs across the US. Figures are compiled from public sources listed on our <Link to="/about" className="text-accent underline font-semibold">methodology page</Link>.
+        <strong>Prepared by HOAFeeCalculator.com</strong> — independent educational estimates compiled from public sources and AI-assisted research. Learn more on our <Link to="/about" className="text-accent underline font-semibold">methodology page</Link>.
       </div>
 
       <QuickAnswerBox
@@ -415,7 +415,7 @@ export default function AverageCondoFeesArticle() {
 
       {/* Author Bio */}
       <div className="bg-bg-light border border-border p-6 rounded-2xl my-8 text-sm text-secondary">
-        <strong>Written by Sarah Mitchell</strong> — independent researcher tracking HOA and condo costs across the US. Figures are compiled from public sources listed on our <Link to="/about" className="text-accent underline font-semibold">methodology page</Link>. Learn more on our <Link to="/about" className="text-accent hover:underline">About Us</Link> page.
+        <strong>Prepared by HOAFeeCalculator.com</strong> — independent educational estimates compiled from public sources and AI-assisted research. Learn more on our <Link to="/about" className="text-accent underline font-semibold">methodology page</Link>.
       </div>
     </BlogArticleLayout>
   );

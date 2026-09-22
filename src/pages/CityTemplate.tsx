@@ -365,7 +365,7 @@ export default function CityTemplate() {
                  HOAFee<span className="text-accent">Calculator</span>.com
                </span>
              </Link>
-             <p className="max-w-sm text-sm opacity-80 leading-relaxed">A detailed HOA fee calculation tool for US homebuyers. Trusted by homeowners in all 50 states.</p>
+             <p className="max-w-sm text-sm opacity-80 leading-relaxed">A free HOA cost calculator for US homebuyers.</p>
           </div>
           <div>
             <h4 className="text-white font-bold mb-6 uppercase text-xs tracking-widest">Tools</h4>
@@ -392,7 +392,7 @@ export default function CityTemplate() {
           </div>
         </div>
         <div className="max-w-7xl mx-auto pt-12 mt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] uppercase tracking-widest font-bold">
-           <span>&copy; 2026 HOAFeeCalculator.com. US Real Estate Data Partners. All Rights Reserved.</span>
+           <span>&copy; 2026 HOAFeeCalculator.com. All Rights Reserved.</span>
            <div className="flex gap-8">
               <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy</Link>
               <Link to="/terms-of-service" className="hover:text-white transition-colors">Terms</Link>

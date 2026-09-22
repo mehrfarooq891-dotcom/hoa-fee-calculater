@@ -83,8 +83,8 @@ export function PrivacyPolicy() {
             <h2 className="text-2xl font-serif font-bold text-primary pt-4">1. Data Collection</h2>
             <p>We do not sell your personal data. We collect minimal information required to provide our services, including:</p>
             <ul className="list-disc pl-6 space-y-2">
-              <li>Usage data and metrics via Google Analytics (cookies) for optimization</li>
-              <li>Zip code and email details if provided voluntarily via our lead capture or consultation forms</li>
+              <li>Usage data and metrics via Google Analytics (cookies) for site optimization</li>
+              <li>Information you provide voluntarily if you contact us by email</li>
               <li>Interactive calculator inputs (processed and stored locally inside your browser session only)</li>
             </ul>
 
@@ -95,7 +95,7 @@ export function PrivacyPolicy() {
             <p>We leverage web cookies to evaluate site traffic and streamline your computational experience. You have entire authority to terminate or clear cookies in your standard web browser settings at any point.</p>
 
             <h2 className="text-2xl font-serif font-bold text-primary pt-4">4. Reach Support</h2>
-            <p>If you have any questions, security concerns, or delete requests regarding our privacy policy, contact our compliance team directly at <a href="mailto:privacy@hoafeecalculator.com" className="text-accent underline hover:text-accent/80">privacy@hoafeecalculator.com</a>.</p>
+            <p>If you have any questions, security concerns, or delete requests regarding our privacy policy, contact us directly at <a href="mailto:sarahmitchelltx18@gmail.com" className="text-accent underline hover:text-accent/80">sarahmitchelltx18@gmail.com</a>.</p>
           </div>
         </div>
       </main>
@@ -166,7 +166,7 @@ export function TermsOfService() {
             <p>By executing searches, using our mathematical calculators, or viewing content on HOAFeeCalculator.com, you declare your total agreement with these terms. If you do not accept these conditions, you are prohibited from utilizing this platform.</p>
 
             <h2 className="text-2xl font-serif font-bold text-primary pt-4">2. Intellectual Property</h2>
-            <p>All algorithms, calculator designs, database compilations, and authored articles on HOAFeeCalculator.com are property of our research team and partners. Unauthorized scraping, replication, or distribution without explicit credit is strictly forbidden.</p>
+            <p>All algorithms, calculator designs, database compilations, and authored articles on HOAFeeCalculator.com are property of HOAFeeCalculator.com. Unauthorized scraping, replication, or distribution without explicit credit is strictly forbidden.</p>
 
             <h2 className="text-2xl font-serif font-bold text-primary pt-4">3. Limitation of Liability</h2>
             <p>Our calculators provide estimations and mathematical analyses only. HOAFeeCalculator.com and its creators shall not be liable for any direct, indirect, or consequential damages resulting from residential real estate choices or home purchases.</p>

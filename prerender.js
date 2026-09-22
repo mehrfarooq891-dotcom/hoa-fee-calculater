@@ -23,15 +23,15 @@ const routes = [
   },
   {
     path: '/about',
-    title: 'About Us - HOA Fee Research & Financial Analysis | HOAFeeCalculator.com',
-    description: 'Learn about the HOA Research Team, our data sources, methodology, and consumer advocacy for American homeowners.',
+    title: 'About Us - HOA Fee Research & Methodology | HOAFeeCalculator.com',
+    description: "About HOAFeeCalculator.com: where the data comes from and how the calculator's estimates work.",
     h1: 'About HOAFeeCalculator.com'
   },
   {
     path: '/contact',
-    title: 'Contact HOA Calculator - Editorial & Data Inquiries | HOAFeeCalculator.com',
-    description: 'Get in touch with our research team for data inquiries, editorial corrections, or media requests.',
-    h1: 'Contact Our Research Team'
+    title: 'Contact Us | HOAFeeCalculator.com',
+    description: 'Contact HOAFeeCalculator.com with questions, corrections or partnership inquiries.',
+    h1: 'Contact Us'
   },
   {
     path: '/compare',
@@ -53,9 +53,9 @@ const routes = [
   },
   {
     path: '/blog',
-    title: 'HOA Fee Insights & Research Blog | HOAFeeCalculator.com',
-    description: 'Expert analysis on HOA fees, special assessments, state laws, budget red flags, and homeowner legal protections.',
-    h1: 'HOA Research & Insights Blog'
+    title: 'HOA Fee Articles & Guides | HOAFeeCalculator.com',
+    description: 'Articles and guides on HOA fees, special assessments, state laws, budget red flags, and homeowner legal protections.',
+    h1: 'HOA Articles & Guides'
   },
   {
     path: '/privacy-policy',

@@ -7,7 +7,7 @@ export default function NewConstructionHOAFeesArticle() {
     { label: "Crucial Questions to Ask Before Buying a Home inside an HOA", to: "/blog/questions-before-buying-hoa" },
     { label: "HOA Fees and Mortgage Approval: How Underwriters Calculate DTI", to: "/blog/hoa-fees-mortgage-approval" },
     { label: "Understanding HOA Special Assessments: How to Preempt Surprise Bills", to: "/blog/hoa-special-assessment" },
-    { label: "How to Read your HOA Financial Statements Like an Expert Analyst", to: "/blog/read-hoa-financial-statements" },
+    { label: "How to Read HOA Financial Statements: A Homeowner's Guide", to: "/blog/read-hoa-financial-statements" },
     { label: "Back to Blog Insights", to: "/blog" }
   ];
 
@@ -20,7 +20,7 @@ export default function NewConstructionHOAFeesArticle() {
     "dateModified": "2026-06-07T12:00:00Z",
     "author": {
       "@type": "Organization",
-      "name": "Sarah Mitchell",
+      "name": "HOAFeeCalculator.com",
       "url": "https://www.hoafeecalculator.com/"
     },
     "publisher": {

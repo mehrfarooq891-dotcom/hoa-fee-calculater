@@ -33,7 +33,7 @@ export default function FightHOAFeeIncreaseArticle() {
             "image": "https://www.hoafeecalculator.com/hoa_calculator_logo.svg",
             "author": {
               "@type": "Organization",
-              "name": "HOAFeeCalculator.com Editorial Board"
+              "name": "HOAFeeCalculator.com"
             },
             "publisher": {
               "@type": "Organization",

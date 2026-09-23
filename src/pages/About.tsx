@@ -20,7 +20,7 @@ export default function About() {
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <SEO 
-        title="About Us & Methodology | HOAFeeCalculator.com"
+        title="About HOAFeeCalculator.com — Methodology & Research"
         description="About HOAFeeCalculator.com: where the data comes from and how the calculator's estimates work."
         canonical="/about"
         schema={[aboutSchema]}
@@ -35,7 +35,7 @@ export default function About() {
           {/* Hero / Header */}
           <div className="text-center mb-16">
             <span className="text-accent text-xs uppercase tracking-widest font-bold px-3 py-1 bg-accent/10 rounded-full inline-block mb-4">
-              How We Research
+              Research &amp; Methodology
             </span>
             <h1 className="text-4xl md:text-6xl font-serif font-bold text-primary mb-6">
               About HOAFeeCalculator.com
@@ -46,7 +46,7 @@ export default function About() {
             <div className="h-1 w-20 bg-accent mx-auto mt-8"></div>
           </div>
 
-          {/* Section 1: Who We Are */}
+          {/* Section 1: About This Site */}
           <section className="mb-20">
             <div className="bg-bg-light border border-border rounded-3xl p-8 md:p-12 shadow-sm">
               <div className="space-y-4">
@@ -54,7 +54,7 @@ export default function About() {
                   About This Site
                 </h2>
                 <p className="text-primary/90 text-base md:text-lg leading-relaxed">
-                  HOAFeeCalculator.com is an independent educational website. HOA dues are one of the fastest-growing ongoing costs for US homebuyers, yet clear information about long-term fee increases and special assessments is hard to find. This site aims to help buyers estimate their true lifetime HOA cost before signing a purchase contract.
+                  HOAFeeCalculator.com is an independent educational website. HOA dues are one of the fastest-growing ongoing costs for US homebuyers, yet clear information about long-term fee increases and special assessments is hard to find. This site was created to help buyers estimate their true lifetime HOA cost before signing a purchase contract.
                 </p>
               </div>
             </div>
@@ -75,17 +75,17 @@ export default function About() {
             ))}
           </div>
 
-          {/* Section 2: Our Methodology */}
+          {/* Section 2: Data Sourcing & Methodology */}
           <section className="mb-20 space-y-8">
             <div className="border-b border-border pb-4">
-              <span className="text-xs font-bold uppercase tracking-widest text-accent">Data Sourcing & Integrity</span>
+              <span className="text-xs font-bold uppercase tracking-widest text-accent">Data Sourcing &amp; Integrity</span>
               <h2 className="text-3xl font-serif font-bold text-primary mt-1">
-                2. How We Research & Source HOA Data
+                2. How HOA Data Is Researched &amp; Sourced
               </h2>
             </div>
             
             <p className="text-primary/90 text-lg leading-relaxed">
-              Finding standardized, reliable information on Homeowners Association fees is challenging because HOA dues are set independently by hundreds of thousands of individual association boards across the country without a centralized reporting database. To provide realistic fee benchmarks, statutory overviews, and budgeting tools, we compile and synthesize information using the following transparent process:
+              Finding standardized, reliable information on Homeowners Association fees is challenging because HOA dues are set independently by hundreds of thousands of individual association boards across the country without a centralized reporting database. To provide realistic fee benchmarks, statutory overviews, and budgeting tools, the site compiles and synthesizes information using the following transparent process:
             </p>
 
             <div className="grid md:grid-cols-3 gap-6">
@@ -93,9 +93,9 @@ export default function About() {
                 <div className="h-10 w-10 bg-accent/10 rounded-xl flex items-center justify-center text-accent font-bold text-lg">
                   ⚖️
                 </div>
-                <h3 className="text-xl font-serif font-bold text-primary">1. Public State Legislative Statutes & Codes</h3>
+                <h3 className="text-xl font-serif font-bold text-primary">1. Public State Legislative Statutes &amp; Codes</h3>
                 <p className="text-sm text-primary/80 leading-relaxed">
-                  We review the actual, freely accessible text of state property codes and condominium acts across all 50 states—such as Texas Property Code Chapters 202 and 209, California's Davis-Stirling Act, Florida Chapter 720, and Florida SB 4-D structural reserve legislation. This ensures our explanations of annual increase limits, reserve study mandates, notice timelines, and foreclosure procedures are grounded in current statutory law.
+                  The site reviews the actual, freely accessible text of state property codes and condominium acts across all 50 states—such as Texas Property Code Chapters 202 and 209, California's Davis-Stirling Act, Florida Chapter 720, and Florida SB 4-D structural reserve legislation. This ensures explanations of annual increase limits, reserve study mandates, notice timelines, and foreclosure procedures are grounded in current statutory law.
                 </p>
               </div>
 
@@ -103,7 +103,7 @@ export default function About() {
                 <div className="h-10 w-10 bg-accent/10 rounded-xl flex items-center justify-center text-accent font-bold text-lg">
                   📈
                 </div>
-                <h3 className="text-xl font-serif font-bold text-primary">2. Public Market Knowledge & Cost Estimates</h3>
+                <h3 className="text-xl font-serif font-bold text-primary">2. Public Market Knowledge &amp; Cost Estimates</h3>
                 <p className="text-sm text-primary/80 leading-relaxed">
                   Baseline fee estimates and typical cost ranges are developed using AI-assisted research that draws on general, publicly available market knowledge and commonly reported housing cost data, rather than direct access to any single proprietary or licensed database. These estimates are refined through ongoing editorial review to keep them reasonable and broadly representative, but they are approximate ranges for budgeting and comparison purposes—not a substitute for a property's actual current HOA disclosure documents.
                 </p>
@@ -113,9 +113,9 @@ export default function About() {
                 <div className="h-10 w-10 bg-accent/10 rounded-xl flex items-center justify-center text-accent font-bold text-lg">
                   🔄
                 </div>
-                <h3 className="text-xl font-serif font-bold text-primary">3. AI-Assisted Synthesis & Regular Editorial Reviews</h3>
+                <h3 className="text-xl font-serif font-bold text-primary">3. AI-Assisted Synthesis &amp; Regular Editorial Reviews</h3>
                 <p className="text-sm text-primary/80 leading-relaxed">
-                  We utilize AI-assisted research and writing tools to help organize, summarize, and synthesize these public legal and market insights into clear, accessible consumer guides. Because inflation, insurance premiums, and utility rates impact association budgets over time, our figures and statutory summaries are periodically reviewed and updated to reflect current conditions.
+                  AI-assisted research and writing tools help organize, summarize, and synthesize these public legal and market insights into clear, accessible consumer guides. Because inflation, insurance premiums, and utility rates impact association budgets over time, published figures and statutory summaries are periodically reviewed and updated to reflect current conditions.
                 </p>
               </div>
             </div>
@@ -130,7 +130,7 @@ export default function About() {
             <div className="border-b border-border pb-4">
               <span className="text-xs font-bold uppercase tracking-widest text-accent">Editorial Policy</span>
               <h2 className="text-3xl font-serif font-bold text-primary mt-1">
-                3. Editorial Standards & Review Process
+                3. Editorial Standards &amp; Review Process
               </h2>
             </div>
 
@@ -141,7 +141,7 @@ export default function About() {
                   <div>
                     <h4 className="font-serif font-bold text-lg text-primary">Sources</h4>
                     <p className="text-primary/80 text-sm leading-relaxed">
-                      Where we describe a law, we refer to the relevant statute so you can verify it yourself.
+                      Where the site describes a law, it cites the relevant statute so readers can verify it directly.
                     </p>
                   </div>
                 </div>
@@ -151,7 +151,7 @@ export default function About() {
                   <div>
                     <h4 className="font-serif font-bold text-lg text-primary">Estimates, Not Advice</h4>
                     <p className="text-primary/80 text-sm leading-relaxed">
-                      Calculator results and state averages are educational estimates. Confirm everything with your association's CC&Rs, financial statements and resale certificate.
+                      Calculator results and state averages are educational estimates. Confirm everything with the association's CC&amp;Rs, financial statements, and resale certificate.
                     </p>
                   </div>
                 </div>
@@ -174,19 +174,19 @@ export default function About() {
             <div className="border-b border-border pb-4 mb-6">
               <span className="text-xs font-bold uppercase tracking-widest text-accent">Community Feedback</span>
               <h2 className="text-3xl font-serif font-bold text-primary mt-1">
-                4. Corrections & Community Feedback
+                4. Corrections &amp; Community Feedback
               </h2>
             </div>
 
             <p className="text-primary/90 text-base md:text-lg leading-relaxed mb-6">
-              We welcome corrections from property buyers, board members, and legal professionals. Submissions are reviewed and addressed as promptly as possible.
+              HOAFeeCalculator.com welcomes corrections from property buyers, board members, and legal professionals. Submissions are reviewed and addressed as promptly as possible.
             </p>
 
             <div className="bg-white border border-border p-6 rounded-2xl flex flex-col sm:flex-row justify-between items-center gap-6 shadow-xs">
               <div>
                 <h4 className="font-serif font-bold text-primary text-lg mb-1">Spot an Outdated Regulation or Fee Figure?</h4>
                 <p className="text-primary/80 text-sm">
-                  Let us know and we will review and address the submission as promptly as possible.
+                  Feedback can be submitted to report any discrepancies, which are reviewed and addressed promptly.
                 </p>
               </div>
               <Link 

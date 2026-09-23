@@ -34,7 +34,7 @@ export default function HOAForeclosureArticle() {
             "image": "https://www.hoafeecalculator.com/hoa_calculator_logo.svg",
             "author": {
               "@type": "Organization",
-              "name": "HOAFeeCalculator.com Legal Editorial Team"
+              "name": "HOAFeeCalculator.com"
             },
             "publisher": {
               "@type": "Organization",

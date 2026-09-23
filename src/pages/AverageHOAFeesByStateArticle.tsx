@@ -20,9 +20,9 @@ export default function AverageHOAFeesByStateArticle() {
       "cssSelector": [".aeo-quick-answer", "#quick-answer"]
     },
     "author": {
-      "@type": "Person",
+      "@type": "Organization",
       "name": "HOAFeeCalculator.com",
-      "url": "https://www.hoafeecalculator.com/about"
+      "url": "https://www.hoafeecalculator.com"
     },
     "publisher": {
       "@type": "Organization",
@@ -583,14 +583,11 @@ export default function AverageHOAFeesByStateArticle() {
               </a>
             </div>
 
-            {/* Author Bio */}
+            {/* Author / Source Box */}
             <div className="mt-16 pt-8 border-t border-border flex items-center gap-6">
-              <div className="h-16 w-16 bg-accent/10 text-accent font-bold rounded-full flex items-center justify-center text-xl font-serif">
-                SM
-              </div>
               <div>
-                <h4 className="text-primary font-bold text-lg">HOAFeeCalculator.com</h4>
-                <p className="text-primary opacity-80 text-sm">HOAFeeCalculator.com is an independent educational tool. Figures are estimates compiled from public sources and AI-assisted research. See our <Link to="/about" className="text-accent font-bold hover:underline">methodology page</Link> for details.</p>
+                <h4 className="text-primary font-bold text-base">HOAFeeCalculator.com</h4>
+                <p className="text-primary opacity-80 text-sm">HOAFeeCalculator.com is an independent educational website. Figures are estimates compiled from public sources and AI-assisted research. See our <Link to="/about" className="text-accent font-bold hover:underline">methodology page</Link> for details.</p>
               </div>
             </div>
 
@@ -622,7 +619,7 @@ export default function AverageHOAFeesByStateArticle() {
               </span>
             </Link>
           </div>
-          <p className="text-sm">© 2026 HOAFeeCalculator.com — Expert Analysis for All 50 States.</p>
+          <p className="text-sm">© 2026 HOAFeeCalculator.com — Free HOA Cost Data for All 50 States.</p>
         </div>
       </footer>
     </div>

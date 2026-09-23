@@ -268,7 +268,7 @@ export default function BlogArticleLayout({
           <div className="flex justify-center mb-4">
             <SocialIcons />
           </div>
-          <p className="text-sm">© 2026 HOAFeeCalculator.com — Expert Analysis for All 50 States.</p>
+          <p className="text-sm">© 2026 HOAFeeCalculator.com — Free HOA Cost Data for All 50 States.</p>
         </div>
       </footer>
     </div>

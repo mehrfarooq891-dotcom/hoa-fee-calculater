@@ -297,7 +297,7 @@ export default function HOAVsNoHOAArticle() {
       {/* Author Bio */}
       <div className="mt-12 pt-6 border-t border-border flex items-center gap-4 text-sm text-primary/80">
         <div>
-          <span className="font-bold text-primary">Written by Sarah Mitchell</span> — independent researcher tracking HOA and condo costs across the US. Figures are compiled from public sources listed on our <Link to="/about" className="text-accent underline font-semibold">methodology page</Link>.
+          <strong>Prepared by HOAFeeCalculator.com</strong> — independent educational estimates compiled from public sources and AI-assisted research. Learn more on our <Link to="/about" className="text-accent underline font-semibold">methodology page</Link>.
         </div>
       </div>
     </BlogArticleLayout>

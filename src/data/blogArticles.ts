@@ -246,7 +246,7 @@ export const ALL_ARTICLES: ArticleData[] = [
     slug: "/blog/hoa-special-assessment"
   },
   {
-    title: "How to Read HOA Financial Statements Like an Expert Analyst",
+    title: "How to Read HOA Financial Statements: A Homeowner's Guide",
     excerpt: "Stop skipping the financial package. Learn how to quickly analyze balance sheets, operating budgets, reserve balances, and aged delinquencies.",
     date: "May 23, 2026",
     category: "Financial Planning",

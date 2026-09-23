@@ -4,7 +4,7 @@ import BlogArticleLayout from '@/src/components/BlogArticleLayout';
 
 export default function HOAReserveFundArticle() {
   const relatedLinks = [
-    { label: "How to Read HOA Financial Statements Like an Expert Analyst", to: "/blog/read-hoa-financial-statements" },
+    { label: "How to Read HOA Financial Statements: A Homeowner's Guide", to: "/blog/read-hoa-financial-statements" },
     { label: "Warning Signs: HOA Document Red Flags to Check During Escrow", to: "/blog/hoa-document-red-flags" },
     { label: "Understanding HOA Special Assessments: How to Avoid Surprise Bills", to: "/blog/hoa-special-assessment" }
   ];

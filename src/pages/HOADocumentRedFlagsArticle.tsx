@@ -4,7 +4,7 @@ import BlogArticleLayout from '@/src/components/BlogArticleLayout';
 
 export default function HOADocumentRedFlagsArticle() {
   const relatedLinks = [
-    { label: "How to Read HOA Financial Statements Like an Expert Analyst", to: "/blog/read-hoa-financial-statements" },
+    { label: "How to Read HOA Financial Statements: A Homeowner's Guide", to: "/blog/read-hoa-financial-statements" },
     { label: "Crucial Questions to Ask Before Buying a Home in an HOA", to: "/blog/questions-before-buying-hoa" },
     { label: "Back to Blog Insights", to: "/blog" }
   ];

@@ -462,7 +462,7 @@ export default function Home() {
                 Educational Guides &amp; Helpful Resources
               </h2>
               <p className="text-primary/70 text-base md:text-lg max-w-2xl mx-auto font-sans leading-relaxed">
-                Explore comprehensive articles, state-by-state cost comparisons, and expert guides to help you navigate HOA fees.
+                Explore comprehensive articles, state-by-state cost comparisons, and in-depth guides to help you navigate HOA fees.
               </p>
             </div>
 

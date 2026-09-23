@@ -11,7 +11,7 @@ export default function Contact() {
   return (
     <div className="min-h-screen flex flex-col bg-bg-light">
       <SEO 
-        title="Contact Us | HOAFeeCalculator.com"
+        title="Contact | HOAFeeCalculator.com"
         description="Contact HOAFeeCalculator.com with questions, corrections or partnership inquiries."
         canonical="/contact"
       />
@@ -21,8 +21,8 @@ export default function Contact() {
       <main className="flex-1 pt-32 pb-20 px-6">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-4">Contact Us</h1>
-            <p className="text-lg text-primary opacity-70">Have a question about HOA fees or our estimates? We're here to help.</p>
+            <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-4">Contact</h1>
+            <p className="text-lg text-primary opacity-70">Have questions about HOA fee estimates, state data, or site methodology?</p>
           </div>
 
           <div className="card bg-white p-8 md:p-12 border border-border rounded-3xl shadow-sm text-center">
@@ -31,18 +31,18 @@ export default function Contact() {
             </div>
             
             <h2 className="text-2xl font-serif font-bold text-primary mb-3">
-              Questions, corrections or partnership inquiries?
+              Questions, corrections, or inquiries?
             </h2>
             
             <p className="text-primary/80 text-base md:text-lg mb-6 leading-relaxed">
-              Email{' '}
+              Users can contact the site directly by emailing{' '}
               <a 
                 href={`mailto:${email}`} 
                 className="text-accent font-bold underline hover:text-accent/80 transition-colors"
               >
                 {email}
               </a>
-              . We reply within a few business days.
+              . Inquiries are generally reviewed within a few business days.
             </p>
           </div>
         </div>

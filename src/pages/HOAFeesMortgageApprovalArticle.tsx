@@ -4,7 +4,7 @@ import BlogArticleLayout from '@/src/components/BlogArticleLayout';
 
 export default function HOAFeesMortgageApprovalArticle() {
   const relatedLinks = [
-    { label: "How to Read HOA Financial Statements Like an Expert Analyst", to: "/blog/read-hoa-financial-statements" },
+    { label: "How to Read HOA Financial Statements: A Homeowner's Guide", to: "/blog/read-hoa-financial-statements" },
     { label: "Warning Signs: HOA Document Red Flags to Check During Escrow", to: "/blog/hoa-document-red-flags" },
     { label: "The HOA Annual Budget: A Homeowner's Guide to Corporate Expenses", to: "/blog/hoa-annual-budget" },
     { label: "Back to Blog Insights", to: "/blog" }

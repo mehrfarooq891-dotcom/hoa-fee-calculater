@@ -269,7 +269,7 @@ export default function StateTemplate() {
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-primary opacity-80 uppercase font-bold tracking-wider mt-4">
               <span>Updated: September 2026</span>
               <span>•</span>
-              <span className="text-accent normal-case font-bold">Reviewed by Sarah Mitchell</span>
+              <span className="text-accent normal-case font-bold">Compiled by HOAFeeCalculator.com</span>
             </div>
           </header>
 
@@ -543,7 +543,7 @@ export default function StateTemplate() {
               <div className="card shadow-lg border-none">
                 <div className="flex items-center gap-4 mb-6">
                    <div className="h-12 w-12 bg-accent/10 rounded-full flex items-center justify-center text-accent text-xl">💡</div>
-                   <h4 className="font-serif text-xl font-bold text-primary">Expert Tip</h4>
+                   <h4 className="font-serif text-xl font-bold text-primary">Good to Know</h4>
                 </div>
                 <p className="text-primary opacity-70 leading-relaxed italic font-sans text-base">
                   "In {displayName}, property values are highly tied to HOA financial health. A poorly funded{' '}

@@ -53,7 +53,7 @@ export default function HOAThreateningForeclosureGuideArticle() {
     "dateModified": "2026-07-22T08:00:00Z",
     "author": {
       "@type": "Organization",
-      "name": "Sarah Mitchell",
+      "name": "HOAFeeCalculator.com",
       "url": "https://www.hoafeecalculator.com/"
     },
     "publisher": {
@@ -131,27 +131,9 @@ export default function HOAThreateningForeclosureGuideArticle() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-      {/* Author Persona Header Badge */}
-      <div className="mb-8 p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-wrap items-center justify-between gap-4">
-        <div className="flex items-center gap-3">
-          <div className="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-lg border border-primary/20 shadow-sm">
-            SM
-          </div>
-          <div>
-            <div className="flex items-center gap-2">
-              <span className="font-bold text-slate-900 text-base">Sarah Mitchell</span>
-              <span className="bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded-full font-semibold flex items-center gap-1">
-                <UserCheck className="w-3 h-3" /> Independent Researcher
-              </span>
-            </div>
-            <p className="text-xs text-slate-600">HOAFeeCalculator.com</p>
-          </div>
-        </div>
-        <div className="text-xs text-slate-500 flex items-center gap-3">
-          <span>Published: July 22, 2026</span>
-          <span>•</span>
-          <span className="text-accent font-medium">Updated for 2026 State Codes</span>
-        </div>
+      {/* Author Header */}
+      <div className="bg-bg-light border border-border p-4 rounded-xl mb-8 text-xs md:text-sm text-secondary">
+        <strong>Prepared by HOAFeeCalculator.com</strong> — independent educational estimates compiled from public sources and statutory guidelines. Learn more on our <Link to="/about" className="text-accent underline font-semibold">methodology page</Link>.
       </div>
 
       <article className="prose prose-slate max-w-none">
@@ -424,33 +406,6 @@ export default function HOAThreateningForeclosureGuideArticle() {
           })}
         </div>
       </section>
-
-      {/* Author Persona Card */}
-      <div className="mt-12 p-6 bg-slate-50 border border-slate-200 rounded-2xl shadow-xs">
-        <div className="flex flex-col sm:flex-row items-start gap-4">
-          <div className="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center font-bold text-xl shrink-0 shadow-md">
-            SM
-          </div>
-          <div>
-            <div className="flex flex-wrap items-center gap-2 mb-1">
-              <h3 className="text-lg font-bold text-slate-900">Sarah Mitchell</h3>
-              <span className="text-xs bg-accent/10 text-accent font-semibold px-2.5 py-0.5 rounded-full border border-accent/20">
-                Independent Housing Researcher
-              </span>
-            </div>
-            <p className="text-xs text-slate-500 mb-3 font-medium">
-              HOAFeeCalculator.com
-            </p>
-            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-3">
-              Written and maintained by Sarah Mitchell, an independent researcher tracking HOA and condo costs across the US. Figures are compiled from public sources listed on our <Link to="/about" className="text-accent underline font-semibold">methodology page</Link>.
-            </p>
-            <div className="text-xs text-slate-500 flex items-center gap-2 pt-2 border-t border-slate-200">
-              <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-              <span>Editorial Policy: All statutory references verified against state property code records.</span>
-            </div>
-          </div>
-        </div>
-      </div>
 
       {/* Internal Link Tracking Table (Hidden from view for schema/tracking compliance) */}
       <div className="hidden" aria-hidden="true" style={{ display: 'none' }}>

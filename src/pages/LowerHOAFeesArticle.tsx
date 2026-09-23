@@ -5,7 +5,7 @@ import BlogArticleLayout from '@/src/components/BlogArticleLayout';
 export default function LowerHOAFeesArticle() {
   const relatedLinks = [
     { label: "Understand HOA Special Assessments: How to Avoid Surprise Charges", to: "/blog/hoa-special-assessment" },
-    { label: "How to Read HOA Financial Statements Like an Expert Analyst", to: "/blog/read-hoa-financial-statements" },
+    { label: "How to Read HOA Financial Statements: A Homeowner's Guide", to: "/blog/read-hoa-financial-statements" },
     { label: "Warning Signs: HOA Document Red Flags to Check During Escrow", to: "/blog/hoa-document-red-flags" },
     { label: "Back to Blog Insights", to: "/blog" }
   ];
@@ -19,7 +19,7 @@ export default function LowerHOAFeesArticle() {
     "dateModified": "2026-06-11T09:00:00Z",
     "author": {
       "@type": "Organization",
-      "name": "Sarah Mitchell",
+      "name": "HOAFeeCalculator.com",
       "url": "https://www.hoafeecalculator.com/"
     },
     "publisher": {

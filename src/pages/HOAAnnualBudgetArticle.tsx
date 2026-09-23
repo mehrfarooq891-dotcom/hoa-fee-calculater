@@ -4,7 +4,7 @@ import BlogArticleLayout from '@/src/components/BlogArticleLayout';
 
 export default function HOAAnnualBudgetArticle() {
   const relatedLinks = [
-    { label: "How to Read HOA Financial Statements Like an Expert Analyst", to: "/blog/read-hoa-financial-statements" },
+    { label: "How to Read HOA Financial Statements: A Homeowner's Guide", to: "/blog/read-hoa-financial-statements" },
     { label: "What Do HOA Fees Cover? A Complete Room-by-Room Breakdown", to: "/blog/what-do-hoa-fees-cover" },
     { label: "Back to Blog Insights", to: "/blog" }
   ];

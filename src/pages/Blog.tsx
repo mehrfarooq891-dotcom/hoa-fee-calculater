@@ -252,7 +252,7 @@ const ALL_ARTICLES: Article[] = [
     slug: "/blog/hoa-special-assessment"
   },
   {
-    title: "How to Read HOA Financial Statements Like an Expert Analyst",
+    title: "How to Read HOA Financial Statements: A Homeowner's Guide",
     excerpt: "Stop skipping the financial package. Learn how to quickly analyze balance sheets, operating budgets, reserve balances, and aged delinquencies.",
     date: "May 23, 2026",
     category: "Financial Planning",
@@ -493,7 +493,7 @@ export default function Blog() {
               Real Estate &amp; HOA Insights Blog
             </h1>
             <p className="text-lg md:text-xl text-primary/70 max-w-2xl mx-auto leading-relaxed font-sans">
-              Expert guides, state-by-state fee breakdowns, legal analysis, and financial strategies for American homeowners.
+              In-depth guides, state-by-state fee breakdowns, legal overviews, and financial strategies for American homeowners.
             </p>
           </div>
 

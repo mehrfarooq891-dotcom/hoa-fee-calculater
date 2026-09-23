@@ -49,7 +49,7 @@ export default function HOASentToCollectionsArticle() {
     "dateModified": "2026-08-04T00:00:00Z",
     "author": {
       "@type": "Organization",
-      "name": "Sarah Mitchell",
+      "name": "HOAFeeCalculator.com",
       "url": "https://www.hoafeecalculator.com/about"
     },
     "publisher": {
@@ -366,33 +366,6 @@ export default function HOASentToCollectionsArticle() {
             })}
           </div>
         </section>
-
-        {/* Author Bio */}
-        <div className="mt-12 p-6 bg-slate-50 border border-slate-200 rounded-2xl shadow-xs">
-          <div className="flex flex-col sm:flex-row items-start gap-4">
-            <div className="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center font-bold text-xl shrink-0 shadow-md">
-              SM
-            </div>
-            <div>
-              <div className="flex flex-wrap items-center gap-2 mb-1">
-                <h3 className="text-lg font-bold text-slate-900">Sarah Mitchell</h3>
-                <span className="text-xs bg-accent/10 text-accent font-semibold px-2.5 py-0.5 rounded-full border border-accent/20">
-                  Independent Housing Researcher
-                </span>
-              </div>
-              <p className="text-xs text-slate-500 mb-3 font-medium">
-                HOAFeeCalculator.com
-              </p>
-              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-3">
-                Written and maintained by Sarah Mitchell, an independent researcher tracking HOA and condo costs across the US. Figures are compiled from public sources listed on our <Link to="/about" className="text-accent underline font-semibold">methodology page</Link>.
-              </p>
-              <div className="text-xs text-slate-500 flex items-center gap-2 pt-2 border-t border-slate-200">
-                <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                <span>Editorial Policy: All statutory references verified against state property code records.</span>
-              </div>
-            </div>
-          </div>
-        </div>
 
         {/* Hidden internal tracking table */}
         <div className="hidden" aria-hidden="true" style={{ display: 'none' }}>

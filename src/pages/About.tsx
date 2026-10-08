@@ -105,7 +105,7 @@ export default function About() {
                 </div>
                 <h3 className="text-xl font-serif font-bold text-primary">2. Public Market Knowledge &amp; Cost Estimates</h3>
                 <p className="text-sm text-primary/80 leading-relaxed">
-                  Baseline fee estimates and typical cost ranges are developed using AI-assisted research that draws on general, publicly available market knowledge and commonly reported housing cost data, rather than direct access to any single proprietary or licensed database. These estimates are refined through ongoing editorial review to keep them reasonable and broadly representative, but they are approximate ranges for budgeting and comparison purposes—not a substitute for a property's actual current HOA disclosure documents.
+                  Baseline fee estimates and typical cost ranges are developed through editorial research that draws on general, publicly available market knowledge and commonly reported housing cost data, rather than direct access to any single proprietary or licensed database. These estimates are refined through ongoing editorial review to keep them reasonable and broadly representative, but they are approximate ranges for budgeting and comparison purposes—not a substitute for a property's actual current HOA disclosure documents.
                 </p>
               </div>
 
@@ -113,9 +113,9 @@ export default function About() {
                 <div className="h-10 w-10 bg-accent/10 rounded-xl flex items-center justify-center text-accent font-bold text-lg">
                   🔄
                 </div>
-                <h3 className="text-xl font-serif font-bold text-primary">3. AI-Assisted Synthesis &amp; Regular Editorial Reviews</h3>
+                <h3 className="text-xl font-serif font-bold text-primary">3. Editorial Synthesis &amp; Regular Reviews</h3>
                 <p className="text-sm text-primary/80 leading-relaxed">
-                  AI-assisted research and writing tools help organize, summarize, and synthesize these public legal and market insights into clear, accessible consumer guides. Because inflation, insurance premiums, and utility rates impact association budgets over time, published figures and statutory summaries are periodically reviewed and updated to reflect current conditions.
+                  This site organizes, summarizes, and synthesizes public legal and market information into clear, accessible consumer guides. Because inflation, insurance premiums, and utility rates impact association budgets over time, published figures and statutory summaries are periodically reviewed and updated to reflect current conditions.
                 </p>
               </div>
             </div>

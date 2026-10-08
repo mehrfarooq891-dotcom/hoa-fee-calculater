@@ -298,7 +298,6 @@ export default function StateTemplate() {
                       <tr className="border-b border-border">
                         <th className="py-4 font-bold text-primary uppercase text-xs tracking-wider">City</th>
                         <th className="py-4 font-bold text-primary uppercase text-xs tracking-wider">Estimated Average HOA Fee Range</th>
-                        <th className="py-4 font-bold text-primary uppercase text-xs tracking-wider">2026 Trend</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-border">
@@ -306,7 +305,6 @@ export default function StateTemplate() {
                         <tr key={city.name} className="hover:bg-bg-light transition-colors">
                           <td className="py-6 font-bold text-primary">{city.name}</td>
                           <td className="py-6 text-accent font-bold">{city.range}/mo</td>
-                          <td className="py-6 text-red-500 font-bold">↑ 4.2%</td>
                         </tr>
                       ))}
                     </tbody>

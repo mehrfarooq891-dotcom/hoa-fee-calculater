@@ -117,6 +117,38 @@ const statesPageSchema = [
           "@type": "Answer",
           "text": "No. Only a handful of states (such as California with a 20% annual regular fee cap and Arizona with a 20% cap) enforce statutory limits on annual fee increases. Most states allow HOA boards to set dues according to annual budget needs specified in their recorded CC&Rs."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "Are HOA fees tax deductible?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For a primary residence, HOA dues are generally not tax deductible. For rental or investment properties, HOA fees are typically deductible as a rental expense. Confirm your situation with a tax professional."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can an HOA charge different fees in different states?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An individual HOA only governs its own community, but HOAs in different states face very different cost environments - insurance markets, labor costs, state reserve mandates, and climate exposure all push fees up or down."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens if I stop paying HOA fees?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The HOA can charge late fees and interest, place a lien on your property, and in many states foreclose on that lien even if your mortgage is current. Exact powers and timelines vary by state."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I find the average HOA fee for my state?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Start with the state guide for typical ranges and legal context, then narrow it down with city-level guides. State averages are a starting point - always verify with the actual resale certificate from the community you are considering."
+        }
       }
     ]
   }
@@ -301,6 +333,124 @@ export default function States() {
               </div>
             </div>
           </section>
+
+          {/* === ADDED 2026-10-11: expanded editorial content (AdSense value) === */}
+          <div className="max-w-4xl mx-auto mt-20 space-y-14">
+
+            <section>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-6">
+                Why Do HOA Fees Vary by State?
+              </h2>
+              <p className="text-primary/80 leading-relaxed mb-4">
+                The same three-bedroom townhouse could carry a $150 monthly HOA fee in one state and a $500 fee in another — with the same square footage and similar amenities. The gap comes from forces that operate at the state level: labor costs, insurance markets, climate exposure, construction styles, and the legal framework governing homeowners associations.
+              </p>
+              <p className="text-primary/80 leading-relaxed mb-4">
+                Insurance is often the biggest state-level driver. In hurricane-exposed states like Florida and Louisiana, master insurance policies for condo buildings have risen dramatically, and those costs flow straight into dues. In wildfire-prone parts of California, similar pressures apply. Meanwhile, states with lower labor costs and milder weather tend to see lower maintenance and management expenses across the board.
+              </p>
+              <p className="text-primary/80 leading-relaxed">
+                State law plays a quieter but real role. States that require reserve studies, mandate structural inspections for older buildings, or cap annual fee increases shape how HOAs budget — and therefore what owners pay. Use the guides below to see both the typical fee ranges and the legal landscape for each state.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-6">
+                Which States Tend to Have the Highest and Lowest HOA Fees?
+              </h2>
+              <p className="text-primary/80 leading-relaxed mb-4">
+                No definitive national ranking of HOA fees exists — fees are set community by community, not by any central authority — but broad patterns are well known. States that tend toward higher average dues include Hawaii, New York, California, Florida, and New Jersey. The common threads are expensive coastal metros, high-rise condo stock, steep insurance costs, and high labor and construction costs. In these states, it is not unusual for condo dues to run several hundred dollars a month above what a similar unit would cost in an inland state.
+              </p>
+              <p className="text-primary/80 leading-relaxed mb-4">
+                States that tend toward lower average dues include Arkansas, Indiana, Mississippi, West Virginia, and Iowa — generally inland states with lower labor costs, milder insurance markets, and more single-family subdivisions with basic landscaping-and-amenities HOAs. Typical ranges there often sit well under $200 a month for standard communities.
+              </p>
+              <p className="text-primary/80 leading-relaxed">
+                Treat these as tendencies, not rules. Every state contains expensive luxury communities and affordable basic ones, and a downtown high-rise in a "low-fee" state can easily out-price a suburban subdivision in a "high-fee" state. Always compare at the community level — our <Link to="/cities" className="text-accent underline font-semibold hover:text-primary transition-colors">city guides</Link> get you one step closer.
+              </p>
+            </section>
+
+            <section className="bg-bg-light border border-border/60 rounded-3xl p-8 md:p-10">
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary mb-6">
+                How Do HOA Laws Differ From State to State?
+              </h2>
+              <p className="text-primary/80 leading-relaxed mb-4">
+                There is no federal HOA law — every state writes its own rules, and they differ more than most buyers expect. These are the areas where state law most often affects what you pay and what protections you have:
+              </p>
+              <ul className="space-y-4 text-primary/80 leading-relaxed list-disc list-inside">
+                <li><strong className="text-primary">Fee increase caps:</strong> Only a few states limit how much an HOA can raise regular dues each year — California, for example, caps regular assessment increases at 20 percent annually. In most states, the board can raise dues as the budget requires, which makes a community's fee history worth checking.</li>
+                <li><strong className="text-primary">Reserve requirements:</strong> Some states require HOAs to conduct reserve studies or maintain minimum reserve funding; others leave it entirely to the board. States with reserve mandates tend to produce steadier fees and fewer surprise assessments.</li>
+                <li><strong className="text-primary">Structural inspections:</strong> After the Surfside condo collapse, Florida enacted milestone inspection and mandatory reserve requirements for older buildings — a model other coastal states are watching. These rules protect owners long-term but add to near-term costs.</li>
+                <li><strong className="text-primary">Disclosure rules:</strong> Most states require sellers to provide HOA documents — budgets, CC&Rs, meeting minutes, reserve studies — before closing, but the details and timelines vary. Know your state's disclosure requirements so you get the paperwork in time to actually read it.</li>
+                <li><strong className="text-primary">Lien and foreclosure powers:</strong> States differ on how aggressively an HOA can pursue unpaid dues, including lien priority and foreclosure rights. This matters less for fee levels and more for understanding the stakes of falling behind.</li>
+              </ul>
+              <p className="text-primary/80 leading-relaxed mt-4">
+                For the specifics in your state, open its guide above — each one covers the key statutes and what they mean for your wallet.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-6">
+                How Can You Research HOA Fees Before Buying a Home?
+              </h2>
+              <p className="text-primary/80 leading-relaxed mb-6">
+                A little homework before you make an offer can save you from the most common HOA surprises. Here is a practical research checklist, in order:
+              </p>
+              <ol className="space-y-4 text-primary/80 leading-relaxed list-decimal list-inside">
+                <li><strong className="text-primary">Get the resale certificate early.</strong> This is the official document showing current dues, any pending special assessments, and outstanding HOA debts. Request it as soon as you are serious about a property — not the week before closing.</li>
+                <li><strong className="text-primary">Read the current budget line by line.</strong> Look at insurance costs, reserve contributions, and management fees. A budget where reserves get a healthy share is a good sign; one where they get almost nothing is a warning.</li>
+                <li><strong className="text-primary">Ask for the reserve study.</strong> It lists upcoming major repairs and whether the HOA is saving enough to cover them. Compare the study's recommended funding level against what the HOA actually contributes.</li>
+                <li><strong className="text-primary">Review five years of fee history.</strong> Steady, modest increases suggest disciplined budgeting. Big jumps or long freezes followed by spikes suggest the board has been kicking costs down the road.</li>
+                <li><strong className="text-primary">Read the CC&Rs for rules that affect you.</strong> Rental caps, pet restrictions, parking rules, and home-business policies can matter more than the fee itself. Make sure the community fits your life before you compare its price.</li>
+                <li><strong className="text-primary">Check for litigation and insurance claims.</strong> Ongoing lawsuits or recent large claims can signal future assessments — and can make the unit harder to finance.</li>
+                <li><strong className="text-primary">Model the total cost.</strong> Once you have real numbers, use our <Link to="/" className="text-accent underline font-semibold hover:text-primary transition-colors">HOA fee calculator</Link> to project dues, assessments, and long-term ownership costs — then compare communities on equal footing.</li>
+              </ol>
+            </section>
+
+            <section>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-6">
+                State HOA Fee FAQs
+              </h2>
+              <div className="space-y-8">
+
+                <div>
+                  <h3 className="text-xl font-serif font-bold text-primary mb-2">Do all states regulate how much HOA fees can increase?</h3>
+                  <p className="text-primary/80 leading-relaxed">
+                    No. Only a handful of states place statutory caps on annual HOA fee increases — California's 20 percent cap on regular assessments is the best-known example. In most states, the board sets dues based on the annual budget, and owners approve the budget through the process defined in the community's governing documents. That is why checking a community's fee history matters more than checking your state's statutes.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-serif font-bold text-primary mb-2">Are HOA fees tax deductible?</h3>
+                  <p className="text-primary/80 leading-relaxed">
+                    For your primary residence, HOA dues are generally not tax deductible. If the property is a rental or investment property, HOA fees are typically deductible as a rental expense. Special assessments for improvements may sometimes be added to your cost basis. Tax rules change and situations vary, so confirm with a tax professional — this is general information, not tax advice.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-serif font-bold text-primary mb-2">Can an HOA charge different fees in different states?</h3>
+                  <p className="text-primary/80 leading-relaxed">
+                    An individual HOA only governs its own community, so it charges what its own budget requires — but two HOAs in different states face very different cost environments. Insurance markets, labor costs, state reserve mandates, and climate exposure all push fees up or down. That is why state-by-state comparison is a useful starting point, even though the real comparison always happens community by community.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-serif font-bold text-primary mb-2">What happens if I stop paying HOA fees?</h3>
+                  <p className="text-primary/80 leading-relaxed">
+                    The HOA can charge late fees and interest, place a lien on your property, and in many states foreclose on that lien — even if your mortgage is current. The exact powers and timelines vary by state, which is another reason to understand your state's HOA laws before you buy. If you are struggling with dues, contact the board early; many will work out a payment plan before taking legal action.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-serif font-bold text-primary mb-2">How do I find the average HOA fee for my state?</h3>
+                  <p className="text-primary/80 leading-relaxed">
+                    Start with the state guide above for typical ranges and the legal context. Then narrow it down: our <Link to="/cities" className="text-accent underline font-semibold hover:text-primary transition-colors">city guides</Link> break ranges down by metro, and nothing beats the actual resale certificate from the community you are considering. State averages are a compass, not a map — use them to orient yourself, then verify locally.
+                  </p>
+                </div>
+
+              </div>
+            </section>
+
+          </div>
+          {/* === END added content === */}
+
         </div>
       </main>
 

@@ -58,7 +58,7 @@ export default function HOAVsCondoFeeArticle() {
 
   return (
     <BlogArticleLayout
-      title="HOA vs Condo Fee: What's the Difference and Which Costs More?"
+      title="HOA vs Condo Fee: What's the Difference?"
       description="Unveiling the critical legal and financial distinctions between HOA fees and Condo fees. Compare average monthly costs, coverage limits, and assessment risks."
       canonical="/blog/hoa-vs-condo-fee"
       category="Homebuying Education"

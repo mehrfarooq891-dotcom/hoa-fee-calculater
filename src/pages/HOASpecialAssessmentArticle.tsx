@@ -13,7 +13,7 @@ export default function HOASpecialAssessmentArticle() {
 
   return (
     <BlogArticleLayout
-      title="HOA Special Assessment: What It Is and How to Protect Yourself"
+      title="HOA Special Assessment: How to Protect Yourself"
       description="A $12,000 special assessment showed up 8 months after closing—it was preventable. Discover how special assessments work, their common cost triggers, and how to check reserve percentages."
       category="Finance"
       readTime="7 min read"
@@ -23,13 +23,13 @@ export default function HOASpecialAssessmentArticle() {
       {/* Hidden SEO & Schema Helper */}
       <div className="hidden">
         <h2>SEO Target Meta Details</h2>
-        <p><strong>SEO Title Tag:</strong> HOA Special Assessment: What It Is and How to Protect Yourself | HOAFeeCalculator.com</p>
+        <p><strong>SEO Title Tag:</strong> HOA Special Assessment: How to Protect Yourself | HOAFeeCalculator.com</p>
         <p><strong>Meta Description:</strong> Your complete guide to HOA special assessments. Learn how surprise capital charges occur, real-dollar costs from roof to elevator repairs, and how the 70% reserve rule protects you before buying.</p>
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "BlogPosting",
-            "headline": "HOA Special Assessment: What It Is and How to Protect Yourself",
+            "headline": "HOA Special Assessment: How to Protect Yourself",
             "description": "An exhaustive guide to understanding, anticipating, and defending against homeowners association special assessments.",
             "image": "https://www.hoafeecalculator.com/hoa_calculator_logo.svg",
             "author": {

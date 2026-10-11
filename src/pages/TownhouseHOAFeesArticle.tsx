@@ -12,7 +12,7 @@ export default function TownhouseHOAFeesArticle() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "headline": "HOA Fees for Townhouses vs Single-Family Homes: Real Comparisons",
+    "headline": "Townhouse vs Single-Family HOA Fees Compared",
     "description": "Examine typical townhouse HOA fees ($200–$400/mo) versus single-family home HOA fees ($150–$250/mo). Learn what's included and evaluate the real total cost of ownership.",
     "datePublished": "2026-06-17T08:00:00Z",
     "dateModified": "2026-06-17T08:00:00Z",
@@ -37,7 +37,7 @@ export default function TownhouseHOAFeesArticle() {
 
   return (
     <BlogArticleLayout
-      title="HOA Fees for Townhouses vs Single-Family Homes: Real Comparisons"
+      title="Townhouse vs Single-Family HOA Fees Compared"
       description="Townhouse HOA fees often cover your roof — single-family HOA fees usually don't. Learn typical costs, property splits, and why a lower fee can sometimes cost more over time."
       category="Strategy & Operations"
       readTime="7 min read"

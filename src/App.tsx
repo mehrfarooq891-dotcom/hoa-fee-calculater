@@ -206,13 +206,14 @@ function DynamicBlogArticle() {
 }
 
 import { ErrorBoundary } from './components/ErrorBoundary';
+import { PageSkeleton } from './components/PageSkeleton';
 import { getBlogArticleBySlug } from './data/blogArticles';
 
 export function RootLayout() {
   return (
     <HelmetProvider>
       <ErrorBoundary>
-        <Suspense fallback={<div style={{ minHeight: '100vh' }} />}>
+        <Suspense fallback={<PageSkeleton />}>
           <Outlet />
         </Suspense>
       </ErrorBoundary>

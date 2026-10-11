@@ -393,14 +393,14 @@ export const ALL_ARTICLES: ArticleData[] = [
     slug: "/blog/hoa-fees-texas"
   },
   {
-    title: "HOA Fees in California: Why They're the Highest in the Nation",
+    title: "HOA Fees in California: Why They're the Highest",
     excerpt: "California HOA fees average $500/month. Learn why Golden State costs are soaring and how the Davis-Stirling Act limits annual dues increases.",
     date: "May 15, 2026",
     category: "State Guides",
     slug: "/blog/hoa-fees-california"
   },
   {
-    title: "HOA Fees in Florida: What Every Buyer Must Know Before Closing",
+    title: "HOA Fees in Florida: What Buyers Must Know",
     excerpt: "Florida has the highest rate of HOA communities in the US. Discover why fees are surging under SB 4-D structural reserve safety reforms.",
     date: "May 13, 2026",
     category: "State Guides",

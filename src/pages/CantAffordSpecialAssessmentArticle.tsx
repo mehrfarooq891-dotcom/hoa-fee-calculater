@@ -66,7 +66,7 @@ export default function CantAffordSpecialAssessmentArticle() {
     >
       <div className="space-y-6 text-slate-800 leading-relaxed text-base sm:text-lg">
         <QuickAnswerBox
-          title="Quick Answer: What to Do If You Can't Afford an HOA Special Assessment"
+          title="Can't Afford an HOA Special Assessment? What to Do"
           answer="If you receive a surprise HOA special assessment you cannot afford, do not ignore the notice. First, formally request a hardship payment plan in writing—many state statutes (such as California Civil Code § 5665 and Texas Property Code § 209.0062) legally require associations to offer reasonable payment installment guidelines. Second, review your bylaws to verify whether the assessment required a membership vote and passed validly. Third, examine financing alternatives such as a Home Equity Line of Credit (HELOC), an HOA assessment bank loan, or loss assessment coverage on your HO-6 condo insurance policy. Ignoring an assessment risks late fees, legal costs, liens, and potential foreclosure."
           highlights={[
             { label: "First Step", value: "Written Hardship Payment Plan" },

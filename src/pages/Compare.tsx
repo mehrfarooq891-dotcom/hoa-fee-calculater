@@ -85,7 +85,7 @@ const comparePageSchema = [
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <SEO 
-        title="Compare HOA vs. Condo vs. Townhouse Fees | HOAFeeCalculator.com"
+        title="HOA vs Condo vs Townhouse Fees Compared"
         description="Understanding the fee differences between single-family homes, condominiums, and townhouses."
         canonical="/compare"
         schema={comparePageSchema}

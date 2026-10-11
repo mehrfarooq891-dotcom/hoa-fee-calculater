@@ -13,7 +13,7 @@ export default function ColoradoHOAFeesArticle() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "HOA Fees in Colorado: Denver, Boulder & Mountain Community Guide",
+    "headline": "HOA Fees Colorado: Denver, Boulder & Mountain Guide",
     "description": "An exhaustive guide to average HOA fees in Colorado. Compare Denver LoDo condos, suburban master-planned developments, Boulder, and ski resort towns like Breckenridge and Vail.",
     "datePublished": "2026-06-29T08:00:00Z",
     "dateModified": "2026-06-29T08:00:00Z",
@@ -38,7 +38,7 @@ export default function ColoradoHOAFeesArticle() {
 
   return (
     <BlogArticleLayout
-      title="HOA Fees in Colorado: Denver, Boulder & Mountain Community Guide"
+      title="HOA Fees Colorado: Denver, Boulder & Mountain Guide"
       description="Colorado has highly diverse housing options. Ski resort condos in Vail can hit $2,500/month in fees, while suburban homes average $100. Learn your rights."
       category="Data"
       readTime="8 min read"

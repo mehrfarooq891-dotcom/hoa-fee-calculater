@@ -13,7 +13,7 @@ export default function VirginiaHOAFeesArticle() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "HOA Fees in Virginia: Northern Virginia, Richmond & Beach Markets",
+    "headline": "HOA Fees Virginia: Northern VA, Richmond & Beaches",
     "description": "An exhaustive guide to average HOA fees in Virginia. Compare Northern Virginia master-planned developments, Reston Association tiered structures, Richmond, and oceanfront Virginia Beach condos.",
     "datePublished": "2026-07-03T08:00:00Z",
     "dateModified": "2026-07-03T08:00:00Z",
@@ -38,7 +38,7 @@ export default function VirginiaHOAFeesArticle() {
 
   return (
     <BlogArticleLayout
-      title="HOA Fees in Virginia: Northern Virginia, Richmond & Beach Markets"
+      title="HOA Fees Virginia: Northern VA, Richmond & Beaches"
       description="Virginia's housing markets feature unique fees. Northern Virginia master-planned communities stack HOA and CDD fees, while Virginia Beach oceanfront condos demand premium dues."
       category="Data"
       readTime="7 min read"

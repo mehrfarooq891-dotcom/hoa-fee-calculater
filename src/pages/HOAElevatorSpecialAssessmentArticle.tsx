@@ -45,7 +45,7 @@ export default function HOAElevatorSpecialAssessmentArticle() {
   const newsArticleSchema = {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
-    "headline": "Elevator Broken for Months: Can the HOA Force a Special Assessment?",
+    "headline": "Elevator Broken for Months? HOA Special Assessment Rules",
     "description": "Broken condo elevator? Learn replacement costs ($150K–$250K), per-unit assessments, reserve funding rules, ADA rights, and real repair timelines.",
     "image": "https://www.hoafeecalculator.com/og-image.jpg",
     "datePublished": "2026-08-23T00:00:00Z",
@@ -71,7 +71,7 @@ export default function HOAElevatorSpecialAssessmentArticle() {
 
   return (
     <BlogArticleLayout
-      title="Elevator Broken for Months: Can the HOA Force a Special Assessment?"
+      title="Elevator Broken for Months? HOA Special Assessment Rules"
       description="Broken condo elevator? Learn replacement costs ($150K–$250K), per-unit assessments, reserve funding rules, ADA rights, and real repair timelines."
       canonical="/blog/hoa-elevator-special-assessment"
       date="August 23, 2026"

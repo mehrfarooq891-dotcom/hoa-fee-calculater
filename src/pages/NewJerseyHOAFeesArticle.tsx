@@ -13,7 +13,7 @@ export default function NewJerseyHOAFeesArticle() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "HOA Fees in New Jersey: Bergen County, Shore Towns & Urban Condos",
+    "headline": "HOA Fees New Jersey: Bergen, Shore & Urban Condos",
     "description": "Learn the average HOA fees in New Jersey across Bergen County, Jersey City condos, shore towns, and age-restricted 55+ communities.",
     "datePublished": "2026-07-08T08:00:00Z",
     "dateModified": "2026-07-08T08:00:00Z",
@@ -38,7 +38,7 @@ export default function NewJerseyHOAFeesArticle() {
 
   return (
     <BlogArticleLayout
-      title="HOA Fees in New Jersey: Bergen County, Shore Towns & Urban Condos"
+      title="HOA Fees New Jersey: Bergen, Shore & Urban Condos"
       description="New Jersey has the highest property taxes in the US — and some of its HOA communities still charge $600+/month on top of that. Learn the average costs and laws."
       category="Data"
       readTime="7 min read"

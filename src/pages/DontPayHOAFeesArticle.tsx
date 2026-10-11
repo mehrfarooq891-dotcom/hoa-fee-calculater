@@ -12,7 +12,7 @@ export default function DontPayHOAFeesArticle() {
 
   return (
     <BlogArticleLayout
-      title="What Happens If You Don't Pay HOA Fees? The Full Legal Picture"
+      title="What Happens If You Don't Pay HOA Fees?"
       description="Unpaid HOA dues can escalate from minor late fees to a full property foreclosure. Read our comprehensive analysis of real costs, liens, timelines, and state laws."
       category="Legal & Rights"
       readTime="9 min read"

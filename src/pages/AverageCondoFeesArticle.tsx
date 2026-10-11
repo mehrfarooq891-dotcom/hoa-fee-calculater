@@ -54,7 +54,7 @@ export default function AverageCondoFeesArticle() {
   const newsArticleSchema = {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
-    "headline": "Average Condo Fees in 2026: Typical Monthly Costs, City Breakdowns, and Red Flags",
+    "headline": "Average Condo Fees 2026: Monthly Costs & City Breakdowns",
     "description": "What is the average condo fee in 2026? Compare typical monthly costs by city, building type, reserve rules, and what is included before buying.",
     "image": "https://www.hoafeecalculator.com/og-image.jpg",
     "datePublished": "2026-08-27T00:00:00Z",
@@ -93,7 +93,7 @@ export default function AverageCondoFeesArticle() {
 
   return (
     <BlogArticleLayout
-      title="Average Condo Fees in 2026: Typical Monthly Costs, City Breakdowns, and Red Flags"
+      title="Average Condo Fees 2026: Monthly Costs & City Breakdowns"
       description="What is the average condo fee in 2026? Compare typical monthly costs by city, building type, reserve rules, and what is included before buying."
       canonical="/blog/average-condo-fees"
       date="August 27, 2026"

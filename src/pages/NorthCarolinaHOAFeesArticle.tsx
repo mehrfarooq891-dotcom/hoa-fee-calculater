@@ -38,7 +38,7 @@ export default function NorthCarolinaHOAFeesArticle() {
 
   return (
     <BlogArticleLayout
-      title="HOA Fees in North Carolina: Charlotte, Raleigh & Triangle Area Guide"
+      title="HOA Fees North Carolina: Charlotte, Raleigh & Triangle"
       description="Charlotte's fastest-growing suburbs now charge HOA fees that rival South Florida — and most buyers don't see it coming. Compare Charlotte, Raleigh, and suburban averages."
       category="Data"
       readTime="7 min read"

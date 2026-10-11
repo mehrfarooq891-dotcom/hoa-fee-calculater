@@ -13,7 +13,7 @@ export default function HOAFeesArizonaArticle() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "headline": "HOA Fees in Arizona: Phoenix vs Scottsdale vs Tucson Compared",
+    "headline": "HOA Fees Arizona: Phoenix, Scottsdale & Tucson",
     "description": "Discover average HOA fees in Arizona. Compare monthly dues, price ranges, and standard amenities across Phoenix, Scottsdale, Tucson, Chandler, Gilbert, and Tempe.",
     "datePublished": "2026-05-14T08:00:00Z",
     "dateModified": "2026-06-10T09:00:00Z",
@@ -38,7 +38,7 @@ export default function HOAFeesArizonaArticle() {
 
   return (
     <BlogArticleLayout
-      title="HOA Fees in Arizona: Phoenix vs Scottsdale vs Tucson Compared"
+      title="HOA Fees Arizona: Phoenix, Scottsdale & Tucson"
       description="Scottsdale HOA fees can run 3x more than Tucson for similar properties. Explore the complete city breakdown, state regulations, and retirement community fee structures."
       category="Guides"
       readTime="8 min read"

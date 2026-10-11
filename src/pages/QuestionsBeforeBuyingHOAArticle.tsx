@@ -12,7 +12,7 @@ export default function QuestionsBeforeBuyingHOAArticle() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "headline": "Buying in an HOA Community: 10 Questions to Ask Before You Offer",
+    "headline": "Buying in an HOA? 10 Questions to Ask First",
     "description": "Before buying a home in a homeowners association, ask these 10 critical questions regarding reserves, fee increases, assessments, litigation, and restrictive bylaws.",
     "datePublished": "2026-06-17T08:00:00Z",
     "dateModified": "2026-06-17T08:00:00Z",
@@ -37,7 +37,7 @@ export default function QuestionsBeforeBuyingHOAArticle() {
 
   return (
     <BlogArticleLayout
-      title="Buying in an HOA Community: 10 Questions to Ask Before You Offer"
+      title="Buying in an HOA? 10 Questions to Ask First"
       description="Most buyers tour the home — experienced buyers interrogate the HOA. Learn the 10 critical questions you must ask before making an offer on a property regulated by an HOA."
       canonical="/blog/questions-before-buying-hoa"
       category="Homebuying Guide"

@@ -19,7 +19,7 @@ export default function WashingtonStateHOAFeesArticle() {
 
   return (
     <BlogArticleLayout
-      title="HOA Fees in Washington State: Seattle, Bellevue & Eastside Guide 2026"
+      title="HOA Fees Washington: Seattle, Bellevue & Eastside 2026"
       description="Washington State ranks among the top 8 most expensive states for community assessments. Learn about seismic retrofits and tech amenities."
       category="Data"
       readTime="7 min read"

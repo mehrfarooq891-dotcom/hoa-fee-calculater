@@ -47,7 +47,7 @@ export default function HOAThreateningForeclosureGuideArticle() {
   const newsArticleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "My HOA Is Threatening Foreclosure: A Step-by-Step Emergency Guide",
+    "headline": "HOA Threatening Foreclosure? Step-by-Step Guide",
     "description": "Owe $600 in HOA fees? In 22 states, an HOA can foreclose on your home. Follow this 6-step emergency guide to protect your equity and stop foreclosure.",
     "datePublished": "2026-07-22T08:00:00Z",
     "dateModified": "2026-07-22T08:00:00Z",
@@ -110,7 +110,7 @@ export default function HOAThreateningForeclosureGuideArticle() {
 
   return (
     <BlogArticleLayout
-      title="My HOA Is Threatening Foreclosure: A Step-by-Step Emergency Guide"
+      title="HOA Threatening Foreclosure? Step-by-Step Guide"
       description="Owe $600 in HOA fees? In 22 states, an HOA can foreclose on your home. Follow this 6-step emergency guide to protect your equity and stop foreclosure."
       category="Legal & Rights"
       readTime="10 min read"

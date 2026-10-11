@@ -8,28 +8,28 @@ export interface ArticleData {
 
 export const ALL_ARTICLES: ArticleData[] = [
   {
-    title: "Inherited House with Unpaid HOA Fees: Who Pays, Probate Rules, and Lien Risks",
+    title: "Inherited House Unpaid HOA Fees: Who Pays & Lien Risks",
     excerpt: "Inherited a house with unpaid HOA fees? Learn if heirs or the estate owe delinquent dues, how probate delays liens, and how to sell or settle in 2026.",
     date: "August 30, 2026",
     category: "Legal & Foreclosure",
     slug: "/blog/inherited-house-unpaid-hoa-fees"
   },
   {
-    title: "Average Condo Fees in 2026: Typical Monthly Costs, City Breakdowns, and Red Flags",
+    title: "Average Condo Fees 2026: Monthly Costs & City Breakdowns",
     excerpt: "What is the average condo fee in 2026? Compare typical monthly costs across 4 building archetypes, major cities (Miami, NYC, Chicago, Austin), reserve laws, and what is included.",
     date: "August 27, 2026",
     category: "Buying Guides",
     slug: "/blog/average-condo-fees"
   },
   {
-    title: "HOA Fined Me Overnight: How to Dispute Illegal Charges and Stop Daily Accruals",
+    title: "HOA Fined Me Overnight: Dispute Illegal Charges",
     excerpt: "A $200/day fine clock started overnight? Learn how to dispute illegal fines, stop compounding accruals, exercise state hearing rights, and settle for pennies.",
     date: "August 27, 2026",
     category: "Rules & Legal",
     slug: "/blog/hoa-fined-me-overnight"
   },
   {
-    title: "Elevator Broken for Months: Can the HOA Force a Special Assessment?",
+    title: "Elevator Broken for Months? HOA Special Assessment Rules",
     excerpt: "Commercial elevator replacements cost $150K-$250K. Learn how boards pass emergency assessments, realistic per-unit costs, ADA rights, and repair timelines.",
     date: "August 23, 2026",
     category: "Maintenance & Reserves",
@@ -113,49 +113,49 @@ export const ALL_ARTICLES: ArticleData[] = [
     slug: "/blog/cant-afford-special-assessment"
   },
   {
-    title: "My HOA Is Threatening Foreclosure: A Step-by-Step Emergency Guide",
+    title: "HOA Threatening Foreclosure? Step-by-Step Guide",
     excerpt: "Foreclosure over an unpaid HOA balance is legal in 22 states. Follow this 6-step emergency guide to protect your equity and stop foreclosure.",
     date: "July 22, 2026",
     category: "Legal & Foreclosure",
     slug: "/blog/hoa-threatening-foreclosure-guide"
   },
   {
-    title: "I Just Got an HOA Lien Notice: What to Do in the Next 48 Hours",
+    title: "HOA Lien Notice: What to Do in the Next 48 Hours",
     excerpt: "An HOA lien notice requires swift action. Follow this step-by-step action plan to protect your property rights and negotiate a repayment plan.",
     date: "July 15, 2026",
     category: "Legal & Foreclosure",
     slug: "/blog/hoa-lien-notice-what-to-do"
   },
   {
-    title: "HOA Fees in Tennessee: Nashville, Memphis & Knoxville Compared",
+    title: "HOA Fees Tennessee: Nashville, Memphis & Knoxville",
     excerpt: "Nashville's HOA fees doubled between 2018 and 2025. Compare average costs, community amenities, and state statutory laws across Tennessee.",
     date: "July 12, 2026",
     category: "State Guides",
     slug: "/blog/hoa-fees-tennessee"
   },
   {
-    title: "HOA Fees in New Jersey: Bergen County, Shore Towns & Urban Condos",
+    title: "HOA Fees New Jersey: Bergen, Shore & Urban Condos",
     excerpt: "New Jersey has high property taxes and HOA dues averaging $600+/month in top developments. Learn the average costs, laws, and beach town condo rates.",
     date: "July 8, 2026",
     category: "State Guides",
     slug: "/blog/hoa-fees-new-jersey"
   },
   {
-    title: "HOA Fees in Virginia: Northern Virginia, Richmond & Beach Markets",
+    title: "HOA Fees Virginia: Northern VA, Richmond & Beaches",
     excerpt: "Northern Virginia's master-planned communities stack HOA and CDD fees. Discover VPOAA laws, Reston double-billing, and coastal condo averages.",
     date: "July 3, 2026",
     category: "State Guides",
     slug: "/blog/hoa-fees-virginia"
   },
   {
-    title: "HOA Fees in Washington State: Seattle, Bellevue & Eastside Guide 2026",
+    title: "HOA Fees Washington: Seattle, Bellevue & Eastside 2026",
     excerpt: "Seattle condo fees jumped 28% driven by seismic retrofits, tech-worker amenities, and labor costs. Compare Seattle, Bellevue, and Eastside averages.",
     date: "July 1, 2026",
     category: "State Guides",
     slug: "/blog/hoa-fees-washington-state"
   },
   {
-    title: "HOA Fees in Colorado: Denver, Boulder & Mountain Resort Guide",
+    title: "HOA Fees Colorado: Denver, Boulder & Mountain Guide",
     excerpt: "Ski condos in Breckenridge carry high fees, while Denver townhouses average $300/month. Compare LoDo, Boulder, and CCIOA budget veto rules.",
     date: "June 29, 2026",
     category: "State Guides",
@@ -176,14 +176,14 @@ export const ALL_ARTICLES: ArticleData[] = [
     slug: "/blog/hoa-fees-illinois"
   },
   {
-    title: "HOA Fees in North Carolina: Charlotte, Raleigh & Triangle Area Guide",
+    title: "HOA Fees North Carolina: Charlotte, Raleigh & Triangle",
     excerpt: "Charlotte and Raleigh suburbs feature fast-rising HOA fees. Compare Charlotte, Cary, Wilmington, and NC Planned Community Act reserve rules.",
     date: "June 26, 2026",
     category: "State Guides",
     slug: "/blog/hoa-fees-north-carolina"
   },
   {
-    title: "HOA Fees in Georgia: Atlanta, Savannah & Suburban Breakdown 2026",
+    title: "HOA Fees Georgia: Atlanta, Savannah & Suburbs 2026",
     excerpt: "Atlanta suburbs like Alpharetta have rapidly rising HOA fees. Compare Atlanta, Savannah, and Georgia Property Owners' Association Act rules.",
     date: "June 24, 2026",
     category: "State Guides",
@@ -204,7 +204,7 @@ export const ALL_ARTICLES: ArticleData[] = [
     slug: "/blog/highest-hoa-fees-by-state"
   },
   {
-    title: "Average HOA Fees in New York State: NYC, Long Island & Upstate",
+    title: "Average HOA Fees New York: NYC, Long Island & Upstate",
     excerpt: "In Manhattan, $1,200/month is the median condo maintenance fee. Compare NYC high-rises, Long Island developments, and Upstate HOA costs.",
     date: "June 23, 2026",
     category: "State Guides",
@@ -218,7 +218,7 @@ export const ALL_ARTICLES: ArticleData[] = [
     slug: "/blog/hoa-fees-tax-deductible"
   },
   {
-    title: "What Happens If You Don't Pay HOA Fees? The Full Legal Picture",
+    title: "What Happens If You Don't Pay HOA Fees?",
     excerpt: "Explore the legal mechanisms HOAs use — from late fee penalties and collection agencies to assessment liens and foreclosure proceedings.",
     date: "May 27, 2026",
     category: "Legal & Foreclosure",
@@ -232,14 +232,14 @@ export const ALL_ARTICLES: ArticleData[] = [
     slug: "/blog/hoa-foreclosure"
   },
   {
-    title: "How to Fight an HOA Fee Increase: A Step-by-Step Strategic Checklist",
+    title: "How to Fight an HOA Fee Increase: Step-by-Step Guide",
     excerpt: "Learn how to review governing CC&Rs, audit proposed annual budgets, request re-bids, and organize community objections effectively.",
     date: "May 25, 2026",
     category: "Financial Planning",
     slug: "/blog/fight-hoa-fee-increase"
   },
   {
-    title: "Understanding HOA Special Assessments: How to Avoid Surprise Bills",
+    title: "HOA Special Assessment: How to Protect Yourself",
     excerpt: "A sudden $5,000 special assessment can wreck your savings. Learn why assessments happen, how to spot underfunded reserves, and insurance options.",
     date: "May 24, 2026",
     category: "Financial Planning",
@@ -281,7 +281,7 @@ export const ALL_ARTICLES: ArticleData[] = [
     slug: "/blog/hoa-fees-mortgage-approval"
   },
   {
-    title: "New Construction HOA Fees: Why They're Lower (And Won't Stay That Way)",
+    title: "New Construction HOA Fees: Why They're Lower",
     excerpt: "Builders set initial HOA fees artificially low to sell homes. Learn about developer subsidies and the years 3-7 deficit spike.",
     date: "May 18, 2026",
     category: "Buying Guides",
@@ -295,7 +295,7 @@ export const ALL_ARTICLES: ArticleData[] = [
     slug: "/blog/condo-hoa-fees-nyc"
   },
   {
-    title: "HOA Fees in Arizona: Phoenix vs Scottsdale vs Tucson Compared",
+    title: "HOA Fees Arizona: Phoenix, Scottsdale & Tucson",
     excerpt: "Scottsdale HOA fees can run 3x higher than Tucson for similar homes. Compare city averages, ARS Title 33 buyer rights, and desert community costs.",
     date: "May 14, 2026",
     category: "State Guides",
@@ -337,7 +337,7 @@ export const ALL_ARTICLES: ArticleData[] = [
     slug: "/blog/hoa-fee-calculator-guide"
   },
   {
-    title: "States With No HOA Laws: Where Homeowners Have the Most Freedom",
+    title: "States With No HOA Laws: Homeowner Freedom Guide",
     excerpt: "In some states, HOAs have sweeping powers — in others, owners enjoy strong legal protections. Explore state-by-state regulatory frameworks.",
     date: "June 20, 2026",
     category: "Legal & Foreclosure",
@@ -358,14 +358,14 @@ export const ALL_ARTICLES: ArticleData[] = [
     slug: "/blog/what-do-hoa-fees-cover"
   },
   {
-    title: "Buying in an HOA Community: 10 Questions to Ask Before You Offer",
+    title: "Buying in an HOA? 10 Questions to Ask First",
     excerpt: "Discover 10 critical questions to ask regarding reserve funding, fee history, rental restrictions, and pending litigation before making an offer.",
     date: "June 17, 2026",
     category: "Buying Guides",
     slug: "/blog/questions-before-buying-hoa"
   },
   {
-    title: "HOA Fees for Townhouses vs Single-Family Homes: Real Comparisons",
+    title: "Townhouse vs Single-Family HOA Fees Compared",
     excerpt: "Townhouse HOA fees often cover roofs and exterior walls — single-family HOAs usually don't. Compare average costs and coverage splits.",
     date: "June 17, 2026",
     category: "Buying Guides",

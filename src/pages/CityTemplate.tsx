@@ -210,11 +210,58 @@ export default function CityTemplate() {
   // Fetch the city data or default to Austin
   const cityData = citiesData[cityName] || citiesData['austin-texas'];
   const { cityName: displayCity, stateName: displayState, intro, tableData, faqs } = cityData;
+  // Shared AEO-style FAQs appended to each city's own FAQs (no overlap with city-specific ones)
+  const sharedFaqs: FAQData[] = [
+    {
+      q: `Are HOA fees in ${displayCity} tax deductible?`,
+      a: `In most cases, HOA fees on a home you live in are not tax deductible. The IRS treats dues on a primary residence as a personal expense, similar to maintenance you pay for directly. If the property is a rental or investment, HOA fees are generally deductible as a rental expense against rental income. Separate from taxes, remember that HOA dues never include your property taxes or your personal homeowners insurance policy — those are billed and paid independently. Tax rules change and individual situations differ, so check with a qualified tax professional before filing.`
+    },
+    {
+      q: `Can an HOA in ${displayState} foreclose on my home?`,
+      a: `This is the question that surprises many first-time buyers, and the short answer is: in many states, yes, an HOA has strong collection powers. When you buy into an HOA community, unpaid assessments typically become a lien on your property — automatically or after a court filing — and depending on ${displayState} law, the association may be able to foreclose that lien, sometimes even ahead of other claims. The exact process, notice requirements, and redemption rights vary widely by state, so current ${displayState} statutes are the source of truth here. The practical takeaway is simple: HOA dues are not optional, and withholding payment during a dispute almost always backfires. Pay the assessment on time, then dispute the underlying issue through the board's process or legal channels.`
+    },
+    {
+      q: `Do HOA fees in ${displayCity} include property taxes and homeowners insurance?`,
+      a: `No. This is one of the most common points of confusion for ${displayCity} buyers, so let's be precise. Your HOA dues cover shared community costs: common-area maintenance, amenities, the association's master insurance policy, and reserve contributions. They do not include your county property taxes, which are billed separately, and they do not replace your personal homeowners insurance (an HO-6 policy for condos or an HO-3 policy for houses). In condos, the master policy usually covers the building shell and common areas, while you insure everything from the walls in — plus liability. When you budget for a ${displayCity} home, line up all four costs: mortgage, property taxes, your own insurance, and HOA dues.`
+    },
+    {
+      q: `Should I buy a home with an HOA in ${displayCity}?`,
+      a: `There is no universal answer — it depends on how you want to live and what the specific community offers. The case for HOA living in ${displayCity} is real: professionally maintained common areas, pools and fitness centers you could never afford alone, consistent neighborhood standards that protect property values, and a lifestyle where exterior maintenance is someone else's job. The trade-offs are equally real: a fixed monthly cost that rises over time, rules about paint colors, pets, parking, and rentals, and the risk of special assessments if reserves are thin. Before deciding, read the community's CC&Rs and house rules, review the last few years of budgets and meeting minutes, and ask when the last special assessment was levied. If the numbers work and the lifestyle fits, an HOA community in ${displayCity} can be a great buy — just go in with eyes open.`
+    }
+  ];
+  const allFaqs: FAQData[] = [...faqs, ...sharedFaqs];
+
+  // Group the city table rows into broad property types for the "How much" comparison table
+  const condoRows = tableData.filter(r => /condo|loft|high-rise/i.test(r.type));
+  const townhomeRows = tableData.filter(r => !/condo|loft|high-rise/i.test(r.type) && /townhome|townhouse/i.test(r.type));
+  const resortRows = tableData.filter(r => /resort|short-term/i.test(r.type));
+  const singleRows = tableData.filter(r => !/condo|loft|high-rise|townhome|townhouse|resort|short-term/i.test(r.type));
+
+  const fmtMonthlyRange = (rows: NeighborhoodData[]) => {
+    const ms = rows.map(r => r.monthly);
+    const lo = Math.min(...ms);
+    const hi = Math.max(...ms);
+    return lo === hi ? `$${lo}` : `$${lo}–$${hi}`;
+  };
+  const fmtAnnualRange = (rows: NeighborhoodData[]) => {
+    const ms = rows.map(r => r.monthly);
+    const lo = Math.min(...ms) * 12;
+    const hi = Math.max(...ms) * 12;
+    return lo === hi ? `$${lo.toLocaleString()}` : `$${lo.toLocaleString()}–$${hi.toLocaleString()}`;
+  };
+
+  const comparisonRows = [
+    { rows: condoRows, label: 'Condos & high-rise units', note: 'Elevators, lobbies, parking structures, and master building insurance push these to the top of the range.' },
+    { rows: townhomeRows, label: 'Townhomes', note: 'Shared roofs, siding, and exteriors keep dues between condo and single-family levels.' },
+    { rows: singleRows, label: 'Single-family & master-planned communities', note: 'Mostly common-area landscaping and amenities — no shared building shell to maintain.' },
+    { rows: resortRows, label: 'Resort & specialty communities', note: 'Heavy amenity use and on-site staffing push these toward the top of the range.' }
+  ].filter(c => c.rows.length > 0);
+
 
   const pageSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": faqs.map(faq => ({
+    "mainEntity": allFaqs.map(faq => ({
       "@type": "Question",
       "name": faq.q,
       "acceptedAnswer": {
@@ -285,6 +332,250 @@ export default function CityTemplate() {
             </div>
           </section>
 
+
+          {/* What HOA Fees Cover Section */}
+          <section className="mb-16">
+            <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary mb-6">
+              What Do HOA Fees Cover in {displayCity}?
+            </h2>
+            <p className="text-primary/70 leading-relaxed mb-8">
+              When you pay HOA dues in {displayCity}, you are funding the operating budget of a small nonprofit
+              corporation — your community. The money does not disappear into a black hole; it pays for very concrete
+              things, from mowed entryways to the insurance policy on the clubhouse. While every community's budget is
+              different, nearly all {displayCity} associations spend dues across four broad categories. Understanding
+              the breakdown helps you judge whether a community's fees are reasonable — or a red flag.
+            </p>
+            <div className="space-y-6">
+              <div className="bg-bg-light/50 border border-border/60 rounded-2xl p-6 md:p-8">
+                <h3 className="text-xl font-serif font-bold text-primary mb-3">Common-Area Maintenance</h3>
+                <p className="text-primary/70 leading-relaxed text-sm md:text-base">
+                  This is usually the largest day-to-day line item. It covers landscaping and irrigation for shared green
+                  spaces, upkeep of entry monuments and lighting, cleaning of private streets, pool and spa servicing,
+                  elevator and garage maintenance in taller buildings, and routine repairs to clubhouses, fences, and
+                  walking trails. In {displayCity}, local conditions show up here too — irrigation through dry stretches,
+                  storm-drain clearing in wet seasons, and tree care where canopies are dense. A community with extensive
+                  grounds simply costs more to run, which is why dues track closely with how much shared land and how many
+                  shared structures an association owns.
+                </p>
+              </div>
+              <div className="bg-bg-light/50 border border-border/60 rounded-2xl p-6 md:p-8">
+                <h3 className="text-xl font-serif font-bold text-primary mb-3">Amenities and Staffing</h3>
+                <p className="text-primary/70 leading-relaxed text-sm md:text-base">
+                  Pools, fitness centers, tennis courts, clubhouses, and dog parks do not maintain themselves. Dues pay
+                  for the people and contracts behind them: lifeguards or attendants where communities employ them,
+                  front-desk and concierge staff in high-rise buildings, security patrols and gate attendants in gated
+                  neighborhoods, and the management company that handles billing, vendor contracts, and resident
+                  communications. The more services a community offers, the higher this slice climbs — it is the main
+                  reason a luxury tower's dues can run several times higher than a basic suburban HOA in the same city.
+                </p>
+              </div>
+              <div className="bg-bg-light/50 border border-border/60 rounded-2xl p-6 md:p-8">
+                <h3 className="text-xl font-serif font-bold text-primary mb-3">Master Insurance Policies</h3>
+                <p className="text-primary/70 leading-relaxed text-sm md:text-base">
+                  Every HOA carries insurance on what it owns: common buildings, lobbies, elevators, pools, and shared
+                  structures, plus liability coverage if someone is injured in a common area. In condos, the master policy
+                  typically covers the building exterior and shared systems while owners insure their own interiors. This
+                  coverage is one reason dues have risen in many markets — when a master policy renews at a higher premium,
+                  the increase lands directly in the next budget. Remember that the master policy never replaces your own
+                  homeowners insurance; you still need coverage for your unit's interior, your belongings, and personal
+                  liability.
+                </p>
+              </div>
+              <div className="bg-bg-light/50 border border-border/60 rounded-2xl p-6 md:p-8">
+                <h3 className="text-xl font-serif font-bold text-primary mb-3">Reserve Funds for Future Repairs</h3>
+                <p className="text-primary/70 leading-relaxed text-sm md:text-base">
+                  Well-run associations set aside part of every dues payment for big-ticket future work: roof replacements,
+                  repaving, elevator modernization, pool resurfacing, and structural repairs. This is the reserve fund, and
+                  it is the line item buyers most often overlook. A community with healthy reserves can handle a roof
+                  replacement without billing owners extra. One with thin reserves will reach for a special assessment — a
+                  lump-sum charge levied on every owner, sometimes running into thousands of dollars. Always ask for the
+                  reserve study before buying in {displayCity}; it is the single best predictor of surprise costs.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* How Much Are HOA Fees - Comparison Table Section */}
+          <section className="mb-16">
+            <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary mb-6">
+              How Much Are HOA Fees in {displayCity}?
+            </h2>
+            <p className="text-primary/70 leading-relaxed mb-8">
+              No two communities charge the same dues, even within the same zip code — the age of the buildings, the level
+              of amenities, and staffing all move the number. The table below groups the neighborhood averages shown above
+              into broad property types so you can compare at a glance. Treat these as typical ranges, not quotes: actual
+              dues vary widely by community, and the only number that matters for your purchase is the one in the seller's
+              disclosure.
+            </p>
+            <div className="bg-white border border-border/80 rounded-2xl shadow-sm p-6 md:p-8 overflow-hidden">
+              <div className="overflow-x-auto -mx-6 md:mx-0">
+                <table className="w-full text-left min-w-[600px]">
+                  <thead>
+                    <tr className="bg-bg-light border-b border-border">
+                      <th className="px-6 py-4 font-bold text-primary text-xs uppercase tracking-wider">Property Type</th>
+                      <th className="px-6 py-4 font-bold text-primary text-xs uppercase tracking-wider text-right">Typical Monthly Range</th>
+                      <th className="px-6 py-4 font-bold text-primary text-xs uppercase tracking-wider text-right">Annual Equivalent</th>
+                      <th className="px-6 py-4 font-bold text-primary text-xs uppercase tracking-wider">Why the Range Exists</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-border">
+                    {comparisonRows.map((row, index) => (
+                      <tr key={index} className="hover:bg-bg-light/50 transition-colors">
+                        <td className="px-6 py-5 font-bold text-primary">{row.label}</td>
+                        <td className="px-6 py-5 text-right font-bold text-accent">{fmtMonthlyRange(row.rows)}/mo</td>
+                        <td className="px-6 py-5 text-right font-semibold text-primary/70">{fmtAnnualRange(row.rows)}/yr</td>
+                        <td className="px-6 py-5 text-sm text-primary/60 leading-relaxed max-w-sm">{row.note}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-xs text-primary/50 mt-4 leading-relaxed">
+                Ranges are derived from the community averages in the table above. Your actual dues depend on the specific
+                community, its budget, and its reserve health.
+              </p>
+            </div>
+          </section>
+
+          {/* AEO: Are HOA fees negotiable */}
+          <section className="mb-16">
+            <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary mb-6">
+              Are HOA Fees Negotiable in {displayCity}?
+            </h2>
+            <p className="text-primary/70 leading-relaxed mb-4">
+              Here is the honest answer: the monthly amount itself is almost never negotiable. Dues are set by the HOA board
+              through an annual budget that covers real, contracted costs — landscaping, insurance, reserves — and the board
+              cannot simply waive your share, because every owner pays the same rate. What you <em>can</em> negotiate is
+              everything around the fees. Sellers in {displayCity} sometimes agree to credits that offset a year of dues,
+              or to cover transfer fees and move-in deposits at closing. You can also negotiate on timing — asking a seller
+              to cover a known upcoming special assessment, for example.
+            </p>
+            <p className="text-primary/70 leading-relaxed">
+              And you hold the ultimate leverage before you buy: choosing between communities. Two similar homes in
+              {displayCity} can carry wildly different dues, so comparing communities is where the real savings happen. If a
+              listing's dues feel high, ask the listing agent for the budget breakdown before assuming the worst — a higher
+              fee that includes water, trash, and a healthy reserve contribution is often a better deal than a low fee that
+              hides deferred maintenance.
+            </p>
+          </section>
+
+          {/* AEO: Do HOA fees go up every year */}
+          <section className="mb-16">
+            <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary mb-6">
+              Do HOA Fees Go Up Every Year?
+            </h2>
+            <p className="text-primary/70 leading-relaxed mb-4">
+              Not every year, and not by law — but over a long enough timeline, yes, dues trend upward in most
+              {displayCity} communities. The drivers are unglamorous: insurance premiums renew higher, landscaping and pool
+              contracts reprice, utilities cost more, and reserve contributions grow as buildings age. Boards typically
+              revisit the budget annually, and in a normal year many communities land on a modest increase that roughly
+              tracks inflation.
+            </p>
+            <p className="text-primary/70 leading-relaxed">
+              The painful jumps come from specific events: a master insurance policy that doubles at renewal, a reserve
+              study that reveals years of underfunding, or deferred maintenance that can no longer wait. Some states cap how
+              much a board can raise regular assessments without a homeowner vote, which is worth checking under
+              {displayState} law. Before buying, ask for the last three to five years of dues history — the pattern tells
+              you far more than any single number.
+            </p>
+          </section>
+
+          {/* AEO: What happens if you don't pay */}
+          <section className="mb-16">
+            <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary mb-6">
+              What Happens If You Don't Pay HOA Fees in {displayState}?
+            </h2>
+            <p className="text-primary/70 leading-relaxed mb-4">
+              Missing HOA payments triggers a process that escalates faster than most owners expect. First come late fees
+              and interest, which the association's governing documents authorize automatically. If the balance remains
+              unpaid, the HOA can send the account to collections and place a lien on your property — a legal claim that
+              clouds your title and must be cleared before you can sell or refinance.
+            </p>
+            <p className="text-primary/70 leading-relaxed">
+              In many states, HOAs also have the power to foreclose on that lien, and the exact rules — notice periods,
+              redemption rights, and whether the lien has priority over your mortgage — vary by state, so {displayState}
+              statutes are the source of truth here. One critical warning: never withhold dues because you are angry at the
+              board. Courts treat dues as an independent obligation; pay first, then dispute the issue through the board's
+              process or legal channels.
+            </p>
+          </section>
+
+          {/* State HOA Laws Section */}
+          <section className="mb-16">
+            <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary mb-6">
+              {displayState} HOA Laws: What {displayCity} Buyers Should Know
+            </h2>
+            <p className="text-primary/70 leading-relaxed mb-6">
+              Homeowners associations in {displayCity} operate under {displayState} law, and those statutes set the ground
+              rules for everything from how boards meet to how dues are collected. Because statutes are amended regularly
+              and interpretations vary, treat the following as general guidance only — for anything binding, check current
+              {displayState} statutes or consult a local attorney.
+            </p>
+            <ul className="space-y-4 mb-6">
+              <li className="flex gap-3">
+                <span className="text-accent font-bold mt-0.5">•</span>
+                <p className="text-primary/70 leading-relaxed text-sm md:text-base"><strong className="text-primary">Board governance:</strong> how directors are elected, how meetings are called, and whether owners can attend and speak.</p>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-accent font-bold mt-0.5">•</span>
+                <p className="text-primary/70 leading-relaxed text-sm md:text-base"><strong className="text-primary">Financial transparency:</strong> your right to inspect budgets, reserve studies, meeting minutes, and vendor contracts before and after you buy.</p>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-accent font-bold mt-0.5">•</span>
+                <p className="text-primary/70 leading-relaxed text-sm md:text-base"><strong className="text-primary">Assessment rules:</strong> how dues and special assessments are levied, and — in some states — caps on annual increases without a member vote.</p>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-accent font-bold mt-0.5">•</span>
+                <p className="text-primary/70 leading-relaxed text-sm md:text-base"><strong className="text-primary">Fines and enforcement:</strong> notice and hearing requirements before the association can fine you or restrict common-area access.</p>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-accent font-bold mt-0.5">•</span>
+                <p className="text-primary/70 leading-relaxed text-sm md:text-base"><strong className="text-primary">Liens and foreclosure:</strong> the process an HOA must follow to secure and enforce unpaid assessments against a property.</p>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-accent font-bold mt-0.5">•</span>
+                <p className="text-primary/70 leading-relaxed text-sm md:text-base"><strong className="text-primary">Dispute resolution:</strong> whether {displayState} requires mediation or another process before owners and boards end up in court.</p>
+              </li>
+            </ul>
+            <p className="text-primary/70 leading-relaxed">
+              State law is the floor, not the ceiling — a community's own CC&Rs and bylaws can add stricter rules on top.
+              Read both before you buy, and pay special attention to rental restrictions, pet policies, and architectural
+              review rules, which are the most common sources of owner-board conflict in {displayCity}.
+            </p>
+          </section>
+
+          {/* How to Estimate Total Cost Section */}
+          <section className="mb-16">
+            <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary mb-6">
+              How to Estimate Your Total Cost of Owning an HOA Home in {displayCity}
+            </h2>
+            <p className="text-primary/70 leading-relaxed mb-6">
+              A home's sticker price only tells half the story in an HOA community. Follow these four steps to see the full
+              picture before you make an offer in {displayCity}.
+            </p>
+            <ol className="space-y-5 mb-6 list-none">
+              <li className="flex gap-4">
+                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-white font-bold flex items-center justify-center text-sm">1</span>
+                <p className="text-primary/70 leading-relaxed text-sm md:text-base"><strong className="text-primary">Start with real dues, not guesses.</strong> Use the neighborhood averages above as a starting point, then get the actual current dues — plus the last three years of increases — from the seller or listing agent.</p>
+              </li>
+              <li className="flex gap-4">
+                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-white font-bold flex items-center justify-center text-sm">2</span>
+                <p className="text-primary/70 leading-relaxed text-sm md:text-base"><strong className="text-primary">Stack every recurring cost.</strong> Add dues to your estimated mortgage payment, property taxes, homeowners insurance, and utilities. Lenders count HOA dues in your debt-to-income ratio, so they directly affect how much home you can borrow for.</p>
+              </li>
+              <li className="flex gap-4">
+                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-white font-bold flex items-center justify-center text-sm">3</span>
+                <p className="text-primary/70 leading-relaxed text-sm md:text-base"><strong className="text-primary">Project the dues forward, not just month one.</strong> Dues rise over time, and the lifetime number is what matters. Try the <a href="#calculator" className="text-accent font-bold hover:underline">HOA cost calculator below</a>: enter the monthly dues and an assumed annual increase, and it projects what you will pay over 5, 10, or 30 years in {displayCity}.</p>
+              </li>
+              <li className="flex gap-4">
+                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-white font-bold flex items-center justify-center text-sm">4</span>
+                <p className="text-primary/70 leading-relaxed text-sm md:text-base"><strong className="text-primary">Stress-test for special assessments.</strong> Ask for the reserve study and the community's history of special assessments. A well-funded reserve with no recent assessments is a far safer bet than a community deferring major maintenance.</p>
+              </li>
+            </ol>
+            <p className="text-primary/70 leading-relaxed">
+              Do those four steps before every offer, and no HOA bill in {displayCity} will ever surprise you.
+            </p>
+          </section>
+
           {/* Embedded Main Calculator Section */}
           <section id="calculator" className="scroll-mt-24 mb-16">
             <div className="border border-border/60 rounded-3xl p-1 shadow-sm overflow-hidden bg-bg-light/30">
@@ -310,7 +601,7 @@ export default function CityTemplate() {
               Frequently Asked Questions (FAQs)
             </h2>
             <div className="space-y-4">
-              {faqs.map((faq, index) => (
+              {allFaqs.map((faq, index) => (
                 <details key={index} className="group border border-border rounded-xl bg-white p-0 overflow-hidden shadow-sm hover:shadow-md transition-all">
                   <summary className="px-6 py-5 cursor-pointer list-none flex justify-between items-center font-bold text-primary text-base md:text-lg focus:outline-none">
                     {faq.q}

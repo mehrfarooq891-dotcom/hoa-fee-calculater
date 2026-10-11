@@ -12,7 +12,7 @@ export default function SelfManagedHOAArticle() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "headline": "Self-Managed HOA vs Professional Management: Full Pros and Cons",
+    "headline": "Self-Managed HOA vs Professional Management",
     "description": "Weigh the realistic pros and cons of operating a self-managed HOA versus hiring a professional community management company. Learn average cost savings.",
     "datePublished": "2026-05-25T08:00:00Z",
     "dateModified": "2026-06-13T12:00:00Z",
@@ -37,7 +37,7 @@ export default function SelfManagedHOAArticle() {
 
   return (
     <BlogArticleLayout
-      title="Self-Managed HOA vs Professional Management: Full Pros and Cons"
+      title="Self-Managed HOA vs Professional Management"
       description="Self-managed HOAs save 8–12% on fees — but that saving has real hidden costs. Learn how to weigh self-management against professional property management."
       category="Strategy & Operations"
       readTime="8 min read"

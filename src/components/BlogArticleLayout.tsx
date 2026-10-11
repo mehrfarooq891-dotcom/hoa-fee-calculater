@@ -17,6 +17,8 @@ interface BlogArticleLayoutProps {
   relatedLinks?: { label: string; to: string }[];
   schema?: any[];
   faqSchema?: any;
+  /** Per-article FAQs -> auto-generated FAQPage JSON-LD. Prefer over faqSchema. */
+  faqs?: { question: string; answer: string }[];
   aboutEntity?: any;
   speakableSelector?: string | string[];
   children: React.ReactNode;
@@ -92,6 +94,7 @@ export default function BlogArticleLayout({
   relatedLinks = [],
   schema,
   faqSchema,
+  faqs,
   aboutEntity,
   speakableSelector = [".aeo-quick-answer", "#quick-answer"],
   children
@@ -143,9 +146,26 @@ export default function BlogArticleLayout({
     defaultArticleSchema.spatialCoverage = aboutEntity;
   }
 
+  // Auto-generated FAQPage JSON-LD from the per-article `faqs` prop.
+  // Articles that already pass a raw `faqSchema` keep working unchanged;
+  // if both are given, both blocks are emitted.
+  const autoFaqSchema = faqs && faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map((f) => ({
+      "@type": "Question",
+      "name": f.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": f.answer
+      }
+    }))
+  } : null;
+
   const finalSchema = schema || [
     defaultArticleSchema,
-    ...(faqSchema ? [faqSchema] : [])
+    ...(faqSchema ? [faqSchema] : []),
+    ...(autoFaqSchema ? [autoFaqSchema] : [])
   ];
 
   return (

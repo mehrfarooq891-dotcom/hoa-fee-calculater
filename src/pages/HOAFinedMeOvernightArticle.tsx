@@ -49,7 +49,7 @@ export default function HOAFinedMeOvernightArticle() {
   const newsArticleSchema = {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
-    "headline": "HOA Fined Me Overnight: How to Dispute Illegal Charges and Stop Daily Accruals",
+    "headline": "HOA Fined Me Overnight: Dispute Illegal Charges",
     "description": "HOA fined you overnight? Learn how to dispute illegal fines, stop $25–$200/day accrual clocks, exercise state hearing rights, and settle for pennies.",
     "image": "https://www.hoafeecalculator.com/og-image.jpg",
     "datePublished": "2026-08-27T00:00:00Z",
@@ -75,7 +75,7 @@ export default function HOAFinedMeOvernightArticle() {
 
   return (
     <BlogArticleLayout
-      title="HOA Fined Me Overnight: How to Dispute Illegal Charges and Stop Daily Accruals"
+      title="HOA Fined Me Overnight: Dispute Illegal Charges"
       description="HOA fined you overnight? Learn how to dispute illegal fines, stop $25–$200/day accrual clocks, exercise state hearing rights, and settle for pennies."
       canonical="/blog/hoa-fined-me-overnight"
       date="August 27, 2026"

@@ -14,7 +14,7 @@ export default function NewConstructionHOAFeesArticle() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "headline": "New Construction HOA Fees: Why They're Lower (And Won't Stay That Way)",
+    "headline": "New Construction HOA Fees: Why They're Lower",
     "description": "Are brand-new HOA fees too good to be true? Read our guide on developer subsidies, the declarant control period, and how dues skyrocket 25-60% in years 3 to 7.",
     "datePublished": "2026-05-18T08:00:00Z",
     "dateModified": "2026-06-07T12:00:00Z",
@@ -39,7 +39,7 @@ export default function NewConstructionHOAFeesArticle() {
 
   return (
     <BlogArticleLayout
-      title="New Construction HOA Fees: Why They're Lower (And Won't Stay That Way)"
+      title="New Construction HOA Fees: Why They're Lower"
       description="Buyer warning: Brand-new construction HOA fees are artificially low. Learn why builder subsidies hide real maintenance costs and why dues spike in years 3–7."
       category="Guides"
       readTime="7 min read"

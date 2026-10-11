@@ -12,7 +12,7 @@ export default function FightHOAFeeIncreaseArticle() {
 
   return (
     <BlogArticleLayout
-      title="How to Fight an HOA Fee Increase: The Definitive Step-by-Step Guide"
+      title="How to Fight an HOA Fee Increase: Step-by-Step Guide"
       description="Your HOA just raised fees 20%—but you are not powerless. Learn can you dispute it, how to audit their books, state-by-state laws, and force budget re-bids."
       category="Strategy & Action"
       readTime="8 min read"
@@ -28,7 +28,7 @@ export default function FightHOAFeeIncreaseArticle() {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "BlogPosting",
-            "headline": "How to Fight an HOA Fee Increase: The Definitive Step-by-Step Guide",
+            "headline": "How to Fight an HOA Fee Increase: Step-by-Step Guide",
             "description": "An exhaustive, legal and strategic handbook empowering homeowners to audit, challenge, veto, or litigate unfair HOA fee spikes.",
             "image": "https://www.hoafeecalculator.com/hoa_calculator_logo.svg",
             "author": {

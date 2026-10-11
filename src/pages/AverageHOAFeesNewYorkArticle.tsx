@@ -20,7 +20,7 @@ export default function AverageHOAFeesNewYorkArticle() {
 
   return (
     <BlogArticleLayout
-      title="Average HOA Fees in New York State: NYC, Long Island & Upstate Compared"
+      title="Average HOA Fees New York: NYC, Long Island & Upstate"
       description="In Manhattan, $1,200/month is the median condo maintenance fee — and it's been rising 6% per year since 2020. Discover neighborhood averages and cost differences across New York State."
       category="Data"
       readTime="10 min read"

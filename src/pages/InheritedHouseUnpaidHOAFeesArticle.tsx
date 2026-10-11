@@ -53,7 +53,7 @@ export default function InheritedHouseUnpaidHOAFeesArticle() {
   const newsArticleSchema = {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
-    "headline": "Inherited House with Unpaid HOA Fees: Who Pays, Probate Rules, and Lien Risks",
+    "headline": "Inherited House Unpaid HOA Fees: Who Pays & Lien Risks",
     "description": "Inherited a house with unpaid HOA fees? Learn if heirs or the estate owe delinquent dues, how probate delays liens, and how to sell or settle in 2026.",
     "image": "https://www.hoafeecalculator.com/og-image.jpg",
     "datePublished": "2026-08-30T00:00:00Z",
@@ -92,7 +92,7 @@ export default function InheritedHouseUnpaidHOAFeesArticle() {
 
   return (
     <BlogArticleLayout
-      title="Inherited House with Unpaid HOA Fees: Who Pays, Probate Rules, and Lien Risks"
+      title="Inherited House Unpaid HOA Fees: Who Pays & Lien Risks"
       description="Inherited a house with unpaid HOA fees? Learn if heirs or the estate owe delinquent dues, how probate delays liens, and how to sell or settle in 2026."
       canonical="/blog/inherited-house-unpaid-hoa-fees"
       date="August 30, 2026"

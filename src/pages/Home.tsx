@@ -347,13 +347,13 @@ export default function Home() {
                 </thead>
                 <tbody className="divide-y divide-border font-bold">
                   {[
-                    { s: "Florida", f: "$390/mo", link: "/blog/hoa-fees-florida" },
+                    { s: "Florida", f: "$410/mo", link: "/blog/hoa-fees-florida" },
                     { s: "California", f: "$450/mo", link: "/blog/hoa-fees-california" },
                     { s: "New York", f: "$480/mo", link: "/blog/average-hoa-fees-new-york" },
-                    { s: "Texas", f: "$230/mo", link: "/blog/hoa-fees-texas" },
-                    { s: "Colorado", f: "$280/mo", link: "/blog/hoa-fees-colorado" },
+                    { s: "Texas", f: "$275/mo", link: "/blog/hoa-fees-texas" },
+                    { s: "Colorado", f: "$310/mo", link: "/blog/hoa-fees-colorado" },
                     { s: "Illinois", f: "$330/mo", link: "/blog/hoa-fees-illinois" },
-                    { s: "Washington", f: "$375/mo", link: "/blog/hoa-fees-washington-state" },
+                    { s: "Washington", f: "$280/mo", link: "/blog/hoa-fees-washington-state" },
                     { s: "Georgia", f: "$220/mo", link: "/blog/hoa-fees-georgia" }
                   ].map((row, i) => (
                     <tr key={i} className="hover:bg-accent/5 transition-colors">

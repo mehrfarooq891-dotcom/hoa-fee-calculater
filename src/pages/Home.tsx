@@ -53,7 +53,7 @@ export default function Home() {
     "applicationCategory": "FinanceApplication",
     "operatingSystem": "All",
     "datePublished": "2026-01-15T08:00:00Z",
-    "dateModified": "2026-09-10T12:00:00Z",
+    "dateModified": "2026-09-22T12:00:00Z",
     "speakable": {
       "@type": "SpeakableSpecification",
       "cssSelector": [".aeo-quick-answer", "#quick-answer"]

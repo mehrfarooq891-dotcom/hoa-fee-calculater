@@ -237,7 +237,6 @@ export const routes: RouteRecord[] = [
       { index: true, element: <Home />, loader: async () => ({ page: 'home' }) },
       { path: 'about', element: <About />, loader: async () => ({ page: 'about' }) },
       { path: 'blog', element: <Blog />, loader: async () => ({ page: 'blog' }) },
-      { path: 'blog/page/:pageNumber', element: <Blog />, loader: async () => ({ page: 'blog' }) },
       { path: 'blog/what-is-hoa-fee', element: <WhatIsHOAFeeArticle />, loader: createArticleLoader('what-is-hoa-fee') },
       { path: 'blog/average-hoa-fees-by-state', element: <AverageHOAFeesByStateArticle />, loader: createArticleLoader('average-hoa-fees-by-state') },
       { path: 'blog/hoa-fees-florida', element: <FloridaHOAFeesArticle />, loader: createArticleLoader('hoa-fees-florida') },

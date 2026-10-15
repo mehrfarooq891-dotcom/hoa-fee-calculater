@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import { Mail } from 'lucide-react';
 
 export default function Contact() {
-  const email = "sarahmitchelltx18@gmail.com";
+  const email = "contact@hoafeecalculator.com";
 
   return (
     <div className="min-h-screen flex flex-col bg-bg-light">

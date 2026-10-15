@@ -582,7 +582,7 @@ export default function StateTemplate() {
             </span>
           </Link>
           <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
-            <p className="text-sm font-sans">© 2026 All Rights Reserved. Data for {displayName} updated April 2026.</p>
+            <p className="text-sm font-sans">© 2026 All Rights Reserved. Data for {displayName} updated September 2026.</p>
             <SocialIcons />
           </div>
         </div>

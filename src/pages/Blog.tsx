@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import SEO from '@/src/components/SEO';
 import Header from '@/src/components/Header';
 import SocialIcons from '@/src/components/SocialIcons';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 interface Article {
   title: string;
@@ -436,7 +436,11 @@ const ITEMS_PER_PAGE = 12;
 export default function Blog() {
   const [selectedCategory, setSelectedCategory] = useState<CategoryFilter>('All');
   const [searchQuery, setSearchQuery] = useState('');
-  const [currentPage, setCurrentPage] = useState(1);
+  const { pageNumber } = useParams<{ pageNumber: string }>();
+  const [currentPage, setCurrentPage] = useState(() => {
+    const p = parseInt(pageNumber || '1', 10);
+    return isNaN(p) || p < 1 ? 1 : p;
+  });
 
   // Filter articles based on category and search query
   const filteredArticles = useMemo(() => {
@@ -607,37 +611,38 @@ export default function Blog() {
           {/* Pagination Controls */}
           {totalPages > 1 && (
             <div className="mt-12 flex justify-center items-center gap-2">
-              <button
+              <Link
+                to={currentPage <= 2 ? '/blog' : `/blog/page/${currentPage - 1}`}
                 onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
-                disabled={currentPage === 1}
-                className="px-4 py-2 rounded-xl border border-border bg-white text-primary text-sm font-bold disabled:opacity-40 disabled:cursor-not-allowed hover:border-accent hover:text-accent transition-all cursor-pointer"
+                className={`px-4 py-2 rounded-xl border border-border bg-white text-primary text-sm font-bold hover:border-accent hover:text-accent transition-all cursor-pointer ${currentPage === 1 ? 'opacity-40 pointer-events-none' : ''}`}
               >
                 &larr; Previous
-              </button>
+              </Link>
 
               <div className="flex gap-1.5">
                 {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
-                  <button
+                  <Link
                     key={pageNum}
+                    to={pageNum === 1 ? '/blog' : `/blog/page/${pageNum}`}
                     onClick={() => setCurrentPage(pageNum)}
-                    className={`w-10 h-10 rounded-xl text-sm font-bold transition-all cursor-pointer ${
+                    className={`w-10 h-10 rounded-xl text-sm font-bold transition-all cursor-pointer flex items-center justify-center ${
                       currentPage === pageNum
                         ? 'bg-accent text-white shadow-sm'
                         : 'bg-white border border-border text-primary/80 hover:border-accent hover:text-accent'
                     }`}
                   >
                     {pageNum}
-                  </button>
+                  </Link>
                 ))}
               </div>
 
-              <button
+              <Link
+                to={`/blog/page/${Math.min(currentPage + 1, totalPages)}`}
                 onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
-                disabled={currentPage === totalPages}
-                className="px-4 py-2 rounded-xl border border-border bg-white text-primary text-sm font-bold disabled:opacity-40 disabled:cursor-not-allowed hover:border-accent hover:text-accent transition-all cursor-pointer"
+                className={`px-4 py-2 rounded-xl border border-border bg-white text-primary text-sm font-bold hover:border-accent hover:text-accent transition-all cursor-pointer ${currentPage === totalPages ? 'opacity-40 pointer-events-none' : ''}`}
               >
                 Next &rarr;
-              </button>
+              </Link>
             </div>
           )}
         </div>

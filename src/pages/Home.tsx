@@ -101,7 +101,7 @@ export default function Home() {
 
       {/* Main Content Area */}
       <main className="flex-1">
-        <h1 className="sr-only">Free HOA Fee Calculator - Estimate Your True Cost</h1>
+        <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-4 text-center">Free HOA Fee Calculator - Estimate Your True Cost</h1>
         {/* TOOL SECTION */}
         <section id="calculator" className="pt-20 md:pt-24 pb-12 px-6 max-w-7xl mx-auto">
           <Calculator />

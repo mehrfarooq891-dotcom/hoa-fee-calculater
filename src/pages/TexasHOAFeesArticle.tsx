@@ -258,7 +258,7 @@ export default function TexasHOAFeesArticle() {
                 Because Texas has a long-standing emphasis on individual property ownership protections, state lawmakers have enacted rigorous structural guidelines to keep community associations from overreaching. 
               </p>
               <p>
-                For single-family interest developments, these statutory rights are governed under <strong className="text-primary font-bold">Texas Property Code Chapter 209</strong> (formally known as the Texas Residential Property Owners Protection Act). If you reside in a condominium structure, your statutory safeguards are instead mapped under <strong className="text-primary font-bold">Texas Property Code Chapter 718 (meaning the Uniform Condominium Act)</strong>.
+                For single-family interest developments, these statutory rights are governed under <strong className="text-primary font-bold">Texas Property Code Chapter 209</strong> (formally known as the Texas Residential Property Owners Protection Act). If you reside in a condominium structure, your statutory safeguards are instead mapped under <strong className="text-primary font-bold">Texas Property Code Chapter 82 (the Texas Uniform Condominium Act)</strong>.
               </p>
               <p>
                 Under Chapter 209, Texas homebuyers possess major, non-negotiable legal rights that protect their physical and financial assets:

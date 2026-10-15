@@ -10,6 +10,10 @@
   ],
   "rewrites": [
     {
+      "source": "/blog/page/:pageNumber",
+      "destination": "/index.html"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }

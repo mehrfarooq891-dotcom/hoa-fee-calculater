@@ -319,13 +319,13 @@ export default function FloridaHOAFeesArticle() {
                 Each unit owner receives a non-negotiable invoice for <strong className="text-primary font-bold">$26,250</strong>, often due in a single lump-sum or short interest installments over 12 months. Owners who cannot afford these payments are forced to list their properties under market value, leading to a surge of heavily discounted "cash-only" listings in older developments.
               </p>
 
-              {/* Real World Florida Case Study */}
+              {/* Real World Florida Illustrative Example */}
               <div className="not-prose my-8 bg-amber-50/60 border border-amber-300/80 rounded-2xl p-6 md:p-8">
                 <span className="bg-amber-200/70 text-amber-900 font-bold text-xs uppercase tracking-wider px-3 py-1 rounded-full mb-3 inline-block">
-                  Florida Case Study: The 1984 Broward County Oceanfront Milestone Assessment
+                  Florida Illustrative Example: The 1984 Broward County Oceanfront Milestone Assessment
                 </span>
                 <h4 className="text-xl font-serif font-bold text-primary mb-3">
-                  Case Study: The $45,000 Special Assessment + 98% Monthly Dues Hike
+                  Illustrative Example: The $45,000 Special Assessment + 98% Monthly Dues Hike
                 </h4>
                 <p className="text-primary/80 text-sm md:text-base leading-relaxed mb-4">
                   A retiree purchased an oceanfront 2-bedroom condominium in Pompano Beach (Broward County) in 2019 for $340,000, paying a comfortable $580 monthly maintenance fee. In late 2024, the association conducted its statutory 40-year milestone inspection and mandatory Structural Integrity Reserve Study (SIRS).

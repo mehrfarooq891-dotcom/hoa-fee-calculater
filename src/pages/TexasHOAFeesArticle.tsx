@@ -368,7 +368,7 @@ export default function TexasHOAFeesArticle() {
                   Texas Buyer Scenario: The Collin / Fort Bend County Dual-Assessment Reality
                 </span>
                 <h4 className="text-xl font-serif font-bold text-primary mb-3">
-                  Case Study: The $450,000 Celina New Build Surprise
+                  Illustrative Example: The $450,000 Celina New Build Surprise
                 </h4>
                 <p className="text-primary/80 text-sm md:text-base leading-relaxed mb-4">
                   A homebuyer relocating from California purchased a $450,000 single-family home in a rapid-growth Celina (Collin County) master-planned subdivision. The builder advertised a modest HOA fee of $100/month ($1,200/year) covering the neighborhood pool and pocket parks.

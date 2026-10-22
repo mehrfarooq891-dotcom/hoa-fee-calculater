@@ -266,10 +266,10 @@ export default function CaliforniaHOAFeesArticle() {
               {/* Real World Scenario Box */}
               <div className="not-prose my-8 bg-amber-50/60 border border-amber-300/80 rounded-2xl p-6 md:p-8">
                 <span className="bg-amber-200/70 text-amber-900 font-bold text-xs uppercase tracking-wider px-3 py-1 rounded-full mb-3 inline-block">
-                  California Case Study: The 12-Unit West LA Dingbat Special Assessment
+                  California Illustrative Example: The 12-Unit West LA Dingbat Special Assessment
                 </span>
                 <h4 className="text-xl font-serif font-bold text-primary mb-3">
-                  Case Study: The $38,000 Per-Unit Retrofit and Balcony Shock
+                  Illustrative Example: The $38,000 Per-Unit Retrofit and Balcony Shock
                 </h4>
                 <p className="text-primary/80 text-sm md:text-base leading-relaxed mb-4">
                   A first-time buyer purchased a two-bedroom condo in a 1982 two-story over tuck-under parking building in Palms/West Los Angeles. The monthly HOA fee was a seemingly reasonable $410 per month. Six months post-closing, the association completed its mandatory municipal soft-story seismic retrofit plan alongside its SB 326 exterior elevated element inspection.

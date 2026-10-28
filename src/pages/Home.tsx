@@ -415,7 +415,7 @@ export default function Home() {
                 "Most homebuyers focus on the mortgage. The HOA fee is the silent budget-killer nobody warns you about."
               </p>
               <p className="text-white/80 leading-relaxed text-sm md:text-base">
-                HOAFeeCalculator.com is an independent, free educational tool. Figures are estimates compiled from public sources and AI-assisted research. See our <Link to="/about" className="text-accent underline font-semibold hover:text-white">methodology page</Link> for details.
+                HOAFeeCalculator.com is an independent, free educational tool. Figures are estimates compiled from public sources. See our <Link to="/about" className="text-accent underline font-semibold hover:text-white">methodology page</Link> for details.
               </p>
             </div>
           </div>

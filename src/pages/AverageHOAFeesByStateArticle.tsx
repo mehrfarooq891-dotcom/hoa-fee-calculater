@@ -587,7 +587,7 @@ export default function AverageHOAFeesByStateArticle() {
             <div className="mt-16 pt-8 border-t border-border flex items-center gap-6">
               <div>
                 <h4 className="text-primary font-bold text-base">HOAFeeCalculator.com</h4>
-                <p className="text-primary opacity-80 text-sm">HOAFeeCalculator.com is an independent educational website. Figures are estimates compiled from public sources and AI-assisted research. See our <Link to="/about" className="text-accent font-bold hover:underline">methodology page</Link> for details.</p>
+                <p className="text-primary opacity-80 text-sm">HOAFeeCalculator.com is an independent educational website. Figures are estimates compiled from public sources. See our <Link to="/about" className="text-accent font-bold hover:underline">methodology page</Link> for details.</p>
               </div>
             </div>
 

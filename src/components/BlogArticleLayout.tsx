@@ -252,7 +252,7 @@ export default function BlogArticleLayout({
               <div>
                 <h4 className="text-primary font-bold text-base">HOAFeeCalculator.com</h4>
                 <p className="text-primary opacity-80 text-sm">
-                  HOAFeeCalculator.com is an independent educational website. Figures are estimates compiled from public sources and AI-assisted research. See our <Link to="/about" className="text-accent font-bold hover:underline">methodology page</Link> for details.
+                  HOAFeeCalculator.com is an independent educational website. Figures are estimates compiled from public sources. See our <Link to="/about" className="text-accent font-bold hover:underline">methodology page</Link> for details.
                 </p>
               </div>
             </div>

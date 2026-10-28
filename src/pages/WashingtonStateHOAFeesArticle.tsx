@@ -255,7 +255,7 @@ export default function WashingtonStateHOAFeesArticle() {
 
       {/* Author Bio Block */}
       <div className="author-bio mt-12 pt-6 border-t border-border/80 text-sm italic text-primary/75">
-        <strong>Prepared by HOAFeeCalculator.com</strong> — independent educational estimates compiled from public sources and AI-assisted research. Learn more on our <Link to="/about" className="text-accent underline font-semibold">methodology page</Link>.
+        <strong>Prepared by HOAFeeCalculator.com</strong> — independent educational estimates compiled from public sources. Learn more on our <Link to="/about" className="text-accent underline font-semibold">methodology page</Link>.
       </div>
     </BlogArticleLayout>
   );

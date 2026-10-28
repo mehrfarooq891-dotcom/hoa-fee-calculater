@@ -111,7 +111,7 @@ export default function InheritedHouseUnpaidHOAFeesArticle() {
 
       {/* Author Header */}
       <div className="bg-bg-light border border-border p-4 rounded-xl mb-8 text-xs md:text-sm text-secondary">
-        <strong>Prepared by HOAFeeCalculator.com</strong> — independent educational estimates compiled from public sources and AI-assisted research. Learn more on our <Link to="/about" className="text-accent underline font-semibold">methodology page</Link>.
+        <strong>Prepared by HOAFeeCalculator.com</strong> — independent educational estimates compiled from public sources. Learn more on our <Link to="/about" className="text-accent underline font-semibold">methodology page</Link>.
       </div>
 
       <p className="text-lg text-primary/90 leading-relaxed font-medium mb-6">
@@ -340,7 +340,7 @@ export default function InheritedHouseUnpaidHOAFeesArticle() {
 
       {/* Author Bio */}
       <div className="bg-bg-light border border-border p-6 rounded-2xl text-xs md:text-sm text-secondary mt-10">
-        <strong>Prepared by HOAFeeCalculator.com</strong> — independent educational estimates compiled from public sources and AI-assisted research. Learn more on our <Link to="/about" className="text-accent underline font-semibold">methodology page</Link>. Learn more on our <Link to="/about" className="text-accent underline font-medium">About Us</Link> page.
+        <strong>Prepared by HOAFeeCalculator.com</strong> — independent educational estimates compiled from public sources. Learn more on our <Link to="/about" className="text-accent underline font-semibold">methodology page</Link>. Learn more on our <Link to="/about" className="text-accent underline font-medium">About Us</Link> page.
       </div>
     </BlogArticleLayout>
   );

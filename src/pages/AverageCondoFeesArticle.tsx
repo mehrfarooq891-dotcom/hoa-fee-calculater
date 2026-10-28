@@ -112,7 +112,7 @@ export default function AverageCondoFeesArticle() {
 
       {/* Author Header */}
       <div className="bg-bg-light border border-border p-4 rounded-xl mb-8 text-xs md:text-sm text-secondary">
-        <strong>Prepared by HOAFeeCalculator.com</strong> — independent educational estimates compiled from public sources and AI-assisted research. Learn more on our <Link to="/about" className="text-accent underline font-semibold">methodology page</Link>.
+        <strong>Prepared by HOAFeeCalculator.com</strong> — independent educational estimates compiled from public sources. Learn more on our <Link to="/about" className="text-accent underline font-semibold">methodology page</Link>.
       </div>
 
       <QuickAnswerBox
@@ -415,7 +415,7 @@ export default function AverageCondoFeesArticle() {
 
       {/* Author Bio */}
       <div className="bg-bg-light border border-border p-6 rounded-2xl my-8 text-sm text-secondary">
-        <strong>Prepared by HOAFeeCalculator.com</strong> — independent educational estimates compiled from public sources and AI-assisted research. Learn more on our <Link to="/about" className="text-accent underline font-semibold">methodology page</Link>.
+        <strong>Prepared by HOAFeeCalculator.com</strong> — independent educational estimates compiled from public sources. Learn more on our <Link to="/about" className="text-accent underline font-semibold">methodology page</Link>.
       </div>
     </BlogArticleLayout>
   );

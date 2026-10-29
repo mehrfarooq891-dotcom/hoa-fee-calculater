@@ -189,6 +189,283 @@ export default function StateTemplate() {
         a: "NYC Local Law 97 establishes strict greenhouse gas emission caps on buildings over 25,000 square feet, penalizing non-compliant properties $268 per metric ton over the threshold. Associations are actively funding major capital upgrades—such as converting from #4 fuel oil to electric heat pump systems—through reserve increases and special assessments."
       }
     ]
+  ,
+    "alabama": [
+      { q: "What is the average HOA fee in Alabama in 2026?", a: "The estimated average HOA fee in Alabama is around $210 per month. Fees vary by city, from around $170 per month in Montgomery to around $250 per month in Mobile. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Alabama?", a: "Alabama Homeowners Association Act governs registration requirements and corporate transparency. See the laws section above for the full list of Alabama rules." },
+      { q: "Which Alabama cities have the highest HOA fees?", a: "Mobile (around $250 per month) and Birmingham (around $215 per month) tend to run highest in Alabama. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Alabama HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Alabama communities before you offer." }
+    ],
+    "alaska": [
+      { q: "What is the average HOA fee in Alaska in 2026?", a: "The estimated average HOA fee in Alaska is around $400 per month. Fees vary by city, from around $250 per month in Wasilla to around $460 per month in Sitka. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Alaska?", a: "Alaska Common Interest Ownership Act regulates consumer disclosure boundaries for properties. See the laws section above for the full list of Alaska rules." },
+      { q: "Which Alaska cities have the highest HOA fees?", a: "Sitka (around $460 per month) and Juneau (around $425 per month) tend to run highest in Alaska. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Alaska HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Alaska communities before you offer." }
+    ],
+    "arizona": [
+      { q: "What is the average HOA fee in Arizona in 2026?", a: "The estimated average HOA fee in Arizona is around $290 per month. Fees vary by city, from around $235 per month in Mesa to around $430 per month in Scottsdale. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Arizona?", a: "Arizona Revised Statutes (ARS Title 33) govern the baseline rules for active HOAs. See the laws section above for the full list of Arizona rules." },
+      { q: "Which Arizona cities have the highest HOA fees?", a: "Scottsdale (around $430 per month) and Phoenix (around $290 per month) tend to run highest in Arizona. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Arizona HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Arizona communities before you offer." }
+    ],
+    "arkansas": [
+      { q: "What is the average HOA fee in Arkansas in 2026?", a: "The estimated average HOA fee in Arkansas is around $170 per month. Fees vary by city, from around $145 per month in Fort Smith to around $200 per month in Fayetteville. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Arkansas?", a: "Arkansas Horizontal Property Act dictates multi-unit condominium division rules. See the laws section above for the full list of Arkansas rules." },
+      { q: "Which Arkansas cities have the highest HOA fees?", a: "Fayetteville (around $200 per month) and Little Rock (around $180 per month) tend to run highest in Arkansas. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Arkansas HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Arkansas communities before you offer." }
+    ],
+    "colorado": [
+      { q: "What is the average HOA fee in Colorado in 2026?", a: "The estimated average HOA fee in Colorado is around $310 per month. Fees vary by city, from around $240 per month in Fort Collins to around $415 per month in Boulder. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Colorado?", a: "Colorado Common Interest Ownership Act (CCIOA) regulates structural budget approvals. See the laws section above for the full list of Colorado rules." },
+      { q: "Which Colorado cities have the highest HOA fees?", a: "Boulder (around $415 per month) and Denver (around $335 per month) tend to run highest in Colorado. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Colorado HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Colorado communities before you offer." }
+    ],
+    "connecticut": [
+      { q: "What is the average HOA fee in Connecticut in 2026?", a: "The estimated average HOA fee in Connecticut is around $380 per month. Fees vary by city, from around $290 per month in Waterbury to around $550 per month in Stamford. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Connecticut?", a: "Connecticut Common Interest Ownership Act provides standard unit resale warranties. See the laws section above for the full list of Connecticut rules." },
+      { q: "Which Connecticut cities have the highest HOA fees?", a: "Stamford (around $550 per month) and Bridgeport (around $400 per month) tend to run highest in Connecticut. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Connecticut HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Connecticut communities before you offer." }
+    ],
+    "delaware": [
+      { q: "What is the average HOA fee in Delaware in 2026?", a: "The estimated average HOA fee in Delaware is around $290 per month. Fees vary by city, from around $205 per month in Middletown to around $415 per month in Rehoboth Beach. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Delaware?", a: "Delaware Uniform Common Interest Ownership Act establishes a dedicated Ombudsman office. See the laws section above for the full list of Delaware rules." },
+      { q: "Which Delaware cities have the highest HOA fees?", a: "Rehoboth Beach (around $415 per month) and Wilmington (around $290 per month) tend to run highest in Delaware. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Delaware HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Delaware communities before you offer." }
+    ],
+    "georgia": [
+      { q: "What is the average HOA fee in Georgia in 2026?", a: "The estimated average HOA fee in Georgia is around $250 per month. Fees vary by city, from around $180 per month in Columbus to around $335 per month in Savannah. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Georgia?", a: "Georgia Property Owners' Association Act (POA) grants automatic statutory lien powers. See the laws section above for the full list of Georgia rules." },
+      { q: "Which Georgia cities have the highest HOA fees?", a: "Savannah (around $335 per month) and Atlanta (around $280 per month) tend to run highest in Georgia. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Georgia HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Georgia communities before you offer." }
+    ],
+    "hawaii": [
+      { q: "What is the average HOA fee in Hawaii in 2026?", a: "The estimated average HOA fee in Hawaii is around $790 per month. Fees vary by city, from around $525 per month in Hilo to around $825 per month in Honolulu. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Hawaii?", a: "Hawaii HRS Chapter 514B regulates the structural safety and insurance of dense multi-unit condominiums. See the laws section above for the full list of Hawaii rules." },
+      { q: "Which Hawaii cities have the highest HOA fees?", a: "Honolulu (around $825 per month) and Kahului (around $715 per month) tend to run highest in Hawaii. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Hawaii HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Hawaii communities before you offer." }
+    ],
+    "idaho": [
+      { q: "What is the average HOA fee in Idaho in 2026?", a: "The estimated average HOA fee in Idaho is around $180 per month. Fees vary by city, from around $150 per month in Idaho Falls to around $240 per month in Coeur d'Alene. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Idaho?", a: "Idaho Code Title 55 Chapter 15 details mandatory covenants and public filings. See the laws section above for the full list of Idaho rules." },
+      { q: "Which Idaho cities have the highest HOA fees?", a: "Coeur d'Alene (around $240 per month) and Boise (around $195 per month) tend to run highest in Idaho. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Idaho HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Idaho communities before you offer." }
+    ],
+    "illinois": [
+      { q: "What is the average HOA fee in Illinois in 2026?", a: "The estimated average HOA fee in Illinois is around $320 per month. Fees vary by city, from around $200 per month in Rockford to around $475 per month in Chicago. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Illinois?", a: "Illinois Condominium Property Act sets strict rules for board records disclosure. See the laws section above for the full list of Illinois rules." },
+      { q: "Which Illinois cities have the highest HOA fees?", a: "Chicago (around $475 per month) and Naperville (around $290 per month) tend to run highest in Illinois. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Illinois HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Illinois communities before you offer." }
+    ],
+    "indiana": [
+      { q: "What is the average HOA fee in Indiana in 2026?", a: "The estimated average HOA fee in Indiana is around $190 per month. Fees vary by city, from around $160 per month in Fort Wayne to around $240 per month in Carmel. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Indiana?", a: "Indiana Code Title 32 regulates HOA registration and lien collection caps. See the laws section above for the full list of Indiana rules." },
+      { q: "Which Indiana cities have the highest HOA fees?", a: "Carmel (around $240 per month) and Indianapolis (around $190 per month) tend to run highest in Indiana. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Indiana HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Indiana communities before you offer." }
+    ],
+    "iowa": [
+      { q: "What is the average HOA fee in Iowa in 2026?", a: "The estimated average HOA fee in Iowa is around $180 per month. Fees vary by city, from around $150 per month in Sioux City to around $220 per month in Iowa City. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Iowa?", a: "Iowa Horizontal Real Property Act regulates master plans for common developments. See the laws section above for the full list of Iowa rules." },
+      { q: "Which Iowa cities have the highest HOA fees?", a: "Iowa City (around $220 per month) and Des Moines (around $205 per month) tend to run highest in Iowa. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Iowa HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Iowa communities before you offer." }
+    ],
+    "kansas": [
+      { q: "What is the average HOA fee in Kansas in 2026?", a: "The estimated average HOA fee in Kansas is around $180 per month. Fees vary by city, from around $165 per month in Wichita to around $235 per month in Overland Park. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Kansas?", a: "Kansas Uniform Common Interest Owners Bill of Rights Act protects individual member guidelines. See the laws section above for the full list of Kansas rules." },
+      { q: "Which Kansas cities have the highest HOA fees?", a: "Overland Park (around $235 per month) and Kansas City (around $205 per month) tend to run highest in Kansas. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Kansas HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Kansas communities before you offer." }
+    ],
+    "kentucky": [
+      { q: "What is the average HOA fee in Kentucky in 2026?", a: "The estimated average HOA fee in Kentucky is around $190 per month. Fees vary by city, from around $150 per month in Owensboro to around $250 per month in Covington. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Kentucky?", a: "Kentucky Horizontal Property Law governs general building associations. See the laws section above for the full list of Kentucky rules." },
+      { q: "Which Kentucky cities have the highest HOA fees?", a: "Covington (around $250 per month) and Louisville (around $220 per month) tend to run highest in Kentucky. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Kentucky HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Kentucky communities before you offer." }
+    ],
+    "louisiana": [
+      { q: "What is the average HOA fee in Louisiana in 2026?", a: "The estimated average HOA fee in Louisiana is around $260 per month. Fees vary by city, from around $190 per month in Shreveport to around $385 per month in New Orleans. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Louisiana?", a: "Louisiana Homeowners Association Act establishes rules for registry and operations. See the laws section above for the full list of Louisiana rules." },
+      { q: "Which Louisiana cities have the highest HOA fees?", a: "New Orleans (around $385 per month) and Baton Rouge (around $235 per month) tend to run highest in Louisiana. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Louisiana HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Louisiana communities before you offer." }
+    ],
+    "maine": [
+      { q: "What is the average HOA fee in Maine in 2026?", a: "The estimated average HOA fee in Maine is around $260 per month. Fees vary by city, from around $220 per month in Auburn to around $330 per month in Portland. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Maine?", a: "Maine Condominium Act regulates general common interest properties. See the laws section above for the full list of Maine rules." },
+      { q: "Which Maine cities have the highest HOA fees?", a: "Portland (around $330 per month) and South Portland (around $310 per month) tend to run highest in Maine. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Maine HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Maine communities before you offer." }
+    ],
+    "maryland": [
+      { q: "What is the average HOA fee in Maryland in 2026?", a: "The estimated average HOA fee in Maryland is around $270 per month. Fees vary by city, from around $210 per month in Frederick to around $345 per month in Annapolis. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Maryland?", a: "Maryland Homeowners Association Act mandates detailed initial buyer disclosure booklets. See the laws section above for the full list of Maryland rules." },
+      { q: "Which Maryland cities have the highest HOA fees?", a: "Annapolis (around $345 per month) and Rockville (around $325 per month) tend to run highest in Maryland. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Maryland HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Maryland communities before you offer." }
+    ],
+    "massachusetts": [
+      { q: "What is the average HOA fee in Massachusetts in 2026?", a: "The estimated average HOA fee in Massachusetts is around $390 per month. Fees vary by city, from around $250 per month in Springfield to around $550 per month in Boston. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Massachusetts?", a: "Massachusetts General Laws Chapter 183A governs condominiums. See the laws section above for the full list of Massachusetts rules." },
+      { q: "Which Massachusetts cities have the highest HOA fees?", a: "Boston (around $550 per month) and Cambridge (around $500 per month) tend to run highest in Massachusetts. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Massachusetts HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Massachusetts communities before you offer." }
+    ],
+    "michigan": [
+      { q: "What is the average HOA fee in Michigan in 2026?", a: "The estimated average HOA fee in Michigan is around $230 per month. Fees vary by city, from around $220 per month in Warren to around $305 per month in Detroit. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Michigan?", a: "Michigan Condominium Act establishes rules for co-ownership assets. See the laws section above for the full list of Michigan rules." },
+      { q: "Which Michigan cities have the highest HOA fees?", a: "Detroit (around $305 per month) and Ann Arbor (around $285 per month) tend to run highest in Michigan. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Michigan HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Michigan communities before you offer." }
+    ],
+    "minnesota": [
+      { q: "What is the average HOA fee in Minnesota in 2026?", a: "The estimated average HOA fee in Minnesota is around $290 per month. Fees vary by city, from around $250 per month in Rochester to around $340 per month in Minneapolis. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Minnesota?", a: "Minnesota Common Interest Ownership Act (MCIOA) governs most associations formed after 1994. See the laws section above for the full list of Minnesota rules." },
+      { q: "Which Minnesota cities have the highest HOA fees?", a: "Minneapolis (around $340 per month) and Saint Paul (around $325 per month) tend to run highest in Minnesota. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Minnesota HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Minnesota communities before you offer." }
+    ],
+    "mississippi": [
+      { q: "What is the average HOA fee in Mississippi in 2026?", a: "The estimated average HOA fee in Mississippi is around $160 per month. Fees vary by city, from around $145 per month in Meridian to around $240 per month in Gulfport. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Mississippi?", a: "Mississippi Nonprofit Corporation Act governs the organizational model of local HOAs. See the laws section above for the full list of Mississippi rules." },
+      { q: "Which Mississippi cities have the highest HOA fees?", a: "Gulfport (around $240 per month) and Biloxi (around $230 per month) tend to run highest in Mississippi. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Mississippi HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Mississippi communities before you offer." }
+    ],
+    "missouri": [
+      { q: "What is the average HOA fee in Missouri in 2026?", a: "The estimated average HOA fee in Missouri is around $180 per month. Fees vary by city, from around $150 per month in Saint Joseph to around $240 per month in Saint Louis. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Missouri?", a: "Missouri statutes regulate non-profit HOA corporate registration requirements. See the laws section above for the full list of Missouri rules." },
+      { q: "Which Missouri cities have the highest HOA fees?", a: "Saint Louis (around $240 per month) and Kansas City (around $210 per month) tend to run highest in Missouri. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Missouri HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Missouri communities before you offer." }
+    ],
+    "montana": [
+      { q: "What is the average HOA fee in Montana in 2026?", a: "The estimated average HOA fee in Montana is around $210 per month. Fees vary by city, from around $205 per month in Great Falls to around $330 per month in Bozeman. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Montana?", a: "Montana Unit Ownership Act governs structures under co-ownership models. See the laws section above for the full list of Montana rules." },
+      { q: "Which Montana cities have the highest HOA fees?", a: "Bozeman (around $330 per month) and Missoula (around $265 per month) tend to run highest in Montana. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Montana HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Montana communities before you offer." }
+    ],
+    "nebraska": [
+      { q: "What is the average HOA fee in Nebraska in 2026?", a: "The estimated average HOA fee in Nebraska is around $180 per month. Fees vary by city, from around $145 per month in Grand Island to around $195 per month in Omaha. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Nebraska?", a: "Nebraska Condominium Act sets rules for multi-unit structural reserves. See the laws section above for the full list of Nebraska rules." },
+      { q: "Which Nebraska cities have the highest HOA fees?", a: "Omaha (around $195 per month) and Lincoln (around $175 per month) tend to run highest in Nebraska. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Nebraska HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Nebraska communities before you offer." }
+    ],
+    "nevada": [
+      { q: "What is the average HOA fee in Nevada in 2026?", a: "The estimated average HOA fee in Nevada is around $260 per month. Fees vary by city, from around $245 per month in North Las Vegas to around $315 per month in Reno. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Nevada?", a: "Nevada Revised Statutes Chapter 116 governs all common-interest properties. See the laws section above for the full list of Nevada rules." },
+      { q: "Which Nevada cities have the highest HOA fees?", a: "Reno (around $315 per month) and Henderson (around $285 per month) tend to run highest in Nevada. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Nevada HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Nevada communities before you offer." }
+    ],
+    "new-hampshire": [
+      { q: "What is the average HOA fee in New Hampshire in 2026?", a: "The estimated average HOA fee in New Hampshire is around $290 per month. Fees vary by city, from around $250 per month in Derry to around $325 per month in Nashua. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in New Hampshire?", a: "New Hampshire Condominium Act regulates governance and sales disclosures. See the laws section above for the full list of New Hampshire rules." },
+      { q: "Which New Hampshire cities have the highest HOA fees?", a: "Nashua (around $325 per month) and Manchester (around $310 per month) tend to run highest in New Hampshire. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a New Hampshire HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in New Hampshire communities before you offer." }
+    ],
+    "new-jersey": [
+      { q: "What is the average HOA fee in New Jersey in 2026?", a: "The estimated average HOA fee in New Jersey is around $340 per month. Fees vary by city, from around $310 per month in Paterson to around $580 per month in Jersey City. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in New Jersey?", a: "New Jersey Radburn Law guarantees fair, democratic voting procedures in all communities. See the laws section above for the full list of New Jersey rules." },
+      { q: "Which New Jersey cities have the highest HOA fees?", a: "Jersey City (around $580 per month) and Newark (around $415 per month) tend to run highest in New Jersey. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a New Jersey HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in New Jersey communities before you offer." }
+    ],
+    "new-mexico": [
+      { q: "What is the average HOA fee in New Mexico in 2026?", a: "The estimated average HOA fee in New Mexico is around $190 per month. Fees vary by city, from around $160 per month in Roswell to around $305 per month in Santa Fe. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in New Mexico?", a: "New Mexico Homeowner Association Act sets rules for mandatory disclosure cards. See the laws section above for the full list of New Mexico rules." },
+      { q: "Which New Mexico cities have the highest HOA fees?", a: "Santa Fe (around $305 per month) and Albuquerque (around $205 per month) tend to run highest in New Mexico. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a New Mexico HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in New Mexico communities before you offer." }
+    ],
+    "north-carolina": [
+      { q: "What is the average HOA fee in North Carolina in 2026?", a: "The estimated average HOA fee in North Carolina is around $220 per month. Fees vary by city, from around $185 per month in Winston-Salem to around $230 per month in Charlotte. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in North Carolina?", a: "North Carolina Planned Community Act dictates board budget publication requirements. See the laws section above for the full list of North Carolina rules." },
+      { q: "Which North Carolina cities have the highest HOA fees?", a: "Charlotte (around $230 per month) and Raleigh (around $220 per month) tend to run highest in North Carolina. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a North Carolina HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in North Carolina communities before you offer." }
+    ],
+    "north-dakota": [
+      { q: "What is the average HOA fee in North Dakota in 2026?", a: "The estimated average HOA fee in North Dakota is around $190 per month. Fees vary by city, from around $190 per month in Minot to around $220 per month in Fargo. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in North Dakota?", a: "North Dakota Condominium Property Act regulates land use rules in planned projects. See the laws section above for the full list of North Dakota rules." },
+      { q: "Which North Dakota cities have the highest HOA fees?", a: "Fargo (around $220 per month) and Grand Forks (around $210 per month) tend to run highest in North Dakota. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a North Dakota HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in North Dakota communities before you offer." }
+    ],
+    "ohio": [
+      { q: "What is the average HOA fee in Ohio in 2026?", a: "The estimated average HOA fee in Ohio is around $210 per month. Fees vary by city, from around $190 per month in Toledo to around $270 per month in Cleveland. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Ohio?", a: "Ohio Planned Community Act regulates HOA enforcement structures and lien tools. See the laws section above for the full list of Ohio rules." },
+      { q: "Which Ohio cities have the highest HOA fees?", a: "Cleveland (around $270 per month) and Cincinnati (around $240 per month) tend to run highest in Ohio. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Ohio HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Ohio communities before you offer." }
+    ],
+    "oklahoma": [
+      { q: "What is the average HOA fee in Oklahoma in 2026?", a: "The estimated average HOA fee in Oklahoma is around $170 per month. Fees vary by city, from around $150 per month in Broken Arrow to around $205 per month in Edmond. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Oklahoma?", a: "Oklahoma Real Estate License Code mandates specific sales disclosure packets. See the laws section above for the full list of Oklahoma rules." },
+      { q: "Which Oklahoma cities have the highest HOA fees?", a: "Edmond (around $205 per month) and Oklahoma City (around $180 per month) tend to run highest in Oklahoma. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Oklahoma HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Oklahoma communities before you offer." }
+    ],
+    "oregon": [
+      { q: "What is the average HOA fee in Oregon in 2026?", a: "The estimated average HOA fee in Oregon is around $240 per month. Fees vary by city, from around $220 per month in Salem to around $315 per month in Portland. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Oregon?", a: "Oregon Planned Community Act governs guidelines for all registered developers. See the laws section above for the full list of Oregon rules." },
+      { q: "Which Oregon cities have the highest HOA fees?", a: "Portland (around $315 per month) and Hillsboro (around $255 per month) tend to run highest in Oregon. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Oregon HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Oregon communities before you offer." }
+    ],
+    "pennsylvania": [
+      { q: "What is the average HOA fee in Pennsylvania in 2026?", a: "The estimated average HOA fee in Pennsylvania is around $280 per month. Fees vary by city, from around $220 per month in Reading to around $390 per month in Philadelphia. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Pennsylvania?", a: "Pennsylvania Uniform Planned Community Act governs suburban developments. See the laws section above for the full list of Pennsylvania rules." },
+      { q: "Which Pennsylvania cities have the highest HOA fees?", a: "Philadelphia (around $390 per month) and Pittsburgh (around $310 per month) tend to run highest in Pennsylvania. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Pennsylvania HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Pennsylvania communities before you offer." }
+    ],
+    "rhode-island": [
+      { q: "What is the average HOA fee in Rhode Island in 2026?", a: "The estimated average HOA fee in Rhode Island is around $320 per month. Fees vary by city, from around $295 per month in Pawtucket to around $380 per month in Providence. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Rhode Island?", a: "Rhode Island Condominium Amendment Act mandates structural insurance configurations. See the laws section above for the full list of Rhode Island rules." },
+      { q: "Which Rhode Island cities have the highest HOA fees?", a: "Providence (around $380 per month) and Warwick (around $330 per month) tend to run highest in Rhode Island. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Rhode Island HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Rhode Island communities before you offer." }
+    ],
+    "south-carolina": [
+      { q: "What is the average HOA fee in South Carolina in 2026?", a: "The estimated average HOA fee in South Carolina is around $250 per month. Fees vary by city, from around $190 per month in Rock Hill to around $360 per month in Charleston. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in South Carolina?", a: "South Carolina Homeowners Association Act mandates that all rules must be registered. See the laws section above for the full list of South Carolina rules." },
+      { q: "Which South Carolina cities have the highest HOA fees?", a: "Charleston (around $360 per month) and Mount Pleasant (around $335 per month) tend to run highest in South Carolina. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a South Carolina HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in South Carolina communities before you offer." }
+    ],
+    "south-dakota": [
+      { q: "What is the average HOA fee in South Dakota in 2026?", a: "The estimated average HOA fee in South Dakota is around $170 per month. Fees vary by city, from around $150 per month in Watertown to around $205 per month in Rapid City. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in South Dakota?", a: "South Dakota Real Estate Code outlines specific property sale disclosure lines. See the laws section above for the full list of South Dakota rules." },
+      { q: "Which South Dakota cities have the highest HOA fees?", a: "Rapid City (around $205 per month) and Sioux Falls (around $195 per month) tend to run highest in South Dakota. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a South Dakota HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in South Dakota communities before you offer." }
+    ],
+    "tennessee": [
+      { q: "What is the average HOA fee in Tennessee in 2026?", a: "The estimated average HOA fee in Tennessee is around $190 per month. Fees vary by city, from around $175 per month in Clarksville to around $255 per month in Nashville. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Tennessee?", a: "Tennessee Horizontal Property Act governs high-density developments. See the laws section above for the full list of Tennessee rules." },
+      { q: "Which Tennessee cities have the highest HOA fees?", a: "Nashville (around $255 per month) and Memphis (around $220 per month) tend to run highest in Tennessee. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Tennessee HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Tennessee communities before you offer." }
+    ],
+    "utah": [
+      { q: "What is the average HOA fee in Utah in 2026?", a: "The estimated average HOA fee in Utah is around $230 per month. Fees vary by city, from around $225 per month in West Jordan to around $285 per month in Salt Lake City. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Utah?", a: "Utah Community Association Act regulates the standard governance of local HOAs. See the laws section above for the full list of Utah rules." },
+      { q: "Which Utah cities have the highest HOA fees?", a: "Salt Lake City (around $285 per month) and Provo (around $250 per month) tend to run highest in Utah. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Utah HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Utah communities before you offer." }
+    ],
+    "vermont": [
+      { q: "What is the average HOA fee in Vermont in 2026?", a: "The estimated average HOA fee in Vermont is around $280 per month. Fees vary by city, from around $250 per month in Barre to around $360 per month in Burlington. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Vermont?", a: "Vermont Common Interest Ownership Act manages consumer development protocols. See the laws section above for the full list of Vermont rules." },
+      { q: "Which Vermont cities have the highest HOA fees?", a: "Burlington (around $360 per month) and South Burlington (around $330 per month) tend to run highest in Vermont. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Vermont HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Vermont communities before you offer." }
+    ],
+    "virginia": [
+      { q: "What is the average HOA fee in Virginia in 2026?", a: "The estimated average HOA fee in Virginia is around $260 per month. Fees vary by city, from around $220 per month in Richmond to around $425 per month in Arlington. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Virginia?", a: "Virginia Property Owners' Association Act sets parameters for corporate reporting. See the laws section above for the full list of Virginia rules." },
+      { q: "Which Virginia cities have the highest HOA fees?", a: "Arlington (around $425 per month) and Norfolk (around $285 per month) tend to run highest in Virginia. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Virginia HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Virginia communities before you offer." }
+    ],
+    "washington": [
+      { q: "What is the average HOA fee in Washington in 2026?", a: "The estimated average HOA fee in Washington is around $280 per month. Fees vary by city, from around $220 per month in Spokane to around $390 per month in Bellevue. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Washington?", a: "Washington Uniform Common Interest Ownership Act (WUCIOA) governs all registered subdivisions. See the laws section above for the full list of Washington rules." },
+      { q: "Which Washington cities have the highest HOA fees?", a: "Bellevue (around $390 per month) and Seattle (around $365 per month) tend to run highest in Washington. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Washington HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Washington communities before you offer." }
+    ],
+    "west-virginia": [
+      { q: "What is the average HOA fee in West Virginia in 2026?", a: "The estimated average HOA fee in West Virginia is around $180 per month. Fees vary by city, from around $175 per month in Parkersburg to around $220 per month in Morgantown. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in West Virginia?", a: "West Virginia Uniform Common Interest Ownership Act protects condominium properties. See the laws section above for the full list of West Virginia rules." },
+      { q: "Which West Virginia cities have the highest HOA fees?", a: "Morgantown (around $220 per month) and Charleston (around $205 per month) tend to run highest in West Virginia. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a West Virginia HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in West Virginia communities before you offer." }
+    ],
+    "wisconsin": [
+      { q: "What is the average HOA fee in Wisconsin in 2026?", a: "The estimated average HOA fee in Wisconsin is around $220 per month. Fees vary by city, from around $220 per month in Green Bay to around $315 per month in Milwaukee. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Wisconsin?", a: "Wisconsin Condominium Ownership Act governs general association subdivisions. See the laws section above for the full list of Wisconsin rules." },
+      { q: "Which Wisconsin cities have the highest HOA fees?", a: "Milwaukee (around $315 per month) and Madison (around $280 per month) tend to run highest in Wisconsin. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Wisconsin HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Wisconsin communities before you offer." }
+    ],
+    "wyoming": [
+      { q: "What is the average HOA fee in Wyoming in 2026?", a: "The estimated average HOA fee in Wyoming is around $190 per month. Fees vary by city, from around $165 per month in Rock Springs to around $220 per month in Cheyenne. Your actual fee depends on the community amenities, building age, and reserve funding." },
+      { q: "Which law governs HOAs in Wyoming?", a: "Wyoming Nonprofit Corporation Act governs the business model of HOAs. See the laws section above for the full list of Wyoming rules." },
+      { q: "Which Wyoming cities have the highest HOA fees?", a: "Cheyenne (around $220 per month) and Laramie (around $205 per month) tend to run highest in Wyoming. See the city table above for the full comparison." },
+      { q: "What should buyers check before purchasing in a Wyoming HOA?", a: "Ask for the current budget, the most recent reserve study, meeting minutes, and whether any special assessment is planned or pending. Confirm the exact monthly fee in the seller resale packet, since listing figures are sometimes outdated, and check what the fee covers in Wyoming communities before you offer." }
+    ]
   };
 
   const faqs = STATE_CUSTOM_FAQS[cleanSlug] || [
@@ -282,7 +559,7 @@ export default function StateTemplate() {
                 { label: `${displayName} Average`, value: `$${stateData.avgFee} / mo` },
                 { label: "City Variations", value: `${stateData.cities.length} Metros Analyzed` },
                 { label: "Governing Laws", value: "State Statutes Apply" },
-                { label: "Data Updated", value: "2026 Benchmarks" }
+                { label: "Data Updated", value: "October 29, 2026" }
               ]}
               className="not-prose"
             />

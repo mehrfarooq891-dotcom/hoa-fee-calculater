@@ -49,7 +49,7 @@ export default function HOAVsNoHOAArticle() {
       category="Homebuying Guide"
       readTime="9 min read"
       date="May 18, 2026"
-      lastUpdatedDate="September 10, 2026"
+      lastUpdatedDate="October 29, 2026"
       relatedLinks={relatedLinks}
       faqSchema={faqSchema}
       speakableSelector=".aeo-quick-answer"
@@ -279,7 +279,21 @@ export default function HOAVsNoHOAArticle() {
       </div>
 
       {/* Highlighted CTA Box */}
-      <div className="not-prose my-12 bg-[#EFF6FF] border border-[#2563EB]/10 rounded-2xl p-6 md:p-8 shadow-sm">
+      <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary border-b border-border pb-3">
+          7. The Resale Factor: How HOA Status Affects Selling
+        </h2>
+        <div className="text-primary/90 leading-relaxed space-y-4 mb-12">
+          <p>
+            The cost comparison does not end when you buy — it follows you to resale. A home in an HOA comes with a resale packet: the buyer reviews the budget, rules, meeting minutes, and any pending assessments before closing, which can slow the process but also removes surprises that kill deals late. A non-HOA home skips that packet, but the buyer must diligence the roof, the yard, and the neighborhood's upkeep alone, with no documents to confirm them.
+          </p>
+          <p>
+            Buyer pools differ too. Some buyers filter out HOAs entirely and will never see your listing; others actively seek the maintained look and amenities an association guarantees. Neither pool is larger in every market — it depends on the neighborhood, the price point, and what competing listings offer. And when dues rise sharply or a large special assessment is pending, even interested buyers may renegotiate or walk away, so the association's financial health at selling time matters as much as it did when you bought.
+          </p>
+          <p>
+            The practical takeaway: keep the association's records clean while you own the home — pay on time, keep meeting minutes and budgets accessible, and address maintenance before it becomes a special assessment. A well-run association is a selling feature; a troubled one is the first thing a buyer's agent will flag.
+          </p>
+        </div>
+        <div className="not-prose my-12 bg-[#EFF6FF] border border-[#2563EB]/10 rounded-2xl p-6 md:p-8 shadow-sm">
         <h3 className="text-xl font-serif font-bold text-primary mb-3 flex items-center gap-2">
           <span>📊</span> Calculate Your HOA Costs
         </h3>

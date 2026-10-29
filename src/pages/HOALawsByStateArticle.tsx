@@ -64,9 +64,9 @@ export default function HOALawsByStateArticle() {
       title="HOA Laws by State: What Homeowners Need to Know"
       description="Understand how HOA laws vary by state, how CC&Rs govern communities, states with strict statutes, and when association rules become unenforceable."
       category="Legal & Foreclosure"
-      readTime="8 min read"
+      readTime="9 min read"
       date="August 3, 2026"
-      lastUpdatedDate="September 10, 2026"
+      lastUpdatedDate="October 29, 2026"
       relatedLinks={relatedLinks}
       faqSchema={faqPageSchema}
       speakableSelector=".aeo-quick-answer"
@@ -279,7 +279,27 @@ export default function HOALawsByStateArticle() {
           </div>
         </div>
 
-        <div className="my-10 p-6 bg-primary text-white rounded-2xl text-center shadow-lg">
+        <div className="space-y-4 my-8">
+            <div className="p-4 bg-bg-light/60 rounded-xl border border-border">
+              <h3 className="text-lg font-bold text-primary mb-2">Where to find your state's actual HOA law</h3>
+              <p className="text-primary/90 text-sm">
+                Summaries like this one are a starting point, not the law itself. Every state organizes its rules differently — some have a single planned-community act, others spread HOA rules across property codes and court decisions. For the authoritative text, look up your state's statute on the state legislature's own website, and read your community's recorded CC&Rs, which are filed with the county. When a summary and the statute disagree, the statute and your recorded documents are what count.
+              </p>
+            </div>
+            <div className="p-4 bg-bg-light/60 rounded-xl border border-border">
+              <h3 className="text-lg font-bold text-primary mb-2">CC&Rs vs. state law: which one wins?</h3>
+              <p className="text-primary/90 text-sm">
+                Think of it as a hierarchy. State and federal law sit at the top: an association rule that conflicts with them is unenforceable, no matter how the board voted. Below that come the CC&Rs — the recorded covenants that run with the land and set the community's core obligations. At the bottom sit board-adopted rules and guidelines, which must stay consistent with both the CC&Rs and the law. That is why a board cannot simply invent a fine or a ban: it needs authority from a higher layer, and homeowners can challenge rules that lack it.
+              </p>
+            </div>
+            <div className="p-4 bg-bg-light/60 rounded-xl border border-border">
+              <h3 className="text-lg font-bold text-primary mb-2">What to do if you think a rule is unlawful</h3>
+              <p className="text-primary/90 text-sm">
+                Start with paper, not a confrontation. Read the rule itself and the CC&R section it claims to rest on, then ask the board in writing to explain the rule's basis — associations are generally required to answer and to offer a hearing before fining you. Keep copies of every notice, letter, and meeting minute. Some states also have an ombudsman or housing regulator that handles HOA complaints. If the dispute involves a lien, a foreclosure threat, or a large fine, talk to a local attorney who handles community-association law before the deadlines in your notices run out.
+              </p>
+            </div>
+          </div>
+          <div className="my-10 p-6 bg-primary text-white rounded-2xl text-center shadow-lg">
           <h3 className="text-xl font-serif font-bold mb-2">Explore HOA Rules in Your State</h3>
           <p className="text-white/80 text-sm mb-4">
             Search our comprehensive state-by-state directory to find local HOA laws, average fees, and homeowner rights.

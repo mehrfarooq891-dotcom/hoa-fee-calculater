@@ -89,8 +89,8 @@ export default function HOADuesExplainedArticle() {
       title="HOA Dues Explained: What You're Really Paying For"
       description="Unpack HOA dues versus HOA fees, see what your payments fund, payment schedules, and how dues differ from surprise special assessments."
       category="Buying Guides"
-      readTime="6 min read"
-      date="July 30, 2026"
+      readTime="9 min read"
+      date="July 30, 2026" lastUpdatedDate="October 29, 2026"
       relatedLinks={relatedLinks}
     >
       {/* SEO & Schema Metadata */}
@@ -291,7 +291,37 @@ export default function HOADuesExplainedArticle() {
           </div>
         </div>
 
-        <div className="my-10 p-6 bg-primary text-white rounded-2xl text-center shadow-lg">
+        <div className="space-y-4 my-8">
+            <div className="p-4 bg-bg-light/60 rounded-xl border border-border">
+              <h3 className="text-lg font-bold text-primary mb-2">How are HOA dues calculated?</h3>
+              <p className="text-primary/90 text-sm">
+                Your association starts with its annual budget: everything it expects to spend in a year on maintenance, insurance, utilities, management, and reserve savings. That total is divided among the homes in the community, usually by the share set out in the governing documents — often equal shares, sometimes weighted by unit size or type. The yearly share is then split into monthly or quarterly payments. That is why two similar-looking homes can carry very different dues: the budget, the number of homes sharing it, and the amenities behind it are what matter, not the size of your home alone.
+              </p>
+            </div>
+            <div className="p-4 bg-bg-light/60 rounded-xl border border-border">
+              <h3 className="text-lg font-bold text-primary mb-2">Regular dues vs. special assessments</h3>
+              <p className="text-primary/90 text-sm">
+                Regular dues are the recurring payments that keep the community running day to day. A special assessment is different: a one-time charge, approved by the board, for a major cost the regular budget cannot absorb — a roof replacement, an elevator overhaul, or storm repairs, for example. Communities with healthy reserve funds need special assessments less often, because big-ticket items were saved for in advance. Before you buy, ask whether any special assessment is planned or pending: it is one of the most common budget surprises for new owners.
+              </p>
+            </div>
+            <div className="p-4 bg-bg-light/60 rounded-xl border border-border">
+              <h3 className="text-lg font-bold text-primary mb-2">What happens if you stop paying HOA dues?</h3>
+              <p className="text-primary/90 text-sm">
+                Missing dues does not make them go away. Most associations charge late fees, and the governing documents usually allow the association to place a lien on the property for unpaid amounts. In serious, long-running cases, an association may be able to foreclose — though the exact process, notice requirements, and homeowner protections depend on your state's law and your association's documents, so the details vary. If you are struggling to pay, contact the board or management company early: payment plans are often possible before the account reaches the lien stage, and they are rarely offered after.
+              </p>
+            </div>
+            <div className="p-4 bg-bg-light/60 rounded-xl border border-border">
+              <h3 className="text-lg font-bold text-primary mb-2">Five questions to ask before you buy into an HOA</h3>
+              <ul className="text-primary/90 text-sm space-y-2 list-disc pl-5">
+                <li>What exactly do the dues cover — and what do they not cover?</li>
+                <li>How healthy is the reserve fund, and when was the last reserve study done?</li>
+                <li>Is a special assessment planned, proposed, or under discussion?</li>
+                <li>How have dues changed over the past few years, and why?</li>
+                <li>Where can you read the current budget, meeting minutes, and rules before closing?</li>
+              </ul>
+            </div>
+          </div>
+          <div className="my-10 p-6 bg-primary text-white rounded-2xl text-center shadow-lg">
           <h3 className="text-xl font-serif font-bold mb-2">Calculate Your Total HOA Budget Impact</h3>
           <p className="text-white/80 text-sm mb-4">
             Model your monthly HOA dues, inflation projections, and total housing expenses with our free calculator.

@@ -199,6 +199,19 @@ const citiesData: Record<string, CityConfig> = {
   }
 };
 
+const CITY_FEE_DRIVERS: Record<string, string> = {
+  "atlanta-georgia": "Atlanta fees reflect its wooded, amenity-heavy suburbs. Heavily treed lots in Buckhead, Alpharetta, and Inman Park mean ongoing tree care, stormwater management, and leaf and debris removal that flatter, newer suburbs never face. Swim and tennis clubs, gated entries, and private security add staffing and upkeep, while Midtown condo towers carry concierge service, secure garage parking, elevators, and structural reserves. Older neighborhoods with aging pools and tennis courts tend to cost more than new subdivisions where those systems are still young, so two Atlanta HOAs a few miles apart can charge very different dues for very different reasons.",
+  "austin-texas": "Austin fees are shaped by fast growth and new construction. Master-planned suburbs around the city bundle trails, pools, parks, and amenity centers into dues, and many outer suburbs sit inside Municipal Utility Districts whose infrastructure costs ride along with the HOA bill. Downtown condo towers add concierge, security, garage, and elevator costs, while older central neighborhoods with mature trees and aging systems face rising maintenance. Because so much of the city is newly built, reserve funding for the first round of major replacements is the factor buyers most often overlook.",
+  "charlotte-north-carolina": "Charlotte fees track its suburban, amenity-led pattern. South Charlotte and lake-area communities bundle golf, pools, tennis, clubhouses, and extensive common-area landscaping into dues, and guard-gated sections add security staffing. Uptown condo towers carry elevator, garage, and building-envelope costs that single-family subdivisions never see. Newer suburbs with young amenities tend to charge less than established neighborhoods facing their first major round of pool, road, and clubhouse renewals.",
+  "houston-texas": "Houston fees reflect a city without zoning, where deed restrictions and associations do the work zoning does elsewhere. Master-planned suburbs bundle lakes, trails, parks, and recreation centers, and many sit inside Municipal Utility Districts that fund water, sewer, and drainage infrastructure. Flood control matters here: detention ponds, drainage, and stormwater systems are real budget lines, and coastal-area condos add windstorm insurance and salt-air building upkeep. Large lot sizes and long private road networks also push maintenance costs above denser cities.",
+  "las-vegas-nevada": "Las Vegas fees follow its master-planned, desert pattern. Large communities bundle golf courses, clubhouses, pools, and miles of common-area desert landscaping, with water management a constant budget item despite xeriscaping. Guard-gated sections add security costs, and high-rise condos near the resort corridor carry elevator, garage, and full-service staffing. Summer heat is its own cost driver: pools, cooling for common buildings, and sun damage to exterior surfaces all shorten maintenance cycles compared with milder climates.",
+  "los-angeles-california": "Los Angeles fees reflect old buildings, hills, and coast. Much of the condo stock is decades old, so elevator modernization, plumbing, and seismic retrofitting regularly appear in budgets, and California law requires associations to plan reserves for major components. Hillside communities add slope maintenance and fire-brush clearance, coastal buildings face salt-air corrosion, and parking structures in dense neighborhoods are expensive to maintain. Earthquake insurance for shared structures is another cost that inland cities rarely face.",
+  "miami-florida": "Miami fees are dominated by towers, storms, and state safety rules. High-rise condos carry elevator, garage, security, and full-service staffing, and Florida milestone inspection and reserve requirements mean older towers must fund structural repairs on a set schedule rather than deferring them. Hurricane exposure drives windstorm insurance for shared buildings, and coastal salt air shortens the life of exteriors, railings, and mechanical systems. Luxury buildings with pools, spas, and concierge service sit at the top of the range, while older towers facing milestone-driven work can surprise buyers.",
+  "orlando-florida": "Orlando fees reflect tourism, new suburbs, and storms. Resort-style communities bundle water features, golf, clubhouses, and extensive landscaping, and vacation-home and short-term-rental sections add management and security costs. New suburbs with young amenities tend to charge less than established ones facing pool and road renewals, and every community budgets for hurricane preparation, drainage, and storm cleanup. Gated sections and private road networks add further maintenance that ungated neighborhoods avoid.",
+  "phoenix-arizona": "Phoenix fees follow desert living and active-adult scale. Large communities bundle golf courses, clubhouses, pools, and miles of desert landscaping, with irrigation and dust control as constant costs. Guard-gated sections add security, and active-adult communities add lifestyle staffing and programming. Summer heat shortens the life of pools, paint, and exterior surfaces, and Scottsdale-area luxury sections with private parks and extensive amenities run higher than basic subdivisions. Water conservation rules also shape what landscaping an association must maintain.",
+  "san-diego-california": "San Diego fees reflect coast, canyons, and water costs. Coastal condos face salt-air corrosion, and hillside and canyon communities budget for brush clearance and slope maintenance in fire-prone areas. Master-planned inland suburbs bundle pools, parks, and trails, while older coastal buildings deal with elevator and plumbing renewals plus California reserve planning requirements. Water is expensive here, so irrigation for common areas is a larger budget line than in wetter climates, and parking structures in dense neighborhoods add ongoing upkeep.",
+};
+
 export default function CityTemplate() {
   const { cityName: paramCityName } = useParams<{ cityName?: string }>();
   const location = useLocation();
@@ -395,6 +408,17 @@ export default function CityTemplate() {
             </div>
           </section>
 
+          {CITY_FEE_DRIVERS[cityName] && (
+            <section className="mb-16">
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary mb-6">
+                What Drives HOA Fees Higher in {displayCity}?
+              </h2>
+              <p className="text-primary/70 leading-relaxed">
+                {CITY_FEE_DRIVERS[cityName]}
+              </p>
+              <p className="text-xs text-primary/50 mt-4">Last updated: October 29, 2026.</p>
+            </section>
+          )}
           {/* How Much Are HOA Fees - Comparison Table Section */}
           <section className="mb-16">
             <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary mb-6">

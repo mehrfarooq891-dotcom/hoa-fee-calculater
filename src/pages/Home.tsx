@@ -215,7 +215,7 @@ export default function Home() {
         </div>
       </section>
 
-        {/* REAL-WORLD CASE STUDY SECTION */}
+        {/* REAL-WORLD ILLUSTRATIVE EXAMPLE SECTION */}
         <section className="py-16 px-6 max-w-5xl mx-auto">
           <div className="card bg-bg-light border border-border/80 p-8 md:p-12 rounded-3xl shadow-sm">
             <div className="flex items-center gap-3 mb-4">

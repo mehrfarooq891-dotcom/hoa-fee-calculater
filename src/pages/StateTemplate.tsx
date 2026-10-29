@@ -339,7 +339,7 @@ export default function StateTemplate() {
                   {cleanSlug === 'texas' && (
                     <div className="my-8 bg-amber-50/70 border border-amber-300 rounded-2xl p-6 md:p-8 not-prose">
                       <span className="bg-amber-200/80 text-amber-900 font-bold text-xs uppercase tracking-wider px-3 py-1 rounded-full mb-3 inline-block">
-                        Texas Homebuyer Case Study: Collin County MUD &amp; Sub-HOA Costs
+                        Texas Homebuyer Illustrative Example: Collin County MUD &amp; Sub-HOA Costs
                       </span>
                       <h4 className="text-xl font-serif font-bold text-primary mb-3">
                         Suburban Dallas Reality: The $450,000 Celina Dual-Assessment
@@ -362,7 +362,7 @@ export default function StateTemplate() {
                   {cleanSlug === 'california' && (
                     <div className="my-8 bg-amber-50/70 border border-amber-300 rounded-2xl p-6 md:p-8 not-prose">
                       <span className="bg-amber-200/80 text-amber-900 font-bold text-xs uppercase tracking-wider px-3 py-1 rounded-full mb-3 inline-block">
-                        California Homebuyer Case Study: West LA SB 326 Deck Assessment
+                        California Homebuyer Illustrative Example: West LA SB 326 Deck Assessment
                       </span>
                       <h4 className="text-xl font-serif font-bold text-primary mb-3">
                         Palms 14-Unit Building: The $32,000 Special Assessment

@@ -295,13 +295,13 @@ export default function AverageCondoFeesArticle() {
         </div>
       </div>
 
-      {/* Architectural Case Study Box */}
+      {/* Architectural Illustrative Example Box */}
       <div className="not-prose my-8 bg-amber-50/60 border border-amber-300/80 rounded-2xl p-6 md:p-8">
         <span className="bg-amber-200/70 text-amber-900 font-bold text-xs uppercase tracking-wider px-3 py-1 rounded-full mb-3 inline-block">
-          Condo Financial Case Study: The 1970s Mid-Rise Elevator &amp; Boiler Overhaul
+          Condo Financial Illustrative Example: The 1970s Mid-Rise Elevator &amp; Boiler Overhaul
         </span>
         <h4 className="text-xl font-serif font-bold text-primary mb-3">
-          Case Study: 36-Unit Suburban Building Facing a $180,000 Modernization
+          Illustrative Example: 36-Unit Suburban Building Facing a $180,000 Modernization
         </h4>
         <p className="text-primary/80 text-sm md:text-base leading-relaxed mb-4">
           A four-story, 36-unit brick condominium constructed in 1976 maintained artificially low dues of $275/month for 15 years by continually deferring capital component replacements. In 2024, the building's original single hydraulic elevator suffered repeated hydraulic cylinder seal failures, and the municipal boiler inspector red-tagged the central domestic hot water heating plant.

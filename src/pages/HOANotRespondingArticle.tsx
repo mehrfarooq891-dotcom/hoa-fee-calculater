@@ -121,10 +121,10 @@ export default function HOANotRespondingArticle() {
           Management contracts often limit property managers to spending only 5 to 10 hours per week on your specific community. When routine emails accumulate, managers routinely archive or ignore unorganized messages without tracking follow-ups.
         </p>
 
-        {/* Real-World Escalation Case Study */}
+        {/* Real-World Escalation Illustrative Example */}
         <div className="not-prose my-8 bg-amber-50/60 border border-amber-300/80 rounded-2xl p-6 md:p-8">
           <span className="bg-amber-200/70 text-amber-900 font-bold text-xs uppercase tracking-wider px-3 py-1 rounded-full mb-3 inline-block">
-            Homeowner Case Study: Upstairs Main Line Leak &amp; Stonewalled Inquiries
+            Homeowner Illustrative Example: Upstairs Main Line Leak &amp; Stonewalled Inquiries
           </span>
           <h4 className="text-xl font-serif font-bold text-primary mb-3">
             How USPS Certified Mail Broke a 42-Day Communication Blackout

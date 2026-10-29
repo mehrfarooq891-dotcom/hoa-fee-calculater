@@ -249,7 +249,7 @@ export default function AverageHOAFeesNewYorkArticle() {
           New York Scenario: Upper West Side Pre-War Co-op Underlying Mortgage Shock
         </span>
         <h3 className="text-xl font-serif font-bold text-primary mb-3">
-          Case Study: 60-Unit West End Avenue Co-op Refinancing
+          Illustrative Example: 60-Unit West End Avenue Co-op Refinancing
         </h3>
         <p className="text-primary/80 text-sm md:text-base leading-relaxed mb-4">
           A buyer acquired a 1-bedroom pre-war cooperative on West End Avenue for $720,000. The monthly maintenance was listed at $1,420, which seemed reasonable given it bundled property taxes and central steam heat. However, the co-op building held an underlying blanket mortgage of $6.5 million taken out in 2014 at a 3.25% fixed interest rate with a 10-year balloon due in late 2024.

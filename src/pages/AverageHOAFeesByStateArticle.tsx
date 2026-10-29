@@ -246,7 +246,7 @@ export default function AverageHOAFeesByStateArticle() {
                   Cross-Country Relocation Scenario: Midwest to Coastal Florida Carrying Cost Shock
                 </span>
                 <h4 className="text-xl font-serif font-bold text-primary mb-3">
-                  Case Study: Indianapolis to Sarasota Condo Transition
+                  Illustrative Example: Indianapolis to Sarasota Condo Transition
                 </h4>
                 <p className="text-primary/80 text-sm md:text-base leading-relaxed mb-4">
                   A couple sold their 2,400 sq. ft. suburban Indianapolis home with an annual HOA fee of $600 ($50/month) covering neighborhood trail mowing and stormwater drainage maintenance. They budgeted $300/month for an ocean-view condo in Sarasota, Florida, assuming HOA fees were reasonably comparable for similar-priced real estate.

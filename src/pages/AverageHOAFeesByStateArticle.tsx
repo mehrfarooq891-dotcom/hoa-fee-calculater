@@ -10,7 +10,7 @@ export default function AverageHOAFeesByStateArticle() {
     "headline": "Average HOA Fees by State in 2026 — Full 50-State Breakdown",
     "description": "Discover the average monthly HOA fees across all 50 US states in 2026. Review high-density master policies, legislative updates, and complete financial data.",
     "datePublished": "2026-05-12T12:00:00Z",
-    "dateModified": "2026-09-10T12:00:00Z",
+    "dateModified": "2026-10-29T12:00:00Z",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://www.hoafeecalculator.com/blog/average-hoa-fees-by-state"
@@ -149,7 +149,7 @@ export default function AverageHOAFeesByStateArticle() {
               <span>•</span>
               <span>10 min read</span>
               <span>•</span>
-              <span>Updated: September 10, 2026</span>
+              <span>Updated: October 29, 2026</span>
               <span>•</span>
               <span className="text-accent normal-case">Prepared by HOAFeeCalculator.com</span>
             </div>

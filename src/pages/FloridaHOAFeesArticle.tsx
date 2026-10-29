@@ -10,7 +10,7 @@ export default function FloridaHOAFeesArticle() {
     "headline": "HOA Fees in Florida: What Every Buyer Must Know Before Closing",
     "description": "Examine the average HOA fees in Florida across major metro cities, review landmark Senate Bill 4-D reserve funding rules, Florida Statutes 718 and 720, and red flags before closing.",
     "datePublished": "2026-05-13T12:00:00Z",
-    "dateModified": "2026-09-10T12:00:00Z",
+    "dateModified": "2026-10-28T12:00:00Z",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://www.hoafeecalculator.com/blog/hoa-fees-florida"
@@ -95,7 +95,7 @@ export default function FloridaHOAFeesArticle() {
               <span>•</span>
               <span>9 min read</span>
               <span>•</span>
-              <span>Updated: September 10, 2026</span>
+              <span>Updated: October 28, 2026</span>
               <span>•</span>
               <span className="text-accent normal-case">Prepared by HOAFeeCalculator.com</span>
             </div>

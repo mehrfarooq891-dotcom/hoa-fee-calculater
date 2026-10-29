@@ -10,7 +10,7 @@ export default function CaliforniaHOAFeesArticle() {
     "headline": "HOA Fees in California: Why They're the Highest in the Nation",
     "description": "An exhaustive guide to average HOA fees in California cross-referenced by region. Explore the Davis-Stirling Act, earthquake insurance, and solar rights.",
     "datePublished": "2026-05-15T09:00:00Z",
-    "dateModified": "2026-09-10T12:00:00Z",
+    "dateModified": "2026-10-28T12:00:00Z",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://www.hoafeecalculator.com/blog/hoa-fees-california"
@@ -95,7 +95,7 @@ export default function CaliforniaHOAFeesArticle() {
               <span>•</span>
               <span>7 min read</span>
               <span>•</span>
-              <span>Updated: September 10, 2026</span>
+              <span>Updated: October 28, 2026</span>
               <span>•</span>
               <span className="text-accent normal-case">Prepared by HOAFeeCalculator.com</span>
             </div>

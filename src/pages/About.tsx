@@ -117,6 +117,7 @@ export default function About() {
                 <p className="text-sm text-primary/80 leading-relaxed">
                   This site organizes, summarizes, and synthesizes public legal and market information into clear, accessible consumer guides. Because inflation, insurance premiums, and utility rates impact association budgets over time, published figures and statutory summaries are periodically reviewed and updated to reflect current conditions.
                 </p>
+              <p className=\"text-xs text-primary/70 font-semibold\">Last reviewed: October 29, 2026.</p>
               </div>
             </div>
 

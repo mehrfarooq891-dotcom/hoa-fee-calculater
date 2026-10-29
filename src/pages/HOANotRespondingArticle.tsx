@@ -63,7 +63,7 @@ export default function HOANotRespondingArticle() {
       category="Board Governance & Operations"
       readTime="6 min read"
       date="August 7, 2026"
-      lastUpdatedDate="September 10, 2026"
+      lastUpdatedDate="October 29, 2026"
       relatedLinks={relatedLinks}
       faqSchema={faqSchema}
       speakableSelector=".aeo-quick-answer"

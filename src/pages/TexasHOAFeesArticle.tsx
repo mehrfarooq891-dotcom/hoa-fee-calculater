@@ -10,7 +10,7 @@ export default function TexasHOAFeesArticle() {
     "headline": "HOA Fees in Texas: Complete City-by-City Guide 2026",
     "description": "An in-depth analysis of average HOA fees in Texas across Dallas, Houston, Austin, and San Antonio. Learn about Texas Property Code Chapter 209 and watch for suburb fee triggers.",
     "datePublished": "2026-05-17T09:00:00Z",
-    "dateModified": "2026-09-10T12:00:00Z",
+    "dateModified": "2026-10-28T12:00:00Z",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://www.hoafeecalculator.com/blog/hoa-fees-texas"
@@ -95,7 +95,7 @@ export default function TexasHOAFeesArticle() {
               <span>•</span>
               <span>8 min read</span>
               <span>•</span>
-              <span>Updated: September 10, 2026</span>
+              <span>Updated: October 28, 2026</span>
               <span>•</span>
               <span className="text-accent normal-case">Compiled by HOAFeeCalculator.com</span>
             </div>

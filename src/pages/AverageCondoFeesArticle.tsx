@@ -96,7 +96,7 @@ export default function AverageCondoFeesArticle() {
       title="Average Condo Fees 2026: Monthly Costs & City Breakdowns"
       description="What is the average condo fee in 2026? Compare typical monthly costs by city, building type, reserve rules, and what is included before buying."
       canonical="/blog/average-condo-fees"
-      date="August 27, 2026"
+      date="August 27, 2026" lastUpdatedDate="October 29, 2026"
       readTime="10 min read"
       category="Buying Guides"
       relatedLinks={relatedLinks}

@@ -24,7 +24,7 @@ export default function AverageHOAFeesNewYorkArticle() {
       description="In Manhattan, $1,200/month is the median condo maintenance fee — and it's been rising 6% per year since 2020. Discover neighborhood averages and cost differences across New York State."
       category="Data"
       readTime="10 min read"
-      date="Updated: September 10, 2026"
+      date="June 23, 2026" lastUpdatedDate="October 29, 2026"
       datePublished="2026-06-23T08:00:00Z"
       dateModified="2026-09-10T12:00:00Z"
       aboutEntity={nyAboutEntity}

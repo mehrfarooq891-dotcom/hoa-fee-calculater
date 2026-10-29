@@ -97,8 +97,8 @@ export default function WhatIsHOAFeeArticle() {
       title="What is an HOA Fee? Complete Guide 2026"
       description="Discover what an HOA fee is, average costs by property type, what dues cover, how they are calculated, and legal consequences of non-payment."
       category="Homebuying Guide"
-      readTime="7 min read"
-      date="July 28, 2026"
+      readTime="8 min read"
+      date="July 28, 2026" lastUpdatedDate="October 29, 2026"
       relatedLinks={relatedLinks}
     >
       {/* SEO & Schema Metadata */}
@@ -315,7 +315,27 @@ export default function WhatIsHOAFeeArticle() {
           </div>
         </div>
 
-        <div className="my-10 p-6 bg-primary text-white rounded-2xl text-center shadow-lg">
+        <div className="space-y-4 my-8">
+            <div className="p-4 bg-bg-light/60 rounded-xl border border-border">
+              <h3 className="text-lg font-bold text-primary mb-2">Where does the HOA fee fit in your monthly housing cost?</h3>
+              <p className="text-primary/90 text-sm">
+                Buyers usually focus on mortgage, property tax, and insurance — but the HOA fee sits on top of all three and is part of your true monthly housing cost. Lenders treat it the same way: when they size up what you can afford, the fee counts as a housing expense alongside your loan payment. That is why a home with a low price but a high fee can cost more per month than a pricier home with no association at all. Always add the fee to your budget before you fall in love with a listing, not after.
+              </p>
+            </div>
+            <div className="p-4 bg-bg-light/60 rounded-xl border border-border">
+              <h3 className="text-lg font-bold text-primary mb-2">What HOA fees usually don't cover</h3>
+              <p className="text-primary/90 text-sm">
+                The boundary matters as much as the coverage. HOA fees generally do not cover your mortgage, your property taxes, or anything inside your own home — your appliances, interior repairs, and personal belongings are your responsibility. They also usually do not cover your personal utility bills, though some condo associations bundle water or heating. If a listing says "HOA covers everything," read the documents: the exclusions, not the headline, are where surprise bills hide.
+              </p>
+            </div>
+            <div className="p-4 bg-bg-light/60 rounded-xl border border-border">
+              <h3 className="text-lg font-bold text-primary mb-2">How to find the exact fee before you make an offer</h3>
+              <p className="text-primary/90 text-sm">
+                Never rely on the listing alone — fees in listings are sometimes outdated. Ask your agent for the current amount, then confirm it in the seller's disclosure or resale packet, which should also show whether a special assessment is pending and how the fee has changed over recent years. If the numbers disagree, trust the association's own documents over the listing. Getting this answer before you offer costs nothing; discovering a higher fee after closing costs every month.
+              </p>
+            </div>
+          </div>
+          <div className="my-10 p-6 bg-primary text-white rounded-2xl text-center shadow-lg">
           <h3 className="text-xl font-serif font-bold mb-2">Project Your Complete Monthly Housing Budget</h3>
           <p className="text-white/80 text-sm mb-4">
             Calculate your total mortgage, property tax, insurance, and HOA dues commitments with our free calculator.
